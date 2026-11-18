@@ -4,9 +4,6 @@
 
 ## 1 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
-
-t.me/Migrationofnurse Shery.rahimi
 
 ### PD3 Mundtlig<br>Delprøve 2
 
@@ -28,13 +25,9 @@ Emnebank 2016–2024 · ordnet efter tema · med år
 
 - <span lang="fa" dir="rtl">🏛️ قوانین رسمی SIRI</span>
 
-Migration of Nurse &#124; t.me/Migrationofnurse
-
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
 
 ## 2 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
 
 ### <span lang="fa" dir="rtl">📖 راهنمای استفاده</span>  Sådan bruger du hæftet
 
@@ -76,11 +69,11 @@ Migration of Nurse &#124; t.me/Migrationofnurse
 
 - [<span lang="fa" dir="rtl">🏛️ فصل ۰ · آزمون شفاهی از نگاه رسمی SIRI</span>](#siri)
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 3 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 - [<span lang="fa" dir="rtl">🔑 فصل ۱ · سه اسکلت طلایی</span>](#skeletons)
 
@@ -112,13 +105,13 @@ Migration of Nurse &#124; t.me/Migrationofnurse
 
 - [<span lang="fa" dir="rtl">📚 واژه‌ها و عبارت‌های طلایی + منابع</span>](#vocab)
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 4 / 116
 
 <a id="siri"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">🏛️ فصل ۰ · آزمون شفاهی از نگاه رسمی</span>  Prøven i mundtlig kommunikation
 
@@ -162,11 +155,11 @@ Migration of Nurse &#124; t.me/Migrationofnurse
 
 <span lang="fa" dir="rtl">در دفترچه‌های قدیمی (۲۰۱۳ تا ۲۰۱۵) داوطلب اول یک دقیقه دو عکس را توصیف می‌کرد. در دفترچه‌ی رسمی ۲۰۲۴ چنین مرحله‌ای نیست: فقط ۱۰ ثانیه برای فکر کردن داری و بعد سؤال شروع می‌شود. از آن ۱۰ ثانیه استفاده کن تا اسم موضوع را به یکی از فصل‌های این جزوه وصل کنی.</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 5 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">👩‍⚖️ قوانینی که ممتحن باید رعایت کند (و به نفع توست)</span>
 
@@ -205,11 +198,11 @@ BEK nr. 1627 af 06/12/2024, bilag 1, pkt. 3.40 (Delprøve 2)
 
 - <span lang="fa" dir="rtl">🗣️ زبان نسبتاً دقیق و متنوع: گرامر، دایره‌ی واژگان و تلفظ</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 6 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">📋 فرم ارزیابی رسمی (برگه‌ی نمره در دفترچه‌های رسمی ۲۰۱۳ تا ۲۰۱۵)</span>
 
@@ -241,13 +234,13 @@ Sproglige fokuspunkter: Fluency · Grammatisk færdighed · Ordforråd · Udtale
 
 <span lang="fa" dir="rtl">این تقسیم‌بندی تخمینی است و در دفترچه‌ی رسمی نیامده؛ فقط برای تمرین با تایمر است.</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 7 / 116
 
 <a id="skeletons"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">🔑 فصل ۱ · سه اسکلت طلایی</span>  Tre faste svarskabeloner
 
@@ -277,11 +270,11 @@ Sproglige fokuspunkter: Fluency · Grammatisk færdighed · Ordforråd · Udtale
 
 <span lang="fa" dir="rtl">📌 بعد از at جمله‌ی پیرو می‌آید: فاعل اول، بعد فعل: „En fordel er, at folk får mere tid.“ و در جمله‌ی پیرو ikke قبل از فعل می‌آید: „…, fordi de ikke har tid.“</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 8 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ اسکلت ۳ · جواب سؤال‌های تکمیلی</span>
 
@@ -302,13 +295,13 @@ Sproglige fokuspunkter: Fluency · Grammatisk færdighed · Ordforråd · Udtale
 | For det første / Desuden / Derfor / Alt i alt / På den anden side | <span lang="fa" dir="rtl">فعل + فاعل</span> | Derfor er det vigtigt at … |
 | at / fordi / hvis / når / selvom | <span lang="fa" dir="rtl">فاعل + (ikke) + فعل</span> | …, fordi de ikke har råd. |
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 9 / 116
 
 <a id="universal"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">🧰 جعبه‌ابزار · وقتی ذهنت خالی شد</span>  Når hovedet bliver tomt
 
@@ -343,23 +336,23 @@ Sproglige fokuspunkter: Fluency · Grammatisk færdighed · Ordforråd · Udtale
 - Det kommer an på, om … · <span lang="fa" dir="rtl">بستگی دارد که آیا …</span>
 - Som jeg sagde før, … · <span lang="fa" dir="rtl">همان‌طور که قبلاً گفتم …</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 10 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 - Jeg er ikke helt sikker, men jeg tror, at … · <span lang="fa" dir="rtl">کاملاً مطمئن نیستم، ولی فکر می‌کنم …</span>
 - Hvordan er det nu, man siger …? · <span lang="fa" dir="rtl">چطور می‌گویند… (برای پیدا کردن کلمه)</span>
 - Med andre ord … · <span lang="fa" dir="rtl">به عبارت دیگر …</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 11 / 116
 
 <a id="cat-arbejde"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">💼 فصل ۲</span>
 
@@ -411,11 +404,11 @@ Sproglige fokuspunkter: Fluency · Grammatisk færdighed · Ordforråd · Udtale
 
 - [Mangel på arbejdskraft · Maj-Juni 2024 · B · <span lang="fa" dir="rtl">کمبود نیروی کار</span>](#t-M24B)
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 12 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### Jobvalg, jobsøgning og jobskifte · <span lang="fa" dir="rtl">انتخاب شغل، کاریابی و تغییر شغل</span>
 
@@ -463,11 +456,11 @@ Nov-Dec 2016 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> føler man, at arbejdet er meningsfuldt, fordi man hjælper andre. <strong>For det andet</strong> får man meget tilbage, for eksempel når en patient bliver rask. <strong>Desuden</strong> har man kontakt med mennesker hver dag, så man keder sig ikke. <strong>Så alt i alt</strong> tror jeg, det handler om mening og glæde ved at hjælpe.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 13 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -499,11 +492,11 @@ Nov-Dec 2016 · Emne C
 
 ↳ Jeg tror, det er meget vigtigt. Arbejdet fylder mange timer i vores liv, så hvis man kan lide det, er man gladere. Et arbejde giver også penge, kolleger og en identitet.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 14 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M21A"></a>
 
@@ -559,11 +552,11 @@ Maj-Juni 2021 · Emne A
 
 ↳ Ja, det tror jeg godt, der kan være. Samfundet mister meget erfaring og viden. Det er også uretfærdigt og kan give de ældre et dårligt selvværd. Desuden mangler vi arbejdskraft, så vi har brug for alle.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 15 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -617,11 +610,11 @@ Nov-Dec 2022 · Emne C
 
 ↳ Jeg tror, det giver dem meget erfaring og et stort netværk. Men hvis man skifter for tit, kan det se ustabilt ud i CV'et, og man når ikke at blive ekspert.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 16 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -663,11 +656,11 @@ Nov-Dec 2022 · Emne C
 
 ↳ Begge dele er vigtige. Nye medarbejdere giver nye ideer, men de erfarne kender arbejdet og kunderne. Det bedste er en blanding, hvor de lærer af hinanden.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 17 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M23C"></a>
 
@@ -723,11 +716,11 @@ Maj-Juni 2023 · Emne C
 
 ↳ Ja, det tror jeg godt, der kan være. De bliver måske arbejdsløse i lang tid. Det koster samfundet penge, og de mister selvtillid. Derfor synes jeg, man skal være villig til at pendle lidt.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 18 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -777,11 +770,11 @@ Nov-Dec 2017 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er man sin egen chef, og man bestemmer selv over sin tid. <strong>For det andet</strong> kan man vælge de opgaver, man synes er spændende. <strong>Desuden</strong> kan man arbejde hjemme eller fra hele verden. <strong>Så alt i alt</strong> handler det om frihed og fleksibilitet.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 19 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -831,11 +824,11 @@ Nov-Dec 2017 · Emne A
 
 ↳ Jeg tror, det kan gå begge veje. På den ene side kan man hente børn tidligt og arbejde om aftenen. På den anden side bliver grænsen mellem arbejde og fritid uklar. Man skal være god til at sige stop.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 20 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N17C"></a>
 
@@ -883,11 +876,11 @@ Nov-Dec 2017 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er de bange for at miste deres løn og tryghed. <strong>For det andet</strong> er det svært at finde et nyt job, især hvis man er lidt ældre. <strong>Desuden</strong> kan de godt lide deres kolleger. <strong>Så alt i alt</strong> handler det om økonomi og tryghed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 21 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -941,11 +934,11 @@ Maj-Juni 2018 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil de ikke lade deres kolleger i stikken, især hvis der er travlt. <strong>For det andet</strong> har de måske vigtige opgaver eller møder. <strong>Desuden</strong> føler de sig ikke rigtig syge. <strong>Så alt i alt</strong> handler det om pligt og ansvar.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 22 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -997,11 +990,11 @@ Maj-Juni 2018 · Emne B
 
 ↳ Jeg synes, det er i orden, hvis det er et tilbud og ikke et krav. Livsstil er en privat sag, men virksomheden må gerne hjælpe og motivere. Den skal bare ikke kontrollere sine medarbejdere.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 23 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N18A"></a>
 
@@ -1057,11 +1050,11 @@ Nov-Dec 2018 · Emne A
 
 ↳ Jeg tror, det kan gøre medarbejderne mere tilfredse, fordi de føler sig som et hold. Men hvis kurset ikke hænger sammen med det daglige arbejde, hjælper det ikke.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 24 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -1111,11 +1104,11 @@ Maj-Juni 2019 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> har mange små børn, som de vil bruge mere tid sammen med. <strong>For det andet</strong> vil nogle tage en uddannelse ved siden af. <strong>Desuden</strong> har nogle brug for mere ro, for eksempel efter stress eller sygdom. <strong>Så alt i alt</strong> handler det om familie, uddannelse og helbred.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 25 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1165,11 +1158,11 @@ Maj-Juni 2019 · Emne B
 
 ↳ Måske lidt. I teorien kan flere ledige få et job. Men vi mangler faglært arbejdskraft, og en arbejdsløs uden uddannelse kan ikke bare overtage en sygeplejerskes timer. Derfor tror jeg ikke, at det løser problemet.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 26 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N20A"></a>
 
@@ -1225,11 +1218,11 @@ Nov-Dec 2020 · Emne A
 
 ↳ Ja, det kan der godt være. Økonomien er ofte stram, og det kan være svært at nå både studie og barn. Men med god hjælp fra familien kan det sagtens lykkes.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 27 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -1277,11 +1270,11 @@ Maj-Juni 2022 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil de gerne have mere tid til børn og familie. <strong>For det andet</strong> er arbejdet måske fysisk eller psykisk hårdt, så fuld tid er for meget. <strong>Desuden</strong> kan økonomien godt hænge sammen, hvis partneren arbejder fuld tid. <strong>Så alt i alt</strong> handler det om balance mellem arbejde og fritid.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 28 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1331,11 +1324,11 @@ Maj-Juni 2022 · Emne A
 
 ↳ Jeg tror, mange vil blive mere effektive, fordi de er mere udhvilede og bruger tiden bedre. Men i nogle job, for eksempel på et hospital, skal der være nogen hele tiden, så man skal ansætte flere.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 29 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### Alder og pension · <span lang="fa" dir="rtl">سن و بازنشستگی</span>
 
@@ -1385,11 +1378,11 @@ Maj-Juni 2017 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil de gerne bruge deres tid på noget meningsfuldt. <strong>For det andet</strong> møder de nye mennesker, så de ikke føler sig ensomme. <strong>Desuden</strong> vil de gerne give noget tilbage til samfundet. <strong>Så alt i alt</strong> handler det om mening og fællesskab.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 30 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1419,11 +1412,11 @@ Maj-Juni 2017 · Emne B
 
 ↳ En rengøringsassistent har et fysisk hårdt arbejde, så kroppen bliver slidt. En læge har et psykisk hårdt arbejde med meget ansvar. Men jeg tror, at lægen bedst kan klare en senere pensionsalder, fordi kroppen ikke bliver lige så slidt.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 31 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N23B"></a>
 
@@ -1479,11 +1472,11 @@ Nov-Dec 2023 · Emne B
 
 ↳ Ja, det tror jeg godt, der kan være. Ufaglærte job forsvinder ofte på grund af ny teknologi. Så risikerer man at blive arbejdsløs og få en lav løn hele livet. Derfor er det vigtigt at få en uddannelse senere.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 32 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -1533,11 +1526,11 @@ Nov-Dec 2019 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er der gamle traditioner for, hvad der er mandejob og kvindejob. <strong>For det andet</strong> mangler piger kvindelige rollemodeller i it og finans. <strong>Desuden</strong> kan arbejdskulturen være præget af mænd. <strong>Så alt i alt</strong> handler det om traditioner og rollemodeller.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 33 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1587,11 +1580,11 @@ Nov-Dec 2019 · Emne A
 
 ↳ Ja, det synes jeg. En blandet arbejdsplads giver flere perspektiver og et bedre arbejdsmiljø. Men det skal ske gennem motivation, ikke tvang.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 34 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M20C"></a>
 
@@ -1641,11 +1634,11 @@ Maj-Juni 2020 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil universiteterne tiltrække udenlandske studerende og forskere. <strong>For det andet</strong> bliver de danske studerende bedre til engelsk. <strong>Desuden</strong> bruger mange virksomheder engelsk i dag. <strong>Så alt i alt</strong> handler det om globalisering.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 35 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1675,11 +1668,11 @@ Maj-Juni 2020 · Emne C
 
 ↳ Jeg tror, det gør integrationen sværere. Hvis man kun taler engelsk, får man ofte kun udenlandske venner, og man forstår ikke nyhederne og samfundet. Sproget er nøglen til integration.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 36 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M24B"></a>
 
@@ -1729,11 +1722,11 @@ Maj-Juni 2024 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er arbejdet fysisk hårdt og foregår udendørs i al slags vejr. <strong>For det andet</strong> vil mange unge hellere tage en gymnasieuddannelse end en erhvervsuddannelse. <strong>Desuden</strong> bygges der meget i Danmark i disse år. <strong>Så alt i alt</strong> handler det om hårdt arbejde, lav status og stor efterspørgsel.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 37 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1763,13 +1756,13 @@ Maj-Juni 2024 · Emne B
 
 ↳ Ja, det mener jeg. De arbejdsløse har ofte ikke den uddannelse, der er brug for, for eksempel som sygeplejerske eller tømrer. Men samtidig skal man hjælpe de ledige med at få en uddannelse.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 38 / 116
 
 <a id="cat-uddannelse"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🎓 فصل ۳</span>
 
@@ -1817,11 +1810,11 @@ Nov-Dec 2016 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er SU'en ikke nok, fordi huslejen er høj, især i de store byer. <strong>For det andet</strong> vil de ikke arbejde for meget ved siden af, så de kan koncentrere sig om studiet. <strong>Desuden</strong> er SU-lånet billigt med en lav rente. <strong>Så alt i alt</strong> handler det om høj husleje og tid til at studere.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 39 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1865,11 +1858,11 @@ Nov-Dec 2016 · Emne A
 
 > Der er både fordele og ulemper ved det. <strong>En fordel er, at</strong> de unge får en god og tryg bolig, så de kan koncentrere sig om studiet. <strong>En anden fordel er, at</strong> forældrene ofte kan sælge lejligheden igen med overskud. <strong>På den anden side er en ulempe, at</strong> det er uretfærdigt, fordi ikke alle forældre har råd. De unge lærer måske heller ikke at klare sig selv. <strong>Alt i alt mener jeg, at</strong> det er fint, hvis de unge selv betaler noget husleje.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 40 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -1913,11 +1906,11 @@ Maj-Juni 2017 · Emne A
 
 ↳ Jeg tror, det giver bedre karrieremuligheder. Arbejdsgiverne kan se, at man har erfaring, og man kender måske allerede folk i branchen. Men hvis man arbejder for meget, kan studiet tage længere tid.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 41 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -1959,11 +1952,11 @@ Maj-Juni 2017 · Emne A
 
 ↳ Jeg tror, det koster samfundet penge, fordi de unge betaler skat i færre år. Men på den anden side vælger de måske en uddannelse, de rigtig gerne vil, og så falder færre fra. Det sparer også penge.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 42 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N18B"></a>
 
@@ -2019,11 +2012,11 @@ Nov-Dec 2018 · Emne B
 
 ↳ Ja, det kan der godt være. Nogle vænner sig til at tjene penge og har svært ved at gå tilbage til et liv på SU. Men de fleste bliver mere motiverede, når de starter.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 43 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -2079,11 +2072,11 @@ Nov-Dec 2021 · Emne C
 
 ↳ Ja, det kan der godt være. Nogle unge kan ikke komme ind på deres drømmeuddannelse, selvom de er motiverede, bare fordi deres karakterer er lidt for lave. Det kan være frustrerende.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 44 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -2125,11 +2118,11 @@ Nov-Dec 2021 · Emne C
 
 ↳ Jeg tror, pausen hjælper dem til at vælge rigtigt. De har prøvet at arbejde og ved bedre, hvad de kan lide. Men nogle mister motivationen og vælger slet ikke en uddannelse.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 45 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N22A"></a>
 
@@ -2185,11 +2178,11 @@ Nov-Dec 2022 · Emne A
 
 ↳ Ja, det kan der godt være, hvis de arbejder for mange timer. Så har de mindre tid til lektier og søvn, og karaktererne kan blive dårligere. Men et par timer om ugen er sundt.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 46 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -2237,11 +2230,11 @@ Maj-Juni 2023 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er SU'en ikke nok til husleje og mad. <strong>For det andet</strong> får de praktisk erfaring, som de kan skrive i deres CV. <strong>Desuden</strong> får de et netværk. <strong>Så alt i alt</strong> handler det om penge, erfaring og netværk.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 47 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2291,13 +2284,13 @@ Maj-Juni 2023 · Emne B
 
 ↳ Ja, det mener jeg. Uddannelse er en investering, fordi uddannede ofte tjener mere og betaler mere i skat. Og det giver lige muligheder for alle. Men samfundet kan godt styre, hvor mange der optages på de forskellige uddannelser.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 48 / 116
 
 <a id="cat-sundhed"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🏥 فصل ۴</span>
 
@@ -2343,11 +2336,11 @@ Maj-Juni 2016 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> ved mange ikke, at forkølelse skyldes en virus, og at penicillin kun virker mod bakterier. <strong>For det andet</strong> vil de gerne hurtigt blive raske, så de kan gå på arbejde. <strong>Desuden</strong> føler nogle sig mere trygge, når de får medicin. <strong>Så alt i alt</strong> handler det om manglende viden og travlhed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 49 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2391,11 +2384,11 @@ Maj-Juni 2016 · Emne C
 
 > Der er både fordele og ulemper ved det. <strong>En fordel er, at</strong> patienterne kommer hurtigere hjem til deres egne omgivelser, hvor de ofte bliver hurtigere raske. <strong>En anden fordel er, at</strong> risikoen for infektioner bliver mindre, og hospitalet sparer penge. <strong>På den anden side er en ulempe, at</strong> nogle bliver sendt hjem for tidligt. Det kan være utrygt, især for ældre, der bor alene. <strong>Alt i alt mener jeg, at</strong> det er godt, hvis der er god hjælp fra hjemmeplejen.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 50 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2451,11 +2444,11 @@ Nov-Dec 2019 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil mange gerne passe på klimaet, fordi kødproduktion udleder meget CO2. <strong>For det andet</strong> tænker nogle på dyrevelfærd. <strong>Desuden</strong> tror mange, at plantebaseret mad er sundere. <strong>Så alt i alt</strong> handler det om klima, dyr og sundhed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 51 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2485,11 +2478,11 @@ Nov-Dec 2019 · Emne B
 
 ↳ Jeg tror, det kan skade de unges selvtillid. De sammenligner sig med perfekte billeder, som ofte er redigerede. Så føler de sig ikke gode nok. Derfor er det vigtigt at lære unge at være kritiske over for medierne.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 52 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M20B"></a>
 
@@ -2537,11 +2530,11 @@ Maj-Juni 2020 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er der lange ventelister på de offentlige hospitaler. <strong>For det andet</strong> vil de gerne hurtigt tilbage på arbejde. <strong>Desuden</strong> har mange en sundhedsforsikring gennem deres arbejde. <strong>Så alt i alt</strong> handler det om tid og ventelister.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 53 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2573,11 +2566,11 @@ Maj-Juni 2020 · Emne B
 
 <span lang="fa" dir="rtl">🎯 به‌عنوان پرستار: Som sygeplejerske kan jeg se, at det giver en bedre behandling, når specialisterne er samlet ét sted.</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 54 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N20C"></a>
 
@@ -2633,11 +2626,11 @@ Nov-Dec 2020 · Emne C
 
 ↳ Ja, det kan der godt være, hvis det bliver for meget. Nogle tænker hele tiden på træning og mad, og det kan give et dårligt forhold til kroppen. Det kan også tage tid fra venner og skole. Balance er det vigtigste.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 55 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -2685,11 +2678,11 @@ Nov-Dec 2023 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil mange mænd gerne virke stærke og ikke vise svaghed. <strong>For det andet</strong> håber de, at problemet forsvinder af sig selv. <strong>Desuden</strong> har de travlt med arbejde. <strong>Så alt i alt</strong> handler det om traditionelle kønsroller og travlhed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 56 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -2739,13 +2732,13 @@ Nov-Dec 2023 · Emne A
 
 ↳ Det er en svær balance. Jeg forstår godt, at folk vil betale for at komme hurtigere til. Men jeg synes ikke, det er rimeligt, hvis det betyder, at de fattige må vente længere. Sundhed bør være lige for alle.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 57 / 116
 
 <a id="cat-medier"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">📱 فصل ۵</span>
 
@@ -2799,11 +2792,11 @@ Maj-Juni 2017 · Emne C
 
 ↳ Jeg tror, det kan gå ud over de sociale relationer. Børnene leger mindre med andre børn og lærer ikke så meget om at samarbejde og løse konflikter. Men nogle spil kan man også spille sammen med venner.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 58 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -2845,11 +2838,11 @@ Maj-Juni 2017 · Emne C
 
 ↳ Jeg tror, de kan lære meget fagligt, for eksempel bogstaver og engelsk. Men tålmodighed, fantasi og samarbejde kan blive svagere, hvis de bruger for meget tid på skærmen.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 59 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N17B"></a>
 
@@ -2905,11 +2898,11 @@ Nov-Dec 2017 · Emne B
 
 ↳ Ja, det kan der godt være. Man kan blive afhængig af likes, og man lever måske mere for at vise livet end for at leve det. Andre kan også blive trætte af alle opdateringerne.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 60 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -2965,11 +2958,11 @@ Maj-Juni 2018 · Emne C
 
 ↳ Ja, det kan der godt være. Aviserne får færre penge, så der bliver færre journalister og mindre grundig journalistik. Det kan gå ud over kvaliteten af nyhederne og demokratiet.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 61 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -3011,11 +3004,11 @@ Maj-Juni 2018 · Emne C
 
 ↳ Jeg tror, det styrker demokratiet, fordi flere kan deltage i debatten og sige deres mening. Men falske nyheder og en hård tone kan også skade demokratiet. Derfor er det vigtigt at lære at tjekke kilder.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 62 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M20A"></a>
 
@@ -3071,11 +3064,11 @@ Maj-Juni 2020 · Emne A
 
 ↳ Ja, det tror jeg. Børnene bevæger sig for lidt, og det kan give overvægt og dårlig søvn. De lærer heller ikke de samme sociale færdigheder som i leg ansigt til ansigt. Derfor er det vigtigt med en balance.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 63 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -3123,11 +3116,11 @@ Maj-Juni 2023 · Emne A
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er det nemt og hurtigt, fordi man allerede bruger de sociale medier hver dag. <strong>For det andet</strong> kan man købe brugte ting billigt. <strong>Desuden</strong> er det godt for miljøet at genbruge. <strong>Så alt i alt</strong> handler det om nemhed, pris og miljø.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 64 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -3177,13 +3170,13 @@ Maj-Juni 2023 · Emne A
 
 ↳ Jeg tror, betydningen er både positiv og negativ. Det er positivt, at flere kan deltage i debatten. Men falske nyheder og ekkokamre kan splitte befolkningen. Derfor skal vi lære at være kritiske.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 65 / 116
 
 <a id="cat-klima"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🌍 فصل ۶</span>
 
@@ -3237,11 +3230,11 @@ Maj-Juni 2019 · Emne A
 
 ↳ Ja, der kan godt være nogle problemer. Elcykler kører hurtigt, så der kan ske flere ulykker, især med ældre. Man får også lidt mindre motion. Men det er stadig bedre end at køre bil.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 66 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -3283,11 +3276,11 @@ Maj-Juni 2019 · Emne A
 
 ↳ Nej, det tror jeg ikke. Flere motorveje giver bare flere biler og mere forurening. Hurtigtog er bedre for klimaet. Men i landområderne har folk stadig brug for gode veje.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 67 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M21B"></a>
 
@@ -3343,11 +3336,11 @@ Maj-Juni 2021 · Emne B
 
 ↳ Jeg tror, det betyder meget for miljøet. Der skal produceres mindre nyt tøj, og produktion af tøj bruger meget vand og energi. Der bliver også mindre affald.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 68 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -3401,11 +3394,11 @@ Nov-Dec 2021 · Emne A
 
 ↳ Man kan for eksempel lave en madplan og en indkøbsliste. Man kan også spise rester og bruge apps som Too Good To Go. Desuden kan man lære at lugte og smage på maden i stedet for kun at se på datoen.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 69 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -3447,11 +3440,11 @@ Nov-Dec 2021 · Emne A
 
 ↳ Jeg tror, de højtlønnede vil fortsætte med at købe det samme, fordi de har råd. De lavtlønnede vil være nødt til at købe mindre. Derfor kan afgifterne øge uligheden.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 70 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N21B"></a>
 
@@ -3499,11 +3492,11 @@ Nov-Dec 2021 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er bilen fleksibel, og man kan køre direkte fra dør til dør. <strong>For det andet</strong> skal mange hente børn og købe ind på vejen hjem. <strong>Desuden</strong> kører busserne ikke så tit på landet. <strong>Så alt i alt</strong> handler det om fleksibilitet og tid.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 71 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -3559,11 +3552,11 @@ Nov-Dec 2023 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> vil mange gerne passe på klimaet, fordi kødproduktion udleder meget CO2. <strong>For det andet</strong> tænker nogle på dyrevelfærd. <strong>Desuden</strong> er der kommet mange flere vegetariske produkter i butikkerne. <strong>Så alt i alt</strong> handler det om klima, dyr og nye muligheder.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 72 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -3613,13 +3606,13 @@ Nov-Dec 2023 · Emne C
 
 ↳ Ja, der kan godt være problemer. Hvis man bruger alle pengene på klima, kan der mangle penge til for eksempel ældrepleje og sundhed. Men hvis vi ikke gør noget for klimaet, bliver det dyrere i fremtiden. Vi skal finde en balance.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 73 / 116
 
 <a id="cat-boern"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">👶 فصل ۷</span>
 
@@ -3671,11 +3664,11 @@ Nov-Dec 2016 · Emne B
 
 ↳ Jeg tror, det betyder meget. Børnene bliver mere selvstændige og får bedre selvtillid, fordi de kan noget. De lærer også, at alle i en familie skal hjælpe hinanden.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 74 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -3717,11 +3710,11 @@ Nov-Dec 2016 · Emne B
 
 ↳ Jeg tror, det kan gøre det sværere for nogle børn at respektere autoriteter, fordi de er vant til at diskutere alt. Men det kan også gøre dem selvstændige og kritiske, og det er godt i et demokrati.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 75 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N18C"></a>
 
@@ -3777,11 +3770,11 @@ Nov-Dec 2018 · Emne C
 
 ↳ Ja, det kan der godt være. Uden karakterer er det svært at vælge retfærdigt mellem eleverne, og vurderingen kan blive mere subjektiv. Karakterer er en enkel og ens måde at måle på.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 76 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -3835,11 +3828,11 @@ Maj-Juni 2022 · Emne C
 
 ↳ Jeg tror, det er godt for den sociale udvikling. Børnene lærer at lege, dele og vente på deres tur. De lærer også dansk, hvis forældrene taler et andet sprog. Men nogle små børn bliver trætte af de lange dage.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 77 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -3881,11 +3874,11 @@ Maj-Juni 2022 · Emne C
 
 ↳ Nej, ikke for alle. Forældrene betaler kun en del af prisen, og det er rimeligt. Men for familier med lav indkomst bør det være billigere, og det er det allerede i dag med økonomisk friplads.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 78 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M24C"></a>
 
@@ -3941,11 +3934,11 @@ Maj-Juni 2024 · Emne C
 
 ↳ Ja, der kan godt være nogle problemer. Forældrene kan have svært ved at se, hvordan deres barn klarer sig, og overgangen til karakterer i de ældste klasser kan blive hård. Derfor er det vigtigt med god mundtlig feedback.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 79 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -3967,13 +3960,13 @@ Maj-Juni 2024 · Emne C
 
 ↳ Jeg tror, det styrker sammenhængskraften i samfundet. Børn fra forskellige baggrunde lærer hinanden at kende, og det mindsker uligheden. Men hvis niveauet bliver for lavt, kan det skade samfundet på længere sigt.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 80 / 116
 
 <a id="cat-krim"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">⚖️ فصل ۸</span>
 
@@ -4023,11 +4016,11 @@ Maj-Juni 2016 · Emne A
 
 ↳ Jeg tror, det kan ødelægge mange muligheder. Hvis de får en plettet straffeattest, kan det være svært at få en læreplads eller et job. Så risikerer de at blive i det kriminelle miljø. Derfor er det vigtigt at hjælpe dem tidligt.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 81 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -4069,11 +4062,11 @@ Maj-Juni 2016 · Emne A
 
 ↳ Jeg tror, det kan gå begge veje. Med god hjælp fra kommunen kan mange unge stoppe tidligt. Men nogle kriminelle bander bruger børn under 15 til at begå kriminalitet, fordi de ikke kan straffes. Det er et problem.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 82 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M21C"></a>
 
@@ -4129,11 +4122,11 @@ Maj-Juni 2021 · Emne C
 
 ↳ Man kan for eksempel give dem gode fritidstilbud, som sport og ungdomsklubber. Man kan også hjælpe dem i skolen og give dem gode rollemodeller. Desuden er det vigtigt, at forældrene er involverede.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 83 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -4181,11 +4174,11 @@ Maj-Juni 2022 · Emne B
 
 > Det kan der være flere grunde til. <strong>For det første</strong> kan kameraerne forebygge tyveri og røveri. <strong>For det andet</strong> kan politiet bruge optagelserne til at finde gerningsmænd. <strong>Desuden</strong> føler kunderne og personalet sig mere trygge. <strong>Så alt i alt</strong> handler det om sikkerhed og tryghed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 84 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -4235,13 +4228,13 @@ Maj-Juni 2022 · Emne B
 
 ↳ Ja, til en vis grad. Mange føler sig mere trygge, når de ved, at der er kameraer. Men for meget overvågning kan også give en følelse af, at staten altid holder øje med os. Det handler om balance.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 85 / 116
 
 <a id="cat-bolig"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🏡 فصل ۹</span>
 
@@ -4289,11 +4282,11 @@ Maj-Juni 2016 · Emne B
 
 ↳ Jeg tror, hverdagen bliver mere rolig, og børnene kan lege ude i haven. Men forældrene skal måske bruge lang tid på at pendle til arbejde, og der er længere til kultur og aktiviteter.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 86 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -4335,11 +4328,11 @@ Maj-Juni 2016 · Emne B
 
 ↳ Jeg tror, livskvaliteten kan blive bedre, fordi familien snakker og laver flere ting sammen. Men det afhænger af, om alle i familien ønsker det. Hvis børnene føler sig tvunget, kan det give konflikter.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 87 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N19C"></a>
 
@@ -4387,11 +4380,11 @@ Nov-Dec 2019 · Emne C
 
 > Det kan der være flere grunde til. <strong>For det første</strong> er det svært at finde en studiebolig. <strong>For det andet</strong> kan det være en god investering, fordi boligpriserne stiger. <strong>Desuden</strong> vil forældrene gerne give deres børn en tryg start. <strong>Så alt i alt</strong> handler det om mangel på boliger, investering og tryghed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 88 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">➕ سؤال تکمیلی</span>
 
@@ -4421,11 +4414,11 @@ Nov-Dec 2019 · Emne C
 
 ↳ Delvis. Byerne har gavn af de studerende, så de har et ansvar. Men staten og universiteterne bør også hjælpe, fordi det er en national opgave at uddanne unge.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 89 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N22B"></a>
 
@@ -4479,11 +4472,11 @@ Nov-Dec 2022 · Emne B
 
 ↳ Ja, der kan godt være nogle problemer. Boligerne er dyrere, og de kan føle sig ensomme, hvis de ikke kender nogen. Det kan også være svært at vænne sig til støj og travlhed.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 90 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -4505,13 +4498,13 @@ Nov-Dec 2022 · Emne B
 
 ↳ Ja, det mener jeg. Hvis skolen og butikken lukker, flytter endnu flere væk, og så dør byen. Det er også vigtigt, at folk kan bo i hele landet, for eksempel tæt på landbrug og industri.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 91 / 116
 
 <a id="cat-frivillig"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🤝 فصل ۱۰</span>
 
@@ -4559,11 +4552,11 @@ Maj-Juni 2018 · Emne A
 
 ↳ Jeg tror, det giver bedre jobmuligheder. Arbejdsgiverne kan se, at man er engageret og tager ansvar. Man lærer også at samarbejde og får kontakter.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 92 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -4605,11 +4598,11 @@ Maj-Juni 2018 · Emne A
 
 ↳ Jeg tror, det er mest nyttigt, når de frivillige hjælper mennesker, der er ensomme eller udsatte, for eksempel ældre, hjemløse og børn, der har brug for lektiehjælp. Det skaber tryghed og fællesskab.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 93 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-N20B"></a>
 
@@ -4665,11 +4658,11 @@ Nov-Dec 2020 · Emne B
 
 ↳ Jeg tror, det betyder rigtig meget. De føler sig nyttige, og de holder sig aktive både fysisk og mentalt. Det kan give et længere og sundere liv.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 94 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -4693,13 +4686,13 @@ Nov-Dec 2020 · Emne B
 
 <span lang="fa" dir="rtl">🎯 به‌عنوان پرستار: Som sygeplejerske ved jeg, at patientsikkerhed kræver uddannet personale.</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 95 / 116
 
 <a id="cat-kultur"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <span lang="fa" dir="rtl">🎭 فصل ۱۱</span>
 
@@ -4747,11 +4740,11 @@ Maj-Juni 2019 · Emne C
 
 ↳ Jeg tror, færre mennesker går på museum, især familier med lav indkomst. Så bliver kultur mest for dem med mange penge. Men nogle museer har gratis dage, og det hjælper.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 96 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🔴 سؤال اجباری اول · Situation B</span>
 
@@ -4793,11 +4786,11 @@ Maj-Juni 2019 · Emne C
 
 ↳ Jeg synes, ældrepleje og uddannelse skal komme først, fordi det er basale behov. Men kultur er også vigtig for livskvaliteten og fællesskabet. Derfor skal kommunen finde en balance.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 97 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="t-M24A"></a>
 
@@ -4853,11 +4846,11 @@ Maj-Juni 2024 · Emne A
 
 ↳ Ja, det synes jeg. Uden støtte ville vi næsten kun se amerikanske film. Danske film fortæller historier om vores eget samfund. Men støtten skal gå til gode og forskellige film.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 98 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### <span lang="fa" dir="rtl">🟡 سؤال اجباری دوم · Overordnet spørgsmål</span>
 
@@ -4879,13 +4872,13 @@ Maj-Juni 2024 · Emne A
 
 ↳ Ja, det mener jeg, hvis der mangler penge. Børnepasning og ældrepleje er vigtige hver dag for mange borgere. Men en stor sportsbegivenhed kan også give penge tilbage, så det er ikke kun en udgift.
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 99 / 116
 
 <a id="recurring"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">🔁 سؤال‌های تکراری</span>  Spørgsmål der kommer igen
 
@@ -4908,11 +4901,11 @@ Maj-Juni 2024 · Emne A
 | 13 | Job ved siden af studiet<br><span lang="fa" dir="rtl">کار در کنار تحصیل</span> | [Maj-Juni 2017 · A (sit. A)](#t-M17A) · [Maj-Juni 2023 · B (sit. A)](#t-M23B) · [Nov-Dec 2022 · A (sit. B)](#t-N22A) |
 | 14 | Forældre køber lejlighed<br><span lang="fa" dir="rtl">والدین آپارتمان می‌خرند</span> | [Nov-Dec 2016 · A (overordnet)](#t-N16A) · [Nov-Dec 2019 · C (sit. B)](#t-N19C) |
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 100 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 | # | <span lang="fa" dir="rtl">موضوع سؤال</span> | <span lang="fa" dir="rtl">کجا آمده؟</span> |
 | --- | --- | --- |
@@ -4932,13 +4925,13 @@ Maj-Juni 2024 · Emne A
 | 28 | Unge, rygning og afgifter<br><span lang="fa" dir="rtl">جوانان، سیگار و مالیات</span> | [Nov-Dec 2020 · C (sit. A)](#t-N20C) · [Maj-Juni 2014 · A 📜](#app-M14A) |
 | 29 | Bil eller offentlig transport<br><span lang="fa" dir="rtl">ماشین یا حمل‌ونقل عمومی</span> | [Nov-Dec 2021 · B (sit. B)](#t-N21B) · [Nov-Dec 2014 · C 📜](#app-N14C) |
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 101 / 116
 
 <a id="appendix"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">📜 ضمیمه · دوره‌های قبل از ۲۰۱۶</span>  Ældre prøver 2004–2015
 
@@ -4986,11 +4979,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvordan tror du, at et sådant forbud vil virke sammenlignet med for eksempel en oplysningskampagne?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 102 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ⚖️ Maj-Juni 2013 · Emne B
 
@@ -5052,11 +5045,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvilke problemer tror du, der kan være ved at have et karrierejob med lange arbejdsdage?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 103 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### B 🔴
 
@@ -5126,11 +5119,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvad tror du, det betyder for samarbejdet på en arbejdsplads, at der er kolleger, der også er nærmeste venner, eller at nogle måske har deres mand eller kone på arbejdspladsen?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 104 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 <a id="app-N13B"></a>
 
@@ -5194,11 +5187,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvad tror du, det betyder for børnene, at forældrene ikke sætter grænser for dem?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 105 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### B 🔴
 
@@ -5268,11 +5261,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvor effektivt tror du, det vil være med flere afgifter sammenlignet med oplysningskampagner?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 106 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 🎓 Maj-Juni 2014 · Emne B
 
@@ -5336,11 +5329,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvad er efter din mening de største problemer ved at bo og arbejde i et andet land?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 107 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### B 🔴
 
@@ -5410,11 +5403,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvad tror du, det betyder for børns opvækst og udvikling, at de har forældre, der har krævende karrierejob?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 108 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 🏡 Nov-Dec 2014 · Emne B
 
@@ -5478,11 +5471,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Er det efter din mening et problem, at folk i områder med kø på vejene vælger at køre i bil til arbejde i stedet for at tage bus eller tog? Hvorfor?/Hvorfor ikke?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 109 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### B 🔴
 
@@ -5550,11 +5543,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvad mener du, eleverne får ud af selv at være med til at beslutte, hvad de skal lære, og hvordan de skal lære?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 110 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 🏡 Maj-Juni 2015 · Emne B
 
@@ -5616,11 +5609,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Kan der efter din mening være nogle problemer ved, at unge over 18 år kan få økonomisk støtte til uddannelse uafhængigt af deres forældres situation?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 111 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### B 🔴
 
@@ -5676,11 +5669,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Kan der efter din mening være nogen problemer ved at forbyde en gammel tradition som jagt? Hvorfor?/Hvorfor ikke?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 112 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 #### overordnet 🟡
 
@@ -5736,11 +5729,11 @@ Maj-Juni 2024 · Emne A
 
 ➕ Hvordan tror du, en usund livsstil kan påvirke folks muligheder for at få et godt liv?
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 113 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 🏥 Nov-Dec 2015 · Emne C
 
@@ -5795,11 +5788,11 @@ Maj-Juni 2024 · Emne A
 | Maj-Juni 2006 | Brugerbetaling | Børn og forældre | Kønsroller |
 | Nov-Dec 2006 | Et godt liv | Sport og motion | Nyhedsmedier |
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 114 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 | <span lang="fa" dir="rtl">دوره</span> | A | B | C |
 | --- | --- | --- | --- |
@@ -5815,13 +5808,13 @@ Maj-Juni 2024 · Emne A
 | Maj-Juni 2012 | Karriere og videreuddannelse | Sport og motion | At bo i byen |
 | Nov-Dec 2012 | Foreninger | Socialt samvær | Overvågning |
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 115 / 116
 
 <a id="vocab"></a>
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 ### <span lang="fa" dir="rtl">📚 واژه‌ها و عبارت‌های طلایی</span>  Ord og udtryk
 
@@ -5870,11 +5863,11 @@ Maj-Juni 2024 · Emne A
 - at sætte grænser · <span lang="fa" dir="rtl">مرز گذاشتن</span>
 - at følge med i · <span lang="fa" dir="rtl">در جریان بودن</span>
 
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>
+
 
 ## 116 / 116
 
-<small>Shery.rahimi · PD3 Mundtlig · Delprøve 2 · t.me/Migrationofnurse</small>
+
 
 - at gøre karriere · <span lang="fa" dir="rtl">پیشرفت شغلی کردن</span>
 - at give noget tilbage · <span lang="fa" dir="rtl">چیزی را پس دادن (به جامعه)</span>
@@ -5901,7 +5894,3 @@ Maj-Juni 2024 · Emne A
 - Questions 2016–2024: compiled PD3 Mundtlig Delprøve 2 question bank (parallel DA/FA edition).
 
 ### Held og lykke til prøven! 🍀
-
-Shery.rahimi · Migration of Nurse · t.me/Migrationofnurse
-
-<small>Migration of Nurse &#124; t.me/Migrationofnurse</small>

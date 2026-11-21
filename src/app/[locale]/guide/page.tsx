@@ -1,12 +1,11 @@
 import { getTranslations } from "next-intl/server";
-import { ComingSoon } from "@/features/app-shell/coming-soon";
+import { GuideOverview } from "@/features/exam-guide/guide-overview";
 
 export async function generateMetadata() {
-  const t = await getTranslations("nav");
-  return { title: t("guideOverview") };
+  const t = await getTranslations("guide.overview");
+  return { title: t("title") };
 }
 
-export default async function Page() {
-  const t = await getTranslations("nav");
-  return <ComingSoon title={t("guideOverview")} />;
+export default function Page() {
+  return <GuideOverview />;
 }

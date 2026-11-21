@@ -1,13 +1,15 @@
 import { getTranslations } from "next-intl/server";
-import { ComingSoon } from "@/features/app-shell/coming-soon";
-import { richTags } from "@/i18n/rich-tags";
+import { DelproeveTwoGuide } from "@/features/exam-guide/delproeve-two-guide";
+import { introductoryExampleId } from "@/features/exam-guide/exam-facts";
+import { prepareExaminerLines } from "@/features/exam-guide/examiner-lines";
+import { getExaminerLines, getTopic } from "@/lib/content/repository";
 
 export async function generateMetadata() {
-  const t = await getTranslations("nav");
-  return { title: t.markup("guideTitle", { part: "2", da: (text) => text }) };
+  const t = await getTranslations("guide");
+  return { title: t("title") };
 }
 
 export default async function Page() {
-  const t = await getTranslations("nav");
-  return <ComingSoon title={t.rich("guideTitle", { ...richTags, part: "2" })} />;
+  const [lines, example] = await Promise.all([getExaminerLines(), getTopic(introductoryExampleId)]);
+  return <DelproeveTwoGuide lines={prepareExaminerLines(lines, example)} />;
 }

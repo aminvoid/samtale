@@ -1,0 +1,192 @@
+{
+  "note": "Recorded from Azure da-DK-ChristelNeural, swedencentral, 2026-11-20 (scripts/audio/samples.ts). Used to test offset mapping without calling Azure.",
+  "voice": "da-DK-ChristelNeural",
+  "text": "Der mangler arbejdskraft i sundhedssektoren, fx sygeplejersker og social- og sundhedsassistenter. Hvorfor tror du, der gør det?",
+  "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"da-DK\"><voice name=\"da-DK-ChristelNeural\">Der mangler arbejdskraft i sundhedssektoren, for eksempel sygeplejersker og social- og sundhedsassistenter. Hvorfor tror du, der gør det?</voice></speak>",
+  "boundaries": [
+    {
+      "kind": "word",
+      "text": "Der",
+      "textOffset": 117,
+      "wordLength": 3,
+      "audioOffsetMs": 50,
+      "durationMs": 162.5
+    },
+    {
+      "kind": "word",
+      "text": "mangler",
+      "textOffset": 121,
+      "wordLength": 7,
+      "audioOffsetMs": 212.5,
+      "durationMs": 362.5
+    },
+    {
+      "kind": "word",
+      "text": "arbejdskraft",
+      "textOffset": 129,
+      "wordLength": 12,
+      "audioOffsetMs": 575,
+      "durationMs": 600
+    },
+    {
+      "kind": "word",
+      "text": "i",
+      "textOffset": 142,
+      "wordLength": 1,
+      "audioOffsetMs": 1175,
+      "durationMs": 75
+    },
+    {
+      "kind": "word",
+      "text": "sundhedssektoren",
+      "textOffset": 144,
+      "wordLength": 16,
+      "audioOffsetMs": 1250,
+      "durationMs": 912.5
+    },
+    {
+      "kind": "punctuation",
+      "text": ",",
+      "textOffset": 160,
+      "wordLength": 1,
+      "audioOffsetMs": 2300,
+      "durationMs": 275
+    },
+    {
+      "kind": "word",
+      "text": "for",
+      "textOffset": 162,
+      "wordLength": 3,
+      "audioOffsetMs": 2575,
+      "durationMs": 175
+    },
+    {
+      "kind": "word",
+      "text": "eksempel",
+      "textOffset": 166,
+      "wordLength": 8,
+      "audioOffsetMs": 2750,
+      "durationMs": 362.5
+    },
+    {
+      "kind": "word",
+      "text": "sygeplejersker",
+      "textOffset": 175,
+      "wordLength": 14,
+      "audioOffsetMs": 3112.5,
+      "durationMs": 750
+    },
+    {
+      "kind": "word",
+      "text": "og",
+      "textOffset": 190,
+      "wordLength": 2,
+      "audioOffsetMs": 3862.5,
+      "durationMs": 37.5
+    },
+    {
+      "kind": "word",
+      "text": "social",
+      "textOffset": 193,
+      "wordLength": 6,
+      "audioOffsetMs": 3900,
+      "durationMs": 587.5
+    },
+    {
+      "kind": "punctuation",
+      "text": "-",
+      "textOffset": 199,
+      "wordLength": 1,
+      "audioOffsetMs": 4637.5,
+      "durationMs": 150
+    },
+    {
+      "kind": "word",
+      "text": "og",
+      "textOffset": 201,
+      "wordLength": 2,
+      "audioOffsetMs": 4787.5,
+      "durationMs": 87.5
+    },
+    {
+      "kind": "word",
+      "text": "sundhedsassistenter",
+      "textOffset": 204,
+      "wordLength": 19,
+      "audioOffsetMs": 4875,
+      "durationMs": 975
+    },
+    {
+      "kind": "punctuation",
+      "text": ".",
+      "textOffset": 223,
+      "wordLength": 1,
+      "audioOffsetMs": 5875,
+      "durationMs": 87.5
+    },
+    {
+      "kind": "word",
+      "text": "Hvorfor",
+      "textOffset": 225,
+      "wordLength": 7,
+      "audioOffsetMs": 6712.5,
+      "durationMs": 350
+    },
+    {
+      "kind": "word",
+      "text": "tror",
+      "textOffset": 233,
+      "wordLength": 4,
+      "audioOffsetMs": 7062.5,
+      "durationMs": 312.5
+    },
+    {
+      "kind": "word",
+      "text": "du",
+      "textOffset": 238,
+      "wordLength": 2,
+      "audioOffsetMs": 7375,
+      "durationMs": 275
+    },
+    {
+      "kind": "punctuation",
+      "text": ",",
+      "textOffset": 240,
+      "wordLength": 1,
+      "audioOffsetMs": 7787.5,
+      "durationMs": 62.5
+    },
+    {
+      "kind": "word",
+      "text": "der",
+      "textOffset": 242,
+      "wordLength": 3,
+      "audioOffsetMs": 7850,
+      "durationMs": 200
+    },
+    {
+      "kind": "word",
+      "text": "gør",
+      "textOffset": 246,
+      "wordLength": 3,
+      "audioOffsetMs": 8050,
+      "durationMs": 225
+    },
+    {
+      "kind": "word",
+      "text": "det",
+      "textOffset": 250,
+      "wordLength": 3,
+      "audioOffsetMs": 8275,
+      "durationMs": 250
+    },
+    {
+      "kind": "punctuation",
+      "text": "?",
+      "textOffset": 253,
+      "wordLength": 1,
+      "audioOffsetMs": 8537.5,
+      "durationMs": 87.5
+    }
+  ]
+}

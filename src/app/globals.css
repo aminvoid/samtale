@@ -70,12 +70,12 @@
 @layer base {
   @media (forced-colors: active) {
     :where(
-        [aria-current]:not([aria-current="false"]),
-        [aria-pressed="true"],
-        [aria-selected="true"],
-        [role="radio"][aria-checked="true"],
-        [data-selected]
-      ) {
+      [aria-current]:not([aria-current="false"]),
+      [aria-pressed="true"],
+      [aria-selected="true"],
+      [role="radio"][aria-checked="true"],
+      [data-selected]
+    ) {
       outline: 2px solid Highlight;
       outline-offset: -2px;
     }
@@ -102,11 +102,15 @@
 
 /*
  * Short Danish labels inside Persian rows (topic names, situation titles, term labels, key words)
- * align to the page's start edge (right in RTL), not their own. Danish paragraphs don't use this:
- * they fill the reading column and align to their own start (left). docs/design/tokens.md §2.4.
+ * align to the page's start edge. In an RTL page that edge is the end of the LTR label.
+ * Danish reading paragraphs keep their own start alignment. docs/design/tokens.md §2.4.
  */
 @utility text-align-flow {
-  text-align: match-parent;
+  text-align: start;
+
+  :where(html[dir="rtl"]) & {
+    text-align: end;
+  }
 }
 
 /*
@@ -146,5 +150,20 @@
     white-space: nowrap;
     border-width: 0;
     box-shadow: none;
+  }
+}
+
+/* The menu enters from inline end, respecting the document direction. */
+@utility drawer-motion {
+  inline-size: min(100%, 85vi);
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:is([data-starting-style], [data-ending-style]) {
+      translate: 100% 0;
+    }
+
+    &:dir(rtl):is([data-starting-style], [data-ending-style]) {
+      translate: -100% 0;
+    }
   }
 }

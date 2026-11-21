@@ -27,7 +27,7 @@ export default function ErrorPage({ error, retry }: { error: unknown; retry: () 
   }, [title]);
 
   return (
-    <main id="main" tabIndex={-1} className="mx-auto px-4 py-8 max-inline-reading">
+    <div className="mx-auto max-inline-reading">
       <h1 ref={headingRef} tabIndex={-1} className="text-h1">
         {title}
       </h1>
@@ -46,6 +46,6 @@ export default function ErrorPage({ error, retry }: { error: unknown; retry: () 
           {t("backHome")}
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

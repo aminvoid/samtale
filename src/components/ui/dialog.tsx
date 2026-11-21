@@ -18,7 +18,7 @@ export type DialogProps = Pick<
     /** A native button or a primitive that renders one, such as Button or IconButton. */
     trigger?: ReactElement;
     className?: string;
-    presentation?: "dialog" | "sheet";
+    presentation?: "dialog" | "sheet" | "drawer";
   };
 
 export function Dialog({
@@ -35,6 +35,7 @@ export function Dialog({
 }: DialogProps) {
   const direction = useDirection();
   const sheet = presentation === "sheet";
+  const drawer = presentation === "drawer";
 
   return (
     <BaseDialog.Root {...props} modal>
@@ -43,7 +44,7 @@ export function Dialog({
         <BaseDialog.Backdrop
           className={cn(
             "fixed inset-0 z-50 bg-scrim transition-opacity ease-standard data-ending-style:opacity-0 data-starting-style:opacity-0",
-            sheet
+            sheet || drawer
               ? "duration-(--duration-slow)"
               : "duration-(--duration-base) data-ending-style:duration-(--duration-fast)",
           )}
@@ -52,7 +53,7 @@ export function Dialog({
           dir={direction}
           className={cn(
             "fixed inset-0 z-50 grid overscroll-contain",
-            sheet ? "items-end" : "place-items-center p-4",
+            drawer ? "justify-items-end" : sheet ? "items-end" : "place-items-center p-4",
           )}
         >
           <BaseDialog.Popup
@@ -62,9 +63,11 @@ export function Dialog({
               "overflow-auto overscroll-contain bg-surface-raised p-6 shadow-overlay inline-full",
               "transition-opacity ease-standard data-ending-style:opacity-0 data-starting-style:opacity-0",
               "motion-safe:transition-[opacity,scale,translate]",
-              sheet
-                ? "rounded-ss-sheet rounded-se-sheet pbe-[max(--spacing(6),env(safe-area-inset-bottom))] duration-(--duration-slow) max-block-[85dvh] motion-safe:data-ending-style:translate-y-full motion-safe:data-starting-style:translate-y-full"
-                : "rounded-sheet duration-(--duration-base) max-block-full max-inline-dialog data-ending-style:duration-(--duration-fast) motion-safe:data-ending-style:scale-98 motion-safe:data-starting-style:scale-98 md:max-inline-120",
+              drawer
+                ? "drawer-motion duration-(--duration-slow) block-full max-block-dvh max-inline-80"
+                : sheet
+                  ? "rounded-ss-sheet rounded-se-sheet pbe-[max(--spacing(6),env(safe-area-inset-bottom))] duration-(--duration-slow) max-block-[85dvh] motion-safe:data-ending-style:translate-y-full motion-safe:data-starting-style:translate-y-full"
+                  : "rounded-sheet duration-(--duration-base) max-block-full max-inline-dialog data-ending-style:duration-(--duration-fast) motion-safe:data-ending-style:scale-98 motion-safe:data-starting-style:scale-98 md:max-inline-120",
               className,
             )}
           >

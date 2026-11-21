@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+// Strict CSP forbids eval. Zod v4 otherwise probes `Function("")` on first parse, which the browser
+// reports as a CSP violation even though Zod catches it. jitless skips the probe (global, idempotent).
+z.config({ jitless: true });
+
 const seconds = z.number().int().positive();
 const clipId = z.string().min(1);
 

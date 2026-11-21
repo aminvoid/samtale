@@ -1,5 +1,9 @@
 /** Public, versioned contract shared by content:build and the repository (ADR-0002). */
 import { z } from "zod";
+
+// Strict CSP forbids eval. Zod v4 otherwise probes `Function("")` on first parse, which the browser
+// reports as a CSP violation even though Zod catches it. jitless skips the probe (global, idempotent).
+z.config({ jitless: true });
 import { wordTimingSchema } from "../../audio/manifest-schema";
 
 const id = z.string().min(1);

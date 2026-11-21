@@ -4,6 +4,10 @@
  */
 import { z } from "zod";
 
+// Strict CSP forbids eval. Zod v4 otherwise probes `Function("")` on first parse, which the browser
+// reports as a CSP violation even though Zod catches it. jitless skips the probe (global, idempotent).
+z.config({ jitless: true });
+
 const hash = z.string().regex(/^[0-9a-f]{20}$/, { error: "hash must be 20 lowercase hex characters" });
 const ms = z.number().int().nonnegative();
 

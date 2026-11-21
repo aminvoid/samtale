@@ -1,17 +1,44 @@
 {
   "metadata": {
-    "appName": "تمرین شفاهی PD3",
+    "appName": "Samtale",
     "titleTemplate": "{page} · {appName}",
     "description": "آمادگی برای بخش دوم آزمون شفاهی PD3 (delprøve 2)، با توضیح فارسی"
   },
   "common": {
-    "skipToContent": "رفتن به محتوای اصلی"
+    "skipToContent": "رفتن به محتوای اصلی",
+    "comingSoon": "این بخش به‌زودی در دسترس خواهد بود."
   },
   "home": {
-    "title": "آمادگی برای بخش دوم آزمون شفاهی <ltr>PD3</ltr>",
     "firstQuestionTip": "سؤال اول معمولاً با <da>Hvorfor tror du, …?</da> تمام می‌شود.",
     "repeatLabel": "اگر سؤال را متوجه نشدید، می‌توانید بگویید:",
-    "topicCount": "{count, number, integer} موضوع"
+    "topicCount": "{count, number, integer} موضوع",
+    "descriptor": "تمرین گفت‌وگوی آزمون شفاهی <ltr>PD3</ltr>",
+    "purpose": "بخش <da>delprøve {part}</da> آزمون شفاهی <ltr>PD3</ltr> را با توضیح فارسی تمرین کنید.",
+    "partGloss": "بخش دوم آزمون شفاهی: گفت‌وگو دربارهٔ موضوع آماده‌نشده.",
+    "source": "سؤال‌های واقعی آزمون‌های منتشرشده از {start, number, year} تا {end, number, year}. در موارد مشخص‌شده، متن سؤال‌ها با دفترچهٔ ممتحن تطبیق داده شده است.",
+    "independent": "این برنامه را <da>Styrelsen for International Rekruttering og Integration</da> (<ltr>SIRI</ltr>، ادارهٔ برگزارکنندهٔ آزمون) نساخته است.",
+    "guide": "<da>Delprøve {part}</da> چطور برگزار می‌شود؟",
+    "guideHint": "حدود {minutes, number, integer} دقیقه مطالعه",
+    "topics": "مطالعهٔ موضوع‌های گذشته",
+    "mock": "شرکت در آزمون تمرینی",
+    "mockHint": "به ترتیب آزمون واقعی، با سرعت دلخواه شما",
+    "tipTitle": "یک نکته برای سؤال اول"
+  },
+  "audio": {
+    "play": "پخش",
+    "playExaminer": "پخش صدای ممتحن",
+    "playModel": "پخش پاسخ نمونه",
+    "playbackFailed": "پخش نشد · دوباره تلاش کنید",
+    "loadFailed": "صدا بارگیری نشد · دوباره تلاش کنید",
+    "unavailable": "صدا در دسترس نیست",
+    "position": "موقعیت پخش",
+    "positionValue": "{elapsed} از {total}",
+    "clock": "{minutes, number, integer}:{seconds, number, twoDigit}",
+    "unknownDuration": "–:––",
+    "speed": "سرعت",
+    "speedMultiplier": "{rate, number, year}×",
+    "speedOption": "سرعت {rate, number, year} برابر",
+    "tapToHear": "برای شنیدن ممتحن ضربه بزنید"
   },
   "notFound": {
     "title": "این صفحه پیدا نشد",
@@ -21,5 +48,88 @@
     "title": "مشکلی پیش آمد",
     "retry": "دوباره تلاش کنید",
     "backHome": "بازگشت به خانه"
+  },
+  "nav": {
+    "primary": "بخش‌های اصلی",
+    "menu": "باز کردن منو",
+    "close": "بستن منو",
+    "footer": "پیوندهای پایین صفحه",
+    "home": "خانه",
+    "topics": "موضوع‌ها",
+    "mock": "آزمون",
+    "mockFull": "آزمون تمرینی",
+    "templates": "عبارت‌ها",
+    "templatesFull": "الگوها و عبارت‌ها",
+    "guide": "راهنما",
+    "progress": "پیشرفت من",
+    "settings": "تنظیمات",
+    "about": "دربارهٔ برنامه و منابع",
+    "privacy": "حریم خصوصی",
+    "guideTitle": "راهنمای <da>delprøve {part}</da>",
+    "guideOverview": "راهنمای آزمون شفاهی",
+    "siriCredit": "این برنامه محصول رسمی <ltr>SIRI</ltr> نیست.",
+    "bookletCredit": "منبع موضوع‌ها و سؤال‌ها: کتابچهٔ شری رحیمی."
+  },
+  "library": {
+    "title": "موضوع‌های <da>delprøve {part}</da>",
+    "subtitle": "موضوع‌های آزمون‌های گذشته، از {start, number, year} تا {end, number, year}",
+    "views": "روش مرور موضوع‌ها",
+    "view": {
+      "themes": "موضوع‌ها",
+      "terms": "دوره‌های آزمون",
+      "similar": "سؤال‌های مشابه"
+    },
+    "topicCount": "{count, number, integer} موضوع",
+    "topicsHeading": "موضوع‌های آزمون",
+    "empty": "هنوز موضوعی منتشر نشده است.",
+    "termJump": "رفتن به یک دورهٔ آزمون",
+    "olderShort": "قالب قدیمی",
+    "olderInfo": "«قالب قدیمی» یعنی چه؟",
+    "olderExplanation": "در این قالب، آزمون با توصیف کوتاه یک تصویر شروع می‌شد. بعد از آن، ممتحن همان دو سؤال اجباریِ قالب فعلی را همراه با سؤال‌های تکمیلی می‌پرسید. توصیف تصویر از آزمون حذف شده است. سؤال‌های این دوره‌ها همچنان برای تمرین مناسب‌اند. در آزمون تمرینی، این موضوع با قالب امروز اجرا می‌شود.",
+    "eraCurrent": "قالب امروز (از <term></term>)",
+    "eraOlder": "قالب قدیمی (پیش از <term></term>)",
+    "term": {
+      "maj": "<da>Maj–Juni {year}</da>",
+      "nov": "<da>Nov–Dec {year}</da>",
+      "withLetter": "{term} · {letter}"
+    },
+    "filter": {
+      "label": "زیرموضوع‌ها",
+      "all": "همه",
+      "empty": "موضوعی در این زیرموضوع پیدا نشد."
+    },
+    "search": {
+      "title": "جست‌وجوی موضوع‌ها",
+      "label": "جست‌وجوی موضوع‌ها به دانمارکی یا فارسی",
+      "placeholder": "به دانمارکی یا فارسی بنویسید",
+      "submit": "جست‌وجو",
+      "clear": "پاک کردن جست‌وجو",
+      "count": "{count, plural, =0 {موضوعی پیدا نشد} other {{count, number, integer} موضوع پیدا شد}}",
+      "noResults": "موضوعی برای «<isolate>{query}</isolate>» پیدا نشد.",
+      "browseInstead": "مرور بر اساس موضوع",
+      "matchedIn": "پیدا شد در <part></part>",
+      "topicTitle": "عنوان موضوع",
+      "situationTitle": "عنوان <part></part>",
+      "question": "سؤال <part></part>",
+      "followup": "سؤال تکمیلی <part></part>",
+      "keyword": "کلمه‌های کلیدی <part></part>",
+      "generalQuestion": "سؤال کلی"
+    },
+    "part": {
+      "sitA": "موقعیت <ltr>A</ltr>",
+      "sitB": "موقعیت <ltr>B</ltr>",
+      "general": "بخش کلی"
+    },
+    "similar": {
+      "title": "سؤال‌های مشابه در چند آزمون",
+      "intro": "در چند آزمون منتشرشده بین {start, number, year} و {end, number, year} سؤال‌های مشابهی آمده‌اند. با مرور آن‌ها در کنار هم، می‌توانید برای چند موضوع از ایده‌های مشترک استفاده کنید.",
+      "confidentialityNote": "از زمستان {year, number, year}، <ltr>SIRI</ltr> از مجموعه‌ای محرمانه از موضوع‌ها دوباره استفاده می‌کند. سؤال‌های این برنامه از آزمون‌های منتشرشده تا <term></term> آمده‌اند که <ltr>SIRI</ltr> استفاده از آن‌ها را برای آموزش مجاز می‌داند.",
+      "occurrence": "<term></term> · <part></part>",
+      "empty": "با انتشار موضوع‌های بیشتر، سؤال‌های مشابه اینجا نمایش داده می‌شوند."
+    },
+    "progress": {
+      "due": "آمادهٔ مرور",
+      "practised": "{count, number, integer} بار تمرین · <date></date>"
+    }
   }
 }

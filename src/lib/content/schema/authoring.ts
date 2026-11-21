@@ -9,6 +9,10 @@
  */
 import { z } from "zod";
 
+// Strict CSP forbids eval. Zod v4 otherwise probes `Function("")` on first parse, which the browser
+// reports as a CSP violation even though Zod catches it. jitless skips the probe (global, idempotent).
+z.config({ jitless: true });
+
 export const SCHEMA_VERSION = 0 as const;
 const schemaVersion = z.literal(SCHEMA_VERSION);
 

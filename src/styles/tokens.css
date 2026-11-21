@@ -244,3 +244,8 @@
     --color-role-example-subtle: #36211a;
   }
 }
+
+@theme {
+  --container-library-filters: 15rem;
+  --container-library-search: 30rem;
+}

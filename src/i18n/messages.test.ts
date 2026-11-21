@@ -29,6 +29,7 @@ const PLAIN_TEXT_KEYS = /^metadata\./;
 function textOutsideTags(message: string): string {
   return message
     .replace(/<(da|ltr)>[\s\S]*?<\/\1>/g, "")
+    .replace(/<\/?[a-zA-Z][a-zA-Z0-9]*>/g, "")
     .replace(/\{\s*[A-Za-z_]\w*\s*(,\s*[A-Za-z]+\s*)?(,\s*[A-Za-z]+\s*)?/g, "{")
     .replace(/(?:\b(?:zero|one|two|few|many|other)|=\d+)\s*\{/g, "{");
 }

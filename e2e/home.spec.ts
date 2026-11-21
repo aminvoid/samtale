@@ -15,7 +15,7 @@ test.describe("home (fa)", () => {
     for (const el of await danish.all()) await expect(el).toHaveAttribute("dir", "ltr");
 
     // Danish inside the Persian tip is isolated as its own LTR run (ADR-0004 §3).
-    await expect(page.locator('bdi[lang="da"]')).toHaveText("Hvorfor tror du, …?");
+    await expect(page.locator('bdi[lang="da"]').filter({ hasText: "Hvorfor tror du, …?" })).toBeVisible();
 
     const headingFont = await page
       .getByRole("heading", { level: 1 })

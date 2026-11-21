@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { DirectionProvider } from "@/components/ui/direction-provider";
+import { SkipLink } from "@/components/ui/skip-link";
+import { AppShell } from "@/features/app-shell/app-shell";
 import { getDirection } from "@/i18n/config";
 import { routing } from "@/i18n/routing";
 import { publicEnv } from "@/lib/env/public";
@@ -36,11 +38,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   return (
     <html lang={locale} dir={direction} className={fontVariables}>
       <body>
-        <a href="#main" className="skip-link">
-          {t("skipToContent")}
-        </a>
+        <SkipLink>{t("skipToContent")}</SkipLink>
         <NextIntlClientProvider>
-          <DirectionProvider direction={direction}>{children}</DirectionProvider>
+          <DirectionProvider direction={direction}>
+            <AppShell>{children}</AppShell>
+          </DirectionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

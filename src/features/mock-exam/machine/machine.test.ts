@@ -392,22 +392,31 @@ describe("mock exam scenarios", () => {
     expect(h.state.type).toBe("run.unit.answering");
   });
 
-  it("T13 stops the partial take and releases the microphone before closing after C3", () => {
-    const h = new Harness("exam").first().second();
-    h.clockTo(limit - sec(3));
-    h.enterNext();
-    h.clockTo(limit);
-    const result = h.tick(grace);
-    expect(result.map(({ type }) => type)).toEqual([
-      "stopRecording",
-      "releaseMic",
-      "persistAttempt",
-      "clearInProgressMarker",
-      "playClip",
-    ]);
-    expect(played(result)).toEqual([lines.closing]);
-    expect(h.persisted.answers.at(-1)?.recorded).toBe(true);
-  });
+  it.each([
+    { type: "TICK", delay: 0 },
+    { type: "TICK", delay: sec(5) },
+    { type: "DONE", delay: sec(5) },
+  ] satisfies readonly { type: "TICK" | "DONE"; delay: number }[])(
+    "T13 stops the partial take and releases the microphone before closing after C3 ($type, $delay ms late)",
+    ({ type, delay }) => {
+      const h = new Harness("exam").first().second();
+      h.clockTo(limit - sec(3));
+      h.enterNext();
+      h.clockTo(limit);
+      const result = h.send({ type }, grace + delay);
+      expect(result.map(({ type }) => type)).toEqual([
+        "stopRecording",
+        "releaseMic",
+        "persistAttempt",
+        "clearInProgressMarker",
+        "playClip",
+      ]);
+      expect(played(result)).toEqual([lines.closing]);
+      expect(h.persisted.answers.at(-1)?.recorded).toBe(true);
+      expect(h.persisted.totalMs).toBe(limit + grace);
+      expect(h.clock).toBe(limit + grace);
+    },
+  );
 
   it("T14 completes a transition already playing at the limit and asks q2", () => {
     const h = new Harness("exam").first();
@@ -1431,6 +1440,7 @@ describe("mock exam invariants (fixed-seed properties)", () => {
           if (!after.context.leaveDialog) continue;
           expect(played(commands)).toHaveLength(0);
           expect(after.context.answersStarted).toBe(before.context.answersStarted);
+          if (after.type === "run.unit.answering") expect(before.type).toBe("run.unit.answering");
         }
       },
       () => new Harness("exam").speaking(),
@@ -1680,13 +1690,39 @@ describe("media and deadline races", () => {
     expect(h.context.skippedFollowups).toHaveLength(1);
   });
 
+  it("drains the exam limit before Back or Cancel can play a deferred follow-up", () => {
+    const h = new Harness("exam").first().second();
+    h.clockTo(limit - sec(2));
+    h.done();
+    h.finishThanks();
+    expect(played(h.send({ type: "LEAVE_REQUESTED" }))).toEqual([]);
+    expect(h.item.id).toBe(secondFollowup.id);
+    expect(h.state).toMatchObject({ type: "run.unit.speaking", audio: { playback: { phase: "deferred" } } });
+
+    const at = h.at + sec(3);
+    const cancel = transition(h.state, { type: "LEAVE_CANCELLED", at });
+    const back = transition(h.state, { type: "BACK_PRESSED", at });
+    expect(cancel.state.type).toBe("run.closing");
+    expect(back.state).toEqual(cancel.state);
+    expect(back.commands).toEqual([{ type: "rearmBackGuard" }, ...cancel.commands]);
+    expect(played(back.commands)).toEqual([lines.closing]);
+
+    const tick = transition(h.state, { type: "TICK", at });
+    expect(tick.state.context.leaveDialog).toBe(true);
+    expect(tick.state.type).not.toBe("run.unit.answering");
+    expect(played(tick.commands)).toEqual([]);
+    expect(transition(tick.state, { type: "LEAVE_CANCELLED", at })).toEqual(cancel);
+  });
+
   it("does not play a closing clip or commit the attempt until an open leave dialog is cancelled", () => {
     const h = new Harness("exam").first().second();
     h.clockTo(limit);
     h.send({ type: "LEAVE_REQUESTED" });
-    expect(played(h.tick(grace))).toEqual([]);
+    expect(played(h.tick(grace + sec(2)))).toEqual([]);
     expect(commandsOf(h.log, "persistAttempt")).toHaveLength(0);
-    expect(played(h.send({ type: "LEAVE_CANCELLED" }))).toEqual([lines.closing]);
+    expect(played(h.send({ type: "LEAVE_CANCELLED" }, sec(3)))).toEqual([lines.closing]);
+    expect(h.persisted.totalMs).toBe(limit + grace + sec(5));
+    expect(h.clock).toBe(h.persisted.totalMs);
   });
 
   it("handles interruption during a practice leave dialog without advancing frozen timers", () => {

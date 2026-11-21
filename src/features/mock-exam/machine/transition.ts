@@ -461,11 +461,11 @@ export function transition(state: State, event: Event): Transition {
     saveAnswer(atMs);
     patch({ answerClock: null, grace: null, graceNotice: null, recordingCap: null, sheet: "none" });
     if (context.leaveDialog) next = { type: "run.unit.answering", context, waitingToAdvance: true };
-    else afterAnswer();
+    else afterAnswer(atMs);
   }
 
-  function afterAnswer() {
-    if (unitAfterAnswer() === null) closeAttempt();
+  function afterAnswer(atMs = at) {
+    if (unitAfterAnswer() === null) closeAttempt(atMs);
     else startAudio({ type: "run.thanks", context, audio: sequence([thanksClip]) });
   }
 
@@ -497,14 +497,14 @@ export function transition(state: State, event: Event): Transition {
     }
   }
 
-  function makeAttempt(status: AttemptRecord["status"]): AttemptRecord | null {
+  function makeAttempt(status: AttemptRecord["status"], atMs = at): AttemptRecord | null {
     if (!context.marker) return null;
-    saveAnswer(at);
+    saveAnswer(atMs);
     return {
       ...context.marker,
       part: 2,
       situationKey: context.situationKey,
-      totalMs: elapsed(context.examClock, at),
+      totalMs: elapsed(context.examClock, atMs),
       status,
       askedItemIds: context.askedItemIds,
       skippedFollowups: context.skippedFollowups,
@@ -517,7 +517,7 @@ export function transition(state: State, event: Event): Transition {
     commands.push({ type: "releaseMic" });
   }
 
-  function clearTimers() {
+  function clearTimers(atMs = at) {
     patch({
       look: null,
       load: null,
@@ -525,17 +525,17 @@ export function transition(state: State, event: Event): Transition {
       graceNotice: null,
       recordingCap: null,
       answerClock: null,
-      examClock: context.examClock && { elapsedMs: elapsed(context.examClock, at), since: null },
+      examClock: context.examClock && { elapsedMs: elapsed(context.examClock, atMs), since: null },
     });
   }
 
-  function closeAttempt() {
-    const attempt = makeAttempt(context.interrupted ? "interrupted" : "completed");
+  function closeAttempt(atMs = at) {
+    const attempt = makeAttempt(context.interrupted ? "interrupted" : "completed", atMs);
     if (!attempt) return;
     discardAnnouncements("mock.live.oneMinuteLeft");
     stopRecording();
     releaseMic();
-    clearTimers();
+    clearTimers(atMs);
     commands.push({ type: "persistAttempt", attempt }, { type: "clearInProgressMarker" });
     patch({ marker: null });
     const id = play(closingClip);
@@ -761,6 +761,7 @@ export function transition(state: State, event: Event): Transition {
 
   function cancelLeave() {
     if (!context.leaveDialog) return;
+    drainDeadlines();
     patch({ leaveDialog: false });
     if (next.type === "hold.paused" && next.pausedByDialog) resumePaused(next.point);
     else if ("audio" in next && next.audio.playback.phase === "deferred") startAudio(next);
@@ -789,9 +790,8 @@ export function transition(state: State, event: Event): Transition {
       if (cursor !== null) startUnit(cursor);
     } else if (limit && unit?.role === "secondFollowup") {
       if (next.audio.playback.phase === "pending") commands.push({ type: "stopAudio" });
-      if (context.leaveDialog) {
-        next = { type: "run.unit.answering", context, waitingToAdvance: true };
-      } else closeAttempt();
+      // The previous "Tak." has already played. Defer its continuation until the dialog closes.
+      afterAudio({ type: "run.thanks", context, audio: sequence([thanksClip]) });
     }
   }
 
@@ -1318,10 +1318,7 @@ export function transition(state: State, event: Event): Transition {
         else openLeave();
         return;
       case "LEAVE_CANCELLED":
-        if (context.leaveDialog) {
-          drainDeadlines();
-          cancelLeave();
-        }
+        cancelLeave();
         return;
       case "LEAVE_CONFIRMED":
         if (context.leaveDialog || activeRun(next) || isHold(next)) leave("leave");

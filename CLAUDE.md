@@ -2,7 +2,7 @@
 
 A responsive web app that helps **Persian-speaking learners** prepare for **delprøve 2 of the PD3 oral exam** (*Prøve i Dansk 3, mundtlig kommunikation*). Learners browse real past exam topics, read and listen to questions and model answers, practise speaking, and take timed mock exams.
 
-**Status (2026-11-18):** pre-build. Agreed concept: [docs/product/concept.md](docs/product/concept.md). No app code yet.
+**Status (2026-11-22):** in build. Done: content (51 topics, 49 approved), audio, topic library, topic study page, exam guide, mock exam runtime. In progress: mock exam screens. Agreed concept: [docs/product/concept.md](docs/product/concept.md).
 
 ## Decisions already made (don't reopen these without the user)
 
@@ -22,7 +22,7 @@ All in `docs/resources/`.
 
 | File | What it is | Rules |
 |---|---|---|
-| `PD3_Mundtlig_Delproeve2.md` | **The primary content source.** The owner's Markdown extraction of the booklet by Shery Rahimi: 51 topics from 2016–2024 (17 terms × A/B/C, each with an anchor such as `<a id="t-N16C">`), 18 older topics (2004–2015) in an appendix, the answer templates, the toolbox, the repeated-questions table and the word list. Clean Unicode: Persian is NFC, uses ZWNJ, and has no presentation forms or Arabic ي/ك. | **Copyrighted.** Written permission from the author is being requested. Don't publish its content until permission is confirmed. Parse this file, not the PDF. Treat it as faithful to the PDF, but report any mismatch you find. |
+| `PD3_Mundtlig_Delproeve2.md` | **The primary content source.** The owner's Markdown extraction of the booklet by Shery Rahimi: 51 topics from 2016–2024 (17 terms × A/B/C, each with an anchor such as `<a id="t-N16C">`), 18 older topics (2004–2015) in an appendix, the answer templates, the toolbox, the repeated-questions table and the word list. Clean Unicode: Persian is NFC, uses ZWNJ, and has no presentation forms or Arabic ي/ك. | **Copyrighted.** The author's written permission was obtained by the owner on 2026-11-21. It covers the app's use of the booklet; its exact scope follows the checklist in PRD §11 (D-12). Don't publish beyond that scope, and ask the owner if in doubt. Parse this file, not the PDF. Treat it as faithful to the PDF, but report any mismatch you find. |
 | `PD3_Mundtlig_Delproeve2.pdf` | The original 116-page PDF the Markdown was made from | Use it only to cross-check the Markdown, using its `## n / 116` page markers. Don't parse it again. **Copyrighted**, same rules. |
 | `ABOUT_PD3_MUNDTLIG.md` | Verified notes on the 2026 exam rules, with sources | The source of truth for exam format, timings and terminology |
 

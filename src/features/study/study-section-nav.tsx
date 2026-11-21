@@ -8,8 +8,14 @@ import { cn } from "@/lib/utils/cn";
 type StudyAnchor = "sitA" | "sitB" | "general" | "related";
 type NavEntry = { id: StudyAnchor; label: ReactNode; compactLabel?: ReactNode };
 
-function focusSection(heading: HTMLElement) {
-  heading.scrollIntoView({ block: "start", behavior: "instant" });
+/**
+ * Arriving on a page with a fragment jumps instantly: Next's own scroll handling after navigation
+ * would interrupt a smooth scroll and leave the page at the top. In-page fragment changes scroll
+ * smoothly unless the user prefers reduced motion.
+ */
+function focusSection(heading: HTMLElement, smooth: boolean) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  heading.scrollIntoView({ block: "start", behavior: smooth && !reducedMotion ? "smooth" : "instant" });
   heading.focus({ preventScroll: true });
 }
 
@@ -39,7 +45,7 @@ export function StudySectionNav({ entries, mockHref }: { entries: NavEntry[]; mo
       });
     }
 
-    function focusHash() {
+    function focusHash(smooth: boolean) {
       cancelAnimationFrame(focusFrame);
       // The shell measures the sticky bar before the scoped fragment scroll. A previous
       // topic can still have the same fragment ID while Next retains it in a hidden Activity.
@@ -47,21 +53,24 @@ export function StudySectionNav({ entries, mockHref }: { entries: NavEntry[]; mo
         focusFrame = requestAnimationFrame(() => {
           const active = headings.find(({ id }) => window.location.hash === `#${id}`);
           if (active === undefined) return;
-          focusSection(active.element);
+          focusSection(active.element, smooth);
           setCurrent(active.id);
         });
       });
     }
 
-    focusHash();
+    const onHashChange = () => {
+      focusHash(true);
+    };
+    focusHash(false);
     trackSection();
-    window.addEventListener("hashchange", focusHash);
+    window.addEventListener("hashchange", onHashChange);
     window.addEventListener("scroll", trackSection, { passive: true });
     window.addEventListener("resize", trackSection);
     return () => {
       cancelAnimationFrame(focusFrame);
       cancelAnimationFrame(scrollFrame);
-      window.removeEventListener("hashchange", focusHash);
+      window.removeEventListener("hashchange", onHashChange);
       window.removeEventListener("scroll", trackSection);
       window.removeEventListener("resize", trackSection);
     };
@@ -89,7 +98,7 @@ export function StudySectionNav({ entries, mockHref }: { entries: NavEntry[]; mo
           const heading = root?.querySelector<HTMLElement>(`#${entry.id}`);
           if (heading != null) {
             event.preventDefault();
-            focusSection(heading);
+            focusSection(heading, true);
             setCurrent(entry.id);
           }
         }}

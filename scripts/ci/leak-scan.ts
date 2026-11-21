@@ -13,13 +13,13 @@
  * a published title in a review note doesn't fail the build.
  */
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
-import { extname, join, relative, sep } from "node:path";
+import { dirname, extname, join, relative, sep } from "node:path";
 import { z } from "zod";
 import { ReviewNoteSchema, ReviewStatusSchema } from "../../src/lib/content/schema/authoring.ts";
 import { bareExamYear, confidentialityHits, examReferenceYears } from "../content/lib/confidentiality.ts";
 import { MarginNotesFileSchema, ReviewLedgerSchema } from "../content/lib/pipeline-schema.ts";
 import { READ_MODEL_PATH, requireArtifact, type Channel } from "./build-artifacts.ts";
-import { publishedTopicText, publicTextFiles, searchIndexText } from "./public-corpus.ts";
+import { publishedTopicText, publicTextFiles, publicTopicText, searchIndexText } from "./public-corpus.ts";
 
 /** Length of the text windows matched in the output (UTF-16 code units, after normalisation). */
 export const WINDOW = 24;
@@ -233,8 +233,9 @@ export function collectCanaries(options: {
     if (existsSync(path)) collectStrings(schema.parse(readJson(path)), publicStrings);
   }
   const published = topics.filter((t) => channel === "preview" || t.approved);
+  const officialUrls = new Map<string, string>();
   for (const topic of published) {
-    const text = publishedTopicText.parse(topic.raw);
+    const text = publicTopicText(topic.raw, officialUrls, dirname(contentDir));
     collectStrings(text, publicStrings);
     publicStrings.push(...searchIndexText(text));
   }

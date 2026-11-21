@@ -357,6 +357,66 @@ describe("scanBuild", () => {
     expect(scan("production")).toEqual([]);
   });
 
+  it("exempts only the verification strings published in the selected channel", () => {
+    const parts = ["Hvad tror du, at de allerfleste mener?", "Hvorfor gør det en forskel her?"];
+    const matchedParts = "Identiske ord, der stadig skal udelades som særskilt sammenligning.";
+    const copyTitle = "En kopi af censor- og eksaminatorhæftet";
+    const copyNote = "Copy from a teacher's website; not available from SIRI.";
+    const mirror = "https://example.org/unpublished-copy.pdf";
+    const officialUrl = "https://example.org/official-documents/exam-booklet.pdf";
+    const publicStrings = [parts.join(" "), copyTitle, copyNote, officialUrl];
+    const fixture = topic("2024-maj-b", "extracted", UNAPPROVED_QUESTION);
+    const sourceRef = { document: "siri-2024-maj", pages: [8] };
+    write("scripts/content/data/siri-2024-maj.json", {
+      document: { authenticity: "official", url: officialUrl },
+    });
+    write("content/topics/2024-maj-b.json", {
+      ...fixture,
+      review: {
+        ...fixture.review,
+        notes: [...publicStrings, matchedParts, mirror].map((text) => ({ text })),
+      },
+      general: {
+        ...fixture.general,
+        question: {
+          ...fixture.general.question,
+          siriCheck: {
+            status: "differs",
+            siriParts: parts,
+            sourceRef: { ...sourceRef, document: "siri-2019-nov" },
+            sourceDisplay: {
+              availability: "third-party-copy",
+              title: copyTitle,
+              note: copyNote,
+              url: mirror,
+            },
+          },
+        },
+        followups: [
+          {
+            text: fixture.general.question.text,
+            answer: fixture.general.question.modelAnswer,
+            siriCheck: {
+              status: "matches",
+              siriParts: [matchedParts],
+              sourceRef,
+              sourceDisplay: { availability: "official", title: "Censor- og eksaminatorhæftet" },
+            },
+          },
+        ],
+      },
+    });
+
+    write(".next/server/app/fa.rsc", JSON.stringify(publicStrings));
+    expect(scan("preview")).toEqual([]);
+    expect(scan("production").map(({ canary }) => canary)).toContain(parts.join(" ").slice(0, 24));
+    write(".next/server/app/fa.rsc", JSON.stringify(matchedParts));
+    write(".next/server/app/mirror.rsc", JSON.stringify(mirror));
+    expect(scan("preview").map(({ canary }) => canary)).toEqual(
+      expect.arrayContaining([matchedParts.slice(0, 24), mirror.slice(0, 24)]),
+    );
+  });
+
   it("matches the quoted review status and internal keys", () => {
     write(".next/server/app/fa.rsc", String.raw`{\"status\":\"needs-review\",\"siriParts\":[]}`);
     const canariesFound = scan("preview").map((l) => l.canary);

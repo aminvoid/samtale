@@ -27,6 +27,14 @@ const term: TermSummary = {
   topicIds: [],
 };
 const terms = new Map([[term.id, term]]);
+const officialSource = {
+  availability: "official",
+  title: "Censor- og eksaminatorhæfte",
+  pages: [8],
+  url: "https://danskogproever.dk/media/prob2ifo/censor-og-eksaminatorhaefte-pd3-mdt.pdf",
+} satisfies NonNullable<
+  Extract<Topic["general"]["question"]["verification"], { status: "matches" }>["sourceDisplay"]
+>;
 const answer: Topic["general"]["question"]["modelAnswer"] = {
   id: "2024-maj-a.sitA.q1.answer",
   text: { da: "For det første er det vigtigt." },
@@ -121,11 +129,17 @@ describe("study sections", () => {
       status: "matches",
       sourceTermId: term.id,
       checkedOn: "2026-11-18",
+      sourceDisplay: officialSource,
     } satisfies Topic["general"]["question"]["verification"];
     const view = renderWithIntl(<VerificationNote verification={verification} sourceTerm={term} />);
     expect(screen.getByText(study.sources.official)).toBeVisible();
     await user.click(screen.getByRole("button", { name: /جزئیات تطبیق/ }));
-    expect(screen.getByText("Maj–Juni 2024")).toHaveAttribute("lang", "da");
+    expect(screen.getByText(officialSource.title)).toHaveAttribute("lang", "da");
+    expect(screen.getByText("صفحهٔ ۸")).toBeVisible();
+    expect(screen.getByRole("link", { name: study.sources.openOfficialSource })).toHaveAttribute(
+      "href",
+      officialSource.url,
+    );
     expect(screen.getByText(/تاریخ بررسی/)).toBeVisible();
     view.unmount();
 
@@ -134,24 +148,49 @@ describe("study sections", () => {
     expect(screen.queryByText(study.sources.official)).not.toBeInTheDocument();
   });
 
-  it("shows unchecked and differing booklet text labels with the available SIRI source", async () => {
+  it("reveals alternate Danish wording and the third-party source beside the booklet question", async () => {
     const user = userEvent.setup();
+    const alternative = "Hvorfor mener du det?";
+    const question = {
+      id: "2019-nov-b.sitA.q1",
+      text: { da: "Hvorfor tror du det?", fa: "به نظرتان چرا؟" },
+      keywords: [],
+      modelAnswer: answer,
+      verification: {
+        status: "differs",
+        sourceTermId: "2019-nov",
+        checkedOn: "2026-11-21",
+        alternative: { da: alternative },
+        sourceDisplay: {
+          availability: "third-party-copy",
+          title: "Censor- og eksaminatorhæfte, November-december 2019",
+          pages: [8, 9],
+          note: "Copy from a teacher's website; not available from SIRI.",
+        },
+      },
+    } satisfies Topic["general"]["question"];
     renderWithIntl(
-      <>
+      <AudioPlayerProvider>
         <VerificationNote verification={{ status: "unchecked" }} />
-        <VerificationNote
-          verification={{ status: "differs", sourceTermId: term.id, checkedOn: "2026-11-18" }}
-          sourceTerm={term}
-        />
-      </>,
+        <StudyQuestion question={question} kind="first-question" terms={terms} />
+      </AudioPlayerProvider>,
     );
     expect(screen.getByText(/متن سؤال از کتابچه، برگرفته/)).toBeVisible();
     expect(screen.getByText(study.sources.booklet)).toBeVisible();
     expect(screen.queryByText(study.sources.official)).not.toBeInTheDocument();
+    expect(screen.getByText(question.text.da)).toBeVisible();
+    expect(screen.getByText(alternative)).not.toBeVisible();
     await user.click(screen.getByRole("button", { name: /متن SIRI کمی فرق دارد/ }));
+    expect(screen.getByText(question.text.da)).toBeVisible();
+    const comparison = screen.getByText(alternative);
+    expect(comparison).toBeVisible();
+    expect(comparison).toHaveAttribute("lang", "da");
+    expect(comparison).toHaveAttribute("dir", "ltr");
     expect(screen.getByText(/منبع تطبیق/)).toBeVisible();
-    expect(screen.getByText("Maj–Juni 2024")).toHaveAttribute("dir", "ltr");
-    expect(screen.getByText(/برای نمایش در دسترس نیست/)).toBeVisible();
+    expect(screen.getByText(question.verification.sourceDisplay.title)).toHaveAttribute("dir", "ltr");
+    expect(screen.getByText(/صفحه‌های ۸ و ۹/)).toBeVisible();
+    expect(screen.getByText(/نسخه‌ای از وب‌سایت یک مدرس/)).toBeVisible();
+    expect(screen.queryByRole("link", { name: study.sources.openOfficialSource })).not.toBeInTheDocument();
   });
 
   it("records opening separately from explicit, device-local practice confirmation", async () => {
@@ -178,8 +217,9 @@ describe("study sections", () => {
     const done = screen.getByRole("button", { name: study.answerDone });
     await user.click(done);
     await waitFor(() => {
-      expect(done).toHaveAttribute("aria-disabled", "true");
+      expect(screen.getByRole("status")).toHaveTextContent(study.practiceSaved);
     });
+    expect(done).toHaveAttribute("aria-disabled", "true");
     expect(done).toHaveFocus();
     expect(await store.listPracticeEvents({ topicId })).toMatchObject({
       ok: true,
@@ -216,7 +256,10 @@ describe("study sections", () => {
     expect(screen.getByRole("button", { name: study.playIntro })).toBeVisible();
     expect(screen.getByText(/متن پیشنهادی/)).toBeVisible();
     expect(screen.getByText(question.text.da)).toHaveAttribute("lang", "da");
-    expect(screen.getByText(intro.text.da)).toHaveAttribute("lang", "da");
+    const transcript = screen.getByText(intro.text.da);
+    expect(transcript).toBeVisible();
+    expect(transcript).toHaveAttribute("lang", "da");
+    expect(transcript).toHaveAttribute("dir", "ltr");
     for (const control of container.querySelectorAll("[aria-label]")) {
       expect(control.getAttribute("aria-label")).toMatch(/\p{Script=Arabic}/u);
     }

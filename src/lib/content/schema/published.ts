@@ -27,9 +27,31 @@ export const AudioRefSchema = z.strictObject({
   words: z.array(wordTimingSchema).optional(),
 });
 
+export const OfficialSourceUrlSchema = z.url({ protocol: /^https$/ });
+const sourceDisplayFields = { title: text, pages: z.array(z.number().int().positive()).min(1) };
+const verificationSource = z.discriminatedUnion("availability", [
+  z.strictObject({
+    ...sourceDisplayFields,
+    availability: z.literal("official"),
+    url: OfficialSourceUrlSchema,
+  }),
+  z.strictObject({
+    ...sourceDisplayFields,
+    availability: z.literal("third-party-copy"),
+    note: text,
+  }),
+]);
+const verified = { sourceTermId: termId, checkedOn: z.iso.date() };
+
 export const VerificationSchema = z.discriminatedUnion("status", [
   z.strictObject({ status: z.literal("unchecked") }),
-  z.strictObject({ status: z.enum(["matches", "differs"]), sourceTermId: termId, checkedOn: z.iso.date() }),
+  z.strictObject({ status: z.literal("matches"), ...verified, sourceDisplay: verificationSource.optional() }),
+  z.strictObject({
+    status: z.literal("differs"),
+    ...verified,
+    sourceDisplay: verificationSource,
+    alternative: DanishTextSchema,
+  }),
 ]);
 
 export const IntroSourceLabelSchema = z.discriminatedUnion("kind", [

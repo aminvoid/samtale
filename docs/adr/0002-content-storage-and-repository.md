@@ -45,9 +45,9 @@
 
 | Included | Excluded |
 |---|---|
-| Topic: id, term (year, session), letter, theme/sub-theme, title `da`+`fa`, format era (pre-2023 label, US-009), source pages (for the credit, US-011 #7) | `review` (status and notes), the ledger, `contentHash`, pipeline provenance (`line`), `siriCheck.siriParts` (until OQ-17 decides to show differences) |
+| Topic: id, term (year, session), letter, theme/sub-theme, title `da`+`fa`, format era (pre-2023 label, US-009), source pages (for the credit, US-011 #7) | `review` (status and notes), the ledger, `contentHash`, pipeline provenance (`line`), raw `siriCheck.siriParts` |
 | Situations: key, **booklet title `da`+`fa`** (D-18), intro `{ text.da, origin: "siri" \| "app", sourceLabel }` | SIRI picture captions (D-18) |
-| Questions and suggested follow-ups: text `da`+`fa`, **verification `{ status: "matches" \| "differs" \| "unchecked", source term, checkedOn }`** (US-068) | – |
+| Questions and suggested follow-ups: text `da`+`fa`, verification status, source term, check date and source display details. `alternative.da` is included for `differs` only (US-068 #4). | Third-party URLs and alternate wording for other statuses |
 | Key words (`da`+`fa`, emoji), model answers and follow-up answers **`da` only** (D-19) with emphasis ranges | any answer translation (none exists) |
 | Personal examples: label `fa` as printed, text `da`, `perspective: "nurse"` so the UI can add the D-20 label from messages | – |
 | Examiner lines: text, origin, placeholders | review notes |
@@ -59,6 +59,7 @@
   - `production`: only topics with review status `approved`. The build **fails** if a published topic lacks a verification record on any question, an approved intro for both situations, or audio for any item (US-064 #9), or if any output string trips the confidentiality rule. A term with fewer than three published topics is still listed; the draw excludes it (US-028 #5).
   - `preview`: every topic from `extracted` upwards, each marked `draft: true` so the UI shows a "not reviewed yet" banner. Used locally, in CI and on protected preview deployments only.
 - **Output is deterministic** (stable key order, 2-space JSON, trailing newline) so two builds of the same commit are byte-identical (ADR-0003).
+- **Verification allow-list extension (2026-11-21).** The study page shows the SIRI comparison beside the primary booklet text and identifies the source. The projection joins the Danish parts with spaces only for `differs`. For checked records with source display metadata, `sourceDisplay` includes the title, pages and availability. A third-party copy carries its source note. An official source carries the HTTPS URL from its official transcription registry entry. The leak scan includes this prose and official URL for topics published in the selected channel.
 
 ### 3. Repository (`src/lib/content/`), the only way the app reads content
 
@@ -85,7 +86,7 @@ getContentItem(id: ContentItemId): Promise<ContentItem | null>   // shadowing (U
 ### 4. How internal data is kept out of every build (defence in depth)
 
 1. **No path:** `src/` never imports `content/**` (lint, ADR-0001). Only `src/lib/content/source/**` may import `@/generated/**`.
-2. **No read:** `scripts/content/build-read-model.ts` (`content:build`) reads only `content/topics/`, `themes.json`, `terms.json`, `examiner-lines.json`, `topic-links.json` and `audio/manifest.json`. It never opens `content/internal/**` or `review-ledger.json` (the pipeline has already merged ledger status into topic files). A unit test asserts that the script's source doesn't mention `internal` or `review-ledger`.
+2. **No read:** `scripts/content/build-read-model.ts` (`content:build`) reads only `content/topics/`, `themes.json`, `terms.json`, `examiner-lines.json`, `topic-links.json`, `audio/manifest.json` and the referenced official `scripts/content/data/siri-*.json` entries for source URLs. It never opens `content/internal/**` or `review-ledger.json` (the pipeline has already merged ledger status into topic files). A unit test asserts that the script's source doesn't mention `internal` or `review-ledger`.
 3. **Allow-list projection** validated by the strict published schema.
 4. **Confidentiality rule** (`scripts/content/lib/confidentiality.ts`) runs over every output string; any hit fails `content:build`.
 5. **Post-build leak scan** (`scripts/ci/check-build-leaks.ts` on `scripts/ci/leak-scan.ts`). The scan searches `.next/`, `public/` and `src/generated/` for canaries taken from the authoring files. Any hit fails the build. *Amended 2026-11-21 following the independent read-model review.*

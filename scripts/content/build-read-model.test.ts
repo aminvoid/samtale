@@ -18,7 +18,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import type { Manifest } from "../../src/lib/audio/manifest-schema";
 import { TopicFileSchema } from "../../src/lib/content/schema/authoring";
-import { ReadModelSchema } from "../../src/lib/content/schema/published";
+import { ReadModelSchema, VerificationSchema } from "../../src/lib/content/schema/published";
 import { sha256 } from "../audio/lib/hash";
 import { collectItems, examinerLinesSchema, topicSchema } from "../audio/lib/items";
 import { buildReadModel } from "./build-read-model";
@@ -136,6 +136,10 @@ describe("published read model", () => {
     for (const file of ["topics", "themes.json", "terms.json", "examiner-lines.json", "topic-links.json"]) {
       cpSync(join(ROOT, "content", file), join(root, "content", file), { recursive: true });
     }
+    mkdirSync(join(root, "scripts/content/data"), { recursive: true });
+    for (const file of ["siri-2019-nov.json", "siri-2024-maj.json"]) {
+      cpSync(join(ROOT, "scripts/content/data", file), join(root, "scripts/content/data", file));
+    }
     output = join(root, "src/generated/content/read-model.json");
   });
 
@@ -172,7 +176,11 @@ describe("published read model", () => {
         ...topic.general,
         question: {
           ...question,
-          siriCheck: { ...question.siriCheck, siriParts: [hidden] },
+          siriCheck: {
+            ...question.siriCheck,
+            siriParts: [hidden],
+            sourceDisplay: { ...question.siriCheck.sourceDisplay, note: hidden, extra: hidden },
+          },
           modelAnswer: {
             ...question.modelAnswer,
             text: { ...question.modelAnswer.text, fa: hidden },
@@ -193,8 +201,55 @@ describe("published read model", () => {
       status: "matches",
       sourceTermId: "2024-maj",
       checkedOn: question.siriCheck.checkedOn,
+      sourceDisplay: {
+        title: question.siriCheck.sourceDisplay?.title,
+        pages: question.siriCheck.sourceRef?.pages,
+        availability: "official",
+        url: "https://danskogproever.dk/media/prob2ifo/censor-og-eksaminatorhaefte-pd3-mdt.pdf",
+      },
     });
     expect(ReadModelSchema.safeParse({ ...readModel(root), unexpected: hidden }).success).toBe(false);
+  });
+
+  it("publishes the comparison only for differences, preserving the booklet and identifying the copy", () => {
+    const reference = TopicFileSchema.parse(readJson(topicPath(root, "2019-nov-b")));
+    const situation = reference.situations[0];
+    const { topics } = buildReadModel(root, preview);
+    const published = topics.find(({ id }) => id === reference.id)?.situations[0];
+    if (situation === undefined || published === undefined) throw new Error("Missing the 2019 preview topic.");
+    const { question, followups } = situation;
+    for (const item of [published.question, ...published.followups]) {
+      const original = [question, ...followups].find(({ id }) => id === item.id);
+      const check = original?.siriCheck;
+      expect(item.text).toEqual(original?.text);
+      expect(item.verification).toEqual({
+        status: "differs",
+        sourceTermId: "2019-nov",
+        checkedOn: check?.checkedOn,
+        alternative: { da: check?.siriParts?.join(" ") },
+        sourceDisplay: {
+          title: check?.sourceDisplay?.title,
+          pages: check?.sourceRef?.pages,
+          availability: "third-party-copy",
+          note: "Copy from a teacher's website; not available from SIRI.",
+        },
+      });
+    }
+
+    const { verification } = published.question;
+    if (verification.status !== "differs") throw new Error("Missing the published comparison.");
+    expect(VerificationSchema.safeParse({ ...verification, status: "matches" }).success).toBe(false);
+    expect(VerificationSchema.safeParse({ ...verification, alternative: undefined }).success).toBe(false);
+    expect(
+      VerificationSchema.safeParse({
+        ...verification,
+        sourceDisplay: {
+          ...verification.sourceDisplay,
+          url: "https://sokolova.dk/2019-nov-censor-mundtlig.pdf",
+        },
+      }).success,
+    ).toBe(false);
+    expect(readFileSync(output, "utf8")).not.toContain("sokolova.dk");
   });
 
   it("refuses confidential strings in allowed fields before writing anything", () => {

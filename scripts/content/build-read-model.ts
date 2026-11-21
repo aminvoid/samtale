@@ -19,6 +19,7 @@ import {
   BilingualTextSchema,
   DanishTextSchema,
   ExaminerLineSchema,
+  OfficialSourceUrlSchema,
   PersianTextSchema,
   ReadModelSchema,
   SectionKindSchema,
@@ -43,10 +44,23 @@ const id = z.string().min(1);
 const version = { schemaVersion: z.literal(SCHEMA_VERSION) };
 const status = z.object({ status: ReviewStatusSchema });
 const sourceRef = z.object({ document: id });
-const verificationInput = z.object({
-  status: z.enum(["unchecked", "matches", "differs"]),
-  sourceRef: sourceRef.optional(),
+const checkedInput = {
+  sourceRef: sourceRef.extend({ pages: z.array(z.number().int().positive()).min(1).optional() }).optional(),
   checkedOn: z.iso.date().optional(),
+  sourceDisplay: z
+    .discriminatedUnion("availability", [
+      z.object({ title: id, availability: z.literal("official") }),
+      z.object({ title: id, availability: z.literal("third-party-copy"), note: id }),
+    ])
+    .optional(),
+};
+const verificationInput = z.discriminatedUnion("status", [
+  z.object({ status: z.literal("unchecked") }),
+  z.object({ status: z.literal("matches"), ...checkedInput }),
+  z.object({ status: z.literal("differs"), ...checkedInput, siriParts: z.array(id).min(1) }),
+]);
+const officialDocument = z.object({
+  document: z.object({ authenticity: z.literal("official"), url: OfficialSourceUrlSchema }),
 });
 const danishItem = z.object({ id, text: DanishTextSchema.strip() });
 const bilingualItem = z.object({ id, text: BilingualTextSchema.strip() });
@@ -122,6 +136,7 @@ const linksInput = z.object({
 
 type BuildOptions = Pick<BuildEnv, "CONTENT_RELEASE" | "AUDIO_BASE_URL">;
 type AudioFor = (itemId: string, textDa: string, includeWords?: boolean) => AudioRef | undefined;
+type Verify = (check: z.infer<typeof verificationInput>, itemId: string) => Verification;
 const LATEST_PUBLIC_TERM = "2024-maj";
 
 function readJson(path: string): unknown {
@@ -185,17 +200,46 @@ function siriTermId(document: string | undefined): string {
   return termId;
 }
 
-function verification(check: z.infer<typeof verificationInput>, itemId: string): Verification {
-  if (check.status === "unchecked") return { status: "unchecked" };
-  if (check.checkedOn === undefined) throw new Error(`Missing verification date for ${itemId}.`);
-  return {
-    status: check.status,
-    sourceTermId: siriTermId(check.sourceRef?.document),
-    checkedOn: check.checkedOn,
+export function readOfficialSiriUrl(root: string, document: string): string {
+  const termId = siriTermId(document);
+  return officialDocument.parse(readJson(join(root, "scripts/content/data", `siri-${termId}.json`))).document
+    .url;
+}
+
+function createVerificationProjector(root: string): Verify {
+  const urls = new Map<string, string>();
+
+  function officialUrl(document: string) {
+    const url = urls.get(document) ?? readOfficialSiriUrl(root, document);
+    urls.set(document, url);
+    return url;
+  }
+
+  return (check, itemId) => {
+    if (check.status === "unchecked") return { status: "unchecked" };
+    if (check.checkedOn === undefined) throw new Error(`Missing verification date for ${itemId}.`);
+    const document = check.sourceRef?.document;
+    const checked = { sourceTermId: siriTermId(document), checkedOn: check.checkedOn };
+    const pages = check.sourceRef?.pages;
+    const display = check.sourceDisplay;
+    if (document === undefined || pages === undefined || display === undefined) {
+      if (check.status === "differs") throw new Error(`Missing verification source details for ${itemId}.`);
+      return { status: "matches", ...checked };
+    }
+
+    const { availability, title } = display;
+    const sourceDisplay =
+      availability === "official"
+        ? { availability, title, pages, url: officialUrl(document) }
+        : { availability, title, pages, note: display.note };
+
+    return check.status === "differs"
+      ? { status: "differs", ...checked, sourceDisplay, alternative: { da: check.siriParts.join(" ") } }
+      : { status: "matches", ...checked, sourceDisplay };
   };
 }
 
-function projectSection(input: z.infer<typeof section>, audioFor: AudioFor): QuestionSection {
+function projectSection(input: z.infer<typeof section>, audioFor: AudioFor, verify: Verify): QuestionSection {
   const { question } = input;
   const projectBilingual = ({ id, text }: z.infer<typeof bilingualItem>) => ({
     id,
@@ -216,13 +260,13 @@ function projectSection(input: z.infer<typeof section>, audioFor: AudioFor): Que
     id: input.id,
     question: {
       ...projectBilingual(question),
-      verification: verification(question.siriCheck, question.id),
+      verification: verify(question.siriCheck, question.id),
       keywords: question.keywords.map((keyword) => ({ ...projectBilingual(keyword), emoji: keyword.emoji })),
       modelAnswer: projectAnswer(question.modelAnswer),
     },
     followups: input.followups.map((followup) => ({
       ...projectBilingual(followup),
-      verification: verification(followup.siriCheck, followup.id),
+      verification: verify(followup.siriCheck, followup.id),
       answer: projectAnswer({ ...followup.answer, emphasis: followup.answer.emphasis ?? [] }),
     })),
     personalExamples: input.personalExamples.map((example) => ({
@@ -236,6 +280,7 @@ function projectSection(input: z.infer<typeof section>, audioFor: AudioFor): Que
 function projectSituation(
   input: z.infer<typeof situation>,
   audioFor: AudioFor,
+  verify: Verify,
   production: boolean,
 ): Topic["situations"][number] {
   const { intro } = input;
@@ -244,7 +289,7 @@ function projectSituation(
   }
 
   return {
-    ...projectSection(input, audioFor),
+    ...projectSection(input, audioFor, verify),
     key: input.key,
     title: { da: input.title.da, fa: input.title.fa },
     intro:
@@ -339,6 +384,7 @@ export function buildReadModel(root: string, options: BuildOptions): ReadModel {
   const publishedIds = new Set(inputs.map(({ id }) => id));
   if (publishedIds.size !== inputs.length) throw new Error("Duplicate published topic IDs.");
   const { audioFor, clips, clipsDir, missing } = createAudioLookup(root, options);
+  const verify = createVerificationProjector(root);
   const themes: ReadModel["themes"] = themesInput
     .parse(readJson(join(contentDir, "themes.json")))
     .themes.map(({ id, chapter, emoji, title, subthemes }) => ({
@@ -415,8 +461,11 @@ export function buildReadModel(root: string, options: BuildOptions): ReadModel {
       formatEraId: term.formatEraId,
       draft: production ? undefined : true,
       sourcePages: [...input.source.pages],
-      situations: [projectSituation(a, audioFor, production), projectSituation(b, audioFor, production)],
-      general: projectSection(input.general, audioFor),
+      situations: [
+        projectSituation(a, audioFor, verify, production),
+        projectSituation(b, audioFor, verify, production),
+      ],
+      general: projectSection(input.general, audioFor, verify),
       links: linksForTopic(input.id, topicLinks, publishedGroups),
       examinerAudio: examinerLines.flatMap((line) => {
         if (line.placeholders.length === 0) return [];

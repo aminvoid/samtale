@@ -134,6 +134,10 @@
       "details": "جزئیات تطبیق با <ltr>SIRI</ltr>",
       "differs": "متن <ltr>SIRI</ltr> کمی فرق دارد",
       "sourceTerm": "منبع تطبیق: دفترچهٔ ممتحن <ltr>SIRI</ltr> <term></term>",
+      "sourceDocument": "منبع تطبیق: <title></title>",
+      "sourcePages": "{count, plural, one {صفحهٔ {pages}} other {صفحه‌های {pages}}}",
+      "thirdPartyCopy": "نسخه‌ای از وب‌سایت یک مدرس؛ این دفترچه از <ltr>SIRI</ltr> در دسترس نیست.",
+      "openOfficialSource": "باز کردن دفترچه در وب‌سایت رسمی",
       "checkedOn": "تاریخ بررسی: {date, date, date}",
       "versionUnavailable": "متن کامل <ltr>SIRI</ltr> برای نمایش در دسترس نیست."
     }

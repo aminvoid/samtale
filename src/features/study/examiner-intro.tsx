@@ -5,7 +5,7 @@ import { SourceLabel } from "@/components/ui/source-label";
 import { TermName } from "@/components/ui/term-name";
 import { richTags } from "@/i18n/rich-tags";
 import type { TermSummary, Topic } from "@/lib/content/repository";
-import { IntroAudio } from "./intro-audio";
+import { StudyClipButton } from "./study-clip-button";
 
 export function ExaminerIntro({
   intro,
@@ -34,12 +34,17 @@ export function ExaminerIntro({
         role="situation-intro"
         label={t("intro")}
         source={<SourceLabel variant={source.kind}>{label}</SourceLabel>}
+        action={
+          <StudyClipButton
+            item={{ id: intro.id, audio: intro.audio }}
+            label={t("playIntro")}
+            variant="examiner"
+          />
+        }
       />
-      <IntroAudio item={{ id: intro.id, audio: intro.audio }}>
-        <DanishText as="p" className="rounded-control bg-surface-raised p-3 text-da-intro wrap-anywhere">
-          {intro.text.da}
-        </DanishText>
-      </IntroAudio>
+      <DanishText as="p" className="rounded-control bg-surface-raised p-3 text-da-intro wrap-anywhere">
+        {intro.text.da}
+      </DanishText>
     </div>
   );
 }

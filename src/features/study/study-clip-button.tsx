@@ -5,16 +5,15 @@ import { PlayButton } from "@/components/ui/play-button";
 import { useClip } from "@/lib/audio/player";
 import type { ContentItem } from "@/lib/content/repository";
 
-export type StudyClip = { id: string; audio?: Pick<NonNullable<ContentItem["audio"]>, "url" | "durationMs"> };
+type StudyClip = { id: string; audio?: Pick<NonNullable<ContentItem["audio"]>, "url" | "durationMs"> };
 
 type StudyClipButtonProps = {
   item: StudyClip;
   label: string;
   variant: "examiner" | "model" | "neutral";
-  onPlay?: () => void;
 };
 
-export function StudyClipButton({ item, label, variant, onPlay }: StudyClipButtonProps) {
+export function StudyClipButton({ item, label, variant }: StudyClipButtonProps) {
   const t = useTranslations("audio");
   const clip = useClip(item.id, item.audio);
 
@@ -25,14 +24,7 @@ export function StudyClipButton({ item, label, variant, onPlay }: StudyClipButto
       label={label}
       status={clip.status}
       variant={variant}
-      onClick={() => {
-        if (clip.status === "playing") {
-          clip.pause();
-        } else {
-          clip.play();
-          onPlay?.();
-        }
-      }}
+      onClick={clip.status === "playing" ? clip.pause : clip.play}
     />
   );
 }

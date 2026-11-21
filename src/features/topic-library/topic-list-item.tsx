@@ -8,7 +8,7 @@ import type { TopicSummary } from "@/lib/content/repository";
 import { cn } from "@/lib/utils/cn";
 import { topicHref } from "./library-paths";
 import { PracticeStatus } from "./practice-status";
-import { TermName } from "./term-name";
+import { TermName } from "@/components/ui/term-name";
 
 type TopicListItemProps = {
   topic: TopicSummary;

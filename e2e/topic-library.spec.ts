@@ -2,7 +2,7 @@ import AxeBuilder from "@axe-core/playwright";
 import messages from "../messages/fa.json" with { type: "json" };
 import { AXE_TAGS, expect, test } from "./fixtures";
 
-test("browses by theme and opens a topic placeholder", async ({ page }) => {
+test("browses by theme and opens a topic study page", async ({ page }) => {
   await page.goto("/fa");
   await page.getByRole("link", { name: new RegExp(messages.home.topics), exact: false }).click();
   await expect(page).toHaveURL("/fa/topics");
@@ -18,7 +18,7 @@ test("browses by theme and opens a topic placeholder", async ({ page }) => {
   await topic.click();
   await expect(page).toHaveURL("/fa/topics/2024-maj-b");
   await expect(main.getByRole("heading", { level: 1 })).toContainText(title);
-  await expect(main.getByText(messages.common.comingSoon)).toBeVisible();
+  await expect(main.getByRole("heading", { name: messages.study.generalHeading })).toBeVisible();
   await expect(main.getByRole("heading", { level: 1 })).toBeFocused();
 });
 
@@ -57,7 +57,7 @@ test("opens exam terms and a similar question occurrence", async ({ page }) => {
   if (href === null) throw new Error("The occurrence must link to a topic section.");
   await occurrence.click();
   await expect(page).toHaveURL(href);
-  await expect(page.getByText(messages.common.comingSoon)).toBeVisible();
+  await expect(page.locator(href.slice(href.indexOf("#")))).toBeFocused();
 });
 
 test("searches live in Persian and Danish and returns to themes", async ({ page }) => {

@@ -1,18 +1,26 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { DanishText } from "@/components/ui/danish-text";
-import { PersianText } from "@/components/ui/persian-text";
-import { ComingSoon } from "@/features/app-shell/coming-soon";
-import { getTopic, listTopicIds } from "@/lib/content/repository";
+import { getTranslations } from "next-intl/server";
+import { TopicStudy } from "@/features/study/topic-study";
+import {
+  getTheme,
+  getTopic,
+  getTopicLinks,
+  listTerms,
+  listTopicIds,
+  listTopics,
+} from "@/lib/content/repository";
 
 export async function generateStaticParams() {
-  const topics = await listTopicIds();
-  return topics.map((topicId) => ({ topicId }));
+  return (await listTopicIds()).map((topicId) => ({ topicId }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/[locale]/topics/[topicId]">) {
+export async function generateMetadata({
+  params,
+}: PageProps<"/[locale]/topics/[topicId]">): Promise<Metadata> {
   const { topicId } = await params;
-  const topic = await getTopic(topicId);
-  return { title: topic?.title.fa };
+  const [topic, t] = await Promise.all([getTopic(topicId), getTranslations("study")]);
+  return topic === null ? {} : { title: t("pageTitle", { topic: topic.title.fa }) };
 }
 
 export default async function TopicPage({ params }: PageProps<"/[locale]/topics/[topicId]">) {
@@ -20,14 +28,17 @@ export default async function TopicPage({ params }: PageProps<"/[locale]/topics/
   const topic = await getTopic(topicId);
   if (topic === null) notFound();
 
-  return (
-    <ComingSoon
-      title={
-        <DanishText as="bdi" className="text-da-title">
-          {topic.title.da}
-        </DanishText>
-      }
-      subtitle={<PersianText>{topic.title.fa}</PersianText>}
-    />
-  );
+  const [theme, links, terms, topics] = await Promise.all([
+    getTheme(topic.themeId),
+    getTopicLinks(topicId),
+    listTerms(),
+    listTopics(),
+  ]);
+  const topicsById = new Map(topics.map((summary) => [summary.id, summary]));
+  const destinations = links.flatMap((link) => {
+    const destination = topicsById.get(link.toTopicId);
+    return destination === undefined ? [] : [{ link, topic: destination }];
+  });
+
+  return <TopicStudy topic={topic} theme={theme} terms={terms} destinations={destinations} />;
 }

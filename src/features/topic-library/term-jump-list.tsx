@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import type { TermSummary } from "@/lib/content/repository";
 import { cn } from "@/lib/utils/cn";
 import { termsPath } from "./library-paths";
-import { TermName } from "./term-name";
+import { TermName } from "@/components/ui/term-name";
 
 export function TermJumpList({
   terms,

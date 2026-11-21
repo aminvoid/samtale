@@ -2,6 +2,16 @@ import { describe, expect, it } from "vitest";
 import { confidentialityHits, examReferenceYears, scanForConfidentiality } from "./confidentiality";
 
 describe("confidentialityHits", () => {
+  it("treats written calendar dates as dates, not exam terms", () => {
+    expect(examReferenceYears("تاریخ بررسی: ۱۸ نوامبر ۲۰۲۶")).toEqual(new Set());
+    expect(examReferenceYears("checked 18. november 2026")).toEqual(new Set());
+    expect(examReferenceYears("November 18, 2026")).toEqual(new Set());
+    // Still caught without a day number.
+    expect(examReferenceYears("نوامبر ۲۰۲۶")).toEqual(new Set(["2026"]));
+    expect(examReferenceYears("Skriftlig 2026")).toEqual(new Set(["2026"]));
+    expect(examReferenceYears("Nov–Dec 2026")).toEqual(new Set(["2026"]));
+  });
+
   it("ignores year-like digits inside content-hashed file names", () => {
     expect(confidentialityHits("/audio/7a2026bc19336a71e8da.mp3")).toEqual([]);
     expect(confidentialityHits("/audio/20271ed1f92995695bee.mp3")).toEqual([]);

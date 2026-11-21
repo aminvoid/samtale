@@ -61,7 +61,7 @@ export function RoleHeader({ role, label, as: Label = "span", source, action, cl
           {source}
         </span>
       )}
-      {action != null && <span className="ms-auto">{action}</span>}
+      {action != null && <Group className="ms-auto">{action}</Group>}
     </Group>
   );
 }

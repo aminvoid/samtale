@@ -8,7 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { richTags } from "@/i18n/rich-tags";
 import { getTopic, type SimilarGroup, type Topic, type TopicSummary } from "@/lib/content/repository";
 import { themesPath, topicHref } from "./library-paths";
-import { TermName } from "./term-name";
+import { TermName } from "@/components/ui/term-name";
 
 type SimilarQuestionsProps = {
   groups: readonly SimilarGroup[];

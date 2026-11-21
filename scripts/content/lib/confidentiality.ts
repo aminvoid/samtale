@@ -29,6 +29,14 @@ function referencesAfterYear(context: string): RegExp {
   return new RegExp(`(?<!${WORD})(${YEAR}) ${context}(?!${WORD})`, "giu");
 }
 
+const MONTH =
+  "(?:januar|february|februar|january|march|marts|april|maj|may|juni|june|juli|july|august|september|oktober|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|okt|oct|nov|dec|ژانویه|فوریه|مارس|آوریل|مه|می|ژوئن|ژوئیه|اوت|سپتامبر|اکتبر|نوامبر|دسامبر|جنوری|فبروری|مارچ|اپریل|جون|جولای|اگست|سپتمبر|اکتوبر|نومبر|دسمبر)";
+/** A day number next to a month name and a year: a calendar date, never an exam term. */
+const CALENDAR_DATE = new RegExp(
+  String.raw`(?<![\p{L}\p{N}])(?:\d{1,2}\.?\s+${MONTH}\.?,?\s+20\d{2}|${MONTH}\.?\s+\d{1,2},?\s+20\d{2})(?![\p{L}\p{N}])`,
+  "giu",
+);
+
 const MODE_BEFORE_YEAR = referencesBeforeYear(EXAM_MODE);
 const WINTER_REFERENCES = [referencesBeforeYear(WINTER), referencesAfterYear(WINTER)];
 const EXAM_REFERENCES = [referencesBeforeYear(EXAM), referencesAfterYear(EXAM), ...WINTER_REFERENCES];
@@ -55,6 +63,9 @@ function normaliseReference(text: string): string {
       .replace(/\p{Dash}/gu, "-")
       // Process metadata uses ISO dates and timestamps.
       .replace(/(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])/g, " ")
+      // Written calendar dates ("18 نوامبر 2026", "18. november 2026", "November 18, 2026") are
+      // review/check dates, not exam terms: exam references never carry a day number.
+      .replace(CALENDAR_DATE, " ")
       .replace(/[\s/\u2044\u2215\uFF0F.,،:()\u200b\u200c-]+/g, " ")
   );
 }

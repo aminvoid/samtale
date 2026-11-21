@@ -2,7 +2,7 @@ import { Icon } from "@/components/ui/icon";
 import { Link } from "@/i18n/navigation";
 import type { TermSummary, TopicSummary } from "@/lib/content/repository";
 import { termsPath } from "./library-paths";
-import { TermName } from "./term-name";
+import { TermName } from "@/components/ui/term-name";
 import { TopicListItem } from "./topic-list-item";
 
 type TermGroupProps = {

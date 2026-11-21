@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { ListInfoButton } from "./list-info-button";
-import { TermName } from "./term-name";
+import { TermName } from "@/components/ui/term-name";
 
 const firstCurrentTerm = { year: 2023, session: "maj" } satisfies Parameters<typeof TermName>[0]["term"];
 

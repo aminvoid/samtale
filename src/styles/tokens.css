@@ -247,5 +247,6 @@
 
 @theme {
   --container-library-filters: 15rem;
+  --container-study-nav: 15rem;
   --container-library-search: 30rem;
 }

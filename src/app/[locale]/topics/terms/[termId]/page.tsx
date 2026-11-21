@@ -8,7 +8,7 @@ import { termsPath } from "@/features/topic-library/library-paths";
 import { ListInfoButton } from "@/features/topic-library/list-info-button";
 import { TermGroup } from "@/features/topic-library/term-group";
 import { TermJumpList } from "@/features/topic-library/term-jump-list";
-import { TermName } from "@/features/topic-library/term-name";
+import { TermName } from "@/components/ui/term-name";
 import { orderTopics, publishedTerms } from "@/features/topic-library/topic-order";
 import { listTerms, listTopics } from "@/lib/content/repository";
 

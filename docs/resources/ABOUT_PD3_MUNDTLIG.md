@@ -22,6 +22,7 @@ How the oral part of **Prøve i Dansk 3 (PD3)** works in **2026**, and how it ha
 7. [Preparing: official advice and A2B's tips](#7-preparing-official-advice-and-a2bs-tips)
 8. [What I could not verify](#8-what-i-could-not-verify)
 9. [Sources](#9-sources)
+10. [Addendum: 19 November 2026](#10-addendum-19-november-2026)
 
 ---
 
@@ -468,3 +469,49 @@ For the questions, in both parts, answer and then give a reason and an example:
 
 **Your school**
 - [A2B: "Prøve i Dansk 3" information slides](src/PD3%20Information.pdf)
+
+---
+
+## 10. Addendum: 19 November 2026
+
+These facts were found by the project's `pd3-exam-expert` review on 18 November 2026, which read the primary sources listed below. They haven't been checked again independently. Anything still unconfirmed is marked **(not verified)**.
+
+- **Older material may be used for teaching.**
+  - SIRI's practical guide (October 2026, §2.7) says exam material from **summer 2024 and earlier is not confidential and may still be used in teaching**.
+  - Everything from the winter 2024 term onwards is confidential and goes into the closed task bank, which is reused.
+- **How delprøve 2 material reaches examiners:** per exam day, as sheets of three topics (practical guide §2.8.2).
+- **The draw slips:** the three slips must have no numbers or other marks on the side the candidate can see (practical guide §4.3.5).
+- **No notes in delprøve 2.** Notes are allowed only for the delprøve 1 presentation (practical guide §4.3.5).
+- **The transition before the second required question has no fixed wording.**
+  - The May–June 2024 examiner booklet only tells the examiner to announce *"et spørgsmål af en mere overordnet karakter"*.
+  - The Nov–Dec 2019 booklet (the old format) had no announcement at all.
+- **The situation intro:** before the first required question, the examiner describes the chosen situation in one or two sentences. Each topic in the 2024 booklet has a suggested wording ("Forslag til indledning").
+- **A proposal for more topics:** a ministry consultation letter of 9 September 2024 proposed widening the unprepared part from 3 to about 20 questions. Whether and how this was implemented is **(not verified)**.
+- **The Huskeliste** for examiners and censors is now dated April 2026.
+
+**Sources**
+- [Vejledning om den praktiske prøveafholdelse, October 2026 (PDF)](https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf)
+- [Censor- og eksaminatorhæfte, PD3 oral, May–June 2024 (PDF)](https://danskogproever.dk/media/prob2ifo/censor-og-eksaminatorhaefte-pd3-mdt.pdf)
+- [Censor- og eksaminatorhæfte, PD3 oral, November–December 2019 (PDF)](https://sokolova.dk/2019-nov-censor-mundtlig.pdf)
+- [Huskeliste til eksaminator og censor (PDF)](https://danskogproever.dk/media/spjba3cd/huskeliste-til-eksaminator-og-censor-ved-den-mundtlige-proeve.pdf)
+- [Consultation letter, 9 September 2024 (PDF)](https://prodstoragehoeringspo.blob.core.windows.net/a2ed38f4-5906-4981-9046-0e27583014b0/H%C3%B8ringsbrev.pdf)
+
+### Addendum: special arrangements (*særlige prøvevilkår*), added 21 November 2026
+
+This comes from the `pd3-exam-expert` review of 21 November 2026, which checked the facts against retsinformation.dk and SIRI's guide.
+
+- **BEK 1687/2025 § 27:**
+  - The school **must** offer special arrangements to candidates with a psychological or physical disability, or similar difficulties, when that's needed for equal conditions. The arrangement must not change the exam's level.
+  - The candidate applies in writing to the head of the school **at least 8 weeks before the exam term**, with an expert statement for a disability that isn't obvious. The statement can be up to 2 years old.
+  - The head of the school decides. SIRI decides in special cases.
+  - Candidates must be told about this option when they register.
+- **§ 28:** examples include extra time, technical aids, a helper and an exam in a separate room. The decision must arrive at least 4 weeks before the term.
+- **§ 29:** the same grading criteria and level apply.
+- **§ 51(4):** the certificate doesn't mention the arrangement.
+- **§ 63:** a refusal can be appealed to SIRI within 2 weeks.
+- **SIRI practical guide (October 2026) § 3:** extra time is "normalt 25 % af prøvetiden", and more can be granted if needed. **(Not verified):** how extra time is applied within the oral exam.
+- **This term:** for winter 2026 the 8-week deadline has probably passed (around mid-September 2026). Ask the school about May–June 2027.
+
+**Sources:**
+- [BEK nr. 1687 af 16/12/2025](https://www.retsinformation.dk/eli/lta/2025/1687), §§ 27–29, 51(4), 63
+- [SIRI, Vejledning om den praktiske prøveafholdelse, October 2026](https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf), § 3

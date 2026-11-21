@@ -11,7 +11,7 @@ Persian-speaking adults in Denmark preparing for the oral part of **Prøve i Dan
 - let learners record and compare themselves
 - track what they have practised
 
-Exam rules and history are documented in [PD3-mundtlig.md](../../PD3-mundtlig.md).
+Exam rules and history are documented in [ABOUT_PD3_MUNDTLIG.md](../resources/ABOUT_PD3_MUNDTLIG.md).
 
 ## Who it is for
 
@@ -55,7 +55,8 @@ Exam rules and history are documented in [PD3-mundtlig.md](../../PD3-mundtlig.md
 
 ## Open issues
 
-- **Content permission:** written permission from the booklet's author, and ideally the source file, which would make extracting the Persian text much more reliable. The owner is in contact with the author. Nothing is published until this is settled.
+- **Content permission:** written permission from the booklet's author. The owner is in contact with the author. Nothing is published until this is settled.
+- **Content source (resolved 18 November 2026):** the owner extracted the booklet into clean Markdown (`docs/resources/PD3_Mundtlig_Delproeve2.md`). It is now the content source, and the Persian is no longer scrambled.
 - **Situation pictures:** the official SIRI pictures can't be used, so we need our own approach (illustrations, icons or text).
 - **Digits in the Persian interface:** Persian (۴½) or Latin (4½).
 - **Name and visual identity:** to be proposed by `ui-designer`.

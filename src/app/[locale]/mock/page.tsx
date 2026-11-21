@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { ComingSoon } from "@/features/app-shell/coming-soon";
+import { MockStart } from "@/features/mock-exam/screens/mock-start";
+import { getMockDeck } from "@/lib/content/repository";
 
 export async function generateMetadata() {
   const t = await getTranslations("nav");
@@ -7,6 +8,6 @@ export async function generateMetadata() {
 }
 
 export default async function Page() {
-  const t = await getTranslations("nav");
-  return <ComingSoon title={t("mockFull")} />;
+  const deck = await getMockDeck();
+  return <MockStart topicCount={deck.topics.length} />;
 }

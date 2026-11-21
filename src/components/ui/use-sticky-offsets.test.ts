@@ -107,6 +107,16 @@ describe("useStickyOffsets", () => {
     expectOffsets("136px", "300px");
   });
 
+  it("keeps the header pinned when a tall answer area is static by design (desktop)", () => {
+    const header = addBar("focused-header", "sticky", 88).element;
+    const answer = addBar("answer-area", "static", 400).element;
+    renderHook(useStickyOffsets);
+    vi.advanceTimersToNextFrame();
+    expect(header).not.toHaveAttribute("data-pinned");
+    expect(answer).not.toHaveAttribute("data-pinned");
+    expectOffsets("88px", "0px");
+  });
+
   it("clears the offsets on short viewports or with large root text, and cleans up on unmount", () => {
     const header = addBar("focused-header", "sticky", 88).element;
     const answer = addBar("answer-area", "fixed", 100).element;

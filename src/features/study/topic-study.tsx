@@ -40,7 +40,7 @@ export function TopicStudy({
   const similar = destinations.filter(({ link }) => link.kind === "similar");
   const topicSimilar = similar.filter(({ link }) => link.fromSection === null);
   const termsById = new Map(terms.map((term) => [term.id, term]));
-  const mockHref = `/mock?topic=${encodeURIComponent(topic.id)}`;
+  const mockHref = `/mock/practice?topic=${encodeURIComponent(topic.id)}`;
   const [a, b] = topic.situations;
   const letterA = () => <DanishText as="bdi">{a.key}</DanishText>;
   const letterB = () => <DanishText as="bdi">{b.key}</DanishText>;

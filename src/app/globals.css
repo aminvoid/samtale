@@ -167,3 +167,13 @@
     }
   }
 }
+
+/* The focused runner uses the app's main landmark and the shared sticky-offset observer. */
+html[data-mock-focused] [data-app-chrome] {
+  display: none;
+}
+
+html[data-mock-focused] #main {
+  max-inline-size: none;
+  padding: 0;
+}

@@ -16,6 +16,7 @@ export function PrimaryNavigation({ variant }: { variant: "top" | "bottom" }) {
     <nav
       aria-label={t("primary")}
       data-sticky={bottom ? "tab-bar" : undefined}
+      data-app-chrome={bottom ? "" : undefined}
       className={
         bottom
           ? "fixed inset-x-0 inset-be-0 z-40 border-bs border-border bg-surface-raised pbe-[env(safe-area-inset-bottom)] shadow-raised md:hidden short:static"

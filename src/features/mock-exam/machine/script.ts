@@ -21,14 +21,12 @@ function followupClip(prompt: MockPrompt): Clip {
     return { ...clip, spoken: { question, ending, pauseMs: spoken.pauseMs } };
   }
   if (!writtenAlternatives.test(prompt.text.da)) return clip;
-  const firstPart = prompt.siriCheck?.siriParts?.[0];
+  // Published content never carries SIRI's authoring parts, so the question is the booklet text
+  // without its written "Hvorfor?/Hvorfor ikke?" ending.
   return {
     ...clip,
     spoken: {
-      question:
-        firstPart && !writtenAlternatives.test(firstPart)
-          ? firstPart
-          : prompt.text.da.replace(writtenAlternatives, "").trimEnd(),
+      question: prompt.text.da.replace(writtenAlternatives, "").trimEnd(),
       // The existing audio pipeline inserts a 800 ms break in this asset.
       pauseMs: 800,
       ending: "Hvorfor eller hvorfor ikke?",

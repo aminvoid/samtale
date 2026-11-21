@@ -32,6 +32,17 @@ export function useStickyOffsets() {
       unpinned.delete(element);
     }
 
+    /** The position the bar's own CSS gives it, ignoring the unpinning applied here. */
+    function ownPosition(bar: Element) {
+      if (!unpinned.has(bar)) return getComputedStyle(bar).position;
+      const previous = unpinned.get(bar) ?? null;
+      if (previous === null) bar.removeAttribute("data-pinned");
+      else bar.setAttribute("data-pinned", previous);
+      const position = getComputedStyle(bar).position;
+      bar.setAttribute("data-pinned", "false");
+      return position;
+    }
+
     function measure() {
       frame = undefined;
       const bars = new Set(root.querySelectorAll(selector));
@@ -52,9 +63,10 @@ export function useStickyOffsets() {
       for (const bar of bars) {
         const kind = bar.getAttribute("data-sticky");
         if (kind === "focused-header" || kind === "answer-area") focusedBars.add(bar);
-        if (kind === "answer-area" && blockSize(bar, getComputedStyle(bar)) > viewportHeight * 0.4) {
-          answerTooTall = true;
-        }
+        // Only a pinned answer area can crowd the viewport; a static one (e.g. on desktop) just flows.
+        if (kind !== "answer-area") continue;
+        const pinnable = ["sticky", "fixed"].includes(ownPosition(bar));
+        if (pinnable && blockSize(bar, getComputedStyle(bar)) > viewportHeight * 0.4) answerTooTall = true;
       }
 
       const unpinFocusedBars = shortViewport.matches || largeRootText || answerTooTall;

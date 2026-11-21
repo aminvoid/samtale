@@ -21,7 +21,6 @@ export interface MockTopic extends Readonly<Pick<TopicFile, "id" | "termId" | "t
 export interface MockPrompt {
   readonly id: string;
   readonly text: { readonly da: string };
-  readonly siriCheck?: { readonly siriParts?: readonly string[] };
   readonly spoken?: Readonly<Pick<NonNullable<Followup["spoken"]>, "pauseMs">> & {
     readonly parts: readonly string[];
   };

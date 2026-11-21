@@ -13,7 +13,7 @@ export async function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex flex-col min-block-dvh">
-      <header className="border-be border-border bg-surface">
+      <header data-app-chrome className="border-be border-border bg-surface">
         <div className="mx-auto flex items-center justify-between gap-3 px-4 max-inline-page min-block-touch-primary md:px-6 xl:px-8">
           <Link
             href="/"
@@ -35,7 +35,7 @@ export async function AppShell({ children }: { children: ReactNode }) {
       >
         {children}
       </main>
-      <footer className="bg-surface-sunken pbe-8 text-caption text-text-muted">
+      <footer data-app-chrome className="bg-surface-sunken pbe-8 text-caption text-text-muted">
         <div className="mx-auto px-4 pbs-4 max-inline-page md:px-6 xl:px-8">
           <nav aria-label={t("footer")} className="flex flex-wrap gap-x-4">
             <Link href="/about" className="inline-flex items-center text-accent underline min-block-touch">
@@ -51,6 +51,7 @@ export async function AppShell({ children }: { children: ReactNode }) {
       </footer>
       <div
         aria-hidden
+        data-app-chrome
         className="block-[var(--bottom-offset,calc(var(--spacing-tabbar)+env(safe-area-inset-bottom)))] md:hidden short:hidden"
       />
       <PrimaryNavigation variant="bottom" />

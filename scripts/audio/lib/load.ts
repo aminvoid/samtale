@@ -22,7 +22,7 @@ export function loadContent(root: string): AudioContent {
   // The sound-check line now lives in content/examiner-lines.json (origin "app", content-engineer
   // 2026-11-21). Adding it here again would duplicate the ID. Keep only lines that content doesn't define yet.
   const extra = [{ id: examConfig.soundCheckClipId, text: examConfig.soundCheckText }].filter(
-    (line) => !(line.id in lines),
+    (line) => !lines.lines.some((existing) => existing.id === line.id),
   );
   return { topics, lines, extra };
 }

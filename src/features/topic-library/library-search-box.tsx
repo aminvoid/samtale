@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useEffectEvent, useState, useTransition } from "react";
 import { getPathname, useRouter } from "@/i18n/navigation";
 import { searchPath } from "./library-paths";
 import { SearchField } from "./search-field";
@@ -16,52 +16,58 @@ export function LibrarySearchBox({ pathname }: { pathname: string }) {
   const onSearchPage = pathname === searchPath;
   const query = onSearchPage ? (params.get("q") ?? "") : "";
   const [location, setLocation] = useState({ pathname, query });
-  const [draft, setDraft] = useState(query);
+  const [{ draft, edited }, setInput] = useState({ draft: query, edited: false });
   const [submitted, setSubmitted] = useState<string | null>(null);
+  const [pending, startTransition] = useTransition();
 
   if (location.pathname !== pathname || location.query !== query) {
     setLocation({ pathname, query });
-    // Keep typing in the same field while the first search navigation is in flight.
-    if (query !== submitted || !onSearchPage) setDraft(query);
+    // A committed search may have newer typing waiting for its debounce.
+    if (query !== submitted || !onSearchPage) setInput({ draft: query, edited: false });
+    setSubmitted(null);
+  } else if (submitted !== null && !pending) {
+    // An interrupted transition can finish without changing the URL.
     setSubmitted(null);
   }
 
-  const commit = useCallback(
-    (value: string) => {
-      if (value === query || submitted !== null) return;
-      const href = value ? { pathname: searchPath, query: { q: value } } : searchPath;
-      setSubmitted(value);
+  function commit(value: string) {
+    if (value === submitted || (value === query && submitted === null)) return;
+    const href = value ? { pathname: searchPath, query: { q: value } } : searchPath;
+    setSubmitted(value);
+    startTransition(() => {
       if (onSearchPage) {
         window.history.replaceState(null, "", getPathname({ href, locale }));
       } else {
         router.push(href, { scroll: false });
       }
-    },
-    [locale, onSearchPage, query, router, submitted],
-  );
+    });
+  }
 
+  const commitAfterPause = useEffectEvent(commit);
   useEffect(() => {
-    const value = draft.trim();
-    if (value === query || submitted !== null) return;
+    if (!edited) return;
     const timer = window.setTimeout(() => {
-      commit(value);
+      commitAfterPause(draft.trim());
     }, searchDelayMs);
     return () => {
       window.clearTimeout(timer);
     };
-  }, [commit, draft, query, submitted]);
+  }, [draft, edited]);
 
   return (
     <SearchField
       action={getPathname({ href: searchPath, locale })}
       value={draft}
-      onChange={setDraft}
+      onChange={(value) => {
+        setInput({ draft: value, edited: true });
+      }}
       onClear={() => {
-        setDraft("");
+        setInput({ draft: "", edited: false });
         commit("");
       }}
       onSubmit={(event) => {
         event.preventDefault();
+        setInput({ draft, edited: false });
         commit(draft.trim());
       }}
     />

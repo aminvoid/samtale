@@ -16,6 +16,7 @@ test.describe("home (fa)", () => {
 
     // Danish inside the Persian tip is isolated as its own LTR run (ADR-0004 §3).
     await expect(page.locator('bdi[lang="da"]').filter({ hasText: "Hvorfor tror du, …?" })).toBeVisible();
+    await expect(page.locator('bdi[lang="da"][dir="ltr"]').filter({ hasText: /^PD3$/ })).toHaveCount(2);
 
     const headingFont = await page
       .getByRole("heading", { level: 1 })

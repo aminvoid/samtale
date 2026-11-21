@@ -19,8 +19,8 @@ export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/topics/[topicId]">): Promise<Metadata> {
   const { topicId } = await params;
-  const [topic, t] = await Promise.all([getTopic(topicId), getTranslations("study")]);
-  return topic === null ? {} : { title: t("pageTitle", { topic: topic.title.fa }) };
+  const [topic, t] = await Promise.all([getTopic(topicId), getTranslations("metadata")]);
+  return topic === null ? {} : { title: t("topicTitle", { da: topic.title.da, fa: topic.title.fa }) };
 }
 
 export default async function TopicPage({ params }: PageProps<"/[locale]/topics/[topicId]">) {

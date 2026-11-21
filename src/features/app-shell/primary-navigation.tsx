@@ -4,12 +4,13 @@ import { useTranslations } from "next-intl";
 import { Icon } from "@/components/ui/icon";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
-import { isCurrentSection, primaryLinks } from "./section-links";
+import { isCurrentSection, primaryLinks, progressLink } from "./section-links";
 
 export function PrimaryNavigation({ variant }: { variant: "top" | "bottom" }) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const bottom = variant === "bottom";
+  const links = bottom ? primaryLinks : [...primaryLinks, progressLink];
 
   return (
     <nav
@@ -22,7 +23,7 @@ export function PrimaryNavigation({ variant }: { variant: "top" | "bottom" }) {
       }
     >
       <ul className={bottom ? "grid grid-cols-5" : "flex flex-wrap justify-center gap-x-4"}>
-        {primaryLinks.map((item) => {
+        {links.map((item) => {
           const current = isCurrentSection(pathname, item);
           return (
             <li key={item.href} className={bottom ? "flex min-inline-0" : undefined}>

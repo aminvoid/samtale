@@ -12,7 +12,7 @@ export const primaryLinks: readonly SectionLink[] = [
   { href: "/", label: "home", icon: "house" },
   { href: "/topics", label: "topics", icon: "library-big" },
   { href: "/mock", label: "mock", fullLabel: "mockFull", icon: "messages-square" },
-  { href: "/templates", label: "templates", fullLabel: "templatesFull", icon: "layout-template" },
+  { href: "/templates", label: "templates", fullLabel: "templatesFull", icon: "quote" },
   { href: "/guide/delproeve-2", label: "guide", icon: "signpost", section: "/guide" },
 ];
 

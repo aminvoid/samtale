@@ -29,6 +29,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | 7-trinsskalaen | مقیاس نمرهٔ هفت‌درجه‌ای | 12، 10، 7، 4، 02، 00، −3 | Keep the grade digits in an LTR isolate |
 | bestået / ikke bestået | قبول / قبول‌نشده | | Avoid «رد شدن» in buttons |
 | emne | موضوع | | |
+| tema | دسته | | |
 | forberedt / uforberedt emne | موضوع آماده‌شده / آماده‌نشده | | |
 | lodtrækning, trække et emne | قرعه‌کشی، قرعه کشیدن | یکی از سه موضوع A، B یا C | |
 | situation (A/B) | موقعیت A / B | | Avoid «موقعیت ممتحن» |

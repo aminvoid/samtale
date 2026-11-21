@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { Icon } from "@/components/ui/icon";
 import { LiveRegion } from "@/components/ui/live-region";
 import { Link } from "@/i18n/navigation";
@@ -32,6 +33,19 @@ export function SearchResults({ topics, index, query }: SearchResultsProps) {
   const search = useTranslations("library.search");
   const results = searchTopics(topics, index, query);
   const count = search("count", { count: results.length });
+  const [announcement, setAnnouncement] = useState<{ query: string; count: string }>();
+
+  useEffect(() => {
+    // Leave a paint between mounting the live region and giving it its first text.
+    let frame = window.requestAnimationFrame(() => {
+      frame = window.requestAnimationFrame(() => {
+        setAnnouncement({ query, count });
+      });
+    });
+    return () => {
+      window.cancelAnimationFrame(frame);
+    };
+  }, [count, query]);
 
   function renderMatch({ section, kind }: SearchMatch) {
     if (section === null) return search("topicTitle");
@@ -43,7 +57,7 @@ export function SearchResults({ topics, index, query }: SearchResultsProps) {
 
   return (
     <>
-      <LiveRegion>{query ? count : null}</LiveRegion>
+      <LiveRegion>{query && announcement?.query === query ? announcement.count : null}</LiveRegion>
       {query && (
         <section aria-labelledby="search-results-heading">
           <h2 id="search-results-heading" className="text-label text-text-muted" data-numeric>

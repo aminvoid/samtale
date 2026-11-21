@@ -2,6 +2,7 @@
   "metadata": {
     "appName": "Samtale",
     "titleTemplate": "{page} · {appName}",
+    "topicTitle": "{da} — {fa}",
     "description": "آمادگی برای بخش دوم آزمون شفاهی PD3 (delprøve 2)، با توضیح فارسی"
   },
   "common": {
@@ -12,8 +13,8 @@
     "firstQuestionTip": "سؤال اول معمولاً با <da>Hvorfor tror du, …?</da> تمام می‌شود.",
     "repeatLabel": "اگر سؤال را متوجه نشدید، می‌توانید بگویید:",
     "topicCount": "{count, number, integer} موضوع",
-    "descriptor": "تمرین گفت‌وگوی آزمون شفاهی <ltr>PD3</ltr>",
-    "purpose": "بخش <da>delprøve {part}</da> آزمون شفاهی <ltr>PD3</ltr> را با توضیح فارسی تمرین کنید.",
+    "descriptor": "تمرین گفت‌وگوی آزمون شفاهی <da>PD3</da>",
+    "purpose": "بخش <da>delprøve {part}</da> آزمون شفاهی <da>PD3</da> را با توضیح فارسی تمرین کنید.",
     "partGloss": "بخش دوم آزمون شفاهی: گفت‌وگو دربارهٔ موضوع آماده‌نشده.",
     "source": "سؤال‌های واقعی آزمون‌های منتشرشده از {start, number, year} تا {end, number, year}. در موارد مشخص‌شده، متن سؤال‌ها با دفترچهٔ ممتحن تطبیق داده شده است.",
     "independent": "این برنامه را <da>Styrelsen for International Rekruttering og Integration</da> (<ltr>SIRI</ltr>، ادارهٔ برگزارکنندهٔ آزمون) نساخته است.",
@@ -71,7 +72,6 @@
     "bookletCredit": "منبع موضوع‌ها و سؤال‌ها: کتابچهٔ شری رحیمی."
   },
   "study": {
-    "pageTitle": "مطالعهٔ {topic}",
     "layoutTitle": "این صفحه چطور چیده شده است؟",
     "layoutBody": "در آزمون، ممتحن یکی از دو موقعیت را معرفی می‌کند و سؤال اجباری اول را می‌پرسد. بعد یک سؤال کلی‌تر می‌پرسد. هر دو موقعیت را مطالعه کنید.",
     "layoutVariation": "ممتحن ممکن است معرفی موقعیت یا سؤال‌های تکمیلی را با عبارت‌های دیگری بگوید.",
@@ -143,7 +143,7 @@
     "subtitle": "موضوع‌های آزمون‌های گذشته، از {start, number, year} تا {end, number, year}",
     "views": "روش مرور موضوع‌ها",
     "view": {
-      "themes": "موضوع‌ها",
+      "themes": "دسته‌ها",
       "terms": "دوره‌های آزمون",
       "similar": "سؤال‌های مشابه"
     },
@@ -162,9 +162,9 @@
       "withLetter": "{term} · {letter}"
     },
     "filter": {
-      "label": "زیرموضوع‌ها",
+      "label": "زیردسته‌ها",
       "all": "همه",
-      "empty": "موضوعی در این زیرموضوع پیدا نشد."
+      "empty": "موضوعی در این زیردسته پیدا نشد."
     },
     "search": {
       "title": "جست‌وجوی موضوع‌ها",
@@ -174,7 +174,7 @@
       "clear": "پاک کردن جست‌وجو",
       "count": "{count, plural, =0 {موضوعی پیدا نشد} other {{count, number, integer} موضوع پیدا شد}}",
       "noResults": "موضوعی برای «<isolate>{query}</isolate>» پیدا نشد.",
-      "browseInstead": "مرور بر اساس موضوع",
+      "browseInstead": "مرور بر اساس دسته",
       "matchedIn": "پیدا شد در <part></part>",
       "topicTitle": "عنوان موضوع",
       "situationTitle": "عنوان <part></part>",

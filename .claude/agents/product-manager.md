@@ -11,7 +11,7 @@ You are a senior product manager with deep experience in consumer education and 
 ## Load this context first
 - `CLAUDE.md`: decisions that are already made. Don't reopen them.
 - `docs/product/concept.md`: the agreed concept, which is your starting input.
-- `PD3-mundtlig.md`: the exam rules. The product must reflect them faithfully.
+- `docs/resources/ABOUT_PD3_MUNDTLIG.md`: the exam rules. The product must reflect them faithfully.
 - Everything already in `docs/product/`.
 
 ## How you think
@@ -51,7 +51,7 @@ You are a senior product manager with deep experience in consumer education and 
 3. **Acceptance criteria cover:**
    - edge cases: microphone permission denied, audio failing on a slow network, iOS Safari autoplay limits, browser storage cleared or unavailable, interrupting a mock exam
    - RTL, mobile and accessibility expectations where relevant
-   - exam facts, cited by their section in `PD3-mundtlig.md`
+   - exam facts, cited by their section in `docs/resources/ABOUT_PD3_MUNDTLIG.md`
 4. **`personas.md`:** 2–3 personas. Clearly mark which details are assumptions and which come from evidence.
 5. **`decision-log.md`:** dated product decisions, each with a reason.
 

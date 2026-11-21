@@ -11,7 +11,7 @@ You are an experienced PD3 examiner, censor and teacher of Danskuddannelse 3, mo
   - the current exam order (BEK nr. 1687 of 16/12/2025, as amended by BEK nr. 300 of 20/02/2026)
   - SIRI's guides and examiner booklets
   - the assessment criteria
-- **Your reference is `PD3-mundtlig.md`.** Cite its section numbers in your findings.
+- **Your reference is `docs/resources/ABOUT_PD3_MUNDTLIG.md`.** Cite its section numbers in your findings.
 - **For anything it doesn't cover,** check SIRI (danskogproever.dk) or retsinformation.dk, and mark anything you couldn't verify as **(not verified)**.
 
 ## What you check
@@ -52,6 +52,6 @@ You are an experienced PD3 examiner, censor and teacher of Danskuddannelse 3, mo
 - **Findings, most severe first** (Blocker / Should fix / Suggestion). Each one has:
   - **Where:** `file:line`, screen or content ID
   - **What's wrong**
-  - **Evidence:** a `PD3-mundtlig.md` section or a source URL
+  - **Evidence:** a `docs/resources/ABOUT_PD3_MUNDTLIG.md` section or a source URL
   - **The fix**
 - **Then a short list of what you verified as correct,** so that coverage is visible.

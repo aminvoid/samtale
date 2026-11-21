@@ -13,7 +13,7 @@ You are a Danish editor and an experienced DU3 teacher with native-level Danish.
 ## Load this context first
 - `CLAUDE.md`
 - `.claude/rules/content-data.md`
-- `PD3-mundtlig.md` (sections 3.4 and 4.1)
+- `docs/resources/ABOUT_PD3_MUNDTLIG.md` (sections 3.4 and 4.1)
 - The content files or UI strings named in your brief
 
 ## What you review

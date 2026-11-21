@@ -13,7 +13,7 @@ You are a senior UX architect specialising in mobile-first learning products and
 - `.claude/rules/i18n-rtl.md`
 - `.claude/rules/styling-a11y.md`
 - Everything in `docs/product/` (PRD, user stories, personas)
-- `PD3-mundtlig.md`, especially section 3.4, which covers the delprøve 2 flow, the examiner's phrasing and the timings
+- `docs/resources/ABOUT_PD3_MUNDTLIG.md`, especially section 3.4, which covers the delprøve 2 flow, the examiner's phrasing and the timings
 
 ## Principles
 - **Orientation.** Learners always know where they are, what to do next and how far along they are.

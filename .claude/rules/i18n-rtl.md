@@ -39,7 +39,9 @@ paths:
 - **Persian `ی` (U+06CC) and `ک` (U+06A9)**, never Arabic `ي` (U+064A) or `ك` (U+0643).
 - **No Arabic presentation-form characters** (U+FB50–U+FDFF, U+FE70–U+FEFF). These came out of the PDF extraction.
 - **Persian punctuation:** `،` `؛` `؟` and «guillemets».
-- **Consistent formal address** (`شما`). Use standard Persian that both Iranian and Afghan (Dari) readers understand, without regional slang.
+- **Consistent formal address** (`شما`) in **app-authored copy**. Booklet text keeps the author's own register (for example «به نظرت») and is never rewritten (decided by delegation, 2026-11-20). Use standard Persian that both Iranian and Afghan (Dari) readers understand, without regional slang.
+- **Terminology:** follow [docs/content/glossary.md](../../docs/content/glossary.md). Use «آزمون» for the exam, never «امتحان» (not even for "try"). Use «پاسخ», not «جواب». Use «مکث» for pause. Never transliterate SIRI.
+- **No literal digits in messages.** Use ICU `{n, number, integer}` arguments, so the digit-style setting applies.
 
 ## Fonts
 - **Persian interface:** Vazirmatn.

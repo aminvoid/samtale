@@ -4,30 +4,92 @@
  * Exam material from the winter 2024 term onwards is confidential. Booklet text that refers to a
  * later exam (e.g. a margin note "… در Skriftlig 2026 هم آمد") could leak it. This rule flags, in ANY
  * string field:
- *   - any year 2025 or later (Latin or Persian digits),
- *   - "Skriftlig"/"Mundtlig" followed by a year from 2024 on,
- *   - Nov-Dec / november / december / vinter + 2024.
+ *   - any year 2025 or later (Latin, Persian or Arabic-Indic digits),
+ *   - written/oral exam references from 2024 onwards, unless explicitly in the public spring term,
+ *   - winter 2024 references in Danish, English month abbreviations, or Persian.
  * Public content must have no hits. Internal margin notes may, but then can never be made public.
  * Hits on documents dated 2025+ (e.g. a 2025 guidance note) are expected noise: a human decides.
  */
-const PERSIAN_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
+const YEAR = String.raw`20\d{2}`;
+const WORD = String.raw`[\p{L}\p{M}\p{N}_]`;
+const WINTER =
+  "(?:nov(?:ember)?(?: dec(?:ember)?)?|dec(?:ember)?|vinter(?:en|prøven?|termin(?:en)?|eksamen)?|winter|زمستان|(?:نوامبر|نومبر)(?: (?:و )?دسامبر)?|دسامبر)";
+const EXAM_MODE =
+  "(?:(?:skriftlig|mundtlig)(?:e| ?prøven?| eksamen)?|(?:آزمون|امتحان) (?:کتبی|شفاهی)|کتبی|شفاهی)";
+const EXAM = `(?:${EXAM_MODE}|eksamen(?:en)?|prøven?(?: i dansk 3)?|exam(?:ination)?|pd ?3|آزمون|امتحان)`;
+const BEFORE_YEAR = "(?: (?:i|in|fra|from|of|year|سال|در|در سال))? ";
+const SPRING_2024 =
+  /(?<![\p{L}\p{M}\p{N}_])(?:(?:maj|may|juni|june|مه|می|ژوئن) 2024|2024 (?:maj|may|juni|june|مه|می|ژوئن))(?![\p{L}\p{M}\p{N}_])/giu;
 
-function latinDigits(s: string): string {
-  return Array.from(s).map((c) => {
-    const i = PERSIAN_DIGITS.indexOf(c);
-    return i >= 0 ? String(i) : c;
-  }).join("");
+function referencesBeforeYear(context: string): RegExp {
+  return new RegExp(`(?<!${WORD})${context}${BEFORE_YEAR}(${YEAR})(?!${WORD})`, "giu");
+}
+
+function referencesAfterYear(context: string): RegExp {
+  return new RegExp(`(?<!${WORD})(${YEAR}) ${context}(?!${WORD})`, "giu");
+}
+
+const MODE_BEFORE_YEAR = referencesBeforeYear(EXAM_MODE);
+const WINTER_REFERENCES = [referencesBeforeYear(WINTER), referencesAfterYear(WINTER)];
+const EXAM_REFERENCES = [referencesBeforeYear(EXAM), referencesAfterYear(EXAM), ...WINTER_REFERENCES];
+
+function latinDigits(text: string): string {
+  return text
+    .replace(/[۰-۹]/g, (digit) => String(digit.charCodeAt(0) - 0x06f0))
+    .replace(/[٠-٩]/g, (digit) => String(digit.charCodeAt(0) - 0x0660));
+}
+
+export function bareExamYear(text: string): string | undefined {
+  const year = latinDigits(text.trim());
+  return /^20\d{2}$/.test(year) ? year : undefined;
+}
+
+function normaliseReference(text: string): string {
+  return (
+    latinDigits(text)
+      .normalize("NFC")
+      .replace(/[\p{Bidi_Control}\u0640]/gu, "")
+      .replace(/ي/g, "ی")
+      .replace(/ك/g, "ک")
+      .replace(/[ِٔ]/gu, "")
+      .replace(/\p{Dash}/gu, "-")
+      // Process metadata uses ISO dates and timestamps.
+      .replace(/(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])/g, " ")
+      .replace(/[\s/\u2044\u2215\uFF0F.,،:()\u200b\u200c-]+/g, " ")
+  );
+}
+
+/** Finds years adjacent to an exam or session name, for matching otherwise ambiguous canaries. */
+export function examReferenceYears(text: string): Set<string> {
+  const s = normaliseReference(text);
+  const years = new Set<string>();
+  for (const pattern of EXAM_REFERENCES) {
+    for (const [, year] of s.matchAll(pattern)) if (year !== undefined) years.add(year);
+  }
+  return years;
 }
 
 export function confidentialityHits(text: string): string[] {
-  // Exact ISO calendar dates (2026-11-20) are the pipeline's own process metadata (review dates,
-  // review file names), never an exam reference; they are removed before matching.
-  const s = latinDigits(text).replace(/(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])/g, " ");
-  const hits: string[] = [];
-  for (const m of s.matchAll(/(?<!\d)(20\d\d)(?!\d)/g)) if (Number(m[1]) >= 2025) hits.push(m[1]!);
-  for (const m of s.matchAll(/\b(skriftlig|mundtlig)\s+(20\d\d)/gi)) if (Number(m[2]) >= 2024) hits.push(m[0]);
-  for (const m of s.matchAll(/\b(nov-dec|november|december|vinter\w*)\s+2024\b/gi)) hits.push(m[0]);
-  return [...new Set(hits)];
+  const s = normaliseReference(text);
+  const hits = new Set<string>();
+  // A year is a standalone token: no letter or digit on either side. Without the letter check,
+  // content-hashed audio file names such as "/audio/…a2026b….mp3" were flagged as the year 2026.
+  for (const [year] of s.matchAll(/(?<![\p{L}\p{N}])20\d{2}(?![\p{L}\p{N}])/gu)) {
+    if (Number(year) >= 2025) hits.add(year);
+  }
+  const springYears = new Set(
+    Array.from(s.matchAll(SPRING_2024), (match) => match.index + match[0].indexOf("2024")),
+  );
+  for (const match of s.matchAll(MODE_BEFORE_YEAR)) {
+    const [reference, year] = match;
+    if (Number(year) > 2024 || (year === "2024" && !springYears.has(match.index + reference.length - 4))) {
+      hits.add(reference);
+    }
+  }
+  for (const pattern of WINTER_REFERENCES) {
+    for (const [reference, year] of s.matchAll(pattern)) if (year === "2024") hits.add(reference);
+  }
+  return [...hits];
 }
 
 /**

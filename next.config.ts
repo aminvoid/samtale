@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
+import { PHASE_PRODUCTION_BUILD } from "next/constants.js";
 import createNextIntlPlugin from "next-intl/plugin";
+import { assertReadModelChannel } from "./scripts/ci/build-artifacts.ts";
 import { parseBuildEnv } from "./src/lib/env/schema.ts";
 import { AUDIO_CACHE_HEADERS, buildSecurityHeaders, isHttpsDeployment } from "./src/lib/security/headers.ts";
 
@@ -43,4 +45,7 @@ const withNextIntl = createNextIntlPlugin({
   experimental: { createMessagesDeclaration: "./messages/fa.json" },
 });
 
-export default withNextIntl(nextConfig);
+export default function config(phase: string): NextConfig {
+  if (phase === PHASE_PRODUCTION_BUILD) assertReadModelChannel(import.meta.dirname, env.CONTENT_RELEASE);
+  return withNextIntl(nextConfig);
+}

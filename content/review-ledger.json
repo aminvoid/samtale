@@ -2,7 +2,24 @@
   "schemaVersion": 0,
   "topics": {
     "2016-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "cd7ffa4465303d81",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash cd7ffa4465303d81."
+        }
+      ],
       "intros": {
         "2016-maj-a.sitA.intro": {
           "status": "approved",
@@ -24,10 +41,62 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2016-maj-a.fa-sitB.title",
+          "path": "situations[1].title.fa",
+          "kind": "terminology",
+          "find": "سوءپیشینه‌ی پاک",
+          "suggestion": "سابقه‌ی کیفری پاک (ren straffeattest)",
+          "reason": "Suggestion. «سوءپیشینه‌ی پاک» is self-contradictory ('a clean bad record').",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2016-maj-a.fa-sitB.q1",
+          "path": "situations[1].question.text.fa",
+          "kind": "terminology",
+          "find": "سوءپیشینه‌ی پاک",
+          "suggestion": "سابقه‌ی کیفری پاک (ren straffeattest)",
+          "reason": "Suggestion. Same as fa-sitB.title.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2016-maj-a.fa-sitB.followup1",
+          "path": "situations[1].followups[0].text.fa",
+          "kind": "terminology",
+          "find": "سوءپیشینه‌ی پاک",
+          "suggestion": "سابقه‌ی کیفری پاک (ren straffeattest)",
+          "reason": "Suggestion. Same as fa-sitB.title.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2016-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "eb865c3cfce323f1",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash eb865c3cfce323f1."
+        }
+      ],
       "intros": {
         "2016-maj-b.sitA.intro": {
           "status": "approved",
@@ -52,7 +121,24 @@
       }
     },
     "2016-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "ca608567918900b4",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash ca608567918900b4."
+        }
+      ],
       "intros": {
         "2016-maj-c.sitA.intro": {
           "status": "approved",
@@ -77,7 +163,24 @@
       }
     },
     "2016-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "95ce1e238cfdef92",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 95ce1e238cfdef92."
+        }
+      ],
       "intros": {
         "2016-nov-a.sitA.intro": {
           "status": "approved",
@@ -102,7 +205,15 @@
       }
     },
     "2016-nov-b": {
-      "status": "extracted",
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
+        },
+        {
+          "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «دعوا» in general.question.text.fa («بدون دعوا و تنبیه», booklet p. 74): in Dari «دعوا» reads as 'fighting', not scolding («سرزنش»). Correction note 2016-nov-b.fa-general.q2; question 2 in docs/content/dari-check.md."
+        }
+      ],
       "intros": {
         "2016-nov-b.sitA.intro": {
           "status": "approved",
@@ -124,10 +235,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2016-nov-b.fa-general.q2",
+          "path": "general.question.text.fa",
+          "kind": "dari",
+          "find": "بدون دعوا و تنبیه",
+          "suggestion": "بدون سرزنش و تنبیه",
+          "reason": "Suggestion. In Dari «دعوا» means fighting. Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 2).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2016-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "c7b57eabada5f084",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash c7b57eabada5f084."
+        }
+      ],
       "intros": {
         "2016-nov-c.sitA.intro": {
           "status": "approved",
@@ -149,10 +290,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2016-nov-c.fa-general.followup1",
+          "path": "general.followups[0].text.fa",
+          "kind": "translation",
+          "find": "چقدر مهم است که آدم کار داشته باشد",
+          "suggestion": "برای کیفیت زندگی آدم چقدر مهم است که…",
+          "reason": "Should fix. The translation leaves out what it matters for (quality of life), which the Danish states.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2017-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "c7a137dfe0c84b20",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash c7a137dfe0c84b20."
+        }
+      ],
       "intros": {
         "2017-maj-a.sitA.intro": {
           "status": "approved",
@@ -174,10 +345,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2017-maj-a.fa-general.followup1",
+          "path": "general.followups[0].text.fa",
+          "kind": "translation",
+          "find": "چه معنایی دارد",
+          "suggestion": "چه تأثیری دارد",
+          "reason": "Should fix. The Danish asks about the effect, not the meaning (same pattern as P-05 in the pilot).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2017-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "0b489a598d87223c",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 0b489a598d87223c."
+        }
+      ],
       "intros": {
         "2017-maj-b.sitA.intro": {
           "status": "approved",
@@ -202,7 +403,24 @@
       }
     },
     "2017-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "3ed1aa0168b5b51a",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 3ed1aa0168b5b51a."
+        }
+      ],
       "intros": {
         "2017-maj-c.sitA.intro": {
           "status": "approved",
@@ -227,7 +445,24 @@
       }
     },
     "2017-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "5e8074da81c12e61",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 5e8074da81c12e61."
+        }
+      ],
       "intros": {
         "2017-nov-a.sitA.intro": {
           "status": "approved",
@@ -252,7 +487,24 @@
       }
     },
     "2017-nov-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "93934a0d4784f764",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 93934a0d4784f764."
+        }
+      ],
       "intros": {
         "2017-nov-b.sitA.intro": {
           "status": "approved",
@@ -274,10 +526,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2017-nov-b.fa-general.q2.kw2",
+          "path": "general.question.keywords[1].text.fa",
+          "kind": "translation",
+          "find": "مدرک",
+          "suggestion": "مدرک و شاهد (برای پلیس)",
+          "reason": "Suggestion. «مدرک» alone reads as a certificate or diploma; here it is evidence.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2017-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "36d57373a5c53f2c",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 36d57373a5c53f2c."
+        }
+      ],
       "intros": {
         "2017-nov-c.sitA.intro": {
           "status": "approved",
@@ -299,10 +581,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2017-nov-c.fa-sitA.title",
+          "path": "situations[0].title.fa",
+          "kind": "translation",
+          "find": "شغل رؤیایی",
+          "suggestion": "شغل جالب",
+          "reason": "Suggestion. The question says 'et spændende job' («شغل جالب»), not a dream job.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2018-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "fb1578f1434c578f",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash fb1578f1434c578f."
+        }
+      ],
       "intros": {
         "2018-maj-a.sitA.intro": {
           "status": "approved",
@@ -327,7 +639,24 @@
       }
     },
     "2018-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "159d885d61945060",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 159d885d61945060."
+        }
+      ],
       "intros": {
         "2018-maj-b.sitA.intro": {
           "status": "approved",
@@ -352,7 +681,24 @@
       }
     },
     "2018-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "43179422b8870a4b",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 43179422b8870a4b."
+        }
+      ],
       "intros": {
         "2018-maj-c.sitA.intro": {
           "status": "approved",
@@ -377,7 +723,24 @@
       }
     },
     "2018-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "017b6cead126071d",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 017b6cead126071d."
+        }
+      ],
       "intros": {
         "2018-nov-a.sitA.intro": {
           "status": "approved",
@@ -402,7 +765,24 @@
       }
     },
     "2018-nov-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "c2ad2920f7d5e967",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash c2ad2920f7d5e967."
+        }
+      ],
       "intros": {
         "2018-nov-b.sitA.intro": {
           "status": "approved",
@@ -427,7 +807,24 @@
       }
     },
     "2018-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "38d89d8d8a730b03",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 38d89d8d8a730b03."
+        }
+      ],
       "intros": {
         "2018-nov-c.sitA.intro": {
           "status": "approved",
@@ -449,10 +846,62 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2018-nov-c.fa-sitB.title",
+          "path": "situations[1].title.fa",
+          "kind": "terminology",
+          "find": "دبیرستان",
+          "suggestion": "آموزش متوسطه (ungdomsuddannelse): دبیرستان یا آموزش فنی‌وحرفه‌ای",
+          "reason": "Should fix. 'ungdomsuddannelse' covers both gymnasium and vocational education; «دبیرستان» narrows it. Dari reader: «دبیرستان» vs «لیسه» is also open.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2018-nov-c.fa-sitB.q1",
+          "path": "situations[1].question.text.fa",
+          "kind": "terminology",
+          "find": "دبیرستان",
+          "suggestion": "آموزش متوسطه (ungdomsuddannelse): دبیرستان یا آموزش فنی‌وحرفه‌ای",
+          "reason": "Should fix. Same as fa-sitB.title.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2018-nov-c.fa-sitA.q1.kw2",
+          "path": "situations[0].question.keywords[1].text.fa",
+          "kind": "translation",
+          "find": "آیا آموزش جواب می‌دهد؟",
+          "suggestion": "آیا آموزش مؤثر است؟",
+          "reason": "Suggestion. «جواب می‌دهد» is colloquial and unclear for Dari readers.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2019-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "8f1c7f5d15ec8bdf",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 8f1c7f5d15ec8bdf."
+        }
+      ],
       "intros": {
         "2019-maj-a.sitA.intro": {
           "status": "approved",
@@ -477,7 +926,24 @@
       }
     },
     "2019-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "9ca6ab003b6e6f5d",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 9ca6ab003b6e6f5d."
+        }
+      ],
       "intros": {
         "2019-maj-b.sitA.intro": {
           "status": "approved",
@@ -502,7 +968,24 @@
       }
     },
     "2019-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "827674252616fae4",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 827674252616fae4."
+        }
+      ],
       "intros": {
         "2019-maj-c.sitA.intro": {
           "status": "approved",
@@ -527,7 +1010,24 @@
       }
     },
     "2019-nov-a": {
-      "status": "needs-review",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "86cf080deb8bc4fe",
+      "notes": [
+        {
+          "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+        },
+        {
+          "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 86cf080deb8bc4fe."
+        }
+      ],
       "intros": {
         "2019-nov-a.sitA.intro": {
           "status": "approved",
@@ -549,7 +1049,13 @@
             }
           ]
         }
-      },
+      }
+    },
+    "2019-nov-b": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "bb153ec9989c3c15",
       "notes": [
         {
           "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
@@ -558,12 +1064,12 @@
           "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
         },
         {
-          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash bb153ec9989c3c15."
         }
-      ]
-    },
-    "2019-nov-b": {
-      "status": "needs-review",
+      ],
       "intros": {
         "2019-nov-b.sitA.intro": {
           "status": "approved",
@@ -585,7 +1091,13 @@
             }
           ]
         }
-      },
+      }
+    },
+    "2019-nov-c": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "ebb8b28014eb7b45",
       "notes": [
         {
           "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
@@ -594,12 +1106,12 @@
           "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
         },
         {
-          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash ebb8b28014eb7b45."
         }
-      ]
-    },
-    "2019-nov-c": {
-      "status": "needs-review",
+      ],
       "intros": {
         "2019-nov-c.sitA.intro": {
           "status": "approved",
@@ -621,21 +1133,27 @@
             }
           ]
         }
-      },
-      "notes": [
-        {
-          "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
-        },
-        {
-          "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
-        },
-        {
-          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
-        }
-      ]
+      }
     },
     "2020-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "d9ad1aac36ef5607",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash d9ad1aac36ef5607."
+        }
+      ],
       "intros": {
         "2020-maj-a.sitA.intro": {
           "status": "approved",
@@ -660,7 +1178,24 @@
       }
     },
     "2020-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "5dcf4dac86efbbb0",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 5dcf4dac86efbbb0."
+        }
+      ],
       "intros": {
         "2020-maj-b.sitA.intro": {
           "status": "approved",
@@ -685,7 +1220,24 @@
       }
     },
     "2020-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "9306dfc793949d02",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 9306dfc793949d02."
+        }
+      ],
       "intros": {
         "2020-maj-c.sitA.intro": {
           "status": "approved",
@@ -707,10 +1259,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2020-maj-c.fa-sitA.title",
+          "path": "situations[0].title.fa",
+          "kind": "translation",
+          "find": "کلاس زبان دانمارکی می‌گیرد",
+          "suggestion": "شرکت هزینه‌ی کلاس دانمارکی کارمندان خارجی را می‌دهد",
+          "reason": "Should fix. The title says the company 'takes' a class; the situation is that it pays for the class (as the question itself says). Suggested full title given.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2020-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "142d5252c7e8508a",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 142d5252c7e8508a."
+        }
+      ],
       "intros": {
         "2020-nov-a.sitA.intro": {
           "status": "approved",
@@ -735,7 +1317,15 @@
       }
     },
     "2020-nov-b": {
-      "status": "extracted",
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
+        },
+        {
+          "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «حقوق» in general.followups[0].text.fa («…صرفه‌جویی در حقوق نیروی حرفه‌ای…», booklet p. 94): in Dari «حقوق» reads as 'rights', not pay («معاش»). Correction note 2020-nov-b.fa-general.followup1; question 1 in docs/content/dari-check.md."
+        }
+      ],
       "intros": {
         "2020-nov-b.sitA.intro": {
           "status": "approved",
@@ -757,10 +1347,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2020-nov-b.fa-general.followup1",
+          "path": "general.followups[0].text.fa",
+          "kind": "dari",
+          "find": "حقوق نیروی حرفه‌ای",
+          "suggestion": "دستمزد نیروی حرفه‌ای",
+          "reason": "Should fix. In Dari «حقوق» means 'rights' (pay is «معاش»). Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 1).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2020-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "f74dd7b3fe5ef5f7",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash f74dd7b3fe5ef5f7."
+        }
+      ],
       "intros": {
         "2020-nov-c.sitA.intro": {
           "status": "approved",
@@ -782,10 +1402,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2020-nov-c.fa-sitA.q1.kw3",
+          "path": "situations[0].question.keywords[2].text.fa",
+          "kind": "translation",
+          "find": "بزرگ‌نما و باحال",
+          "suggestion": "بزرگ‌تر و جذاب به نظر رسیدن",
+          "reason": "Should fix. «باحال» is colloquial Iranian slang and «بزرگ‌نما» is unclear; the key word is about looking older and cool.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2021-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "6b1a901c50bb1290",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 6b1a901c50bb1290."
+        }
+      ],
       "intros": {
         "2021-maj-a.sitA.intro": {
           "status": "approved",
@@ -810,7 +1460,24 @@
       }
     },
     "2021-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "f77dc0a5e47cb190",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash f77dc0a5e47cb190."
+        }
+      ],
       "intros": {
         "2021-maj-b.sitA.intro": {
           "status": "approved",
@@ -835,7 +1502,24 @@
       }
     },
     "2021-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "d203252b8adb95d4",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash d203252b8adb95d4."
+        }
+      ],
       "intros": {
         "2021-maj-c.sitA.intro": {
           "status": "approved",
@@ -860,7 +1544,24 @@
       }
     },
     "2021-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "5218a7f35d782710",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 5218a7f35d782710."
+        }
+      ],
       "intros": {
         "2021-nov-a.sitA.intro": {
           "status": "approved",
@@ -885,7 +1586,24 @@
       }
     },
     "2021-nov-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "6826367ac3b06d70",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 6826367ac3b06d70."
+        }
+      ],
       "intros": {
         "2021-nov-b.sitA.intro": {
           "status": "approved",
@@ -910,7 +1628,24 @@
       }
     },
     "2021-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "61bdee5da33fdeb4",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 61bdee5da33fdeb4."
+        }
+      ],
       "intros": {
         "2021-nov-c.sitA.intro": {
           "status": "approved",
@@ -932,10 +1667,62 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2021-nov-c.fa-sitB.title",
+          "path": "situations[1].title.fa",
+          "kind": "translation",
+          "find": "صندلی‌های خالی",
+          "suggestion": "ظرفیت خالی",
+          "reason": "Suggestion. 'ledige studiepladser' are open study places; «صندلی خالی» is literal. The review gives «ظرفیت خالی»; adapt the plural form to this title.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2021-nov-c.fa-sitB.q1",
+          "path": "situations[1].question.text.fa",
+          "kind": "translation",
+          "find": "صندلی خالی",
+          "suggestion": "ظرفیت خالی",
+          "reason": "Suggestion. Same as fa-sitB.title.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2021-nov-c.fa-sitB.followup1",
+          "path": "situations[1].followups[0].text.fa",
+          "kind": "translation",
+          "find": "صندلی‌ها",
+          "suggestion": "ظرفیت‌ها",
+          "reason": "Suggestion. Same as fa-sitB.title. The review gives «ظرفیت خالی»; here the sentence reads «خالی ماندن صندلی‌ها», so only the noun changes.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2022-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "649cf77ca4d7194b",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 649cf77ca4d7194b."
+        }
+      ],
       "intros": {
         "2022-maj-a.sitA.intro": {
           "status": "approved",
@@ -960,7 +1747,24 @@
       }
     },
     "2022-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "10e628e73ac091a5",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 10e628e73ac091a5."
+        }
+      ],
       "intros": {
         "2022-maj-b.sitA.intro": {
           "status": "approved",
@@ -985,7 +1789,24 @@
       }
     },
     "2022-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "52edd0179d25ef21",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 52edd0179d25ef21."
+        }
+      ],
       "intros": {
         "2022-maj-c.sitA.intro": {
           "status": "approved",
@@ -1010,7 +1831,24 @@
       }
     },
     "2022-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "14f2eb79b90de5f5",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 14f2eb79b90de5f5."
+        }
+      ],
       "intros": {
         "2022-nov-a.sitA.intro": {
           "status": "approved",
@@ -1032,10 +1870,51 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2022-nov-a.fa-general.q2",
+          "path": "general.question.text.fa",
+          "kind": "terminology",
+          "find": "دبیرستان نظری",
+          "suggestion": "دبیرستان (gymnasium)",
+          "reason": "Should fix. Glossary: avoid «دبیرستان نظری» for gymnasium (pilot D-02).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2022-nov-a.fa-general.followup1",
+          "path": "general.followups[0].text.fa",
+          "kind": "terminology",
+          "find": "دبیرستان نظری",
+          "suggestion": "دبیرستان (gymnasium)",
+          "reason": "Should fix. Same as fa-general.q2.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2022-nov-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "2f7d3abce425b7ea",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 2f7d3abce425b7ea."
+        }
+      ],
       "intros": {
         "2022-nov-b.sitA.intro": {
           "status": "approved",
@@ -1057,10 +1936,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2022-nov-b.fa-title",
+          "path": "title.fa",
+          "kind": "translation",
+          "find": "مهاجرت به شهرهای بزرگ‌تر",
+          "suggestion": "نقل‌مکان به شهرهای بزرگ‌تر",
+          "reason": "Suggestion. «مهاجرت» suggests emigration; the topic is moving within Denmark (the question itself uses «نقل‌مکان»).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2022-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "e664d781917236d0",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash e664d781917236d0."
+        }
+      ],
       "intros": {
         "2022-nov-c.sitA.intro": {
           "status": "approved",
@@ -1085,7 +1994,24 @@
       }
     },
     "2023-maj-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "ac57ab3ed9280389",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash ac57ab3ed9280389."
+        }
+      ],
       "intros": {
         "2023-maj-a.sitA.intro": {
           "status": "approved",
@@ -1110,7 +2036,24 @@
       }
     },
     "2023-maj-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "d424c933e725e174",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash d424c933e725e174."
+        }
+      ],
       "intros": {
         "2023-maj-b.sitA.intro": {
           "status": "approved",
@@ -1135,7 +2078,24 @@
       }
     },
     "2023-maj-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "d1d5aefa6f050db7",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash d1d5aefa6f050db7."
+        }
+      ],
       "intros": {
         "2023-maj-c.sitA.intro": {
           "status": "approved",
@@ -1157,10 +2117,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2023-maj-c.fa-sitA.followup1",
+          "path": "situations[0].followups[0].text.fa",
+          "kind": "terminology",
+          "find": "کار بدون مهارت",
+          "suggestion": "کار غیرتخصصی (ufaglært)",
+          "reason": "Suggestion. 'ufaglært' means work that needs no formal training, not 'without skill'.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2023-nov-a": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "096035da6f2e68fe",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 096035da6f2e68fe."
+        }
+      ],
       "intros": {
         "2023-nov-a.sitA.intro": {
           "status": "approved",
@@ -1185,7 +2175,24 @@
       }
     },
     "2023-nov-b": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "ac24cfeb5004b40b",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off with notes; the correction notes stand next to the booklet text and are never applied to it."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash ac24cfeb5004b40b."
+        }
+      ],
       "intros": {
         "2023-nov-b.sitA.intro": {
           "status": "approved",
@@ -1207,10 +2214,40 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2023-nov-b.fa-sitB.followup1",
+          "path": "situations[1].followups[0].text.fa",
+          "kind": "translation",
+          "find": "تحصیلات نمی‌گیرند",
+          "suggestion": "ادامه‌ی تحصیل نمی‌دهند",
+          "reason": "Suggestion. «تحصیلات گرفتن» is not idiomatic.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2023-nov-c": {
-      "status": "extracted",
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "59ae2a8cb24122ed",
+      "notes": [
+        {
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        },
+        {
+          "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+        },
+        {
+          "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+        },
+        {
+          "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 59ae2a8cb24122ed."
+        }
+      ],
       "intros": {
         "2023-nov-c.sitA.intro": {
           "status": "approved",

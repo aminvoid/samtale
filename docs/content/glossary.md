@@ -2,10 +2,13 @@
 
 Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner delegation. Afghan (Dari) wording still needs a human check (see `docs/reviews/2026-11-20-persian-review-pilot.md`, D-01 to D-05).
 
+**Additions on 2026-11-22** (by delegation) from the Persian review of the remaining 48 topics (`docs/reviews/2026-11-21-persian-review-48-topics.md`): the rows from *ren straffeattest* to *ufaglært arbejde* at the end of the table, and the notes on *kommune* and *løn*. The Dari words that review lists still need the same human check (`docs/content/dari-check.md`).
+
 **Rules:**
 - **Interface copy uses the Persian form.**
 - **Show the Danish term** wherever learners must recognise it at the exam: isolated, `lang="da"`, with the Persian explanation.
 - **Booklet text keeps the author's wording,** including her register («به نظرت»).
+- **«چرا؟ چرا نه؟» is an app display hint, never content.** When a Danish follow-up ends *Hvorfor? / Hvorfor ikke?* and the booklet's Persian leaves it out, the app shows «چرا؟ چرا نه؟» beside the author's line, never inside it (see `pipeline.md`).
 
 **Style:**
 - **Exam:** «آزمون», never «امتحان» (also not for "try"). Use «تلاش» for retry.
@@ -56,14 +59,26 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | afbrudt | قطع‌شده | | Not a fail: «نه «ناموفق»» |
 | pause | مکث | | Not «توقف» |
 | optagelse | ضبط | | |
-| kommune | کمون (شهرداری؛ دولت محلی) | مدرسه، نگهداری کودک و مراقبت از سالمندان هم با کمون است | Afghan usage: «شاروالی» |
+| kommune | کمون (شهرداری؛ دولت محلی) | مدرسه، نگهداری کودک و مراقبت از سالمندان هم با کمون است | Afghan usage: «شاروالی». The booklet writes «شهرداری» (e.g. 2020-nov-b); its text stays as printed. A Danish kommune does far more than a city hall, so interface copy uses «کمون» and glosses it once |
 | folkeskole | folkeskole (مدرسهٔ دولتی، کلاس ۰ تا ۹) | | |
 | de første klasser | سال‌های اول مدرسه | | Not «کلاس‌های اول» |
 | gymnasium | gymnasium (دبیرستانِ پیش‌دانشگاهی) | | Avoid «دبیرستان نظری» |
 | erhvervsuddannelse | آموزش فنی‌وحرفه‌ای | | |
 | social- og sundhedsassistent (SOSU) | دستیار بهداشتی‌ـ‌اجتماعی (SOSU) | | |
 | autorisation | مجوز حرفه‌ای | | Not just «مجوز» |
-| løn | دستمزد / حقوق | | Dari: «معاش»; «حقوق» means "rights" in Dari |
+| løn | دستمزد / حقوق | | Dari: «معاش»; «حقوق» means "rights" in Dari. **Interface copy uses «دستمزد».** The booklet's «حقوق» stays as printed; where it can be misread, a correction note suggests «دستمزد» (2020-nov-b blocks on it) |
 | trivsel | حال خوب، رضایت | | |
 | shadowing | سایه‌خوانی (تکرار هم‌زمان با صدا) | | Gloss at first use |
 | Forstyr ikke / Do Not Disturb | مزاحم نشوید | | Device setting name |
+| ren straffeattest | سابقهٔ کیفری پاک (ren straffeattest) | گواهی پلیس که نشان می‌دهد شخص محکومیت کیفری ندارد | Not «سوءپیشینهٔ پاک», which contradicts itself |
+| ungdomsuddannelse | آموزش متوسطه (ungdomsuddannelse) | تحصیل بعد از folkeskole: دبیرستان (gymnasium) یا آموزش فنی‌وحرفه‌ای | Not just «دبیرستان». Dari: «لیسه» |
+| SU (Statens Uddannelsesstøtte) | SU (کمک‌هزینهٔ تحصیلی دولت) | پولی که دولت ماهانه به دانش‌آموزان و دانشجویان بالای ۱۸ سال می‌دهد؛ SU-lån وام تحصیلی دولت است | Keep "SU" in Latin, isolated. A Persian field that starts with "SU" needs an explicit `dir="rtl"` |
+| dagpenge / kontanthjælp | dagpenge (بیمهٔ بیکاری) / kontanthjælp (کمک‌هزینهٔ اجتماعی) | dagpenge را صندوق بیمهٔ بیکاری (a-kasse) به عضوهایش می‌دهد؛ kontanthjælp کمک مالی کمون به کسی است که درآمد و حق dagpenge ندارد | Two different benefits: keep both Danish words, never merge them into «حمایت مالی» |
+| folkepension | folkepension (مستمری بازنشستگی دولتی) | مستمری پایه‌ای که دولت از سن بازنشستگی به ساکنان دانمارک می‌دهد | |
+| daginstitution | مهدکودک (daginstitution) | شامل vuggestue (برای بچه‌های زیر سه سال) و børnehave (از سه سالگی تا مدرسه) | Dari reader: «مهدکودک» still open |
+| pædagog | مربی (pædagog) | کارشناس آموزش‌دیده برای کار با کودکان و جوانان، مثلاً در مهدکودک | Not «معلم» (that is *lærer*) |
+| sygehjælper | کمک‌بهیار (sygehjælper) | عنوان قدیمی؛ امروز social- og sundhedshjælper | Dari reader: «کمک‌بهیار» still open |
+| barsel / forældreorlov | مرخصی زایمان / مرخصی والدین | barsel مرخصی مادر و پدر بعد از تولد بچه است؛ forældreorlov بخشی از آن است که والدین بین خودشان تقسیم می‌کنند | Dari: «رخصتی» for «مرخصی» |
+| sygemeldt | در مرخصی استعلاجی | کسی که به‌خاطر بیماری به کارفرما خبر داده و سر کار نمی‌رود | Dari: «رخصتی» for «مرخصی» |
+| bofællesskab | bofællesskab (خانهٔ اشتراکی) | چند خانوار یا چند نفر، هرکدام با خانهٔ خودشان، که فضاهای مشترک و گاهی غذا را با هم تقسیم می‌کنند | Keep the Danish word; inside a Persian string it has no `lang="da"` (known limitation) |
+| ufaglært arbejde | کار غیرتخصصی (ufaglært) | کاری که آموزش حرفه‌ای رسمی لازم ندارد | Not «کار بدون مهارت» |

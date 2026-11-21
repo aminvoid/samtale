@@ -334,6 +334,22 @@
     ]
   },
   "review": {
-    "status": "extracted"
+    "status": "approved",
+    "notes": [
+      {
+        "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+      },
+      {
+        "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
+      },
+      {
+        "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+      },
+      {
+        "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash 9ca6ab003b6e6f5d."
+      }
+    ],
+    "reviewedBy": "delegated-agent-review",
+    "reviewedOn": "2026-11-22"
   }
 }

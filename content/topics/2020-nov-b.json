@@ -332,6 +332,14 @@
     ]
   },
   "review": {
-    "status": "extracted"
+    "status": "needs-review",
+    "notes": [
+      {
+        "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
+      },
+      {
+        "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «حقوق» in general.followups[0].text.fa («…صرفه‌جویی در حقوق نیروی حرفه‌ای…», booklet p. 94): in Dari «حقوق» reads as 'rights', not pay («معاش»). Correction note 2020-nov-b.fa-general.followup1; question 1 in docs/content/dari-check.md."
+      }
+    ]
   }
 }

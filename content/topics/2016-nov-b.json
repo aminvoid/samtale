@@ -332,6 +332,14 @@
     ]
   },
   "review": {
-    "status": "extracted"
+    "status": "needs-review",
+    "notes": [
+      {
+        "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
+      },
+      {
+        "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «دعوا» in general.question.text.fa («بدون دعوا و تنبیه», booklet p. 74): in Dari «دعوا» reads as 'fighting', not scolding («سرزنش»). Correction note 2016-nov-b.fa-general.q2; question 2 in docs/content/dari-check.md."
+      }
+    ]
   }
 }

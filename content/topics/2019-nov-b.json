@@ -431,7 +431,7 @@
     ]
   },
   "review": {
-    "status": "needs-review",
+    "status": "approved",
     "notes": [
       {
         "path": "situations[0].question.text.da",
@@ -468,8 +468,13 @@
         "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
       },
       {
-        "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+        "text": "Persian: fidelity and orthography signed off by persian-localization-reviewer under the owner's delegation, after a byte-level check against the booklet Markdown and a visual check against the PDF pages (the Persian review of 48 topics, 2026-11-21, in docs/reviews). Translation: signed off."
+      },
+      {
+        "text": "APPROVED BY DELEGATION (2026-11-22): the owner delegated reviews and approvals. reviewedBy 'delegated-agent-review' marks this; the owner can revisit it. Bound to contentHash bb153ec9989c3c15."
       }
-    ]
+    ],
+    "reviewedBy": "delegated-agent-review",
+    "reviewedOn": "2026-11-22"
   }
 }

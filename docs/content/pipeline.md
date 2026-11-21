@@ -4,7 +4,7 @@
 |---|---|
 | **Status** | Full pipeline (51 topics). TypeScript run with `tsx`; shapes from Zod (`src/lib/content/schema/authoring.ts` for public files, `scripts/content/lib/pipeline-schema.ts` for pipeline-only files), ADR-0003. |
 | **Owner** | `content-engineer` |
-| **Last updated** | 2026-11-21 |
+| **Last updated** | 2026-11-22 |
 | **Related** | [schema-proposal.md](schema-proposal.md), [pilot-report.md](pilot-report.md), [.claude/rules/content-data.md](../../.claude/rules/content-data.md) |
 
 ## Requirements
@@ -119,8 +119,10 @@ The source is already clean (see the [pilot report §1.5](pilot-report.md#15-cha
 
 - **Delegated approvals.** While the owner has delegated reviews, approvals carry `reviewedBy: "delegated-agent-review"` and the date, in the ledger and in the topic's `review`, so the owner can find and revisit every one of them.
 - **Correction notes** (`review-ledger.json` → `topics.<id>.corrections`, `marginNoteCorrections`): `{ path, find, suggestion, reason, by, source, status }`. They are shown on the review pages and never applied to the booklet text. Whether learners see them is OQ-17.
+- **«چرا؟ چرا نه؟» is an app-written display hint, never content** (Persian review of 48 topics, 2026-11-22). In 57 follow-ups across 32 topics the Danish ends *Hvorfor? / Hvorfor ikke?* but the booklet's Persian leaves it out. The UI shows «چرا؟ چرا نه؟» **beside** the author's Persian line, never inside it. It is derived at render time from the Danish ending; it is not stored in `content/`, not added to any `fa` field, and not a correction note. The booklet's Persian stays exactly as printed. (P-02 in the pilot remains a correction note for the record.)
 - **Spoken overrides.** A follow-up whose text ends "Hvorfor?/Hvorfor ikke?" (or the booklet variants "Hvorfor / hvorfor ikke?", "Hvorfor/Hvorfor ikke?") gets `spoken: { parts: [<text before the ending>, "Hvorfor eller hvorfor ikke?"], pauseMs: 800, origin: "app" }`. The displayed text never changes (exam review S2).
 - **Intros** come from SIRI where a booklet exists (2024), otherwise from `app-authored.json` (origin `app`). All 96 app intros were reviewed and approved by delegation on 2026-11-21 (Danish review of the intros; exam review of intros and 2019).
+- **Topic approvals (2026-11-22, by delegation).** 49 of 51 topics are `approved` in the ledger, each bound to its `contentHash`. 2020-nov-b and 2016-nov-b stay `needs-review` until an Afghan (Dari) reader checks «حقوق» and «دعوا» (`docs/content/dari-check.md`). The 22 new correction notes from the 48-topic Persian review sit in the ledger next to the booklet text.
 - **Writing rule for app-written intros** (both reviews, 2026-11-21):
   - describe what the picture would show, as "Situation A/B viser …";
   - never state the tension or anyone's state of mind (it gives the answer away);
@@ -140,4 +142,4 @@ The source is already clean (see the [pilot report §1.5](pilot-report.md#15-cha
 | Booklet PDF (`content:check:pdf`) | Danish matches the PDF's own text on the recorded page | 1,231/1,231 (5 documented text-layer artefacts, 7 RTL final-period artefacts, all reported) |
 | SIRI (`content:check:pdf`) | SIRI transcriptions match SIRI's PDF text; content uses them unchanged | 50/50 (2024: 32, 2019: 18) |
 | Determinism | `content:extract` twice gives byte-identical output | 109 files identical |
-| Persian vs PDF | **Not machine-checkable.** Pilot: signed off by `persian-localization-reviewer` (visual comparison). Other 48 topics: open. | 3/51 |
+| Persian vs PDF | **Not fully machine-checkable.** Pilot (2024): signed off by `persian-localization-reviewer`, visual comparison (2026-11-20). Other 48 topics: 870 strings byte-identical to the booklet Markdown, 839 matched to the PDF text layer automatically (31 line-wrap fragments), every string compared visually with the page images (2026-11-21). | 51/51 |

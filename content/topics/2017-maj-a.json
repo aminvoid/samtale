@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-maj-a",
+  "termId": "2017-maj",
+  "letter": "A",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "Studerende og erhvervserfaring",
+    "fa": "دانشجوها و تجربه‌ی کاری"
+  },
+  "situations": [
+    {
+      "id": "2017-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "studierelevant job ved siden af studiet",
+        "fa": "کار مرتبط با رشته در کنار تحصیل"
+      },
+      "intro": {
+        "id": "2017-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en studerende, der har et studierelevant job ved siden af studiet."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-a.sitA.q1",
+        "text": {
+          "da": "Mange studerende vælger at bruge meget tid på at have et studierelevant job ved siden af deres studie. Hvorfor tror du, de gør det?",
+          "fa": "خیلی از دانشجوها وقت زیادی برای کارِ مرتبط با رشته‌شان در کنار تحصیل می‌گذارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-a.sitA.q1.kw1",
+            "emoji": "📄",
+            "text": {
+              "da": "erfaring til CV",
+              "fa": "تجربه برای رزومه"
+            }
+          },
+          {
+            "id": "2017-maj-a.sitA.q1.kw2",
+            "emoji": "🔧",
+            "text": {
+              "da": "teori i praksis",
+              "fa": "تئوری در عمل"
+            }
+          },
+          {
+            "id": "2017-maj-a.sitA.q1.kw3",
+            "emoji": "🕸️",
+            "text": {
+              "da": "netværk og penge",
+              "fa": "شبکه و پول"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første får de praktisk erfaring, som de kan skrive i deres CV. For det andet kan de bruge det, de lærer på studiet, i praksis. Desuden får de et netværk og tjener penge. Så alt i alt handler det om erfaring, netværk og penge."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 106,
+              "end": 119
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 213,
+              "end": 225
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for studerendes karrieremuligheder, hvis de bruger meget tid på et studierelevant job ved siden af deres studie?",
+            "fa": "به نظرت کار مرتبط در کنار تحصیل چه تأثیری بر فرصت‌های شغلی دانشجوها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det giver bedre karrieremuligheder. Arbejdsgiverne kan se, at man har erfaring, og man kender måske allerede folk i branchen. Men hvis man arbejder for meget, kan studiet tage længere tid."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "2017-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "ulønnet praktik i en periode",
+        "fa": "کارآموزی بدون حقوق"
+      },
+      "intro": {
+        "id": "2017-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en studerende, der er i ulønnet praktik."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-a.sitB.q1",
+        "text": {
+          "da": "Nogle studerende vælger i en periode at være i ulønnet praktik, selvom de altså ikke får penge for det. Hvorfor tror du alligevel, de vælger det?",
+          "fa": "بعضی دانشجوها مدتی کارآموزی بدون حقوق می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-a.sitB.q1.kw1",
+            "emoji": "🔑",
+            "text": {
+              "da": "svært uden erfaring",
+              "fa": "بدون تجربه سخت است"
+            }
+          },
+          {
+            "id": "2017-maj-a.sitB.q1.kw2",
+            "emoji": "🚪",
+            "text": {
+              "da": "en fod inden for",
+              "fa": "پا گذاشتن در شرکت"
+            }
+          },
+          {
+            "id": "2017-maj-a.sitB.q1.kw3",
+            "emoji": "✉️",
+            "text": {
+              "da": "anbefaling",
+              "fa": "توصیه‌نامه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det svært at få et betalt job uden erfaring. For det andet kan praktikken give dem en fod inden for i en virksomhed. Desuden kan de få en anbefaling, som de kan bruge senere. Så alt i alt ser de praktikken som en investering i fremtiden."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 98,
+              "end": 111
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 228,
+              "end": 240
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-a.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for studerendes karrieremuligheder, hvis de i en periode er i ulønnet praktik?",
+            "fa": "به نظرت کارآموزی بدون حقوق چه تأثیری بر فرصت‌های شغلی دانشجوها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan give bedre muligheder, fordi man får erfaring og kontakter, og nogle bliver ansat bagefter. Men det er et problem, hvis virksomheder bare bruger praktikanter som gratis arbejdskraft."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          40,
+          41
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-maj-a.general",
+    "question": {
+      "id": "2017-maj-a.general.q2",
+      "text": {
+        "da": "Mange danske unge vælger at arbejde og rejse, før de begynder at studere. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "خیلی از جوانان دانمارکی قبل از شروع تحصیل کار و سفر می‌کنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-maj-a.general.q2.kw1",
+          "emoji": "🌱",
+          "text": {
+            "da": "modne og selvstændige",
+            "fa": "پخته و مستقل"
+          }
+        },
+        {
+          "id": "2017-maj-a.general.q2.kw2",
+          "emoji": "🎯",
+          "text": {
+            "da": "vælger rigtigt",
+            "fa": "انتخاب درست"
+          }
+        },
+        {
+          "id": "2017-maj-a.general.q2.kw3",
+          "emoji": "⏰",
+          "text": {
+            "da": "senere færdige",
+            "fa": "دیرتر فارغ‌التحصیل"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de unge bliver mere modne og selvstændige. En anden fordel er, at de får tid til at finde ud af, hvad de vil studere, så de ikke vælger forkert. På den anden side er en ulempe, at de bliver senere færdige med deres uddannelse og kommer senere ud på arbejdsmarkedet. Alt i alt mener jeg, at et år er en god idé, men det skal ikke vare for længe."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 100,
+            "end": 122
+          },
+          {
+            "start": 202,
+            "end": 236
+          },
+          {
+            "start": 323,
+            "end": 346
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-maj-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for det danske samfund, at mange danske unge arbejder og rejser, før de begynder at studere, og dermed også bliver senere færdige med deres uddannelse?",
+          "fa": "به نظرت برای جامعه‌ی دانمارک چه معنایی دارد که جوانان قبل از تحصیل کار و سفر می‌کنند و دیرتر فارغ‌التحصیل می‌شوند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2017-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det koster samfundet penge, fordi de unge betaler skat i færre år. Men på den anden side vælger de måske en uddannelse, de rigtig gerne vil, og så falder færre fra. Det sparer også penge."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        41
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      40,
+      41
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

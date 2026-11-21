@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-maj-a",
+  "termId": "2020-maj",
+  "letter": "A",
+  "themeId": "medier",
+  "title": {
+    "da": "Børns tid online",
+    "fa": "زمان آنلاین کودکان"
+  },
+  "situations": [
+    {
+      "id": "2020-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "mobilfri skoledag — forbud mod mobil i skoletiden",
+        "fa": "روز مدرسه‌ی بدون موبایل (ممنوعیت موبایل در مدرسه)"
+      },
+      "intro": {
+        "id": "2020-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en skoleklasse, hvor mobiltelefoner er forbudt i skoletiden."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-a.sitA.q1",
+        "text": {
+          "da": "På nogle skoler må elever ikke bruge deres mobiltelefon i skoletiden. Hvorfor tror du, det er sådan?",
+          "fa": "در بعضی مدرسه‌ها دانش‌آموزان اجازه ندارند در ساعت مدرسه از موبایل استفاده کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-a.sitA.q1.kw1",
+            "emoji": "🎯",
+            "text": {
+              "da": "koncentration",
+              "fa": "تمرکز"
+            }
+          },
+          {
+            "id": "2020-maj-a.sitA.q1.kw2",
+            "emoji": "🤸",
+            "text": {
+              "da": "lege i frikvarteret",
+              "fa": "بازی در زنگ تفریح"
+            }
+          },
+          {
+            "id": "2020-maj-a.sitA.q1.kw3",
+            "emoji": "🛑",
+            "text": {
+              "da": "mindre mobning",
+              "fa": "قلدری کمتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første forstyrrer mobilen undervisningen, og eleverne kan ikke koncentrere sig. For det andet vil man have, at eleverne leger og taler sammen i frikvartererne. Desuden kan forbuddet mindske mobning på de sociale medier. Så alt i alt handler det om koncentration og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 123,
+              "end": 136
+            },
+            {
+              "start": 203,
+              "end": 210
+            },
+            {
+              "start": 263,
+              "end": 275
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-a.sitA.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at elever ikke må bruge deres mobiltelefon i skoletiden?",
+            "fa": "آیا ممنوع بودن موبایل در ساعت مدرسه مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Der kan være nogle små problemer. Forældrene kan ikke kontakte deres børn, og eleverne kan ikke bruge mobilen til at lære. Men jeg synes, fordelene er størst, fordi børnene leger mere sammen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          62
+        ]
+      }
+    },
+    {
+      "id": "2020-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "børn og computerspil frem for udendørs leg",
+        "fa": "بچه‌ها بازی کامپیوتری را به بازی بیرون ترجیح می‌دهند"
+      },
+      "intro": {
+        "id": "2020-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser et barn, der spiller computerspil i stedet for at lege udenfor."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-a.sitB.q1",
+        "text": {
+          "da": "Nogle børn vil hellere spille computerspil end lege udenfor sammen med deres venner. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی بچه‌ها بازی کامپیوتری را به بازی کردن بیرون با دوستانشان ترجیح می‌دهند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-a.sitB.q1.kw1",
+            "emoji": "🎮",
+            "text": {
+              "da": "spændende",
+              "fa": "هیجان‌انگیز"
+            }
+          },
+          {
+            "id": "2020-maj-a.sitB.q1.kw2",
+            "emoji": "🧑‍🤝‍🧑",
+            "text": {
+              "da": "vennerne er online",
+              "fa": "دوستان آنلاین‌اند"
+            }
+          },
+          {
+            "id": "2020-maj-a.sitB.q1.kw3",
+            "emoji": "🌧️",
+            "text": {
+              "da": "nemt, ingen dårligt vejr",
+              "fa": "آسان، بدون هوای بد"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er computerspil lavet til at være spændende, så det er svært at stoppe. For det andet spiller vennerne også online, så det er dér, de mødes. Desuden er det nemt, og man skal ikke ud i dårligt vejr. Så alt i alt handler det om spænding, venner og nemhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 122,
+              "end": 135
+            },
+            {
+              "start": 191,
+              "end": 198
+            },
+            {
+              "start": 248,
+              "end": 260
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-a.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at nogen børn hellere vil spille computerspil end lege udenfor sammen med deres venner?",
+            "fa": "آیا ترجیح بازی کامپیوتری به بازی بیرون مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg. Børnene bevæger sig for lidt, og det kan give overvægt og dårlig søvn. De lærer heller ikke de samme sociale færdigheder som i leg ansigt til ansigt. Derfor er det vigtigt med en balance."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          62
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-maj-a.general",
+    "question": {
+      "id": "2020-maj-a.general.q2",
+      "text": {
+        "da": "Nogle børn og unge bruger næsten hele deres sociale liv online, fx på sociale medier. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی بچه‌ها و نوجوانان تقریباً همه‌ی زندگی اجتماعی‌شان را آنلاین می‌گذرانند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-maj-a.general.q2.kw1",
+          "emoji": "📞",
+          "text": {
+            "da": "kontakt med venner",
+            "fa": "ارتباط با دوستان"
+          }
+        },
+        {
+          "id": "2020-maj-a.general.q2.kw2",
+          "emoji": "🥱",
+          "text": {
+            "da": "generte finder fællesskab",
+            "fa": "خجالتی‌ها جمع پیدا می‌کنند"
+          }
+        },
+        {
+          "id": "2020-maj-a.general.q2.kw3",
+          "emoji": "😞",
+          "text": {
+            "da": "mobning og ensomhed",
+            "fa": "قلدری و تنهایی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de kan holde kontakt med venner, også dem der bor langt væk. En anden fordel er, at børn, der er generte, nemmere kan finde fællesskaber online. På den anden side er en ulempe, at de mødes mindre ansigt til ansigt. Der er også en risiko for mobning og ensomhed. Alt i alt mener jeg, at livet online skal være et supplement og ikke det hele."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 118,
+            "end": 140
+          },
+          {
+            "start": 202,
+            "end": 236
+          },
+          {
+            "start": 319,
+            "end": 342
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-maj-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for børn og unges sociale kompetencer, at de bruger meget tid på online-fællesskaber?",
+          "fa": "به نظرت وقت زیاد در جمع‌های آنلاین چه تأثیری بر مهارت‌های اجتماعی بچه‌ها و نوجوانان دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2020-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, de sociale kompetencer kan blive svagere. Det er svært at lære at læse kropssprog og løse konflikter over en skærm. Men de bliver gode til at kommunikere digitalt."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        63
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      62,
+      63
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-nov-c",
+  "termId": "2018-nov",
+  "letter": "C",
+  "themeId": "boern",
+  "title": {
+    "da": "Test i skolen",
+    "fa": "آزمون در مدرسه"
+  },
+  "situations": [
+    {
+      "id": "2018-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "tidlig testning af børn fra de er små",
+        "fa": "آزمون گرفتن از بچه‌ها از سنین پایین"
+      },
+      "intro": {
+        "id": "2018-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser et lille barn, der bliver testet i skolen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-c.sitA.q1",
+        "text": {
+          "da": "Nogle mener, at det er vigtigt for børns læring, at de bliver testet i skolen fra de er helt små. Hvorfor tror du, de mener det?",
+          "fa": "بعضی‌ها معتقدند برای یادگیری بچه‌ها مهم است از خیلی کوچکی در مدرسه آزمون بدهند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-c.sitA.q1.kw1",
+            "emoji": "🆘",
+            "text": {
+              "da": "ekstra hjælp i tide",
+              "fa": "کمک به‌موقع"
+            }
+          },
+          {
+            "id": "2018-nov-c.sitA.q1.kw2",
+            "emoji": "👩‍🏫",
+            "text": {
+              "da": "virker undervisningen?",
+              "fa": "آیا آموزش جواب می‌دهد؟"
+            }
+          },
+          {
+            "id": "2018-nov-c.sitA.q1.kw3",
+            "emoji": "👩‍👩‍👧",
+            "text": {
+              "da": "forældre følger med",
+              "fa": "والدین در جریان‌اند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første kan tests vise, om et barn har brug for ekstra hjælp. For det andet kan lærerne se, om undervisningen virker. Desuden kan forældrene følge med i barnets udvikling. Så alt i alt handler det om at hjælpe børnene i tide."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 104,
+              "end": 117
+            },
+            {
+              "start": 160,
+              "end": 167
+            },
+            {
+              "start": 214,
+              "end": 226
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-c.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at teste børn i skolen? Hvorfor / hvorfor ikke?",
+            "fa": "آیا آزمون گرفتن از بچه‌ها در مدرسه مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at teste børn i skolen?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2018-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Børnene kan blive stressede og bange for at fejle, når de er helt små. Undervisningen kan også komme til at handle for meget om tests i stedet for leg og læring."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "2018-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "karakterer er upræcise til ungdomsuddannelse",
+        "fa": "نمره‌ها برای پذیرش در دبیرستان دقیق نیستند"
+      },
+      "intro": {
+        "id": "2018-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en elev, der får karakterer."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-c.sitB.q1",
+        "text": {
+          "da": "Nogle mener, at karakterer er for upræcise til at afgøre, om unge kan få en ungdomsuddannelse, fx komme i gymnasiet. Hvorfor tror du, de mener det?",
+          "fa": "بعضی‌ها معتقدند نمره‌ها برای تصمیم درباره‌ی پذیرش جوانان در دبیرستان دقیق نیستند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-c.sitB.q1.kw1",
+            "emoji": "🧩",
+            "text": {
+              "da": "viser ikke alt",
+              "fa": "همه‌چیز را نشان نمی‌دهد"
+            }
+          },
+          {
+            "id": "2018-nov-c.sitB.q1.kw2",
+            "emoji": "😣",
+            "text": {
+              "da": "en dårlig dag",
+              "fa": "یک روز بد"
+            }
+          },
+          {
+            "id": "2018-nov-c.sitB.q1.kw3",
+            "emoji": "🌱",
+            "text": {
+              "da": "unge udvikler sig",
+              "fa": "جوان‌ها تغییر می‌کنند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første viser karakterer ikke alt, for eksempel motivation og praktiske evner. For det andet kan en elev have en dårlig dag til en prøve. Desuden udvikler unge sig meget, så karaktererne kan ændre sig. Så alt i alt mener de, at karakterer ikke viser hele mennesket."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 121,
+              "end": 134
+            },
+            {
+              "start": 180,
+              "end": 187
+            },
+            {
+              "start": 244,
+              "end": 256
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-c.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved ikke at bruge karakterer, når man afgør, om unge kan få en ungdomsuddannelse? Hvorfor / hvorfor ikke?",
+            "fa": "آیا استفاده نکردن از نمره برای تصمیم درباره‌ی پذیرش جوانان مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved ikke at bruge karakterer, når man afgør, om unge kan få en ungdomsuddannelse?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2018-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Uden karakterer er det svært at vælge retfærdigt mellem eleverne, og vurderingen kan blive mere subjektiv. Karakterer er en enkel og ens måde at måle på."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          75
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-nov-c.general",
+    "question": {
+      "id": "2018-nov-c.general.q2",
+      "text": {
+        "da": "Skolernes karaktergennemsnit for eleverne i 9. og 10. klasse offentliggøres på nettet. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "میانگین نمره‌ی مدرسه‌ها برای کلاس‌های ۹ و ۱۰ در اینترنت منتشر می‌شود. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-nov-c.general.q2.kw1",
+          "emoji": "🔎",
+          "text": {
+            "da": "info til forældre",
+            "fa": "اطلاعات برای والدین"
+          }
+        },
+        {
+          "id": "2018-nov-c.general.q2.kw2",
+          "emoji": "📈",
+          "text": {
+            "da": "motiverer skolerne",
+            "fa": "انگیزه برای مدرسه‌ها"
+          }
+        },
+        {
+          "id": "2018-nov-c.general.q2.kw3",
+          "emoji": "🏚️",
+          "text": {
+            "da": "dårligt ry",
+            "fa": "بدنامی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at forældrene kan få information, når de skal vælge skole. En anden fordel er, at skolerne bliver motiverede til at blive bedre. På den anden side er en ulempe, at gennemsnittet ikke viser alt, for eksempel trivsel og elevernes baggrund. Skoler i fattige områder kan få et dårligt ry. Alt i alt mener jeg, at tallene skal bruges med forsigtighed."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 113,
+            "end": 135
+          },
+          {
+            "start": 183,
+            "end": 217
+          },
+          {
+            "start": 339,
+            "end": 362
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-nov-c.general.followup1",
+        "text": {
+          "da": "Hvordan tror du, at det påvirker lærernes undervisning, hvis alle kan se skolernes karaktergennemsnit på nettet?",
+          "fa": "به نظرت دیده شدن میانگین نمره‌ی مدرسه‌ها در اینترنت چه تأثیری بر تدریس معلم‌ها دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2018-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, lærerne kan komme under pres. Så underviser de måske mest i det, der kommer til prøven, og mindre i kreative fag. Men det kan også motivere dem til at gøre undervisningen bedre."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        76
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      75,
+      76
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

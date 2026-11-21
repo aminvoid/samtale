@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 0,
+  "themes": [
+    {
+      "id": "arbejde",
+      "chapter": 2,
+      "emoji": "💼",
+      "title": {
+        "da": "Arbejde og arbejdsmarked",
+        "fa": "کار و بازار کار"
+      },
+      "subthemes": [
+        {
+          "id": "arbejde.jobvalg-jobsoegning-og-jobskifte",
+          "title": {
+            "da": "Jobvalg, jobsøgning og jobskifte",
+            "fa": "انتخاب شغل، کاریابی و تغییر شغل"
+          },
+          "source": {
+            "pages": [
+              12
+            ]
+          }
+        },
+        {
+          "id": "arbejde.arbejdsmiljoe-trivsel-og-stress",
+          "title": {
+            "da": "Arbejdsmiljø, trivsel og stress",
+            "fa": "محیط کار، رضایت و استرس"
+          },
+          "source": {
+            "pages": [
+              18
+            ]
+          }
+        },
+        {
+          "id": "arbejde.arbejdstid-og-familieliv",
+          "title": {
+            "da": "Arbejdstid og familieliv",
+            "fa": "ساعت کاری و زندگی خانوادگی"
+          },
+          "source": {
+            "pages": [
+              24
+            ]
+          }
+        },
+        {
+          "id": "arbejde.alder-og-pension",
+          "title": {
+            "da": "Alder og pension",
+            "fa": "سن و بازنشستگی"
+          },
+          "source": {
+            "pages": [
+              29
+            ]
+          }
+        },
+        {
+          "id": "arbejde.koen-sprog-og-udenlandsk-arbejdskraft",
+          "title": {
+            "da": "Køn, sprog og udenlandsk arbejdskraft",
+            "fa": "جنسیت، زبان و نیروی کار خارجی"
+          },
+          "source": {
+            "pages": [
+              32
+            ]
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          11
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "uddannelse",
+      "chapter": 3,
+      "emoji": "🎓",
+      "title": {
+        "da": "Uddannelse og studieliv",
+        "fa": "تحصیل و زندگی دانشجویی"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          38
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "sundhed",
+      "chapter": 4,
+      "emoji": "🏥",
+      "title": {
+        "da": "Sundhed",
+        "fa": "سلامت"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          48
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "medier",
+      "chapter": 5,
+      "emoji": "📱",
+      "title": {
+        "da": "Medier og teknologi",
+        "fa": "رسانه و فناوری"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          57
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "klima",
+      "chapter": 6,
+      "emoji": "🌍",
+      "title": {
+        "da": "Klima, miljø og transport",
+        "fa": "اقلیم، محیط زیست و حمل‌ونقل"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          65
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "boern",
+      "chapter": 7,
+      "emoji": "👶",
+      "title": {
+        "da": "Børn, familie og skole",
+        "fa": "کودک، خانواده و مدرسه"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          73
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "krim",
+      "chapter": 8,
+      "emoji": "⚖️",
+      "title": {
+        "da": "Kriminalitet og overvågning",
+        "fa": "جرم و نظارت"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          80
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "bolig",
+      "chapter": 9,
+      "emoji": "🏡",
+      "title": {
+        "da": "Bolig og byliv",
+        "fa": "مسکن و زندگی شهری"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          85
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "frivillig",
+      "chapter": 10,
+      "emoji": "🤝",
+      "title": {
+        "da": "Frivilligt arbejde",
+        "fa": "کار داوطلبانه"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          91
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "kultur",
+      "chapter": 11,
+      "emoji": "🎭",
+      "title": {
+        "da": "Kultur",
+        "fa": "فرهنگ"
+      },
+      "subthemes": [],
+      "source": {
+        "pages": [
+          95
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    }
+  ]
+}

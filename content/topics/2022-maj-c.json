@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 0,
+  "id": "2022-maj-c",
+  "termId": "2022-maj",
+  "letter": "C",
+  "themeId": "boern",
+  "title": {
+    "da": "Daginstitutioner",
+    "fa": "مهدکودک‌ها"
+  },
+  "situations": [
+    {
+      "id": "2022-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "i daginstitution fra tidlig alder",
+        "fa": "رفتن به مهدکودک از سن کم"
+      },
+      "intro": {
+        "id": "2022-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser et lille barn i en daginstitution."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-c.sitA.q1",
+        "text": {
+          "da": "Det er almindeligt i Danmark, at børn kommer i daginstitution, når de er ca. et år gamle. Hvorfor tror du, det er sådan?",
+          "fa": "در دانمارک معمول است بچه‌ها از حدود یک‌سالگی به مهدکودک بروند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-c.sitA.q1.kw1",
+            "emoji": "👩‍💼",
+            "text": {
+              "da": "begge forældre arbejder",
+              "fa": "هر دو والد کار می‌کنند"
+            }
+          },
+          {
+            "id": "2022-maj-c.sitA.q1.kw2",
+            "emoji": "🍼",
+            "text": {
+              "da": "barslen slutter",
+              "fa": "پایان مرخصی زایمان"
+            }
+          },
+          {
+            "id": "2022-maj-c.sitA.q1.kw3",
+            "emoji": "🧸",
+            "text": {
+              "da": "være sammen med andre børn",
+              "fa": "بودن با بچه‌های دیگر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første arbejder begge forældre i Danmark, også mødrene. For det andet slutter barselsorloven, når barnet er omkring et år. Desuden lærer børnene at være sammen med andre børn. Så alt i alt handler det om arbejde, barsel og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 99,
+              "end": 112
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for børnenes sociale udvikling, at de kommer tidligt i daginstitution?",
+            "fa": "به نظرت رفتن زودهنگام به مهدکودک چه تأثیری بر رشد اجتماعی بچه‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det er godt for den sociale udvikling. Børnene lærer at lege, dele og vente på deres tur. De lærer også dansk, hvis forældrene taler et andet sprog. Men nogle små børn bliver trætte af de lange dage."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          76
+        ]
+      }
+    },
+    {
+      "id": "2022-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "at blive passet af forældre selv",
+        "fa": "نگهداری بچه توسط خود والدین"
+      },
+      "intro": {
+        "id": "2022-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle forældre, der selv passer deres barn derhjemme."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-c.sitB.q1",
+        "text": {
+          "da": "Der er nogle forældre, der vælger at passe deres børn selv, selvom der er offentlige daginstitutioner. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی والدین با وجود مهدکودک‌های دولتی، خودشان بچه‌ها را نگه می‌دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-c.sitB.q1.kw1",
+            "emoji": "⏳",
+            "text": {
+              "da": "tid med børnene",
+              "fa": "وقت با بچه‌ها"
+            }
+          },
+          {
+            "id": "2022-maj-c.sitB.q1.kw2",
+            "emoji": "👶",
+            "text": {
+              "da": "for få voksne",
+              "fa": "کمبود مربی"
+            }
+          },
+          {
+            "id": "2022-maj-c.sitB.q1.kw3",
+            "emoji": "🏠",
+            "text": {
+              "da": "kultur",
+              "fa": "فرهنگ"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne bruge mere tid sammen med deres børn, mens de er små. For det andet synes nogle, at der er for mange børn og for få voksne i institutionerne. Desuden har nogle en kultur, hvor mor passer børnene hjemme. Så alt i alt handler det om tid, kvalitet og kultur."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 117,
+              "end": 130
+            },
+            {
+              "start": 205,
+              "end": 212
+            },
+            {
+              "start": 266,
+              "end": 278
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-c.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at børn ikke kommer i daginstitution, før de skal begynde i skolen? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا ممکن است مشکل باشد که بچه تا قبل از مدرسه به مهدکودک نرود؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved, at børn ikke kommer i daginstitution, før de skal begynde i skolen?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2022-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Børnene møder færre andre børn, og nogle lærer ikke dansk godt nok før skolen. Det kan give en svær start i skolen. Mor kan også miste kontakten med arbejdsmarkedet."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          76,
+          77
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2022-maj-c.general",
+    "question": {
+      "id": "2022-maj-c.general.q2",
+      "text": {
+        "da": "Daginstitutioner er offentligt støttede i Danmark. Hvilke fordele og ulemper mener du, der kan være ved det for det danske samfund?",
+        "fa": "مهدکودک‌ها در دانمارک یارانه‌ی دولتی دارند. مزایا و معایبش برای جامعه‌ی دانمارک؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2022-maj-c.general.q2.kw1",
+          "emoji": "👩‍💼",
+          "text": {
+            "da": "begge forældre kan arbejde",
+            "fa": "هر دو والد می‌توانند کار کنند"
+          }
+        },
+        {
+          "id": "2022-maj-c.general.q2.kw2",
+          "emoji": "⚖️",
+          "text": {
+            "da": "lige muligheder",
+            "fa": "فرصت برابر"
+          }
+        },
+        {
+          "id": "2022-maj-c.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt",
+            "fa": "گران"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2022-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at begge forældre kan arbejde, og det giver flere skatteindtægter. En anden fordel er, at alle børn får lige muligheder, uanset deres baggrund. På den anden side er en ulempe, at det koster samfundet mange penge. Nogle mener også, at børnene kommer for tidligt ud hjemmefra. Alt i alt mener jeg, at det er en god investering i både børn og økonomi."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 135,
+            "end": 157
+          },
+          {
+            "start": 212,
+            "end": 246
+          },
+          {
+            "start": 343,
+            "end": 366
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2022-maj-c.general.followup1",
+        "text": {
+          "da": "Daginstitutioner er offentligt støttede, men ikke gratis. Mener du, at de skal være det? Hvorfor?/Hvorfor ikke?",
+          "fa": "مهدکودک‌ها یارانه دارند ولی رایگان نیستند. به نظرت باید رایگان باشند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Daginstitutioner er offentligt støttede, men ikke gratis. Mener du, at de skal være det?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2022-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Nej, ikke for alle. Forældrene betaler kun en del af prisen, og det er rimeligt. Men for familier med lav indkomst bør det være billigere, og det er det allerede i dag med økonomisk friplads."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        77
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      76,
+      77
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-maj-b",
+  "termId": "2016-maj",
+  "letter": "B",
+  "themeId": "bolig",
+  "title": {
+    "da": "Boformer og livsstil",
+    "fa": "شکل‌های سکونت و سبک زندگی"
+  },
+  "situations": [
+    {
+      "id": "2016-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "flytter i hus i en forstad/mindre by, når de får børn",
+        "fa": "نقل‌مکان به خانه‌ای در حومه یا شهر کوچک بعد از بچه‌دار شدن"
+      },
+      "intro": {
+        "id": "2016-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en ung familie, der flytter i hus i en forstad eller en mindre by."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-b.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker flytter i hus i en forstad eller i en mindre by, når de har fået børn. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها بعد از بچه‌دار شدن به خانه‌ای در حومه یا شهر کوچک‌تر می‌روند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-b.sitA.q1.kw1",
+            "emoji": "🏡",
+            "text": {
+              "da": "plads og have",
+              "fa": "جا و حیاط"
+            }
+          },
+          {
+            "id": "2016-maj-b.sitA.q1.kw2",
+            "emoji": "🌳",
+            "text": {
+              "da": "ro og tryghed",
+              "fa": "آرامش و امنیت"
+            }
+          },
+          {
+            "id": "2016-maj-b.sitA.q1.kw3",
+            "emoji": "💰",
+            "text": {
+              "da": "billigere",
+              "fa": "ارزان‌تر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første får man mere plads og en have for de samme penge. For det andet er der mere ro og natur, og det er mere trygt for børnene. Desuden er der ofte gode skoler og institutioner tæt på. Så alt i alt handler det om plads, tryghed og pris."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 100,
+              "end": 113
+            },
+            {
+              "start": 173,
+              "end": 180
+            },
+            {
+              "start": 230,
+              "end": 242
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for en børnefamilies hverdag at bo i et hus i en mindre by i stedet for i en lejlighed midt i en stor by?",
+            "fa": "به نظرت زندگی در خانه‌ای در شهر کوچک، به جای آپارتمان وسط شهر بزرگ، چه تأثیری بر زندگی روزمره‌ی خانواده‌ی بچه‌دار دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2016-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, hverdagen bliver mere rolig, og børnene kan lege ude i haven. Men forældrene skal måske bruge lang tid på at pendle til arbejde, og der er længere til kultur og aktiviteter."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "2016-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "flytter i bofællesskab med fælleshus og fællesaktiviteter",
+        "fa": "زندگی در مجتمع اشتراکی (bofællesskab) با سالن و فعالیت مشترک"
+      },
+      "intro": {
+        "id": "2016-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle mennesker, der bor i et bofællesskab med fælleshus og fællesaktiviteter."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-b.sitB.q1",
+        "text": {
+          "da": "Nogle mennesker vælger at flytte i bofællesskaber, hvor de har deres egen lejlighed, men hvor der er fælleshus og fællesaktiviteter. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی‌ها زندگی در مجتمع اشتراکی را انتخاب می‌کنند که آپارتمان خودشان را دارند ولی سالن و فعالیت مشترک هم هست. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-b.sitB.q1.kw1",
+            "emoji": "👫",
+            "text": {
+              "da": "fællesskab",
+              "fa": "باهم بودن"
+            }
+          },
+          {
+            "id": "2016-maj-b.sitB.q1.kw2",
+            "emoji": "🙌",
+            "text": {
+              "da": "hjælpe hinanden",
+              "fa": "کمک به هم"
+            }
+          },
+          {
+            "id": "2016-maj-b.sitB.q1.kw3",
+            "emoji": "🧸",
+            "text": {
+              "da": "mange børn at lege med",
+              "fa": "بچه‌های زیاد برای بازی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne have et fællesskab og ikke føle sig ensomme. For det andet kan man hjælpe hinanden, for eksempel med børnepasning og madlavning. Desuden kan børnene lege med mange andre børn. Så alt i alt handler det om fællesskab og hjælp i hverdagen."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 192,
+              "end": 199
+            },
+            {
+              "start": 239,
+              "end": 251
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-b.sitB.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved at bo i bofællesskab? Hvorfor / hvorfor ikke?",
+            "fa": "آیا زندگی در مجتمع اشتراکی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved at bo i bofællesskab?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Man har mindre privatliv, og der kan opstå konflikter, når mange skal blive enige. Man skal også bruge tid på møder og fælles opgaver."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          85,
+          86
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-maj-b.general",
+    "question": {
+      "id": "2016-maj-b.general.q2",
+      "text": {
+        "da": "Nogle mennesker vælger en alternativ livsstil uden tv og sociale medier, og hvor de ikke prioriterer materiel luksus. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی‌ها سبک زندگی متفاوتی بدون تلویزیون و شبکه‌های اجتماعی انتخاب می‌کنند و به تجملات مادی اهمیت نمی‌دهند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-maj-b.general.q2.kw1",
+          "emoji": "👨‍👩‍👧",
+          "text": {
+            "da": "mere tid sammen",
+            "fa": "وقت بیشتر با هم"
+          }
+        },
+        {
+          "id": "2016-maj-b.general.q2.kw2",
+          "emoji": "🌿",
+          "text": {
+            "da": "mindre stress og forbrug",
+            "fa": "استرس و مصرف کمتر"
+          }
+        },
+        {
+          "id": "2016-maj-b.general.q2.kw3",
+          "emoji": "🙁",
+          "text": {
+            "da": "børn udenfor",
+            "fa": "بچه‌ها از جمع جا می‌مانند"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at familien får mere tid sammen og mindre stress. En anden fordel er, at de bruger færre penge og passer bedre på miljøet. På den anden side er en ulempe, at børnene kan føle sig udenfor, hvis de ikke kender de serier og spil, som vennerne taler om. Alt i alt mener jeg, at det er godt med mindre skærm, men ikke nødvendigvis helt uden."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 104,
+            "end": 126
+          },
+          {
+            "start": 177,
+            "end": 211
+          },
+          {
+            "start": 304,
+            "end": 327
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-maj-b.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for en families livskvalitet at vælge en sådan alternativ livsstil?",
+          "fa": "به نظرت انتخاب چنین سبک زندگی‌ای چه تأثیری بر کیفیت زندگی خانواده دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, livskvaliteten kan blive bedre, fordi familien snakker og laver flere ting sammen. Men det afhænger af, om alle i familien ønsker det. Hvis børnene føler sig tvunget, kan det give konflikter."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        86
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      85,
+      86
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

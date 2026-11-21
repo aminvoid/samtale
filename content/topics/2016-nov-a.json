@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-nov-a",
+  "termId": "2016-nov",
+  "letter": "A",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "Unge og økonomi",
+    "fa": "جوانان و اقتصاد"
+  },
+  "situations": [
+    {
+      "id": "2016-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "studerende tager studielån udover SU",
+        "fa": "دانشجوهایی که علاوه بر SU وام تحصیلی می‌گیرند"
+      },
+      "intro": {
+        "id": "2016-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en studerende, der tager et studielån ud over sin SU."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-a.sitA.q1",
+        "text": {
+          "da": "De fleste studerende kan få økonomisk støtte (SU), men der er mange studerende, der også vælger at tage et studielån. Hvorfor tror du, det er sådan?",
+          "fa": "بیشتر دانشجوها کمک‌هزینه (SU) می‌گیرند، ولی خیلی‌ها وام تحصیلی هم می‌گیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-a.sitA.q1.kw1",
+            "emoji": "🏠",
+            "text": {
+              "da": "høj husleje",
+              "fa": "اجاره‌ی بالا"
+            }
+          },
+          {
+            "id": "2016-nov-a.sitA.q1.kw2",
+            "emoji": "📚",
+            "text": {
+              "da": "tid til at studere",
+              "fa": "وقت برای درس"
+            }
+          },
+          {
+            "id": "2016-nov-a.sitA.q1.kw3",
+            "emoji": "📉",
+            "text": {
+              "da": "lav rente",
+              "fa": "بهره‌ی کم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er SU'en ikke nok, fordi huslejen er høj, især i de store byer. For det andet vil de ikke arbejde for meget ved siden af, så de kan koncentrere sig om studiet. Desuden er SU-lånet billigt med en lav rente. Så alt i alt handler det om høj husleje og tid til at studere."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 114,
+              "end": 127
+            },
+            {
+              "start": 210,
+              "end": 217
+            },
+            {
+              "start": 256,
+              "end": 268
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-a.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at studerende tager et studielån? Hvorfor / hvorfor ikke?",
+            "fa": "آیا وام تحصیلی گرفتن دانشجوها می‌تواند مشکلی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at studerende tager et studielån?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Man starter sit voksenliv med gæld, og det kan være svært at betale tilbage, hvis man ikke får et job. Det kan også gøre det sværere at købe en bolig senere."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          38,
+          39
+        ]
+      }
+    },
+    {
+      "id": "2016-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "unge tager hurtige og dyre SMS-lån",
+        "fa": "جوان‌هایی که وام فوری و گران با موبایل (SMS-lån) می‌گیرند"
+      },
+      "intro": {
+        "id": "2016-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser et ungt menneske, der tager et hurtigt og dyrt sms-lån."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-a.sitB.q1",
+        "text": {
+          "da": "Mange unge tager hurtige lån via deres mobiltelefon, selvom det ofte er meget dyrt at låne penge på den måde. Hvorfor tror du alligevel, de gør det?",
+          "fa": "خیلی از جوانان با موبایل وام فوری می‌گیرند، با اینکه این نوع وام خیلی گران است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-a.sitB.q1.kw1",
+            "emoji": "⚡",
+            "text": {
+              "da": "nemt og hurtigt",
+              "fa": "آسان و سریع"
+            }
+          },
+          {
+            "id": "2016-nov-a.sitB.q1.kw2",
+            "emoji": "🛍️",
+            "text": {
+              "da": "her og nu",
+              "fa": "همین حالا می‌خواهند"
+            }
+          },
+          {
+            "id": "2016-nov-a.sitB.q1.kw3",
+            "emoji": "❓",
+            "text": {
+              "da": "forstår ikke renten",
+              "fa": "بهره را نمی‌فهمند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det meget nemt og hurtigt, og man kan låne penge på få minutter. For det andet vil mange unge gerne have ting her og nu, for eksempel tøj og en ny telefon. Desuden forstår de måske ikke, hvor dyre renterne er. Så alt i alt handler det om nemhed, forbrugspres og manglende viden om økonomi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 118,
+              "end": 131
+            },
+            {
+              "start": 209,
+              "end": 216
+            },
+            {
+              "start": 263,
+              "end": 275
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at unge tager hurtige og dyre lån via deres mobiltelefon? Hvorfor / hvorfor ikke?",
+            "fa": "آیا گرفتن وام فوری و گران با موبایل توسط جوانان مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at unge tager hurtige og dyre lån via deres mobiltelefon?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg bestemt. Renterne er meget høje, så gælden vokser hurtigt. Nogle unge kommer i RKI og kan ikke låne penge senere. Det kan give stress i mange år."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          38,
+          39
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-nov-a.general",
+    "question": {
+      "id": "2016-nov-a.general.q2",
+      "text": {
+        "da": "Nogle forældre køber en lejlighed til deres børn, når de flytter hjemmefra for at studere. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی والدین وقتی بچه‌شان برای تحصیل از خانه می‌رود، برایش آپارتمان می‌خرند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-nov-a.general.q2.kw1",
+          "emoji": "🏠",
+          "text": {
+            "da": "tryg bolig",
+            "fa": "خانه‌ی امن"
+          }
+        },
+        {
+          "id": "2016-nov-a.general.q2.kw2",
+          "emoji": "📈",
+          "text": {
+            "da": "sælge med overskud",
+            "fa": "فروش با سود"
+          }
+        },
+        {
+          "id": "2016-nov-a.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "uretfærdigt",
+            "fa": "ناعادلانه"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de unge får en god og tryg bolig, så de kan koncentrere sig om studiet. En anden fordel er, at forældrene ofte kan sælge lejligheden igen med overskud. På den anden side er en ulempe, at det er uretfærdigt, fordi ikke alle forældre har råd. De unge lærer måske heller ikke at klare sig selv. Alt i alt mener jeg, at det er fint, hvis de unge selv betaler noget husleje."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 129,
+            "end": 151
+          },
+          {
+            "start": 209,
+            "end": 243
+          },
+          {
+            "start": 349,
+            "end": 372
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-nov-a.general.followup1",
+        "text": {
+          "da": "Hvordan tror du, det påvirker de unges forhold til økonomi og forbrug senere i livet, at forældrene køber en lejlighed til dem, når de flytter hjemmefra?",
+          "fa": "به نظرت خرید آپارتمان توسط والدین چه تأثیری بر رابطه‌ی جوانان با پول و مصرف در آینده دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan gøre det sværere for dem at forstå værdien af penge. Hvis forældrene altid hjælper, lærer de ikke at spare op. Men hvis de selv betaler husleje, kan de godt lære at styre en økonomi."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        39,
+        40
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      38,
+      39,
+      40
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

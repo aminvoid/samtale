@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 0,
+  "id": "siri-2019-nov",
+  "document": {
+    "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+    "publisher": "Styrelsen for International Rekruttering og Integration (SIRI)",
+    "url": "https://sokolova.dk/2019-nov-censor-mundtlig.pdf",
+    "sha256": "aa9265c2736852424a6a13fc8076c8775ec9dcbe9026570b337207df1e21801f",
+    "retrievedOn": "2026-11-18",
+    "authenticity": "unconfirmed",
+    "availabilityNote": "Copy from a teacher's website; not available from SIRI."
+  },
+  "checkedOn": "2026-11-21",
+  "transcriptionRules": [
+    "AUTHENTICITY UNCONFIRMED: a third-party copy (sokolova.dk), not SIRI's own host. It looks like SIRI's booklet, but no official or archived copy was found to compare it with (search 2026-11-21: SIRI, danskogproever.dk, Studieskolen, nyidanmark.dk, Wayback Machine).",
+    "Transcribed from the PDF text layer (macOS PDFKit); verified by scripts/content/check-siri.ts.",
+    "Enclosing quotation marks removed. In 2019 each suggested follow-up is one quote including 'Hvorfor?/Hvorfor ikke?', so it is one part.",
+    "Line-end hyphens that are word wraps are joined (Hvor-for, for-skellige, kvin-der, sun-de, forskel-lige, hoved-måltiderne, inde-holder, ven-telister).",
+    "The 2019 booklet has no situation introductions: the examiner chooses question A or B after the picture description. Its intro and closing lines differ from 2024 and are not transcribed."
+  ],
+  "examinerLines": {},
+  "topics": {
+    "2019-nov-a": {
+      "title": "Køn og arbejde",
+      "sitA": {
+        "q1": {
+          "parts": [
+            "I Danmark er der færre kvinder end mænd, der arbejder med it og finans. Hvorfor tror du, det er sådan?"
+          ],
+          "page": 6
+        },
+        "followup1": {
+          "parts": [
+            "Kan der efter din mening være nogen problemer ved, at der er færre kvinder end mænd, der arbejder med it og finans? Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 6
+        }
+      },
+      "sitB": {
+        "q1": {
+          "parts": [
+            "I Danmark er der færre mænd end kvinder, der arbejder med børn, fx som lærer eller pædagog. Hvorfor tror du, det er sådan?"
+          ],
+          "page": 6
+        },
+        "followup1": {
+          "parts": [
+            "Hvad tror du, det betyder for børnene, at der er færre mænd end kvinder, der er pædagoger eller lærere?"
+          ],
+          "page": 6
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "Man kunne lave regler for, hvor mange kvinder og mænd der kan optages på forskellige uddannelser, så der ikke er nogen uddannelser, hvor der næsten kun er kvinder eller kun mænd. Hvilke fordele og ulemper mener du, der ville være ved det?"
+          ],
+          "page": 6
+        },
+        "followup1": {
+          "parts": [
+            "Synes du, det er vigtigt med en mere lige fordeling af kvinder og mænd i de forskellige brancher på arbejdsmarkedet? Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 7
+        }
+      }
+    },
+    "2019-nov-b": {
+      "title": "Kostvaner og livsstil",
+      "sitA": {
+        "q1": {
+          "parts": [
+            "De fleste mennesker spiser fx slik eller chips eller drikker fx cola mellem hovedmåltiderne, selvom de godt ved, at det er usundt. Hvorfor tror du alligevel, at de gør det?"
+          ],
+          "page": 8
+        },
+        "followup1": {
+          "parts": [
+            "Kan der efter din mening være nogen problemer ved at spise fx slik eller chips eller drikke fx cola en gang imellem? Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 8
+        }
+      },
+      "sitB": {
+        "q1": {
+          "parts": [
+            "Nogle mennesker spiser ikke mad, der indeholder kød, æg eller mælkeprodukter. Hvorfor tror du ikke, de gør det?"
+          ],
+          "page": 8
+        },
+        "followup1": {
+          "parts": [
+            "Kan der efter din mening være nogen problemer ved ikke at spise mad, der indeholder kød, æg eller mælkeprodukter? Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 8
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "I medierne er det typisk sådan, at folk med succes er smukke og slanke og har sunde kost- og motionsvaner. Hvilke fordele og ulemper mener du, der kan være ved, at de bliver fremstillet sådan?"
+          ],
+          "page": 9
+        },
+        "followup1": {
+          "parts": [
+            "Hvordan tror du, det påvirker især de unges selvtillid, at det typisk bliver fremstillet sådan, at det er smukke og slanke mennesker, der har succes?"
+          ],
+          "page": 9
+        }
+      }
+    },
+    "2019-nov-c": {
+      "title": "Studieboliger",
+      "sitA": {
+        "q1": {
+          "parts": [
+            "Mange studerende vil gerne studere i Aarhus eller København, selvom der er lange ventelister til studieboliger i de to byer. Hvorfor tror du alligevel, de gerne vil det?"
+          ],
+          "page": 10
+        },
+        "followup1": {
+          "parts": [
+            "Hvad tror du, det betyder for, hvor og hvordan de unge bor, at der er lange ventelister til studieboliger?"
+          ],
+          "page": 10
+        }
+      },
+      "sitB": {
+        "q1": {
+          "parts": [
+            "Mange forældre køber en lejlighed til deres børn, når børnene starter på en uddannelse. Hvorfor tror du, de gør det?"
+          ],
+          "page": 10
+        },
+        "followup1": {
+          "parts": [
+            "Hvad tror du, det betyder for de unges studieliv, at de kan bo i egen lejlighed?"
+          ],
+          "page": 10
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "I de store universitetsbyer kan man vælge at bygge flere studieboliger til studerende i stedet for fx boliger til ældre. Hvilke fordele og ulemper mener du, der kan være ved det for de store universitetsbyer?"
+          ],
+          "page": 11
+        },
+        "followup1": {
+          "parts": [
+            "Synes du, at det er studiebyernes ansvar at sørge for, at der er billige studieboliger og kollegier til alle studerende? Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 11
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-nov-b",
+  "termId": "2019-nov",
+  "letter": "B",
+  "themeId": "sundhed",
+  "title": {
+    "da": "Kostvaner og livsstil",
+    "fa": "عادت‌های غذایی و سبک زندگی"
+  },
+  "situations": [
+    {
+      "id": "2019-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "slik, chips og snacks mellem måltiderne",
+        "fa": "شکلات، چیپس و تنقلات بین وعده‌ها"
+      },
+      "intro": {
+        "id": "2019-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der spiser slik og chips mellem måltiderne."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-b.sitA.q1",
+        "text": {
+          "da": "De fleste spiser fx slik eller chips eller drikker cola mellem hovedmåltiderne, selvom de godt ved, at det er usundt. Hvorfor tror du alligevel, at de gør det?",
+          "fa": "بیشتر آدم‌ها بین وعده‌های اصلی شکلات، چیپس یا نوشابه می‌خورند، با اینکه می‌دانند ناسالم است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "differs",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              8
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "De fleste mennesker spiser fx slik eller chips eller drikker fx cola mellem hovedmåltiderne, selvom de godt ved, at det er usundt. Hvorfor tror du alligevel, at de gør det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-b.sitA.q1.kw1",
+            "emoji": "😋",
+            "text": {
+              "da": "smager godt",
+              "fa": "خوشمزه"
+            }
+          },
+          {
+            "id": "2019-nov-b.sitA.q1.kw2",
+            "emoji": "🛒",
+            "text": {
+              "da": "nemt og billigt",
+              "fa": "آسان و ارزان"
+            }
+          },
+          {
+            "id": "2019-nov-b.sitA.q1.kw3",
+            "emoji": "😰",
+            "text": {
+              "da": "stress og kedsomhed",
+              "fa": "استرس و بی‌حوصلگی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første smager det godt, og det giver hurtig energi. For det andet er det nemt og billigt at købe overalt. Desuden spiser mange usundt, når de er stressede eller keder sig. Så alt i alt handler det om smag, vaner og følelser."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 95,
+              "end": 108
+            },
+            {
+              "start": 149,
+              "end": 156
+            },
+            {
+              "start": 215,
+              "end": 227
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-b.sitA.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved at spise fx slik eller chips eller drikke cola en gang imellem? Hvorfor / hvorfor ikke?",
+            "fa": "آیا خوردن گاه‌به‌گاه شکلات، چیپس یا نوشابه مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "differs",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                8
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Kan der efter din mening være nogen problemer ved at spise fx slik eller chips eller drikke fx cola en gang imellem? Hvorfor?/Hvorfor ikke?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved at spise fx slik eller chips eller drikke cola en gang imellem?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2019-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Nej, ikke hvis det kun er en gang imellem. Det er en del af hyggen, og man skal også nyde livet. Problemet er, hvis det bliver en daglig vane, fordi det kan skade sundheden og tænderne."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          50
+        ]
+      }
+    },
+    {
+      "id": "2019-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "vegansk / plantebaseret kost (uden kød, æg, mælk)",
+        "fa": "رژیم وگان / گیاهی (بدون گوشت، تخم‌مرغ، شیر)"
+      },
+      "intro": {
+        "id": "2019-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der spiser plantebaseret mad uden kød, æg og mælk."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-b.sitB.q1",
+        "text": {
+          "da": "Nogle mennesker spiser ikke mad, der indeholder kød, æg eller mælkeprodukter. Hvorfor tror du, de ikke gør det?",
+          "fa": "بعضی‌ها غذایی که گوشت، تخم‌مرغ یا لبنیات دارد نمی‌خورند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "differs",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              8
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Nogle mennesker spiser ikke mad, der indeholder kød, æg eller mælkeprodukter. Hvorfor tror du ikke, de gør det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-b.sitB.q1.kw1",
+            "emoji": "🌍",
+            "text": {
+              "da": "klimaet",
+              "fa": "اقلیم"
+            }
+          },
+          {
+            "id": "2019-nov-b.sitB.q1.kw2",
+            "emoji": "🐄",
+            "text": {
+              "da": "dyrevelfærd",
+              "fa": "رفاه حیوانات"
+            }
+          },
+          {
+            "id": "2019-nov-b.sitB.q1.kw3",
+            "emoji": "🥦",
+            "text": {
+              "da": "sundhed",
+              "fa": "سلامتی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil mange gerne passe på klimaet, fordi kødproduktion udleder meget CO2. For det andet tænker nogle på dyrevelfærd. Desuden tror mange, at plantebaseret mad er sundere. Så alt i alt handler det om klima, dyr og sundhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 123,
+              "end": 136
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-b.sitB.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved ikke at spise mad, der indeholder kød, æg eller mælkeprodukter? Hvorfor / hvorfor ikke?",
+            "fa": "آیا نخوردن گوشت، تخم‌مرغ و لبنیات می‌تواند مشکلی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "differs",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                8
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Kan der efter din mening være nogen problemer ved ikke at spise mad, der indeholder kød, æg eller mælkeprodukter? Hvorfor?/Hvorfor ikke?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved ikke at spise mad, der indeholder kød, æg eller mælkeprodukter?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2019-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Man kan mangle nogle vitaminer, for eksempel B12, hvis man ikke planlægger sin kost godt. Det kan også være svært at spise sammen med familie og venner. Men med god viden kan man sagtens spise sundt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          50,
+          51
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-nov-b.general",
+    "question": {
+      "id": "2019-nov-b.general.q2",
+      "text": {
+        "da": "I medierne er det typisk sådan, at folk med succes er smukke og slanke og har sunde kost- og motionsvaner. Hvilke fordele og ulemper mener du, der kan være ved, at de bliver fremstillet sådan?",
+        "fa": "در رسانه‌ها معمولاً آدم‌های موفق، زیبا و لاغرند و تغذیه و ورزش سالمی دارند. مزایا و معایب این نوع نمایش؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2019-nov",
+          "pages": [
+            9
+          ]
+        },
+        "checkedOn": "2026-11-21",
+        "siriParts": [
+          "I medierne er det typisk sådan, at folk med succes er smukke og slanke og har sunde kost- og motionsvaner. Hvilke fordele og ulemper mener du, der kan være ved, at de bliver fremstillet sådan?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "third-party-copy",
+          "note": "Copy from a teacher's website; not available from SIRI."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2019-nov-b.general.q2.kw1",
+          "emoji": "🏃",
+          "text": {
+            "da": "motivation",
+            "fa": "انگیزه"
+          }
+        },
+        {
+          "id": "2019-nov-b.general.q2.kw2",
+          "emoji": "🖼️",
+          "text": {
+            "da": "urealistisk billede",
+            "fa": "تصویر غیرواقعی"
+          }
+        },
+        {
+          "id": "2019-nov-b.general.q2.kw3",
+          "emoji": "😔",
+          "text": {
+            "da": "dårligt selvværd",
+            "fa": "عزت‌نفس پایین"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at det kan motivere folk til at leve sundere og dyrke motion. En anden fordel er, at der kommer mere fokus på sundhed i samfundet. På den anden side er en ulempe, at det giver et urealistisk billede af, hvordan man skal se ud. Mange, især unge, kan få et dårligt selvværd. Alt i alt mener jeg, at medierne bør vise mere forskellige mennesker."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 116,
+            "end": 138
+          },
+          {
+            "start": 185,
+            "end": 219
+          },
+          {
+            "start": 327,
+            "end": 350
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-nov-b.general.followup1",
+        "text": {
+          "da": "Hvordan tror du, det påvirker især de unges selvtillid, at det typisk bliver fremstillet sådan, at det er smukke og slanke mennesker, der har succes?",
+          "fa": "به نظرت این نوع نمایش در رسانه‌ها چه تأثیری بر اعتمادبه‌نفس جوانان دارد؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              9
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Hvordan tror du, det påvirker især de unges selvtillid, at det typisk bliver fremstillet sådan, at det er smukke og slanke mennesker, der har succes?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "answer": {
+          "id": "2019-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan skade de unges selvtillid. De sammenligner sig med perfekte billeder, som ofte er redigerede. Så føler de sig ikke gode nok. Derfor er det vigtigt at lære unge at være kritiske over for medierne."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        51
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      50,
+      51
+    ]
+  },
+  "review": {
+    "status": "needs-review",
+    "notes": [
+      {
+        "path": "situations[0].question.text.da",
+        "pages": [
+          50
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 8). SIRI: \"De fleste mennesker spiser fx slik eller chips eller drikker fx cola mellem hovedmåltiderne, selvom de godt ved, at det er usundt. Hvorfor tror du alligevel, at de gør det?\""
+      },
+      {
+        "path": "situations[0].followups[0].text.da",
+        "pages": [
+          50
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 8). SIRI: \"Kan der efter din mening være nogen problemer ved at spise fx slik eller chips eller drikke fx cola en gang imellem? Hvorfor?/Hvorfor ikke?\""
+      },
+      {
+        "path": "situations[1].question.text.da",
+        "pages": [
+          50
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 8). SIRI: \"Nogle mennesker spiser ikke mad, der indeholder kød, æg eller mælkeprodukter. Hvorfor tror du ikke, de gør det?\""
+      },
+      {
+        "path": "situations[1].followups[0].text.da",
+        "pages": [
+          51
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 8). SIRI: \"Kan der efter din mening være nogen problemer ved ikke at spise mad, der indeholder kød, æg eller mælkeprodukter? Hvorfor?/Hvorfor ikke?\""
+      },
+      {
+        "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+      },
+      {
+        "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+      },
+      {
+        "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+      }
+    ]
+  }
+}

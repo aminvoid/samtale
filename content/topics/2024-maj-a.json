@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 0,
+  "id": "2024-maj-a",
+  "termId": "2024-maj",
+  "letter": "A",
+  "themeId": "kultur",
+  "title": {
+    "da": "Støtte til kultur",
+    "fa": "حمایت از فرهنگ"
+  },
+  "situations": [
+    {
+      "id": "2024-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "familie ved kunstmuseum (gratis adgang for børn)",
+        "fa": "خانواده‌ای در موزه‌ی هنر (ورود رایگان برای بچه‌ها)"
+      },
+      "intro": {
+        "id": "2024-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en familie, der er på vej ind på et kunstmuseum, hvor der er gratis adgang for børn."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            6
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-a.sitA.q1",
+        "text": {
+          "da": "Børn kan ofte få gratis adgang eller rabat til kulturinstitutioner som fx museer eller teatre. Hvorfor tror du, de kan det?",
+          "fa": "بچه‌ها اغلب ورود رایگان یا تخفیف برای مؤسسه‌های فرهنگی مثل موزه یا تئاتر دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              6
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Børn kan ofte få gratis adgang eller rabat til kulturinstitutioner som fx museer eller teatre. Hvorfor tror du, de kan det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-a.sitA.q1.kw1",
+            "emoji": "⚖️",
+            "text": {
+              "da": "alle børn, uanset økonomi",
+              "fa": "همه‌ی بچه‌ها، با هر وضع مالی"
+            }
+          },
+          {
+            "id": "2024-maj-a.sitA.q1.kw2",
+            "emoji": "🏛️",
+            "text": {
+              "da": "lære om historie og kunst",
+              "fa": "یادگیری تاریخ و هنر"
+            }
+          },
+          {
+            "id": "2024-maj-a.sitA.q1.kw3",
+            "emoji": "❤️",
+            "text": {
+              "da": "glade for kultur hele livet",
+              "fa": "علاقه‌ی مادام‌العمر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal alle børn have mulighed for at opleve kultur, uanset forældrenes økonomi. For det andet lærer børnene om historie og kunst. Desuden bliver børnene måske glade for kultur hele livet. Så alt i alt handler det om lighed og læring."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 129,
+              "end": 142
+            },
+            {
+              "start": 179,
+              "end": 186
+            },
+            {
+              "start": 237,
+              "end": 249
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-a.sitA.followup1",
+          "text": {
+            "da": "Synes du, det er en god idé at tage børn med på museum? Hvorfor?/Hvorfor ikke?",
+            "fa": "به نظرت بردن بچه‌ها به موزه ایده‌ی خوبی است؟ چرا؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                6
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Synes du, det er en god idé at tage børn med på museum?",
+              "Hvorfor?/Hvorfor ikke?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "spoken": {
+            "parts": [
+              "Synes du, det er en god idé at tage børn med på museum?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2024-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det synes jeg. Børnene lærer nye ting på en sjov måde, og de bruger deres fantasi. Mange museer har også aktiviteter for børn. Men besøget skal ikke være for langt, så de ikke keder sig."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          97
+        ]
+      }
+    },
+    {
+      "id": "2024-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "biograf med dansk film (statsstøtte)",
+        "fa": "سینمایی با فیلم دانمارکی (حمایت دولتی)"
+      },
+      "intro": {
+        "id": "2024-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en biograf, der reklamerer for en ny dansk film."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            6
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-a.sitB.q1",
+        "text": {
+          "da": "I Danmark kan kunstnere få støtte af staten til at lave film. Hvorfor tror du, de kan det?",
+          "fa": "در دانمارک هنرمندان می‌توانند برای ساخت فیلم از دولت حمایت مالی بگیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              7
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "I Danmark kan kunstnere få støtte af staten til at lave film. Hvorfor tror du, de kan det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-a.sitB.q1.kw1",
+            "emoji": "🇩🇰",
+            "text": {
+              "da": "lille land",
+              "fa": "کشور کوچک"
+            }
+          },
+          {
+            "id": "2024-maj-a.sitB.q1.kw2",
+            "emoji": "🗣️",
+            "text": {
+              "da": "sprog og identitet",
+              "fa": "زبان و هویت"
+            }
+          },
+          {
+            "id": "2024-maj-a.sitB.q1.kw3",
+            "emoji": "🌍",
+            "text": {
+              "da": "kendt i udlandet",
+              "fa": "شناخته شدن در خارج"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er Danmark et lille land, så filmene kan ikke tjene nok penge alene. For det andet er danske film vigtige for vores sprog, kultur og identitet. Desuden kan film gøre Danmark kendt i udlandet. Så alt i alt handler det om kultur, sprog og identitet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 119,
+              "end": 132
+            },
+            {
+              "start": 194,
+              "end": 201
+            },
+            {
+              "start": 242,
+              "end": 254
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-a.sitB.followup1",
+          "text": {
+            "da": "Synes du, det er vigtigt, at staten støtter danske film? Hvorfor?/Hvorfor ikke?",
+            "fa": "به نظرت مهم است که دولت از فیلم‌های دانمارکی حمایت کند؟ چرا؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                7
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Synes du, det er vigtigt, at staten støtter danske film?",
+              "Hvorfor?/Hvorfor ikke?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "spoken": {
+            "parts": [
+              "Synes du, det er vigtigt, at staten støtter danske film?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2024-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det synes jeg. Uden støtte ville vi næsten kun se amerikanske film. Danske film fortæller historier om vores eget samfund. Men støtten skal gå til gode og forskellige film."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          97
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2024-maj-a.general",
+    "question": {
+      "id": "2024-maj-a.general.q2",
+      "text": {
+        "da": "Nogle kommuner vælger at bruge mange penge på store, internationale sportsbegivenheder som europamesterskaber og verdensmesterskaber. Hvilke fordele og ulemper mener du, der kan være ved det for kommunerne?",
+        "fa": "بعضی شهرداری‌ها پول زیادی خرج رویدادهای بزرگ ورزشی بین‌المللی مثل قهرمانی اروپا و جهان می‌کنند. مزایا و معایبش برای شهرداری‌ها؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            7
+          ]
+        },
+        "checkedOn": "2026-11-18",
+        "siriParts": [
+          "Nogle kommuner vælger at bruge mange penge på store, internationale sportsbegivenheder som europamesterskaber og verdensmesterskaber. Hvilke fordele og ulemper mener du, der kan være ved det for kommunerne?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "official",
+          "note": "Published by SIRI on danskogproever.dk."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2024-maj-a.general.q2.kw1",
+          "emoji": "🧳",
+          "text": {
+            "da": "turister og penge",
+            "fa": "گردشگر و درآمد"
+          }
+        },
+        {
+          "id": "2024-maj-a.general.q2.kw2",
+          "emoji": "🏅",
+          "text": {
+            "da": "kendt og stolt",
+            "fa": "شناخته‌شدن و افتخار"
+          }
+        },
+        {
+          "id": "2024-maj-a.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt og kortvarigt",
+            "fa": "گران و کوتاه‌مدت"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2024-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for kommunerne. En fordel er, at mange turister kommer, og de bruger penge på hoteller og restauranter. En anden fordel er, at kommunen bliver kendt, og borgerne bliver stolte og inspireret til at dyrke sport. På den anden side er en ulempe, at det koster mange penge, og at begivenheden kun varer kort tid. Pengene kunne bruges på skoler og ældrepleje. Alt i alt mener jeg, at det kan være en god idé, hvis det ikke går ud over velfærden."
+        },
+        "emphasis": [
+          {
+            "start": 55,
+            "end": 71
+          },
+          {
+            "start": 143,
+            "end": 165
+          },
+          {
+            "start": 249,
+            "end": 283
+          },
+          {
+            "start": 393,
+            "end": 416
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2024-maj-a.general.followup1",
+        "text": {
+          "da": "Mener du, at en kommune hellere skulle prioritere at bruge penge på andre områder end store, internationale sportsbegivenheder – fx børnepasning eller ældrepleje? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت شهرداری بهتر است پول را به جای رویدادهای بزرگ ورزشی خرج حوزه‌های دیگر مثل نگهداری کودک یا مراقبت از سالمندان کند؟ چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              7
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Mener du, at en kommune hellere skulle prioritere at bruge penge på andre områder end store, internationale sportsbegivenheder – fx børnepasning eller ældrepleje?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, at en kommune hellere skulle prioritere at bruge penge på andre områder end store, internationale sportsbegivenheder – fx børnepasning eller ældrepleje?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2024-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Ja, det mener jeg, hvis der mangler penge. Børnepasning og ældrepleje er vigtige hver dag for mange borgere. Men en stor sportsbegivenhed kan også give penge tilbage, så det er ikke kun en udgift."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        98
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      97,
+      98
+    ]
+  },
+  "review": {
+    "status": "approved",
+    "notes": [
+      {
+        "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+      },
+      {
+        "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+      },
+      {
+        "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+      },
+      {
+        "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+      },
+      {
+        "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+      }
+    ],
+    "reviewedBy": "delegated-agent-review",
+    "reviewedOn": "2026-11-20"
+  }
+}

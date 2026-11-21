@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-nov-c",
+  "termId": "2020-nov",
+  "letter": "C",
+  "themeId": "sundhed",
+  "title": {
+    "da": "Unge og sundhed",
+    "fa": "جوانان و سلامت"
+  },
+  "situations": [
+    {
+      "id": "2020-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "unge og rygning",
+        "fa": "جوانان و سیگار"
+      },
+      "intro": {
+        "id": "2020-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle unge, der ryger."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-c.sitA.q1",
+        "text": {
+          "da": "Der er nogle unge, der ryger, selvom de godt ved, at det er usundt. Hvorfor tror du alligevel, de gør det?",
+          "fa": "بعضی جوانان سیگار می‌کشند، با اینکه می‌دانند ناسالم است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-c.sitA.q1.kw1",
+            "emoji": "👥",
+            "text": {
+              "da": "gruppepres",
+              "fa": "فشار گروه"
+            }
+          },
+          {
+            "id": "2020-nov-c.sitA.q1.kw2",
+            "emoji": "⏳",
+            "text": {
+              "da": "tænker på nuet",
+              "fa": "فقط به حالا فکر می‌کنند"
+            }
+          },
+          {
+            "id": "2020-nov-c.sitA.q1.kw3",
+            "emoji": "😎",
+            "text": {
+              "da": "voksent og cool",
+              "fa": "بزرگ‌نما و باحال"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne passe ind i gruppen, hvis vennerne også ryger. For det andet tænker unge mest på nuet og ikke på sygdomme om mange år. Desuden kan rygning føles voksent og cool. Så alt i alt handler det om gruppepres og tanker om nuet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 110,
+              "end": 123
+            },
+            {
+              "start": 182,
+              "end": 189
+            },
+            {
+              "start": 225,
+              "end": 237
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de unges sociale relationer, at de ryger?",
+            "fa": "به نظرت سیگار کشیدن چه تأثیری بر روابط اجتماعی جوانان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gå begge veje. Rygning kan give et fællesskab i rygepauserne. Men mange ikke-rygere synes, det lugter og er usundt, så det kan også skabe afstand."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "2020-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "unge og fitness / kost",
+        "fa": "جوانان، باشگاه و رژیم غذایی"
+      },
+      "intro": {
+        "id": "2020-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser et ungt menneske, der træner i et fitnesscenter."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-c.sitB.q1",
+        "text": {
+          "da": "Nogle unge går i fitnesscenter hver dag og går meget op i, hvad de spiser og drikker. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی جوانان هر روز باشگاه می‌روند و خیلی به خوردن و نوشیدنشان اهمیت می‌دهند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-c.sitB.q1.kw1",
+            "emoji": "📸",
+            "text": {
+              "da": "fokus på krop",
+              "fa": "تمرکز روی بدن"
+            }
+          },
+          {
+            "id": "2020-nov-c.sitB.q1.kw2",
+            "emoji": "💪",
+            "text": {
+              "da": "sund og stærk",
+              "fa": "سالم و قوی"
+            }
+          },
+          {
+            "id": "2020-nov-c.sitB.q1.kw3",
+            "emoji": "😌",
+            "text": {
+              "da": "mindre stress",
+              "fa": "استرس کمتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der stort fokus på krop og udseende, især på de sociale medier. For det andet vil de gerne være sunde og stærke. Desuden giver træning gode følelser og mindre stress. Så alt i alt handler det om sundhed, udseende og velvære."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 117,
+              "end": 130
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 220,
+              "end": 232
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-c.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved at gå i fitnesscenter hver dag og gå meget op i, hvad man spiser og drikker? Hvorfor / hvorfor ikke?",
+            "fa": "آیا هر روز باشگاه رفتن و اهمیت زیاد به خوراک مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved at gå i fitnesscenter hver dag og gå meget op i, hvad man spiser og drikker?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2020-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være, hvis det bliver for meget. Nogle tænker hele tiden på træning og mad, og det kan give et dårligt forhold til kroppen. Det kan også tage tid fra venner og skole. Balance er det vigtigste."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          54
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-nov-c.general",
+    "question": {
+      "id": "2020-nov-c.general.q2",
+      "text": {
+        "da": "Nogle mener, at samfundet bør prøve at påvirke unges usunde livsstil, fx ved at sætte prisen på cigaretter og alkohol markant op. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی‌ها معتقدند جامعه باید سبک زندگی ناسالم جوانان را تحت تأثیر قرار دهد، مثلاً با گران کردن زیاد سیگار و الکل. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-nov-c.general.q2.kw1",
+          "emoji": "🚭",
+          "text": {
+            "da": "færre begynder",
+            "fa": "کمتر شروع می‌کنند"
+          }
+        },
+        {
+          "id": "2020-nov-c.general.q2.kw2",
+          "emoji": "🏥",
+          "text": {
+            "da": "færre sygdomme",
+            "fa": "بیماری کمتر"
+          }
+        },
+        {
+          "id": "2020-nov-c.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "rammer lavtlønnede",
+            "fa": "فشار به کم‌درآمدها"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at færre unge begynder at ryge og drikke, når det er dyrt. Det betyder færre sygdomme og lavere udgifter til sundhedsvæsenet. En anden fordel er, at staten får flere penge i afgifter. På den anden side er en ulempe, at det rammer folk med lav indkomst hårdest. Alt i alt mener jeg, at højere priser er en god idé, især for at beskytte de unge."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 194,
+            "end": 216
+          },
+          {
+            "start": 252,
+            "end": 286
+          },
+          {
+            "start": 329,
+            "end": 352
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-nov-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det vil betyde for sundheden og livskvaliteten for lavtlønnede borgere, hvis priserne på cigaretter og alkohol bliver sat markant op?",
+          "fa": "به نظرت گران شدن زیاد سیگار و الکل چه تأثیری بر سلامت و کیفیت زندگی شهروندان کم‌درآمد دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2020-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan give dem en bedre sundhed, hvis de ryger og drikker mindre. Men hvis de fortsætter, får de færre penge til mad og andre ting. Derfor skal der også være hjælp til at stoppe."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        55
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      54,
+      55
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-maj-a",
+  "termId": "2021-maj",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.jobvalg-jobsoegning-og-jobskifte",
+  "title": {
+    "da": "Jobsøgning",
+    "fa": "کاریابی"
+  },
+  "situations": [
+    {
+      "id": "2021-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "nyuddannede har svært ved at finde det første job",
+        "fa": "تازه‌فارغ‌التحصیل‌ها برای پیدا کردن اولین شغل مشکل دارند"
+      },
+      "intro": {
+        "id": "2021-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en nyuddannet, der har svært ved at finde sit første job."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-a.sitA.q1",
+        "text": {
+          "da": "Nogle nyuddannede kan have svært ved at finde det første job. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی تازه‌فارغ‌التحصیل‌ها برای پیدا کردن اولین شغل مشکل دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-a.sitA.q1.kw1",
+            "emoji": "🧰",
+            "text": {
+              "da": "mangler erfaring",
+              "fa": "تجربه ندارند"
+            }
+          },
+          {
+            "id": "2021-maj-a.sitA.q1.kw2",
+            "emoji": "🏁",
+            "text": {
+              "da": "hård konkurrence",
+              "fa": "رقابت سخت"
+            }
+          },
+          {
+            "id": "2021-maj-a.sitA.q1.kw3",
+            "emoji": "🕸️",
+            "text": {
+              "da": "lille netværk",
+              "fa": "شبکه‌ی آشنایی کم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første mangler de praktisk erfaring, og mange arbejdsgivere vil hellere ansætte en med erfaring. For det andet søger mange nyuddannede de samme job, så konkurrencen er hård. Desuden har de måske ikke et stort netværk endnu. Så alt i alt handler det om erfaring, konkurrence og netværk."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 140,
+              "end": 153
+            },
+            {
+              "start": 217,
+              "end": 224
+            },
+            {
+              "start": 267,
+              "end": 279
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, erfaring fra fx et studiejob eller praktik kan betyde for de nyuddannedes muligheder for at finde et job?",
+            "fa": "به نظرت تجربه از یک کار دانشجویی یا کارآموزی چه تأثیری بر شانس پیدا کردن کار دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder rigtig meget. Med et studiejob eller praktik har man noget at skrive i sit CV, og man har vist, at man kan arbejde. Man får også kontakter, som kan hjælpe én til det første job."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          14
+        ]
+      }
+    },
+    {
+      "id": "2021-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "jobsøgende over 55 år trods mange års erfaring",
+        "fa": "کارجوهای بالای ۵۵ سال با وجود سال‌ها تجربه"
+      },
+      "intro": {
+        "id": "2021-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en jobsøgende over 55 år med mange års erfaring."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-a.sitB.q1",
+        "text": {
+          "da": "Jobsøgende over 55 år kan have svært ved at finde et nyt job, selvom de har mange års erfaring. Hvorfor tror du, det er sådan?",
+          "fa": "کارجوهای بالای ۵۵ سال با وجود سال‌ها تجربه، برای پیدا کردن کار جدید مشکل دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-a.sitB.q1.kw1",
+            "emoji": "💸",
+            "text": {
+              "da": "dyrere og syge",
+              "fa": "گران‌تر و بیمارتر (پیش‌داوری)"
+            }
+          },
+          {
+            "id": "2021-maj-a.sitB.q1.kw2",
+            "emoji": "💻",
+            "text": {
+              "da": "ny teknologi",
+              "fa": "فناوری جدید"
+            }
+          },
+          {
+            "id": "2021-maj-a.sitB.q1.kw3",
+            "emoji": "🏖️",
+            "text": {
+              "da": "snart pension",
+              "fa": "به‌زودی بازنشسته"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første tror nogle arbejdsgivere, at ældre er dyrere og oftere syge. For det andet tror de, at ældre har svært ved ny teknologi. Desuden tænker de, at ældre snart går på pension. Så alt i alt handler det om fordomme og økonomi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 111,
+              "end": 124
+            },
+            {
+              "start": 171,
+              "end": 178
+            },
+            {
+              "start": 221,
+              "end": 233
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at nogle arbejdsgivere fravælger jobsøgende over 55 år med mange års erfaring? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است مشکلی ایجاد شود که کارفرماها کارجوهای باتجربه‌ی بالای ۵۵ سال را کنار بگذارند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at nogle arbejdsgivere fravælger jobsøgende over 55 år med mange års erfaring?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2021-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg godt, der kan være. Samfundet mister meget erfaring og viden. Det er også uretfærdigt og kan give de ældre et dårligt selvværd. Desuden mangler vi arbejdskraft, så vi har brug for alle."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          14
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-maj-a.general",
+    "question": {
+      "id": "2021-maj-a.general.q2",
+      "text": {
+        "da": "De fleste jobsøgende i Danmark kan modtage økonomisk hjælp som fx dagpenge eller kontanthjælp, mens de søger job. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بیشتر کارجوها در دانمارک در زمان کاریابی کمک مالی (dagpenge یا kontanthjælp) می‌گیرند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-maj-a.general.q2.kw1",
+          "emoji": "🛡️",
+          "text": {
+            "da": "tryghed",
+            "fa": "امنیت خاطر"
+          }
+        },
+        {
+          "id": "2021-maj-a.general.q2.kw2",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt for samfundet",
+            "fa": "گران برای جامعه"
+          }
+        },
+        {
+          "id": "2021-maj-a.general.q2.kw3",
+          "emoji": "😴",
+          "text": {
+            "da": "passivitet",
+            "fa": "منفعل شدن"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at folk ikke bliver fattige, mens de søger job. Det giver tryghed for hele familien. En anden fordel er, at de kan bruge tid på at finde det rigtige job. På den anden side er en ulempe, at det koster samfundet mange penge. Nogle bliver måske også for passive. Alt i alt mener jeg, at støtten er vigtig, men der skal være krav om at søge job."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 139,
+            "end": 161
+          },
+          {
+            "start": 208,
+            "end": 242
+          },
+          {
+            "start": 314,
+            "end": 337
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-maj-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, den økonomiske hjælp kan betyde for de arbejdsløses jobsøgning?",
+          "fa": "به نظرت این کمک مالی چه تأثیری بر کاریابی بیکاران دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, hjælpen giver ro, så man kan koncentrere sig om at søge job. Man behøver ikke tage det første, bedste job. Men hvis hjælpen varer for længe, kan nogle miste motivationen."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        15
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      14,
+      15
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-maj-b",
+  "termId": "2019-maj",
+  "letter": "B",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdstid-og-familieliv",
+  "title": {
+    "da": "Arbejde og arbejdstid",
+    "fa": "کار و ساعت کاری"
+  },
+  "situations": [
+    {
+      "id": "2019-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "deltidsarbejde i perioder",
+        "fa": "کار پاره‌وقت در دوره‌هایی از زندگی"
+      },
+      "intro": {
+        "id": "2019-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der arbejder på deltid i en periode."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-b.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker vælger i perioder at arbejde på deltid. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها در دوره‌هایی پاره‌وقت کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-b.sitA.q1.kw1",
+            "emoji": "👶",
+            "text": {
+              "da": "små børn",
+              "fa": "بچه‌ی کوچک"
+            }
+          },
+          {
+            "id": "2019-maj-b.sitA.q1.kw2",
+            "emoji": "🎓",
+            "text": {
+              "da": "uddannelse ved siden af",
+              "fa": "تحصیل در کنار کار"
+            }
+          },
+          {
+            "id": "2019-maj-b.sitA.q1.kw3",
+            "emoji": "🌿",
+            "text": {
+              "da": "brug for ro",
+              "fa": "نیاز به آرامش (بعد از استرس/بیماری)"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har mange små børn, som de vil bruge mere tid sammen med. For det andet vil nogle tage en uddannelse ved siden af. Desuden har nogle brug for mere ro, for eksempel efter stress eller sygdom. Så alt i alt handler det om familie, uddannelse og helbred."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 165,
+              "end": 172
+            },
+            {
+              "start": 241,
+              "end": 253
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for folks karrieremuligheder, at de i perioder arbejder på deltid?",
+            "fa": "به نظرت پاره‌وقت کار کردن چه تأثیری بر فرصت‌های پیشرفت شغلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2019-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gøre det sværere at gøre karriere. Man får færre opgaver og mindre erfaring, og man bliver måske overset, når der skal forfremmes nogen. Man får også mindre i løn og pension."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "id": "2019-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "arbejdsmails om aftenen og i weekenden",
+        "fa": "چک کردن ایمیل کاری شب‌ها و آخر هفته"
+      },
+      "intro": {
+        "id": "2019-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der læser arbejdsmails om aftenen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-b.sitB.q1",
+        "text": {
+          "da": "Nogle mennesker tjekker deres arbejdsmails om aftenen eller i weekenden. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها ایمیل‌های کاری‌شان را شب یا آخر هفته چک می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-b.sitB.q1.kw1",
+            "emoji": "📋",
+            "text": {
+              "da": "meget arbejde",
+              "fa": "کار زیاد"
+            }
+          },
+          {
+            "id": "2019-maj-b.sitB.q1.kw2",
+            "emoji": "⭐",
+            "text": {
+              "da": "vise engagement",
+              "fa": "نشان دادن تعهد"
+            }
+          },
+          {
+            "id": "2019-maj-b.sitB.q1.kw3",
+            "emoji": "📱",
+            "text": {
+              "da": "smartphone",
+              "fa": "گوشی هوشمند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har de meget arbejde og vil gerne være forberedt til mandag. For det andet vil de vise, at de er engagerede. Desuden er det blevet nemt, fordi alle har en smartphone. Så alt i alt handler det om travlhed og ambitioner."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 111,
+              "end": 124
+            },
+            {
+              "start": 159,
+              "end": 166
+            },
+            {
+              "start": 217,
+              "end": 229
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for folks karrieremuligheder, at de tjekker arbejdsmails om aftenen eller i weekenden?",
+            "fa": "به نظرت چک کردن ایمیل کاری در شب و آخر هفته چه تأثیری بر پیشرفت شغلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2019-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan hjælpe karrieren lidt, fordi chefen ser, at man er engageret. Men på lang sigt kan man blive stresset og træt. Derfor er det ikke sikkert, at det er en fordel."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          24,
+          25
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-maj-b.general",
+    "question": {
+      "id": "2019-maj-b.general.q2",
+      "text": {
+        "da": "Nogle mennesker mener, at den almindelige arbejdstid skal sættes ned til 30 timer om ugen. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی‌ها معتقدند ساعت کار معمول باید به ۳۰ ساعت در هفته کاهش پیدا کند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2019-maj-b.general.q2.kw1",
+          "emoji": "👨‍👩‍👧",
+          "text": {
+            "da": "mere tid til familie",
+            "fa": "وقت بیشتر برای خانواده"
+          }
+        },
+        {
+          "id": "2019-maj-b.general.q2.kw2",
+          "emoji": "🌿",
+          "text": {
+            "da": "mindre stress",
+            "fa": "استرس کمتر"
+          }
+        },
+        {
+          "id": "2019-maj-b.general.q2.kw3",
+          "emoji": "🏭",
+          "text": {
+            "da": "mangel på arbejdskraft",
+            "fa": "کمبود نیروی کار"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at folk får mere tid til familie og fritid, og det kan give mindre stress. En anden fordel er, at færre bliver syge. På den anden side er en ulempe, at samfundet får mindre produktion og færre skatteindtægter. Vi mangler allerede arbejdskraft, for eksempel i sundhedssektoren. Alt i alt mener jeg, at det er en god idé for den enkelte, men det er svært for samfundet lige nu."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 143,
+            "end": 165
+          },
+          {
+            "start": 185,
+            "end": 219
+          },
+          {
+            "start": 345,
+            "end": 368
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-maj-b.general.followup1",
+        "text": {
+          "da": "Tror du, at en 30 timers arbejdsuge vil betyde, at arbejdet bliver bedre fordelt mellem folk? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت هفته‌ی کاری ۳۰ ساعته باعث می‌شود کار بهتر بین آدم‌ها تقسیم شود؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Tror du, at en 30 timers arbejdsuge vil betyde, at arbejdet bliver bedre fordelt mellem folk?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2019-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Måske lidt. I teorien kan flere ledige få et job. Men vi mangler faglært arbejdskraft, og en arbejdsløs uden uddannelse kan ikke bare overtage en sygeplejerskes timer. Derfor tror jeg ikke, at det løser problemet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        25
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      24,
+      25
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

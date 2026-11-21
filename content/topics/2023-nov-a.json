@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-nov-a",
+  "termId": "2023-nov",
+  "letter": "A",
+  "themeId": "sundhed",
+  "title": {
+    "da": "At søge læge",
+    "fa": "مراجعه به پزشک"
+  },
+  "situations": [
+    {
+      "id": "2023-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "mænd og lægebesøg",
+        "fa": "مردها دیرتر پیش پزشک می‌روند"
+      },
+      "intro": {
+        "id": "2023-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en mand, der venter med at gå til lægen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-a.sitA.q1",
+        "text": {
+          "da": "Hvorfor tror du, mænd venter længere med at gå til læge?",
+          "fa": "به نظرت چرا مردها دیرتر پیش پزشک می‌روند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-a.sitA.q1.kw1",
+            "emoji": "💪",
+            "text": {
+              "da": "vil virke stærke",
+              "fa": "می‌خواهند قوی به نظر برسند"
+            }
+          },
+          {
+            "id": "2023-nov-a.sitA.q1.kw2",
+            "emoji": "🙏",
+            "text": {
+              "da": "håber det går over",
+              "fa": "امید که خودش خوب شود"
+            }
+          },
+          {
+            "id": "2023-nov-a.sitA.q1.kw3",
+            "emoji": "💼",
+            "text": {
+              "da": "travlhed",
+              "fa": "مشغله"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil mange mænd gerne virke stærke og ikke vise svaghed. For det andet håber de, at problemet forsvinder af sig selv. Desuden har de travlt med arbejde. Så alt i alt handler det om traditionelle kønsroller og travlhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 106,
+              "end": 119
+            },
+            {
+              "start": 167,
+              "end": 174
+            },
+            {
+              "start": 202,
+              "end": 214
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-a.sitA.followup1",
+          "text": {
+            "da": "Kan det være et problem, at man venter med at gå til læge? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا عقب انداختن رفتن پیش پزشک می‌تواند مشکل باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan det være et problem, at man venter med at gå til læge?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan være et stort problem. Sygdomme som kræft eller hjertesygdomme bliver måske opdaget for sent, og så er de sværere at behandle. Det er altid bedre at gå til lægen i tide."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          55,
+          56
+        ]
+      }
+    },
+    {
+      "id": "2023-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "videokonsultation med lægen",
+        "fa": "ویزیت تصویری (ویدیویی) با پزشک"
+      },
+      "intro": {
+        "id": "2023-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en patient, der taler med sin læge i en videokonsultation."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-a.sitB.q1",
+        "text": {
+          "da": "Hvorfor bruger flere og flere videokonsultation med lægen?",
+          "fa": "به نظرت چرا آدم‌های بیشتری از ویزیت تصویری با پزشک استفاده می‌کنند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-a.sitB.q1.kw1",
+            "emoji": "⚡",
+            "text": {
+              "da": "hurtigt og nemt",
+              "fa": "سریع و آسان"
+            }
+          },
+          {
+            "id": "2023-nov-a.sitB.q1.kw2",
+            "emoji": "🦠",
+            "text": {
+              "da": "smitter ikke andre",
+              "fa": "دیگران را مبتلا نمی‌کنی"
+            }
+          },
+          {
+            "id": "2023-nov-a.sitB.q1.kw3",
+            "emoji": "🗺️",
+            "text": {
+              "da": "langt fra lægen",
+              "fa": "دور از پزشک"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det hurtigt og nemt, og man behøver ikke at tage fri fra arbejde. For det andet kan man blive hjemme, når man er syg, så man ikke smitter andre. Desuden er det praktisk for folk, der bor langt fra lægen. Så alt i alt handler det om tid og nemhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 119,
+              "end": 132
+            },
+            {
+              "start": 198,
+              "end": 205
+            },
+            {
+              "start": 257,
+              "end": 269
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-a.sitB.followup1",
+          "text": {
+            "da": "Kan der være problemer ved videokonsultation? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا ویزیت تصویری می‌تواند مشکلاتی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være problemer ved videokonsultation?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Lægen kan ikke undersøge patienten fysisk, for eksempel lytte på lungerne. Så kan noget alvorligt blive overset. Ældre har også nogle gange svært ved teknologien."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          55,
+          56
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-nov-a.general",
+    "question": {
+      "id": "2023-nov-a.general.q2",
+      "text": {
+        "da": "Alle har ret til gratis behandling på et hospital, men man har ofte mulighed for at blive behandlet hurtigere på et privathospital, hvis man selv kan og vil betale for det. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "همه حق درمان رایگان در بیمارستان دارند، ولی اگر بتوانی و بخواهی پول بدهی، اغلب در بیمارستان خصوصی سریع‌تر درمان می‌شوی. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-nov-a.general.q2.kw1",
+          "emoji": "📉",
+          "text": {
+            "da": "kortere ventelister",
+            "fa": "لیست انتظار کوتاه‌تر"
+          }
+        },
+        {
+          "id": "2023-nov-a.general.q2.kw2",
+          "emoji": "⚡",
+          "text": {
+            "da": "hurtig hjælp",
+            "fa": "کمک سریع"
+          }
+        },
+        {
+          "id": "2023-nov-a.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "ulighed",
+            "fa": "نابرابری"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at ventelisterne på de offentlige hospitaler bliver kortere, når nogle bruger de private. En anden fordel er, at folk kan få hurtig hjælp og komme hurtigere tilbage på arbejde. På den anden side er en ulempe, at det skaber ulighed, fordi rige får hurtigere hjælp end fattige. Private hospitaler kan også tage personale fra de offentlige. Alt i alt mener jeg, at det offentlige sundhedsvæsen skal være stærkt, så alle får hurtig hjælp."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 144,
+            "end": 166
+          },
+          {
+            "start": 231,
+            "end": 265
+          },
+          {
+            "start": 392,
+            "end": 415
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-nov-a.general.followup1",
+        "text": {
+          "da": "Mener du, at det er rimeligt, at folk kan få hurtigere behandling, hvis de betaler? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت منطقی است که آدم‌ها با پرداخت پول سریع‌تر درمان شوند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, at det er rimeligt, at folk kan få hurtigere behandling, hvis de betaler?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Det er en svær balance. Jeg forstår godt, at folk vil betale for at komme hurtigere til. Men jeg synes ikke, det er rimeligt, hvis det betyder, at de fattige må vente længere. Sundhed bør være lige for alle."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        56
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      55,
+      56
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

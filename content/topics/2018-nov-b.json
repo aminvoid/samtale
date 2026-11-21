@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-nov-b",
+  "termId": "2018-nov",
+  "letter": "B",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "Uddannelsesvalg",
+    "fa": "انتخاب رشته"
+  },
+  "situations": [
+    {
+      "id": "2018-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "studere et eller flere år på universitet i udlandet",
+        "fa": "یک یا چند سال تحصیل در دانشگاهی خارج از کشور"
+      },
+      "intro": {
+        "id": "2018-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en studerende på et universitet i udlandet."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-b.sitA.q1",
+        "text": {
+          "da": "Nogle studerende vælger at studere et eller flere år på et universitet i udlandet. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی دانشجوها یک یا چند سال در دانشگاهی خارج از کشور درس می‌خوانند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-b.sitA.q1.kw1",
+            "emoji": "🗣️",
+            "text": {
+              "da": "sprog og kultur",
+              "fa": "زبان و فرهنگ"
+            }
+          },
+          {
+            "id": "2018-nov-b.sitA.q1.kw2",
+            "emoji": "📄",
+            "text": {
+              "da": "godt CV",
+              "fa": "رزومه‌ی خوب"
+            }
+          },
+          {
+            "id": "2018-nov-b.sitA.q1.kw3",
+            "emoji": "🌱",
+            "text": {
+              "da": "selvstændig",
+              "fa": "مستقل شدن"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne lære et nyt sprog og en ny kultur at kende. For det andet giver det et godt CV og bedre jobmuligheder. Desuden er det en spændende oplevelse, hvor man bliver mere selvstændig. Så alt i alt handler det om sprog, karriere og personlig udvikling."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 107,
+              "end": 120
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 239,
+              "end": 251
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for unges karrieremuligheder, at de har studeret et eller flere år på et universitet i udlandet?",
+            "fa": "به نظرت تحصیل در خارج چه تأثیری بر فرصت‌های شغلی جوانان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det giver bedre karrieremuligheder, især i internationale virksomheder. Man er god til sprog, og man har vist, at man kan klare sig i en ny kultur. Man har også et internationalt netværk."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          42
+        ]
+      }
+    },
+    {
+      "id": "2018-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "arbejde et eller flere år før uddannelse",
+        "fa": "یک یا چند سال کار قبل از شروع تحصیل"
+      },
+      "intro": {
+        "id": "2018-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle unge, der har et job, før de begynder på en uddannelse."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-b.sitB.q1",
+        "text": {
+          "da": "Nogle unge vælger at arbejde et eller flere år, inden de begynder på en uddannelse. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی جوانان قبل از شروع تحصیل یک یا چند سال کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-b.sitB.q1.kw1",
+            "emoji": "😮‍💨",
+            "text": {
+              "da": "brug for en pause",
+              "fa": "نیاز به استراحت"
+            }
+          },
+          {
+            "id": "2018-nov-b.sitB.q1.kw2",
+            "emoji": "💵",
+            "text": {
+              "da": "tjene penge",
+              "fa": "پول درآوردن"
+            }
+          },
+          {
+            "id": "2018-nov-b.sitB.q1.kw3",
+            "emoji": "❓",
+            "text": {
+              "da": "ved ikke hvad de vil",
+              "fa": "نمی‌دانند چه می‌خواهند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er de trætte af at gå i skole og har brug for en pause. For det andet vil de tjene penge, for eksempel til at rejse. Desuden ved mange ikke, hvad de vil studere, så de vil prøve arbejdslivet først. Så alt i alt handler det om pause, penge og afklaring."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 106,
+              "end": 119
+            },
+            {
+              "start": 167,
+              "end": 174
+            },
+            {
+              "start": 248,
+              "end": 260
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-b.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved at arbejde i et eller flere år, inden man begynder på en uddannelse? Hvorfor / hvorfor ikke?",
+            "fa": "آیا کار کردن یک یا چند سال قبل از تحصیل مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved at arbejde i et eller flere år, inden man begynder på en uddannelse?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2018-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Nogle vænner sig til at tjene penge og har svært ved at gå tilbage til et liv på SU. Men de fleste bliver mere motiverede, når de starter."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          42
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-nov-b.general",
+    "question": {
+      "id": "2018-nov-b.general.q2",
+      "text": {
+        "da": "Unge skal normalt ikke betale for at få en uddannelse i Danmark. Hvilke fordele og ulemper mener du, der kan være ved det for det danske samfund?",
+        "fa": "جوانان در دانمارک معمولاً برای تحصیل پول نمی‌دهند. مزایا و معایبش برای جامعه‌ی دانمارک؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-nov-b.general.q2.kw1",
+          "emoji": "⚖️",
+          "text": {
+            "da": "lige muligheder",
+            "fa": "فرصت برابر"
+          }
+        },
+        {
+          "id": "2018-nov-b.general.q2.kw2",
+          "emoji": "🎓",
+          "text": {
+            "da": "mange veluddannede",
+            "fa": "تحصیل‌کرده‌ی زیاد"
+          }
+        },
+        {
+          "id": "2018-nov-b.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt",
+            "fa": "گران"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at alle har lige muligheder, uanset hvor mange penge forældrene har. En anden fordel er, at samfundet får mange veluddannede, og det er godt for økonomien. På den anden side er en ulempe, at det koster samfundet mange penge. Nogle tager måske også en uddannelse, som de ikke bruger bagefter. Alt i alt mener jeg, at gratis uddannelse er en god investering i fremtiden."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 137,
+            "end": 159
+          },
+          {
+            "start": 224,
+            "end": 258
+          },
+          {
+            "start": 360,
+            "end": 383
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-nov-b.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det ville betyde, hvis man indførte gebyrer på uddannelser i Danmark?",
+          "fa": "به نظرت اگر برای تحصیل در دانمارک شهریه گرفته شود چه اتفاقی می‌افتد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2018-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, færre unge fra fattige familier ville tage en uddannelse, så uligheden ville vokse. De unge ville også få stor gæld. Til gengæld ville de måske vælge mere omhyggeligt."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        43
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      42,
+      43
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 0,
+  "id": "2024-maj-c",
+  "termId": "2024-maj",
+  "letter": "C",
+  "themeId": "boern",
+  "title": {
+    "da": "Pædagogik i folkeskolen",
+    "fa": "آموزش و پرورش در مدرسه‌ی دولتی (folkeskole)"
+  },
+  "situations": [
+    {
+      "id": "2024-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "klasse med urolige børn",
+        "fa": "کلاسی با بچه‌های بی‌قرار"
+      },
+      "intro": {
+        "id": "2024-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en folkeskoleklasse, hvor flere af børnene er urolige og uopmærksomme."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            10
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-c.sitA.q1",
+        "text": {
+          "da": "I nogle klasser i folkeskolen er der meget uro. Hvorfor tror du, der er det?",
+          "fa": "در بعضی کلاس‌های folkeskole بی‌نظمی و شلوغی زیاد است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              10
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "I nogle klasser i folkeskolen er der meget uro. Hvorfor tror du, der er det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-c.sitA.q1.kw1",
+            "emoji": "👥",
+            "text": {
+              "da": "store klasser",
+              "fa": "کلاس‌های پرجمعیت"
+            }
+          },
+          {
+            "id": "2024-maj-c.sitA.q1.kw2",
+            "emoji": "📱",
+            "text": {
+              "da": "koncentration og skærme",
+              "fa": "تمرکز و صفحه‌نمایش"
+            }
+          },
+          {
+            "id": "2024-maj-c.sitA.q1.kw3",
+            "emoji": "⏳",
+            "text": {
+              "da": "mangler tid og hjælp",
+              "fa": "کمبود وقت و کمک"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der mange elever i klassen med forskellige behov. For det andet har nogle børn svært ved at koncentrere sig, også på grund af skærme. Desuden mangler lærerne nogle gange tid og hjælp. Så alt i alt handler det om store klasser, koncentration og ressourcer."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 103,
+              "end": 116
+            },
+            {
+              "start": 187,
+              "end": 194
+            },
+            {
+              "start": 237,
+              "end": 249
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad mener du, lærerne kan gøre for at begrænse uroen i klasserne?",
+            "fa": "به نظرت معلم‌ها چه کار می‌توانند بکنند تا شلوغی کلاس کم شود؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                10
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Hvad mener du, lærerne kan gøre for at begrænse uroen i klasserne?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "answer": {
+            "id": "2024-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Lærerne kan lave klare regler og en fast struktur i timerne. De kan også variere undervisningen med bevægelse og gruppearbejde. Desuden er det vigtigt at samarbejde med forældrene."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          78
+        ]
+      }
+    },
+    {
+      "id": "2024-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "klasse, der arbejder sammen om en opgave",
+        "fa": "کلاسی که با هم روی یک تکلیف کار می‌کنند"
+      },
+      "intro": {
+        "id": "2024-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en klasse, hvor eleverne sidder og arbejder sammen om en opgave."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            10
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-c.sitB.q1",
+        "text": {
+          "da": "Eleverne får ikke karakterer i de første klasser i folkeskolen. Hvorfor tror du, det er sådan?",
+          "fa": "دانش‌آموزان در کلاس‌های اول folkeskole نمره نمی‌گیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              11
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Eleverne får ikke karakterer i de første klasser i folkeskolen. Hvorfor tror du, det er sådan?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-c.sitB.q1.kw1",
+            "emoji": "😊",
+            "text": {
+              "da": "lyst til at lære",
+              "fa": "علاقه به یادگیری"
+            }
+          },
+          {
+            "id": "2024-maj-c.sitB.q1.kw2",
+            "emoji": "🐢",
+            "text": {
+              "da": "forskelligt tempo",
+              "fa": "سرعت متفاوت"
+            }
+          },
+          {
+            "id": "2024-maj-c.sitB.q1.kw3",
+            "emoji": "💪",
+            "text": {
+              "da": "selvtillid og trivsel",
+              "fa": "اعتمادبه‌نفس و حال خوب"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal de små børn have lyst til at lære uden at føle pres. For det andet lærer børn i forskelligt tempo. Desuden vil man styrke deres selvtillid og trivsel først. Så alt i alt handler det om lyst til at lære og trivsel."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 154,
+              "end": 161
+            },
+            {
+              "start": 212,
+              "end": 224
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-c.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at der ikke gives karakterer i de første klasser i folkeskolen?",
+            "fa": "آیا نمره ندادن در کلاس‌های اول مدرسه می‌تواند مشکلاتی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                11
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Kan der være nogen problemer ved, at der ikke gives karakterer i de første klasser i folkeskolen?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "answer": {
+            "id": "2024-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, der kan godt være nogle problemer. Forældrene kan have svært ved at se, hvordan deres barn klarer sig, og overgangen til karakterer i de ældste klasser kan blive hård. Derfor er det vigtigt med god mundtlig feedback."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          78
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2024-maj-c.general",
+    "question": {
+      "id": "2024-maj-c.general.q2",
+      "text": {
+        "da": "I folkeskolen går eleverne typisk i samme klasse i de fleste fag, selvom de har forskelligt fagligt niveau. Hvilke fordele og ulemper mener du, der kan være ved det i forhold til børnenes faglige og sociale udvikling?",
+        "fa": "در folkeskole دانش‌آموزان معمولاً در بیشتر درس‌ها در یک کلاس‌اند، با اینکه سطح درسی متفاوتی دارند. مزایا و معایب برای رشد درسی و اجتماعی بچه‌ها؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            11
+          ]
+        },
+        "checkedOn": "2026-11-18",
+        "siriParts": [
+          "I folkeskolen går eleverne typisk i samme klasse i de fleste fag, selvom de har forskelligt fagligt niveau. Hvilke fordele og ulemper mener du, der kan være ved det i forhold til børnenes faglige og sociale udvikling?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "official",
+          "note": "Published by SIRI on danskogproever.dk."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2024-maj-c.general.q2.kw1",
+          "emoji": "🤝",
+          "text": {
+            "da": "forskellige mennesker",
+            "fa": "آشنایی با آدم‌های متفاوت"
+          }
+        },
+        {
+          "id": "2024-maj-c.general.q2.kw2",
+          "emoji": "👨‍🏫",
+          "text": {
+            "da": "stærke hjælper svage",
+            "fa": "قوی‌ها به ضعیف‌ها کمک می‌کنند"
+          }
+        },
+        {
+          "id": "2024-maj-c.general.q2.kw3",
+          "emoji": "🎯",
+          "text": {
+            "da": "svært for læreren",
+            "fa": "سخت برای معلم"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2024-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at børnene lærer at være sammen med forskellige mennesker, og det er godt for den sociale udvikling. En anden fordel er, at de stærke elever kan hjælpe de svage, og så lærer begge noget. På den anden side er en ulempe, at det er svært for læreren at undervise alle på deres niveau. De dygtige kan kede sig, og de svage kan få svært ved at følge med. Alt i alt mener jeg, at det er godt, hvis der er ekstra hjælp til både de stærke og de svage."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 155,
+            "end": 177
+          },
+          {
+            "start": 241,
+            "end": 275
+          },
+          {
+            "start": 404,
+            "end": 427
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2024-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad mener du, det betyder for samfundet, at børn går i samme klasse, selvom de har forskelligt fagligt niveau?",
+          "fa": "به نظرت این که بچه‌ها با سطح درسی متفاوت در یک کلاس باشند برای جامعه چه معنایی دارد؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              11
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Hvad mener du, det betyder for samfundet, at børn går i samme klasse, selvom de har forskelligt fagligt niveau?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "answer": {
+          "id": "2024-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det styrker sammenhængskraften i samfundet. Børn fra forskellige baggrunde lærer hinanden at kende, og det mindsker uligheden. Men hvis niveauet bliver for lavt, kan det skade samfundet på længere sigt."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        79
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      78,
+      79
+    ]
+  },
+  "review": {
+    "status": "approved",
+    "notes": [
+      {
+        "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+      },
+      {
+        "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+      },
+      {
+        "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+      },
+      {
+        "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+      },
+      {
+        "path": "situations[1]",
+        "pages": [
+          78
+        ],
+        "text": "Situation B shows group work (booklet title and SIRI's intro), but its question is about not giving grades in the first school years. SIRI set the task this way; not a booklet error."
+      },
+      {
+        "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+      }
+    ],
+    "reviewedBy": "delegated-agent-review",
+    "reviewedOn": "2026-11-20"
+  }
+}

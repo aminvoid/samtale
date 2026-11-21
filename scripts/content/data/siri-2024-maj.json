@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 0,
+  "id": "siri-2024-maj",
+  "document": {
+    "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+    "publisher": "Styrelsen for International Rekruttering og Integration (SIRI)",
+    "url": "https://danskogproever.dk/media/prob2ifo/censor-og-eksaminatorhaefte-pd3-mdt.pdf",
+    "sha256": "d4f620511c6e2ca6ecc42abb44386e0b62f269b5debbbac24ce2b007ca37b3a9",
+    "retrievedOn": "2026-11-18",
+    "authenticity": "official",
+    "availabilityNote": "Published by SIRI on danskogproever.dk."
+  },
+  "checkedOn": "2026-11-18",
+  "transcriptionRules": [
+    "Transcribed from the PDF text layer (macOS PDFKit) of the document above; verified by scripts/content/check-siri.ts.",
+    "Enclosing quotation marks (” ” or \" \") removed. Each separately quoted part is one entry in `parts`.",
+    "Line-end hyphens that are word wraps are joined (Hvil-ke, sygeplejer-sker, betonar-bejdere, Pædago-gik); a hyphen before 'og' is a suspended compound and kept ('social- og').",
+    "Text-layer line-order swaps (pp. 7, 8, 10) are put back in reading order.",
+    "p. 9: SIRI's quote around '…inden for byggebranchen?' has no closing mark; the text is complete.",
+    "In `examinerLines.intro`, the topic name SIRI inserts is replaced by {topic}."
+  ],
+  "examinerLines": {
+    "intro": {
+      "text": "Her er der to billeder, som viser nogle situationer, der handler om emnet {topic}. Du har nu 10 sekunder til at overveje emnet, og derefter vil jeg stille dig spørgsmål til én af situationerne.",
+      "pages": [
+        6,
+        8,
+        10
+      ]
+    },
+    "closing": {
+      "text": "Tak, så er prøven forbi.",
+      "pages": [
+        5,
+        7,
+        9,
+        11
+      ]
+    }
+  },
+  "topics": {
+    "2024-maj-a": {
+      "title": "Støtte til kultur",
+      "sitA": {
+        "intro": {
+          "parts": [
+            "Situation A viser en familie, der er på vej ind på et kunstmuseum, hvor der er gratis adgang for børn."
+          ],
+          "page": 6
+        },
+        "q1": {
+          "parts": [
+            "Børn kan ofte få gratis adgang eller rabat til kulturinstitutioner som fx museer eller teatre. Hvorfor tror du, de kan det?"
+          ],
+          "page": 6
+        },
+        "followup1": {
+          "parts": [
+            "Synes du, det er en god idé at tage børn med på museum?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 6
+        }
+      },
+      "sitB": {
+        "intro": {
+          "parts": [
+            "Situation B viser en biograf, der reklamerer for en ny dansk film."
+          ],
+          "page": 6
+        },
+        "q1": {
+          "parts": [
+            "I Danmark kan kunstnere få støtte af staten til at lave film. Hvorfor tror du, de kan det?"
+          ],
+          "page": 7
+        },
+        "followup1": {
+          "parts": [
+            "Synes du, det er vigtigt, at staten støtter danske film?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 7
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "Nogle kommuner vælger at bruge mange penge på store, internationale sportsbegivenheder som europamesterskaber og verdensmesterskaber. Hvilke fordele og ulemper mener du, der kan være ved det for kommunerne?"
+          ],
+          "page": 7
+        },
+        "followup1": {
+          "parts": [
+            "Mener du, at en kommune hellere skulle prioritere at bruge penge på andre områder end store, internationale sportsbegivenheder – fx børnepasning eller ældrepleje?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 7
+        }
+      }
+    },
+    "2024-maj-b": {
+      "title": "Mangel på arbejdskraft",
+      "sitA": {
+        "intro": {
+          "parts": [
+            "Situation A viser en sygeplejerske, der har ansvar for mange patienter og har travlt."
+          ],
+          "page": 8
+        },
+        "q1": {
+          "parts": [
+            "Der mangler arbejdskraft i sundhedssektoren, fx sygeplejersker og social- og sundhedsassistenter. Hvorfor tror du, der gør det?"
+          ],
+          "page": 8
+        },
+        "followup1": {
+          "parts": [
+            "Hvilke problemer mener du, der kan være ved, at der mangler sygeplejersker og social- og sundhedsassistenter?"
+          ],
+          "page": 8
+        }
+      },
+      "sitB": {
+        "intro": {
+          "parts": [
+            "Situation B viser en byggeplads, hvor arbejdet endnu ikke er gået i gang."
+          ],
+          "page": 8
+        },
+        "q1": {
+          "parts": [
+            "Der mangler arbejdskraft i byggebranchen, fx tømrere og jord- og betonarbejdere. Hvorfor tror du, der gør det?"
+          ],
+          "page": 9
+        },
+        "followup1": {
+          "parts": [
+            "Hvilke problemer mener du, der kan være ved, at der mangler arbejdskraft inden for byggebranchen?"
+          ],
+          "page": 9
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "Ved mangel på arbejdskraft kan man fra politisk side vælge at gøre det nemmere for virksomheder at rekruttere udenlandsk arbejdskraft. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?"
+          ],
+          "page": 9
+        },
+        "followup1": {
+          "parts": [
+            "Mener du, det er i orden at rekruttere udenlandsk arbejdskraft, selvom der er borgere i Danmark, der er arbejdsløse?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "page": 9
+        }
+      }
+    },
+    "2024-maj-c": {
+      "title": "Pædagogik i folkeskolen",
+      "sitA": {
+        "intro": {
+          "parts": [
+            "Situation A viser en folkeskoleklasse, hvor flere af børnene er urolige og uopmærksomme."
+          ],
+          "page": 10
+        },
+        "q1": {
+          "parts": [
+            "I nogle klasser i folkeskolen er der meget uro. Hvorfor tror du, der er det?"
+          ],
+          "page": 10
+        },
+        "followup1": {
+          "parts": [
+            "Hvad mener du, lærerne kan gøre for at begrænse uroen i klasserne?"
+          ],
+          "page": 10
+        }
+      },
+      "sitB": {
+        "intro": {
+          "parts": [
+            "Situation B viser en klasse, hvor eleverne sidder og arbejder sammen om en opgave."
+          ],
+          "page": 10
+        },
+        "q1": {
+          "parts": [
+            "Eleverne får ikke karakterer i de første klasser i folkeskolen. Hvorfor tror du, det er sådan?"
+          ],
+          "page": 11
+        },
+        "followup1": {
+          "parts": [
+            "Kan der være nogen problemer ved, at der ikke gives karakterer i de første klasser i folkeskolen?"
+          ],
+          "page": 11
+        }
+      },
+      "general": {
+        "q2": {
+          "parts": [
+            "I folkeskolen går eleverne typisk i samme klasse i de fleste fag, selvom de har forskelligt fagligt niveau. Hvilke fordele og ulemper mener du, der kan være ved det i forhold til børnenes faglige og sociale udvikling?"
+          ],
+          "page": 11
+        },
+        "followup1": {
+          "parts": [
+            "Hvad mener du, det betyder for samfundet, at børn går i samme klasse, selvom de har forskelligt fagligt niveau?"
+          ],
+          "page": 11
+        }
+      }
+    }
+  }
+}

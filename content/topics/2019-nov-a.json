@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-nov-a",
+  "termId": "2019-nov",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.koen-sprog-og-udenlandsk-arbejdskraft",
+  "title": {
+    "da": "Køn og arbejde",
+    "fa": "جنسیت و کار"
+  },
+  "situations": [
+    {
+      "id": "2019-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "kvinder i traditionelle mandejob (it og finans)",
+        "fa": "زنان در مشاغل سنتیِ مردانه (IT و مالی)"
+      },
+      "intro": {
+        "id": "2019-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en kvinde, der arbejder i et traditionelt mandejob inden for it."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-a.sitA.q1",
+        "text": {
+          "da": "I Danmark er der færre kvinder end mænd, der arbejder med it og finans. Hvorfor tror du, det er sådan?",
+          "fa": "در دانمارک زنان کمتری نسبت به مردان در IT و امور مالی کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              6
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "I Danmark er der færre kvinder end mænd, der arbejder med it og finans. Hvorfor tror du, det er sådan?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-a.sitA.q1.kw1",
+            "emoji": "🏛️",
+            "text": {
+              "da": "gamle traditioner",
+              "fa": "سنت‌های قدیمی"
+            }
+          },
+          {
+            "id": "2019-nov-a.sitA.q1.kw2",
+            "emoji": "👩‍💻",
+            "text": {
+              "da": "mangler rollemodeller",
+              "fa": "نبود الگو"
+            }
+          },
+          {
+            "id": "2019-nov-a.sitA.q1.kw3",
+            "emoji": "👔",
+            "text": {
+              "da": "mandekultur",
+              "fa": "فرهنگ مردانه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der gamle traditioner for, hvad der er mandejob og kvindejob. For det andet mangler piger kvindelige rollemodeller i it og finans. Desuden kan arbejdskulturen være præget af mænd. Så alt i alt handler det om traditioner og rollemodeller."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 115,
+              "end": 128
+            },
+            {
+              "start": 184,
+              "end": 191
+            },
+            {
+              "start": 233,
+              "end": 245
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-a.sitA.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved, at der er færre kvinder end mænd, der arbejder med it og finans? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است کم بودن زنان در IT و امور مالی مشکلی ایجاد کند؟"
+          },
+          "siriCheck": {
+            "status": "differs",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                6
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Kan der efter din mening være nogen problemer ved, at der er færre kvinder end mænd, der arbejder med it og finans? Hvorfor?/Hvorfor ikke?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved, at der er færre kvinder end mænd, der arbejder med it og finans?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2019-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg. Virksomhederne mister mange dygtige kvinder, og der mangler arbejdskraft i it. Produkterne bliver også bedre, når både mænd og kvinder er med til at udvikle dem."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          32,
+          33
+        ]
+      }
+    },
+    {
+      "id": "2019-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "mænd i traditionelle kvindejob (pædagog og lærer)",
+        "fa": "مردان در مشاغل سنتیِ زنانه (مربی مهد و معلم)"
+      },
+      "intro": {
+        "id": "2019-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en mandlig pædagog sammen med nogle børn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-a.sitB.q1",
+        "text": {
+          "da": "I Danmark er der færre mænd end kvinder, der arbejder med børn, fx som lærer eller pædagog. Hvorfor tror du, det er sådan?",
+          "fa": "در دانمارک مردان کمتری نسبت به زنان با کودکان کار می‌کنند (معلم یا مربی مهد). به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              6
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "I Danmark er der færre mænd end kvinder, der arbejder med børn, fx som lærer eller pædagog. Hvorfor tror du, det er sådan?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-a.sitB.q1.kw1",
+            "emoji": "💵",
+            "text": {
+              "da": "lav løn",
+              "fa": "حقوق پایین"
+            }
+          },
+          {
+            "id": "2019-nov-a.sitB.q1.kw2",
+            "emoji": "🏛️",
+            "text": {
+              "da": "kvindejob (tradition)",
+              "fa": "شغل زنانه (سنت)"
+            }
+          },
+          {
+            "id": "2019-nov-a.sitB.q1.kw3",
+            "emoji": "👨",
+            "text": {
+              "da": "få mandlige rollemodeller",
+              "fa": "الگوی مرد کم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har lønnen i de fag været lav. For det andet ses arbejdet med børn som et typisk kvindejob. Desuden er der få mandlige rollemodeller. Så alt i alt handler det om løn, traditioner og rollemodeller."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 81,
+              "end": 94
+            },
+            {
+              "start": 142,
+              "end": 149
+            },
+            {
+              "start": 184,
+              "end": 196
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-a.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for børnene, at der er færre mænd end kvinder, der er pædagoger eller lærere?",
+            "fa": "به نظرت کم بودن مردان در شغل معلمی و مربی‌گری چه تأثیری بر بچه‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                6
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Hvad tror du, det betyder for børnene, at der er færre mænd end kvinder, der er pædagoger eller lærere?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "answer": {
+            "id": "2019-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder noget. Børnene, især drengene, får færre mandlige rollemodeller. Det er godt for børnene at møde både mænd og kvinder i hverdagen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          32,
+          33
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-nov-a.general",
+    "question": {
+      "id": "2019-nov-a.general.q2",
+      "text": {
+        "da": "Man kunne lave regler for, hvor mange kvinder og mænd der kan optages på forskellige uddannelser, så der ikke er nogen uddannelser, hvor der næsten kun er kvinder eller kun mænd. Hvilke fordele og ulemper mener du, der ville være ved det?",
+        "fa": "می‌شود برای پذیرش زن و مرد در رشته‌های مختلف قانون (سهمیه) گذاشت تا رشته‌ای فقط زنانه یا فقط مردانه نباشد. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2019-nov",
+          "pages": [
+            6
+          ]
+        },
+        "checkedOn": "2026-11-21",
+        "siriParts": [
+          "Man kunne lave regler for, hvor mange kvinder og mænd der kan optages på forskellige uddannelser, så der ikke er nogen uddannelser, hvor der næsten kun er kvinder eller kun mænd. Hvilke fordele og ulemper mener du, der ville være ved det?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "third-party-copy",
+          "note": "Copy from a teacher's website; not available from SIRI."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2019-nov-a.general.q2.kw1",
+          "emoji": "⚖️",
+          "text": {
+            "da": "lige fordeling",
+            "fa": "توزیع برابر"
+          }
+        },
+        {
+          "id": "2019-nov-a.general.q2.kw2",
+          "emoji": "👀",
+          "text": {
+            "da": "flere rollemodeller",
+            "fa": "الگوهای بیشتر"
+          }
+        },
+        {
+          "id": "2019-nov-a.general.q2.kw3",
+          "emoji": "😤",
+          "text": {
+            "da": "uretfærdigt",
+            "fa": "ناعادلانه"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at der kommer en mere lige fordeling i fagene. En anden fordel er, at vi får flere rollemodeller, så de unge tør vælge utraditionelt. På den anden side er en ulempe, at nogle ikke kommer ind, selvom de har de bedste karakterer. Det kan føles uretfærdigt. Alt i alt mener jeg, at det er bedre at motivere de unge end at lave kvoter."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 101,
+            "end": 123
+          },
+          {
+            "start": 188,
+            "end": 222
+          },
+          {
+            "start": 309,
+            "end": 332
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-nov-a.general.followup1",
+        "text": {
+          "da": "Synes du, det er vigtigt med en mere lige fordeling af kvinder og mænd i de forskellige brancher på arbejdsmarkedet? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت مهم است که زن و مرد در شاخه‌های مختلف بازار کار برابرتر توزیع شوند؟"
+        },
+        "siriCheck": {
+          "status": "differs",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              7
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Synes du, det er vigtigt med en mere lige fordeling af kvinder og mænd i de forskellige brancher på arbejdsmarkedet? Hvorfor?/Hvorfor ikke?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "spoken": {
+          "parts": [
+            "Synes du, det er vigtigt med en mere lige fordeling af kvinder og mænd i de forskellige brancher på arbejdsmarkedet?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2019-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Ja, det synes jeg. En blandet arbejdsplads giver flere perspektiver og et bedre arbejdsmiljø. Men det skal ske gennem motivation, ikke tvang."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        33
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      32,
+      33
+    ]
+  },
+  "review": {
+    "status": "needs-review",
+    "notes": [
+      {
+        "path": "situations[0].followups[0].text.da",
+        "pages": [
+          33
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 6). SIRI: \"Kan der efter din mening være nogen problemer ved, at der er færre kvinder end mænd, der arbejder med it og finans? Hvorfor?/Hvorfor ikke?\""
+      },
+      {
+        "path": "general.followups[0].text.da",
+        "pages": [
+          33
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 7). SIRI: \"Synes du, det er vigtigt med en mere lige fordeling af kvinder og mænd i de forskellige brancher på arbejdsmarkedet? Hvorfor?/Hvorfor ikke?\""
+      },
+      {
+        "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+      },
+      {
+        "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+      },
+      {
+        "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+      }
+    ]
+  }
+}

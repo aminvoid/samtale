@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-maj-a",
+  "termId": "2023-maj",
+  "letter": "A",
+  "themeId": "medier",
+  "title": {
+    "da": "Brug af sociale medier",
+    "fa": "استفاده از شبکه‌های اجتماعی"
+  },
+  "situations": [
+    {
+      "id": "2023-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "køb og salg via sociale medier",
+        "fa": "خرید و فروش از طریق شبکه‌های اجتماعی"
+      },
+      "intro": {
+        "id": "2023-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der køber og sælger ting via sociale medier."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-a.sitA.q1",
+        "text": {
+          "da": "Flere og flere køber og sælger produkter via sociale medier. Hvorfor tror du, de gør det?",
+          "fa": "آدم‌های بیشتر و بیشتری از طریق شبکه‌های اجتماعی خرید و فروش می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-a.sitA.q1.kw1",
+            "emoji": "⚡",
+            "text": {
+              "da": "nemt og hurtigt",
+              "fa": "آسان و سریع"
+            }
+          },
+          {
+            "id": "2023-maj-a.sitA.q1.kw2",
+            "emoji": "💰",
+            "text": {
+              "da": "billige brugte ting",
+              "fa": "وسایل دست‌دوم ارزان"
+            }
+          },
+          {
+            "id": "2023-maj-a.sitA.q1.kw3",
+            "emoji": "♻️",
+            "text": {
+              "da": "godt for miljøet",
+              "fa": "خوب برای محیط زیست"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det nemt og hurtigt, fordi man allerede bruger de sociale medier hver dag. For det andet kan man købe brugte ting billigt. Desuden er det godt for miljøet at genbruge. Så alt i alt handler det om nemhed, pris og miljø."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 128,
+              "end": 141
+            },
+            {
+              "start": 176,
+              "end": 183
+            },
+            {
+              "start": 221,
+              "end": 233
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-a.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at købe og sælge produkter via sociale medier? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا خرید و فروش از طریق شبکه‌های اجتماعی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at købe og sælge produkter via sociale medier?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, der kan godt være nogle problemer. Der er mange svindlere, og man kan miste sine penge, hvis varen aldrig kommer. Man har heller ikke de samme rettigheder som i en butik."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          63,
+          64
+        ]
+      }
+    },
+    {
+      "id": "2023-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "private billeder på sociale medier",
+        "fa": "عکس‌های خصوصی در شبکه‌های اجتماعی"
+      },
+      "intro": {
+        "id": "2023-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der deler private billeder på sociale medier."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-a.sitB.q1",
+        "text": {
+          "da": "Mange lægger private og personlige billeder ud på sociale medier. Hvorfor tror du, de gør det?",
+          "fa": "خیلی‌ها عکس‌های خصوصی و شخصی‌شان را در شبکه‌های اجتماعی می‌گذارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-a.sitB.q1.kw1",
+            "emoji": "👍",
+            "text": {
+              "da": "likes og opmærksomhed",
+              "fa": "لایک و توجه"
+            }
+          },
+          {
+            "id": "2023-maj-a.sitB.q1.kw2",
+            "emoji": "🪞",
+            "text": {
+              "da": "vise hvem de er",
+              "fa": "نشان دادن خود"
+            }
+          },
+          {
+            "id": "2023-maj-a.sitB.q1.kw3",
+            "emoji": "🙈",
+            "text": {
+              "da": "tænker ikke over det",
+              "fa": "فکرش را نمی‌کنند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne have likes og opmærksomhed. For det andet vil de vise, hvem de er, og dele deres liv med vennerne. Desuden tænker mange ikke over, at billederne kan blive delt videre. Så alt i alt handler det om anerkendelse og identitet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 91,
+              "end": 104
+            },
+            {
+              "start": 162,
+              "end": 169
+            },
+            {
+              "start": 231,
+              "end": 243
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at lægge private billeder ud på sociale medier? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا گذاشتن عکس‌های خصوصی در شبکه‌های اجتماعی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at lægge private billeder ud på sociale medier?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg bestemt. Billederne kan blive delt uden tilladelse, og de kan bruges til mobning. Man kan ikke tage dem tilbage. Det kan også skade ens chancer for et job senere."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          63,
+          64
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-maj-a.general",
+    "question": {
+      "id": "2023-maj-a.general.q2",
+      "text": {
+        "da": "I dag læser mange deres nyheder på sociale medier. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "امروزه خیلی‌ها اخبار را در شبکه‌های اجتماعی می‌خوانند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-maj-a.general.q2.kw1",
+          "emoji": "⚡",
+          "text": {
+            "da": "hurtigt og gratis",
+            "fa": "سریع و رایگان"
+          }
+        },
+        {
+          "id": "2023-maj-a.general.q2.kw2",
+          "emoji": "🧑",
+          "text": {
+            "da": "unge følger med",
+            "fa": "جوان‌ها هم خبر می‌خوانند"
+          }
+        },
+        {
+          "id": "2023-maj-a.general.q2.kw3",
+          "emoji": "🫧",
+          "text": {
+            "da": "falsk info og ekkokamre",
+            "fa": "اطلاعات غلط و حباب فکری"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at man hurtigt får nyhederne, og at de er gratis. En anden fordel er, at unge, som ellers ikke læser avis, også følger med i nyhederne. På den anden side er en ulempe, at der er meget falsk information. Algoritmerne viser os også mest det, vi i forvejen er enige i. Alt i alt mener jeg, at det er fint, men man skal også bruge troværdige medier som DR."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 104,
+            "end": 126
+          },
+          {
+            "start": 190,
+            "end": 224
+          },
+          {
+            "start": 320,
+            "end": 343
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-maj-a.general.followup1",
+        "text": {
+          "da": "Mener du, at sociale medier har en positiv eller negativ betydning for demokratiet? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت شبکه‌های اجتماعی تأثیر مثبت بر دموکراسی دارند یا منفی؟ چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, at sociale medier har en positiv eller negativ betydning for demokratiet?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, betydningen er både positiv og negativ. Det er positivt, at flere kan deltage i debatten. Men falske nyheder og ekkokamre kan splitte befolkningen. Derfor skal vi lære at være kritiske."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        64
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      63,
+      64
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

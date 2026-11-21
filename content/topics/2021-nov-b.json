@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-nov-b",
+  "termId": "2021-nov",
+  "letter": "B",
+  "themeId": "klima",
+  "title": {
+    "da": "Transportvaner",
+    "fa": "عادت‌های حمل‌ونقل"
+  },
+  "situations": [
+    {
+      "id": "2021-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "cyklen som transport til og fra arbejde",
+        "fa": "دوچرخه به‌عنوان وسیله‌ی رفت‌وآمد"
+      },
+      "intro": {
+        "id": "2021-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der cykler til og fra arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-b.sitA.q1",
+        "text": {
+          "da": "I Danmark er der mange, der bruger cyklen til transport, fx til og fra arbejde. Hvorfor tror du, det er sådan?",
+          "fa": "در دانمارک خیلی‌ها برای رفت‌وآمد، مثلاً به محل کار، از دوچرخه استفاده می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-b.sitA.q1.kw1",
+            "emoji": "🛣️",
+            "text": {
+              "da": "gode cykelstier",
+              "fa": "مسیرهای دوچرخه‌ی خوب"
+            }
+          },
+          {
+            "id": "2021-nov-b.sitA.q1.kw2",
+            "emoji": "💰",
+            "text": {
+              "da": "billigt og sundt",
+              "fa": "ارزان و سالم"
+            }
+          },
+          {
+            "id": "2021-nov-b.sitA.q1.kw3",
+            "emoji": "🅿️",
+            "text": {
+              "da": "ingen kø og parkering",
+              "fa": "بدون ترافیک و پارکینگ"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er Danmark fladt, og der er mange gode cykelstier. For det andet er det billigt og sundt. Desuden er det ofte hurtigere end bilen i byen, fordi man ikke holder i kø og ikke skal finde parkering. Så alt i alt handler det om gode forhold, økonomi og sundhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 101,
+              "end": 114
+            },
+            {
+              "start": 140,
+              "end": 147
+            },
+            {
+              "start": 245,
+              "end": 257
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for trafiksikkerheden i byerne, at der er mange, der bruger cyklen til transport?",
+            "fa": "به نظرت دوچرخه‌سوارهای زیاد چه تأثیری بر ایمنی ترافیک در شهر دارند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, mange cyklister kan give flere ulykker, hvis der ikke er plads nok. Men når der er mange cyklister, er bilisterne også mere opmærksomme. Gode cykelstier gør trafikken mere sikker."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          70
+        ]
+      }
+    },
+    {
+      "id": "2021-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "bilen vælges trods god offentlig transport",
+        "fa": "انتخاب ماشین با وجود حمل‌ونقل عمومی خوب"
+      },
+      "intro": {
+        "id": "2021-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der tager bilen på arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-b.sitB.q1",
+        "text": {
+          "da": "Der er mange, der vælger bilen til transport, fx til og fra arbejde, selvom der i Danmark er gode muligheder for offentlig transport. Hvorfor tror du, det er sådan?",
+          "fa": "خیلی‌ها برای رفت‌وآمد ماشین را انتخاب می‌کنند، با اینکه در دانمارک حمل‌ونقل عمومی خوب است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-b.sitB.q1.kw1",
+            "emoji": "🚪",
+            "text": {
+              "da": "fra dør til dør",
+              "fa": "از در تا در"
+            }
+          },
+          {
+            "id": "2021-nov-b.sitB.q1.kw2",
+            "emoji": "👶",
+            "text": {
+              "da": "hente børn og handle",
+              "fa": "بردن بچه و خرید"
+            }
+          },
+          {
+            "id": "2021-nov-b.sitB.q1.kw3",
+            "emoji": "🚌",
+            "text": {
+              "da": "sjældne busser på landet",
+              "fa": "اتوبوس کم در روستا"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er bilen fleksibel, og man kan køre direkte fra dør til dør. For det andet skal mange hente børn og købe ind på vejen hjem. Desuden kører busserne ikke så tit på landet. Så alt i alt handler det om fleksibilitet og tid."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 111,
+              "end": 124
+            },
+            {
+              "start": 174,
+              "end": 181
+            },
+            {
+              "start": 220,
+              "end": 232
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-b.sitB.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved, at der er mange, der vælger bilen til transport? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است انتخاب ماشین توسط افراد زیاد مشکلی ایجاد کند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved, at der er mange, der vælger bilen til transport?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2021-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Der bliver mere kø, forurening og støj. Det er også dårligt for klimaet og sundheden. Derfor skal den offentlige transport gøres mere attraktiv."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          70,
+          71
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-nov-b.general",
+    "question": {
+      "id": "2021-nov-b.general.q2",
+      "text": {
+        "da": "Der er nogle, der mener, at der skal være mere og billigere offentlig transport. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی‌ها معتقدند حمل‌ونقل عمومی باید بیشتر و ارزان‌تر شود. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-nov-b.general.q2.kw1",
+          "emoji": "🌍",
+          "text": {
+            "da": "mindre CO2 og kø",
+            "fa": "CO2 و ترافیک کمتر"
+          }
+        },
+        {
+          "id": "2021-nov-b.general.q2.kw2",
+          "emoji": "👨‍🎓",
+          "text": {
+            "da": "lettere for unge og lavtlønnede",
+            "fa": "آسان‌تر برای جوان‌ها و کم‌درآمدها"
+          }
+        },
+        {
+          "id": "2021-nov-b.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt for staten",
+            "fa": "گران برای دولت"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at flere vil lade bilen stå, og det giver mindre CO2 og mindre kø. En anden fordel er, at unge og folk med lav indkomst nemmere kan komme rundt. På den anden side er en ulempe, at det koster staten mange penge. Hvis busserne er tomme, er det spild af penge. Alt i alt mener jeg, at det er en god investering i miljøet."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 135,
+            "end": 157
+          },
+          {
+            "start": 213,
+            "end": 247
+          },
+          {
+            "start": 326,
+            "end": 349
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-nov-b.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det vil betyde for miljøet, hvis den offentlige transport bliver billigere?",
+          "fa": "به نظرت ارزان‌تر شدن حمل‌ونقل عمومی چه تأثیری بر محیط زیست دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det vil være godt for miljøet, hvis flere tager bussen eller toget i stedet for bilen. Men prisen er ikke det eneste. Transporten skal også være hurtig og køre ofte, ellers vælger folk stadig bilen."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        71
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      70,
+      71
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

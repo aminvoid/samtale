@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-maj-b",
+  "termId": "2017-maj",
+  "letter": "B",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.alder-og-pension",
+  "title": {
+    "da": "Pensionsalder",
+    "fa": "سن بازنشستگی"
+  },
+  "situations": [
+    {
+      "id": "2017-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "ældre bliver længere på arbejdsmarkedet",
+        "fa": "سالمندانی که بیشتر سر کار می‌مانند"
+      },
+      "intro": {
+        "id": "2017-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en ældre medarbejder, der stadig går på arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-b.sitA.q1",
+        "text": {
+          "da": "Nogle ældre vælger at blive længere på arbejdsmarkedet, selvom de egentlig har mulighed for at gå på pension. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی سالمندان با اینکه می‌توانند بازنشسته شوند، بیشتر در بازار کار می‌مانند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-b.sitA.q1.kw1",
+            "emoji": "😊",
+            "text": {
+              "da": "glade for arbejdet",
+              "fa": "عاشق کارشان"
+            }
+          },
+          {
+            "id": "2017-maj-b.sitA.q1.kw2",
+            "emoji": "🧭",
+            "text": {
+              "da": "mening og struktur",
+              "fa": "معنا و نظم روزانه"
+            }
+          },
+          {
+            "id": "2017-maj-b.sitA.q1.kw3",
+            "emoji": "💰",
+            "text": {
+              "da": "flere penge",
+              "fa": "پول بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er de glade for deres arbejde og deres kolleger. For det andet giver arbejdet dem en hverdag med mening og struktur. Desuden kan de tjene flere penge til deres pension. Så alt i alt handler det om mening, fællesskab og økonomi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 99,
+              "end": 112
+            },
+            {
+              "start": 167,
+              "end": 174
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for det kollegiale samarbejde på en arbejdsplads, at der er både yngre og ældre kolleger?",
+            "fa": "به نظرت بودن همکاران جوان و مسن در یک محل کار چه تأثیری بر همکاری دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det er godt for samarbejdet. De ældre har erfaring og ro, og de unge har nye ideer og kender ny teknologi. De kan lære meget af hinanden."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          29
+        ]
+      }
+    },
+    {
+      "id": "2017-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "ældre arbejder frivilligt efter pension",
+        "fa": "سالمندانی که بعد از بازنشستگی داوطلبانه کار می‌کنند"
+      },
+      "intro": {
+        "id": "2017-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en pensionist, der arbejder frivilligt."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-b.sitB.q1",
+        "text": {
+          "da": "Nogle ældre vælger at arbejde frivilligt, efter at de er gået på pension. Hvorfor tror du, de gør det?",
+          "fa": "بعضی سالمندان بعد از بازنشستگی داوطلبانه کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-b.sitB.q1.kw1",
+            "emoji": "🧭",
+            "text": {
+              "da": "noget meningsfuldt",
+              "fa": "کار معنادار"
+            }
+          },
+          {
+            "id": "2017-maj-b.sitB.q1.kw2",
+            "emoji": "👫",
+            "text": {
+              "da": "ikke ensomme",
+              "fa": "تنها نبودن"
+            }
+          },
+          {
+            "id": "2017-maj-b.sitB.q1.kw3",
+            "emoji": "🎁",
+            "text": {
+              "da": "give tilbage",
+              "fa": "پس دادن به جامعه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne bruge deres tid på noget meningsfuldt. For det andet møder de nye mennesker, så de ikke føler sig ensomme. Desuden vil de gerne give noget tilbage til samfundet. Så alt i alt handler det om mening og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 102,
+              "end": 115
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 225,
+              "end": 237
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de ældres livskvalitet, at de arbejder frivilligt?",
+            "fa": "به نظرت کار داوطلبانه چه تأثیری بر کیفیت زندگی سالمندان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder rigtig meget. De føler sig nyttige, og de holder sig aktive både fysisk og mentalt. Det kan give et længere og sundere liv."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          29,
+          30
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-maj-b.general",
+    "question": {
+      "id": "2017-maj-b.general.q2",
+      "text": {
+        "da": "Pensionsalderen vil stige i de kommende år. Hvilke fordele og ulemper mener du, der kan være ved, at pensionsalderen stiger lige meget for alle, uanset om man er fx læge eller rengøringsassistent?",
+        "fa": "سن بازنشستگی در سال‌های آینده بالا می‌رود. مزایا و معایب اینکه برای همه به یک اندازه بالا برود، چه پزشک باشی چه نظافتچی؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-maj-b.general.q2.kw1",
+          "emoji": "⚖️",
+          "text": {
+            "da": "ens for alle",
+            "fa": "یکسان برای همه"
+          }
+        },
+        {
+          "id": "2017-maj-b.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "flere skatteindtægter",
+            "fa": "درآمد مالیاتی بیشتر"
+          }
+        },
+        {
+          "id": "2017-maj-b.general.q2.kw3",
+          "emoji": "🦴",
+          "text": {
+            "da": "slidt krop",
+            "fa": "بدن فرسوده"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at det er enkelt og ens for alle. En anden fordel er, at samfundet får flere på arbejdsmarkedet og flere skatteindtægter, når vi lever længere. På den anden side er en ulempe, at det er uretfærdigt for folk med hårdt fysisk arbejde. Deres krop er ofte slidt op, før de når pensionsalderen. Alt i alt mener jeg, at folk med hårdt fysisk arbejde bør kunne gå tidligere på pension."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 88,
+            "end": 110
+          },
+          {
+            "start": 198,
+            "end": 232
+          },
+          {
+            "start": 344,
+            "end": 367
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-maj-b.general.followup1",
+        "text": {
+          "da": "Hvad kan være hårdt ved arbejdet som læge eller rengøringsassistent, når man bliver ældre? Og hvem af de to kan bedst klare en senere pensionsalder?",
+          "fa": "کار پزشک یا نظافتچی در سن بالا چه سختی‌هایی دارد؟ و کدامشان بهتر می‌تواند بازنشستگی دیرتر را تحمل کند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2017-maj-b.general.followup1.answer",
+          "text": {
+            "da": "En rengøringsassistent har et fysisk hårdt arbejde, så kroppen bliver slidt. En læge har et psykisk hårdt arbejde med meget ansvar. Men jeg tror, at lægen bedst kan klare en senere pensionsalder, fordi kroppen ikke bliver lige så slidt."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        30
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      29,
+      30
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

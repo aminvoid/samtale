@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-maj-a",
+  "termId": "2019-maj",
+  "letter": "A",
+  "themeId": "klima",
+  "title": {
+    "da": "Transportformer",
+    "fa": "انواع حمل‌ونقل"
+  },
+  "situations": [
+    {
+      "id": "2019-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "flere elcykler i trafikken",
+        "fa": "دوچرخه‌های برقی بیشتر در خیابان"
+      },
+      "intro": {
+        "id": "2019-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der kører på elcykel i trafikken."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-a.sitA.q1",
+        "text": {
+          "da": "Der er flere og flere danskere, både unge og gamle, der køber en elcykel i stedet for en almindelig cykel. Hvorfor tror du, det er sådan?",
+          "fa": "دانمارکی‌های بیشتری، پیر و جوان، به جای دوچرخه‌ی معمولی دوچرخه‌ی برقی می‌خرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-a.sitA.q1.kw1",
+            "emoji": "🚴",
+            "text": {
+              "da": "længere uden at blive træt",
+              "fa": "مسافت بیشتر بدون خستگی"
+            }
+          },
+          {
+            "id": "2019-maj-a.sitA.q1.kw2",
+            "emoji": "💰",
+            "text": {
+              "da": "billigere end bil",
+              "fa": "ارزان‌تر از ماشین"
+            }
+          },
+          {
+            "id": "2019-maj-a.sitA.q1.kw3",
+            "emoji": "👵",
+            "text": {
+              "da": "også for ældre",
+              "fa": "برای سالمندان هم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første kan man cykle længere uden at blive træt og svedig. For det andet er det billigere end en bil og godt for miljøet. Desuden kan ældre og folk med dårlige knæ også cykle. Så alt i alt handler det om nemhed, økonomi og miljø."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 102,
+              "end": 115
+            },
+            {
+              "start": 165,
+              "end": 172
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-a.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at flere køber en elcykel i stedet for en almindelig cykel – fx for trafiksikkerheden eller sundheden? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است خرید دوچرخه‌ی برقی به جای دوچرخه‌ی معمولی مشکلی ایجاد کند، مثلاً برای ایمنی ترافیک یا سلامتی؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at flere køber en elcykel i stedet for en almindelig cykel – fx for trafiksikkerheden eller sundheden?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2019-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, der kan godt være nogle problemer. Elcykler kører hurtigt, så der kan ske flere ulykker, især med ældre. Man får også lidt mindre motion. Men det er stadig bedre end at køre bil."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          65
+        ]
+      }
+    },
+    {
+      "id": "2019-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "mere plads til cyklister og fodgængere",
+        "fa": "جای بیشتر برای دوچرخه‌سوار و عابر"
+      },
+      "intro": {
+        "id": "2019-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en travl gade med mange cyklister og fodgængere."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-a.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der mener, at der skal være mere plads til fodgængere og cyklister i de større byer. Hvorfor tror du, de mener det?",
+          "fa": "بعضی‌ها معتقدند در شهرهای بزرگ باید جای بیشتری برای عابران و دوچرخه‌سوارها باشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-a.sitB.q1.kw1",
+            "emoji": "🌿",
+            "text": {
+              "da": "mindre forurening og støj",
+              "fa": "آلودگی و سروصدای کمتر"
+            }
+          },
+          {
+            "id": "2019-maj-a.sitB.q1.kw2",
+            "emoji": "🛡️",
+            "text": {
+              "da": "sikker og hyggelig by",
+              "fa": "شهر امن و دلپذیر"
+            }
+          },
+          {
+            "id": "2019-maj-a.sitB.q1.kw3",
+            "emoji": "🏃",
+            "text": {
+              "da": "mere motion",
+              "fa": "تحرک بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første bliver der mindre forurening og støj, når færre kører bil. For det andet bliver byen mere sikker og hyggelig. Desuden får folk mere motion, når de går og cykler. Så alt i alt handler det om miljø, sikkerhed og sundhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 109,
+              "end": 122
+            },
+            {
+              "start": 160,
+              "end": 167
+            },
+            {
+              "start": 212,
+              "end": 224
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at give mere plads til fodgængere og cyklister i de større byer? Hvorfor / hvorfor ikke?",
+            "fa": "آیا دادن جای بیشتر به عابران و دوچرخه‌سوارها در شهرهای بزرگ مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at give mere plads til fodgængere og cyklister i de større byer?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2019-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Der bliver færre parkeringspladser og mere kø for bilerne. Det kan være svært for ældre, handicappede og håndværkere, som har brug for bilen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          65,
+          66
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-maj-a.general",
+    "question": {
+      "id": "2019-maj-a.general.q2",
+      "text": {
+        "da": "Der er nogle, der mener, at der skal investeres i hurtigtog i hele landet. Hvilke fordele og ulemper mener du, der kan være ved det – fx for miljøet?",
+        "fa": "بعضی‌ها معتقدند باید در کل کشور روی قطار سریع‌السیر سرمایه‌گذاری شود. مزایا و معایب، مثلاً برای محیط زیست؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2019-maj-a.general.q2.kw1",
+          "emoji": "🚇",
+          "text": {
+            "da": "tog i stedet for bil og fly",
+            "fa": "قطار به جای ماشین و هواپیما"
+          }
+        },
+        {
+          "id": "2019-maj-a.general.q2.kw2",
+          "emoji": "🗺️",
+          "text": {
+            "da": "landet tættere sammen",
+            "fa": "نزدیک‌تر شدن شهرها"
+          }
+        },
+        {
+          "id": "2019-maj-a.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt og langsomt at bygge",
+            "fa": "ساخت گران و طولانی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at flere vil tage toget i stedet for bil og fly, og det er godt for miljøet. En anden fordel er, at hele landet kommer tættere sammen, så man kan bo i en lille by og arbejde i en stor by. På den anden side er en ulempe, at det er meget dyrt at bygge, og det tager mange år. Alt i alt mener jeg, at det er en god investering for fremtiden."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 131,
+            "end": 153
+          },
+          {
+            "start": 242,
+            "end": 276
+          },
+          {
+            "start": 328,
+            "end": 351
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-maj-a.general.followup1",
+        "text": {
+          "da": "Tror du, det vil være bedre at investere i flere motorveje end i hurtigtog i hele landet? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت سرمایه‌گذاری روی بزرگراه بهتر از قطار سریع‌السیر است؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Tror du, det vil være bedre at investere i flere motorveje end i hurtigtog i hele landet?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2019-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Nej, det tror jeg ikke. Flere motorveje giver bare flere biler og mere forurening. Hurtigtog er bedre for klimaet. Men i landområderne har folk stadig brug for gode veje."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        66
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      65,
+      66
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

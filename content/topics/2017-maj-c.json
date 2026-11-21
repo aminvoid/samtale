@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-maj-c",
+  "termId": "2017-maj",
+  "letter": "C",
+  "themeId": "medier",
+  "title": {
+    "da": "Børns brug af tablets",
+    "fa": "استفاده‌ی کودکان از تبلت"
+  },
+  "situations": [
+    {
+      "id": "2017-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "børn spiller meget på tablet",
+        "fa": "بچه‌ها زیاد با تبلت بازی می‌کنند"
+      },
+      "intro": {
+        "id": "2017-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser et barn, der spiller meget på en tablet."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-c.sitA.q1",
+        "text": {
+          "da": "Nogle børn bruger meget tid på at spille på deres tablet. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی بچه‌ها وقت زیادی را صرف بازی با تبلت می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-c.sitA.q1.kw1",
+            "emoji": "🎮",
+            "text": {
+              "da": "sjove spil",
+              "fa": "بازی‌های جذاب"
+            }
+          },
+          {
+            "id": "2017-maj-c.sitA.q1.kw2",
+            "emoji": "👩‍👩‍👧",
+            "text": {
+              "da": "travle forældre",
+              "fa": "والدین پرمشغله"
+            }
+          },
+          {
+            "id": "2017-maj-c.sitA.q1.kw3",
+            "emoji": "🧑‍🤝‍🧑",
+            "text": {
+              "da": "vennerne spiller",
+              "fa": "دوستان هم بازی می‌کنند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er spillene lavet, så de er sjove og svære at stoppe med. For det andet har forældrene travlt, og tabletten kan holde børnene beskæftiget. Desuden spiller alle vennerne også. Så alt i alt handler det om sjove spil, travle forældre og venner."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 189,
+              "end": 196
+            },
+            {
+              "start": 225,
+              "end": 237
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for børns sociale relationer, at de har en tablet?",
+            "fa": "به نظرت داشتن تبلت چه تأثیری بر روابط اجتماعی بچه‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gå ud over de sociale relationer. Børnene leger mindre med andre børn og lærer ikke så meget om at samarbejde og løse konflikter. Men nogle spil kan man også spille sammen med venner."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          57
+        ]
+      }
+    },
+    {
+      "id": "2017-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "skoler køber tablets til undervisning",
+        "fa": "مدرسه‌ها برای آموزش تبلت می‌خرند"
+      },
+      "intro": {
+        "id": "2017-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en skole, der har købt tablets til undervisningen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-maj-c.sitB.q1",
+        "text": {
+          "da": "Mange skoler køber tablets til brug i undervisningen, selvom det koster mange penge for skolerne. Hvorfor tror du, at det er sådan?",
+          "fa": "بسیاری از مدرسه‌ها برای کلاس تبلت می‌خرند، با اینکه برایشان گران تمام می‌شود. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-maj-c.sitB.q1.kw1",
+            "emoji": "💻",
+            "text": {
+              "da": "digitale færdigheder",
+              "fa": "مهارت دیجیتال"
+            }
+          },
+          {
+            "id": "2017-maj-c.sitB.q1.kw2",
+            "emoji": "🎨",
+            "text": {
+              "da": "varieret undervisning",
+              "fa": "آموزش متنوع"
+            }
+          },
+          {
+            "id": "2017-maj-c.sitB.q1.kw3",
+            "emoji": "🐢",
+            "text": {
+              "da": "eget tempo",
+              "fa": "سرعت خودِ دانش‌آموز"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal børnene lære digitale færdigheder til fremtiden. For det andet gør tablets undervisningen mere varieret og motiverende. Desuden kan eleverne arbejde i deres eget tempo. Så alt i alt handler det om fremtiden og bedre undervisning."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 104,
+              "end": 117
+            },
+            {
+              "start": 175,
+              "end": 182
+            },
+            {
+              "start": 224,
+              "end": 236
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-maj-c.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for elevernes motivation, at de bruger tablets i undervisningen?",
+            "fa": "به نظرت استفاده از تبلت در کلاس چه تأثیری بر انگیزه‌ی دانش‌آموزان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan øge motivationen, fordi det er sjovt og spændende. Men tabletten kan også forstyrre, hvis eleverne spiller eller går på sociale medier i stedet for at arbejde."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          57,
+          58
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-maj-c.general",
+    "question": {
+      "id": "2017-maj-c.general.q2",
+      "text": {
+        "da": "Mange børn vokser op med og bruger tablets, fra de er helt små. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "خیلی از بچه‌ها از خیلی کوچکی با تبلت بزرگ می‌شوند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-maj-c.general.q2.kw1",
+          "emoji": "💻",
+          "text": {
+            "da": "god til teknologi",
+            "fa": "مهارت فناوری"
+          }
+        },
+        {
+          "id": "2017-maj-c.general.q2.kw2",
+          "emoji": "🔤",
+          "text": {
+            "da": "læringsspil",
+            "fa": "بازی‌های آموزشی"
+          }
+        },
+        {
+          "id": "2017-maj-c.general.q2.kw3",
+          "emoji": "🛋️",
+          "text": {
+            "da": "mindre bevægelse og leg",
+            "fa": "تحرک و بازی کمتر"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at børnene bliver gode til teknologi tidligt. En anden fordel er, at der findes mange gode læringsspil, for eksempel med sprog og tal. På den anden side er en ulempe, at børnene bevæger sig mindre og leger mindre med andre. Det kan også give dårlig søvn og koncentration. Alt i alt mener jeg, at tablets er fine, hvis forældrene sætter grænser."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 100,
+            "end": 122
+          },
+          {
+            "start": 189,
+            "end": 223
+          },
+          {
+            "start": 326,
+            "end": 349
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for udviklingen af børns faglige og personlige kompetencer, at de bruger meget tid på tablets, fra de er helt små?",
+          "fa": "به نظرت استفاده‌ی زیاد از تبلت از کودکی چه تأثیری بر رشد مهارت‌های درسی و شخصی بچه‌ها دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2017-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, de kan lære meget fagligt, for eksempel bogstaver og engelsk. Men tålmodighed, fantasi og samarbejde kan blive svagere, hvis de bruger for meget tid på skærmen."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        58
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      57,
+      58
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

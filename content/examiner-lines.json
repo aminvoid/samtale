@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 0,
+  "lines": [
+    {
+      "id": "examiner.soundCheck",
+      "role": "sound-check",
+      "text": {
+        "da": "Hej, og velkommen til prøven."
+      },
+      "placeholders": [],
+      "origin": "app",
+      "review": {
+        "status": "approved",
+        "notes": [
+          {
+            "text": "Wording proposed by danish-language-reviewer (UX-OQ-10, the Danish pilot review of 2026-11-20 in docs/reviews)."
+          }
+        ],
+        "reviewedBy": "delegated-agent-review",
+        "reviewedOn": "2026-11-20"
+      }
+    },
+    {
+      "id": "examiner.intro",
+      "role": "intro",
+      "text": {
+        "da": "Her er der to billeder, som viser nogle situationer, der handler om emnet {topic}. Du har nu 10 sekunder til at overveje emnet, og derefter vil jeg stille dig spørgsmål til én af situationerne."
+      },
+      "placeholders": [
+        "topic"
+      ],
+      "origin": "siri",
+      "sourceRef": {
+        "document": "siri-2024-maj",
+        "pages": [
+          6,
+          8,
+          10
+        ]
+      },
+      "review": {
+        "status": "approved",
+        "notes": [
+          {
+            "text": "Verified verbatim against SIRI 2024 pp. 6, 8, 10 by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+          }
+        ],
+        "reviewedBy": "delegated-agent-review",
+        "reviewedOn": "2026-11-20"
+      }
+    },
+    {
+      "id": "examiner.transition",
+      "role": "transition",
+      "text": {
+        "da": "Nu vil jeg stille dig et spørgsmål af en mere overordnet karakter."
+      },
+      "placeholders": [],
+      "origin": "app",
+      "review": {
+        "status": "approved",
+        "notes": [
+          {
+            "text": "DL-050, validated by danish-language-reviewer (2026-11-20)."
+          }
+        ],
+        "reviewedBy": "delegated-agent-review",
+        "reviewedOn": "2026-11-20"
+      }
+    },
+    {
+      "id": "examiner.thanks",
+      "role": "between-answers",
+      "text": {
+        "da": "Tak."
+      },
+      "placeholders": [],
+      "origin": "app",
+      "review": {
+        "status": "approved",
+        "notes": [
+          {
+            "text": "Correct (danish-language-reviewer, 2026-11-20); DL-021."
+          }
+        ],
+        "reviewedBy": "delegated-agent-review",
+        "reviewedOn": "2026-11-20"
+      }
+    },
+    {
+      "id": "examiner.closing",
+      "role": "closing",
+      "text": {
+        "da": "Tak, så er prøven forbi."
+      },
+      "placeholders": [],
+      "origin": "siri",
+      "sourceRef": {
+        "document": "siri-2024-maj",
+        "pages": [
+          5,
+          7,
+          9,
+          11
+        ]
+      },
+      "review": {
+        "status": "approved",
+        "notes": [
+          {
+            "text": "Verified verbatim against SIRI 2024 pp. 5, 7, 9, 11 by pd3-exam-expert (2026-11-20)."
+          }
+        ],
+        "reviewedBy": "delegated-agent-review",
+        "reviewedOn": "2026-11-20"
+      }
+    }
+  ]
+}

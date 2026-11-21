@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 0,
+  "id": "2022-maj-b",
+  "termId": "2022-maj",
+  "letter": "B",
+  "themeId": "krim",
+  "title": {
+    "da": "Overvågning",
+    "fa": "نظارت (دوربین و مراقبت)"
+  },
+  "situations": [
+    {
+      "id": "2022-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "kameraer på offentlige steder",
+        "fa": "دوربین در اماکن عمومی"
+      },
+      "intro": {
+        "id": "2022-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser et overvågningskamera på et offentligt sted."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-b.sitA.q1",
+        "text": {
+          "da": "Det er meget almindeligt, at der er overvågningskameraer på offentlige steder som fx tankstationer og indkøbssteder. Hvorfor tror du, det er det?",
+          "fa": "خیلی معمول است که در اماکن عمومی مثل پمپ‌بنزین و فروشگاه دوربین مداربسته باشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-b.sitA.q1.kw1",
+            "emoji": "🛑",
+            "text": {
+              "da": "forebygge tyveri",
+              "fa": "پیشگیری از دزدی"
+            }
+          },
+          {
+            "id": "2022-maj-b.sitA.q1.kw2",
+            "emoji": "👮",
+            "text": {
+              "da": "finde gerningsmænd",
+              "fa": "پیدا کردن مجرم"
+            }
+          },
+          {
+            "id": "2022-maj-b.sitA.q1.kw3",
+            "emoji": "😌",
+            "text": {
+              "da": "tryghed",
+              "fa": "احساس امنیت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første kan kameraerne forebygge tyveri og røveri. For det andet kan politiet bruge optagelserne til at finde gerningsmænd. Desuden føler kunderne og personalet sig mere trygge. Så alt i alt handler det om sikkerhed og tryghed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 93,
+              "end": 106
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 220,
+              "end": 232
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-b.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at der er overvågningskameraer på offentlige steder?",
+            "fa": "آیا وجود دوربین مداربسته در اماکن عمومی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Nogle føler, at deres privatliv bliver krænket, fordi de altid bliver filmet. Optagelserne kan også blive misbrugt, hvis de ikke bliver opbevaret sikkert."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          83,
+          84
+        ]
+      }
+    },
+    {
+      "id": "2022-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "kameraer i boligområder",
+        "fa": "دوربین در محله‌های مسکونی"
+      },
+      "intro": {
+        "id": "2022-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser et overvågningskamera på et privat hus."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-b.sitB.q1",
+        "text": {
+          "da": "Flere og flere boligejere sætter overvågningskameraer op. Hvorfor tror du, de gør det?",
+          "fa": "صاحبان خانه‌ی بیشتر و بیشتری دوربین مداربسته نصب می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-b.sitB.q1.kw1",
+            "emoji": "🏠",
+            "text": {
+              "da": "bange for indbrud",
+              "fa": "ترس از دزدی"
+            }
+          },
+          {
+            "id": "2022-maj-b.sitB.q1.kw2",
+            "emoji": "📱",
+            "text": {
+              "da": "se på mobilen",
+              "fa": "دیدن روی گوشی"
+            }
+          },
+          {
+            "id": "2022-maj-b.sitB.q1.kw3",
+            "emoji": "💲",
+            "text": {
+              "da": "billigt og nemt",
+              "fa": "ارزان و آسان"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er de bange for indbrud. For det andet kan de se, hvad der sker, når de ikke er hjemme, for eksempel på deres mobil. Desuden er kameraerne blevet billige og nemme at sætte op. Så alt i alt handler det om tryghed og ny teknologi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 75,
+              "end": 88
+            },
+            {
+              "start": 167,
+              "end": 174
+            },
+            {
+              "start": 226,
+              "end": 238
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for sikkerheden i boligområder, at flere og flere boligejere sætter overvågningskameraer op?",
+            "fa": "به نظرت نصب دوربین توسط صاحبان خانه چه تأثیری بر امنیت محله‌های مسکونی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gøre området mere sikkert, fordi tyve ikke vil blive filmet. Men det kan også skabe mistillid mellem naboerne, hvis de føler sig overvågede."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          83,
+          84
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2022-maj-b.general",
+    "question": {
+      "id": "2022-maj-b.general.q2",
+      "text": {
+        "da": "Politiet kan ved hjælp af it-teknologi overvåge, hvad folk laver fysisk og online. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "پلیس می‌تواند با فناوری اطلاعات بر کارهای فیزیکی و آنلاین مردم نظارت کند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2022-maj-b.general.q2.kw1",
+          "emoji": "👮",
+          "text": {
+            "da": "opklare kriminalitet",
+            "fa": "کشف جرم"
+          }
+        },
+        {
+          "id": "2022-maj-b.general.q2.kw2",
+          "emoji": "😌",
+          "text": {
+            "da": "tryghed",
+            "fa": "امنیت خاطر"
+          }
+        },
+        {
+          "id": "2022-maj-b.general.q2.kw3",
+          "emoji": "🔓",
+          "text": {
+            "da": "mindre privatliv, misbrug",
+            "fa": "حریم خصوصی کمتر، سوءاستفاده"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2022-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at politiet lettere kan forebygge og opklare kriminalitet, for eksempel terror. En anden fordel er, at borgerne kan føle sig mere trygge. På den anden side er en ulempe, at vores privatliv bliver mindre. Der er også en risiko for, at oplysningerne bliver misbrugt. Alt i alt mener jeg, at overvågning er okay, men der skal være klare regler og kontrol."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 148,
+            "end": 170
+          },
+          {
+            "start": 206,
+            "end": 240
+          },
+          {
+            "start": 333,
+            "end": 356
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2022-maj-b.general.followup1",
+        "text": {
+          "da": "Tror du, øget overvågning kan skabe større tryghed i samfundet? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت نظارت بیشتر می‌تواند امنیت خاطر بیشتری در جامعه ایجاد کند؟ چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Tror du, øget overvågning kan skabe større tryghed i samfundet?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2022-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Ja, til en vis grad. Mange føler sig mere trygge, når de ved, at der er kameraer. Men for meget overvågning kan også give en følelse af, at staten altid holder øje med os. Det handler om balance."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        84
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      83,
+      84
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

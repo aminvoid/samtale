@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-nov-a",
+  "termId": "2020-nov",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdstid-og-familieliv",
+  "title": {
+    "da": "Arbejdsliv og familieliv",
+    "fa": "زندگی کاری و زندگی خانوادگی"
+  },
+  "situations": [
+    {
+      "id": "2020-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "venter med børn til sidst i 30'erne (karrierejob)",
+        "fa": "بچه‌دار شدن در اواخر دهه‌ی ۳۰ (به‌خاطر کار)"
+      },
+      "intro": {
+        "id": "2020-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser et par, der er sidst i trediverne og endnu ikke har fået børn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-a.sitA.q1",
+        "text": {
+          "da": "Der er nogle, der venter med at få børn, til de er sidst i 30'erne. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها بچه‌دار شدن را تا اواخر دهه‌ی ۳۰ زندگی عقب می‌اندازند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-a.sitA.q1.kw1",
+            "emoji": "🎓",
+            "text": {
+              "da": "uddannelse og fast job",
+              "fa": "تحصیل و کار ثابت"
+            }
+          },
+          {
+            "id": "2020-nov-a.sitA.q1.kw2",
+            "emoji": "🏠",
+            "text": {
+              "da": "økonomi og bolig",
+              "fa": "پول و خانه"
+            }
+          },
+          {
+            "id": "2020-nov-a.sitA.q1.kw3",
+            "emoji": "✈️",
+            "text": {
+              "da": "nyde livet",
+              "fa": "لذت بردن از زندگی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil mange gerne færdiggøre deres uddannelse og have et fast job først. For det andet vil de have en god økonomi og en bolig. Desuden vil nogle rejse og nyde livet, før de får børn. Så alt i alt handler det om uddannelse, karriere og økonomi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 121,
+              "end": 134
+            },
+            {
+              "start": 175,
+              "end": 182
+            },
+            {
+              "start": 231,
+              "end": 243
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-a.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at vente med at få børn, til man er sidst i 30'erne? Hvorfor / hvorfor ikke?",
+            "fa": "آیا عقب انداختن بچه‌دار شدن تا اواخر دهه‌ی ۳۰ مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at vente med at få børn, til man er sidst i 30'erne?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2020-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Det kan være sværere at blive gravid, når man er ældre, og man har måske mindre energi. Men ældre forældre er ofte mere rolige og har en bedre økonomi."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          26
+        ]
+      }
+    },
+    {
+      "id": "2020-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "få børn mens man er studerende (studieliv)",
+        "fa": "بچه‌دار شدن در دوران دانشجویی"
+      },
+      "intro": {
+        "id": "2020-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en studerende, der har fået et barn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-a.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der vælger at få børn, mens de er studerende. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی‌ها در دوران دانشجویی بچه‌دار می‌شوند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-a.sitB.q1.kw1",
+            "emoji": "🗓️",
+            "text": {
+              "da": "fleksibel hverdag",
+              "fa": "زندگی روزمره‌ی منعطف"
+            }
+          },
+          {
+            "id": "2020-nov-a.sitB.q1.kw2",
+            "emoji": "💵",
+            "text": {
+              "da": "ekstra SU",
+              "fa": "SU اضافه"
+            }
+          },
+          {
+            "id": "2020-nov-a.sitB.q1.kw3",
+            "emoji": "⚡",
+            "text": {
+              "da": "ung og energisk",
+              "fa": "جوان و پرانرژی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har studerende en fleksibel hverdag, så de har tid til barnet. For det andet får studerende ekstra SU, når de får børn. Desuden er de unge og har meget energi. Så alt i alt er det et godt tidspunkt for nogle."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 113,
+              "end": 126
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 210,
+              "end": 222
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at få børn, mens man er studerende? Hvorfor / hvorfor ikke?",
+            "fa": "آیا بچه‌دار شدن در دوران دانشجویی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at få børn, mens man er studerende?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2020-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Økonomien er ofte stram, og det kan være svært at nå både studie og barn. Men med god hjælp fra familien kan det sagtens lykkes."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          26
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-nov-a.general",
+    "question": {
+      "id": "2020-nov-a.general.q2",
+      "text": {
+        "da": "Det er ofte moren, der holder den længste forældreorlov. Hvilke fordele og ulemper mener du, der kan være ved det for moren i forhold til familie og arbejde?",
+        "fa": "اغلب مادر طولانی‌ترین مرخصی والدین را می‌گیرد. مزایا و معایبش برای مادر در رابطه با خانواده و کار؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-nov-a.general.q2.kw1",
+          "emoji": "🤰",
+          "text": {
+            "da": "tid til barnet",
+            "fa": "وقت برای بچه"
+          }
+        },
+        {
+          "id": "2020-nov-a.general.q2.kw2",
+          "emoji": "📉",
+          "text": {
+            "da": "løn og karriere",
+            "fa": "حقوق و پیشرفت شغلی"
+          }
+        },
+        {
+          "id": "2020-nov-a.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "dele orloven",
+            "fa": "تقسیم مرخصی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for moren. En fordel er, at hun får god tid til at amme og knytte sig til barnet. En anden fordel er, at hun kan komme sig efter fødslen. På den anden side er en ulempe, at hun er længe væk fra arbejdet. Det kan give lavere løn, mindre pension og færre karrieremuligheder. Alt i alt mener jeg, at det er bedst, hvis forældrene deler orloven mere lige."
+        },
+        "emphasis": [
+          {
+            "start": 50,
+            "end": 66
+          },
+          {
+            "start": 121,
+            "end": 143
+          },
+          {
+            "start": 177,
+            "end": 211
+          },
+          {
+            "start": 312,
+            "end": 335
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-nov-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for ligestillingen i samfundet, at moren ofte holder den længste orlov?",
+          "fa": "به نظرت این که مادر اغلب طولانی‌ترین مرخصی را می‌گیرد چه تأثیری بر برابری در جامعه دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2020-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det gør ligestillingen dårligere. Kvinder halter bagefter med løn og karriere, og mænd får mindre kontakt med barnet. Derfor er det godt, at fædre nu har ret til mere øremærket orlov."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        27
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      26,
+      27
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

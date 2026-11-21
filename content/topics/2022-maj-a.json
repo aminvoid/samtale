@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 0,
+  "id": "2022-maj-a",
+  "termId": "2022-maj",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdstid-og-familieliv",
+  "title": {
+    "da": "Arbejdstid",
+    "fa": "ساعت کاری"
+  },
+  "situations": [
+    {
+      "id": "2022-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "at arbejde på deltid",
+        "fa": "کار پاره‌وقت"
+      },
+      "intro": {
+        "id": "2022-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der arbejder på deltid."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-a.sitA.q1",
+        "text": {
+          "da": "Der er nogle, der arbejder på deltid, selvom de er glade for deres job. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها پاره‌وقت کار می‌کنند، با اینکه از شغلشان راضی‌اند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-a.sitA.q1.kw1",
+            "emoji": "👨‍👩‍👧",
+            "text": {
+              "da": "tid til familie",
+              "fa": "وقت برای خانواده"
+            }
+          },
+          {
+            "id": "2022-maj-a.sitA.q1.kw2",
+            "emoji": "🏋️",
+            "text": {
+              "da": "hårdt arbejde",
+              "fa": "کار سخت"
+            }
+          },
+          {
+            "id": "2022-maj-a.sitA.q1.kw3",
+            "emoji": "💑",
+            "text": {
+              "da": "partneren arbejder fuld tid",
+              "fa": "همسر تمام‌وقت کار می‌کند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne have mere tid til børn og familie. For det andet er arbejdet måske fysisk eller psykisk hårdt, så fuld tid er for meget. Desuden kan økonomien godt hænge sammen, hvis partneren arbejder fuld tid. Så alt i alt handler det om balance mellem arbejde og fritid."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 98,
+              "end": 111
+            },
+            {
+              "start": 184,
+              "end": 191
+            },
+            {
+              "start": 259,
+              "end": 271
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det kan betyde for ens karriere, at man arbejder på deltid?",
+            "fa": "به نظرت پاره‌وقت کار کردن چه تأثیری بر پیشرفت شغلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gøre det sværere at gøre karriere. Man får færre opgaver og mindre erfaring, og man bliver måske overset, når der skal forfremmes nogen. Man får også mindre i løn og pension."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          27,
+          28
+        ]
+      }
+    },
+    {
+      "id": "2022-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "at arbejde meget trods familie",
+        "fa": "کار زیاد با وجود خانواده و بچه"
+      },
+      "intro": {
+        "id": "2022-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en mor, der arbejder mange timer om ugen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-maj-a.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der arbejder meget, selvom de har familie og børn. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها با اینکه خانواده و بچه دارند، خیلی زیاد کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-maj-a.sitB.q1.kw1",
+            "emoji": "👔",
+            "text": {
+              "da": "karrierejob",
+              "fa": "شغل پرمسئولیت"
+            }
+          },
+          {
+            "id": "2022-maj-a.sitB.q1.kw2",
+            "emoji": "💰",
+            "text": {
+              "da": "familien har brug for penge",
+              "fa": "خانواده به پول نیاز دارد"
+            }
+          },
+          {
+            "id": "2022-maj-a.sitB.q1.kw3",
+            "emoji": "😊",
+            "text": {
+              "da": "glade for arbejdet",
+              "fa": "عاشق کارشان"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har de måske et karrierejob med meget ansvar. For det andet har familien brug for pengene, for eksempel til hus og bil. Desuden er nogle meget glade for deres arbejde. Så alt i alt handler det om økonomi og ambitioner."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 96,
+              "end": 109
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 218,
+              "end": 230
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-maj-a.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det kan betyde for forholdet til familie og børn, at man arbejder meget?",
+            "fa": "به نظرت کار زیاد چه تأثیری بر رابطه با خانواده و بچه‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan skade forholdet. Børnene savner deres forældre, og der kan opstå konflikter mellem forældrene. Men hvis man bruger tiden godt i weekenden, kan det godt gå."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          27,
+          28
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2022-maj-a.general",
+    "question": {
+      "id": "2022-maj-a.general.q2",
+      "text": {
+        "da": "Der er nogle, der mener, at den gennemsnitlige ugentlige arbejdstid skal sættes ned til ca. 30 timer om ugen. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی‌ها معتقدند میانگین ساعت کار هفتگی باید به حدود ۳۰ ساعت کاهش یابد. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2022-maj-a.general.q2.kw1",
+          "emoji": "👨‍👩‍👧",
+          "text": {
+            "da": "mere tid til familie",
+            "fa": "وقت بیشتر برای خانواده"
+          }
+        },
+        {
+          "id": "2022-maj-a.general.q2.kw2",
+          "emoji": "🌿",
+          "text": {
+            "da": "mindre stress",
+            "fa": "استرس کمتر"
+          }
+        },
+        {
+          "id": "2022-maj-a.general.q2.kw3",
+          "emoji": "🏭",
+          "text": {
+            "da": "mangel på arbejdskraft",
+            "fa": "کمبود نیروی کار"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2022-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at folk får mere tid til familie og fritid, og det kan give mindre stress. En anden fordel er, at færre bliver syge. På den anden side er en ulempe, at samfundet får mindre produktion og færre skatteindtægter. Vi mangler allerede arbejdskraft, for eksempel i sundhedssektoren. Alt i alt mener jeg, at det er en god idé for den enkelte, men det er svært for samfundet lige nu."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 143,
+            "end": 165
+          },
+          {
+            "start": 185,
+            "end": 219
+          },
+          {
+            "start": 345,
+            "end": 368
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2022-maj-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det vil betyde for medarbejdernes effektivitet, hvis den gennemsnitlige ugentlige arbejdstid sættes ned til ca. 30 timer om ugen?",
+          "fa": "به نظرت هفته‌ی کاری ۳۰ ساعته چه تأثیری بر کارایی کارمندان دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2022-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, mange vil blive mere effektive, fordi de er mere udhvilede og bruger tiden bedre. Men i nogle job, for eksempel på et hospital, skal der være nogen hele tiden, så man skal ansætte flere."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        28
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      27,
+      28
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

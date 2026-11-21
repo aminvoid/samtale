@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-maj-c",
+  "termId": "2016-maj",
+  "letter": "C",
+  "themeId": "sundhed",
+  "title": {
+    "da": "Behandling af sygdom",
+    "fa": "درمان بیماری"
+  },
+  "situations": [
+    {
+      "id": "2016-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "folk går til lægen for penicillin mod forkølelse",
+        "fa": "رفتن پیش پزشک برای پنی‌سیلین به‌خاطر سرماخوردگی"
+      },
+      "intro": {
+        "id": "2016-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der går til lægen for at få penicillin mod forkølelse."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-c.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker går til lægen for at få penicillin mod forkølelse, selvom forkølelse normalt ikke er en alvorlig sygdom. Hvorfor tror du alligevel, de gør det?",
+          "fa": "بعضی‌ها برای سرماخوردگی پیش پزشک می‌روند تا پنی‌سیلین بگیرند، با اینکه سرماخوردگی معمولاً جدی نیست. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-c.sitA.q1.kw1",
+            "emoji": "🦠",
+            "text": {
+              "da": "virus ≠ bakterier",
+              "fa": "ویروس ≠ باکتری (ندانستن)"
+            }
+          },
+          {
+            "id": "2016-maj-c.sitA.q1.kw2",
+            "emoji": "⏱️",
+            "text": {
+              "da": "hurtigt rask",
+              "fa": "زود خوب شدن"
+            }
+          },
+          {
+            "id": "2016-maj-c.sitA.q1.kw3",
+            "emoji": "💊",
+            "text": {
+              "da": "tryghed med medicin",
+              "fa": "آرامش با دارو"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første ved mange ikke, at forkølelse skyldes en virus, og at penicillin kun virker mod bakterier. For det andet vil de gerne hurtigt blive raske, så de kan gå på arbejde. Desuden føler nogle sig mere trygge, når de får medicin. Så alt i alt handler det om manglende viden og travlhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 141,
+              "end": 154
+            },
+            {
+              "start": 214,
+              "end": 221
+            },
+            {
+              "start": 271,
+              "end": 283
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-c.sitA.followup1",
+          "text": {
+            "da": "Læger giver normalt ikke penicillin mod forkølelse. Kan der efter din mening være nogen problemer ved det? Hvorfor / hvorfor ikke?",
+            "fa": "پزشکان معمولاً برای سرماخوردگی پنی‌سیلین نمی‌دهند. به نظرت این کار مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Læger giver normalt ikke penicillin mod forkølelse. Kan der efter din mening være nogen problemer ved det?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Nej, jeg synes, det er rigtigt af lægerne. Penicillin hjælper ikke mod virus. Hvis vi bruger for meget penicillin, bliver bakterierne resistente, og så virker medicinen ikke, når vi virkelig har brug for den."
+            }
+          }
+        }
+      ],
+      "personalExamples": [
+        {
+          "id": "2016-maj-c.sitA.example1",
+          "label": {
+            "fa": "به‌عنوان پرستار"
+          },
+          "text": {
+            "da": "Som sygeplejerske ved jeg, at antibiotikaresistens er et stort problem."
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          48,
+          49
+        ]
+      }
+    },
+    {
+      "id": "2016-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "flere tager piller mod hovedpine end tidligere",
+        "fa": "مصرف بیشتر قرص سردرد نسبت به گذشته"
+      },
+      "intro": {
+        "id": "2016-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der tager piller mod hovedpine."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-c.sitB.q1",
+        "text": {
+          "da": "Der er i dag flere mennesker end tidligere, der tager piller mod hovedpine. Hvorfor tror du, der er det?",
+          "fa": "امروزه آدم‌های بیشتری نسبت به گذشته قرص سردرد می‌خورند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-c.sitB.q1.kw1",
+            "emoji": "😰",
+            "text": {
+              "da": "stress og travlhed",
+              "fa": "استرس و شلوغی"
+            }
+          },
+          {
+            "id": "2016-maj-c.sitB.q1.kw2",
+            "emoji": "💻",
+            "text": {
+              "da": "skærme",
+              "fa": "صفحه‌ی نمایش"
+            }
+          },
+          {
+            "id": "2016-maj-c.sitB.q1.kw3",
+            "emoji": "🛒",
+            "text": {
+              "da": "nemt at købe",
+              "fa": "خرید آسان"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har mange mere stress og travlhed end før. For det andet sidder mange foran en skærm hele dagen. Desuden er piller nemme at købe i supermarkedet, og man vil hurtigt have det bedre. Så alt i alt handler det om stress, skærme og nem adgang."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 93,
+              "end": 106
+            },
+            {
+              "start": 147,
+              "end": 154
+            },
+            {
+              "start": 231,
+              "end": 243
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-c.sitB.followup1",
+          "text": {
+            "da": "Er det efter din mening et problem, at flere mennesker tager piller mod hovedpine? Hvorfor / hvorfor ikke?",
+            "fa": "به نظرت مشکل است که آدم‌های بیشتری قرص سردرد می‌خورند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Er det efter din mening et problem, at flere mennesker tager piller mod hovedpine?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan være et problem. Hvis man tager for mange piller, kan man få bivirkninger, for eksempel mavesår eller endnu mere hovedpine. Man løser heller ikke årsagen. Det er bedre at sove godt, drikke vand og holde pauser."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          48,
+          49
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-maj-c.general",
+    "question": {
+      "id": "2016-maj-c.general.q2",
+      "text": {
+        "da": "Patienter ligger i dag kortere tid på hospitalet end tidligere, når de er blevet opereret eller behandlet for en alvorlig sygdom. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "امروزه بیماران بعد از عمل یا درمان بیماری جدی، مدت کوتاه‌تری در بیمارستان می‌مانند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-maj-c.general.q2.kw1",
+          "emoji": "🏡",
+          "text": {
+            "da": "hjemme bliver man rask",
+            "fa": "در خانه زودتر خوب می‌شوی"
+          }
+        },
+        {
+          "id": "2016-maj-c.general.q2.kw2",
+          "emoji": "🦠",
+          "text": {
+            "da": "færre infektioner",
+            "fa": "عفونت کمتر"
+          }
+        },
+        {
+          "id": "2016-maj-c.general.q2.kw3",
+          "emoji": "😟",
+          "text": {
+            "da": "sendt hjem for tidligt",
+            "fa": "ترخیص زودهنگام"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at patienterne kommer hurtigere hjem til deres egne omgivelser, hvor de ofte bliver hurtigere raske. En anden fordel er, at risikoen for infektioner bliver mindre, og hospitalet sparer penge. På den anden side er en ulempe, at nogle bliver sendt hjem for tidligt. Det kan være utrygt, især for ældre, der bor alene. Alt i alt mener jeg, at det er godt, hvis der er god hjælp fra hjemmeplejen."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 155,
+            "end": 177
+          },
+          {
+            "start": 246,
+            "end": 280
+          },
+          {
+            "start": 370,
+            "end": 393
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for patienterne og deres pårørendes hverdag, at patienterne hurtigt bliver sendt hjem fra hospitalet?",
+          "fa": "به نظرت ترخیص سریع بیماران چه تأثیری بر زندگی روزمره‌ی بیماران و خانواده‌شان دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan give en travl hverdag for de pårørende. De skal måske hjælpe med mad, medicin og transport. Men mange patienter er glade for at være hjemme sammen med deres familie."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        49,
+        50
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      48,
+      49,
+      50
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

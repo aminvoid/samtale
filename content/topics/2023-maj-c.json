@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-maj-c",
+  "termId": "2023-maj",
+  "letter": "C",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.jobvalg-jobsoegning-og-jobskifte",
+  "title": {
+    "da": "Jobsøgning og ledighed",
+    "fa": "کاریابی و بیکاری"
+  },
+  "situations": [
+    {
+      "id": "2023-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "unge vs. ældre arbejdsløse",
+        "fa": "بیکارهای زیر ۲۵ سال در برابر بیکارهای بالای ۶۰ سال"
+      },
+      "intro": {
+        "id": "2023-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser to arbejdsløse, der søger job. Den ene er ung, og den anden er ældre."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-c.sitA.q1",
+        "text": {
+          "da": "Arbejdsløse under 25 år kommer generelt hurtigere i job end arbejdsløse over 60 år. Hvorfor tror du, det er sådan?",
+          "fa": "بیکارهای زیر ۲۵ سال معمولاً زودتر از بیکارهای بالای ۶۰ سال کار پیدا می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-c.sitA.q1.kw1",
+            "emoji": "💰",
+            "text": {
+              "da": "billigere og fleksible",
+              "fa": "ارزان‌تر و انعطاف‌پذیر"
+            }
+          },
+          {
+            "id": "2023-maj-c.sitA.q1.kw2",
+            "emoji": "💻",
+            "text": {
+              "da": "ny teknologi",
+              "fa": "فناوری جدید"
+            }
+          },
+          {
+            "id": "2023-maj-c.sitA.q1.kw3",
+            "emoji": "🏖️",
+            "text": {
+              "da": "snart pension",
+              "fa": "به‌زودی بازنشسته"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er unge billigere, og de er mere fleksible. For det andet tror mange arbejdsgivere, at unge er bedre til ny teknologi. Desuden tænker nogle arbejdsgivere, at de ældre snart går på pension. Så alt i alt handler det om løn, fleksibilitet og fordomme."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 94,
+              "end": 107
+            },
+            {
+              "start": 169,
+              "end": 176
+            },
+            {
+              "start": 239,
+              "end": 251
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-c.sitA.followup1",
+          "text": {
+            "da": "Mener du, at arbejdsløse med uddannelse bør tage ufaglært arbejde for hurtigere at komme i job? Hvorfor?/Hvorfor ikke?",
+            "fa": "به نظرت بیکارهای تحصیل‌کرده باید کار بدون مهارت (ufaglært) قبول کنند تا زودتر سر کار بروند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, at arbejdsløse med uddannelse bør tage ufaglært arbejde for hurtigere at komme i job?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, i nogle tilfælde. Det er bedre at arbejde end at gå derhjemme, og man får erfaring og kolleger. Men det skal ikke vare for længe, fordi samfundet har brug for deres uddannelse."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "2023-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "kun job tæt på hjemmet",
+        "fa": "فقط دنبال کار نزدیک خانه"
+      },
+      "intro": {
+        "id": "2023-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en jobsøgende, der kun søger job tæt på sit hjem."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-c.sitB.q1",
+        "text": {
+          "da": "Nogle søger kun job tæt på, hvor de bor, selvom de har svært ved at finde job. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها فقط دنبال کار نزدیک خانه‌شان هستند، با اینکه کار پیدا کردن برایشان سخت است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-c.sitB.q1.kw1",
+            "emoji": "👨‍👩‍👧",
+            "text": {
+              "da": "familie og børn",
+              "fa": "خانواده و بچه"
+            }
+          },
+          {
+            "id": "2023-maj-c.sitB.q1.kw2",
+            "emoji": "⏱️",
+            "text": {
+              "da": "lang transport",
+              "fa": "رفت‌وآمد طولانی"
+            }
+          },
+          {
+            "id": "2023-maj-c.sitB.q1.kw3",
+            "emoji": "🚗",
+            "text": {
+              "da": "ingen bil",
+              "fa": "ماشین ندارند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har mange familie og børn, som de skal hente og bringe. For det andet tager det lang tid og koster penge at pendle. Desuden har nogle ikke en bil. Så alt i alt handler det om familie, tid og penge."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 106,
+              "end": 119
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 197,
+              "end": 209
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-c.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at nogle kun søger job tæt på, hvor de bor? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا ممکن است این که بعضی‌ها فقط نزدیک خانه دنبال کار بگردند مشکلی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at nogle kun søger job tæt på, hvor de bor?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg godt, der kan være. De bliver måske arbejdsløse i lang tid. Det koster samfundet penge, og de mister selvtillid. Derfor synes jeg, man skal være villig til at pendle lidt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          17
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-maj-c.general",
+    "question": {
+      "id": "2023-maj-c.general.q2",
+      "text": {
+        "da": "I Danmark kan man få økonomisk støtte, hvis man er arbejdsløs. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "در دانمارک اگر بیکار شوی، می‌توانی حمایت مالی بگیری. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-maj-c.general.q2.kw1",
+          "emoji": "🛡️",
+          "text": {
+            "da": "tryghed",
+            "fa": "امنیت خاطر"
+          }
+        },
+        {
+          "id": "2023-maj-c.general.q2.kw2",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt for samfundet",
+            "fa": "گران برای جامعه"
+          }
+        },
+        {
+          "id": "2023-maj-c.general.q2.kw3",
+          "emoji": "😴",
+          "text": {
+            "da": "passivitet",
+            "fa": "منفعل شدن"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at folk ikke bliver fattige, mens de søger job. Det giver tryghed for hele familien. En anden fordel er, at de kan bruge tid på at finde det rigtige job. På den anden side er en ulempe, at det koster samfundet mange penge. Nogle bliver måske også for passive. Alt i alt mener jeg, at støtten er vigtig, men der skal være krav om at søge job."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 139,
+            "end": 161
+          },
+          {
+            "start": 208,
+            "end": 242
+          },
+          {
+            "start": 314,
+            "end": 337
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-maj-c.general.followup1",
+        "text": {
+          "da": "Synes du, der bør være en grænse for, hvor længe man kan få økonomisk støtte fra det offentlige? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت باید برای مدت دریافت حمایت مالی دولت سقفی وجود داشته باشد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Synes du, der bør være en grænse for, hvor længe man kan få økonomisk støtte fra det offentlige?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Ja, det synes jeg. En grænse motiverer folk til at søge job aktivt. Men der skal være hjælp til dem, der er syge eller har det svært, så ingen står helt uden penge."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        18
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      17,
+      18
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

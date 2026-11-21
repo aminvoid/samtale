@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-nov-b",
+  "termId": "2016-nov",
+  "letter": "B",
+  "themeId": "boern",
+  "title": {
+    "da": "Børneopdragelse",
+    "fa": "تربیت کودک"
+  },
+  "situations": [
+    {
+      "id": "2016-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "børn hjælper med husarbejde fra tidlig alder",
+        "fa": "کمک بچه‌ها در کارهای خانه از سنین پایین"
+      },
+      "intro": {
+        "id": "2016-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser et barn, der hjælper med husarbejdet."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-b.sitA.q1",
+        "text": {
+          "da": "Mange forældre opdrager deres børn til at hjælpe til med husarbejdet fra en tidlig alder, selvom husarbejdet så ofte tager længere tid, end det ville gøre uden børnenes hjælp. Hvorfor tror du, det er sådan?",
+          "fa": "بسیاری از والدین بچه‌ها را از کوچکی به کمک در کارهای خانه عادت می‌دهند، با اینکه کار بیشتر طول می‌کشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-b.sitA.q1.kw1",
+            "emoji": "🧹",
+            "text": {
+              "da": "tage ansvar",
+              "fa": "مسئولیت‌پذیری"
+            }
+          },
+          {
+            "id": "2016-nov-b.sitA.q1.kw2",
+            "emoji": "🍳",
+            "text": {
+              "da": "praktiske ting",
+              "fa": "مهارت‌های عملی"
+            }
+          },
+          {
+            "id": "2016-nov-b.sitA.q1.kw3",
+            "emoji": "👨‍👩‍👧",
+            "text": {
+              "da": "en del af familien",
+              "fa": "بخشی از خانواده"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første lærer børnene at tage ansvar. For det andet lærer de praktiske ting, som de får brug for, når de flytter hjemmefra. Desuden føler de sig som en vigtig del af familien. Så alt i alt handler det om ansvar, selvstændighed og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 80,
+              "end": 93
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 218,
+              "end": 230
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for børn at have pligter derhjemme?",
+            "fa": "به نظرت داشتن وظیفه در خانه چه تأثیری بر بچه‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2016-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget. Børnene bliver mere selvstændige og får bedre selvtillid, fordi de kan noget. De lærer også, at alle i en familie skal hjælpe hinanden."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          73
+        ]
+      }
+    },
+    {
+      "id": "2016-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "forældre sætter grænser for skærmtid",
+        "fa": "والدین برای زمان صفحه‌نمایش محدودیت می‌گذارند"
+      },
+      "intro": {
+        "id": "2016-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle forældre, der sætter grænser for deres børns skærmtid."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-b.sitB.q1",
+        "text": {
+          "da": "Nogle forældre sætter grænser for, hvor mange timer deres børn må bruge på smartphones, computer eller TV, også selvom børnene har lavet deres skolearbejde og klaret andre pligter derhjemme. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی والدین برای ساعت استفاده‌ی بچه از گوشی، کامپیوتر یا تلویزیون محدودیت می‌گذارند، حتی وقتی تکالیفش را انجام داده. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-b.sitB.q1.kw1",
+            "emoji": "😴",
+            "text": {
+              "da": "søvn og koncentration",
+              "fa": "خواب و تمرکز"
+            }
+          },
+          {
+            "id": "2016-nov-b.sitB.q1.kw2",
+            "emoji": "🤸",
+            "text": {
+              "da": "bevægelse og leg",
+              "fa": "تحرک و بازی"
+            }
+          },
+          {
+            "id": "2016-nov-b.sitB.q1.kw3",
+            "emoji": "⚖️",
+            "text": {
+              "da": "balance",
+              "fa": "تعادل"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er for meget skærmtid usundt for søvnen og koncentrationen. For det andet vil forældrene have, at børnene bevæger sig og leger med andre. Desuden er det vigtigt at lære børn at have en balance. Så alt i alt handler det om sundhed og balance."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 110,
+              "end": 123
+            },
+            {
+              "start": 188,
+              "end": 195
+            },
+            {
+              "start": 244,
+              "end": 256
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-b.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at forældre bestemmer meget over, hvad deres børn skal lave i deres fritid? Fx hvis de bestemmer, at deres børn skal dyrke sport eller spille klaver? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است مشکل باشد که والدین زیاد درباره‌ی وقت آزاد بچه تصمیم بگیرند (مثلاً ورزش یا پیانو)؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved, at forældre bestemmer meget over, hvad deres børn skal lave i deres fritid? Fx hvis de bestemmer, at deres børn skal dyrke sport eller spille klaver?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Hvis forældrene bestemmer alt, mister børnene lysten, og de lærer ikke at træffe deres egne valg. Det er bedre, at børnene er med til at vælge."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          73,
+          74
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-nov-b.general",
+    "question": {
+      "id": "2016-nov-b.general.q2",
+      "text": {
+        "da": "Nogle forældre vælger at opdrage deres børn uden at skælde ud eller straffe, men ved i stedet at tale med dem som næsten ligeværdige parter – fx hvis de ikke har lavet deres lektier eller kommer senere hjem, end man har aftalt. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی والدین بدون دعوا و تنبیه بچه‌ها را تربیت می‌کنند و با آن‌ها تقریباً مثل طرف برابر حرف می‌زنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-nov-b.general.q2.kw1",
+          "emoji": "🗣️",
+          "text": {
+            "da": "forstå hvorfor",
+            "fa": "فهمیدن دلیل"
+          }
+        },
+        {
+          "id": "2016-nov-b.general.q2.kw2",
+          "emoji": "🤝",
+          "text": {
+            "da": "tillid",
+            "fa": "اعتماد"
+          }
+        },
+        {
+          "id": "2016-nov-b.general.q2.kw3",
+          "emoji": "🚧",
+          "text": {
+            "da": "ingen grænser",
+            "fa": "نبود مرز"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at børnene lærer at forstå, hvorfor noget er forkert. En anden fordel er, at der bliver et godt og tillidsfuldt forhold mellem børn og forældre. På den anden side er en ulempe, at børnene måske ikke lærer, at der er konsekvenser og grænser. De kan få svært ved at acceptere regler i skolen. Alt i alt mener jeg, at man skal tale med børnene, men også sætte klare grænser."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 108,
+            "end": 130
+          },
+          {
+            "start": 199,
+            "end": 233
+          },
+          {
+            "start": 345,
+            "end": 368
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-nov-b.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for børns respekt for autoriteter som fx skolelærere, arbejdsgivere eller politiet, hvis deres forældre altid taler med dem som næsten ligeværdige parter, også selvom de har gjort noget forkert?",
+          "fa": "به نظرت این روش تربیتی چه تأثیری بر احترام بچه‌ها به مراجع قدرت (معلم، کارفرما، پلیس) دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan gøre det sværere for nogle børn at respektere autoriteter, fordi de er vant til at diskutere alt. Men det kan også gøre dem selvstændige og kritiske, og det er godt i et demokrati."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        74
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      73,
+      74
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

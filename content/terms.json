@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 0,
+  "formatEras": [
+    {
+      "id": "pre-2023",
+      "toTermId": "2022-nov",
+      "basis": "ABOUT_PD3_MUNDTLIG.md §6: candidates described the pictures before the interview until BEK 347/2023 (from May–June 2023)."
+    },
+    {
+      "id": "from-2023",
+      "fromTermId": "2023-maj",
+      "basis": "ABOUT_PD3_MUNDTLIG.md §6: BEK 347/2023, interview only, two required questions."
+    }
+  ],
+  "terms": [
+    {
+      "id": "2016-maj",
+      "year": 2016,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2016-maj-a",
+        "2016-maj-b",
+        "2016-maj-c"
+      ]
+    },
+    {
+      "id": "2016-nov",
+      "year": 2016,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2016-nov-a",
+        "2016-nov-b",
+        "2016-nov-c"
+      ]
+    },
+    {
+      "id": "2017-maj",
+      "year": 2017,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2017-maj-a",
+        "2017-maj-b",
+        "2017-maj-c"
+      ]
+    },
+    {
+      "id": "2017-nov",
+      "year": 2017,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2017-nov-a",
+        "2017-nov-b",
+        "2017-nov-c"
+      ]
+    },
+    {
+      "id": "2018-maj",
+      "year": 2018,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2018-maj-a",
+        "2018-maj-b",
+        "2018-maj-c"
+      ]
+    },
+    {
+      "id": "2018-nov",
+      "year": 2018,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2018-nov-a",
+        "2018-nov-b",
+        "2018-nov-c"
+      ]
+    },
+    {
+      "id": "2019-maj",
+      "year": 2019,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2019-maj-a",
+        "2019-maj-b",
+        "2019-maj-c"
+      ]
+    },
+    {
+      "id": "2019-nov",
+      "year": 2019,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2019-nov-a",
+        "2019-nov-b",
+        "2019-nov-c"
+      ]
+    },
+    {
+      "id": "2020-maj",
+      "year": 2020,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2020-maj-a",
+        "2020-maj-b",
+        "2020-maj-c"
+      ]
+    },
+    {
+      "id": "2020-nov",
+      "year": 2020,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2020-nov-a",
+        "2020-nov-b",
+        "2020-nov-c"
+      ]
+    },
+    {
+      "id": "2021-maj",
+      "year": 2021,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2021-maj-a",
+        "2021-maj-b",
+        "2021-maj-c"
+      ]
+    },
+    {
+      "id": "2021-nov",
+      "year": 2021,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2021-nov-a",
+        "2021-nov-b",
+        "2021-nov-c"
+      ]
+    },
+    {
+      "id": "2022-maj",
+      "year": 2022,
+      "session": "maj",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2022-maj-a",
+        "2022-maj-b",
+        "2022-maj-c"
+      ]
+    },
+    {
+      "id": "2022-nov",
+      "year": 2022,
+      "session": "nov",
+      "formatEraId": "pre-2023",
+      "topicIds": [
+        "2022-nov-a",
+        "2022-nov-b",
+        "2022-nov-c"
+      ]
+    },
+    {
+      "id": "2023-maj",
+      "year": 2023,
+      "session": "maj",
+      "formatEraId": "from-2023",
+      "topicIds": [
+        "2023-maj-a",
+        "2023-maj-b",
+        "2023-maj-c"
+      ]
+    },
+    {
+      "id": "2023-nov",
+      "year": 2023,
+      "session": "nov",
+      "formatEraId": "from-2023",
+      "topicIds": [
+        "2023-nov-a",
+        "2023-nov-b",
+        "2023-nov-c"
+      ]
+    },
+    {
+      "id": "2024-maj",
+      "year": 2024,
+      "session": "maj",
+      "formatEraId": "from-2023",
+      "topicIds": [
+        "2024-maj-a",
+        "2024-maj-b",
+        "2024-maj-c"
+      ]
+    }
+  ]
+}

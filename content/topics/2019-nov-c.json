@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-nov-c",
+  "termId": "2019-nov",
+  "letter": "C",
+  "themeId": "bolig",
+  "title": {
+    "da": "Studieboliger",
+    "fa": "خوابگاه و مسکن دانشجویی"
+  },
+  "situations": [
+    {
+      "id": "2019-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "mangel på studieboliger i Aarhus og København",
+        "fa": "کمبود مسکن دانشجویی در آرهوس و کپنهاگ"
+      },
+      "intro": {
+        "id": "2019-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle studerende, der leder efter en studiebolig i København."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-c.sitA.q1",
+        "text": {
+          "da": "Mange studerende vil gerne studere i Aarhus eller København, selvom der er lange ventelister til studieboliger i de to byer. Hvorfor tror du alligevel, de gerne vil det?",
+          "fa": "خیلی از دانشجوها می‌خواهند در آرهوس یا کپنهاگ درس بخوانند، با اینکه صف انتظار مسکن دانشجویی آنجا طولانی است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              10
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Mange studerende vil gerne studere i Aarhus eller København, selvom der er lange ventelister til studieboliger i de to byer. Hvorfor tror du alligevel, de gerne vil det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-c.sitA.q1.kw1",
+            "emoji": "🎓",
+            "text": {
+              "da": "spændende uddannelser",
+              "fa": "رشته‌های جذاب"
+            }
+          },
+          {
+            "id": "2019-nov-c.sitA.q1.kw2",
+            "emoji": "🎉",
+            "text": {
+              "da": "godt studieliv",
+              "fa": "زندگی دانشجویی خوب"
+            }
+          },
+          {
+            "id": "2019-nov-c.sitA.q1.kw3",
+            "emoji": "💼",
+            "text": {
+              "da": "flere job",
+              "fa": "کار بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der mange spændende uddannelser i de store byer. For det andet er der et godt studieliv med mange unge og mange kulturtilbud. Desuden er der flere job, både studiejob og job efter uddannelsen. Så alt i alt handler det om uddannelse, studieliv og jobmuligheder."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 102,
+              "end": 115
+            },
+            {
+              "start": 179,
+              "end": 186
+            },
+            {
+              "start": 246,
+              "end": 258
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for, hvor og hvordan de unge bor, at der er lange ventelister til studieboliger?",
+            "fa": "به نظرت صف انتظار طولانی برای مسکن دانشجویی چه تأثیری بر اینکه جوان‌ها کجا و چطور زندگی می‌کنند دارد؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                10
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Hvad tror du, det betyder for, hvor og hvordan de unge bor, at der er lange ventelister til studieboliger?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "answer": {
+            "id": "2019-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, mange unge må bo dyrt eller dårligt, for eksempel på en sofa hos venner eller langt fra byen. Det kan give stress og gøre det sværere at studere."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          87
+        ]
+      }
+    },
+    {
+      "id": "2019-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "forældre køber lejlighed til deres børn",
+        "fa": "والدین برای بچه‌ها آپارتمان می‌خرند"
+      },
+      "intro": {
+        "id": "2019-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle forældre, der køber en lejlighed til deres barn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-nov-c.sitB.q1",
+        "text": {
+          "da": "Mange forældre køber en lejlighed til deres børn, når børnene starter på en uddannelse. Hvorfor tror du, de gør det?",
+          "fa": "خیلی از والدین وقتی بچه‌ها تحصیل را شروع می‌کنند برایشان آپارتمان می‌خرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              10
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Mange forældre køber en lejlighed til deres børn, når børnene starter på en uddannelse. Hvorfor tror du, de gør det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2019-nov-c.sitB.q1.kw1",
+            "emoji": "🏚️",
+            "text": {
+              "da": "svært at finde bolig",
+              "fa": "پیدا کردن خانه سخت است"
+            }
+          },
+          {
+            "id": "2019-nov-c.sitB.q1.kw2",
+            "emoji": "📈",
+            "text": {
+              "da": "god investering",
+              "fa": "سرمایه‌گذاری خوب"
+            }
+          },
+          {
+            "id": "2019-nov-c.sitB.q1.kw3",
+            "emoji": "🛡️",
+            "text": {
+              "da": "tryg start",
+              "fa": "شروع امن"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det svært at finde en studiebolig. For det andet kan det være en god investering, fordi boligpriserne stiger. Desuden vil forældrene gerne give deres børn en tryg start. Så alt i alt handler det om mangel på boliger, investering og tryghed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 88,
+              "end": 101
+            },
+            {
+              "start": 163,
+              "end": 170
+            },
+            {
+              "start": 223,
+              "end": 235
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-nov-c.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de unges studieliv, at de kan bo i egen lejlighed?",
+            "fa": "به نظرت زندگی در آپارتمان شخصی چه تأثیری بر زندگی دانشجویی جوانان دارد؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2019-nov",
+              "pages": [
+                10
+              ]
+            },
+            "checkedOn": "2026-11-21",
+            "siriParts": [
+              "Hvad tror du, det betyder for de unges studieliv, at de kan bo i egen lejlighed?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "third-party-copy",
+              "note": "Copy from a teacher's website; not available from SIRI."
+            }
+          },
+          "answer": {
+            "id": "2019-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det giver ro og gode forhold til at studere. Men de kan også blive mere ensomme end på et kollegium, hvor der er mange andre studerende."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          87,
+          88
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-nov-c.general",
+    "question": {
+      "id": "2019-nov-c.general.q2",
+      "text": {
+        "da": "I de store universitetsbyer kan man vælge at bygge flere studieboliger til studerende i stedet for fx boliger til ældre. Hvilke fordele og ulemper mener du, der kan være ved det for de store universitetsbyer?",
+        "fa": "در شهرهای بزرگ دانشگاهی می‌شود به جای مثلاً مسکن سالمندان، مسکن دانشجویی بیشتری ساخت. مزایا و معایبش برای این شهرها؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2019-nov",
+          "pages": [
+            11
+          ]
+        },
+        "checkedOn": "2026-11-21",
+        "siriParts": [
+          "I de store universitetsbyer kan man vælge at bygge flere studieboliger til studerende i stedet for fx boliger til ældre. Hvilke fordele og ulemper mener du, der kan være ved det for de store universitetsbyer?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "third-party-copy",
+          "note": "Copy from a teacher's website; not available from SIRI."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2019-nov-c.general.q2.kw1",
+          "emoji": "👨‍🎓",
+          "text": {
+            "da": "tiltrække unge",
+            "fa": "جذب جوانان"
+          }
+        },
+        {
+          "id": "2019-nov-c.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "lavere husleje",
+            "fa": "اجاره‌ی کمتر"
+          }
+        },
+        {
+          "id": "2019-nov-c.general.q2.kw3",
+          "emoji": "👵",
+          "text": {
+            "da": "ældre har også brug",
+            "fa": "سالمندان هم نیاز دارند"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for byerne. En fordel er, at byerne kan tiltrække flere unge, og det giver liv og dygtig arbejdskraft. En anden fordel er, at de studerende ikke skal bruge så mange penge på husleje. På den anden side er en ulempe, at der også bliver flere ældre, som har brug for gode boliger. Alt i alt mener jeg, at byerne skal bygge til begge grupper."
+        },
+        "emphasis": [
+          {
+            "start": 51,
+            "end": 67
+          },
+          {
+            "start": 142,
+            "end": 164
+          },
+          {
+            "start": 222,
+            "end": 256
+          },
+          {
+            "start": 317,
+            "end": 340
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-nov-c.general.followup1",
+        "text": {
+          "da": "Synes du, at det er studiebyernes ansvar at sørge for, at der er billige studieboliger og kollegier til alle studerende? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت مسئولیت شهرهای دانشگاهی است که برای همه‌ی دانشجوها مسکن و خوابگاه ارزان فراهم کنند؟"
+        },
+        "siriCheck": {
+          "status": "differs",
+          "sourceRef": {
+            "document": "siri-2019-nov",
+            "pages": [
+              11
+            ]
+          },
+          "checkedOn": "2026-11-21",
+          "siriParts": [
+            "Synes du, at det er studiebyernes ansvar at sørge for, at der er billige studieboliger og kollegier til alle studerende? Hvorfor?/Hvorfor ikke?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, November-december 2019, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "third-party-copy",
+            "note": "Copy from a teacher's website; not available from SIRI."
+          }
+        },
+        "spoken": {
+          "parts": [
+            "Synes du, at det er studiebyernes ansvar at sørge for, at der er billige studieboliger og kollegier til alle studerende?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2019-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Delvis. Byerne har gavn af de studerende, så de har et ansvar. Men staten og universiteterne bør også hjælpe, fordi det er en national opgave at uddanne unge."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        88
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      87,
+      88
+    ]
+  },
+  "review": {
+    "status": "needs-review",
+    "notes": [
+      {
+        "path": "general.followups[0].text.da",
+        "pages": [
+          88
+        ],
+        "text": "Booklet wording differs from SIRI (siri-2019-nov (authenticity unconfirmed) p. 11). SIRI: \"Synes du, at det er studiebyernes ansvar at sørge for, at der er billige studieboliger og kollegier til alle studerende? Hvorfor?/Hvorfor ikke?\""
+      },
+      {
+        "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+      },
+      {
+        "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+      },
+      {
+        "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+      }
+    ]
+  }
+}

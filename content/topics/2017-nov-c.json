@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-nov-c",
+  "termId": "2017-nov",
+  "letter": "C",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdsmiljoe-trivsel-og-stress",
+  "title": {
+    "da": "Arbejde og stress",
+    "fa": "کار و استرس"
+  },
+  "situations": [
+    {
+      "id": "2017-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "spændende job, men man går ned med stress",
+        "fa": "شغل رؤیایی، ولی ناگهان استرس شدید"
+      },
+      "intro": {
+        "id": "2017-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der har et spændende job, men som er gået ned med stress."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-c.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker har et spændende job, som de godt kan lide. Alligevel kan de pludselig gå ned med stress. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها شغل جالبی دارند که دوستش دارند، ولی ناگهان دچار استرس شدید می‌شوند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-c.sitA.q1.kw1",
+            "emoji": "🔥",
+            "text": {
+              "da": "giver for meget",
+              "fa": "بیش از حد مایه گذاشتن"
+            }
+          },
+          {
+            "id": "2017-nov-c.sitA.q1.kw2",
+            "emoji": "📋",
+            "text": {
+              "da": "for mange opgaver",
+              "fa": "کار زیاد"
+            }
+          },
+          {
+            "id": "2017-nov-c.sitA.q1.kw3",
+            "emoji": "🙅",
+            "text": {
+              "da": "svært at sige nej",
+              "fa": "سخت نه گفتن"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første giver man måske for meget af sig selv, fordi man elsker sit arbejde. For det andet kan der være for mange opgaver og for lidt tid. Desuden er det svært at sige nej, når arbejdet er spændende. Så alt i alt kan det blive for meget af det gode."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 119,
+              "end": 132
+            },
+            {
+              "start": 181,
+              "end": 188
+            },
+            {
+              "start": 242,
+              "end": 254
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det kan betyde for folks arbejdsliv, hvis de i en periode har været alvorligt syge med stress?",
+            "fa": "به نظرت اگر کسی مدتی به‌خاطر استرس به‌شدت بیمار بوده، چه تأثیری بر زندگی کاری‌اش دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget. Mange har brug for lang tid til at blive raske, og nogle kan ikke klare det samme som før. De skal måske gå ned i tid. Men de kan også lære at passe bedre på sig selv."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          20
+        ]
+      }
+    },
+    {
+      "id": "2017-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "drømmer om mindre stressende job, men skifter ikke",
+        "fa": "آرزوی کار کم‌استرس‌تر، ولی شغل را عوض نمی‌کنند"
+      },
+      "intro": {
+        "id": "2017-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der drømmer om et mindre stressende job, men som ikke skifter job."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-c.sitB.q1",
+        "text": {
+          "da": "Nogle mennesker drømmer om et mindre stressende arbejdsliv. Alligevel skifter de ikke job. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها آرزوی زندگی کاری کم‌استرس‌تر را دارند، ولی شغلشان را عوض نمی‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-c.sitB.q1.kw1",
+            "emoji": "💰",
+            "text": {
+              "da": "bange for at miste løn",
+              "fa": "ترس از دست دادن حقوق"
+            }
+          },
+          {
+            "id": "2017-nov-c.sitB.q1.kw2",
+            "emoji": "🔍",
+            "text": {
+              "da": "svært at finde nyt job",
+              "fa": "سخت پیدا کردن کار جدید"
+            }
+          },
+          {
+            "id": "2017-nov-c.sitB.q1.kw3",
+            "emoji": "👥",
+            "text": {
+              "da": "gode kolleger",
+              "fa": "همکاران خوب"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er de bange for at miste deres løn og tryghed. For det andet er det svært at finde et nyt job, især hvis man er lidt ældre. Desuden kan de godt lide deres kolleger. Så alt i alt handler det om økonomi og tryghed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 97,
+              "end": 110
+            },
+            {
+              "start": 174,
+              "end": 181
+            },
+            {
+              "start": 215,
+              "end": 227
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-c.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at man drømmer om et mindre stressende arbejdsliv uden at skifte job?",
+            "fa": "آیا ممکن است مشکلی باشد که آدم آرزوی کار کم‌استرس داشته باشد ولی شغلش را عوض نکند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2017-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg. Hvis man bliver i et stressende job, kan man blive syg, og det går ud over familien. Derfor er det vigtigt at tale med sin leder om at ændre opgaverne."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          20,
+          21
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-nov-c.general",
+    "question": {
+      "id": "2017-nov-c.general.q2",
+      "text": {
+        "da": "Mange mennesker har gennem internettet konstant adgang til deres arbejde. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "خیلی‌ها از طریق اینترنت همیشه به کارشان دسترسی دارند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-nov-c.general.q2.kw1",
+          "emoji": "🏡",
+          "text": {
+            "da": "fleksibelt",
+            "fa": "انعطاف"
+          }
+        },
+        {
+          "id": "2017-nov-c.general.q2.kw2",
+          "emoji": "⚡",
+          "text": {
+            "da": "løse problemer hurtigt",
+            "fa": "حل سریع مشکل"
+          }
+        },
+        {
+          "id": "2017-nov-c.general.q2.kw3",
+          "emoji": "📵",
+          "text": {
+            "da": "aldrig fri",
+            "fa": "هیچ‌وقت تعطیل نیستی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at man kan arbejde fleksibelt, for eksempel hjemmefra. En anden fordel er, at man hurtigt kan løse et problem, hvis det haster. På den anden side er en ulempe, at man aldrig rigtig har fri. Man tjekker mails om aftenen og i ferien, og det kan give stress. Alt i alt mener jeg, at det er praktisk, men der skal være klare regler for, hvornår man har fri."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 109,
+            "end": 131
+          },
+          {
+            "start": 182,
+            "end": 216
+          },
+          {
+            "start": 310,
+            "end": 333
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-nov-c.general.followup1",
+        "text": {
+          "da": "Tror du, internettet kan være skyld i, at flere i dag bliver sygemeldt med stress end tidligere? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت اینترنت مقصر این است که امروزه آدم‌های بیشتری به‌خاطر استرس مرخصی استعلاجی می‌گیرند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Tror du, internettet kan være skyld i, at flere i dag bliver sygemeldt med stress end tidligere?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2017-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Ja, delvis. Når man altid er online, får hjernen ikke ro. Men internettet er ikke den eneste grund. Mange har også for travlt og for høje krav på arbejdet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        21
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      20,
+      21
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

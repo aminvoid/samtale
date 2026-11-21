@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 0,
+  "id": "2022-nov-c",
+  "termId": "2022-nov",
+  "letter": "C",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.jobvalg-jobsoegning-og-jobskifte",
+  "title": {
+    "da": "At skifte job",
+    "fa": "تغییر شغل"
+  },
+  "situations": [
+    {
+      "id": "2022-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "nyuddannede skifter ofte job",
+        "fa": "تازه‌فارغ‌التحصیل‌ها بیشتر شغل عوض می‌کنند"
+      },
+      "intro": {
+        "id": "2022-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en nyuddannet, der ofte skifter job."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-nov-c.sitA.q1",
+        "text": {
+          "da": "Nyuddannede skifter oftere job end folk med mange års erfaring. Hvorfor tror du, det er sådan?",
+          "fa": "تازه‌فارغ‌التحصیل‌ها بیشتر از افراد باتجربه شغل عوض می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-nov-c.sitA.q1.kw1",
+            "emoji": "🔍",
+            "text": {
+              "da": "prøve forskellige ting",
+              "fa": "امتحان کردن چیزهای مختلف"
+            }
+          },
+          {
+            "id": "2022-nov-c.sitA.q1.kw2",
+            "emoji": "🕊️",
+            "text": {
+              "da": "frihed (ingen børn/hus)",
+              "fa": "آزادی (بچه و خانه ندارند)"
+            }
+          },
+          {
+            "id": "2022-nov-c.sitA.q1.kw3",
+            "emoji": "💰",
+            "text": {
+              "da": "højere løn",
+              "fa": "حقوق بالاتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de unge gerne prøve forskellige ting og finde ud af, hvad de kan lide. For det andet har de ofte ikke børn eller et hus, så de er mere frie. Desuden kan man få en højere løn ved at skifte job. Så alt i alt handler det om erfaring, frihed og løn."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 125,
+              "end": 138
+            },
+            {
+              "start": 195,
+              "end": 202
+            },
+            {
+              "start": 247,
+              "end": 259
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-nov-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de nyuddannedes arbejdsliv, at de oftere skifter job?",
+            "fa": "به نظرت تغییر شغل مکرر چه تأثیری بر زندگی کاری تازه‌فارغ‌التحصیل‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det giver dem meget erfaring og et stort netværk. Men hvis man skifter for tit, kan det se ustabilt ud i CV'et, og man når ikke at blive ekspert."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "2022-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "internt jobskifte på samme arbejdsplads",
+        "fa": "تغییر شغل داخل همان محل کار"
+      },
+      "intro": {
+        "id": "2022-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en medarbejder, der skifter til et nyt job på samme arbejdsplads."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-nov-c.sitB.q1",
+        "text": {
+          "da": "Der er nogen, der vælger at skifte til et nyt job på samme arbejdsplads. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی‌ها ترجیح می‌دهند به یک شغل جدید در همان محل کار بروند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-nov-c.sitB.q1.kw1",
+            "emoji": "🏠",
+            "text": {
+              "da": "kendt og trygt",
+              "fa": "آشنا و امن"
+            }
+          },
+          {
+            "id": "2022-nov-c.sitB.q1.kw2",
+            "emoji": "🧗",
+            "text": {
+              "da": "nye udfordringer",
+              "fa": "چالش‌های تازه"
+            }
+          },
+          {
+            "id": "2022-nov-c.sitB.q1.kw3",
+            "emoji": "📈",
+            "text": {
+              "da": "et skridt op",
+              "fa": "یک پله بالاتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første kender man allerede kollegerne og kulturen, så det er trygt. For det andet får man nye udfordringer uden at starte helt forfra. Desuden kan det være et skridt op i karrieren. Så alt i alt får man både udvikling og tryghed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 111,
+              "end": 124
+            },
+            {
+              "start": 178,
+              "end": 185
+            },
+            {
+              "start": 225,
+              "end": 237
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-nov-c.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at skifte til et nyt job på samme arbejdsplads?",
+            "fa": "آیا ممکن است رفتن به شغل جدید در همان محل کار مشکلی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, der kan godt være nogle problemer. Man kan for eksempel komme til at lede sine gamle kolleger, og det kan være svært. Man møder heller ikke nye måder at arbejde på. Men generelt tror jeg, det er en god idé."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          15,
+          16
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2022-nov-c.general",
+    "question": {
+      "id": "2022-nov-c.general.q2",
+      "text": {
+        "da": "I Danmark er der generelt flere, der skifter job i løbet af deres arbejdsliv end i mange andre lande. Hvilke fordele og ulemper mener du, der kan være ved det for de danske virksomheder?",
+        "fa": "در دانمارک آدم‌ها در طول زندگی کاری بیشتر از کشورهای دیگر شغل عوض می‌کنند. مزایا و معایبش برای شرکت‌های دانمارکی؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2022-nov-c.general.q2.kw1",
+          "emoji": "💡",
+          "text": {
+            "da": "nye ideer",
+            "fa": "ایده‌های تازه"
+          }
+        },
+        {
+          "id": "2022-nov-c.general.q2.kw2",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt at oplære nye",
+            "fa": "آموزش نیروی جدید گران است"
+          }
+        },
+        {
+          "id": "2022-nov-c.general.q2.kw3",
+          "emoji": "🧠",
+          "text": {
+            "da": "mister viden",
+            "fa": "از دست رفتن دانش"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2022-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for virksomhederne. En fordel er, at nye medarbejdere kommer med nye ideer og ny energi. En anden fordel er, at virksomhederne nemmere kan finde de rigtige folk. På den anden side er en ulempe, at det koster tid og penge at ansætte og oplære nye. Virksomheden mister også viden, når erfarne medarbejdere går. Alt i alt mener jeg, at lidt udskiftning er sundt, men virksomhederne skal også prøve at beholde de gode medarbejdere."
+        },
+        "emphasis": [
+          {
+            "start": 59,
+            "end": 75
+          },
+          {
+            "start": 128,
+            "end": 150
+          },
+          {
+            "start": 201,
+            "end": 235
+          },
+          {
+            "start": 348,
+            "end": 371
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2022-nov-c.general.followup1",
+        "text": {
+          "da": "Tror du, det er vigtigere for en virksomhed at få nye medarbejdere med nye ideer end at beholde erfarne medarbejdere?",
+          "fa": "به نظرت برای یک شرکت مهم‌تر است نیروی جدید با ایده‌های تازه بگیرد یا نیروهای باتجربه را نگه دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2022-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Begge dele er vigtige. Nye medarbejdere giver nye ideer, men de erfarne kender arbejdet og kunderne. Det bedste er en blanding, hvor de lærer af hinanden."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        16
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      15,
+      16
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

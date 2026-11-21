@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-maj-b",
+  "termId": "2018-maj",
+  "letter": "B",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdsmiljoe-trivsel-og-stress",
+  "title": {
+    "da": "Sygefravær på arbejdspladsen",
+    "fa": "غیبت به‌خاطر بیماری"
+  },
+  "situations": [
+    {
+      "id": "2018-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "gå på arbejde selvom man er forkølet",
+        "fa": "سر کار رفتن با سرماخوردگی"
+      },
+      "intro": {
+        "id": "2018-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en forkølet kvinde på sit arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-b.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker går sommetider på arbejde, selvom de er forkølede. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها گاهی با سرماخوردگی سر کار می‌روند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-b.sitA.q1.kw1",
+            "emoji": "🤝",
+            "text": {
+              "da": "ikke svigte kolleger",
+              "fa": "تنها نگذاشتن همکاران"
+            }
+          },
+          {
+            "id": "2018-maj-b.sitA.q1.kw2",
+            "emoji": "📅",
+            "text": {
+              "da": "vigtige opgaver",
+              "fa": "کارهای مهم"
+            }
+          },
+          {
+            "id": "2018-maj-b.sitA.q1.kw3",
+            "emoji": "🤧",
+            "text": {
+              "da": "ikke rigtig syg",
+              "fa": "واقعاً بیمار نیستند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de ikke lade deres kolleger i stikken, især hvis der er travlt. For det andet har de måske vigtige opgaver eller møder. Desuden føler de sig ikke rigtig syge. Så alt i alt handler det om pligt og ansvar."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 118,
+              "end": 131
+            },
+            {
+              "start": 174,
+              "end": 181
+            },
+            {
+              "start": 213,
+              "end": 225
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for ens forhold til kollegerne, at man nogle gange går på arbejde, selvom man er forkølet?",
+            "fa": "به نظرت سر کار رفتن با سرماخوردگی چه تأثیری بر رابطه با همکاران دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gå begge veje. Kollegerne kan sætte pris på, at man er der. Men de kan også blive irriterede, fordi de risikerer at blive smittet. Derfor er det bedre at blive hjemme."
+            }
+          }
+        }
+      ],
+      "personalExamples": [
+        {
+          "id": "2018-maj-b.sitA.example1",
+          "label": {
+            "fa": "به‌عنوان پرستار"
+          },
+          "text": {
+            "da": "På et hospital skal man blive hjemme for at beskytte patienterne."
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          21,
+          22
+        ]
+      }
+    },
+    {
+      "id": "2018-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "højere sygefravær blandt pædagoger og sygehjælpere",
+        "fa": "غیبت بیماری بیشتر میان مربیان مهد و کمک‌بهیارها"
+      },
+      "intro": {
+        "id": "2018-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en pædagog og en sygehjælper på arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-b.sitB.q1",
+        "text": {
+          "da": "Pædagoger og sygehjælpere har et højere sygefravær end ingeniører og konsulenter. Hvorfor tror du, det er sådan?",
+          "fa": "غیبت بیماری مربیان مهدکودک و کمک‌بهیارها بیشتر از مهندس‌ها و مشاورهاست. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-b.sitB.q1.kw1",
+            "emoji": "🏋️",
+            "text": {
+              "da": "fysisk hårdt",
+              "fa": "سخت از نظر جسمی"
+            }
+          },
+          {
+            "id": "2018-maj-b.sitB.q1.kw2",
+            "emoji": "🦠",
+            "text": {
+              "da": "smitte",
+              "fa": "سرایت بیماری"
+            }
+          },
+          {
+            "id": "2018-maj-b.sitB.q1.kw3",
+            "emoji": "😰",
+            "text": {
+              "da": "travlhed og stress",
+              "fa": "شلوغی و استرس"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er arbejdet fysisk hårdt, for eksempel med tunge løft. For det andet arbejder de tæt sammen med børn og patienter, så de bliver oftere smittet. Desuden er der ofte travlt, og det kan give stress. Så alt i alt handler det om et hårdt arbejdsmiljø."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 105,
+              "end": 118
+            },
+            {
+              "start": 194,
+              "end": 201
+            },
+            {
+              "start": 246,
+              "end": 258
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for ens forhold til kollegerne, at man har et højt sygefravær?",
+            "fa": "به نظرت غیبت بیماری زیاد چه تأثیری بر رابطه با همکاران دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan give problemer. Når én er syg, får de andre mere arbejde, og det kan skabe irritation. Derfor er det vigtigt at tale åbent om det og finde løsninger sammen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          21,
+          22
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-maj-b.general",
+    "question": {
+      "id": "2018-maj-b.general.q2",
+      "text": {
+        "da": "Nogle virksomheder gør meget for at reducere de ansattes sygefravær. De tilbyder fx gratis lægetjek og rådgivning om kost og motion. Hvilke fordele og ulemper mener du, der kan være ved, at de gør det?",
+        "fa": "بعضی شرکت‌ها برای کم کردن غیبت بیماری کارمندان، چکاپ رایگان و مشاوره‌ی تغذیه و ورزش می‌دهند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-maj-b.general.q2.kw1",
+          "emoji": "💪",
+          "text": {
+            "da": "sundere medarbejdere",
+            "fa": "کارمندان سالم‌تر"
+          }
+        },
+        {
+          "id": "2018-maj-b.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "sparer penge",
+            "fa": "صرفه‌جویی"
+          }
+        },
+        {
+          "id": "2018-maj-b.general.q2.kw3",
+          "emoji": "🚪",
+          "text": {
+            "da": "blander sig i privatliv",
+            "fa": "دخالت در زندگی خصوصی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at medarbejderne bliver sundere og gladere. Det betyder, at de er mindre syge, og at virksomheden sparer penge. En anden fordel er, at det viser, at virksomheden passer på sine medarbejdere. På den anden side er en ulempe, at nogle kan føle, at chefen blander sig i deres privatliv. Alt i alt mener jeg, at det er en god idé, så længe det er frivilligt."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 166,
+            "end": 188
+          },
+          {
+            "start": 245,
+            "end": 279
+          },
+          {
+            "start": 337,
+            "end": 360
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-maj-b.general.followup1",
+        "text": {
+          "da": "Synes du, at det er i orden, at en virksomhed blander sig i de ansattes livsstil, eller bør ens livsstil være en privat sag? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت درست است که شرکت در سبک زندگی کارمندان دخالت کند، یا سبک زندگی موضوعی خصوصی است؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Synes du, at det er i orden, at en virksomhed blander sig i de ansattes livsstil, eller bør ens livsstil være en privat sag?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2018-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg synes, det er i orden, hvis det er et tilbud og ikke et krav. Livsstil er en privat sag, men virksomheden må gerne hjælpe og motivere. Den skal bare ikke kontrollere sine medarbejdere."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        22
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      21,
+      22
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-nov-a",
+  "termId": "2021-nov",
+  "letter": "A",
+  "themeId": "klima",
+  "title": {
+    "da": "Klima og forbrug",
+    "fa": "اقلیم و مصرف"
+  },
+  "situations": [
+    {
+      "id": "2021-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "madspild — folk smider mad ud, der kan spises",
+        "fa": "دور ریختن غذا (هدررفت غذا)"
+      },
+      "intro": {
+        "id": "2021-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der smider mad ud, som stadig kan spises."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-a.sitA.q1",
+        "text": {
+          "da": "Der er mange, der smider mad ud, selvom det godt kan spises. Hvorfor tror du, de gør det?",
+          "fa": "خیلی‌ها غذایی را دور می‌ریزند که هنوز قابل خوردن است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-a.sitA.q1.kw1",
+            "emoji": "🛒",
+            "text": {
+              "da": "køber for meget",
+              "fa": "خرید زیادی"
+            }
+          },
+          {
+            "id": "2021-nov-a.sitA.q1.kw2",
+            "emoji": "🗓️",
+            "text": {
+              "da": "ingen planlægning",
+              "fa": "برنامه‌ریزی نکردن"
+            }
+          },
+          {
+            "id": "2021-nov-a.sitA.q1.kw3",
+            "emoji": "📅",
+            "text": {
+              "da": "datoen",
+              "fa": "تاریخ روی بسته"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første køber mange for meget mad, for eksempel på tilbud. For det andet planlægger de ikke deres måltider. Desuden smider nogle maden ud, når „bedst før“-datoen er overskredet, selvom den stadig kan spises. Så alt i alt handler det om dårlig planlægning og manglende viden."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 101,
+              "end": 114
+            },
+            {
+              "start": 150,
+              "end": 157
+            },
+            {
+              "start": 250,
+              "end": 262
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, man kan gøre for, at folk smider mindre mad ud?",
+            "fa": "به نظرت چه کار می‌شود کرد که آدم‌ها غذای کمتری دور بریزند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Man kan for eksempel lave en madplan og en indkøbsliste. Man kan også spise rester og bruge apps som Too Good To Go. Desuden kan man lære at lugte og smage på maden i stedet for kun at se på datoen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          68
+        ]
+      }
+    },
+    {
+      "id": "2021-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "køb af ny smartphone, selvom den gamle virker",
+        "fa": "خرید گوشی جدید با اینکه گوشی قدیمی کار می‌کند"
+      },
+      "intro": {
+        "id": "2021-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der køber en ny smartphone."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-a.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der køber en ny smartphone, selvom den gamle stadig virker. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها گوشی هوشمند جدید می‌خرند، با اینکه گوشی قدیمی‌شان هنوز کار می‌کند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-a.sitB.q1.kw1",
+            "emoji": "📷",
+            "text": {
+              "da": "nyeste teknologi",
+              "fa": "جدیدترین فناوری"
+            }
+          },
+          {
+            "id": "2021-nov-a.sitB.q1.kw2",
+            "emoji": "👑",
+            "text": {
+              "da": "statussymbol",
+              "fa": "نماد منزلت"
+            }
+          },
+          {
+            "id": "2021-nov-a.sitB.q1.kw3",
+            "emoji": "📢",
+            "text": {
+              "da": "reklame og tilbud",
+              "fa": "تبلیغ و تخفیف"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil mange gerne have den nyeste teknologi, for eksempel et bedre kamera. For det andet er det et statussymbol. Desuden er der meget reklame og mange gode tilbud. Så alt i alt handler det om teknologi, status og reklame."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 123,
+              "end": 136
+            },
+            {
+              "start": 161,
+              "end": 168
+            },
+            {
+              "start": 212,
+              "end": 224
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at man køber en ny smartphone, selvom den gamle stadig virker? Hvorfor / hvorfor ikke?",
+            "fa": "آیا خرید گوشی جدید وقتی گوشی قدیمی هنوز کار می‌کند مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at man køber en ny smartphone, selvom den gamle stadig virker?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2021-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det mener jeg. Produktionen af telefoner bruger mange råstoffer og meget energi, og det skader miljøet. Der bliver også meget elektronikaffald. Det er bedre at bruge telefonen længere eller købe en brugt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          68,
+          69
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-nov-a.general",
+    "question": {
+      "id": "2021-nov-a.general.q2",
+      "text": {
+        "da": "Nogle mener, der skal være højere afgifter på fx kød, flyrejser, elektronik og andre produkter, der er forbundet med et stort CO₂-udslip. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی‌ها معتقدند روی گوشت، سفر هوایی، لوازم الکترونیکی و محصولات دیگر با CO2 زیاد باید مالیات بیشتری باشد. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-nov-a.general.q2.kw1",
+          "emoji": "🌍",
+          "text": {
+            "da": "godt for klimaet",
+            "fa": "خوب برای اقلیم"
+          }
+        },
+        {
+          "id": "2021-nov-a.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "penge til grøn omstilling",
+            "fa": "پول برای گذار سبز"
+          }
+        },
+        {
+          "id": "2021-nov-a.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "rammer lavtlønnede",
+            "fa": "فشار به کم‌درآمدها"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at folk vil købe færre klimaskadelige produkter, og det er godt for klimaet. En anden fordel er, at staten får penge, som kan bruges på grøn omstilling. På den anden side er en ulempe, at det rammer folk med lav indkomst hårdest. Alt i alt mener jeg, at afgifter er en god idé, men lavtlønnede skal have hjælp."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 145,
+            "end": 167
+          },
+          {
+            "start": 221,
+            "end": 255
+          },
+          {
+            "start": 298,
+            "end": 321
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-nov-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, højere afgifter vil betyde for forbruget blandt højtlønnede og lavtlønnede?",
+          "fa": "به نظرت مالیات بیشتر چه تأثیری بر مصرف پردرآمدها و کم‌درآمدها دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, de højtlønnede vil fortsætte med at købe det samme, fordi de har råd. De lavtlønnede vil være nødt til at købe mindre. Derfor kan afgifterne øge uligheden."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        69
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      68,
+      69
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

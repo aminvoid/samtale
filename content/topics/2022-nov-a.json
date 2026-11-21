@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 0,
+  "id": "2022-nov-a",
+  "termId": "2022-nov",
+  "letter": "A",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "At gå i gymnasiet",
+    "fa": "دبیرستان رفتن (gymnasiet)"
+  },
+  "situations": [
+    {
+      "id": "2022-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "topkarakterer og pres",
+        "fa": "فقط با نمره‌های عالی از خودشان راضی‌اند"
+      },
+      "intro": {
+        "id": "2022-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en gymnasieelev, der gerne vil have topkarakterer i alle fag."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-nov-a.sitA.q1",
+        "text": {
+          "da": "Nogle gymnasieelever er kun tilfredse med sig selv, hvis de får topkarakterer i alle fag. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی دانش‌آموزان دبیرستان فقط وقتی از خودشان راضی‌اند که در همه‌ی درس‌ها بهترین نمره را بگیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-nov-a.sitA.q1.kw1",
+            "emoji": "🎓",
+            "text": {
+              "da": "høje adgangskrav",
+              "fa": "نمره‌ی بالا برای پذیرش"
+            }
+          },
+          {
+            "id": "2022-nov-a.sitA.q1.kw2",
+            "emoji": "📱",
+            "text": {
+              "da": "sammenligning",
+              "fa": "مقایسه با دیگران"
+            }
+          },
+          {
+            "id": "2022-nov-a.sitA.q1.kw3",
+            "emoji": "👩‍👩‍👧",
+            "text": {
+              "da": "forældrenes forventninger",
+              "fa": "انتظار والدین"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der et stort pres, fordi man skal have høje karakterer for at komme ind på mange uddannelser. For det andet sammenligner unge sig med hinanden, også på de sociale medier. Desuden har nogle forældre høje forventninger. Så alt i alt handler det om pres fra uddannelsessystemet, venner og familie."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 147,
+              "end": 160
+            },
+            {
+              "start": 224,
+              "end": 231
+            },
+            {
+              "start": 271,
+              "end": 283
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-nov-a.sitA.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at man kun er tilfreds med sig selv, hvis man får topkarakterer i alle fag?",
+            "fa": "آیا ممکن است مشکلی باشد که آدم فقط با نمره‌ی عالی در همه‌ی درس‌ها از خودش راضی باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg bestemt. Man kan blive stresset og ulykkelig, hvis man altid skal være perfekt. Man lærer heller ikke at fejle. Det er vigtigt at forstå, at man er god nok, selvom man ikke får 12."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          45
+        ]
+      }
+    },
+    {
+      "id": "2022-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "fritidsjob ved siden af gymnasiet",
+        "fa": "کار پاره‌وقت در کنار دبیرستان"
+      },
+      "intro": {
+        "id": "2022-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en gymnasieelev, der har et fritidsjob ved siden af skolen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2022-nov-a.sitB.q1",
+        "text": {
+          "da": "Nogle gymnasieelever vælger at have et fritidsjob, mens de går i gymnasiet. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی دانش‌آموزان دبیرستان در کنار درس کار پاره‌وقت دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2022-nov-a.sitB.q1.kw1",
+            "emoji": "💵",
+            "text": {
+              "da": "egne penge",
+              "fa": "پول خودشان"
+            }
+          },
+          {
+            "id": "2022-nov-a.sitB.q1.kw2",
+            "emoji": "👦",
+            "text": {
+              "da": "selvstændige",
+              "fa": "مستقل"
+            }
+          },
+          {
+            "id": "2022-nov-a.sitB.q1.kw3",
+            "emoji": "🧰",
+            "text": {
+              "da": "erfaring",
+              "fa": "تجربه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2022-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne tjene deres egne penge til tøj, telefon og fritid. For det andet bliver de mere selvstændige og ansvarlige. Desuden får de erfaring, som de kan bruge senere. Så alt i alt handler det om penge, selvstændighed og erfaring."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 114,
+              "end": 127
+            },
+            {
+              "start": 171,
+              "end": 178
+            },
+            {
+              "start": 221,
+              "end": 233
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2022-nov-a.sitB.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved at have et fritidsjob, mens man går i gymnasiet?",
+            "fa": "آیا کار پاره‌وقت در دوران دبیرستان مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2022-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være, hvis de arbejder for mange timer. Så har de mindre tid til lektier og søvn, og karaktererne kan blive dårligere. Men et par timer om ugen er sundt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          45
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2022-nov-a.general",
+    "question": {
+      "id": "2022-nov-a.general.q2",
+      "text": {
+        "da": "Der er flere unge, der tager en gymnasieuddannelse, end unge, der tager en erhvervsuddannelse. Hvilke fordele og ulemper mener du, der kan være ved det for det danske samfund?",
+        "fa": "جوانان بیشتری دبیرستان نظری (gymnasium) را انتخاب می‌کنند تا آموزش فنی‌وحرفه‌ای. مزایا و معایبش برای جامعه‌ی دانمارک؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2022-nov-a.general.q2.kw1",
+          "emoji": "📚",
+          "text": {
+            "da": "bred uddannelse",
+            "fa": "آموزش عمومی گسترده"
+          }
+        },
+        {
+          "id": "2022-nov-a.general.q2.kw2",
+          "emoji": "🎓",
+          "text": {
+            "da": "læse videre",
+            "fa": "ادامه‌ی تحصیل"
+          }
+        },
+        {
+          "id": "2022-nov-a.general.q2.kw3",
+          "emoji": "🔧",
+          "text": {
+            "da": "mangel på faglærte",
+            "fa": "کمبود نیروی ماهر فنی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2022-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at mange unge får en bred, almen uddannelse og kan læse videre. En anden fordel er, at vi får flere med en lang uddannelse. På den anden side er en ulempe, at der mangler faglærte, for eksempel tømrere, elektrikere og social- og sundhedsassistenter. Det går ud over byggeriet og ældreplejen. Alt i alt mener jeg, at vi skal gøre erhvervsuddannelserne mere attraktive."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 132,
+            "end": 154
+          },
+          {
+            "start": 192,
+            "end": 226
+          },
+          {
+            "start": 360,
+            "end": 383
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2022-nov-a.general.followup1",
+        "text": {
+          "da": "Hvorfor tror du, mange foretrækker en gymnasieuddannelse, selvom der mangler folk med en erhvervsuddannelse i Danmark?",
+          "fa": "به نظرت چرا خیلی‌ها دبیرستان نظری را ترجیح می‌دهند، با اینکه دانمارک به افراد با آموزش فنی نیاز دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2022-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. Gymnasiet har højere status, og mange forældre ønsker det for deres børn. Man udskyder også valget af job. Desuden vil mange være sammen med deres venner."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        46
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      45,
+      46
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-maj-c",
+  "termId": "2021-maj",
+  "letter": "C",
+  "themeId": "krim",
+  "title": {
+    "da": "Unge under 18 og kriminalitet",
+    "fa": "جوانان زیر ۱۸ سال و جرم"
+  },
+  "situations": [
+    {
+      "id": "2021-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "børn (10-14 år) og butikstyveri",
+        "fa": "بچه‌های ۱۰ تا ۱۴ ساله و دزدی از مغازه"
+      },
+      "intro": {
+        "id": "2021-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser et barn, der stjæler fra en butik."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-c.sitA.q1",
+        "text": {
+          "da": "10-14-årige børn begår flere butikstyverier end voksne. Hvorfor tror du, det er sådan?",
+          "fa": "بچه‌های ۱۰ تا ۱۴ ساله بیشتر از بزرگسالان از مغازه دزدی می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-c.sitA.q1.kw1",
+            "emoji": "🍬",
+            "text": {
+              "da": "vil have ting",
+              "fa": "چیزهایی می‌خواهند"
+            }
+          },
+          {
+            "id": "2021-maj-c.sitA.q1.kw2",
+            "emoji": "🎲",
+            "text": {
+              "da": "spænding og udfordring",
+              "fa": "هیجان و چالش دوستان"
+            }
+          },
+          {
+            "id": "2021-maj-c.sitA.q1.kw3",
+            "emoji": "❓",
+            "text": {
+              "da": "forstår ikke alvoren",
+              "fa": "جدی بودنش را نمی‌فهمند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil børn gerne have ting, som de ikke har råd til, for eksempel slik eller makeup. For det andet kan det være en spænding eller en udfordring fra vennerne. Desuden forstår de ikke helt, at det er alvorligt. Så alt i alt handler det om spænding, gruppepres og manglende forståelse."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 133,
+              "end": 146
+            },
+            {
+              "start": 206,
+              "end": 213
+            },
+            {
+              "start": 257,
+              "end": 269
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de 10-14åriges risiko for at blive kriminelle som voksne, at de begår butikstyverier som børn?",
+            "fa": "به نظرت دزدی از مغازه در کودکی چه تأثیری بر خطر مجرم شدن در بزرگسالی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan øge risikoen, hvis ingen reagerer. Så lærer de, at kriminalitet er nemt. Men de fleste stopper, når forældrene og skolen reagerer hurtigt og tydeligt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          82
+        ]
+      }
+    },
+    {
+      "id": "2021-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "køn og kriminalitet — unge mænd vs. unge kvinder",
+        "fa": "جنسیت و جرم: پسرها در برابر دخترها"
+      },
+      "intro": {
+        "id": "2021-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en gruppe unge, både drenge og piger."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-c.sitB.q1",
+        "text": {
+          "da": "Unge mænd under 18 år begår generelt mere kriminalitet end unge kvinder under 18 år. Hvorfor tror du, det er sådan?",
+          "fa": "پسرهای زیر ۱۸ سال به‌طور کلی بیشتر از دخترهای زیر ۱۸ سال جرم می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-c.sitB.q1.kw1",
+            "emoji": "🎲",
+            "text": {
+              "da": "tager flere chancer",
+              "fa": "ریسک‌پذیرتر"
+            }
+          },
+          {
+            "id": "2021-maj-c.sitB.q1.kw2",
+            "emoji": "👥",
+            "text": {
+              "da": "gruppepres",
+              "fa": "فشار گروه"
+            }
+          },
+          {
+            "id": "2021-maj-c.sitB.q1.kw3",
+            "emoji": "📚",
+            "text": {
+              "da": "problemer i skolen",
+              "fa": "مشکلات مدرسه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første tager unge mænd ofte flere chancer og vil vise, at de er seje. For det andet er der mere gruppepres blandt drenge. Desuden har drenge oftere problemer i skolen. Så alt i alt handler det om risikovillighed, gruppepres og skoleproblemer."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 113,
+              "end": 126
+            },
+            {
+              "start": 165,
+              "end": 172
+            },
+            {
+              "start": 211,
+              "end": 223
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-c.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, man kan gøre for at få færre unge mænd til at begå kriminalitet?",
+            "fa": "به نظرت چه کار می‌شود کرد که پسرهای جوان کمتری جرم کنند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Man kan for eksempel give dem gode fritidstilbud, som sport og ungdomsklubber. Man kan også hjælpe dem i skolen og give dem gode rollemodeller. Desuden er det vigtigt, at forældrene er involverede."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          82
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-maj-c.general",
+    "question": {
+      "id": "2021-maj-c.general.q2",
+      "text": {
+        "da": "Unge under 15 år kan ikke komme i fængsel, selvom de begår alvorlig kriminalitet som fx tyveri og vold. Hvilke fordele og ulemper mener du, der kan være ved det i forhold til kriminaliteten i samfundet?",
+        "fa": "جوانان زیر ۱۵ سال حتی اگر جرم جدی مثل دزدی و خشونت کنند به زندان نمی‌روند. مزایا و معایب از نظر جرم در جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-maj-c.general.q2.kw1",
+          "emoji": "🚫",
+          "text": {
+            "da": "ikke fængsel med voksne",
+            "fa": "نه زندان با بزرگسالان"
+          }
+        },
+        {
+          "id": "2021-maj-c.general.q2.kw2",
+          "emoji": "🙌",
+          "text": {
+            "da": "hjælp og støtte",
+            "fa": "کمک و حمایت"
+          }
+        },
+        {
+          "id": "2021-maj-c.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "konsekvenser og ofrene",
+            "fa": "پیامد و قربانیان"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at unge ikke kommer i fængsel sammen med voksne kriminelle, hvor de kan lære mere kriminalitet. En anden fordel er, at de i stedet kan få hjælp og støtte til at komme på rette vej. På den anden side er en ulempe, at nogle unge føler, at de kan gøre, hvad de vil. Ofrene kan også føle, at der ikke sker noget. Alt i alt mener jeg, at det er vigtigt med hjælp, men der skal også være klare konsekvenser."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 150,
+            "end": 172
+          },
+          {
+            "start": 235,
+            "end": 269
+          },
+          {
+            "start": 363,
+            "end": 386
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for kriminelle unges muligheder for at komme ud af kriminaliteten, at de ikke kommer i fængsel, hvor der også er voksne indsatte?",
+          "fa": "به نظرت نرفتن جوانان مجرم به زندانی که بزرگسالان هم در آن هستند، چه تأثیری بر فرصت بیرون آمدنشان از دنیای جرم دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det giver dem bedre muligheder. I fængslet kan de lære mere kriminalitet af de voksne. I stedet kan de få hjælp fra pædagoger og psykologer og fortsætte i skolen. Så er det lettere at starte et nyt liv."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        83
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      82,
+      83
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

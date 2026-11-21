@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2019-maj-c",
+  "termId": "2019-maj",
+  "letter": "C",
+  "themeId": "kultur",
+  "title": {
+    "da": "Kultur",
+    "fa": "فرهنگ"
+  },
+  "situations": [
+    {
+      "id": "2019-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "brugerbetaling vs. gratis adgang til museer",
+        "fa": "پولی بودن یا رایگان بودن موزه‌ها"
+      },
+      "intro": {
+        "id": "2019-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser et museum, hvor man skal betale for at komme ind."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-c.sitA.q1",
+        "text": {
+          "da": "Nogle danskere mener, at det skal være gratis at gå på museum. Hvorfor tror du, de mener det?",
+          "fa": "بعضی دانمارکی‌ها معتقدند رفتن به موزه باید رایگان باشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-c.sitA.q1.kw1",
+            "emoji": "⚖️",
+            "text": {
+              "da": "kultur for alle",
+              "fa": "فرهنگ برای همه"
+            }
+          },
+          {
+            "id": "2019-maj-c.sitA.q1.kw2",
+            "emoji": "👣",
+            "text": {
+              "da": "flere besøgende",
+              "fa": "بازدیدکننده‌ی بیشتر"
+            }
+          },
+          {
+            "id": "2019-maj-c.sitA.q1.kw3",
+            "emoji": "🏛️",
+            "text": {
+              "da": "historie og dannelse",
+              "fa": "تاریخ و فرهیختگی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første mener de, at kultur skal være for alle, også dem med lav indkomst. For det andet vil flere mennesker besøge museerne, hvis de er gratis. Desuden er museerne vigtige for vores historie og dannelse. Så alt i alt handler det om lighed og dannelse."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 117,
+              "end": 130
+            },
+            {
+              "start": 187,
+              "end": 194
+            },
+            {
+              "start": 247,
+              "end": 259
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for folks interesse for kunst og kultur, at det ikke er gratis at gå på museum?",
+            "fa": "به نظرت رایگان نبودن موزه چه تأثیری بر علاقه‌ی مردم به هنر و فرهنگ دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2019-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, færre mennesker går på museum, især familier med lav indkomst. Så bliver kultur mest for dem med mange penge. Men nogle museer har gratis dage, og det hjælper."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          95
+        ]
+      }
+    },
+    {
+      "id": "2019-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "gratis adgang til biblioteker",
+        "fa": "رایگان بودن کتابخانه‌ها"
+      },
+      "intro": {
+        "id": "2019-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser et bibliotek, hvor der er gratis adgang."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2019-maj-c.sitB.q1",
+        "text": {
+          "da": "I Danmark er det gratis at bruge bibliotekerne. Hvorfor tror du, det er det?",
+          "fa": "در دانمارک استفاده از کتابخانه‌ها رایگان است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2019-maj-c.sitB.q1.kw1",
+            "emoji": "📚",
+            "text": {
+              "da": "lige adgang til viden",
+              "fa": "دسترسی برابر به دانش"
+            }
+          },
+          {
+            "id": "2019-maj-c.sitB.q1.kw2",
+            "emoji": "👧",
+            "text": {
+              "da": "børns læsning",
+              "fa": "کتاب‌خوانی بچه‌ها"
+            }
+          },
+          {
+            "id": "2019-maj-c.sitB.q1.kw3",
+            "emoji": "🏛️",
+            "text": {
+              "da": "mødested",
+              "fa": "محل دیدار"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2019-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal alle have lige adgang til viden og information. For det andet er det vigtigt for børns læsning og uddannelse. Desuden er biblioteket et mødested for alle i lokalsamfundet. Så alt i alt handler det om lighed, læsning og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 103,
+              "end": 116
+            },
+            {
+              "start": 165,
+              "end": 172
+            },
+            {
+              "start": 227,
+              "end": 239
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2019-maj-c.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for folks interesse for at læse, at det er gratis at låne bøger på bibliotekerne?",
+            "fa": "به نظرت رایگان بودن امانت کتاب از کتابخانه چه تأثیری بر علاقه‌ی مردم به خواندن دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2019-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget. Når det er gratis, kan alle låne mange bøger, også børn fra familier med få penge. Det kan give mere lyst til at læse."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          95,
+          96
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2019-maj-c.general",
+    "question": {
+      "id": "2019-maj-c.general.q2",
+      "text": {
+        "da": "Flere kommuner bruger penge på dyre kulturhuse med kulturtilbud som fx teater, dans, musik og udstillinger. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "چند شهرداری برای خانه‌های فرهنگ گران با برنامه‌هایی مثل تئاتر، رقص، موسیقی و نمایشگاه پول خرج می‌کنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2019-maj-c.general.q2.kw1",
+          "emoji": "🎭",
+          "text": {
+            "da": "oplevelser og mødested",
+            "fa": "تجربه و محل دیدار"
+          }
+        },
+        {
+          "id": "2019-maj-c.general.q2.kw2",
+          "emoji": "🌃",
+          "text": {
+            "da": "attraktiv kommune",
+            "fa": "شهرداری جذاب"
+          }
+        },
+        {
+          "id": "2019-maj-c.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "penge til andre ting",
+            "fa": "پول برای چیزهای دیگر"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2019-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at borgerne får gode oplevelser og et sted at mødes. En anden fordel er, at kommunen bliver mere attraktiv at bo i. På den anden side er en ulempe, at det koster mange penge, som kunne bruges på andre ting. Måske bliver kulturhuset kun brugt af få mennesker. Alt i alt mener jeg, at det er en god idé, hvis mange forskellige borgere bruger det."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 107,
+            "end": 129
+          },
+          {
+            "start": 170,
+            "end": 204
+          },
+          {
+            "start": 313,
+            "end": 336
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2019-maj-c.general.followup1",
+        "text": {
+          "da": "Mener du, at en kommune skal bruge penge på kulturhuse, eller bør en kommune prioritere andre kulturtilbud eller andre områder som fx ældrepleje og uddannelse? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت شهرداری باید پول را خرج خانه‌ی فرهنگ کند یا اولویت را به برنامه‌های فرهنگی دیگر یا حوزه‌هایی مثل مراقبت از سالمندان و آموزش بدهد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, at en kommune skal bruge penge på kulturhuse, eller bør en kommune prioritere andre kulturtilbud eller andre områder som fx ældrepleje og uddannelse?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2019-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg synes, ældrepleje og uddannelse skal komme først, fordi det er basale behov. Men kultur er også vigtig for livskvaliteten og fællesskabet. Derfor skal kommunen finde en balance."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        96
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      95,
+      96
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

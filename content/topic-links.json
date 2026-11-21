@@ -1,0 +1,773 @@
+{
+  "schemaVersion": 0,
+  "similarGroups": [
+    {
+      "id": "similar.1",
+      "members": [
+        {
+          "topicId": "2019-maj-b",
+          "section": "general"
+        },
+        {
+          "topicId": "2022-maj-a",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.2",
+      "members": [
+        {
+          "topicId": "2017-maj-b",
+          "section": "general"
+        },
+        {
+          "topicId": "2023-nov-b",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.3",
+      "members": [
+        {
+          "topicId": "2017-maj-b",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2023-nov-b",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.4",
+      "members": [
+        {
+          "topicId": "2017-maj-b",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2018-maj-a",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2020-nov-b",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.5",
+      "members": [
+        {
+          "topicId": "2018-maj-a",
+          "section": "general"
+        },
+        {
+          "topicId": "2020-nov-b",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.6",
+      "members": [
+        {
+          "topicId": "2021-maj-a",
+          "section": "general"
+        },
+        {
+          "topicId": "2023-maj-c",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.7",
+      "members": [
+        {
+          "topicId": "2021-maj-a",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2023-maj-c",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.8",
+      "members": [
+        {
+          "topicId": "2021-maj-a",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2022-nov-c",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.9",
+      "members": [
+        {
+          "topicId": "2019-maj-b",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2022-maj-a",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.10",
+      "members": [
+        {
+          "topicId": "2016-maj-a",
+          "section": "general"
+        },
+        {
+          "topicId": "2021-maj-c",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.11",
+      "members": [
+        {
+          "topicId": "2018-nov-b",
+          "section": "general"
+        },
+        {
+          "topicId": "2023-maj-b",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.12",
+      "members": [
+        {
+          "topicId": "2016-nov-a",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2023-maj-b",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.13",
+      "members": [
+        {
+          "topicId": "2017-maj-a",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2023-maj-b",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2022-nov-a",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.14",
+      "members": [
+        {
+          "topicId": "2016-nov-a",
+          "section": "general"
+        },
+        {
+          "topicId": "2019-nov-c",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.15",
+      "members": [
+        {
+          "topicId": "2017-maj-a",
+          "section": "general"
+        },
+        {
+          "topicId": "2018-nov-b",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2021-nov-c",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.16",
+      "members": [
+        {
+          "topicId": "2020-maj-b",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2023-nov-a",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.17",
+      "members": [
+        {
+          "topicId": "2017-nov-b",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2023-maj-a",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.18",
+      "members": [
+        {
+          "topicId": "2018-maj-c",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2023-maj-a",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.19",
+      "members": [
+        {
+          "topicId": "2021-maj-b",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2023-nov-c",
+          "section": "sitB"
+        }
+      ]
+    },
+    {
+      "id": "similar.20",
+      "members": [
+        {
+          "topicId": "2019-nov-b",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2023-nov-c",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.21",
+      "members": [
+        {
+          "topicId": "2019-maj-c",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2024-maj-a",
+          "section": "sitA"
+        }
+      ]
+    },
+    {
+      "id": "similar.22",
+      "members": [
+        {
+          "topicId": "2019-maj-c",
+          "section": "general"
+        },
+        {
+          "topicId": "2024-maj-a",
+          "section": "general"
+        }
+      ]
+    },
+    {
+      "id": "similar.23",
+      "members": [
+        {
+          "topicId": "2017-maj-c",
+          "section": "sitA"
+        },
+        {
+          "topicId": "2020-maj-a",
+          "section": "sitB"
+        },
+        {
+          "topicId": "2016-nov-b",
+          "section": "sitB"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": {
+        "topicId": "2016-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2021-maj-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2016-nov-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2019-nov-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2016-nov-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2018-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2021-nov-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-maj-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2020-maj-a",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2017-nov-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2017-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2019-maj-b",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2018-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2017-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2018-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2020-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2018-maj-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2018-nov-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2018-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2022-nov-a",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2018-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2024-maj-c",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2019-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2021-nov-b",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2019-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2022-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2019-maj-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2024-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2019-nov-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-nov-c",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2019-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2016-nov-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2020-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2017-maj-c",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2020-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-nov-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2020-nov-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2018-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2021-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-maj-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2021-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2023-nov-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2021-maj-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2016-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2021-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2017-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2021-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2018-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2022-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2019-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2022-nov-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2024-maj-b",
+        "section": null
+      },
+      "kind": "related"
+    },
+    {
+      "from": {
+        "topicId": "2023-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2017-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2018-maj-c",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2016-nov-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-maj-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2018-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-maj-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2021-maj-a",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-nov-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2020-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-nov-b",
+        "section": null
+      },
+      "to": {
+        "topicId": "2017-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2019-nov-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2023-nov-c",
+        "section": null
+      },
+      "to": {
+        "topicId": "2021-maj-b",
+        "section": null
+      },
+      "kind": "similar"
+    },
+    {
+      "from": {
+        "topicId": "2024-maj-a",
+        "section": null
+      },
+      "to": {
+        "topicId": "2019-maj-c",
+        "section": null
+      },
+      "kind": "similar"
+    }
+  ]
+}

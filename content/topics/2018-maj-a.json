@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-maj-a",
+  "termId": "2018-maj",
+  "letter": "A",
+  "themeId": "frivillig",
+  "title": {
+    "da": "Frivilligt arbejde",
+    "fa": "کار داوطلبانه"
+  },
+  "situations": [
+    {
+      "id": "2018-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "studerende laver frivilligt ulønnet arbejde",
+        "fa": "دانشجوهایی که کار داوطلبانه‌ی بدون مزد می‌کنند"
+      },
+      "intro": {
+        "id": "2018-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en studerende, der laver frivilligt arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-a.sitA.q1",
+        "text": {
+          "da": "Nogle studerende bruger tid på at lave frivilligt ulønnet arbejde, selvom de også har travlt med deres studier. Hvorfor tror du, de gør det?",
+          "fa": "بعضی دانشجوها با اینکه سرشان با درس شلوغ است، کار داوطلبانه‌ی بدون مزد می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-a.sitA.q1.kw1",
+            "emoji": "❤️",
+            "text": {
+              "da": "hjælpe andre",
+              "fa": "کمک به دیگران"
+            }
+          },
+          {
+            "id": "2018-maj-a.sitA.q1.kw2",
+            "emoji": "📄",
+            "text": {
+              "da": "erfaring til CV",
+              "fa": "تجربه برای رزومه"
+            }
+          },
+          {
+            "id": "2018-maj-a.sitA.q1.kw3",
+            "emoji": "🕸️",
+            "text": {
+              "da": "nye mennesker og netværk",
+              "fa": "آدم‌های جدید و شبکه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne hjælpe andre og gøre en forskel. For det andet får de erfaring, som de kan skrive i deres CV. Desuden møder de nye mennesker og får et netværk. Så alt i alt handler det om at hjælpe, lære og møde andre."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 96,
+              "end": 109
+            },
+            {
+              "start": 157,
+              "end": 164
+            },
+            {
+              "start": 207,
+              "end": 219
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for studerendes fremtidige jobmuligheder, at de laver frivilligt arbejde?",
+            "fa": "به نظرت کار داوطلبانه چه تأثیری بر فرصت‌های شغلی آینده‌ی دانشجوها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det giver bedre jobmuligheder. Arbejdsgiverne kan se, at man er engageret og tager ansvar. Man lærer også at samarbejde og får kontakter."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          91
+        ]
+      }
+    },
+    {
+      "id": "2018-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "pensionister laver frivilligt arbejde",
+        "fa": "بازنشسته‌هایی که کار داوطلبانه می‌کنند"
+      },
+      "intro": {
+        "id": "2018-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en pensionist, der laver frivilligt arbejde."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-a.sitB.q1",
+        "text": {
+          "da": "Nogle danskere laver frivilligt ulønnet arbejde, når de er gået på pension. Hvorfor tror du, de gør det?",
+          "fa": "بعضی دانمارکی‌ها بعد از بازنشستگی کار داوطلبانه‌ی بدون مزد می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-a.sitB.q1.kw1",
+            "emoji": "🧭",
+            "text": {
+              "da": "noget meningsfuldt",
+              "fa": "کار معنادار"
+            }
+          },
+          {
+            "id": "2018-maj-a.sitB.q1.kw2",
+            "emoji": "👫",
+            "text": {
+              "da": "ikke ensomme",
+              "fa": "تنها نبودن"
+            }
+          },
+          {
+            "id": "2018-maj-a.sitB.q1.kw3",
+            "emoji": "🎁",
+            "text": {
+              "da": "give tilbage",
+              "fa": "پس دادن به جامعه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne bruge deres tid på noget meningsfuldt. For det andet møder de nye mennesker, så de ikke føler sig ensomme. Desuden vil de gerne give noget tilbage til samfundet. Så alt i alt handler det om mening og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 102,
+              "end": 115
+            },
+            {
+              "start": 170,
+              "end": 177
+            },
+            {
+              "start": 225,
+              "end": 237
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-a.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for pensionisters livskvalitet, at de laver frivilligt ulønnet arbejde?",
+            "fa": "به نظرت کار داوطلبانه‌ی بدون مزد چه تأثیری بر کیفیت زندگی بازنشسته‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder rigtig meget. De føler sig nyttige, og de holder sig aktive både fysisk og mentalt. Det kan give et længere og sundere liv."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          91,
+          92
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-maj-a.general",
+    "question": {
+      "id": "2018-maj-a.general.q2",
+      "text": {
+        "da": "På mange institutioner, fx plejehjem, skoler og museer, bruger man frivillige udover den professionelle arbejdskraft. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "در بسیاری از مؤسسه‌ها مثل خانه‌ی سالمندان، مدرسه و موزه، علاوه بر نیروی حرفه‌ای از داوطلب‌ها هم استفاده می‌کنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-maj-a.general.q2.kw1",
+          "emoji": "🤗",
+          "text": {
+            "da": "ekstra tid og omsorg",
+            "fa": "وقت و مراقبت اضافه"
+          }
+        },
+        {
+          "id": "2018-maj-a.general.q2.kw2",
+          "emoji": "🧭",
+          "text": {
+            "da": "mening for de frivillige",
+            "fa": "معنا برای داوطلب"
+          }
+        },
+        {
+          "id": "2018-maj-a.general.q2.kw3",
+          "emoji": "🎓",
+          "text": {
+            "da": "ingen uddannelse, spare penge",
+            "fa": "بدون تخصص، صرفه‌جویی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de frivillige giver ekstra tid og omsorg, for eksempel til de ældre på plejehjemmet. En anden fordel er, at de frivillige selv får et fællesskab og en mening. På den anden side er en ulempe, at de frivillige ikke har den samme uddannelse som de professionelle. Kommunen kan også bruge dem til at spare på personalet. Alt i alt mener jeg, at frivillige er et godt supplement, men ikke en erstatning."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 142,
+            "end": 164
+          },
+          {
+            "start": 216,
+            "end": 250
+          },
+          {
+            "start": 374,
+            "end": 397
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-maj-a.general.followup1",
+        "text": {
+          "da": "Hvilke typer af frivilligt arbejde mener du er mest nyttige for et velfærdssamfund som det danske? Hvorfor?",
+          "fa": "به نظرت کدام نوع کار داوطلبانه برای یک جامعه‌ی رفاه مثل دانمارک مفیدتر است؟ چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2018-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det er mest nyttigt, når de frivillige hjælper mennesker, der er ensomme eller udsatte, for eksempel ældre, hjemløse og børn, der har brug for lektiehjælp. Det skaber tryghed og fællesskab."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        92
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      91,
+      92
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

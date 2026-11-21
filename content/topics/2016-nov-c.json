@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-nov-c",
+  "termId": "2016-nov",
+  "letter": "C",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.jobvalg-jobsoegning-og-jobskifte",
+  "title": {
+    "da": "Jobvalg",
+    "fa": "انتخاب شغل"
+  },
+  "situations": [
+    {
+      "id": "2016-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "job med høj status og god løn",
+        "fa": "شغل با منزلت بالا و حقوق خوب"
+      },
+      "intro": {
+        "id": "2016-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der har et job med høj status og god løn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-c.sitA.q1",
+        "text": {
+          "da": "For nogle mennesker er det vigtigt at have et job med høj status og god løn, som fx et job som dommer, direktør eller læge, også selvom man i sådan et job typisk må arbejde mere end 37 timer om ugen. Hvorfor tror du, det er sådan?",
+          "fa": "برای بعضی‌ها شغلی با منزلت بالا و حقوق خوب (قاضی، مدیر، پزشک) مهم است، حتی اگر ساعت کاری‌اش زیاد باشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-c.sitA.q1.kw1",
+            "emoji": "💰",
+            "text": {
+              "da": "god løn",
+              "fa": "حقوق خوب"
+            }
+          },
+          {
+            "id": "2016-nov-c.sitA.q1.kw2",
+            "emoji": "🎖️",
+            "text": {
+              "da": "status og respekt",
+              "fa": "منزلت و احترام"
+            }
+          },
+          {
+            "id": "2016-nov-c.sitA.q1.kw3",
+            "emoji": "🧗",
+            "text": {
+              "da": "udfordringer",
+              "fa": "چالش و پیشرفت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første giver sådan et job en høj løn, så man kan få en god økonomi og et trygt liv. For det andet giver det status og respekt i samfundet. Desuden er arbejdet ofte spændende og udfordrende. Så alt i alt tror jeg, at det handler om penge, respekt og personlig udvikling."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 127,
+              "end": 140
+            },
+            {
+              "start": 182,
+              "end": 189
+            },
+            {
+              "start": 233,
+              "end": 245
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det kan betyde for ens privatliv, at man har et tidskrævende job med høj status og god løn?",
+            "fa": "به نظرت چنین شغل وقت‌گیری چه تأثیری روی زندگی شخصی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2016-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan betyde meget for privatlivet. Man har ofte lange arbejdsdage, så der er mindre tid til familie og venner. Det kan også give stress. Men til gengæld har man en god økonomi til ferier og oplevelser."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "2016-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "job hvor man arbejder med mennesker",
+        "fa": "شغلی که در آن با آدم‌ها کار می‌کنی"
+      },
+      "intro": {
+        "id": "2016-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der arbejder med mennesker i sit job."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-nov-c.sitB.q1",
+        "text": {
+          "da": "For nogle mennesker er det vigtigt at have et job, hvor de arbejder med mennesker, som fx et job som lærer, sygeplejerske eller fysioterapeut. Hvorfor tror du, det er sådan?",
+          "fa": "برای بعضی‌ها مهم است با آدم‌ها کار کنند (معلم، پرستار، فیزیوتراپ). به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-nov-c.sitB.q1.kw1",
+            "emoji": "❤️",
+            "text": {
+              "da": "meningsfuldt arbejde",
+              "fa": "کار معنادار"
+            }
+          },
+          {
+            "id": "2016-nov-c.sitB.q1.kw2",
+            "emoji": "🤝",
+            "text": {
+              "da": "hjælpe andre",
+              "fa": "کمک به دیگران"
+            }
+          },
+          {
+            "id": "2016-nov-c.sitB.q1.kw3",
+            "emoji": "😊",
+            "text": {
+              "da": "kontakt med mennesker",
+              "fa": "ارتباط با آدم‌ها"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første føler man, at arbejdet er meningsfuldt, fordi man hjælper andre. For det andet får man meget tilbage, for eksempel når en patient bliver rask. Desuden har man kontakt med mennesker hver dag, så man keder sig ikke. Så alt i alt tror jeg, det handler om mening og glæde ved at hjælpe."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 115,
+              "end": 128
+            },
+            {
+              "start": 193,
+              "end": 200
+            },
+            {
+              "start": 264,
+              "end": 276
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-nov-c.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det kan betyde for ens arbejdsglæde, at man har et job, hvor man arbejder med mennesker?",
+            "fa": "به نظرت کار کردن با آدم‌ها چه تأثیری روی رضایت شغلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2016-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget for arbejdsglæden. Når man kan se, at man gør en forskel, bliver man glad og motiveret. Men arbejdet kan også være hårdt, hvis man har for travlt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [
+        {
+          "id": "2016-nov-c.sitB.example1",
+          "label": {
+            "fa": "مثال شخصی خودت"
+          },
+          "text": {
+            "da": "Jeg er selv sygeplejerske, og jeg elsker at gøre en forskel for mine patienter."
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          12,
+          13
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-nov-c.general",
+    "question": {
+      "id": "2016-nov-c.general.q2",
+      "text": {
+        "da": "Der er nogle mennesker, der vælger at bruge næsten al deres tid på arbejdet. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی‌ها تقریباً همه‌ی وقتشان را سر کار می‌گذرانند. چه مزایا و معایبی دارد؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-nov-c.general.q2.kw1",
+          "emoji": "📈",
+          "text": {
+            "da": "karriere og penge",
+            "fa": "پیشرفت و پول"
+          }
+        },
+        {
+          "id": "2016-nov-c.general.q2.kw2",
+          "emoji": "⏳",
+          "text": {
+            "da": "mindre fritid",
+            "fa": "وقت آزاد کمتر"
+          }
+        },
+        {
+          "id": "2016-nov-c.general.q2.kw3",
+          "emoji": "😰",
+          "text": {
+            "da": "stress",
+            "fa": "استرس"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at man ofte gør karriere hurtigt og tjener flere penge. En anden fordel er, at man kan føle sig stolt. På den anden side er en ulempe, at man får mindre tid til familie, venner og fritid. Man risikerer også at gå ned med stress. Alt i alt mener jeg, at det er vigtigt med en god balance mellem arbejde og fritid."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 110,
+            "end": 132
+          },
+          {
+            "start": 157,
+            "end": 191
+          },
+          {
+            "start": 283,
+            "end": 306
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-nov-c.general.followup1",
+        "text": {
+          "da": "Hvor vigtigt tror du, det er for ens livskvalitet, at man har et arbejde, og at man kan lide sit arbejde?",
+          "fa": "به نظرت چقدر مهم است که آدم کار داشته باشد و کارش را دوست داشته باشد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det er meget vigtigt. Arbejdet fylder mange timer i vores liv, så hvis man kan lide det, er man gladere. Et arbejde giver også penge, kolleger og en identitet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        13
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      12,
+      13
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

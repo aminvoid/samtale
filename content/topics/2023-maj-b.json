@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-maj-b",
+  "termId": "2023-maj",
+  "letter": "B",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "Studerende og økonomi",
+    "fa": "دانشجوها و اقتصاد"
+  },
+  "situations": [
+    {
+      "id": "2023-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "studiejob ved siden af studierne",
+        "fa": "کار در کنار تحصیل"
+      },
+      "intro": {
+        "id": "2023-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en studerende, der har et studiejob ved siden af studierne."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-b.sitA.q1",
+        "text": {
+          "da": "Nogle studerende vælger at arbejde ved siden af deres studier. Hvorfor tror du, de gør det?",
+          "fa": "بعضی دانشجوها در کنار تحصیل کار می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-b.sitA.q1.kw1",
+            "emoji": "🏠",
+            "text": {
+              "da": "SU er ikke nok",
+              "fa": "SU کافی نیست"
+            }
+          },
+          {
+            "id": "2023-maj-b.sitA.q1.kw2",
+            "emoji": "📄",
+            "text": {
+              "da": "erfaring til CV",
+              "fa": "تجربه برای رزومه"
+            }
+          },
+          {
+            "id": "2023-maj-b.sitA.q1.kw3",
+            "emoji": "🕸️",
+            "text": {
+              "da": "netværk",
+              "fa": "شبکه‌ی آشنایی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er SU'en ikke nok til husleje og mad. For det andet får de praktisk erfaring, som de kan skrive i deres CV. Desuden får de et netværk. Så alt i alt handler det om penge, erfaring og netværk."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 88,
+              "end": 101
+            },
+            {
+              "start": 158,
+              "end": 165
+            },
+            {
+              "start": 185,
+              "end": 197
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-b.sitA.followup1",
+          "text": {
+            "da": "Kan der være nogen problemer ved, at studerende arbejder ved siden af deres studier? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا کار کردن دانشجوها در کنار تحصیل مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være nogen problemer ved, at studerende arbejder ved siden af deres studier?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, hvis de arbejder for meget. Så får de mindre tid til at studere, og de kan blive stressede eller forsinkede med studiet. Men 10-15 timer om ugen er som regel fint."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          46,
+          47
+        ]
+      }
+    },
+    {
+      "id": "2023-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "SU-lån trods SU",
+        "fa": "وام گرفتن با وجود SU"
+      },
+      "intro": {
+        "id": "2023-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en studerende, der tager et SU-lån."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-maj-b.sitB.q1",
+        "text": {
+          "da": "Nogle studerende vælger at tage lån, selvom de allerede får SU. Hvorfor tror du, de gør det?",
+          "fa": "بعضی دانشجوها با اینکه SU می‌گیرند، وام هم می‌گیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-maj-b.sitB.q1.kw1",
+            "emoji": "🏠",
+            "text": {
+              "da": "høj husleje",
+              "fa": "اجاره‌ی بالا"
+            }
+          },
+          {
+            "id": "2023-maj-b.sitB.q1.kw2",
+            "emoji": "📚",
+            "text": {
+              "da": "tid til at studere",
+              "fa": "وقت برای درس"
+            }
+          },
+          {
+            "id": "2023-maj-b.sitB.q1.kw3",
+            "emoji": "📉",
+            "text": {
+              "da": "lav rente",
+              "fa": "بهره‌ی کم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er SU'en ikke nok, fordi huslejen er høj, især i de store byer. For det andet vil de ikke arbejde for meget ved siden af, så de kan koncentrere sig om studiet. Desuden er SU-lånet billigt med en lav rente. Så alt i alt handler det om høj husleje og tid til at studere."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 114,
+              "end": 127
+            },
+            {
+              "start": 210,
+              "end": 217
+            },
+            {
+              "start": 256,
+              "end": 268
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-maj-b.sitB.followup1",
+          "text": {
+            "da": "Mener du, det er rimeligt, at studerende bruger penge på fx ferier eller at gå i byen? Hvorfor?/Hvorfor ikke?",
+            "fa": "به نظرت منطقی است که دانشجوها پول را خرج سفر یا بیرون رفتن کنند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, det er rimeligt, at studerende bruger penge på fx ferier eller at gå i byen?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det synes jeg godt. Studietiden er også en tid, hvor man skal have det sjovt og møde nye mennesker. Men man skal ikke låne penge til ferier og fester, fordi lånet skal betales tilbage."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          46,
+          47
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-maj-b.general",
+    "question": {
+      "id": "2023-maj-b.general.q2",
+      "text": {
+        "da": "I Danmark er det normalt gratis at tage en uddannelse. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "در دانمارک تحصیل معمولاً رایگان است. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-maj-b.general.q2.kw1",
+          "emoji": "⚖️",
+          "text": {
+            "da": "lige muligheder",
+            "fa": "فرصت برابر"
+          }
+        },
+        {
+          "id": "2023-maj-b.general.q2.kw2",
+          "emoji": "🎓",
+          "text": {
+            "da": "mange veluddannede",
+            "fa": "تحصیل‌کرده‌ی زیاد"
+          }
+        },
+        {
+          "id": "2023-maj-b.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyrt",
+            "fa": "گران"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at alle har lige muligheder, uanset hvor mange penge forældrene har. En anden fordel er, at samfundet får mange veluddannede, og det er godt for økonomien. På den anden side er en ulempe, at det koster samfundet mange penge. Nogle tager måske også en uddannelse, som de ikke bruger bagefter. Alt i alt mener jeg, at gratis uddannelse er en god investering i fremtiden."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 137,
+            "end": 159
+          },
+          {
+            "start": 224,
+            "end": 258
+          },
+          {
+            "start": 360,
+            "end": 383
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-maj-b.general.followup1",
+        "text": {
+          "da": "Mener du, at alle uddannelser skal være gratis, selvom det koster mange penge for samfundet? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت همه‌ی رشته‌ها باید رایگان باشند، حتی اگر برای جامعه هزینه‌ی زیادی داشته باشد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, at alle uddannelser skal være gratis, selvom det koster mange penge for samfundet?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Ja, det mener jeg. Uddannelse er en investering, fordi uddannede ofte tjener mere og betaler mere i skat. Og det giver lige muligheder for alle. Men samfundet kan godt styre, hvor mange der optages på de forskellige uddannelser."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        47
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      46,
+      47
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

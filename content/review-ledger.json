@@ -1,0 +1,1693 @@
+{
+  "schemaVersion": 0,
+  "topics": {
+    "2016-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2016-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2016-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2016-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2016-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2016-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2016-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2016-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2016-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2016-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2016-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2016-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2016-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2017-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2017-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2017-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2017-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2017-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2017-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2017-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2017-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2018-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2018-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2018-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2018-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2018-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2018-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2018-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2018-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2019-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2019-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2019-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2019-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2019-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2019-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2019-nov-a": {
+      "status": "needs-review",
+      "intros": {
+        "2019-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      },
+      "notes": [
+        {
+          "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+        },
+        {
+          "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+        },
+        {
+          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+        }
+      ]
+    },
+    "2019-nov-b": {
+      "status": "needs-review",
+      "intros": {
+        "2019-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      },
+      "notes": [
+        {
+          "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+        },
+        {
+          "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+        },
+        {
+          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+        }
+      ]
+    },
+    "2019-nov-c": {
+      "status": "needs-review",
+      "intros": {
+        "2019-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2019-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      },
+      "notes": [
+        {
+          "text": "Exam accuracy approved by delegation (pd3-exam-expert, exam review of intros and 2019, 2026-11-21), on condition that the 'SIRI's wording differs slightly' panel names its source; siriCheck.sourceDisplay carries it."
+        },
+        {
+          "text": "Danish: clean (danish-language-reviewer, 2026-11-21)."
+        },
+        {
+          "text": "Persian: not reviewed yet. Status stays needs-review until persian-localization-reviewer signs off."
+        }
+      ]
+    },
+    "2020-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2020-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2020-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2020-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2020-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2020-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2020-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2020-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2020-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2020-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2020-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2020-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2020-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2021-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2021-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2021-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2021-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2021-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2021-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2021-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2021-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2022-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2022-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2022-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2022-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2022-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2022-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2022-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2022-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-maj-a": {
+      "status": "extracted",
+      "intros": {
+        "2023-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-maj-b": {
+      "status": "extracted",
+      "intros": {
+        "2023-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-maj-c": {
+      "status": "extracted",
+      "intros": {
+        "2023-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-nov-a": {
+      "status": "extracted",
+      "intros": {
+        "2023-nov-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-nov-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-nov-b": {
+      "status": "extracted",
+      "intros": {
+        "2023-nov-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-nov-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2023-nov-c": {
+      "status": "extracted",
+      "intros": {
+        "2023-nov-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        },
+        "2023-nov-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ]
+        }
+      }
+    },
+    "2024-maj-a": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "contentHash": "c26b17f33cc150b0",
+      "notes": [
+        {
+          "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+        },
+        {
+          "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+        },
+        {
+          "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+        },
+        {
+          "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+        },
+        {
+          "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+        }
+      ],
+      "intros": {
+        "2024-maj-a.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        },
+        "2024-maj-a.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        }
+      },
+      "corrections": [
+        {
+          "id": "2024-maj-a.dk1",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "at mange turister kommer",
+          "suggestion": "at der kommer mange turister, som …",
+          "reason": "The der-construction is more natural here.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk2",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "stolte og inspireret",
+          "suggestion": "no change",
+          "reason": "Mixed adjective forms; acceptable as printed.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk3",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "Pengene kunne bruges",
+          "suggestion": "Pengene kunne i stedet bruges",
+          "reason": "Makes the contrast clearer.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk4",
+          "path": "situations[1].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "handler det om kultur, sprog og identitet",
+          "suggestion": "handler det om økonomi, sprog og identitet",
+          "reason": "The conclusion should sum up the reasons given.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk5",
+          "path": "situations[1].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "tjene nok penge alene",
+          "suggestion": "tjene nok penge på billetterne alene",
+          "reason": "Clearer.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk6",
+          "path": "situations[1].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "gode og forskellige film",
+          "suggestion": "gode film af mange forskellige slags",
+          "reason": "More idiomatic.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk7",
+          "path": "situations[0].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "hele livet",
+          "suggestion": "resten af livet",
+          "reason": "More idiomatic.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-a.dk8",
+          "path": "general.followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "give penge tilbage",
+          "suggestion": "give penge i kassen",
+          "reason": "Optional.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        }
+      ]
+    },
+    "2024-maj-b": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "contentHash": "682987e6eaf0c2cd",
+      "notes": [
+        {
+          "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+        },
+        {
+          "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+        },
+        {
+          "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+        },
+        {
+          "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+        },
+        {
+          "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+        }
+      ],
+      "intros": {
+        "2024-maj-b.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        },
+        "2024-maj-b.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        }
+      },
+      "corrections": [
+        {
+          "id": "2024-maj-b.dk1",
+          "path": "situations[1].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "lav status",
+          "suggestion": "(argue status in the body, or leave it out of the conclusion)",
+          "reason": "'lav status' appears in the conclusion but not in the reasons.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.dk2",
+          "path": "situations[1].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "bygges der meget",
+          "suggestion": "bliver der bygget meget",
+          "reason": "More natural spoken form.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.dk3",
+          "path": "general.followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "brug for, for eksempel",
+          "suggestion": "(split into two sentences)",
+          "reason": "Hard to say and to hear.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.dk4",
+          "path": "situations[0].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "flere ældre i samfundet",
+          "suggestion": "flere og flere ældre i samfundet",
+          "reason": "More natural.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.dk5",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "skal også uddanne flere",
+          "suggestion": "skal også selv uddanne flere",
+          "reason": "Optional.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.P-02",
+          "path": "general.followups[0].text.fa",
+          "kind": "translation",
+          "find": "بیکار هستند؟",
+          "suggestion": "بیکار هستند؟ چرا؟ چرا نه؟",
+          "reason": "The Danish ends 'Hvorfor?/Hvorfor ikke?'; the translation leaves it out (the author's own text, p. 37).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-b.P-04",
+          "path": "general.question.keywords[2].text.fa",
+          "kind": "terminology",
+          "find": "مجوز",
+          "suggestion": "گرفتن مجوز حرفه‌ای (autorisation)",
+          "reason": "'autorisation' is the professional licence.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+          "status": "proposed"
+        }
+      ]
+    },
+    "2024-maj-c": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "contentHash": "8d20d29d47091c28",
+      "notes": [
+        {
+          "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+        },
+        {
+          "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+        },
+        {
+          "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+        },
+        {
+          "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+        },
+        {
+          "path": "situations[1]",
+          "pages": [
+            78
+          ],
+          "text": "Situation B shows group work (booklet title and SIRI's intro), but its question is about not giving grades in the first school years. SIRI set the task this way; not a booklet error."
+        },
+        {
+          "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+        }
+      ],
+      "intros": {
+        "2024-maj-c.sitA.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        },
+        "2024-maj-c.sitB.intro": {
+          "status": "approved",
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ]
+        }
+      },
+      "corrections": [
+        {
+          "id": "2024-maj-c.dk1",
+          "path": "situations[0].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "også på grund af skærme",
+          "suggestion": "blandt andet på grund af skærme",
+          "reason": "More precise.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.dk2",
+          "path": "situations[1].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "deres barn",
+          "suggestion": "deres børn",
+          "reason": "Optional.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.dk3",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "så lærer begge noget",
+          "suggestion": "så lærer de begge noget",
+          "reason": "Subject needed.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.dk4",
+          "path": "situations[1].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "uden at føle pres",
+          "suggestion": "uden at føle sig presset",
+          "reason": "Optional.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-20-danish-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.P-03a",
+          "path": "situations[1].question.text.fa",
+          "kind": "translation",
+          "find": "کلاس‌های اول",
+          "suggestion": "سال‌های اولِ",
+          "reason": "'De første klasser' means the first school years, not grade 1.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.P-03b",
+          "path": "situations[1].followups[0].text.fa",
+          "kind": "translation",
+          "find": "کلاس‌های اول",
+          "suggestion": "سال‌های اولِ",
+          "reason": "Same as P-03a.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2024-maj-c.P-05",
+          "path": "general.followups[0].text.fa",
+          "kind": "translation",
+          "find": "چه معنایی دارد",
+          "suggestion": "چه تأثیری دارد",
+          "reason": "'betyder for' asks about the effect.",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+          "status": "proposed"
+        }
+      ]
+    }
+  },
+  "examinerLines": {
+    "examiner.soundCheck": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "notes": [
+        {
+          "text": "Wording proposed by danish-language-reviewer (UX-OQ-10, the Danish pilot review of 2026-11-20 in docs/reviews)."
+        }
+      ]
+    },
+    "examiner.intro": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "notes": [
+        {
+          "text": "Verified verbatim against SIRI 2024 pp. 6, 8, 10 by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+        }
+      ]
+    },
+    "examiner.transition": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "notes": [
+        {
+          "text": "DL-050, validated by danish-language-reviewer (2026-11-20)."
+        }
+      ]
+    },
+    "examiner.thanks": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "notes": [
+        {
+          "text": "Correct (danish-language-reviewer, 2026-11-20); DL-021."
+        }
+      ]
+    },
+    "examiner.closing": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-20",
+      "notes": [
+        {
+          "text": "Verified verbatim against SIRI 2024 pp. 5, 7, 9, 11 by pd3-exam-expert (2026-11-20)."
+        }
+      ]
+    }
+  },
+  "marginNoteCorrections": [
+    {
+      "id": "2024-maj-c.note1.P-03c",
+      "path": "2024-maj-c.note1.text.fa",
+      "kind": "translation",
+      "find": "کلاس‌های اول",
+      "suggestion": "سال‌های اولِ مدرسه",
+      "reason": "Same as P-03a; only relevant if the note is ever approved for public use.",
+      "by": "persian-localization-reviewer",
+      "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
+      "status": "proposed"
+    }
+  ]
+}

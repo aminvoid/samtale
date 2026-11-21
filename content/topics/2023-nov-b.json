@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-nov-b",
+  "termId": "2023-nov",
+  "letter": "B",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.alder-og-pension",
+  "title": {
+    "da": "Arbejde og alder",
+    "fa": "کار و سن"
+  },
+  "situations": [
+    {
+      "id": "2023-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "at fortsætte arbejde efter pensionsalderen",
+        "fa": "ادامه‌ی کار بعد از سن بازنشستگی"
+      },
+      "intro": {
+        "id": "2023-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der fortsætter med at arbejde efter pensionsalderen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-b.sitA.q1",
+        "text": {
+          "da": "Nogle bliver ved med at arbejde, selvom de har mulighed for at gå på pension. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها با اینکه می‌توانند بازنشسته شوند، به کار ادامه می‌دهند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-b.sitA.q1.kw1",
+            "emoji": "😊",
+            "text": {
+              "da": "glade for arbejdet",
+              "fa": "عاشق کارشان"
+            }
+          },
+          {
+            "id": "2023-nov-b.sitA.q1.kw2",
+            "emoji": "🧭",
+            "text": {
+              "da": "mening og struktur",
+              "fa": "معنا و نظم روزانه"
+            }
+          },
+          {
+            "id": "2023-nov-b.sitA.q1.kw3",
+            "emoji": "💰",
+            "text": {
+              "da": "flere penge",
+              "fa": "پول بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er de glade for deres arbejde og deres kolleger. For det andet giver arbejdet dem en hverdag med mening og struktur. Desuden kan de tjene flere penge til deres pension. Så alt i alt handler det om mening, fællesskab og økonomi."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 99,
+              "end": 112
+            },
+            {
+              "start": 167,
+              "end": 174
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-b.sitA.followup1",
+          "text": {
+            "da": "Kan der være problemer ved at blive ved med at arbejde, selvom man har mulighed for at gå på pension? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا ادامه‌ی کار با وجود امکان بازنشستگی مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være problemer ved at blive ved med at arbejde, selvom man har mulighed for at gå på pension?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Som regel ikke, hvis man er rask og glad for sit arbejde. Et problem kan være, at man bliver for træt, hvis arbejdet er fysisk hårdt. Nogle mener også, at de ældre tager pladsen fra de unge, men det tror jeg ikke, fordi vi mangler arbejdskraft."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          31
+        ]
+      }
+    },
+    {
+      "id": "2023-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "unge uden uddannelse på arbejdsmarkedet",
+        "fa": "جوانان بدون تحصیلات در بازار کار"
+      },
+      "intro": {
+        "id": "2023-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser et ungt menneske, der arbejder uden at have en uddannelse."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-b.sitB.q1",
+        "text": {
+          "da": "Nogle unge får ikke en uddannelse efter folkeskolen, men kommer direkte ud på arbejdsmarkedet. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی جوانان بعد از مدرسه تحصیل نمی‌کنند و مستقیم وارد بازار کار می‌شوند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-b.sitB.q1.kw1",
+            "emoji": "😩",
+            "text": {
+              "da": "trætte af skolen",
+              "fa": "خسته از مدرسه"
+            }
+          },
+          {
+            "id": "2023-nov-b.sitB.q1.kw2",
+            "emoji": "💵",
+            "text": {
+              "da": "tjene penge nu",
+              "fa": "پول درآوردن همین حالا"
+            }
+          },
+          {
+            "id": "2023-nov-b.sitB.q1.kw3",
+            "emoji": "❓",
+            "text": {
+              "da": "ved ikke hvad de vil",
+              "fa": "نمی‌دانند چه می‌خواهند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er nogle unge trætte af skolen. For det andet vil de gerne tjene penge med det samme. Desuden ved de måske ikke, hvad de vil uddanne sig til. Så alt i alt handler det om motivation og penge."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 82,
+              "end": 95
+            },
+            {
+              "start": 136,
+              "end": 143
+            },
+            {
+              "start": 192,
+              "end": 204
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-b.sitB.followup1",
+          "text": {
+            "da": "Kan der være problemer ved, at nogle unge ikke får en uddannelse? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا این که بعضی جوانان تحصیلات نمی‌گیرند مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der være problemer ved, at nogle unge ikke får en uddannelse?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg godt, der kan være. Ufaglærte job forsvinder ofte på grund af ny teknologi. Så risikerer man at blive arbejdsløs og få en lav løn hele livet. Derfor er det vigtigt at få en uddannelse senere."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          31
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-nov-b.general",
+    "question": {
+      "id": "2023-nov-b.general.q2",
+      "text": {
+        "da": "Hvilke fordele og ulemper mener du, der kan være ved, at folkepensionsalderen er den samme for alle?",
+        "fa": "مزایا و معایب اینکه سن بازنشستگی دولتی (folkepension) برای همه یکسان باشد؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-nov-b.general.q2.kw1",
+          "emoji": "⚖️",
+          "text": {
+            "da": "ens for alle",
+            "fa": "یکسان برای همه"
+          }
+        },
+        {
+          "id": "2023-nov-b.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "flere skatteindtægter",
+            "fa": "درآمد مالیاتی بیشتر"
+          }
+        },
+        {
+          "id": "2023-nov-b.general.q2.kw3",
+          "emoji": "🦴",
+          "text": {
+            "da": "slidt krop",
+            "fa": "بدن فرسوده"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at det er enkelt og ens for alle. En anden fordel er, at samfundet får flere på arbejdsmarkedet og flere skatteindtægter, når vi lever længere. På den anden side er en ulempe, at det er uretfærdigt for folk med hårdt fysisk arbejde. Deres krop er ofte slidt op, før de når pensionsalderen. Alt i alt mener jeg, at folk med hårdt fysisk arbejde bør kunne gå tidligere på pension."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 88,
+            "end": 110
+          },
+          {
+            "start": 198,
+            "end": 232
+          },
+          {
+            "start": 344,
+            "end": 367
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-nov-b.general.followup1",
+        "text": {
+          "da": "Mener du, pensionsalderen bør være kortere for faggrupper, der har hårdt fysisk arbejde? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت سن بازنشستگی برای گروه‌هایی که کار بدنی سخت دارند باید پایین‌تر باشد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, pensionsalderen bør være kortere for faggrupper, der har hårdt fysisk arbejde?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Ja, det mener jeg. Murere og social- og sundhedsassistenter har ofte slidt deres krop op, når de er 60. Det er ikke fair, at de skal arbejde lige så længe som en kontoransat. Derfor er det godt, at der findes tidlig pension for folk med mange år på arbejdsmarkedet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        32
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      31,
+      32
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

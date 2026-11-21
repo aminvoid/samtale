@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-maj-c",
+  "termId": "2018-maj",
+  "letter": "C",
+  "themeId": "medier",
+  "title": {
+    "da": "Medier",
+    "fa": "رسانه‌ها"
+  },
+  "situations": [
+    {
+      "id": "2018-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "færre danskere køber og læser avis",
+        "fa": "دانمارکی‌های کمتری روزنامه می‌خرند و می‌خوانند"
+      },
+      "intro": {
+        "id": "2018-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der køber og læser en avis."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-c.sitA.q1",
+        "text": {
+          "da": "Færre og færre danskere køber og læser avis. Hvorfor tror du, det er sådan?",
+          "fa": "دانمارکی‌های کمتر و کمتری روزنامه می‌خرند و می‌خوانند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-c.sitA.q1.kw1",
+            "emoji": "🌐",
+            "text": {
+              "da": "gratis på nettet",
+              "fa": "رایگان در اینترنت"
+            }
+          },
+          {
+            "id": "2018-maj-c.sitA.q1.kw2",
+            "emoji": "⏳",
+            "text": {
+              "da": "ikke tid",
+              "fa": "وقت ندارند"
+            }
+          },
+          {
+            "id": "2018-maj-c.sitA.q1.kw3",
+            "emoji": "🗞️",
+            "text": {
+              "da": "hurtigt gammel",
+              "fa": "زود کهنه می‌شود"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første kan man læse nyheder gratis og hurtigt på nettet. For det andet har mange ikke tid til at læse en hel avis. Desuden er avisen hurtigt gammel, fordi nyhederne ændrer sig hele tiden. Så alt i alt handler det om internettet, tid og pris."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 100,
+              "end": 113
+            },
+            {
+              "start": 158,
+              "end": 165
+            },
+            {
+              "start": 231,
+              "end": 243
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-c.sitA.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved, at færre danskere køber og læser avis? Hvorfor / hvorfor ikke?",
+            "fa": "آیا کم شدن خوانندگان روزنامه مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved, at færre danskere køber og læser avis?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2018-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Aviserne får færre penge, så der bliver færre journalister og mindre grundig journalistik. Det kan gå ud over kvaliteten af nyhederne og demokratiet."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          60
+        ]
+      }
+    },
+    {
+      "id": "2018-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "flere får nyheder gennem online-medier",
+        "fa": "آدم‌های بیشتری اخبار را از رسانه‌های آنلاین می‌گیرند"
+      },
+      "intro": {
+        "id": "2018-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der læser nyheder online."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-maj-c.sitB.q1",
+        "text": {
+          "da": "Flere og flere danskere får deres nyheder gennem online-medier. Hvorfor tror du, det er sådan?",
+          "fa": "دانمارکی‌های بیشتر و بیشتری اخبارشان را از رسانه‌های آنلاین می‌گیرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-maj-c.sitB.q1.kw1",
+            "emoji": "⚡",
+            "text": {
+              "da": "hurtigt og opdateret",
+              "fa": "سریع و به‌روز"
+            }
+          },
+          {
+            "id": "2018-maj-c.sitB.q1.kw2",
+            "emoji": "📱",
+            "text": {
+              "da": "smartphone overalt",
+              "fa": "گوشی همه‌جا"
+            }
+          },
+          {
+            "id": "2018-maj-c.sitB.q1.kw3",
+            "emoji": "🆓",
+            "text": {
+              "da": "gratis",
+              "fa": "رایگان"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det hurtigt, og nyhederne bliver opdateret hele tiden. For det andet har alle en smartphone, så man kan læse nyheder overalt. Desuden er mange online-nyheder gratis. Så alt i alt handler det om hastighed, nemhed og pris."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 179,
+              "end": 186
+            },
+            {
+              "start": 219,
+              "end": 231
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-maj-c.sitB.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved, at flere får deres nyheder gennem online-medier? Hvorfor / hvorfor ikke?",
+            "fa": "آیا گرفتن اخبار از رسانه‌های آنلاین مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved, at flere får deres nyheder gennem online-medier?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2018-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Der er meget falsk information på nettet, og det kan være svært at se, hvad der er sandt. Mange læser også kun overskrifterne og får derfor ikke hele historien."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          60,
+          61
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-maj-c.general",
+    "question": {
+      "id": "2018-maj-c.general.q2",
+      "text": {
+        "da": "Med blogs og andre online-medier er det i dag nemmere for almindelige mennesker at deltage i den offentlige debat. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "با وبلاگ‌ها و رسانه‌های آنلاین، امروزه شرکت آدم‌های عادی در بحث عمومی آسان‌تر است. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-maj-c.general.q2.kw1",
+          "emoji": "🗣️",
+          "text": {
+            "da": "flere kommer til orde",
+            "fa": "صداهای بیشتر"
+          }
+        },
+        {
+          "id": "2018-maj-c.general.q2.kw2",
+          "emoji": "🌈",
+          "text": {
+            "da": "varieret debat",
+            "fa": "بحث متنوع"
+          }
+        },
+        {
+          "id": "2018-maj-c.general.q2.kw3",
+          "emoji": "❌",
+          "text": {
+            "da": "falsk information og had",
+            "fa": "اطلاعات غلط و نفرت"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at flere mennesker kan komme til orde, ikke kun eksperter og politikere. En anden fordel er, at debatten bliver mere varieret. På den anden side er en ulempe, at der spredes meget falsk information. Tonen kan også blive hård. Alt i alt mener jeg, at det er godt for demokratiet, men vi skal være kritiske over for det, vi læser."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 127,
+            "end": 149
+          },
+          {
+            "start": 181,
+            "end": 215
+          },
+          {
+            "start": 280,
+            "end": 303
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for demokratiet, at det i dag er nemmere for almindelige mennesker at deltage i den offentlige debat? Hvorfor?",
+          "fa": "به نظرت آسان‌تر شدن مشارکت مردم عادی در بحث عمومی چه تأثیری بر دموکراسی دارد؟ چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2018-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det styrker demokratiet, fordi flere kan deltage i debatten og sige deres mening. Men falske nyheder og en hård tone kan også skade demokratiet. Derfor er det vigtigt at lære at tjekke kilder."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        61
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      60,
+      61
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

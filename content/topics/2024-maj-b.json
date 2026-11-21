@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 0,
+  "id": "2024-maj-b",
+  "termId": "2024-maj",
+  "letter": "B",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.koen-sprog-og-udenlandsk-arbejdskraft",
+  "title": {
+    "da": "Mangel på arbejdskraft",
+    "fa": "کمبود نیروی کار"
+  },
+  "situations": [
+    {
+      "id": "2024-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "sygeplejerske med mange patienter",
+        "fa": "پرستاری با بیماران زیاد و سرِ شلوغ"
+      },
+      "intro": {
+        "id": "2024-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en sygeplejerske, der har ansvar for mange patienter og har travlt."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            8
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-b.sitA.q1",
+        "text": {
+          "da": "Der mangler arbejdskraft i sundhedssektoren, fx sygeplejersker og social- og sundhedsassistenter. Hvorfor tror du, der gør det?",
+          "fa": "در بخش سلامت کمبود نیروی کار هست، مثلاً پرستار و دستیار بهداشتی-اجتماعی (sosu). به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              8
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Der mangler arbejdskraft i sundhedssektoren, fx sygeplejersker og social- og sundhedsassistenter. Hvorfor tror du, der gør det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-b.sitA.q1.kw1",
+            "emoji": "🏋️",
+            "text": {
+              "da": "hårdt arbejde",
+              "fa": "کار سخت"
+            }
+          },
+          {
+            "id": "2024-maj-b.sitA.q1.kw2",
+            "emoji": "💵",
+            "text": {
+              "da": "for lav løn",
+              "fa": "حقوق کم نسبت به مسئولیت"
+            }
+          },
+          {
+            "id": "2024-maj-b.sitA.q1.kw3",
+            "emoji": "👵",
+            "text": {
+              "da": "flere ældre",
+              "fa": "سالمندان بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er arbejdet hårdt, både fysisk og psykisk. For det andet er lønnen ikke høj nok i forhold til ansvaret. Desuden er der flere ældre i samfundet, så der er brug for flere hænder. Så alt i alt handler det om hårdt arbejde, lav løn og flere ældre."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 93,
+              "end": 106
+            },
+            {
+              "start": 154,
+              "end": 161
+            },
+            {
+              "start": 227,
+              "end": 239
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvilke problemer mener du, der kan være ved, at der mangler sygeplejersker og social- og sundhedsassistenter?",
+            "fa": "کمبود پرستار و دستیار بهداشتی-اجتماعی چه مشکلاتی می‌تواند ایجاد کند؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                8
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Hvilke problemer mener du, der kan være ved, at der mangler sygeplejersker og social- og sundhedsassistenter?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "answer": {
+            "id": "2024-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Der kan være mange problemer. Patienterne får mindre tid og omsorg, og der kan ske fejl. Ventelisterne bliver længere, og personalet bliver stresset, så endnu flere siger op. Det bliver en ond cirkel."
+            }
+          }
+        }
+      ],
+      "personalExamples": [
+        {
+          "id": "2024-maj-b.sitA.example1",
+          "label": {
+            "fa": "مثال شخصی"
+          },
+          "text": {
+            "da": "Jeg arbejder selv som sygeplejerske, og jeg kan se, at vi ofte har travlt."
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "2024-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "byggeplads, hvor arbejdet ikke er gået i gang",
+        "fa": "کارگاه ساختمانی که کارش هنوز شروع نشده"
+      },
+      "intro": {
+        "id": "2024-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en byggeplads, hvor arbejdet endnu ikke er gået i gang."
+        },
+        "origin": "siri",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            8
+          ]
+        },
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "SIRI 'Forslag til indledning', verified verbatim by pd3-exam-expert and danish-language-reviewer (2026-11-20)."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-20"
+        }
+      },
+      "question": {
+        "id": "2024-maj-b.sitB.q1",
+        "text": {
+          "da": "Der mangler arbejdskraft i byggebranchen, fx tømrere og jord- og betonarbejdere. Hvorfor tror du, der gør det?",
+          "fa": "در صنعت ساختمان کمبود نیروی کار هست، مثلاً نجار و کارگر خاک و بتن. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              9
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Der mangler arbejdskraft i byggebranchen, fx tømrere og jord- og betonarbejdere. Hvorfor tror du, der gør det?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "keywords": [
+          {
+            "id": "2024-maj-b.sitB.q1.kw1",
+            "emoji": "🌧️",
+            "text": {
+              "da": "fysisk hårdt, udendørs",
+              "fa": "سخت و در فضای باز"
+            }
+          },
+          {
+            "id": "2024-maj-b.sitB.q1.kw2",
+            "emoji": "🎓",
+            "text": {
+              "da": "unge vælger gymnasiet",
+              "fa": "جوان‌ها دبیرستان نظری را انتخاب می‌کنند"
+            }
+          },
+          {
+            "id": "2024-maj-b.sitB.q1.kw3",
+            "emoji": "🏗️",
+            "text": {
+              "da": "bygges meget",
+              "fa": "ساخت‌وساز زیاد"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2024-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er arbejdet fysisk hårdt og foregår udendørs i al slags vejr. For det andet vil mange unge hellere tage en gymnasieuddannelse end en erhvervsuddannelse. Desuden bygges der meget i Danmark i disse år. Så alt i alt handler det om hårdt arbejde, lav status og stor efterspørgsel."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 112,
+              "end": 125
+            },
+            {
+              "start": 203,
+              "end": 210
+            },
+            {
+              "start": 250,
+              "end": 262
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2024-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvilke problemer mener du, der kan være ved, at der mangler arbejdskraft inden for byggebranchen?",
+            "fa": "کمبود نیروی کار در صنعت ساختمان چه مشکلاتی می‌تواند ایجاد کند؟"
+          },
+          "siriCheck": {
+            "status": "matches",
+            "sourceRef": {
+              "document": "siri-2024-maj",
+              "pages": [
+                9
+              ]
+            },
+            "checkedOn": "2026-11-18",
+            "siriParts": [
+              "Hvilke problemer mener du, der kan være ved, at der mangler arbejdskraft inden for byggebranchen?"
+            ],
+            "sourceDisplay": {
+              "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+              "availability": "official",
+              "note": "Published by SIRI on danskogproever.dk."
+            }
+          },
+          "answer": {
+            "id": "2024-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Der kan være flere problemer. Byggeriet bliver forsinket og dyrere. Der bliver bygget færre boliger, og det kan gøre det sværere at finde et sted at bo."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          36,
+          37
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2024-maj-b.general",
+    "question": {
+      "id": "2024-maj-b.general.q2",
+      "text": {
+        "da": "Ved mangel på arbejdskraft kan man fra politisk side vælge at gøre det nemmere for virksomheder at rekruttere udenlandsk arbejdskraft. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "در کمبود نیروی کار، سیاستمداران می‌توانند استخدام نیروی خارجی را برای شرکت‌ها آسان‌تر کنند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "matches",
+        "sourceRef": {
+          "document": "siri-2024-maj",
+          "pages": [
+            9
+          ]
+        },
+        "checkedOn": "2026-11-18",
+        "siriParts": [
+          "Ved mangel på arbejdskraft kan man fra politisk side vælge at gøre det nemmere for virksomheder at rekruttere udenlandsk arbejdskraft. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?"
+        ],
+        "sourceDisplay": {
+          "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+          "availability": "official",
+          "note": "Published by SIRI on danskogproever.dk."
+        }
+      },
+      "keywords": [
+        {
+          "id": "2024-maj-b.general.q2.kw1",
+          "emoji": "⚡",
+          "text": {
+            "da": "hurtig hjælp",
+            "fa": "کمک سریع"
+          }
+        },
+        {
+          "id": "2024-maj-b.general.q2.kw2",
+          "emoji": "💰",
+          "text": {
+            "da": "betaler skat, ny viden",
+            "fa": "مالیات و دانش جدید"
+          }
+        },
+        {
+          "id": "2024-maj-b.general.q2.kw3",
+          "emoji": "🗣️",
+          "text": {
+            "da": "sprogproblemer, autorisation",
+            "fa": "مشکل زبان و مجوز"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2024-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at virksomhederne og hospitalerne hurtigt får den arbejdskraft, de mangler. En anden fordel er, at udenlandske medarbejdere betaler skat og kommer med ny viden. På den anden side er en ulempe, at der kan være sprogproblemer, især i sundhedssektoren. Det tager også tid at få dansk autorisation. Alt i alt mener jeg, at det er en god løsning, men vi skal også uddanne flere i Danmark."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 144,
+            "end": 166
+          },
+          {
+            "start": 229,
+            "end": 263
+          },
+          {
+            "start": 363,
+            "end": 386
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2024-maj-b.general.followup1",
+        "text": {
+          "da": "Mener du, det er i orden at rekruttere udenlandsk arbejdskraft, selvom der er borgere i Danmark, der er arbejdsløse? Hvorfor?/Hvorfor ikke?",
+          "fa": "به نظرت درست است نیروی خارجی استخدام شود، در حالی که در دانمارک شهروندان بیکار هستند؟"
+        },
+        "siriCheck": {
+          "status": "matches",
+          "sourceRef": {
+            "document": "siri-2024-maj",
+            "pages": [
+              9
+            ]
+          },
+          "checkedOn": "2026-11-18",
+          "siriParts": [
+            "Mener du, det er i orden at rekruttere udenlandsk arbejdskraft, selvom der er borgere i Danmark, der er arbejdsløse?",
+            "Hvorfor?/Hvorfor ikke?"
+          ],
+          "sourceDisplay": {
+            "title": "Prøve i Dansk 3, Maj-juni 2024, Mundtlig del, Censor- og eksaminatorhæfte",
+            "availability": "official",
+            "note": "Published by SIRI on danskogproever.dk."
+          }
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, det er i orden at rekruttere udenlandsk arbejdskraft, selvom der er borgere i Danmark, der er arbejdsløse?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2024-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Ja, det mener jeg. De arbejdsløse har ofte ikke den uddannelse, der er brug for, for eksempel som sygeplejerske eller tømrer. Men samtidig skal man hjælpe de ledige med at få en uddannelse."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        37
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      36,
+      37
+    ]
+  },
+  "review": {
+    "status": "approved",
+    "notes": [
+      {
+        "text": "Danish fidelity: clean. Every booklet text matches word for word; no outright errors (danish-language-reviewer, the Danish pilot review of 2026-11-20 in docs/reviews)."
+      },
+      {
+        "text": "Persian fidelity and translation: signed off by persian-localization-reviewer under the owner's delegation, after a visual comparison with the PDF pages (the Persian pilot review of 2026-11-20 in docs/reviews). Open: D-01 to D-05 still need one Afghan (Dari) reader."
+      },
+      {
+        "text": "SIRI wording (questions, suggested follow-ups, intros) verified verbatim by pd3-exam-expert (the exam review of mock rules, 2026-11-20, in docs/reviews)."
+      },
+      {
+        "text": "APPROVED BY DELEGATION: the owner delegated reviews and decisions (decision log rev. 3.3, 2026-11-19). reviewedBy 'delegated-agent-review' marks this; the owner can revisit it."
+      },
+      {
+        "text": "Hash re-bound 2026-11-21: only siriCheck.sourceDisplay (source metadata for the UI) was added; no reviewed text changed."
+      }
+    ],
+    "reviewedBy": "delegated-agent-review",
+    "reviewedOn": "2026-11-20"
+  }
+}

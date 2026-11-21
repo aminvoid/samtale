@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-nov-c",
+  "termId": "2021-nov",
+  "letter": "C",
+  "themeId": "uddannelse",
+  "title": {
+    "da": "Uddannelsesvalg",
+    "fa": "انتخاب رشته"
+  },
+  "situations": [
+    {
+      "id": "2021-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "adgangsbegrænsning på mange uddannelser",
+        "fa": "محدودیت پذیرش در بسیاری از رشته‌ها"
+      },
+      "intro": {
+        "id": "2021-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle unge, der søger ind på en uddannelse med adgangsbegrænsning."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-c.sitA.q1",
+        "text": {
+          "da": "På mange uddannelser er der en begrænsning på, hvor mange studerende der bliver optaget. Hvorfor tror du, der er det?",
+          "fa": "در بسیاری از رشته‌ها تعداد پذیرفته‌شده‌ها محدود است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-c.sitA.q1.kw1",
+            "emoji": "🪑",
+            "text": {
+              "da": "ikke plads nok",
+              "fa": "جای کافی نیست"
+            }
+          },
+          {
+            "id": "2021-nov-c.sitA.q1.kw2",
+            "emoji": "💼",
+            "text": {
+              "da": "jobmuligheder",
+              "fa": "فرصت شغلی"
+            }
+          },
+          {
+            "id": "2021-nov-c.sitA.q1.kw3",
+            "emoji": "⭐",
+            "text": {
+              "da": "kvalitet",
+              "fa": "کیفیت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der ikke plads eller lærere nok til alle. For det andet vil man undgå, at der bliver uddannet for mange til et område, hvor der ikke er job. Desuden vil man sikre, at de studerende har et godt niveau. Så alt i alt handler det om plads, jobmuligheder og kvalitet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 95,
+              "end": 108
+            },
+            {
+              "start": 194,
+              "end": 201
+            },
+            {
+              "start": 254,
+              "end": 266
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-c.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at der på mange uddannelser er en begrænsning på, hvor mange studerende der bliver optaget? Hvorfor / hvorfor ikke?",
+            "fa": "آیا محدودیت پذیرش در بسیاری از رشته‌ها مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at der på mange uddannelser er en begrænsning på, hvor mange studerende der bliver optaget?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2021-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Nogle unge kan ikke komme ind på deres drømmeuddannelse, selvom de er motiverede, bare fordi deres karakterer er lidt for lave. Det kan være frustrerende."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          43
+        ]
+      }
+    },
+    {
+      "id": "2021-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "ledige pladser på lærer- og pædagoguddannelser",
+        "fa": "صندلی‌های خالی در رشته‌های معلمی و مربی‌گری"
+      },
+      "intro": {
+        "id": "2021-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser en uddannelse til lærer eller pædagog, hvor der er ledige studiepladser."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-nov-c.sitB.q1",
+        "text": {
+          "da": "Der er ofte ledige studiepladser på uddannelserne til lærer og pædagog, selvom der næsten er jobgaranti. Hvorfor tror du, det er sådan?",
+          "fa": "رشته‌های معلمی و مربی‌گری اغلب صندلی خالی دارند، با اینکه تقریباً تضمین شغلی دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-nov-c.sitB.q1.kw1",
+            "emoji": "💵",
+            "text": {
+              "da": "lav løn",
+              "fa": "حقوق کم"
+            }
+          },
+          {
+            "id": "2021-nov-c.sitB.q1.kw2",
+            "emoji": "🎖️",
+            "text": {
+              "da": "lav status",
+              "fa": "منزلت پایین"
+            }
+          },
+          {
+            "id": "2021-nov-c.sitB.q1.kw3",
+            "emoji": "😰",
+            "text": {
+              "da": "travlhed og stress",
+              "fa": "شلوغی و استرس"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er lønnen ikke særlig høj i forhold til andre fag. For det andet har jobbet ikke så høj status. Desuden hører man meget om travlhed, store klasser og stress. Så alt i alt handler det om løn, status og arbejdsforhold."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 101,
+              "end": 114
+            },
+            {
+              "start": 146,
+              "end": 153
+            },
+            {
+              "start": 208,
+              "end": 220
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-nov-c.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at der er ledige studiepladser på uddannelserne til lærer og pædagog? Hvorfor / hvorfor ikke?",
+            "fa": "آیا خالی ماندن صندلی‌ها در رشته‌های معلمی و مربی‌گری مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at der er ledige studiepladser på uddannelserne til lærer og pædagog?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2021-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg. Om nogle år kommer der til at mangle lærere og pædagoger. Det går ud over børnene. Derfor bør man gøre fagene mere attraktive, for eksempel med en højere løn."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          43,
+          44
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-nov-c.general",
+    "question": {
+      "id": "2021-nov-c.general.q2",
+      "text": {
+        "da": "Der er nogle unge, der tager et eller to års pause efter gymnasiet, før de vælger uddannelse. Hvilke fordele og ulemper mener du, der kan være ved det for samfundet?",
+        "fa": "بعضی جوانان بعد از دبیرستان یک یا دو سال وقفه می‌گذارند و بعد رشته انتخاب می‌کنند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-nov-c.general.q2.kw1",
+          "emoji": "🌱",
+          "text": {
+            "da": "modne og motiverede",
+            "fa": "پخته و باانگیزه"
+          }
+        },
+        {
+          "id": "2021-nov-c.general.q2.kw2",
+          "emoji": "📉",
+          "text": {
+            "da": "færre falder fra",
+            "fa": "انصراف کمتر"
+          }
+        },
+        {
+          "id": "2021-nov-c.general.q2.kw3",
+          "emoji": "⏰",
+          "text": {
+            "da": "senere på arbejdsmarkedet",
+            "fa": "ورود دیرتر به بازار کار"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at de unge bliver mere modne og vælger en uddannelse, de virkelig vil. Så falder færre fra, og det sparer penge. En anden fordel er, at de får erfaring fra arbejdslivet. På den anden side er en ulempe, at de kommer senere ud på arbejdsmarkedet og betaler skat i færre år. Alt i alt mener jeg, at en kort pause er en god idé."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 181,
+            "end": 203
+          },
+          {
+            "start": 238,
+            "end": 272
+          },
+          {
+            "start": 340,
+            "end": 363
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-nov-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for de unges uddannelsesvalg, at de har holdt et eller to års pause?",
+          "fa": "به نظرت یک یا دو سال وقفه چه تأثیری بر انتخاب رشته‌ی جوانان دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, pausen hjælper dem til at vælge rigtigt. De har prøvet at arbejde og ved bedre, hvad de kan lide. Men nogle mister motivationen og vælger slet ikke en uddannelse."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        44
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      43,
+      44
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

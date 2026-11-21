@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2016-maj-a",
+  "termId": "2016-maj",
+  "letter": "A",
+  "themeId": "krim",
+  "title": {
+    "da": "Unge og kriminalitet",
+    "fa": "جوانان و جرم"
+  },
+  "situations": [
+    {
+      "id": "2016-maj-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "unge begår småkriminalitet, selvom de ved, det er ulovligt",
+        "fa": "جوان‌ها با اینکه می‌دانند غیرقانونی است، جرم کوچک می‌کنند"
+      },
+      "intro": {
+        "id": "2016-maj-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle unge, der begår småkriminalitet."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-a.sitA.q1",
+        "text": {
+          "da": "Nogle unge mennesker begår småkriminalitet, selvom de ved, at det er ulovligt. Hvorfor tror du alligevel, at de gør det?",
+          "fa": "بعضی جوانان با اینکه می‌دانند غیرقانونی است، جرم کوچک می‌کنند. به نظرت با این حال چرا این کار را می‌کنند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-a.sitA.q1.kw1",
+            "emoji": "😎",
+            "text": {
+              "da": "imponere vennerne",
+              "fa": "تحت‌تأثیر قرار دادن دوستان"
+            }
+          },
+          {
+            "id": "2016-maj-a.sitA.q1.kw2",
+            "emoji": "⚡",
+            "text": {
+              "da": "tænker ikke på konsekvenser",
+              "fa": "به پیامد فکر نمی‌کنند"
+            }
+          },
+          {
+            "id": "2016-maj-a.sitA.q1.kw3",
+            "emoji": "🚧",
+            "text": {
+              "da": "mangler grænser",
+              "fa": "نبود مرز و حمایت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil nogle unge gerne imponere deres venner eller føle spænding. For det andet tænker de ikke over konsekvenserne. Desuden mangler nogle voksne, der sætter grænser. Så alt i alt handler det om gruppepres, impulsivitet og manglende støtte."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 114,
+              "end": 127
+            },
+            {
+              "start": 164,
+              "end": 171
+            },
+            {
+              "start": 214,
+              "end": 226
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for de unges muligheder for at få en uddannelse og et job, at de begår småkriminalitet som helt unge?",
+            "fa": "به نظرت ارتکاب جرم کوچک در نوجوانی چه تأثیری بر فرصت تحصیل و کار جوانان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2016-maj-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan ødelægge mange muligheder. Hvis de får en plettet straffeattest, kan det være svært at få en læreplads eller et job. Så risikerer de at blive i det kriminelle miljø. Derfor er det vigtigt at hjælpe dem tidligt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          80
+        ]
+      }
+    },
+    {
+      "id": "2016-maj-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "nogle arbejdspladser kræver ren straffeattest",
+        "fa": "بعضی محل‌های کار سوءپیشینه‌ی پاک می‌خواهند"
+      },
+      "intro": {
+        "id": "2016-maj-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser en arbejdsplads, der kræver en ren straffeattest."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2016-maj-a.sitB.q1",
+        "text": {
+          "da": "På nogle arbejdspladser kan man kun blive ansat, hvis man har en ren straffeattest. Hvorfor tror du, det er sådan?",
+          "fa": "در بعضی محل‌های کار فقط کسی استخدام می‌شود که سوءپیشینه‌ی پاک داشته باشد. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2016-maj-a.sitB.q1.kw1",
+            "emoji": "🤝",
+            "text": {
+              "da": "tillid",
+              "fa": "اعتماد"
+            }
+          },
+          {
+            "id": "2016-maj-a.sitB.q1.kw2",
+            "emoji": "🛡️",
+            "text": {
+              "da": "beskytte børn og ældre",
+              "fa": "محافظت از بچه‌ها و سالمندان"
+            }
+          },
+          {
+            "id": "2016-maj-a.sitB.q1.kw3",
+            "emoji": "📰",
+            "text": {
+              "da": "undgå problemer",
+              "fa": "پرهیز از دردسر و بدنامی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2016-maj-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal arbejdspladsen kunne stole på medarbejderne, for eksempel i en bank. For det andet skal man beskytte børn, ældre og syge. Desuden vil virksomheden undgå problemer og dårlig omtale. Så alt i alt handler det om tillid og sikkerhed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 124,
+              "end": 137
+            },
+            {
+              "start": 177,
+              "end": 184
+            },
+            {
+              "start": 236,
+              "end": 248
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2016-maj-a.sitB.followup1",
+          "text": {
+            "da": "Kan der efter din mening være nogen problemer ved, at man på nogle arbejdspladser kun kan blive ansat, hvis man har en ren straffeattest? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است مشکل باشد که بعضی جاها فقط افراد با سوءپیشینه‌ی پاک را استخدام کنند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Kan der efter din mening være nogen problemer ved, at man på nogle arbejdspladser kun kan blive ansat, hvis man har en ren straffeattest?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2016-maj-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Folk, der har afsonet deres straf, får svært ved at få et job og starte et nyt liv. Uden job er der større risiko for ny kriminalitet. Man bør se på, hvad personen har gjort, og hvor længe siden det er."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          80,
+          81
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2016-maj-a.general",
+    "question": {
+      "id": "2016-maj-a.general.q2",
+      "text": {
+        "da": "Nogle mener ikke, at helt unge skal kunne straffes efter straffeloven. De skal fx ikke kunne komme i fængsel for alvorlige, kriminelle handlinger som vold, indbrud og tyveri. Hvilke fordele og ulemper mener du, der kan være ved, at helt unge ikke kan straffes efter straffeloven?",
+        "fa": "بعضی‌ها معتقدند نوجوانان خیلی کم‌سن نباید طبق قانون کیفری مجازات شوند و مثلاً برای خشونت، دزدی و سرقت از منزل به زندان بروند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2016-maj-a.general.q2.kw1",
+          "emoji": "🚫",
+          "text": {
+            "da": "ikke fængsel med voksne",
+            "fa": "نه زندان با بزرگسالان"
+          }
+        },
+        {
+          "id": "2016-maj-a.general.q2.kw2",
+          "emoji": "🙌",
+          "text": {
+            "da": "hjælp og støtte",
+            "fa": "کمک و حمایت"
+          }
+        },
+        {
+          "id": "2016-maj-a.general.q2.kw3",
+          "emoji": "⚖️",
+          "text": {
+            "da": "konsekvenser og ofrene",
+            "fa": "پیامد و قربانیان"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2016-maj-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at unge ikke kommer i fængsel sammen med voksne kriminelle, hvor de kan lære mere kriminalitet. En anden fordel er, at de i stedet kan få hjælp og støtte til at komme på rette vej. På den anden side er en ulempe, at nogle unge føler, at de kan gøre, hvad de vil. Ofrene kan også føle, at der ikke sker noget. Alt i alt mener jeg, at det er vigtigt med hjælp, men der skal også være klare konsekvenser."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 150,
+            "end": 172
+          },
+          {
+            "start": 235,
+            "end": 269
+          },
+          {
+            "start": 363,
+            "end": 386
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2016-maj-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for kriminaliteten i samfundet, at unge under 15 år ikke kan straffes efter straffeloven?",
+          "fa": "به نظرت مجازات نشدن جوانان زیر ۱۵ سال طبق قانون کیفری چه تأثیری بر میزان جرم در جامعه دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2016-maj-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan gå begge veje. Med god hjælp fra kommunen kan mange unge stoppe tidligt. Men nogle kriminelle bander bruger børn under 15 til at begå kriminalitet, fordi de ikke kan straffes. Det er et problem."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        81
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      80,
+      81
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

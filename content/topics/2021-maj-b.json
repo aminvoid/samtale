@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 0,
+  "id": "2021-maj-b",
+  "termId": "2021-maj",
+  "letter": "B",
+  "themeId": "klima",
+  "title": {
+    "da": "Klima og forbrug",
+    "fa": "اقلیم و مصرف"
+  },
+  "situations": [
+    {
+      "id": "2021-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "vælge ikke at flyve på ferie (rejsevaner)",
+        "fa": "پرواز نکردن برای تعطیلات"
+      },
+      "intro": {
+        "id": "2021-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en familie, der holder ferie uden at flyve."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-b.sitA.q1",
+        "text": {
+          "da": "Der er nogle, der vælger ikke at flyve, når de rejser på ferie. Hvorfor tror du, det er sådan?",
+          "fa": "بعضی‌ها برای سفر تعطیلات با هواپیما نمی‌روند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-b.sitA.q1.kw1",
+            "emoji": "✈️",
+            "text": {
+              "da": "fly udleder CO2",
+              "fa": "هواپیما CO2 تولید می‌کند"
+            }
+          },
+          {
+            "id": "2021-maj-b.sitA.q1.kw2",
+            "emoji": "🚇",
+            "text": {
+              "da": "hyggeligt med tog",
+              "fa": "سفر با قطار دلپذیر است"
+            }
+          },
+          {
+            "id": "2021-maj-b.sitA.q1.kw3",
+            "emoji": "🇩🇰",
+            "text": {
+              "da": "smukke steder tæt på",
+              "fa": "جاهای زیبای نزدیک"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne passe på klimaet, fordi fly udleder meget CO2. For det andet kan det være hyggeligt at rejse med tog eller bil og se mere undervejs. Desuden er der mange smukke steder i Danmark og nabolandene. Så alt i alt handler det om klimaet og nye måder at holde ferie på."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 110,
+              "end": 123
+            },
+            {
+              "start": 196,
+              "end": 203
+            },
+            {
+              "start": 257,
+              "end": 269
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for en families rejsevaner, at de fravælger flyrejser?",
+            "fa": "به نظرت پرواز نکردن چه تأثیری بر عادت‌های سفر یک خانواده دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, familien rejser kortere og oftere i Danmark eller Europa. Rejsen tager længere tid, men den bliver en del af oplevelsen. Børnene lærer også at tænke på klimaet."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          67
+        ]
+      }
+    },
+    {
+      "id": "2021-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "køb i genbrugsbutikker (indkøbsvaner)",
+        "fa": "خرید از مغازه‌های دست‌دوم"
+      },
+      "intro": {
+        "id": "2021-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der køber tøj i en genbrugsbutik."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2021-maj-b.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der køber deres tøj og andre ting i genbrugsbutikker. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها لباس و وسایلشان را از مغازه‌های دست‌دوم می‌خرند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2021-maj-b.sitB.q1.kw1",
+            "emoji": "💰",
+            "text": {
+              "da": "billigere",
+              "fa": "ارزان‌تر"
+            }
+          },
+          {
+            "id": "2021-maj-b.sitB.q1.kw2",
+            "emoji": "♻️",
+            "text": {
+              "da": "godt for miljøet",
+              "fa": "خوب برای محیط زیست"
+            }
+          },
+          {
+            "id": "2021-maj-b.sitB.q1.kw3",
+            "emoji": "✨",
+            "text": {
+              "da": "unikke ting",
+              "fa": "چیزهای خاص"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2021-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er det billigere. For det andet er det godt for miljøet, fordi tingene bliver brugt igen. Desuden kan man finde unikke ting, som andre ikke har. Så alt i alt handler det om pris, miljø og stil."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 68,
+              "end": 81
+            },
+            {
+              "start": 140,
+              "end": 147
+            },
+            {
+              "start": 195,
+              "end": 207
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2021-maj-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for miljøet, at der er nogle, der køber deres tøj og andre ting i genbrugsbutikker?",
+            "fa": "به نظرت خرید از مغازه‌های دست‌دوم چه تأثیری بر محیط زیست دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2021-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget for miljøet. Der skal produceres mindre nyt tøj, og produktion af tøj bruger meget vand og energi. Der bliver også mindre affald."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          67
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2021-maj-b.general",
+    "question": {
+      "id": "2021-maj-b.general.q2",
+      "text": {
+        "da": "Der er nogle, der mener, at Danmark i løbet af de næste 10 år skal skifte til at bruge 100 % grøn energi. Hvilke fordele og ulemper mener du, der kan være ved det for danske virksomheder?",
+        "fa": "بعضی‌ها معتقدند دانمارک باید در ۱۰ سال آینده ۱۰۰٪ به انرژی سبز برسد. مزایا و معایبش برای شرکت‌های دانمارکی؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2021-maj-b.general.q2.kw1",
+          "emoji": "🌬️",
+          "text": {
+            "da": "grøn teknologi og eksport",
+            "fa": "فناوری سبز و صادرات"
+          }
+        },
+        {
+          "id": "2021-maj-b.general.q2.kw2",
+          "emoji": "👷",
+          "text": {
+            "da": "nye job",
+            "fa": "شغل‌های جدید"
+          }
+        },
+        {
+          "id": "2021-maj-b.general.q2.kw3",
+          "emoji": "💸",
+          "text": {
+            "da": "dyr omstilling",
+            "fa": "گذار گران"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2021-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for virksomhederne. En fordel er, at danske virksomheder kan blive førende inden for grøn teknologi, for eksempel vindmøller. Det kan skabe nye job og eksport. En anden fordel er, at de får et godt image. På den anden side er en ulempe, at omstillingen er dyr, og 10 år er kort tid. Nogle virksomheder kan få svært ved at konkurrere med udlandet. Alt i alt mener jeg, at det er en god idé, men staten skal hjælpe virksomhederne."
+        },
+        "emphasis": [
+          {
+            "start": 59,
+            "end": 75
+          },
+          {
+            "start": 199,
+            "end": 221
+          },
+          {
+            "start": 244,
+            "end": 278
+          },
+          {
+            "start": 386,
+            "end": 409
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2021-maj-b.general.followup1",
+        "text": {
+          "da": "Tror du, det vil betyde noget for den enkelte borgers livsstil, hvis Danmark i løbet af de næste 10 år skal skifte til at bruge 100 % grøn energi?",
+          "fa": "به نظرت گذار ۱۰ساله به ۱۰۰٪ انرژی سبز روی سبک زندگی تک‌تک شهروندان اثر می‌گذارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2021-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Ja, det tror jeg. Folk skal måske køre i elbil, have en varmepumpe og spare på energien. Det kan være dyrt i starten, men på lang sigt kan det blive billigere."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        68
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      67,
+      68
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-nov-a",
+  "termId": "2017-nov",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdsmiljoe-trivsel-og-stress",
+  "title": {
+    "da": "Arbejdsforhold",
+    "fa": "شرایط کاری"
+  },
+  "situations": [
+    {
+      "id": "2017-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "arbejde freelance uden fast indkomst",
+        "fa": "فریلنس کار کردن بدون درآمد ثابت"
+      },
+      "intro": {
+        "id": "2017-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser en person, der arbejder freelance."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-a.sitA.q1",
+        "text": {
+          "da": "Nogle mennesker arbejder freelance, selvom de så ikke har et fast arbejde eller en fast indkomst. Hvorfor tror du alligevel, de gør det?",
+          "fa": "بعضی‌ها فریلنس کار می‌کنند، با اینکه کار و درآمد ثابت ندارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-a.sitA.q1.kw1",
+            "emoji": "👑",
+            "text": {
+              "da": "sin egen chef",
+              "fa": "رئیس خودت"
+            }
+          },
+          {
+            "id": "2017-nov-a.sitA.q1.kw2",
+            "emoji": "🎯",
+            "text": {
+              "da": "vælge opgaver",
+              "fa": "انتخاب کارها"
+            }
+          },
+          {
+            "id": "2017-nov-a.sitA.q1.kw3",
+            "emoji": "🌍",
+            "text": {
+              "da": "arbejde hvor som helst",
+              "fa": "کار از هر جا"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er man sin egen chef, og man bestemmer selv over sin tid. For det andet kan man vælge de opgaver, man synes er spændende. Desuden kan man arbejde hjemme eller fra hele verden. Så alt i alt handler det om frihed og fleksibilitet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 108,
+              "end": 121
+            },
+            {
+              "start": 172,
+              "end": 179
+            },
+            {
+              "start": 226,
+              "end": 238
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-a.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at arbejde freelance? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است فریلنس کار کردن مشکلاتی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at arbejde freelance?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2017-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, der kan godt være nogle problemer. Indkomsten er usikker, og man har måske ikke ferie med løn eller pension. Man kan også føle sig ensom uden kolleger."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "id": "2017-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "arbejde sammen i teams",
+        "fa": "کار تیمی"
+      },
+      "intro": {
+        "id": "2017-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle kolleger, der arbejder sammen i et team."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-a.sitB.q1",
+        "text": {
+          "da": "På mange arbejdspladser forventes det, at medarbejderne arbejder sammen. Hvorfor tror du, det er sådan?",
+          "fa": "در بسیاری از محل‌های کار انتظار می‌رود کارمندها با هم کار کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-a.sitB.q1.kw1",
+            "emoji": "🧩",
+            "text": {
+              "da": "store opgaver",
+              "fa": "کارهای بزرگ"
+            }
+          },
+          {
+            "id": "2017-nov-a.sitB.q1.kw2",
+            "emoji": "💡",
+            "text": {
+              "da": "flere ideer",
+              "fa": "ایده‌های بیشتر"
+            }
+          },
+          {
+            "id": "2017-nov-a.sitB.q1.kw3",
+            "emoji": "📚",
+            "text": {
+              "da": "lære af hinanden",
+              "fa": "یاد گرفتن از هم"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er opgaverne i dag ofte så store, at én person ikke kan løse dem alene. For det andet får man flere ideer, når man arbejder sammen. Desuden lærer man af hinanden. Så alt i alt giver samarbejde bedre resultater."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 122,
+              "end": 135
+            },
+            {
+              "start": 182,
+              "end": 189
+            },
+            {
+              "start": 213,
+              "end": 225
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-a.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at arbejde sammen i teams? Hvorfor / hvorfor ikke?",
+            "fa": "آیا کار تیمی می‌تواند مشکلاتی داشته باشد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at arbejde sammen i teams?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2017-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Der kan opstå konflikter, hvis man er uenige. Nogle arbejder meget, mens andre arbejder mindre. Men med en god leder kan man løse de fleste problemer."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          18,
+          19
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-nov-a.general",
+    "question": {
+      "id": "2017-nov-a.general.q2",
+      "text": {
+        "da": "Meget arbejde foregår i dag i projekter, hvor det er almindeligt, at medarbejderne selv skal planlægge deres arbejdsopgaver og deres arbejdstid. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "امروزه کار زیادی پروژه‌ای است و کارمندها خودشان کارها و ساعت کاری‌شان را برنامه‌ریزی می‌کنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-nov-a.general.q2.kw1",
+          "emoji": "🕊️",
+          "text": {
+            "da": "frihed og ansvar",
+            "fa": "آزادی و مسئولیت"
+          }
+        },
+        {
+          "id": "2017-nov-a.general.q2.kw2",
+          "emoji": "👨‍👩‍👧",
+          "text": {
+            "da": "passer med familien",
+            "fa": "هماهنگ با خانواده"
+          }
+        },
+        {
+          "id": "2017-nov-a.general.q2.kw3",
+          "emoji": "😰",
+          "text": {
+            "da": "arbejder for meget",
+            "fa": "کار بیش از حد"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at medarbejderne får frihed og ansvar, og det gør dem motiverede. En anden fordel er, at de kan få arbejdet til at passe med familielivet. På den anden side er en ulempe, at nogle har svært ved at planlægge og stoppe igen. Så kan de komme til at arbejde for meget og få stress. Alt i alt mener jeg, at det er en god arbejdsform, hvis der er klare mål."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 120,
+            "end": 142
+          },
+          {
+            "start": 193,
+            "end": 227
+          },
+          {
+            "start": 332,
+            "end": 355
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-nov-a.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for balancen mellem arbejde og fritid, at medarbejderne selv skal planlægge deres arbejdsopgaver og arbejdstid?",
+          "fa": "به نظرت این که کارمندها خودشان کار و ساعتشان را برنامه‌ریزی کنند چه تأثیری بر تعادل کار و وقت آزاد دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2017-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det kan gå begge veje. På den ene side kan man hente børn tidligt og arbejde om aftenen. På den anden side bliver grænsen mellem arbejde og fritid uklar. Man skal være god til at sige stop."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        19
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      18,
+      19
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

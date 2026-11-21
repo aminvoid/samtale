@@ -1,0 +1,955 @@
+{
+  "schemaVersion": 0,
+  "notes": [
+    {
+      "id": "2016-maj-a.note1",
+      "topicId": "2016-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (مجازات نشدن جوانان زیر ۱۵ سال) دوباره در Maj-Juni 2021 C آمده ← جواب یکسان. 📌 سن مسئولیت کیفری در دانمارک ۱۵ سال است."
+      },
+      "refs": [
+        "2021-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          80
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2016-maj-c.note1",
+      "topicId": "2016-maj-c",
+      "kind": "nursing",
+      "text": {
+        "fa": "این موضوع تخصص خودت است؛ با اعتمادبه‌نفس از تجربه‌ی پرستاری مثال بزن."
+      },
+      "refs": [],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          48
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2016-nov-a.note1",
+      "topicId": "2016-nov-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A (وام با وجود SU) دوباره در Maj-Juni 2023 B آمده ← جواب یکسان. سؤال کلی (والدین برای بچه آپارتمان می‌خرند) در Nov-Dec 2019 C هم آمده."
+      },
+      "refs": [
+        "2023-maj-b",
+        "2019-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          38
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2016-nov-a.sitB.note1",
+      "topicId": "2016-nov-a",
+      "sectionId": "2016-nov-a.sitB",
+      "kind": "tip",
+      "text": {
+        "fa": "RKI = فهرست بدهکاران در دانمارک (کسی که در RKI باشد نمی‌تواند وام یا قرارداد بگیرد)."
+      },
+      "refs": [],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          39
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2016-nov-b.note1",
+      "topicId": "2016-nov-b",
+      "kind": "related",
+      "text": {
+        "fa": "سؤال کلی شبیه Nov-Dec 2013 C (تربیت و مرز گذاشتن) در ضمیمه است."
+      },
+      "refs": [
+        "2013-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          73
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-maj-a.note1",
+      "topicId": "2017-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A (کار در کنار تحصیل) دوباره در Maj-Juni 2023 B آمده. سؤال کلی (کار و سفر قبل از دانشگاه) شبیه Nov-Dec 2018 B و Nov-Dec 2021 C است."
+      },
+      "refs": [
+        "2023-maj-b",
+        "2018-nov-b",
+        "2021-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          40
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-maj-b.note1",
+      "topicId": "2017-maj-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (سن بازنشستگی یکسان برای همه) دوباره در Nov-Dec 2023 B آمده ← جواب یکسان. موقعیت A هم در ۲۰۲۳ تکرار شده."
+      },
+      "refs": [
+        "2023-nov-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          29
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-maj-c.note1",
+      "topicId": "2017-maj-c",
+      "kind": "related",
+      "text": {
+        "fa": "خیلی شبیه Maj-Juni 2020 A (زمان آنلاین کودکان) است ← دلیل‌ها را مشترک حفظ کن."
+      },
+      "refs": [
+        "2020-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          57
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-nov-a.note1",
+      "topicId": "2017-nov-a",
+      "kind": "related",
+      "text": {
+        "fa": "سؤال کلی شبیه Nov-Dec 2013 B (کار تیمی) در ضمیمه است."
+      },
+      "refs": [
+        "2013-nov-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          18
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-nov-b.note1",
+      "topicId": "2017-nov-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A دوباره در Maj-Juni 2023 A (موقعیت B) آمده ← جواب یکسان."
+      },
+      "refs": [
+        "2023-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          59
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2017-nov-c.note1",
+      "topicId": "2017-nov-c",
+      "kind": "related",
+      "text": {
+        "fa": "سؤال کلی شبیه Maj-Juni 2019 B (چک کردن ایمیل کاری در شب)."
+      },
+      "refs": [
+        "2019-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          20
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2018-maj-a.note1",
+      "topicId": "2018-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B (بازنشسته‌ها) در Nov-Dec 2020 B و شبیه Maj-Juni 2017 B تکرار شده ← جواب یکسان. سؤال کلی هم شبیه Nov-Dec 2020 B است."
+      },
+      "refs": [
+        "2020-nov-b",
+        "2017-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          91
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2018-maj-c.note1",
+      "topicId": "2018-maj-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B شبیه سؤال کلی Maj-Juni 2023 A (خواندن اخبار در شبکه‌های اجتماعی) است."
+      },
+      "refs": [
+        "2023-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          60
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2018-nov-a.note1",
+      "topicId": "2018-nov-a",
+      "kind": "related",
+      "text": {
+        "fa": "موقعیت A شبیه Nov-Dec 2013 A (برنامه‌های اجتماعی محل کار) در ضمیمه است."
+      },
+      "refs": [
+        "2013-nov-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          23
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2018-nov-b.note1",
+      "topicId": "2018-nov-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (تحصیل رایگان) دوباره در Maj-Juni 2023 B آمده ← جواب یکسان."
+      },
+      "refs": [
+        "2023-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          42
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2018-nov-c.note1",
+      "topicId": "2018-nov-c",
+      "kind": "related",
+      "text": {
+        "fa": "به Maj-Juni 2024 C (نمره ندادن در کلاس‌های اول) و Nov-Dec 2022 A (فشار نمره) وصل است."
+      },
+      "refs": [
+        "2024-maj-c",
+        "2022-nov-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          75
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-maj-a.note1",
+      "topicId": "2019-maj-a",
+      "kind": "related",
+      "text": {
+        "fa": "به Nov-Dec 2021 B (عادت‌های حمل‌ونقل) و Nov-Dec 2014 C (ترافیک ساعت شلوغی، ضمیمه) وصل است."
+      },
+      "refs": [
+        "2021-nov-b",
+        "2014-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          65
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-maj-b.note1",
+      "topicId": "2019-maj-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (هفته‌ی کاری ۳۰ ساعته) دوباره در Maj-Juni 2022 A آمده ← جواب یکسان. موقعیت A (پاره‌وقت) هم در ۲۰۲۲ تکرار شده."
+      },
+      "refs": [
+        "2022-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          24
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-maj-c.note1",
+      "topicId": "2019-maj-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A (رایگان بودن موزه) شبیه Maj-Juni 2024 A است. سؤال کلی و سؤال تکمیلی 2024 هر دو درباره‌ی «خرج پول شهرداری» است."
+      },
+      "refs": [
+        "2024-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          95
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-nov-a.note1",
+      "topicId": "2019-nov-a",
+      "kind": "related",
+      "text": {
+        "fa": "شبیه Maj-Juni 2014 B (تحصیل و جنسیت) در ضمیمه است."
+      },
+      "refs": [
+        "2014-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          32
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-nov-b.note1",
+      "topicId": "2019-nov-b",
+      "kind": "related",
+      "text": {
+        "fa": "موقعیت B (گیاه‌خواری) دوباره در Nov-Dec 2023 C آمده."
+      },
+      "refs": [
+        "2023-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          50
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2019-nov-c.note1",
+      "topicId": "2019-nov-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B شبیه سؤال کلی Nov-Dec 2016 A است."
+      },
+      "refs": [
+        "2016-nov-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          87
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-maj-a.note1",
+      "topicId": "2020-maj-a",
+      "kind": "related",
+      "text": {
+        "fa": "خیلی شبیه Maj-Juni 2017 C (تبلت بچه‌ها) است."
+      },
+      "refs": [
+        "2017-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          62
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-maj-b.note1",
+      "topicId": "2020-maj-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B (بیمارستان خصوصی) دوباره به‌عنوان سؤال کلی در Nov-Dec 2023 A آمده."
+      },
+      "refs": [
+        "2023-nov-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          52
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-maj-c.note1",
+      "topicId": "2020-maj-c",
+      "kind": "related",
+      "text": {
+        "fa": "شبیه Nov-Dec 2013 A و Maj-Juni 2014 C (یاد گرفتن دانمارکی با وجود انگلیسی) در ضمیمه است."
+      },
+      "refs": [
+        "2013-nov-a",
+        "2014-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          34
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-nov-a.note1",
+      "topicId": "2020-nov-a",
+      "kind": "related",
+      "text": {
+        "fa": "موقعیت A شبیه Nov-Dec 2014 A (والدین مسن) در ضمیمه است."
+      },
+      "refs": [
+        "2014-nov-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          26
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-nov-b.note1",
+      "topicId": "2020-nov-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B = Maj-Juni 2018 A (موقعیت B) ← جواب یکسان."
+      },
+      "refs": [
+        "2018-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          93
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2020-nov-c.note1",
+      "topicId": "2020-nov-c",
+      "kind": "related",
+      "text": {
+        "fa": "شبیه Maj-Juni 2014 A (سبک زندگی سالم، سیگار جوانان، مالیات) در ضمیمه است."
+      },
+      "refs": [
+        "2014-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          54
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2021-maj-a.note1",
+      "topicId": "2021-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی تقریباً همان Maj-Juni 2023 C است (حمایت مالی از بیکاران) ← جواب یکسان حفظ کن."
+      },
+      "refs": [
+        "2023-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          14
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2021-maj-b.note1",
+      "topicId": "2021-maj-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A (پرواز و اقلیم) دوباره در Nov-Dec 2023 C آمده."
+      },
+      "refs": [
+        "2023-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          67
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2021-maj-c.note1",
+      "topicId": "2021-maj-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی = Maj-Juni 2016 A ← همان جواب."
+      },
+      "refs": [
+        "2016-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          82
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2021-nov-b.note1",
+      "topicId": "2021-nov-b",
+      "kind": "related",
+      "text": {
+        "fa": "موقعیت B شبیه Nov-Dec 2014 C (ترافیک ساعت شلوغی) در ضمیمه است."
+      },
+      "refs": [
+        "2014-nov-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          70
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2021-nov-c.note1",
+      "topicId": "2021-nov-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (یک یا دو سال وقفه بعد از دبیرستان) شبیه Maj-Juni 2017 A و Nov-Dec 2018 B است."
+      },
+      "refs": [
+        "2017-maj-a",
+        "2018-nov-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          43
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2022-maj-a.note1",
+      "topicId": "2022-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی = Maj-Juni 2019 B (۳۰ ساعت) ← جواب یکسان. موقعیت A هم همان پاره‌وقت ۲۰۱۹ است."
+      },
+      "refs": [
+        "2019-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          27
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2022-maj-b.note1",
+      "topicId": "2022-maj-b",
+      "kind": "related",
+      "text": {
+        "fa": "در Nov-Dec 2012 هم موضوع Overvågning آمده بود (فقط عنوان در ضمیمه)."
+      },
+      "refs": [],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          83
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2022-nov-a.note1",
+      "topicId": "2022-nov-a",
+      "kind": "related",
+      "text": {
+        "fa": "سؤال کلی به موضوع Maj-Juni 2024 B (کمبود نیرو در صنعت ساختمان) وصل است."
+      },
+      "refs": [
+        "2024-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          45
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-maj-a.note1",
+      "topicId": "2023-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B = Nov-Dec 2017 B (موقعیت A) ← جواب یکسان. سؤال کلی شبیه Maj-Juni 2018 C است."
+      },
+      "refs": [
+        "2017-nov-b",
+        "2018-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          63
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-maj-b.note1",
+      "topicId": "2023-maj-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت B = Nov-Dec 2016 A (وام تحصیلی) و سؤال کلی = Nov-Dec 2018 B (تحصیل رایگان) ← جواب‌های یکسان."
+      },
+      "refs": [
+        "2016-nov-a",
+        "2018-nov-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          46
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-maj-c.note1",
+      "topicId": "2023-maj-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی = همان Maj-Juni 2021 A ← همان جواب. موقعیت A شبیه سؤال B از ۲۰۲۱ (کارجوهای مسن) است."
+      },
+      "refs": [
+        "2021-maj-a"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          17
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-nov-a.note1",
+      "topicId": "2023-nov-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "سؤال کلی (بیمارستان خصوصی) شبیه موقعیت B از Maj-Juni 2020 B است."
+      },
+      "refs": [
+        "2020-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          55
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-nov-b.note1",
+      "topicId": "2023-nov-b",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A و سؤال کلی = Maj-Juni 2017 B ← همان جواب‌ها."
+      },
+      "refs": [
+        "2017-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          31
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2023-nov-c.note1",
+      "topicId": "2023-nov-c",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A شبیه Nov-Dec 2019 B (وگان) و موقعیت B شبیه Maj-Juni 2021 B (پرواز نکردن) است."
+      },
+      "refs": [
+        "2019-nov-b",
+        "2021-maj-b"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          71
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2024-maj-a.note1",
+      "topicId": "2024-maj-a",
+      "kind": "recurring",
+      "text": {
+        "fa": "موقعیت A شبیه Maj-Juni 2019 C (موزه‌ی رایگان) است."
+      },
+      "refs": [
+        "2019-maj-c"
+      ],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          97
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2024-maj-b.note1",
+      "topicId": "2024-maj-b",
+      "kind": "highlight",
+      "text": {
+        "fa": "همین موضوع (نیروی کار خارجی) در Skriftlig 2026 هم آمد. تجربه‌ی خودت به‌عنوان پرستار بهترین مثال است."
+      },
+      "refs": [],
+      "confidentialityHits": [
+        "2026",
+        "Skriftlig 2026"
+      ],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          36
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    },
+    {
+      "id": "2024-maj-c.note1",
+      "topicId": "2024-maj-c",
+      "kind": "tip",
+      "text": {
+        "fa": "در موقعیت B سؤال درباره‌ی نمره ندادن در کلاس‌های اول است، نه کار گروهی."
+      },
+      "refs": [],
+      "confidentialityHits": [],
+      "visibility": "internal",
+      "source": {
+        "pages": [
+          78
+        ]
+      },
+      "review": {
+        "status": "extracted"
+      }
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-maj-c",
+  "termId": "2020-maj",
+  "letter": "C",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.koen-sprog-og-udenlandsk-arbejdskraft",
+  "title": {
+    "da": "Arbejde og sprog",
+    "fa": "کار و زبان"
+  },
+  "situations": [
+    {
+      "id": "2020-maj-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "dansk på arbejdspladsen — danskkurser til udenlandske ansatte",
+        "fa": "شرکت برای کارمند خارجی کلاس زبان دانمارکی می‌گیرد"
+      },
+      "intro": {
+        "id": "2020-maj-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle udenlandske medarbejdere på et danskkursus på arbejdspladsen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-c.sitA.q1",
+        "text": {
+          "da": "Nogle firmaer betaler for danskkurser til deres udenlandske medarbejdere, selvom virksomhedssproget er engelsk. Hvorfor tror du, de gør det?",
+          "fa": "بعضی شرکت‌ها برای کارمندان خارجی‌شان هزینه‌ی کلاس دانمارکی می‌دهند، با اینکه زبان شرکت انگلیسی است. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-c.sitA.q1.kw1",
+            "emoji": "🧩",
+            "text": {
+              "da": "integration",
+              "fa": "ادغام"
+            }
+          },
+          {
+            "id": "2020-maj-c.sitA.q1.kw2",
+            "emoji": "🗣️",
+            "text": {
+              "da": "tale med kunder og kolleger",
+              "fa": "حرف زدن با مشتری و همکار"
+            }
+          },
+          {
+            "id": "2020-maj-c.sitA.q1.kw3",
+            "emoji": "🏢",
+            "text": {
+              "da": "bliver længere i firmaet",
+              "fa": "ماندن طولانی‌تر در شرکت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første bliver medarbejderne bedre integreret på arbejdspladsen. For det andet kan de tale med kunder og kolleger, der ikke taler engelsk. Desuden bliver de glade og bliver måske længere i firmaet. Så alt i alt er det en god investering for firmaet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 107,
+              "end": 120
+            },
+            {
+              "start": 181,
+              "end": 188
+            },
+            {
+              "start": 240,
+              "end": 252
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-c.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for det kollegiale samvær på arbejdspladsen, at de udenlandske medarbejdere lærer dansk?",
+            "fa": "به نظرت یاد گرفتن دانمارکی توسط کارمندان خارجی چه تأثیری بر روابط همکاران دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-maj-c.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget. I frokostpausen taler man ofte dansk, og hvis man ikke forstår det, bliver man udenfor. Når man lærer dansk, kan man forstå humoren og blive en del af fællesskabet."
+            }
+          }
+        }
+      ],
+      "personalExamples": [
+        {
+          "id": "2020-maj-c.sitA.example1",
+          "label": {
+            "fa": "مثال شخصی"
+          },
+          "text": {
+            "da": "Jeg har selv lært dansk, og det har gjort det meget nemmere at tale med patienter og kolleger."
+          }
+        }
+      ],
+      "source": {
+        "pages": [
+          34
+        ]
+      }
+    },
+    {
+      "id": "2020-maj-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "engelsk som undervisningssprog på uddannelser",
+        "fa": "زبان انگلیسی به‌عنوان زبان تحصیل"
+      },
+      "intro": {
+        "id": "2020-maj-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle studerende, der bliver undervist på engelsk."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-c.sitB.q1",
+        "text": {
+          "da": "Der er flere og flere uddannelser i Danmark, hvor studiesproget er engelsk. Hvorfor tror du, det er sådan?",
+          "fa": "رشته‌های بیشتری در دانمارک به زبان انگلیسی تدریس می‌شوند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-c.sitB.q1.kw1",
+            "emoji": "🌍",
+            "text": {
+              "da": "udenlandske studerende",
+              "fa": "دانشجوی خارجی"
+            }
+          },
+          {
+            "id": "2020-maj-c.sitB.q1.kw2",
+            "emoji": "🇬🇧",
+            "text": {
+              "da": "bedre til engelsk",
+              "fa": "انگلیسی بهتر"
+            }
+          },
+          {
+            "id": "2020-maj-c.sitB.q1.kw3",
+            "emoji": "🏢",
+            "text": {
+              "da": "virksomheder bruger engelsk",
+              "fa": "شرکت‌ها انگلیسی کار می‌کنند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil universiteterne tiltrække udenlandske studerende og forskere. For det andet bliver de danske studerende bedre til engelsk. Desuden bruger mange virksomheder engelsk i dag. Så alt i alt handler det om globalisering."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 116,
+              "end": 129
+            },
+            {
+              "start": 177,
+              "end": 184
+            },
+            {
+              "start": 226,
+              "end": 238
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-c.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at studiesproget på flere og flere uddannelser i Danmark er engelsk?",
+            "fa": "آیا ممکن است انگلیسی بودن زبان تحصیل در رشته‌های بیشتر مشکلی ایجاد کند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-maj-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Det danske sprog kan blive svækket inden for fagene. Og mange udenlandske studerende rejser hjem efter uddannelsen, så Danmark får ikke noget igen."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          34,
+          35
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-maj-c.general",
+    "question": {
+      "id": "2020-maj-c.general.q2",
+      "text": {
+        "da": "Udlændinge kan ofte arbejde i Danmark uden at kunne tale dansk, hvis de kan tale engelsk. Hvilke fordele og ulemper mener du, der kan være ved det for det danske samfund?",
+        "fa": "خارجی‌ها اغلب می‌توانند بدون دانمارکی و فقط با انگلیسی در دانمارک کار کنند. مزایا و معایبش برای جامعه؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-maj-c.general.q2.kw1",
+          "emoji": "⚡",
+          "text": {
+            "da": "hurtig arbejdskraft",
+            "fa": "نیروی کار سریع"
+          }
+        },
+        {
+          "id": "2020-maj-c.general.q2.kw2",
+          "emoji": "🌍",
+          "text": {
+            "da": "mere internationalt",
+            "fa": "بین‌المللی‌تر"
+          }
+        },
+        {
+          "id": "2020-maj-c.general.q2.kw3",
+          "emoji": "🚧",
+          "text": {
+            "da": "dårlig integration",
+            "fa": "ادغام ضعیف"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-maj-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det for samfundet. En fordel er, at virksomhederne hurtigt kan få den arbejdskraft, de mangler. En anden fordel er, at Danmark bliver mere internationalt. På den anden side er en ulempe, at udlændingene ikke bliver integreret. De har svært ved at tale med naboer og myndigheder. Alt i alt mener jeg, at det er fint i starten, men på lang sigt bør man lære dansk."
+        },
+        "emphasis": [
+          {
+            "start": 54,
+            "end": 70
+          },
+          {
+            "start": 131,
+            "end": 153
+          },
+          {
+            "start": 190,
+            "end": 224
+          },
+          {
+            "start": 314,
+            "end": 337
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-maj-c.general.followup1",
+        "text": {
+          "da": "Hvad tror du, det betyder for udenlandske medarbejderes muligheder for at blive integreret i det danske samfund, at de kan klare sig på engelsk?",
+          "fa": "به نظرت این که خارجی‌ها با انگلیسی کارشان را پیش می‌برند چه تأثیری بر فرصت ادغامشان در جامعه دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2020-maj-c.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, det gør integrationen sværere. Hvis man kun taler engelsk, får man ofte kun udenlandske venner, og man forstår ikke nyhederne og samfundet. Sproget er nøglen til integration."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        35
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      34,
+      35
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

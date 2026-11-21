@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 0,
+  "id": "2018-nov-a",
+  "termId": "2018-nov",
+  "letter": "A",
+  "themeId": "arbejde",
+  "subthemeId": "arbejde.arbejdsmiljoe-trivsel-og-stress",
+  "title": {
+    "da": "Arbejdsmiljø",
+    "fa": "محیط کار"
+  },
+  "situations": [
+    {
+      "id": "2018-nov-a.sitA",
+      "key": "A",
+      "title": {
+        "da": "sociale arrangementer (firmafester og skovture)",
+        "fa": "برنامه‌های اجتماعی (جشن شرکت، گردش)"
+      },
+      "intro": {
+        "id": "2018-nov-a.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle kolleger, der er til firmafest."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-a.sitA.q1",
+        "text": {
+          "da": "På mange arbejdspladser har man sociale arrangementer som fx firmafester og skovture. Hvorfor tror du, man har det?",
+          "fa": "در بسیاری از محل‌های کار برنامه‌های اجتماعی مثل جشن شرکت و گردش دارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-a.sitA.q1.kw1",
+            "emoji": "👫",
+            "text": {
+              "da": "lære hinanden at kende",
+              "fa": "آشنایی بیشتر"
+            }
+          },
+          {
+            "id": "2018-nov-a.sitA.q1.kw2",
+            "emoji": "🏡",
+            "text": {
+              "da": "fællesskab",
+              "fa": "حس جمعی"
+            }
+          },
+          {
+            "id": "2018-nov-a.sitA.q1.kw3",
+            "emoji": "🙏",
+            "text": {
+              "da": "sige tak",
+              "fa": "تشکر از کارمندان"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-a.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første lærer kollegerne hinanden bedre at kende uden for arbejdet. For det andet skaber det fællesskab og et godt arbejdsmiljø. Desuden er det en måde at sige tak til medarbejderne på. Så alt i alt handler det om fællesskab og trivsel."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 110,
+              "end": 123
+            },
+            {
+              "start": 171,
+              "end": 178
+            },
+            {
+              "start": 228,
+              "end": 240
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-a.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for medarbejdernes tilfredshed med deres arbejde, at man har sociale arrangementer?",
+            "fa": "به نظرت برنامه‌های اجتماعی چه تأثیری بر رضایت کارمندان از کارشان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-nov-a.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder meget. Når man kender sine kolleger godt, er det sjovere at gå på arbejde, og man hjælper hinanden mere. Men det skal være frivilligt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "2018-nov-a.sitB",
+      "key": "B",
+      "title": {
+        "da": "kursus i teambuilding",
+        "fa": "دوره‌ی تیم‌سازی"
+      },
+      "intro": {
+        "id": "2018-nov-a.sitB.intro",
+        "text": {
+          "da": "Situation B viser nogle kolleger på et kursus i teambuilding."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2018-nov-a.sitB.q1",
+        "text": {
+          "da": "På mange arbejdspladser kommer medarbejderne på kursus i teambuilding. Hvorfor tror du, de gør det?",
+          "fa": "در بسیاری از محل‌های کار، کارمندها به دوره‌ی تیم‌سازی می‌روند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2018-nov-a.sitB.q1.kw1",
+            "emoji": "🤝",
+            "text": {
+              "da": "samarbejde bedre",
+              "fa": "همکاری بهتر"
+            }
+          },
+          {
+            "id": "2018-nov-a.sitB.q1.kw2",
+            "emoji": "💪",
+            "text": {
+              "da": "styrker og svagheder",
+              "fa": "نقاط قوت و ضعف"
+            }
+          },
+          {
+            "id": "2018-nov-a.sitB.q1.kw3",
+            "emoji": "🕊️",
+            "text": {
+              "da": "løse konflikter",
+              "fa": "حل اختلاف"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2018-nov-a.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første skal medarbejderne lære at samarbejde bedre. For det andet lærer man hinandens styrker og svagheder at kende. Desuden kan det løse konflikter i en gruppe. Så alt i alt handler det om bedre samarbejde og bedre resultater."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 95,
+              "end": 108
+            },
+            {
+              "start": 160,
+              "end": 167
+            },
+            {
+              "start": 205,
+              "end": 217
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2018-nov-a.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for medarbejdernes tilfredshed med deres arbejde, at de kommer på kursus i teambuilding?",
+            "fa": "به نظرت دوره‌ی تیم‌سازی چه تأثیری بر رضایت کارمندان دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2018-nov-a.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan gøre medarbejderne mere tilfredse, fordi de føler sig som et hold. Men hvis kurset ikke hænger sammen med det daglige arbejde, hjælper det ikke."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          23
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2018-nov-a.general",
+    "question": {
+      "id": "2018-nov-a.general.q2",
+      "text": {
+        "da": "I nogle virksomheder giver man en bonus – altså en ekstra sum penge – til medarbejdere, hvis de gør en særlig indsats. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "بعضی شرکت‌ها به کارمندی که تلاش ویژه‌ای کرده پاداش (bonus) می‌دهند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2018-nov-a.general.q2.kw1",
+          "emoji": "🚀",
+          "text": {
+            "da": "motivation",
+            "fa": "انگیزه"
+          }
+        },
+        {
+          "id": "2018-nov-a.general.q2.kw2",
+          "emoji": "👏",
+          "text": {
+            "da": "anerkendelse",
+            "fa": "قدردانی"
+          }
+        },
+        {
+          "id": "2018-nov-a.general.q2.kw3",
+          "emoji": "😒",
+          "text": {
+            "da": "misundelse",
+            "fa": "حسادت"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2018-nov-a.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at medarbejderne bliver motiverede til at gøre en ekstra indsats. En anden fordel er, at de føler sig set og anerkendt. På den anden side er en ulempe, at det kan skabe konkurrence og misundelse mellem kollegerne. Alt i alt mener jeg, at en bonus til hele teamet er bedre end en bonus til én person."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 120,
+            "end": 142
+          },
+          {
+            "start": 174,
+            "end": 208
+          },
+          {
+            "start": 268,
+            "end": 291
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2018-nov-a.general.followup1",
+        "text": {
+          "da": "Hvordan tror du, en bonus påvirker samarbejdet mellem medarbejderne? Og mellem medarbejderne og ledelsen?",
+          "fa": "به نظرت پاداش چه تأثیری بر همکاری بین کارمندان و بین کارمندان و مدیریت دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2018-nov-a.general.followup1.answer",
+          "text": {
+            "da": "Jeg tror, en bonus kan skabe konkurrence, så medarbejderne deler mindre viden. Hvis ledelsen er uretfærdig, kan tilliden også falde. Men en fælles bonus kan styrke samarbejdet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        24
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      23,
+      24
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

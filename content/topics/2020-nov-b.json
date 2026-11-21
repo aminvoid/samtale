@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-nov-b",
+  "termId": "2020-nov",
+  "letter": "B",
+  "themeId": "frivillig",
+  "title": {
+    "da": "Frivilligt arbejde",
+    "fa": "کار داوطلبانه"
+  },
+  "situations": [
+    {
+      "id": "2020-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "forældre med hjemmeboende børn som frivillige",
+        "fa": "والدینی که بچه‌ی ساکن خانه دارند و داوطلب‌اند"
+      },
+      "intro": {
+        "id": "2020-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle forældre, der har børn derhjemme og samtidig arbejder frivilligt."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-b.sitA.q1",
+        "text": {
+          "da": "Mange af dem, der arbejder frivilligt, er forældre med hjemmeboende børn. Hvorfor tror du, det er sådan?",
+          "fa": "خیلی از کسانی که کار داوطلبانه می‌کنند، والدینی هستند که بچه‌هایشان هنوز در خانه زندگی می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-b.sitA.q1.kw1",
+            "emoji": "⚽",
+            "text": {
+              "da": "træner i børnenes klub",
+              "fa": "مربی در باشگاه بچه‌ها"
+            }
+          },
+          {
+            "id": "2020-nov-b.sitA.q1.kw2",
+            "emoji": "👨‍👧",
+            "text": {
+              "da": "del af børnenes fritid",
+              "fa": "بخشی از اوقات بچه‌ها"
+            }
+          },
+          {
+            "id": "2020-nov-b.sitA.q1.kw3",
+            "emoji": "⭐",
+            "text": {
+              "da": "gode rollemodeller",
+              "fa": "الگوی خوب"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er mange frivillige trænere eller ledere i deres børns sportsklub eller spejdergruppe. For det andet vil de gerne være en del af børnenes fritid. Desuden vil de gerne være gode rollemodeller. Så alt i alt handler det om børnene og fællesskabet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 137,
+              "end": 150
+            },
+            {
+              "start": 196,
+              "end": 203
+            },
+            {
+              "start": 242,
+              "end": 254
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-b.sitA.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for familielivet, at mange af dem, der arbejder frivilligt, er forældre med hjemmeboende børn?",
+            "fa": "به نظرت داوطلب بودن والدینِ بچه‌دار چه تأثیری بر زندگی خانوادگی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det kan styrke familielivet, fordi forældre og børn laver noget sammen. Men det tager også tid, og hvis forældrene har for travlt, kan det give stress derhjemme."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          93
+        ]
+      }
+    },
+    {
+      "id": "2020-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "pensionister som frivillige",
+        "fa": "بازنشسته‌ها به‌عنوان داوطلب"
+      },
+      "intro": {
+        "id": "2020-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en pensionist, der arbejder frivilligt."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-nov-b.sitB.q1",
+        "text": {
+          "da": "Mange af dem, der arbejder frivilligt, er pensionister. Hvorfor tror du, det er sådan?",
+          "fa": "خیلی از کسانی که کار داوطلبانه می‌کنند بازنشسته‌اند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-nov-b.sitB.q1.kw1",
+            "emoji": "🧭",
+            "text": {
+              "da": "noget meningsfuldt",
+              "fa": "کار معنادار"
+            }
+          },
+          {
+            "id": "2020-nov-b.sitB.q1.kw2",
+            "emoji": "👫",
+            "text": {
+              "da": "ikke ensomme",
+              "fa": "تنها نبودن"
+            }
+          },
+          {
+            "id": "2020-nov-b.sitB.q1.kw3",
+            "emoji": "🎁",
+            "text": {
+              "da": "give tilbage",
+              "fa": "پس دادن به جامعه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første har de god tid, og de vil gerne bruge den på noget meningsfuldt. For det andet møder de nye mennesker, så de ikke føler sig ensomme. Desuden vil de gerne give noget tilbage til samfundet. Så alt i alt handler det om mening og fællesskab."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 115,
+              "end": 128
+            },
+            {
+              "start": 183,
+              "end": 190
+            },
+            {
+              "start": 238,
+              "end": 250
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-nov-b.sitB.followup1",
+          "text": {
+            "da": "Hvad tror du, det betyder for pensionisters livskvalitet, at de arbejder frivilligt?",
+            "fa": "به نظرت کار داوطلبانه چه تأثیری بر کیفیت زندگی بازنشسته‌ها دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "answer": {
+            "id": "2020-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Jeg tror, det betyder rigtig meget. De føler sig nyttige, og de holder sig aktive både fysisk og mentalt. Det kan give et længere og sundere liv."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          93
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-nov-b.general",
+    "question": {
+      "id": "2020-nov-b.general.q2",
+      "text": {
+        "da": "Kommunerne gør mere og mere brug af frivillig arbejdskraft inden for fx ældrepleje og sundhed. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "شهرداری‌ها بیشتر و بیشتر از نیروی داوطلب در مراقبت از سالمندان و سلامت استفاده می‌کنند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-nov-b.general.q2.kw1",
+          "emoji": "🤗",
+          "text": {
+            "da": "tid og selskab",
+            "fa": "وقت و همراهی"
+          }
+        },
+        {
+          "id": "2020-nov-b.general.q2.kw2",
+          "emoji": "🧭",
+          "text": {
+            "da": "nyttige frivillige",
+            "fa": "داوطلب احساس مفید بودن می‌کند"
+          }
+        },
+        {
+          "id": "2020-nov-b.general.q2.kw3",
+          "emoji": "🩺",
+          "text": {
+            "da": "ingen faglig uddannelse",
+            "fa": "بدون تخصص حرفه‌ای"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de ældre og syge får mere tid, selskab og omsorg. En anden fordel er, at de frivillige føler sig nyttige. På den anden side er en ulempe, at de frivillige ikke har den rigtige uddannelse, og de kan ikke tage ansvar for pleje og medicin. Kommunen kan også bruge dem til at spare penge. Alt i alt mener jeg, at frivillige skal være et supplement til det professionelle personale."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 107,
+            "end": 129
+          },
+          {
+            "start": 163,
+            "end": 197
+          },
+          {
+            "start": 342,
+            "end": 365
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-nov-b.general.followup1",
+        "text": {
+          "da": "Hvad mener du om, at kommuner gør brug af frivillig arbejdskraft for at spare penge på løn til professionelle?",
+          "fa": "نظرت درباره‌ی اینکه شهرداری‌ها برای صرفه‌جویی در حقوق نیروی حرفه‌ای از داوطلب استفاده کنند چیست؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2020-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Det synes jeg ikke er i orden. Pleje og sundhed kræver uddannet personale, fordi det handler om patientsikkerhed. Frivillige skal give ekstra glæde og selskab, ikke erstatte en sygeplejerske."
+          }
+        }
+      }
+    ],
+    "personalExamples": [
+      {
+        "id": "2020-nov-b.general.example1",
+        "label": {
+          "fa": "به‌عنوان پرستار"
+        },
+        "text": {
+          "da": "Som sygeplejerske ved jeg, at patientsikkerhed kræver uddannet personale."
+        }
+      }
+    ],
+    "source": {
+      "pages": [
+        94
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      93,
+      94
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

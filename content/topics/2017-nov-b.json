@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 0,
+  "id": "2017-nov-b",
+  "termId": "2017-nov",
+  "letter": "B",
+  "themeId": "medier",
+  "title": {
+    "da": "Sociale medier og privatliv",
+    "fa": "شبکه‌های اجتماعی و حریم خصوصی"
+  },
+  "situations": [
+    {
+      "id": "2017-nov-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "unge deler private og personlige billeder",
+        "fa": "جوان‌ها عکس‌های خصوصی منتشر می‌کنند"
+      },
+      "intro": {
+        "id": "2017-nov-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle unge, der deler private billeder på sociale medier."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-b.sitA.q1",
+        "text": {
+          "da": "Nogle unge lægger billeder ud på de sociale medier, selvom billederne er private og personlige. Hvorfor tror du, de gør det?",
+          "fa": "بعضی جوان‌ها عکس‌های خصوصی و شخصی‌شان را در شبکه‌های اجتماعی می‌گذارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-b.sitA.q1.kw1",
+            "emoji": "👍",
+            "text": {
+              "da": "likes og opmærksomhed",
+              "fa": "لایک و توجه"
+            }
+          },
+          {
+            "id": "2017-nov-b.sitA.q1.kw2",
+            "emoji": "🪞",
+            "text": {
+              "da": "vise hvem de er",
+              "fa": "نشان دادن خود"
+            }
+          },
+          {
+            "id": "2017-nov-b.sitA.q1.kw3",
+            "emoji": "🙈",
+            "text": {
+              "da": "tænker ikke over det",
+              "fa": "فکرش را نمی‌کنند"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne have likes og opmærksomhed. For det andet vil de vise, hvem de er, og dele deres liv med vennerne. Desuden tænker mange unge ikke over, at billederne kan blive delt videre. Så alt i alt handler det om anerkendelse og identitet."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 91,
+              "end": 104
+            },
+            {
+              "start": 162,
+              "end": 169
+            },
+            {
+              "start": 236,
+              "end": 248
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-b.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at unge lægger private og personlige billeder ud på de sociale medier? Hvorfor / hvorfor ikke?",
+            "fa": "آیا گذاشتن عکس‌های خصوصی در شبکه‌های اجتماعی توسط جوانان مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at unge lægger private og personlige billeder ud på de sociale medier?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2017-nov-b.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg bestemt. Billederne kan blive delt uden tilladelse, og de kan bruges til mobning. Man kan ikke tage dem tilbage. Det kan også skade ens chancer for et job senere."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          59
+        ]
+      }
+    },
+    {
+      "id": "2017-nov-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "mange statusopdateringer og billeder fra hverdagen",
+        "fa": "پست‌ها و عکس‌های زیاد از زندگی روزمره"
+      },
+      "intro": {
+        "id": "2017-nov-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en person, der deler mange billeder og opslag fra sin hverdag på sociale medier."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2017-nov-b.sitB.q1",
+        "text": {
+          "da": "Nogle mennesker skriver mange statusopdateringer og lægger mange billeder fra deres hverdag ud på de sociale medier. Hvorfor tror du, de gør det?",
+          "fa": "بعضی‌ها پست‌ها و عکس‌های زیادی از زندگی روزمره‌شان می‌گذارند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2017-nov-b.sitB.q1.kw1",
+            "emoji": "📞",
+            "text": {
+              "da": "holde kontakt",
+              "fa": "حفظ ارتباط"
+            }
+          },
+          {
+            "id": "2017-nov-b.sitB.q1.kw2",
+            "emoji": "👍",
+            "text": {
+              "da": "anerkendelse",
+              "fa": "تأیید گرفتن"
+            }
+          },
+          {
+            "id": "2017-nov-b.sitB.q1.kw3",
+            "emoji": "🔁",
+            "text": {
+              "da": "en vane",
+              "fa": "عادت"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2017-nov-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil de gerne holde kontakt med familie og venner. For det andet vil de gerne have anerkendelse og likes. Desuden er det blevet en vane at dele alt. Så alt i alt handler det om kontakt og anerkendelse."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 100,
+              "end": 113
+            },
+            {
+              "start": 155,
+              "end": 162
+            },
+            {
+              "start": 198,
+              "end": 210
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2017-nov-b.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at skrive mange statusopdateringer? Hvorfor / hvorfor ikke?",
+            "fa": "آیا گذاشتن پست‌های زیاد مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at skrive mange statusopdateringer?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2017-nov-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Man kan blive afhængig af likes, og man lever måske mere for at vise livet end for at leve det. Andre kan også blive trætte af alle opdateringerne."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          59
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2017-nov-b.general",
+    "question": {
+      "id": "2017-nov-b.general.q2",
+      "text": {
+        "da": "De sociale medier gemmer for altid de billeder og kommentarer, som deres brugere lægger op. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "شبکه‌های اجتماعی عکس‌ها و کامنت‌های کاربران را برای همیشه نگه می‌دارند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2017-nov-b.general.q2.kw1",
+          "emoji": "📸",
+          "text": {
+            "da": "gode minder",
+            "fa": "خاطرات خوب"
+          }
+        },
+        {
+          "id": "2017-nov-b.general.q2.kw2",
+          "emoji": "👮",
+          "text": {
+            "da": "bevis",
+            "fa": "مدرک"
+          }
+        },
+        {
+          "id": "2017-nov-b.general.q2.kw3",
+          "emoji": "🧾",
+          "text": {
+            "da": "forsvinder aldrig",
+            "fa": "هیچ‌وقت پاک نمی‌شود"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2017-nov-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at man kan gemme gode minder og finde dem igen. En anden fordel er, at politiet kan bruge det som bevis, for eksempel ved mobning eller trusler. På den anden side er en ulempe, at dumme billeder og kommentarer fra ungdommen aldrig forsvinder. Det kan skade ens omdømme og karriere. Alt i alt mener jeg, at man skal tænke sig godt om, før man deler noget."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 102,
+            "end": 124
+          },
+          {
+            "start": 199,
+            "end": 233
+          },
+          {
+            "start": 336,
+            "end": 359
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2017-nov-b.general.followup1",
+        "text": {
+          "da": "Hvad kan det for eksempel betyde for folks arbejde og privatliv, at de sociale medier for altid gemmer billeder og kommentarer?",
+          "fa": "نگه داشتن همیشگی عکس‌ها و کامنت‌ها مثلاً چه تأثیری بر کار و زندگی خصوصی آدم‌ها دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "answer": {
+          "id": "2017-nov-b.general.followup1.answer",
+          "text": {
+            "da": "Det kan betyde meget. Mange arbejdsgivere tjekker ansøgere på nettet, så et gammelt billede fra en fest kan koste et job. I privatlivet kan gamle kommentarer også skabe konflikter."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        60
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      59,
+      60
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

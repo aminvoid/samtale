@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 0,
+  "id": "2023-nov-c",
+  "termId": "2023-nov",
+  "letter": "C",
+  "themeId": "klima",
+  "title": {
+    "da": "Klima og livsstil",
+    "fa": "اقلیم و سبک زندگی"
+  },
+  "situations": [
+    {
+      "id": "2023-nov-c.sitA",
+      "key": "A",
+      "title": {
+        "da": "vegetarer og veganere",
+        "fa": "افزایش گیاه‌خوارها و وگان‌ها"
+      },
+      "intro": {
+        "id": "2023-nov-c.sitA.intro",
+        "text": {
+          "da": "Situation A viser nogle mennesker, der spiser vegetarisk eller vegansk mad."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-c.sitA.q1",
+        "text": {
+          "da": "Hvorfor tror du, antallet af vegetarer og veganere er steget?",
+          "fa": "به نظرت چرا تعداد گیاه‌خوارها و وگان‌ها بیشتر شده است؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-c.sitA.q1.kw1",
+            "emoji": "🌍",
+            "text": {
+              "da": "klimaet",
+              "fa": "اقلیم"
+            }
+          },
+          {
+            "id": "2023-nov-c.sitA.q1.kw2",
+            "emoji": "🐄",
+            "text": {
+              "da": "dyrevelfærd",
+              "fa": "رفاه حیوانات"
+            }
+          },
+          {
+            "id": "2023-nov-c.sitA.q1.kw3",
+            "emoji": "🛒",
+            "text": {
+              "da": "flere produkter",
+              "fa": "محصولات بیشتر در فروشگاه"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-c.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første vil mange gerne passe på klimaet, fordi kødproduktion udleder meget CO2. For det andet tænker nogle på dyrevelfærd. Desuden er der kommet mange flere vegetariske produkter i butikkerne. Så alt i alt handler det om klima, dyr og nye muligheder."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 123,
+              "end": 136
+            },
+            {
+              "start": 166,
+              "end": 173
+            },
+            {
+              "start": 236,
+              "end": 248
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-c.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at være vegetar eller veganer? Hvorfor?/Hvorfor ikke?",
+            "fa": "آیا گیاه‌خوار یا وگان بودن مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at være vegetar eller veganer?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-c.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det kan der godt være. Man kan mangle nogle vitaminer, for eksempel B12, hvis man ikke planlægger sin kost godt. Det kan også være svært at spise sammen med familie og venner. Men med god viden kan man sagtens spise sundt."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          71,
+          72
+        ]
+      }
+    },
+    {
+      "id": "2023-nov-c.sitB",
+      "key": "B",
+      "title": {
+        "da": "flyrejser og klima",
+        "fa": "سفر هوایی و اقلیم"
+      },
+      "intro": {
+        "id": "2023-nov-c.sitB.intro",
+        "text": {
+          "da": "Situation B viser et fly, der letter fra en lufthavn."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2023-nov-c.sitB.q1",
+        "text": {
+          "da": "Nogle rejser meget med fly, selvom de ved, det skader klimaet. Hvorfor tror du, de alligevel gør det?",
+          "fa": "بعضی‌ها با اینکه می‌دانند به اقلیم آسیب می‌زند، زیاد با هواپیما سفر می‌کنند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2023-nov-c.sitB.q1.kw1",
+            "emoji": "⚡",
+            "text": {
+              "da": "hurtigt og billigt",
+              "fa": "سریع و ارزان"
+            }
+          },
+          {
+            "id": "2023-nov-c.sitB.q1.kw2",
+            "emoji": "🏝️",
+            "text": {
+              "da": "opleve verden",
+              "fa": "دیدن دنیا"
+            }
+          },
+          {
+            "id": "2023-nov-c.sitB.q1.kw3",
+            "emoji": "🤷",
+            "text": {
+              "da": "min rejse betyder ikke meget",
+              "fa": "سفر من اهمیتی ندارد"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2023-nov-c.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er flyrejser hurtige og ofte billige. For det andet vil mange gerne opleve verden og varme lande. Desuden tænker de, at deres egen rejse ikke betyder så meget for klimaet. Så alt i alt handler det om pris, oplevelser og bekvemmelighed."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 88,
+              "end": 101
+            },
+            {
+              "start": 148,
+              "end": 155
+            },
+            {
+              "start": 222,
+              "end": 234
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2023-nov-c.sitB.followup1",
+          "text": {
+            "da": "Tror du, folk også vil rejse meget med fly i fremtiden? Hvorfor?/Hvorfor ikke?",
+            "fa": "به نظرت آدم‌ها در آینده هم زیاد با هواپیما سفر خواهند کرد؟ چرا؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Tror du, folk også vil rejse meget med fly i fremtiden?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2023-nov-c.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det tror jeg. Folk vil stadig gerne rejse. Men måske bliver flyene grønnere med ny teknologi, og måske bliver det dyrere at flyve på grund af afgifter. Så rejser nogle mindre."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          71,
+          72
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2023-nov-c.general",
+    "question": {
+      "id": "2023-nov-c.general.q2",
+      "text": {
+        "da": "Hvilke fordele og ulemper mener du, der kan være ved, at især unge fokuserer på at leve klimavenligt?",
+        "fa": "مزایا و معایب اینکه به‌خصوص جوانان روی زندگی دوستدار اقلیم تمرکز می‌کنند؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2023-nov-c.general.q2.kw1",
+          "emoji": "📣",
+          "text": {
+            "da": "påvirker familie og politikere",
+            "fa": "تأثیر بر خانواده و سیاستمداران"
+          }
+        },
+        {
+          "id": "2023-nov-c.general.q2.kw2",
+          "emoji": "♻️",
+          "text": {
+            "da": "bæredygtige valg",
+            "fa": "انتخاب‌های پایدار"
+          }
+        },
+        {
+          "id": "2023-nov-c.general.q2.kw3",
+          "emoji": "😟",
+          "text": {
+            "da": "klimaangst",
+            "fa": "اضطراب اقلیمی"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2023-nov-c.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de unge kan påvirke deres familier og politikerne til at gøre mere for klimaet. En anden fordel er, at de vælger mere bæredygtige produkter. På den anden side er en ulempe, at nogle unge får klimaangst og bliver bekymrede for fremtiden. Det kan også være dyrt at leve helt klimavenligt. Alt i alt mener jeg, at det er positivt, men de unge skal ikke bære hele ansvaret."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 137,
+            "end": 159
+          },
+          {
+            "start": 198,
+            "end": 232
+          },
+          {
+            "start": 344,
+            "end": 367
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2023-nov-c.general.followup1",
+        "text": {
+          "da": "Mener du, der kan være problemer ved at prioritere klima frem for velfærd? Hvorfor?/Hvorfor ikke?",
+          "fa": "آیا اولویت دادن به اقلیم نسبت به رفاه (مثل مراقبت از سالمندان) مشکلی دارد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, der kan være problemer ved at prioritere klima frem for velfærd?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor?/Hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2023-nov-c.general.followup1.answer",
+          "text": {
+            "da": "Ja, der kan godt være problemer. Hvis man bruger alle pengene på klima, kan der mangle penge til for eksempel ældrepleje og sundhed. Men hvis vi ikke gør noget for klimaet, bliver det dyrere i fremtiden. Vi skal finde en balance."
+          }
+        }
+      }
+    ],
+    "personalExamples": [],
+    "source": {
+      "pages": [
+        72
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      71,
+      72
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

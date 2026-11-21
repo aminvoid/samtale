@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 0,
+  "id": "2020-maj-b",
+  "termId": "2020-maj",
+  "letter": "B",
+  "themeId": "sundhed",
+  "title": {
+    "da": "Det offentlige sundhedsvæsen",
+    "fa": "نظام درمان دولتی"
+  },
+  "situations": [
+    {
+      "id": "2020-maj-b.sitA",
+      "key": "A",
+      "title": {
+        "da": "gebyr ved lægebesøg — ikke helt gratis at gå til læge",
+        "fa": "هزینه برای ویزیت پزشک (کاملاً رایگان نباشد)"
+      },
+      "intro": {
+        "id": "2020-maj-b.sitA.intro",
+        "text": {
+          "da": "Situation A viser en patient i venteværelset hos lægen."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-b.sitA.q1",
+        "text": {
+          "da": "Der er nogle, der mener, at det ikke skal være helt gratis at gå til læge, og at det er en god idé at indføre et gebyr ved lægebesøg. Hvorfor tror du, de mener det?",
+          "fa": "بعضی‌ها معتقدند ویزیت پزشک نباید کاملاً رایگان باشد و گرفتن هزینه ایده‌ی خوبی است. به نظرت چرا چنین فکری دارند؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-b.sitA.q1.kw1",
+            "emoji": "🤏",
+            "text": {
+              "da": "færre besøg for små ting",
+              "fa": "مراجعه‌ی کمتر برای چیزهای جزئی"
+            }
+          },
+          {
+            "id": "2020-maj-b.sitA.q1.kw2",
+            "emoji": "⏳",
+            "text": {
+              "da": "mere tid til de syge",
+              "fa": "وقت بیشتر برای بیماران واقعی"
+            }
+          },
+          {
+            "id": "2020-maj-b.sitA.q1.kw3",
+            "emoji": "💰",
+            "text": {
+              "da": "flere penge",
+              "fa": "پول بیشتر"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-b.sitA.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første tror de, at et gebyr vil få folk til ikke at gå til lægen med små ting. For det andet vil lægerne så få mere tid til de syge patienter. Desuden kan gebyret give flere penge til sundhedsvæsenet. Så alt i alt handler det om at bruge lægens tid bedre."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 122,
+              "end": 135
+            },
+            {
+              "start": 186,
+              "end": 193
+            },
+            {
+              "start": 244,
+              "end": 256
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-b.sitA.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved at indføre et gebyr ved lægebesøg? Hvorfor / hvorfor ikke?",
+            "fa": "آیا گرفتن هزینه برای ویزیت پزشک مشکلی دارد؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved at indføre et gebyr ved lægebesøg?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2020-maj-b.sitA.followup1.answer",
+            "text": {
+              "da": "Ja, det mener jeg. Folk med en lav indkomst vil måske vente for længe med at gå til lægen. Så bliver sygdommen opdaget for sent, og det kan blive farligt og dyrere for samfundet. Det skaber ulighed i sundhed."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "2020-maj-b.sitB",
+      "key": "B",
+      "title": {
+        "da": "behandling på privathospital",
+        "fa": "درمان در بیمارستان خصوصی"
+      },
+      "intro": {
+        "id": "2020-maj-b.sitB.intro",
+        "text": {
+          "da": "Situation B viser en patient, der bliver behandlet på et privathospital."
+        },
+        "origin": "app",
+        "review": {
+          "status": "approved",
+          "notes": [
+            {
+              "text": "Reviewed by delegation: danish-language-reviewer (Danish review of the intros, 2026-11-21) and pd3-exam-expert (exam review of intros and 2019, 2026-11-21; its reconciled table wins). Revised wording applied."
+            }
+          ],
+          "reviewedBy": "delegated-agent-review",
+          "reviewedOn": "2026-11-21"
+        }
+      },
+      "question": {
+        "id": "2020-maj-b.sitB.q1",
+        "text": {
+          "da": "Der er nogle, der vælger at betale for behandling på et privathospital. Hvorfor tror du, de vælger det?",
+          "fa": "بعضی‌ها ترجیح می‌دهند برای درمان در بیمارستان خصوصی پول بدهند. به نظرت چرا؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "keywords": [
+          {
+            "id": "2020-maj-b.sitB.q1.kw1",
+            "emoji": "⏳",
+            "text": {
+              "da": "lange ventelister",
+              "fa": "لیست انتظار طولانی"
+            }
+          },
+          {
+            "id": "2020-maj-b.sitB.q1.kw2",
+            "emoji": "💼",
+            "text": {
+              "da": "hurtigt tilbage på arbejde",
+              "fa": "برگشت سریع به کار"
+            }
+          },
+          {
+            "id": "2020-maj-b.sitB.q1.kw3",
+            "emoji": "📄",
+            "text": {
+              "da": "sundhedsforsikring",
+              "fa": "بیمه‌ی درمانی"
+            }
+          }
+        ],
+        "modelAnswer": {
+          "id": "2020-maj-b.sitB.q1.answer",
+          "text": {
+            "da": "Det kan der være flere grunde til. For det første er der lange ventelister på de offentlige hospitaler. For det andet vil de gerne hurtigt tilbage på arbejde. Desuden har mange en sundhedsforsikring gennem deres arbejde. Så alt i alt handler det om tid og ventelister."
+          },
+          "emphasis": [
+            {
+              "start": 35,
+              "end": 49
+            },
+            {
+              "start": 104,
+              "end": 117
+            },
+            {
+              "start": 159,
+              "end": 166
+            },
+            {
+              "start": 221,
+              "end": 233
+            }
+          ]
+        }
+      },
+      "followups": [
+        {
+          "id": "2020-maj-b.sitB.followup1",
+          "text": {
+            "da": "Mener du, der kan være nogen problemer ved, at nogle ikke har råd til at betale for behandling på et privathospital? Hvorfor / hvorfor ikke?",
+            "fa": "آیا ممکن است مشکل باشد که بعضی‌ها پول درمان در بیمارستان خصوصی را ندارند؟"
+          },
+          "siriCheck": {
+            "status": "unchecked"
+          },
+          "spoken": {
+            "parts": [
+              "Mener du, der kan være nogen problemer ved, at nogle ikke har råd til at betale for behandling på et privathospital?",
+              "Hvorfor eller hvorfor ikke?"
+            ],
+            "pauseMs": 800,
+            "origin": "app",
+            "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+          },
+          "answer": {
+            "id": "2020-maj-b.sitB.followup1.answer",
+            "text": {
+              "da": "Ja, det mener jeg. Det skaber et A-hold og et B-hold i sundhedsvæsenet, hvor rige får hurtigere hjælp end fattige. Det er imod den danske idé om lige adgang til sundhed for alle."
+            }
+          }
+        }
+      ],
+      "personalExamples": [],
+      "source": {
+        "pages": [
+          52,
+          53
+        ]
+      }
+    }
+  ],
+  "general": {
+    "id": "2020-maj-b.general",
+    "question": {
+      "id": "2020-maj-b.general.q2",
+      "text": {
+        "da": "Der bliver færre men større hospitaler i Danmark. Hvilke fordele og ulemper mener du, der kan være ved det?",
+        "fa": "در دانمارک بیمارستان‌ها کمتر ولی بزرگ‌تر می‌شوند. مزایا و معایب؟"
+      },
+      "siriCheck": {
+        "status": "unchecked"
+      },
+      "keywords": [
+        {
+          "id": "2020-maj-b.general.q2.kw1",
+          "emoji": "👩‍⚕️",
+          "text": {
+            "da": "flere specialister",
+            "fa": "متخصص بیشتر"
+          }
+        },
+        {
+          "id": "2020-maj-b.general.q2.kw2",
+          "emoji": "🔬",
+          "text": {
+            "da": "bedre udstyr",
+            "fa": "تجهیزات بهتر"
+          }
+        },
+        {
+          "id": "2020-maj-b.general.q2.kw3",
+          "emoji": "🚗",
+          "text": {
+            "da": "længere afstand",
+            "fa": "فاصله‌ی بیشتر"
+          }
+        }
+      ],
+      "modelAnswer": {
+        "id": "2020-maj-b.general.q2.answer",
+        "text": {
+          "da": "Der er både fordele og ulemper ved det. En fordel er, at de store hospitaler har flere specialister og bedre udstyr. Det betyder, at patienterne får en bedre behandling. En anden fordel er, at det kan være billigere at drive. På den anden side er en ulempe, at der bliver længere afstand til hospitalet, især for folk på landet. Det kan være et problem for ældre uden bil. Alt i alt mener jeg, at kvaliteten er vigtigst, men der skal være god akut hjælp i hele landet."
+        },
+        "emphasis": [
+          {
+            "start": 40,
+            "end": 56
+          },
+          {
+            "start": 170,
+            "end": 192
+          },
+          {
+            "start": 226,
+            "end": 260
+          },
+          {
+            "start": 373,
+            "end": 396
+          }
+        ]
+      }
+    },
+    "followups": [
+      {
+        "id": "2020-maj-b.general.followup1",
+        "text": {
+          "da": "Mener du, det er vigtigere, at et hospital kan tilbyde den bedst mulige behandling, end at hospitalet ligger tæt på borgerne? Hvorfor / hvorfor ikke?",
+          "fa": "به نظرت مهم‌تر است بیمارستان بهترین درمان ممکن را بدهد یا نزدیک مردم باشد؟"
+        },
+        "siriCheck": {
+          "status": "unchecked"
+        },
+        "spoken": {
+          "parts": [
+            "Mener du, det er vigtigere, at et hospital kan tilbyde den bedst mulige behandling, end at hospitalet ligger tæt på borgerne?",
+            "Hvorfor eller hvorfor ikke?"
+          ],
+          "pauseMs": 800,
+          "origin": "app",
+          "basis": "Displayed text ends \"Hvorfor / hvorfor ikke?\"; the examiner voice says the question, pauses, then \"Hvorfor eller hvorfor ikke?\" (exam review 2026-11-20, S2)."
+        },
+        "answer": {
+          "id": "2020-maj-b.general.followup1.answer",
+          "text": {
+            "da": "Jeg vil hellere køre lidt længere og få den bedste behandling. Men ved akut sygdom, for eksempel en blodprop, er tiden vigtig, så der skal være gode ambulancer og akutklinikker i hele landet."
+          }
+        }
+      }
+    ],
+    "personalExamples": [
+      {
+        "id": "2020-maj-b.general.example1",
+        "label": {
+          "fa": "به‌عنوان پرستار"
+        },
+        "text": {
+          "da": "Som sygeplejerske kan jeg se, at det giver en bedre behandling, når specialisterne er samlet ét sted."
+        }
+      }
+    ],
+    "source": {
+      "pages": [
+        53
+      ]
+    }
+  },
+  "source": {
+    "pages": [
+      52,
+      53
+    ]
+  },
+  "review": {
+    "status": "extracted"
+  }
+}

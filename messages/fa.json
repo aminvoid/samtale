@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "appName": "تمرین شفاهی PD3",
+    "titleTemplate": "{page} · {appName}",
+    "description": "آمادگی برای بخش دوم آزمون شفاهی PD3 (delprøve 2)، با توضیح فارسی"
+  },
+  "common": {
+    "skipToContent": "رفتن به محتوای اصلی"
+  },
+  "home": {
+    "title": "آمادگی برای بخش دوم آزمون شفاهی <ltr>PD3</ltr>",
+    "firstQuestionTip": "سؤال اول معمولاً با <da>Hvorfor tror du, …?</da> تمام می‌شود.",
+    "repeatLabel": "اگر سؤال را متوجه نشدید، می‌توانید بگویید:",
+    "topicCount": "{count, number, integer} موضوع"
+  },
+  "notFound": {
+    "title": "این صفحه پیدا نشد",
+    "backHome": "بازگشت به خانه"
+  },
+  "error": {
+    "title": "مشکلی پیش آمد",
+    "retry": "دوباره تلاش کنید",
+    "backHome": "بازگشت به خانه"
+  }
+}

@@ -1,0 +1,15 @@
+content/
+docs/
+audio/
+public/audio/
+src/generated/
+messages/*.d.json.ts
+.cache/
+scripts/content/
+coverage/
+playwright-report/
+test-results/
+AGENTS.md
+CLAUDE.md
+.claude/
+package-lock.json

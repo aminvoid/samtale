@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# Actions are pinned by commit SHA (tag in the comment); Dependabot updates both.
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run content:validate
+      - run: npm run content:check
+      - name: Content extraction is deterministic (ADR-0003)
+        run: |
+          npm run content:extract
+          git diff --exit-code -- content docs/content/review
+      # Includes the leak-scan self-test and the content:build confidentiality test.
+      - run: npm test -- --coverage
+
+  e2e-preview:
+    needs: verify
+    runs-on: ubuntu-latest
+    env:
+      CONTENT_RELEASE: preview
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # `build` runs content:build first and the leak scan (check:leaks) after, as on Vercel.
+      - run: npm run build
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:e2e
+      - run: npm run check:budgets
+      - if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 7
+
+  build-production:
+    needs: verify
+    runs-on: ubuntu-latest
+    # Blocking. When content:build starts refusing zero approved topics (ADR-0002), gate this job with an
+    # explicit `if:` in that same change rather than continue-on-error, so a production leak can't pass.
+    env:
+      CONTENT_RELEASE: production
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # The postbuild leak scan reads CONTENT_RELEASE=production: unapproved topic IDs and text are canaries.
+      - run: npm run build

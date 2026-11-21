@@ -1,0 +1,246 @@
+/*
+ * Design tokens, v1. Owner: ui-designer. Spec and contrast tables: docs/design/tokens.md.
+ *
+ * One source of truth (styling rule): every colour, type style, radius, shadow, container and
+ * motion value the app uses is defined here. Components never use raw hex values or palette colours.
+ *
+ * - Light values are the @theme defaults; dark values override the same variables further down.
+ * - `@theme static` emits every variable, so primitives can also read them with var() (Base UI
+ *   className functions, inline style for progress widths, the audio scrubber).
+ * - Tailwind's default palette is removed (`--color-*: initial`): only semantic colours exist.
+ * - Contrast ratios for every text/background pair (both themes) are in docs/design/tokens.md §3.
+ */
+@theme static {
+  /* ------------------------------------------------------------------ colour: neutrals */
+  --color-*: initial;
+
+  --color-surface: #faf8f4; /* page background, warm paper */
+  --color-surface-raised: #ffffff; /* cards, sheets, dialogs */
+  --color-surface-sunken: #f2efe9; /* wells: translations, tracks, disabled primary slot */
+  --color-text: #1b2228; /* body text, headings, Danish learning text */
+  --color-text-muted: #4d5761; /* secondary text; still AA on every surface */
+  --color-border: #e2ddd3; /* decorative dividers and card edges (no contrast duty) */
+  --color-border-strong: #7d848c; /* control boundaries: inputs, checkboxes, switch tracks (>= 3:1) */
+  --color-scrim: rgb(18 22 25 / 0.5); /* behind dialogs and sheets */
+  --color-shadow: rgb(27 34 40 / 0.08);
+  --color-shadow-strong: rgb(27 34 40 / 0.16);
+
+  /* ------------------------------------------------------------------ colour: action */
+  --color-accent: #0d5c6b; /* primary actions, links, selected states (deep fjord teal) */
+  --color-accent-hover: #0a4a57;
+  --color-accent-active: #083e49;
+  --color-accent-subtle: #e3f0f1; /* selected backgrounds, info notes, "you" tint */
+  --color-accent-contrast: #ffffff; /* text and icons on accent fills */
+  --color-focus: #0d5c6b; /* focus ring, always with a 2px offset */
+
+  /* ------------------------------------------------------------------ colour: feedback */
+  --color-danger: #a3261d; /* destructive actions only, never for "wrong" */
+  --color-danger-subtle: #faedeb;
+  --color-danger-contrast: #ffffff;
+  --color-rec: #a8341a; /* the recording dot and "Recording" label */
+  --color-highlight: #fdf1d8; /* word highlight while audio plays; text selection */
+
+  /* ------------------------------------------------------------------ colour: content roles */
+  /* Each role = ink (text, icon, border) + subtle (tint). Always paired with an icon and a label. */
+  --color-role-examiner: #33408f; /* intro, questions, follow-ups, examiner lines (indigo) */
+  --color-role-examiner-subtle: #ebeefa;
+  --color-role-sample: #6a3270; /* sample answers and short answers (plum) */
+  --color-role-sample-subtle: #f6eef6;
+  --color-role-keyword: #7a4e00; /* the three key words (saffron) */
+  --color-role-keyword-subtle: #fdf1d8;
+  --color-role-example: #8a3f1e; /* personal example from a nurse's perspective (clay) */
+  --color-role-example-subtle: #fbeee7;
+  --color-role-you: var(--color-accent); /* the learner's own recording and answer */
+  --color-role-you-subtle: var(--color-accent-subtle);
+
+  /* ------------------------------------------------------------------ type: families */
+  /* --font-vazirmatn and --font-danish-face are set by next/font in src/app/[locale]/layout.tsx. */
+  --font-sans: var(--font-vazirmatn), "Vazirmatn", Tahoma, "Segoe UI", system-ui, sans-serif;
+  --font-danish: var(--font-danish-face), "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+
+  /* ------------------------------------------------------------------ type: weights */
+  /* No weights below 400: thin Persian strokes break up on low-density screens. */
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ------------------------------------------------------------------ type: leading */
+  --leading-fa: 1.85; /* Persian running text */
+  --leading-fa-ui: 1.6; /* Persian in controls, rows, labels */
+  --leading-da: 1.6; /* Danish running text */
+  --leading-tight: 1.35; /* headings in Latin script only */
+
+  /* ------------------------------------------------------------------ type: Persian interface styles */
+  /* Never add letter-spacing to Persian: it breaks the joins between letters. */
+  --text-caption: 0.875rem; /* 14px is the smallest Persian size */
+  --text-caption--line-height: 1.7;
+  --text-label: 0.875rem; /* role labels, field labels, meta lines */
+  --text-label--line-height: 1.6;
+  --text-label--font-weight: 600;
+  --text-ui: 1rem; /* buttons, list rows, controls */
+  --text-ui--line-height: 1.6;
+  --text-body: 1rem; /* Persian paragraphs, guide text */
+  --text-body--line-height: 1.85;
+  --text-lead: 1.125rem; /* home purpose line, page intros */
+  --text-lead--line-height: 1.8;
+  --text-h3: 1.125rem;
+  --text-h3--line-height: 1.6;
+  --text-h3--font-weight: 700;
+  --text-h2: 1.375rem;
+  --text-h2--line-height: 1.5;
+  --text-h2--font-weight: 700;
+  --text-h1: clamp(1.625rem, 1.45rem + 0.6vw, 2rem);
+  --text-h1--line-height: 1.45;
+  --text-h1--font-weight: 700;
+  --text-display: 3.5rem; /* the look countdown, the drawn letter */
+  --text-display--line-height: 1.1;
+  --text-display--font-weight: 600;
+  --text-fa-translation: 1rem; /* Persian translation of a Danish question or title */
+  --text-fa-translation--line-height: 1.9;
+
+  /* ------------------------------------------------------------------ type: Danish learning styles */
+  --text-da-question: clamp(1.25rem, 1.17rem + 0.3vw, 1.375rem); /* required questions */
+  --text-da-question--line-height: 1.5;
+  --text-da-question--font-weight: 500;
+  --text-da-followup: 1.125rem; /* suggested follow-up questions */
+  --text-da-followup--line-height: 1.55;
+  --text-da-followup--font-weight: 500;
+  --text-da-intro: 1.0625rem; /* the examiner's situation intro */
+  --text-da-intro--line-height: 1.6;
+  --text-da-intro--font-weight: 400;
+  --text-da-line: 1.125rem; /* fixed examiner lines, the repeat phrase, phrase items */
+  --text-da-line--line-height: 1.55;
+  --text-da-line--font-weight: 500;
+  --text-da-answer: 1.125rem; /* sample answers and short answers */
+  --text-da-answer--line-height: 1.7;
+  --text-da-answer--font-weight: 400;
+  --text-da-example: 1.0625rem; /* personal examples */
+  --text-da-example--line-height: 1.65;
+  --text-da-example--font-weight: 400;
+  --text-da-keyword: 1.125rem; /* the Danish half of a key-word pair */
+  --text-da-keyword--line-height: 1.4;
+  --text-da-keyword--font-weight: 600;
+  --text-da-title: clamp(1.625rem, 1.45rem + 0.6vw, 2rem); /* topic name as h1 */
+  --text-da-title--line-height: 1.3;
+  --text-da-title--font-weight: 700;
+  --text-da-card: 1.125rem; /* situation titles, topic names in lists and cards */
+  --text-da-card--line-height: 1.45;
+  --text-da-card--font-weight: 600;
+  --text-da-label: 0.875rem; /* term labels "Maj–Juni 2024 · B" */
+  --text-da-label--line-height: 1.5;
+  --text-da-label--font-weight: 600;
+  --text-da-sentence: 1.5rem; /* the current sentence in shadowing */
+  --text-da-sentence--line-height: 1.5;
+  --text-da-sentence--font-weight: 500;
+
+  /* ------------------------------------------------------------------ spacing */
+  /* Tailwind's 4px scale stays (--spacing: 0.25rem). Named sizes for the rules that matter: */
+  --spacing-touch: 2.75rem; /* 44px: every touch target */
+  --spacing-touch-primary: 3.5rem; /* 56px: the focused-mode primary action on phones */
+  --spacing-tabbar: 4rem; /* bottom tab bar height, before the safe-area inset */
+
+  /* ------------------------------------------------------------------ radius */
+  --radius-chip: 0.5rem; /* role chips, badges, term labels */
+  --radius-control: 0.625rem; /* buttons, inputs, segmented controls */
+  --radius-card: 0.875rem; /* cards, content blocks */
+  --radius-sheet: 1.25rem; /* bottom sheets (top corners), dialogs */
+
+  /* ------------------------------------------------------------------ elevation */
+  /* Shadow colours are variables so the dark theme can deepen them. */
+  --shadow-card: 0 1px 2px var(--color-shadow);
+  --shadow-raised: 0 1px 3px var(--color-shadow), 0 6px 16px var(--color-shadow);
+  --shadow-overlay: 0 4px 12px var(--color-shadow), 0 20px 48px var(--color-shadow-strong);
+
+  /* ------------------------------------------------------------------ containers */
+  --container-reading: 42rem; /* reading measure: the column Danish paragraphs fill */
+  --container-focused: 45rem; /* mock runner, shadowing */
+  --container-dialog: 35rem; /* answer aloud at >= 768px, dialogs */
+  --container-page: 76rem; /* outer page frame at 1280 */
+
+  /* ------------------------------------------------------------------ motion */
+  /* Durations are used as duration-(--duration-fast). Reduced-motion variants: globals.css. */
+  --duration-fast: 150ms; /* hover, press, colour changes, chevron rotation */
+  --duration-base: 200ms; /* disclosure open/close, toasts, crossfades */
+  --duration-slow: 250ms; /* sheets, dialogs, the draw-card flip */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  --animate-fade-in: fade-in var(--duration-base) var(--ease-enter) both;
+  /* Looping indicators run 3 times (4.8 s and 3.3 s), then rest: WCAG 2.2.2 (a11y audit M6).
+     The text label ("Recording", "The examiner is speaking…") carries the state throughout. */
+  --animate-rec-pulse: rec-pulse 1.6s ease-in-out 3; /* opacity only; ends fully opaque */
+  --animate-speaking: speaking 1.1s ease-in-out 3; /* examiner activity bars; end at full height */
+  /* Loading spinners use Tailwind's built-in animate-spin. All loops stop under reduced motion. */
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes rec-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+  @keyframes speaking {
+    0%,
+    100% {
+      transform: scaleY(0.45);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+/*
+ * Dark theme: follows the device setting (US-054; no in-app control in v1).
+ * Only colours change. To add a manual switch later, move this block under a
+ * `:root[data-theme="dark"]` selector as well (one place, no component changes).
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface: #121619;
+    --color-surface-raised: #1b2126;
+    --color-surface-sunken: #0c0f12;
+    --color-text: #eceae5;
+    --color-text-muted: #aeb5bc;
+    --color-border: #2b333a;
+    --color-border-strong: #7c858e;
+    --color-scrim: rgb(0 0 0 / 0.6);
+    --color-shadow: rgb(0 0 0 / 0.35);
+    --color-shadow-strong: rgb(0 0 0 / 0.55);
+
+    --color-accent: #6cc4d1;
+    --color-accent-hover: #8ad3de;
+    --color-accent-active: #a6dfe7;
+    --color-accent-subtle: #143a41;
+    --color-accent-contrast: #0a1f24;
+    --color-focus: #6cc4d1;
+
+    --color-danger: #f2a49c;
+    --color-danger-subtle: #3a1c1a;
+    --color-danger-contrast: #2a0d0a;
+    --color-rec: #ff8a6b;
+    --color-highlight: #4a3a14;
+
+    --color-role-examiner: #aab5f2;
+    --color-role-examiner-subtle: #1e2442;
+    --color-role-sample: #ddb0e0;
+    --color-role-sample-subtle: #2c1d30;
+    --color-role-keyword: #f0c36a;
+    --color-role-keyword-subtle: #352810;
+    --color-role-example: #f0a586;
+    --color-role-example-subtle: #36211a;
+  }
+}

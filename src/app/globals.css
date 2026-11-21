@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* Global styles. Owner: ui-designer. Spec: docs/design/tokens.md and docs/design/components.md. */
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    font-size: 100%;
+    line-height: var(--leading-fa);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* WCAG 2.4.11: anything scrolled into view clears the sticky bars. --sticky-offset and
+       --bottom-offset are MEASURED at runtime from the [data-sticky] elements (ResizeObserver;
+       0 when a bar isn't pinned), not hard-coded. Handoff H-9 in docs/design/README.md. */
+    scroll-padding-block-start: calc(var(--sticky-offset, 0px) + 1rem);
+    scroll-padding-block-end: calc(var(--bottom-offset, 0px) + 1rem);
+  }
+
+  body {
+    min-block-size: 100dvh;
+  }
+
+  /* Danish: its own typeface wherever lang="da" is set (DanishText, <bdi lang="da">). */
+  :lang(da) {
+    font-family: var(--font-danish);
+  }
+
+  /* Headings: Persian needs room above the line for dots and diacritics. */
+  :where(h1, h2, h3, h4) {
+    text-wrap: balance;
+  }
+
+  /* Focus: always visible for keyboard users; never removed (styling rule). */
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  /* Targets of programmatic focus (route change to h1, section jumps, main) aren't controls:
+     they don't need a ring, and a ring on every navigation would be noise. */
+  :where(h1, h2, h3, main)[tabindex="-1"]:focus {
+    outline: none;
+  }
+
+  ::selection {
+    background-color: var(--color-highlight);
+    color: var(--color-text);
+  }
+
+  /* Timers and counts never jitter as digits change. */
+  time,
+  [data-numeric] {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Short viewports (landscape phones, 200 % zoom): pinned bars become static so content keeps room
+   (WCAG 1.4.10, 2.4.11; a11y audit S3). Usage: `sticky short:static`, `fixed short:static`. */
+@custom-variant short (@media (max-height: 30rem));
+
+/* Forced colours: every current or selected state keeps a visible outline (a11y audit M11).
+   In the base layer with zero specificity, so the :focus-visible ring still wins on focus. */
+@layer base {
+  @media (forced-colors: active) {
+    :where(
+        [aria-current]:not([aria-current="false"]),
+        [aria-pressed="true"],
+        [aria-selected="true"],
+        [role="radio"][aria-checked="true"],
+        [data-selected]
+      ) {
+      outline: 2px solid Highlight;
+      outline-offset: -2px;
+    }
+  }
+}
+
+/* Smooth in-page scrolling only for people who haven't asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Reduced motion: every looping or moving animation stops; opacity and colour transitions stay.
+   Components gate transform transitions with `motion-safe:` (docs/design/components.md §0.4). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Short Danish labels inside Persian rows (topic names, situation titles, term labels, key words)
+ * align to the page's start edge (right in RTL), not their own. Danish paragraphs don't use this:
+ * they fill the reading column and align to their own start (left). docs/design/tokens.md §2.4.
+ */
+@utility text-align-flow {
+  text-align: match-parent;
+}
+
+/*
+ * Skip link: the first focusable element on every page. Hidden until focused, then a solid,
+ * padded button in the inline-start corner, clear of the edge so its focus ring isn't clipped.
+ * Usage: <a href="#main" className="skip-link">…</a> (replaces "sr-only focus:not-sr-only").
+ */
+@utility skip-link {
+  position: fixed;
+  inset-block-start: 0.75rem;
+  inset-inline-start: 0.75rem;
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--spacing-touch);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: var(--radius-control);
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-size: var(--text-ui);
+  font-weight: 600;
+  line-height: var(--leading-fa-ui);
+  text-decoration: none;
+  box-shadow: var(--shadow-overlay);
+  outline-offset: 3px;
+
+  &:not(:focus) {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    min-block-size: 0;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+    box-shadow: none;
+  }
+}

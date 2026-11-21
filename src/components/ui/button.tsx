@@ -1,0 +1,104 @@
+"use client";
+
+import { Button as BaseButton } from "@base-ui/react/button";
+import { useId, type ComponentPropsWithRef, type ReactNode } from "react";
+import { cn } from "@/lib/utils/cn";
+import { Icon, type IconName } from "./icon";
+
+const variants = {
+  primary: "border-transparent bg-accent text-accent-contrast hover:bg-accent-hover active:bg-accent-active",
+  secondary:
+    "border-border-strong bg-surface-raised text-text hover:bg-surface-sunken active:border-text-muted active:bg-surface-sunken",
+  tertiary: "border-transparent text-accent hover:bg-accent-subtle active:bg-accent-subtle",
+  destructive:
+    "border-transparent bg-danger text-danger-contrast hover:brightness-90 active:brightness-90 dark:hover:brightness-110 dark:active:brightness-110",
+  "destructive-tertiary": "border-transparent text-danger hover:bg-danger-subtle active:bg-danger-subtle",
+  "icon-only":
+    "border-transparent text-text-muted hover:bg-surface-sunken hover:text-text active:bg-surface-sunken",
+};
+
+const sizes = {
+  md: "min-block-touch px-4",
+  lg: "min-block-touch-primary px-5",
+};
+
+export type ButtonProps = Omit<
+  ComponentPropsWithRef<"button">,
+  "aria-disabled" | "aria-busy" | "children"
+> & {
+  size?: keyof typeof sizes;
+  block?: boolean;
+  icon?: IconName;
+  loading?: boolean;
+  disabledReason?: string;
+} & (
+    | { variant: "icon-only"; "aria-label": string; icon: IconName; children?: never }
+    | { variant?: Exclude<keyof typeof variants, "icon-only">; children: ReactNode }
+  );
+
+export function Button({
+  variant = "primary",
+  size = "md",
+  block = false,
+  icon,
+  loading = false,
+  disabled = false,
+  disabledReason,
+  type = "button",
+  className,
+  children,
+  "aria-describedby": describedBy,
+  ...props
+}: ButtonProps) {
+  const reasonId = useId();
+  const iconOnly = variant === "icon-only";
+  const textVariant = variant === "tertiary" || variant === "destructive-tertiary";
+  const unavailable = disabledReason !== undefined;
+  const muted = disabled || unavailable;
+  const button = (
+    <BaseButton
+      {...props}
+      type={type}
+      disabled={muted || loading}
+      focusableWhenDisabled={!disabled && (unavailable || loading)}
+      aria-busy={loading || undefined}
+      aria-describedby={unavailable ? [describedBy, reasonId].filter(Boolean).join(" ") : describedBy}
+      className={cn(
+        "inline-flex items-center justify-center gap-2 rounded-control border py-2 text-(length:--text-ui)/(--leading-fa-ui) font-semibold transition-colors duration-(--duration-fast) ease-standard min-inline-touch",
+        iconOnly ? "p-0 block-touch inline-touch" : sizes[size],
+        // Split the 20 px spinner and 8 px gap between both sides when idle.
+        !icon && !loading && "gap-0 before:shrink-0 before:inline-3.5 after:shrink-0 after:inline-3.5",
+        block && !iconOnly && "inline-full",
+        !muted && variants[variant],
+        muted && "cursor-not-allowed border-transparent text-text-muted",
+        muted && !textVariant && "bg-surface-sunken",
+        unavailable && !disabled && !textVariant && "border-dashed border-border-strong",
+        loading && "cursor-wait",
+        className,
+      )}
+    >
+      {loading ? (
+        <Icon name="loader-circle" className="motion-safe:animate-spin" />
+      ) : (
+        icon && <Icon name={icon} />
+      )}
+      {children != null && <span className="min-inline-0">{children}</span>}
+    </BaseButton>
+  );
+
+  return (
+    <span
+      className={cn(
+        unavailable ? "inline-flex flex-col items-start gap-1" : "contents",
+        unavailable && block && "inline-full",
+      )}
+    >
+      {button}
+      {unavailable && (
+        <span id={reasonId} className="text-caption text-text-muted">
+          {disabledReason}
+        </span>
+      )}
+    </span>
+  );
+}

@@ -45,6 +45,7 @@ const SPEECH_RULES = ".claude/rules/speech-audio.md";
 const REVIEW = "docs/reviews/2026-11-20-danish-review-pilot.md";
 const EXAM_REVIEW = "docs/reviews/2026-11-20-exam-review-mock-rules.md";
 const INTRO_REVIEW = "docs/reviews/2026-11-21-danish-review-intros.md";
+const ANSWERS_REVIEW = "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md";
 
 export const RULES: readonly Rule[] = [
   // Abbreviations from the speech rules (only fx occurs in the pilot; the answers write "for eksempel").
@@ -72,6 +73,16 @@ export const RULES: readonly Rule[] = [
   { id: "PD3", kind: "say", pattern: word("PD3"), spoken: "pe de tre", enabled: true, source: REVIEW },
   // Danish review of the app-written intros, TTS hints table. Longer forms first: on a tie at the
   // same start, the earlier rule wins (see findMatches).
+  // Danish review of the 2016–2023 answers (2026-11-22): inflected forms before their stems.
+  { id: "SU-lånet", kind: "say", pattern: word("SU-lånet"), spoken: "es u lånet", enabled: true, source: ANSWERS_REVIEW },
+  { id: "SU'en", kind: "say", pattern: word("SU['’]en"), spoken: "es u en", enabled: true, source: ANSWERS_REVIEW },
+  { id: "CV'et", kind: "say", pattern: word("CV['’]et"), spoken: "se ve et", enabled: true, source: ANSWERS_REVIEW },
+  { id: "CV", kind: "say", pattern: word("CV"), spoken: "se ve", enabled: true, source: ANSWERS_REVIEW },
+  { id: "CO2", kind: "say", pattern: word("CO2"), spoken: "ce o to", enabled: true, source: ANSWERS_REVIEW },
+  { id: "B12", kind: "say", pattern: word("B12"), spoken: "be tolv", enabled: true, source: ANSWERS_REVIEW },
+  { id: "RKI", kind: "say", pattern: word("RKI"), spoken: "er ka i", enabled: true, source: ANSWERS_REVIEW },
+  { id: "DR", kind: "say", pattern: word("DR"), spoken: "de er", enabled: true, source: ANSWERS_REVIEW },
+  { id: "10-15-timer", kind: "say", pattern: word("10-15 timer"), spoken: "ti til femten timer", enabled: true, source: ANSWERS_REVIEW },
   { id: "SU-lån", kind: "say", pattern: word("SU-lån"), spoken: "es u lån", enabled: true, source: INTRO_REVIEW },
   { id: "SU", kind: "say", pattern: word("SU"), spoken: "es u", enabled: true, source: INTRO_REVIEW },
   { id: "sms-lån", kind: "say", pattern: word("[Ss][Mm][Ss]-lån"), spoken: "es em es lån", enabled: true, source: INTRO_REVIEW },

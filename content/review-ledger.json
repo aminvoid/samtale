@@ -205,15 +205,31 @@
       }
     },
     "2016-nov-b": {
-      "status": "needs-review",
+      "status": "approved",
       "notes": [
         {
           "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
         },
         {
-          "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «دعوا» in general.question.text.fa («بدون دعوا و تنبیه», booklet p. 74): in Dari «دعوا» reads as 'fighting', not scolding («سرزنش»). Correction note 2016-nov-b.fa-general.q2; question 2 in docs/content/dari-check.md."
+          "text": "Dari check passed (owner, 2026-11-22, docs/content/dari-check.md): «حقوق» and «دعوا» are clear in context; keep as is. The owner reviewed the checklist personally and said so directly in the conversation."
         }
       ],
+      "corrections": [
+        {
+          "id": "2016-nov-b.fa-general.q2",
+          "path": "general.question.text.fa",
+          "kind": "dari",
+          "find": "بدون دعوا و تنبیه",
+          "suggestion": "بدون سرزنش و تنبیه",
+          "reason": "Suggestion. In Dari «دعوا» means fighting. Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 2).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ],
+      "reviewedBy": "owner",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "63959ccccd36a64e",
       "intros": {
         "2016-nov-b.sitA.intro": {
           "status": "approved",
@@ -235,20 +251,7 @@
             }
           ]
         }
-      },
-      "corrections": [
-        {
-          "id": "2016-nov-b.fa-general.q2",
-          "path": "general.question.text.fa",
-          "kind": "dari",
-          "find": "بدون دعوا و تنبیه",
-          "suggestion": "بدون سرزنش و تنبیه",
-          "reason": "Suggestion. In Dari «دعوا» means fighting. Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 2).",
-          "by": "persian-localization-reviewer",
-          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
-          "status": "proposed"
-        }
-      ]
+      }
     },
     "2016-nov-c": {
       "status": "approved",
@@ -1317,15 +1320,31 @@
       }
     },
     "2020-nov-b": {
-      "status": "needs-review",
+      "status": "approved",
       "notes": [
         {
           "text": "Persian fidelity and orthography: signed off by persian-localization-reviewer (the Persian review of 48 topics, 2026-11-21, in docs/reviews), except the translation point below."
         },
         {
-          "text": "HOLD (2026-11-22): needs an Afghan (Dari) reader before approval. The issue is «حقوق» in general.followups[0].text.fa («…صرفه‌جویی در حقوق نیروی حرفه‌ای…», booklet p. 94): in Dari «حقوق» reads as 'rights', not pay («معاش»). Correction note 2020-nov-b.fa-general.followup1; question 1 in docs/content/dari-check.md."
+          "text": "Dari check passed (owner, 2026-11-22, docs/content/dari-check.md): «حقوق» and «دعوا» are clear in context; keep as is. The owner reviewed the checklist personally and said so directly in the conversation."
         }
       ],
+      "corrections": [
+        {
+          "id": "2020-nov-b.fa-general.followup1",
+          "path": "general.followups[0].text.fa",
+          "kind": "dari",
+          "find": "حقوق نیروی حرفه‌ای",
+          "suggestion": "دستمزد نیروی حرفه‌ای",
+          "reason": "Should fix. In Dari «حقوق» means 'rights' (pay is «معاش»). Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 1).",
+          "by": "persian-localization-reviewer",
+          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
+          "status": "proposed"
+        }
+      ],
+      "reviewedBy": "owner",
+      "reviewedOn": "2026-11-22",
+      "contentHash": "baefe55a899e9454",
       "intros": {
         "2020-nov-b.sitA.intro": {
           "status": "approved",
@@ -1347,20 +1366,7 @@
             }
           ]
         }
-      },
-      "corrections": [
-        {
-          "id": "2020-nov-b.fa-general.followup1",
-          "path": "general.followups[0].text.fa",
-          "kind": "dari",
-          "find": "حقوق نیروی حرفه‌ای",
-          "suggestion": "دستمزد نیروی حرفه‌ای",
-          "reason": "Should fix. In Dari «حقوق» means 'rights' (pay is «معاش»). Blocks approval until an Afghan reader checks it (docs/content/dari-check.md item 1).",
-          "by": "persian-localization-reviewer",
-          "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
-          "status": "proposed"
-        }
-      ]
+      }
     },
     "2020-nov-c": {
       "status": "approved",

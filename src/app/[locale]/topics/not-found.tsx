@@ -13,7 +13,9 @@ export default async function NotFound() {
   return (
     <>
       {/* not-found segments ignore generateMetadata here; React 19 hoists <title> into <head>. */}
-      <title>{t("metadata.titleTemplate", { page: t("notFound.title"), appName: t("metadata.appName") })}</title>
+      <title>
+        {t("metadata.titleTemplate", { page: t("notFound.title"), appName: t("metadata.appName") })}
+      </title>
       <FocusHeading>{t("notFound.title")}</FocusHeading>
       <div className="mbs-4 flex flex-wrap gap-x-4">
         <BackLink href={themesPath}>{t("library.search.browseInstead")}</BackLink>

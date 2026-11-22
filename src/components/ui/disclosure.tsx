@@ -45,7 +45,7 @@ export function Disclosure({
       <Collapsible.Panel
         id={panelId}
         keepMounted
-        className="mbs-2 motion-safe:transition-opacity motion-safe:duration-(--duration-base) motion-safe:ease-enter data-starting-style:opacity-0"
+        className="mbs-2 data-starting-style:opacity-0 motion-safe:transition-opacity motion-safe:duration-(--duration-base) motion-safe:ease-enter"
       >
         {children}
       </Collapsible.Panel>

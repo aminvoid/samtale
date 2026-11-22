@@ -39,7 +39,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | billede | تصویر | | Not «عکس» |
 | indledning (forslag til indledning) | معرفی موقعیت | ممتحن موقعیت را در یکی دو جمله معرفی می‌کند | SIRI's suggested wording |
 | obligatorisk spørgsmål | سؤال اجباری | سؤالی که حتماً پرسیده می‌شود | |
-| første obligatoriske spørgsmål | سؤال اجباری اول | معمولاً با *Hvorfor tror du, …?* تمام می‌شود | |
+| første obligatoriske spørgsmål | سؤال اجباری اول | اغلب یک سؤال *Hvorfor tror du, …?* است | |
 | andet obligatoriske spørgsmål / overordnet spørgsmål | سؤال اجباری دوم (سؤال کلی) | دربارهٔ مزایا و معایب | |
 | (af en mere) overordnet (karakter) | کلی‌تر | ممتحن می‌گوید سؤال کلی‌تری می‌آید | Teach recognition |
 | opfølgende spørgsmål | سؤال تکمیلی | سؤالی که ممتحن بعد از پاسخ شما می‌پرسد | |
@@ -82,3 +82,12 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | sygemeldt | در مرخصی استعلاجی | کسی که به‌خاطر بیماری به کارفرما خبر داده و سر کار نمی‌رود | Dari: «رخصتی» for «مرخصی» |
 | bofællesskab | bofællesskab (خانهٔ اشتراکی) | چند خانوار یا چند نفر، هرکدام با خانهٔ خودشان، که فضاهای مشترک و گاهی غذا را با هم تقسیم می‌کنند | Keep the Danish word; inside a Persian string it has no `lang="da"` (known limitation) |
 | ufaglært arbejde | کار غیرتخصصی (ufaglært) | کاری که آموزش حرفه‌ای رسمی لازم ندارد | Not «کار بدون مهارت» |
+| prøvedeltager | داوطلب | کسی که در آزمون شرکت می‌کند | Prefer direct «شما» in interface copy |
+| opklarende spørgsmål | سؤال برای روشن‌کردن گفته‌ها | ممتحن می‌خواهد نکته‌ای را روشن‌تر بیان کنید | Guide title «روشن‌کردن گفته‌ها» |
+| uddybende spørgsmål | سؤال برای توضیح بیشتر | ممتحن جزئیات بیشتر یا یک مثال می‌خواهد | Guide title «توضیح بیشتر» |
+| forklaring og begrundelse | دلیل‌آوردن | ممتحن می‌خواهد توضیح دهید چرا چیزی اتفاق می‌افتد یا چرا چنین نظری دارید | |
+| stillingtagen og argumentation | موضع‌گیری و استدلال | ممتحن می‌خواهد نظر خود را بیان کنید و برای آن دلیل بیاورید | |
+| særlige prøvevilkår | شرایط ویژهٔ آزمون | برای نمونه وقت اضافه، وسایل کمکی یا اتاق جداگانه | |
+| lytteforståelse | درک شنیداری | توانایی فهم آنچه می‌شنوید | |
+| prøvetermin | دورهٔ `<da>maj–juni</da>` `{year, number, year}` | دورهٔ برگزاری آزمون | Keep the Danish term label isolated and format the year with ICU |
+| fint | خوب بود | ممتحن معمولاً بعد از پاسخ شما می‌گوید *tak* | |

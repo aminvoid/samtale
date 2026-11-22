@@ -46,6 +46,28 @@ for (const width of [375, 1280]) {
   });
 }
 
+test("loads a plain-zero digit face for the Danish examiner transcript", async ({ page }) => {
+  await page.goto(partTwoPath);
+  const transcript = page.getByRole("region", { name: guide.section.steps }).locator('p[lang="da"]').filter({
+    hasText: "10 sekunder",
+  });
+  const fonts = await transcript.evaluate(async (element) => {
+    const style = getComputedStyle(element);
+    const digitFamily = style.getPropertyValue("--font-danish-digits").trim();
+    const face = `${style.fontWeight} ${style.fontSize} ${digitFamily}`;
+    return {
+      firstFamily: style.fontFamily.split(",")[0]?.trim().replaceAll('"', ""),
+      digitFamily: digitFamily.replaceAll('"', ""),
+      digitRanges: (await document.fonts.load(face, "10")).map((font) => font.unicodeRange),
+      danishLetterFaces: (await document.fonts.load(face, "Ø")).length,
+    };
+  });
+  expect(fonts.digitFamily).toBeTruthy();
+  expect(fonts.firstFamily).toBe(fonts.digitFamily);
+  expect(fonts.digitRanges).toEqual([expect.stringMatching(/^U\+0*30-0*39$/i)]);
+  expect(fonts.danishLetterFaces).toBe(0);
+});
+
 test("plays the three examiner clips on demand, one at a time", async ({ page }) => {
   await page.addInitScript(() => {
     const sources = new WeakMap<HTMLMediaElement, string>();

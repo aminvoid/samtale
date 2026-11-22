@@ -11,13 +11,20 @@ import { Link } from "@/i18n/navigation";
 import { richTags } from "@/i18n/rich-tags";
 import { examConfig } from "@/lib/exam/config";
 import {
+  arrangementsDeadlineWeeks,
+  arrangementsNextTermYear,
+  arrangementsWinterYear,
+  assessmentUrl,
   bookletUrl,
   candidateUrl,
   checkedOn,
-  conversationWholeMinutes,
+  conversationMinutes,
   examOrderUrl,
+  examinerChecklistUrl,
   gradeScaleUrl,
   oralMinutes,
+  practicalArrangementsUrl,
+  practicalNotesUrl,
 } from "./exam-facts";
 import { ExamSequence } from "./exam-sequence";
 import type { GuideExaminerLines } from "./examiner-lines";
@@ -56,17 +63,15 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
     </nav>
   );
 
-  // ABOUT §4.2 (BEK 1759/2024) and §4.3 (BEK 1687/2025 §48(2)).
-  const grades = [12, 10, 7, 4, 2, 0, -3].map((grade) => (
-    <bdi dir="ltr" key={grade}>
-      {grade === 2 || grade === 0 ? format.number(grade, "twoDigit") : format.number(grade, "integer")}
-    </bdi>
-  ));
-  const passMinimum = new Intl.NumberFormat(locale, {
-    numberingSystem: numberingSystemFor(locale),
+  // ABOUT §4.2 (BEK 1759/2024) and §4.3 (BEK 1687/2025).
+  const grades = [12, 10, 7, 4, 2, 0, -3];
+  const numberingSystem = numberingSystemFor(locale);
+  const duration = new Intl.NumberFormat(locale, { numberingSystem });
+  const passAverage = new Intl.NumberFormat(locale, {
+    numberingSystem,
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
-  }).format(2);
+  });
 
   function sourceLink(href: string, label: string) {
     return (
@@ -83,7 +88,11 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
         <p className="text-caption text-text-muted">{t("lastChecked", { date: checkedOn })}</p>
         {/* ABOUT §3.4: an unprepared conversation and the right to a repeat. Review Q5: candidate wording. */}
         <p className="text-lead">
-          {t.rich("lead", { ...richTags, part: "2", minutes: conversationWholeMinutes })}
+          {t.rich("lead", {
+            ...richTags,
+            part: "2",
+            minutes: duration.format(conversationMinutes),
+          })}
         </p>
         <section aria-labelledby="repeat">
           <InfoNote icon="repeat-2">
@@ -146,6 +155,7 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
             </div>
           </div>
           <p>{t("examiner.mayReword")}</p>
+          <div>{sourceLink(examinerChecklistUrl, t("sources.examinerChecklist"))}</div>
           <div>
             {/* US-001 #4: suggested candidate phrase from the glossary/review, separate from exam rules. */}
             <p>{t("examiner.rescue")}</p>
@@ -177,6 +187,7 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
             <li>{t("assessment.responses")}</li>
             <li>{t("assessment.language")}</li>
           </ul>
+          <div>{sourceLink(assessmentUrl, t("assessment.source", { annex: 1, point: "3.40" }))}</div>
         </section>
 
         <section aria-labelledby="grade" className="flex flex-col gap-3">
@@ -184,18 +195,39 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
             {t("section.grade")}
           </h2>
           <p>{t("grade.oral")}</p>
+          <p>{t("grade.holistic")}</p>
           <div>
-            <p>{t.rich("grade.scale", { grades: () => format.list(grades, { type: "unit" }) })}</p>
+            <p>{t("grade.scale")}</p>
+            <ul
+              role="list"
+              aria-label={t("grade.scaleLabel")}
+              dir="ltr"
+              className="mbs-2 flex flex-wrap justify-end gap-2"
+            >
+              {grades.map((grade) => (
+                <li key={grade} className="rounded-chip bg-surface-sunken px-3 py-1 text-label tabular-nums">
+                  {grade === 2 || grade === 0
+                    ? format.number(grade, "twoDigit")
+                    : format.number(grade, "integer")}
+                </li>
+              ))}
+            </ul>
             {sourceLink(gradeScaleUrl, t("grade.scaleSource"))}
           </div>
           <div>
-            <p>{t.rich("grade.pass", { ...richTags, minimum: passMinimum })}</p>
-            {sourceLink(examOrderUrl, t("grade.passSource", { section: 48, clause: 2 }))}
+            <p>
+              {t.rich("grade.pass", {
+                ...richTags,
+                minimum: passAverage.format(2),
+                belowMinimum: passAverage.format(1.9),
+              })}
+            </p>
+            {sourceLink(examOrderUrl, t("grade.passSource"))}
           </div>
           <p className="font-semibold">{t("grade.noGrade")}</p>
         </section>
 
-        {/* ABOUT §3.2 and §10: no notes; §10 addendum on §§27–29 for special arrangements. */}
+        {/* ABOUT §3.3 and §10: no notes; §10 addendum on §§27–29 and §51(4) for special arrangements. */}
         <section aria-labelledby="fits" className="flex flex-col gap-3">
           <h2 id="fits" tabIndex={-1} className="text-h2">
             {t("section.fits")}
@@ -204,10 +236,25 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
           <Link href="/guide" className={textLink}>
             {t("overview.title")}
           </Link>
-          <InfoNote icon="notebook-text">{t("fits.noNotes")}</InfoNote>
+          <InfoNote icon="notebook-text">
+            <p>{t("fits.noNotes")}</p>
+            {sourceLink(practicalNotesUrl, t("sources.practicalRules"))}
+          </InfoNote>
           <div>
-            <p>{t("fits.arrangements", { weeks: 8 })}</p>
-            {sourceLink(examOrderUrl, t("fits.arrangementsSource"))}
+            <h3 className="text-h3">{t("fits.arrangementsTitle")}</h3>
+            <p className="mbs-2">{t("fits.arrangements", { weeks: arrangementsDeadlineWeeks })}</p>
+            <p className="mbs-2">
+              {t.rich("fits.arrangementsTerm", {
+                ...richTags,
+                winterYear: arrangementsWinterYear,
+                year: arrangementsNextTermYear,
+              })}
+            </p>
+            <p className="mbs-2">{t("fits.arrangementsGrading")}</p>
+            <div className="flex flex-wrap gap-x-4">
+              {sourceLink(examOrderUrl, t("fits.arrangementsSource"))}
+              {sourceLink(practicalArrangementsUrl, t("fits.practicalArrangementsSource"))}
+            </div>
           </div>
         </section>
 

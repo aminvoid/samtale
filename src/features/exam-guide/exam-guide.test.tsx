@@ -53,7 +53,10 @@ describe("exam guide", () => {
     renderWithIntl(<GuideOverview />);
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(guide.overview.title);
+    expect(screen.getByText(/آخرین بررسی/)).toHaveTextContent("۲۲ نوامبر ۲۰۲۶");
     expect(screen.getByRole("heading", { name: /بخش اول/ })).toBeVisible();
+    expect(screen.getByText("censor")).toHaveAttribute("lang", "da");
+    expect(screen.getByText("eksaminator")).toHaveAttribute("dir", "ltr");
     expect(screen.getByText(guide.overview.partOneLater)).toBeVisible();
     expect(screen.getByRole("link", { name: guide.overview.partTwoLink })).toHaveAttribute(
       "href",
@@ -70,16 +73,25 @@ describe("exam guide", () => {
     const intro = introTemplate.replace("{topic}", example.title.da);
     expect(within(steps).getByText(intro)).toHaveAttribute("lang", "da");
     expect(within(steps).getByText(intro)).toHaveAttribute("dir", "ltr");
-    expect(within(steps).getByRole("button", { description: intro })).toBeVisible();
+    expect(
+      within(steps).getByRole("button", { name: /پخش صدای ممتحن به دانمارکی/, description: intro }),
+    ).toBeVisible();
+    expect(
+      within(steps).getByText("Hvilke fordele og ulemper mener du, der kan være ved …?"),
+    ).toHaveAttribute("lang", "da");
     expect(within(steps).getAllByText(/عین عبارت/)).toHaveLength(2);
     expect(within(steps).getByText(/جملهٔ ثابتی برای این مرحله تعیین نشده است/)).toBeVisible();
     expect(within(steps).getAllByText(/ترجمهٔ برنامه/)).toHaveLength(3);
+    expect(within(steps).getByRole("link", { name: /مقررات بخش دوم/ })).toHaveAttribute(
+      "href",
+      "https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf#page=46",
+    );
 
     const timeline = screen.getByRole("region", { name: guide.section.timeline });
     const segments = within(timeline).getAllByRole("listitem");
     expect(segments).toHaveLength(4);
     expect(segments[1]).toHaveTextContent("حدود ۱۰ ثانیه");
-    expect(segments[2]).toHaveTextContent("حدود ۴ دقیقه و نیم");
+    expect(segments[2]).toHaveTextContent("حدود ۴٫۵ دقیقه");
     expect(segments[2]).toHaveTextContent(guide.timeline.questions);
 
     const disclosure = screen.getByRole("button", { name: guide.onThisPage });
@@ -94,7 +106,7 @@ describe("exam guide", () => {
     );
   });
 
-  it("includes all four follow-up types, language quality, and citations for the grade facts", () => {
+  it("includes all four follow-up types, language quality, and the rules for grades and special arrangements", () => {
     renderWithIntl(<DelproeveTwoGuide lines={prepareExaminerLines(examinerLines, example)} />);
     const followUps = screen.getByRole("region", { name: guide.section.followUps });
     expect(within(followUps).getAllByRole("heading", { level: 3 })).toHaveLength(4);
@@ -103,18 +115,47 @@ describe("exam guide", () => {
       "da",
     );
     expect(screen.getByText(guide.assessment.language)).toBeVisible();
+    const assessment = screen.getByRole("region", { name: guide.section.assessment });
+    expect(within(assessment).getByRole("link", { name: /معیارهای رسمی ارزیابی/ })).toHaveAttribute(
+      "href",
+      "https://www.retsinformation.dk/eli/lta/2025/1687/pdf#page=17",
+    );
+    const examiner = screen.getByRole("region", { name: guide.section.examiner });
+    expect(within(examiner).getByRole("link", { name: /راهنمای رسمی رفتار ممتحن/ })).toHaveAttribute(
+      "href",
+      "https://danskogproever.dk/media/spjba3cd/huskeliste-til-eksaminator-og-censor-ved-den-mundtlige-proeve.pdf",
+    );
     expect(screen.getByText(guide.fits.noNotes)).toBeVisible();
     const grade = screen.getByRole("region", { name: guide.section.grade });
-    expect(within(grade).getByText("۰۲")).toBeVisible();
-    expect(within(grade).getByText("۰۰")).toBeVisible();
+    const scale = within(grade).getByRole("list", { name: guide.grade.scaleLabel });
+    expect(scale).toHaveAttribute("dir", "ltr");
+    expect(
+      within(scale)
+        .getAllByRole("listitem")
+        .map((item) => item.textContent),
+    ).toEqual(["۱۲", "۱۰", "۷", "۴", "۰۲", "۰۰", "\u200e−۳"]);
+    expect(within(grade).getByText(guide.grade.holistic)).toBeVisible();
     expect(within(grade).getByText("۲٫۰")).toHaveAttribute("dir", "ltr");
+    expect(within(grade).getByText("۱٫۹")).toHaveAttribute("dir", "ltr");
     expect(within(grade).getByRole("link", { name: /منبع رسمی مقیاس نمره/ })).toHaveAttribute(
       "href",
       "https://www.retsinformation.dk/eli/lta/2024/1759",
     );
-    expect(within(grade).getByRole("link", { name: /منبع رسمی شرط قبولی/ })).toHaveAttribute(
+    expect(
+      within(grade).getByRole("link", { name: "منبع رسمی شرط قبولی (به سایت دیگری می‌روید)" }),
+    ).toHaveAttribute("href", "https://www.retsinformation.dk/eli/lta/2025/1687");
+    const fits = screen.getByRole("region", { name: guide.section.fits });
+    expect(within(fits).getByText(/دست‌کم ۸ هفته/)).toBeVisible();
+    expect(within(fits).getByText("maj–juni")).toHaveAttribute("lang", "da");
+    expect(within(fits).getByText(/زمستانی سال ۲۰۲۶ گذشته است/)).toHaveTextContent(/۲۰۲۷/);
+    expect(within(fits).getByText(guide.fits.arrangementsGrading)).toBeVisible();
+    expect(within(fits).getByRole("link", { name: /مقررات بخش دوم/ })).toHaveAttribute(
       "href",
-      "https://www.retsinformation.dk/eli/lta/2025/1687",
+      "https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf#page=45",
+    );
+    expect(within(fits).getByRole("link", { name: /شرایط ویژه در راهنمای اجرایی/ })).toHaveAttribute(
+      "href",
+      "https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf#page=25",
     );
     expect(screen.getByRole("link", { name: guide.next.topics })).toHaveAttribute("href", "/topics");
     expect(screen.getByRole("link", { name: guide.next.mock })).toHaveAttribute("href", "/mock");

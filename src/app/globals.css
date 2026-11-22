@@ -29,7 +29,8 @@
 
   /* Danish: its own typeface wherever lang="da" is set (DanishText, <bdi lang="da">). */
   :lang(da) {
-    font-family: var(--font-danish);
+    /* Atkinson's default and tabular zeros are both slashed. Geist covers only ASCII digits. */
+    font-family: var(--font-danish-digits), var(--font-danish);
   }
 
   /* Headings: Persian needs room above the line for dots and diacritics. */

@@ -346,7 +346,7 @@
     "status": "approved",
     "notes": [
       {
-        "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+        "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
       },
       {
         "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."

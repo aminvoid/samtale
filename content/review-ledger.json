@@ -8,7 +8,7 @@
       "contentHash": "cd7ffa4465303d81",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -75,6 +75,17 @@
           "by": "persian-localization-reviewer",
           "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
           "status": "proposed"
+        },
+        {
+          "id": "2016-maj-a.da-sitA.q1.answer",
+          "path": "situations[0].question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "Desuden mangler nogle voksne, der sætter grænser.",
+          "suggestion": "Desuden mangler nogle af dem voksne, der sætter grænser.",
+          "reason": "Should fix. With V2 word order, 'nogle voksne' reads as the subject.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
         }
       ]
     },
@@ -85,7 +96,7 @@
       "contentHash": "eb865c3cfce323f1",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -127,7 +138,7 @@
       "contentHash": "ca608567918900b4",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -160,7 +171,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2016-maj-c.da-sitB.followup1.answer",
+          "path": "situations[1].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "Man løser heller ikke årsagen.",
+          "suggestion": "Man fjerner heller ikke årsagen.",
+          "reason": "Should fix. Collocation: you 'løser' a problem but 'fjerner' a cause.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2016-nov-a": {
       "status": "approved",
@@ -169,7 +193,7 @@
       "contentHash": "95ce1e238cfdef92",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -260,7 +284,7 @@
       "contentHash": "c7b57eabada5f084",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -315,7 +339,7 @@
       "contentHash": "c7a137dfe0c84b20",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -370,7 +394,7 @@
       "contentHash": "0b489a598d87223c",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -412,7 +436,7 @@
       "contentHash": "3ed1aa0168b5b51a",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -454,7 +478,7 @@
       "contentHash": "5e8074da81c12e61",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -496,7 +520,7 @@
       "contentHash": "93934a0d4784f764",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -551,7 +575,7 @@
       "contentHash": "36d57373a5c53f2c",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -606,7 +630,7 @@
       "contentHash": "fb1578f1434c578f",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -648,7 +672,7 @@
       "contentHash": "159d885d61945060",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -681,7 +705,31 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2018-maj-b.da-general.q2.answer",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "at de er mindre syge",
+          "suggestion": "at de er sjældnere syge",
+          "reason": "Should fix. The point is frequency (how often), not severity.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        },
+        {
+          "id": "2018-maj-b.da-sitA.example1",
+          "path": "situations[0].personalExamples[0].text.da",
+          "kind": "naturalness",
+          "find": "På et hospital skal man blive hjemme for at beskytte patienterne.",
+          "suggestion": "Når man arbejder på et hospital, skal man blive hjemme, når man er syg, for at beskytte patienterne.",
+          "reason": "Should fix. The setting (working at a hospital) and the condition (being ill) are missing.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2018-maj-c": {
       "status": "approved",
@@ -690,7 +738,7 @@
       "contentHash": "43179422b8870a4b",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -732,7 +780,7 @@
       "contentHash": "017b6cead126071d",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -774,7 +822,7 @@
       "contentHash": "c2ad2920f7d5e967",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -816,7 +864,7 @@
       "contentHash": "38d89d8d8a730b03",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -893,7 +941,7 @@
       "contentHash": "8f1c7f5d15ec8bdf",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -935,7 +983,7 @@
       "contentHash": "9ca6ab003b6e6f5d",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -977,7 +1025,7 @@
       "contentHash": "827674252616fae4",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1145,7 +1193,7 @@
       "contentHash": "d9ad1aac36ef5607",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1178,7 +1226,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2020-maj-a.da-general.q2.answer",
+          "path": "general.question.modelAnswer.text.da",
+          "kind": "naturalness",
+          "find": "også dem der bor langt væk",
+          "suggestion": "også dem, der bor langt væk",
+          "reason": "Error. The booklet's own comma rule puts a comma before a relative clause.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2020-maj-b": {
       "status": "approved",
@@ -1187,7 +1248,7 @@
       "contentHash": "5dcf4dac86efbbb0",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1229,7 +1290,7 @@
       "contentHash": "9306dfc793949d02",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1274,6 +1335,17 @@
           "by": "persian-localization-reviewer",
           "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
           "status": "proposed"
+        },
+        {
+          "id": "2020-maj-c.da-sitA.followup1.answer",
+          "path": "situations[0].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "bliver man udenfor",
+          "suggestion": "føler man sig udenfor",
+          "reason": "Should fix. Idiom: 'føle sig udenfor'.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
         }
       ]
     },
@@ -1284,7 +1356,7 @@
       "contentHash": "142d5252c7e8508a",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1375,7 +1447,7 @@
       "contentHash": "f74dd7b3fe5ef5f7",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1420,6 +1492,17 @@
           "by": "persian-localization-reviewer",
           "source": "docs/reviews/2026-11-21-persian-review-48-topics.md",
           "status": "proposed"
+        },
+        {
+          "id": "2020-nov-c.da-general.followup1.answer",
+          "path": "general.followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "give dem en bedre sundhed",
+          "suggestion": "give dem et bedre helbred",
+          "reason": "Should fix. 'sundhed' is a mass noun; 'et godt helbred' is the idiomatic form.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
         }
       ]
     },
@@ -1430,7 +1513,7 @@
       "contentHash": "6b1a901c50bb1290",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1463,7 +1546,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2021-maj-a.da-general.followup1.answer",
+          "path": "general.followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "tage det første, bedste job",
+          "suggestion": "tage det første det bedste job",
+          "reason": "Error. The set phrase is 'det første det bedste'.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2021-maj-b": {
       "status": "approved",
@@ -1472,7 +1568,7 @@
       "contentHash": "f77dc0a5e47cb190",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1505,7 +1601,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2021-maj-b.da-sitA.followup1.answer",
+          "path": "situations[0].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "familien rejser kortere",
+          "suggestion": "familien rejser kortere væk",
+          "reason": "Should fix. 'rejser kortere' is ambiguous (shorter trips in time or in distance).",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2021-maj-c": {
       "status": "approved",
@@ -1514,7 +1623,7 @@
       "contentHash": "d203252b8adb95d4",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1556,7 +1665,7 @@
       "contentHash": "5218a7f35d782710",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1589,7 +1698,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2021-nov-a.da-sitA.followup1.answer",
+          "path": "situations[0].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "lære at lugte og smage på maden",
+          "suggestion": "lære at lugte til maden og smage på den",
+          "reason": "Should fix. Preposition: 'lugte til' and 'smage på' take different prepositions.",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2021-nov-b": {
       "status": "approved",
@@ -1598,7 +1720,7 @@
       "contentHash": "6826367ac3b06d70",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1640,7 +1762,7 @@
       "contentHash": "61bdee5da33fdeb4",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1717,7 +1839,7 @@
       "contentHash": "649cf77ca4d7194b",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1759,7 +1881,7 @@
       "contentHash": "10e628e73ac091a5",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1801,7 +1923,7 @@
       "contentHash": "52edd0179d25ef21",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1843,7 +1965,7 @@
       "contentHash": "14f2eb79b90de5f5",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1909,7 +2031,7 @@
       "contentHash": "2f7d3abce425b7ea",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -1964,7 +2086,7 @@
       "contentHash": "e664d781917236d0",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2006,7 +2128,7 @@
       "contentHash": "ac57ab3ed9280389",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2048,7 +2170,7 @@
       "contentHash": "d424c933e725e174",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2081,7 +2203,20 @@
             }
           ]
         }
-      }
+      },
+      "corrections": [
+        {
+          "id": "2023-maj-b.da-sitB.followup1.answer",
+          "path": "situations[1].followups[0].answer.text.da",
+          "kind": "naturalness",
+          "find": "Ja, det synes jeg godt.",
+          "suggestion": "Ja, det synes jeg.",
+          "reason": "Should fix. 'godt' doesn't go with 'synes' (compare 'det tror jeg godt').",
+          "by": "danish-language-reviewer",
+          "source": "docs/reviews/2026-11-22-danish-review-answers-2016-2023.md",
+          "status": "proposed"
+        }
+      ]
     },
     "2023-maj-c": {
       "status": "approved",
@@ -2090,7 +2225,7 @@
       "contentHash": "d1d5aefa6f050db7",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2145,7 +2280,7 @@
       "contentHash": "096035da6f2e68fe",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2187,7 +2322,7 @@
       "contentHash": "ac24cfeb5004b40b",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."
@@ -2242,7 +2377,7 @@
       "contentHash": "59ae2a8cb24122ed",
       "notes": [
         {
-          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers for this topic have had no separate danish-language-reviewer naturalness pass."
+          "text": "Danish: every booklet passage matches the booklet Markdown and the PDF text word for word (content:check and content:check:pdf, 2026-11-21); the app-written intros were approved by danish-language-reviewer (Danish review of the intros, 2026-11-21). The booklet's model answers, follow-up answers and personal examples were reviewed by danish-language-reviewer (the Danish review of the 2016–2023 answers in docs/reviews); any notes are recorded as corrections alongside the text."
         },
         {
           "text": "Exam fit: the app-written intros were approved by pd3-exam-expert (exam review of intros and 2019, 2026-11-21)."

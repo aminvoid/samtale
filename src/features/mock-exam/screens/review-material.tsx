@@ -74,7 +74,7 @@ export function ReviewMaterial({
                   {situation.intro.text.da}
                 </DanishText>
                 <SourceLabel variant={situation.intro.origin === "app" ? "app" : "siri"}>
-                  {t.rich(situation.intro.origin === "app" ? "examiner.app" : "examiner.suggested", richTags)}
+                  {t.rich(situation.intro.origin === "app" ? "examiner.app" : "examiner.siri", richTags)}
                 </SourceLabel>
                 {situation.intro.audio && (
                   <AudioPlayer

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Suspense } from "react";
 import { DirectionProvider } from "@/components/ui/direction-provider";
 import { SkipLink } from "@/components/ui/skip-link";
 import { AppShell } from "@/features/app-shell/app-shell";
+import { ClearMockReloadMarker } from "@/features/mock-exam";
 import { getDirection } from "@/i18n/config";
 import { routing } from "@/i18n/routing";
 import { publicEnv } from "@/lib/env/public";
@@ -40,6 +42,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       <body>
         <SkipLink>{t("skipToContent")}</SkipLink>
         <NextIntlClientProvider>
+          <Suspense fallback={null}>
+            <ClearMockReloadMarker />
+          </Suspense>
           <DirectionProvider direction={direction}>
             <AppShell>{children}</AppShell>
           </DirectionProvider>

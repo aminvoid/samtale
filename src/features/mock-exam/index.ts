@@ -20,3 +20,4 @@ export type { MicrophoneStrategy } from "./runner/adapters/recorder";
 export type { MockSessionRecordings } from "./runner/adapters/session-recordings";
 export { elapsed, remaining } from "./machine";
 export type { AttemptRecord, Mode, State } from "./machine";
+export { ClearMockReloadMarker } from "./screens/clear-mock-reload-marker";

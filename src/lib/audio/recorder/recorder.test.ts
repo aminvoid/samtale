@@ -81,6 +81,7 @@ describe("MediaRecorder adapter", () => {
 
   afterEach(() => {
     vi.unstubAllGlobals();
+    vi.useRealTimers();
   });
 
   it.each(["audio/mp4", "audio/webm;codecs=opus"])(
@@ -157,6 +158,27 @@ describe("MediaRecorder adapter", () => {
     await recorder.start();
     expect(await recorder.stop()).toMatchObject({ mimeType: "audio/mp4" });
     recorder.release();
+  });
+
+  it("resolves a stopped take to null when the recorder never delivers its stop event", async () => {
+    vi.useFakeTimers();
+    const recorder = createRecorder(() => 0, 250);
+    await recorder.requestMic();
+    await recorder.start();
+    const media = FakeMediaRecorder.latest;
+    if (!media) throw new Error("Expected a recorder");
+    media.chunks("partial");
+    media.state = "inactive";
+    const settled = vi.fn();
+    const result = recorder.stop().then(settled);
+    recorder.release();
+
+    await vi.advanceTimersByTimeAsync(249);
+    expect(settled).not.toHaveBeenCalled();
+    await vi.advanceTimersByTimeAsync(1);
+    await result;
+    expect(settled).toHaveBeenCalledExactlyOnceWith(null);
+    expect(audioTrack.stop).toHaveBeenCalledOnce();
   });
 
   it("reports an encoder startup failure before confirming a recording", async () => {

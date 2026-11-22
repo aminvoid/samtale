@@ -38,11 +38,13 @@ function deviceError(error: unknown): RecorderError {
   return new RecorderError("unavailable");
 }
 
-function createTake(media: MediaRecorder, now: () => number, onFailure: () => void) {
+function createTake(media: MediaRecorder, now: () => number, onFailure: () => void, stopTimeoutMs: number) {
   const chunks: Blob[] = [];
   let durationMs = 0;
   let since: number | null = null;
   let started = false;
+  let finished = false;
+  let stopTimer: ReturnType<typeof setTimeout> | undefined;
   let confirmStart: () => void = () => undefined;
   let rejectStart: (error: RecorderError) => void = () => undefined;
   const activation = new Promise<void>((confirm, reject) => {
@@ -68,20 +70,26 @@ function createTake(media: MediaRecorder, now: () => number, onFailure: () => vo
     confirmStart();
   }
 
-  function finish() {
+  function finish(discard = false) {
+    finished = true;
+    clearTimeout(stopTimer);
     freeze();
     media.removeEventListener("start", onStart);
     media.removeEventListener("dataavailable", onData);
-    media.removeEventListener("stop", finish);
+    media.removeEventListener("stop", onStop);
     media.removeEventListener("error", onError);
     if (!started) rejectStart(new RecorderError("unavailable"));
     const mimeType = chunks.find((chunk) => chunk.type)?.type || media.mimeType;
     resolve(
-      started && chunks.length > 0
+      !discard && started && chunks.length > 0
         ? { blob: new Blob(chunks, { type: mimeType }), mimeType, durationMs }
         : null,
     );
     chunks.length = 0;
+  }
+
+  function onStop() {
+    finish();
   }
 
   function onError() {
@@ -93,7 +101,7 @@ function createTake(media: MediaRecorder, now: () => number, onFailure: () => vo
 
   media.addEventListener("start", onStart, { once: true });
   media.addEventListener("dataavailable", onData);
-  media.addEventListener("stop", finish);
+  media.addEventListener("stop", onStop);
   media.addEventListener("error", onError);
 
   return {
@@ -120,7 +128,12 @@ function createTake(media: MediaRecorder, now: () => number, onFailure: () => vo
       }
     },
     stop() {
+      if (finished) return result;
       freeze();
+      // A track ending can leave Safari inactive without delivering the final stop event.
+      stopTimer = setTimeout(() => {
+        finish(true);
+      }, stopTimeoutMs);
       if (media.state !== "inactive") media.stop();
       return result;
     },
@@ -128,7 +141,7 @@ function createTake(media: MediaRecorder, now: () => number, onFailure: () => vo
 }
 
 /** The caller owns the stream until release and owns the returned Blob after stop. */
-export function createRecorder(now = () => performance.now()) {
+export function createRecorder(now = () => performance.now(), stopTimeoutMs = 3000) {
   let stream: MediaStream | undefined;
   let take: ReturnType<typeof createTake> | undefined;
   let pending: Promise<void> | undefined;
@@ -229,9 +242,14 @@ export function createRecorder(now = () => performance.now()) {
     } catch (error) {
       throw deviceError(error);
     }
-    const next = createTake(media, now, () => {
-      if (take === next) emit({ type: "error", error: new RecorderError("unavailable") });
-    });
+    const next = createTake(
+      media,
+      now,
+      () => {
+        if (take === next) emit({ type: "error", error: new RecorderError("unavailable") });
+      },
+      stopTimeoutMs,
+    );
     take = next;
     return next.start(timeslice);
   }

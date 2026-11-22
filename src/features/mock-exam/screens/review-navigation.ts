@@ -1,14 +1,25 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useEffect, useState } from "react";
+import { startTransition, useEffect, useLayoutEffect, useState } from "react";
+import { useRouter } from "@/i18n/navigation";
 
-export function useReviewNavigation(hasRecordings: boolean) {
+export function useReviewNavigation(status: "loading" | "unkept" | "free") {
   const locale = useLocale();
-  const [next, setNext] = useState<string | null>(null);
+  const router = useRouter();
+  const [target, setTarget] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!hasRecordings) return;
+    if (status === "free" && target !== null) {
+      startTransition(() => {
+        setTarget(null);
+        router.push(target);
+      });
+    }
+  }, [status, target, router]);
+
+  useLayoutEffect(() => {
+    if (status === "free") return;
     const prefix = `/${locale}`;
     function guard(event: MouseEvent) {
       if (
@@ -35,19 +46,19 @@ export function useReviewNavigation(hasRecordings: boolean) {
         return;
       if (url.pathname === window.location.pathname && url.search === window.location.search) return;
       event.preventDefault();
-      setNext((url.pathname.slice(prefix.length) || "/") + url.search + url.hash);
+      setTarget((url.pathname.slice(prefix.length) || "/") + url.search + url.hash);
     }
 
     document.addEventListener("click", guard, true);
     return () => {
       document.removeEventListener("click", guard, true);
     };
-  }, [hasRecordings, locale]);
+  }, [status, locale]);
 
   return {
-    next,
+    next: status === "unkept" ? target : null,
     clear: () => {
-      setNext(null);
+      setTarget(null);
     },
   };
 }

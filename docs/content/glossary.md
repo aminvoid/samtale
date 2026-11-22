@@ -15,6 +15,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 - **Answer:** «پاسخ», not «جواب».
 - **Ezafe after a silent h in interface copy:** «هٔ» (U+0647 U+0654). Booklet text keeps «ه‌ی».
 - **Search folds** «ه‌ی»/«هٔ»/«ه», ي/ی, ك/ک and ZWNJ.
+- **Persian digits:** use a colon or another clear separator. A middle dot («·») next to a Persian digit can look like «۰».
 
 | Danish | Persian (interface) | Explanation for learners | Note |
 |---|---|---|---|
@@ -44,7 +45,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | (af en mere) overordnet (karakter) | کلی‌تر | ممتحن می‌گوید سؤال کلی‌تری می‌آید | Teach recognition |
 | opfølgende spørgsmål | سؤال تکمیلی | سؤالی که ممتحن بعد از پاسخ شما می‌پرسد | |
 | forslag til opfølgende spørgsmål | سؤال تکمیلی پیشنهادی | ممتحن واقعی ممکن است سؤال دیگری بپرسد | |
-| Undskyld, vil du godt gentage spørgsmålet? | ببخشید، می‌شود سؤال را تکرار کنید؟ | درخواست تکرار در آزمون مجاز است | |
+| Undskyld, vil du godt gentage spørgsmålet? | ببخشید، می‌شود سؤال را تکرار کنید؟ | درخواست تکرار در آزمون مجاز است | Use this wording verbatim for the repeat request. |
 | Tak, så er prøven forbi. | ممنون، آزمون تمام شد. | | |
 | censor- og eksaminatorhæfte | دفترچهٔ ممتحن (SIRI) | | Distinct from «کتابچه» |
 | (Shery Rahimi's booklet) | کتابچه | | |
@@ -56,7 +57,12 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | skabelon | الگو | | |
 | prøveforhold / øvelse | شرایط آزمون / تمرین | | Mock-exam modes |
 | prøve (mock) | آزمون تمرینی | | |
-| afbrudt | قطع‌شده | | Not a fail: «نه «ناموفق»» |
+| afbrudt | قطع‌شده | «با برچسب «قطع‌شده»» | Explain that the label describes the interruption. Never contrast it with failing. |
+| trin (i interviewet) | مرحله | مرحلهٔ گفت‌وگو با ممتحن | Reserve «بخش» for delprøve. |
+| optagelsessegment | تکه | تکه‌ای از ضبط یک پاسخ | |
+| selvevaluering | خودارزیابی | پاسخ‌های خودتان را با نمونه مقایسه کنید | |
+| svarsiden | صفحهٔ پاسخ‌ها | صفحهٔ پاسخ‌های شما و پاسخ‌های نمونه | |
+| timer | زمان‌سنج | | Dari reader check pending, along with «قطع‌شده» and «مزاحم نشوید». |
 | pause | مکث | | Not «توقف» |
 | optagelse | ضبط | | |
 | kommune | کمون (شهرداری؛ دولت محلی) | مدرسه، نگهداری کودک و مراقبت از سالمندان هم با کمون است | Afghan usage: «شاروالی». The booklet writes «شهرداری» (e.g. 2020-nov-b); its text stays as printed. A Danish kommune does far more than a city hall, so interface copy uses «کمون» and glosses it once |

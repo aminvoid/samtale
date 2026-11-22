@@ -305,6 +305,7 @@ export interface Context {
   readonly micNeedsReopening: boolean;
   readonly micRequest: number | null;
   readonly recording: "idle" | "starting" | "recording" | "paused";
+  readonly recordingFailed: boolean;
   readonly recordingRequest: number | null;
   readonly timersVisible: boolean;
   readonly alwaysShowExaminerText: boolean;

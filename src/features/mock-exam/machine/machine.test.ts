@@ -1647,7 +1647,9 @@ describe("mock exam invariants (fixed-seed properties)", () => {
         failed.gap();
         failed.clip();
         const requestId = required(failed.context.recordingRequest);
+        expect(failed.context.recordingFailed).toBe(false);
         expect(announcements(failed.send({ type: "RECORDING_FAILED", requestId }))).toEqual([]);
+        expect(failed.context.recordingFailed).toBe(true);
         expect(announcements(failed.context.announcements)).toEqual(["mock.live.notRecording"]);
         expect(announcements(failed.done())).toEqual([]);
         expect(announcements(failed.clip())).toEqual(["mock.live.notRecording"]);
@@ -1658,6 +1660,43 @@ describe("mock exam invariants (fixed-seed properties)", () => {
 });
 
 describe("media and deadline races", () => {
+  it("ignores a stale recorder failure and accepts the current request's failure", () => {
+    const h = new Harness("practice").speaking();
+    h.clip();
+    h.gap();
+    h.clip();
+    const requestId = required(h.context.recordingRequest);
+    const before = h.state;
+    expect(h.send({ type: "RECORDING_FAILED", requestId: requestId - 1 })).toEqual([]);
+    expect(h.state).toBe(before);
+    h.send({ type: "RECORDING_FAILED", requestId });
+    expect(h.context.recordingFailed).toBe(true);
+  });
+
+  it("keeps the recording-failure flag when interrupted practice restarts", () => {
+    const h = new Harness("practice").speaking();
+    h.clip();
+    h.gap();
+    h.clip();
+    h.send({ type: "RECORDING_FAILED", requestId: required(h.context.recordingRequest) });
+    h.send({ type: "AUDIO_INTERRUPTED" });
+    const result = h.send({ type: "RESTART" });
+    expect(played(result)).toEqual([intro]);
+    expect(h.context.recordingFailed).toBe(true);
+    expect(h.context.micState).toBe("unavailable");
+  });
+
+  it("remembers a failed microphone reacquisition after replay and keeps the announcement queued", () => {
+    const h = new Harness("exam").first();
+    h.send({ type: "MIC_MUTED" });
+    h.send({ type: "CONTINUE_AFTER_INTERRUPTION" });
+    expect(announcements(h.send({ type: "MIC_REACQUIRE_FAILED" }))).not.toContain("mock.live.notRecording");
+    h.clip();
+    expect(h.state.type).toBe("run.unit.answering");
+    expect(h.context.recordingFailed).toBe(true);
+    expect(announcements(h.context.announcements)).toContain("mock.live.notRecording");
+  });
+
   it("keeps the exam look countdown running behind the leave dialog", () => {
     const h = new Harness("exam").reveal().load().start();
     h.startClip();

@@ -539,7 +539,8 @@ All timers continue from their frozen values. In exam conditions a grace allowan
 - **C19 = `leaveDialog` (target).** Back never ends an attempt by itself. It closes the topmost sheet or dialog first (Android convention), and otherwise opens the leave dialog (§7.6). Leaving always needs an explicit "Leave without saving" or "End and see my answers".
 - **C19 = `endEarly` (fallback, if the guard proves unreliable).** Back ends the attempt, but anything answered is **saved as "ended early"**, and `/fa/mock` shows a notice with "See my answers" (§7.6). With no answer yet, the notice says nothing was saved.
 - The old behaviour (back discards silently, US-038 #5) is retired in both settings (story update in the README).
-- **The review page** applies the same guard while it holds unkept recordings (R-34).
+- **The review page** queues same-locale link navigation while recordings are loading. Once loading finishes, it follows the link if there are no unkept recordings or opens the keep-or-discard dialog with that destination (R-34).
+- **Known v1 limitation:** Browser Back from the review page while recordings are loading or unkept discards session takes without prompting.
 - **Answer aloud** (a panel, not a route) keeps its own rule: back closes the panel, with the discard guard if a take exists.
 
 ---

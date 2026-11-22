@@ -25,7 +25,7 @@ export function ReviewFacts({ attempt }: { attempt: AttemptRecord }) {
         </li>
         {attempt.skippedFollowups.length > 0 && <li>{t("skipped")}</li>}
         {attempt.mode === "exam" && attempt.status === "completed" && attempt.totalMs < limit && (
-          <li>{t.rich("short", { ...richTags, limit: duration(limit) })}</li>
+          <li>{formatDuration(limit, (parts) => t("short", parts))}</li>
         )}
       </ul>
     </section>

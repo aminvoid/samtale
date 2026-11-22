@@ -1,3 +1,4 @@
+import { onHistoryBack } from "@/lib/navigation/history-back";
 import type { Clock, VisibilityPort, WakeLockPort } from "../ports";
 
 export const browserClock: Clock = {
@@ -82,13 +83,13 @@ export const browserVisibility: VisibilityPort = {
     document.addEventListener("visibilitychange", visibility);
     window.addEventListener("pagehide", pagehide);
     window.addEventListener("pageshow", pageshow);
-    // The App Router can unmount the runner from its own popstate listener.
-    window.addEventListener("popstate", back, true);
+    // The App Router unmounts the runner from its own popstate listener; see @/lib/navigation/history-back.
+    const unsubscribeBack = onHistoryBack(back);
     return () => {
       document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("pagehide", pagehide);
       window.removeEventListener("pageshow", pageshow);
-      window.removeEventListener("popstate", back, true);
+      unsubscribeBack();
     };
   },
   armBackGuard() {

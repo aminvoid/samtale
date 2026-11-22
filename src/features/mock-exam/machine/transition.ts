@@ -101,6 +101,7 @@ export function initialize(setup: Setup): Transition {
     micNeedsReopening: false,
     micRequest: null,
     recording: "idle",
+    recordingFailed: false,
     recordingRequest: null,
     timersVisible: setup.timersVisible ?? examConfig.defaultTimersVisible,
     alwaysShowExaminerText: policy.keepShowTextOpen && !!setup.alwaysShowExaminerText,
@@ -715,6 +716,7 @@ export function transition(state: State, event: Event): Transition {
       answers: [],
       unitStarted: false,
       u2Asked: false,
+      // Restart preserves the unavailable microphone and its recording-failure notice for this run.
       micRequest: null,
       sheet: "none",
       leaveDialog: false,
@@ -1173,7 +1175,7 @@ export function transition(state: State, event: Event): Transition {
       case "RECORDING_FAILED":
         if (matches(context.recordingRequest, event.requestId)) {
           stopRecording();
-          patch({ micState: "unavailable", recordingCap: null });
+          patch({ micState: "unavailable", recordingCap: null, recordingFailed: true });
           releaseMic();
           discardAnnouncements("mock.live.rerecording");
           queueAnnouncement({ key: "mock.live.notRecording" });
@@ -1280,7 +1282,7 @@ export function transition(state: State, event: Event): Transition {
         if (context.micState !== "granted" || !matches(context.micRequest, event.requestId)) return;
         patch({ micNeedsReopening: false, micRequest: null });
         if (event.type === "MIC_REACQUIRE_FAILED") {
-          patch({ micState: "unavailable", recordingCap: null });
+          patch({ micState: "unavailable", recordingCap: null, recordingFailed: true });
           stopRecording();
           releaseMic();
           discardAnnouncements("mock.live.rerecording");

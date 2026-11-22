@@ -1,7 +1,13 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const PORT = "3100";
-const CHROMIUM_MEDIA_FLAGS = ["--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream"];
+// Fake microphone input, and a fake audio sink: without a usable output device (a locked or
+// non-GUI session, many CI hosts) the media clock never advances and real clips never end.
+const CHROMIUM_MEDIA_FLAGS = [
+  "--use-fake-ui-for-media-stream",
+  "--use-fake-device-for-media-stream",
+  "--disable-audio-output",
+];
 
 export default defineConfig({
   testDir: "./e2e",

@@ -42,6 +42,7 @@ paths:
 - **Consistent formal address** (`شما`) in **app-authored copy**. Booklet text keeps the author's own register (for example «به نظرت») and is never rewritten (decided by delegation, 2026-11-20). Use standard Persian that both Iranian and Afghan (Dari) readers understand, without regional slang.
 - **Terminology:** follow [docs/content/glossary.md](../../docs/content/glossary.md). Use «آزمون» for the exam, never «امتحان» (not even for "try"). Use «پاسخ», not «جواب». Use «مکث» for pause. Never transliterate SIRI.
 - **No literal digits in messages.** Use ICU `{n, number, integer}` arguments, so the digit-style setting applies.
+  Fixed Danish names such as `delprøve 2` and `PD3` keep their original Latin digits inside a Danish language isolate.
 
 ## Fonts
 - **Persian interface:** Vazirmatn.

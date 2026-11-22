@@ -1,22 +1,29 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import { DanishText } from "@/components/ui/danish-text";
 import { Icon } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PageHeader } from "@/components/ui/page-header";
 import { Link } from "@/i18n/navigation";
 import { examConfig } from "@/lib/exam/config";
-import { richTags } from "@/i18n/rich-tags";
 import { cn } from "@/lib/utils/cn";
 import { ExamRules } from "./exam-rules";
+import { MockHistoryLink } from "./mock-history-link";
 import { MockStartNotice } from "./mock-start-notice";
 import { mockCard, mockLink, mockPrimaryLink, mockSecondaryLink, mockTextLink } from "./presentation";
 
-export function MockStart({ topicCount }: { topicCount: number }) {
+export function MockStart({
+  topicCount,
+  showProgressHistory = false,
+}: {
+  topicCount: number;
+  showProgressHistory?: boolean;
+}) {
   const t = useTranslations("mock");
   return (
     <div className="grid gap-6">
       <PageHeader
-        title={t.rich("title", { ...richTags, part: 2 })}
+        title={t.rich("title", { da: (text) => <DanishText as="bdi">{text}</DanishText>, part: "other" })}
         subtitle={t("start.sequence", { look: examConfig.lookSeconds })}
       />
       <Link href="/guide/delproeve-2" className={cn(mockTextLink, "justify-self-start")}>
@@ -81,6 +88,7 @@ export function MockStart({ topicCount }: { topicCount: number }) {
         </section>
         <InfoNote variant="compact">{t("start.noGrade")}</InfoNote>
       </div>
+      {showProgressHistory && <MockHistoryLink />}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useState, useSyncExternalStore } from "react";
 import { AudioPlayer } from "@/components/ui/audio-player";
 import { DanishText } from "@/components/ui/danish-text";
 import { Disclosure } from "@/components/ui/disclosure";
@@ -18,6 +19,18 @@ import { ReviewTake, type ReviewTakeSource } from "./review-take";
 
 type Prompt = Topic["general"]["question"] | Topic["general"]["followups"][number];
 type Role = "first" | "second" | "followup";
+
+// The review spec opens samples from the 768 px layout onward.
+const sampleBreakpoint = "(min-width: 48rem)";
+function subscribeToSampleBreakpoint(notify: () => void) {
+  const query = window.matchMedia(sampleBreakpoint);
+  query.addEventListener("change", notify);
+  return () => {
+    query.removeEventListener("change", notify);
+  };
+}
+const readSampleBreakpoint = () => window.matchMedia(sampleBreakpoint).matches;
+const serverSampleBreakpoint = () => null;
 
 export function ReviewQuestion({
   item,
@@ -42,6 +55,17 @@ export function ReviewQuestion({
   const label = t(`examiner.${role}`);
   const template = role === "first" ? 1 : role === "second" ? 2 : 3;
   const duration = recordings.reduce((total, part) => total + part.durationMs, 0);
+  const wide = useSyncExternalStore<boolean | null>(
+    subscribeToSampleBreakpoint,
+    readSampleBreakpoint,
+    serverSampleBreakpoint,
+  );
+  const [sampleOpen, setSampleOpen] = useState<boolean>();
+  const hasNoTakes = recordings.length === 0;
+  // Review questions mount after the attempt's takes resolve. Capture the default once the viewport is known.
+  if (sampleOpen === undefined && (hasNoTakes || wide !== null)) {
+    setSampleOpen(hasNoTakes || wide === true);
+  }
 
   const samplePanel = (
     <div className="grid gap-3">
@@ -130,12 +154,15 @@ export function ReviewQuestion({
             )}
           </div>
         )}
-        <div className="grid gap-2 rounded-card bg-role-sample-subtle p-3 min-inline-0">
-          <h4 className="text-h3 text-role-sample">
-            {role === "followup" ? study("shortAnswer") : t("review.sample")}
-          </h4>
+        <Disclosure
+          className="rounded-card bg-role-sample-subtle p-3 min-inline-0"
+          heading="h4"
+          label={role === "followup" ? study("shortAnswer") : t("review.sample")}
+          open={sampleOpen ?? false}
+          onOpenChange={setSampleOpen}
+        >
           {samplePanel}
-        </div>
+        </Disclosure>
       </div>
       <Link href={`/topics/${topicId}#${section}`} className={cn(mockTextLink, "justify-self-start")}>
         {t("review.topicLink")}

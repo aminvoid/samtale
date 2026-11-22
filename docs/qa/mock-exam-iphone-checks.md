@@ -1,0 +1,9 @@
+# Mock exam checks on an iPhone
+
+Use Safari on a physical iPhone with the deployed test site open over HTTPS. Record the phone model, iOS version and result of each check. Run once on the oldest supported iOS version available and once on current iOS.
+
+1. In a fresh tab, open Practice, skip the sound check, select a card and tap Start. Confirm the first examiner line starts from that tap, subsequent lines play automatically, and Done reaches the next question. If Safari presents the tap-to-hear control, tap it and verify that the same line plays.
+2. Start Exam Conditions with recording. During examiner playback, switch apps or lock the phone, then return. Repeat during an answer, including once with an incoming call. Confirm the interruption dialog appears, time spent away is excluded, and continuing during an answer replays its question. In Review, confirm the attempt shows the interruption label.
+3. Grant microphone access, speak for several seconds and tap Done. Interrupt a later answer and resume it. Review should play each captured segment in order. After finishing or leaving, confirm the microphone-use indicator goes out.
+4. Keep one recording, reload Review, play it, delete it and reload again. Confirm the recording stays deleted. Finish another attempt without keeping it, follow an in-app link from Review and verify that staying preserves the recording and leaving discards it. In Safari Web Inspector, check that these journeys make no requests containing recording data.
+5. Deny microphone access in Safari and start a fresh run. Confirm the permission guidance appears and the exam can reach Review with sample answers. Use Safari's back button and edge swipe from a separate live attempt after the first answer starts. Confirm the mock start page reports the early ending and links to that attempt.

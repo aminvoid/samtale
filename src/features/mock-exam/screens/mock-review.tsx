@@ -37,7 +37,7 @@ type Props = { topic: Topic; lines: ExaminerLines };
 export function MockReview(props: Props) {
   const query = useSearchParams();
   const id = StableIdSchema.safeParse(query.get("attempt"));
-  return <ReviewAttempt key={id.data ?? ""} {...props} id={id.data} />;
+  return <ReviewAttempt key={`${props.topic.id}:${id.data ?? ""}`} {...props} id={id.data} />;
 }
 
 function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
@@ -65,8 +65,9 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
   const match = destination?.attempt?.attemptId === id && destination?.attempt?.topicId === topic.id;
   const fallback = match ? destination.attempt : undefined;
   const pendingSave = match ? destination.saveResult : undefined;
+  const loading = id !== undefined && result === undefined;
   const unkept = result?.attempt?.kept === false && result.takes.length > 0;
-  const navigation = useReviewNavigation(unkept);
+  const navigation = useReviewNavigation(loading ? "loading" : unkept ? "unkept" : "free");
 
   useEffect(() => {
     if (id === undefined) return;
@@ -135,7 +136,7 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
     if (result.available) write(() => store.updateSelfCheck(attempt.attemptId, next));
   }
 
-  async function keep(next?: string) {
+  async function keep() {
     if (busy || !attempt || !result.available) return;
     setBusy(true);
     setNotice(null);
@@ -146,7 +147,6 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
       return;
     }
     setResult({ ...result, attempt: { ...attempt, kept: true } });
-    if (next) router.push(next);
   }
 
   async function remove() {
@@ -162,14 +162,13 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
     setBusy(false);
   }
 
-  const loading = id !== undefined && result === undefined;
   const takes = result?.takes ?? [];
   const fromHere = result?.fresh ?? false;
   const showKeep = !!attempt && takes.length > 0;
   return (
     <div className="grid gap-5">
       <PageHeader
-        back={<BackLink href="/mock">{nav("mockFull")}</BackLink>}
+        back={loading ? undefined : <BackLink href="/mock">{nav("mockFull")}</BackLink>}
         title={t("review.title")}
         subtitle={
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -280,17 +279,19 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
           )}
         </>
       )}
-      <div className="flex flex-wrap gap-3">
-        <Link href={`/topics/${topic.id}`} className={cn(mockLink, mockSecondaryLink)}>
-          {t("review.study")}
-        </Link>
-        <Link href="/mock" className={cn(mockLink, mockSecondaryLink)}>
-          {t("review.new")}
-        </Link>
-        <Link href={attempt ? "/" : "/progress"} className={mockTextLink}>
-          {nav(attempt ? "home" : "progress")}
-        </Link>
-      </div>
+      {!loading && (
+        <div className="flex flex-wrap gap-3">
+          <Link href={`/topics/${topic.id}`} className={cn(mockLink, mockSecondaryLink)}>
+            {t("review.study")}
+          </Link>
+          <Link href="/mock" className={cn(mockLink, mockSecondaryLink)}>
+            {t("review.new")}
+          </Link>
+          <Link href={attempt ? "/" : "/progress"} className={mockTextLink}>
+            {nav(attempt ? "home" : "progress")}
+          </Link>
+        </div>
+      )}
       {navigation.next && (
         <Dialog
           open
@@ -311,7 +312,7 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
               loading={busy}
               disabledReason={result?.available ? undefined : t("review.keepUnavailable")}
               onClick={() => {
-                if (navigation.next) void keep(navigation.next);
+                void keep();
               }}
             >
               {t("review.keepLeave")}
@@ -320,7 +321,10 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
               variant="destructive-tertiary"
               disabled={busy}
               onClick={() => {
-                if (navigation.next) router.push(navigation.next);
+                if (navigation.next) {
+                  navigation.clear();
+                  router.push(navigation.next);
+                }
               }}
             >
               {t("review.discard")}

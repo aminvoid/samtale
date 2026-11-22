@@ -32,8 +32,7 @@ function promptDisplay(clip: Clip | undefined, deck: MockDeck, topic: DeckTopic 
   const intro = topic?.situations.find((situation) => situation.intro.id === clip.id)?.intro;
   return {
     text: clip.spoken ? [clip.spoken.question, clip.spoken.ending] : clip.textDa,
-    source:
-      intro?.origin === "app" ? "app" : intro || clip.id.includes(".followup") ? "suggested" : undefined,
+    source: intro?.origin ?? (clip.id.includes(".followup") ? "suggested" : undefined),
     meaning: undefined,
   };
 }

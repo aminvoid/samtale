@@ -129,6 +129,7 @@ export function FocusedRun({
         ? "micReady"
         : "notRecording";
   const firstDoneHint = answering && ctx.answersStarted === 1;
+  const hasRecordings = finished && state.attempt.answers.some(({ recorded }) => recorded);
   const notice =
     ctx.graceNotice === "limit"
       ? t("live.finishSentence")
@@ -144,7 +145,7 @@ export function FocusedRun({
       finished={finished}
       closing={closing}
       onClose={
-        finished && state.attempt.answers.some(({ recorded }) => recorded)
+        finished
           ? () => {
               setCloseGuard(true);
             }
@@ -398,9 +399,7 @@ export function FocusedRun({
           {answering && answer?.recordingCapped && (
             <InfoNote>{t("live.recordingCapped", { minutes: examConfig.maxRecordingSeconds / 60 })}</InfoNote>
           )}
-          {answering && ctx.micState === "unavailable" && ctx.answers.some(({ recorded }) => recorded) && (
-            <InfoNote>{t("live.notRecording")}</InfoNote>
-          )}
+          {answering && ctx.recordingFailed && <InfoNote>{t("live.notRecording")}</InfoNote>}
         </>
       )}
       <RunDialogs {...{ state, send, now, topic }} finalFocus={toPrimary} />
@@ -408,7 +407,7 @@ export function FocusedRun({
         <Dialog
           open
           title={t("end.discardTitle")}
-          description={t("end.discardBody")}
+          description={t(hasRecordings ? "end.discardBody" : "end.discardBodyNoRecording")}
           closeLabel={t("close")}
           initialFocus={stayButton}
           finalFocus={toPrimary}
@@ -439,7 +438,7 @@ export function FocusedRun({
                 router.push("/mock");
               }}
             >
-              {t("review.discard")}
+              {t(hasRecordings ? "review.discard" : "leave")}
             </Button>
           </div>
         </Dialog>

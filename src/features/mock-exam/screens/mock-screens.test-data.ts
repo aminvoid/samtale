@@ -62,7 +62,7 @@ function topic(letter: Topic["letter"]): FixtureTopic {
   };
 }
 
-export const examTopics = [topic("A"), topic("B"), topic("C")];
+export const examTopics = [topic("A"), topic("B"), topic("C")] satisfies [FixtureTopic, ...FixtureTopic[]];
 export const examinerLines: ExaminerLines = [
   {
     id: examConfig.soundCheckClipId,
@@ -174,7 +174,7 @@ export function screenPorts() {
         };
       },
     },
-    announce: { emit: vi.fn() },
+    announce: { emit: vi.fn<MockExamPorts["announce"]["emit"]>() },
     recordings: { collect: vi.fn(), discardAnswer: vi.fn(), discardAttempt: vi.fn() },
     navigate: vi.fn<MockExamPorts["navigate"]>(),
   } satisfies MockExamPorts;

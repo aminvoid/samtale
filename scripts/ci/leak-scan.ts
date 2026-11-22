@@ -19,7 +19,13 @@ import { ReviewNoteSchema, ReviewStatusSchema } from "../../src/lib/content/sche
 import { bareExamYear, confidentialityHits, examReferenceYears } from "../content/lib/confidentiality.ts";
 import { MarginNotesFileSchema, ReviewLedgerSchema } from "../content/lib/pipeline-schema.ts";
 import { READ_MODEL_PATH, requireArtifact, type Channel } from "./build-artifacts.ts";
-import { publishedTopicText, publicTextFiles, publicTopicText, searchIndexText } from "./public-corpus.ts";
+import {
+  publicItemIds,
+  publishedTopicText,
+  publicTextFiles,
+  publicTopicText,
+  searchIndexText,
+} from "./public-corpus.ts";
 
 /** Length of the text windows matched in the output (UTF-16 code units, after normalisation). */
 export const WINDOW = 24;
@@ -238,6 +244,7 @@ export function collectCanaries(options: {
     const text = publicTopicText(topic.raw, officialUrls, dirname(contentDir));
     collectStrings(text, publicStrings);
     publicStrings.push(...searchIndexText(text));
+    publicStrings.push(...publicItemIds(topic.raw));
   }
   const corpus = new PublicCorpus(publicStrings);
 

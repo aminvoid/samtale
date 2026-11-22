@@ -105,3 +105,26 @@ export function searchIndexText(topic: z.infer<typeof publishedTopicText>): stri
   ];
   return fields.flatMap(({ da, fa }) => [normalizeSearchText(da), normalizeSearchText(fa)]);
 }
+
+/**
+ * The item IDs of a topic (`2020-nov-c.general.followup1.answer`). They're public: the read model,
+ * the audio manifest and URLs carry them. Without them, an internal record whose own ID contains
+ * one (a ledger correction `2020-nov-c.da-general.followup1.answer`) yields a canary window that
+ * matches every topic page. The `review` subtree is skipped, since it's internal.
+ */
+export function publicItemIds(raw: unknown): string[] {
+  const ids: string[] = [];
+  const walk = (value: unknown): void => {
+    if (Array.isArray(value)) {
+      for (const item of value) walk(item);
+    } else if (value !== null && typeof value === "object") {
+      for (const [key, child] of Object.entries(value)) {
+        if (key === "review") continue;
+        if (key === "id" && typeof child === "string") ids.push(child);
+        else walk(child);
+      }
+    }
+  };
+  walk(raw);
+  return ids;
+}

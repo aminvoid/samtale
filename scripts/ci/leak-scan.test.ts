@@ -174,6 +174,51 @@ describe("collectCanaries", () => {
     expect(windows.some((w) => normalise(LEDGER).startsWith(w))).toBe(true);
   });
 
+  it("treats published item IDs as public, even inside an internal record's ID", () => {
+    const itemId = "2024-maj-a.general.followup1.answer";
+    const published = topic("2024-maj-a", "approved", APPROVED_QUESTION);
+    const followup = {
+      id: "2024-maj-a.general.followup1",
+      text: { da: "Hvorfor?", fa: "چرا؟" },
+      answer: { id: itemId, text: { da: "Fordi." } },
+    };
+    write("content/topics/2024-maj-a.json", {
+      ...published,
+      general: { ...published.general, followups: [followup] },
+    });
+    const correctionId = "2024-maj-a.da-general.followup1.answer";
+    write("content/review-ledger.json", {
+      schemaVersion: 0,
+      topics: {
+        "2024-maj-a": {
+          status: "approved",
+          corrections: [
+            {
+              id: correctionId,
+              path: "general.followups[0].answer.text.da",
+              kind: "naturalness",
+              find: "Fordi.",
+              suggestion: SHORT_CORRECTION,
+              reason: "omskriv",
+              by: "test",
+              source: "test",
+              status: "proposed",
+            },
+          ],
+        },
+      },
+    });
+    const windows = [...canaries("preview").windows.keys()];
+    // The public part of the record's ID isn't a canary; the internal part still is.
+    expect(windows.some((w) => itemId.includes(w))).toBe(false);
+    expect(windows.some((w) => correctionId.includes(w))).toBe(true);
+    write(
+      ".next/server/app/fa/topics/2024-maj-a.html",
+      `<html><body><a href="#${itemId}">x</a></body></html>`,
+    );
+    expect(scan("preview")).toEqual([]);
+  });
+
   it("keeps an internal note repeated only in spoken.basis as a canary", () => {
     for (const channel of ["preview", "production"] satisfies Channel[]) {
       expect(canaries(channel).windows.get(SPOKEN_BASIS.slice(0, 24))).toBe("internal:margin-notes.json");

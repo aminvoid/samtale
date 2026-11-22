@@ -156,6 +156,10 @@ describe("published read model", () => {
   });
 
   it("publishes the preview topics including needs-review and marks all as drafts", () => {
+    // Don't depend on the live content still having a needs-review topic: make one.
+    const heldPath = topicPath(root, "2020-nov-b");
+    const held = TopicFileSchema.parse(readJson(heldPath));
+    writeJson(heldPath, { ...held, review: { status: "needs-review" } });
     const model = buildReadModel(root, preview);
     expect(model.topics).toHaveLength(51);
     expect(model.topics.every((topic) => topic.draft === true)).toBe(true);

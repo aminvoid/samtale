@@ -1,4 +1,4 @@
-import { test as base, expect } from "@playwright/test";
+import { test as base, expect, type Locator } from "@playwright/test";
 
 /**
  * Shared fixtures. Every test that uses `page` fails on any Content Security Policy violation
@@ -31,3 +31,14 @@ export const test = base.extend<{ cspViolations: string[] }>({
 export { expect };
 
 export const AXE_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"];
+
+/**
+ * Waits until React has hydrated the element (it attaches its props to the DOM node). Before that,
+ * a link is a plain anchor: Enter or a click makes a full page load instead of a client-side
+ * navigation, which a slow, loaded WebKit run can hit.
+ */
+export async function waitForHydration(locator: Locator) {
+  await expect
+    .poll(() => locator.evaluate((el) => Object.keys(el).some((key) => key.startsWith("__reactProps$"))))
+    .toBe(true);
+}

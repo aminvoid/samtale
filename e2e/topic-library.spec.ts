@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import messages from "../messages/fa.json" with { type: "json" };
-import { AXE_TAGS, expect, test } from "./fixtures";
+import { AXE_TAGS, expect, test, waitForHydration } from "./fixtures";
 
 const noMatchQuery = "zzq-no-matching-topic";
 
@@ -32,6 +32,7 @@ test("filters a theme and restores the selection from browser history", async ({
   const all = filters.getByRole("link", { name: messages.library.filter.all, exact: true });
   const firstSubtheme = filters.getByRole("link").nth(1);
   await expect(all).toHaveAttribute("aria-current", "true");
+  await waitForHydration(firstSubtheme);
   await firstSubtheme.click();
   await expect(page).toHaveURL(/\?sub=.+$/);
   await expect(firstSubtheme).toHaveAttribute("aria-current", "true");
@@ -45,6 +46,7 @@ test("opens exam terms and a similar question occurrence", async ({ page }) => {
   await page.goto("/fa/topics");
   const views = page.getByRole("navigation", { name: messages.library.views });
   const terms = views.getByRole("link", { name: messages.library.view.terms });
+  await waitForHydration(terms);
   await terms.focus();
   await page.keyboard.press("Enter");
   await expect(terms).toHaveAttribute("aria-current", "page");

@@ -115,7 +115,12 @@ const fixture: ReadModel = {
   searchIndex: [
     {
       topicId: "2024-maj-a",
-      fields: [{ section: null, kind: "topic-title", text: { da: "hjem", fa: "خانه" } }],
+      fields: [
+        { section: null, kind: "topic-title", text: { da: "hjem", fa: "خانه" } },
+        { section: "sitA", kind: "model-answer", text: { da: "eksempel", fa: "عبارت نمونه" } },
+        { section: "general", kind: "followup-answer", text: { da: "et eksempel", fa: "مثال تکمیلی" } },
+        { section: "sitB", kind: "personal-example", text: { da: "erfaring", fa: "نمونه شخصی" } },
+      ],
     },
   ],
 };
@@ -130,6 +135,16 @@ describe("published content repository", () => {
 
   afterAll(() => {
     vi.doUnmock("@/generated/content/read-model.json");
+  });
+
+  it("returns answer translation search text with the library's question labels", async () => {
+    const [document] = await repository.getSearchIndex();
+    expect(document?.fields).toEqual([
+      { section: null, kind: "topic-title", text: { da: "hjem", fa: "خانه" } },
+      { section: "sitA", kind: "question", text: { da: "eksempel", fa: "عبارت نمونه" } },
+      { section: "general", kind: "followup", text: { da: "et eksempel", fa: "مثال تکمیلی" } },
+      { section: "sitB", kind: "question", text: { da: "erfaring", fa: "نمونه شخصی" } },
+    ]);
   });
 
   it("lists term and topic summaries newest first and supports combined filters", async () => {
@@ -158,13 +173,12 @@ describe("published content repository", () => {
     expect(await getTopic("missing")).toBeNull();
   });
 
-  it("returns examiner lines, structured links, similar groups and the search index", async () => {
-    const { getExaminerLines, getTopicLinks, listSimilarQuestionGroups, getSearchIndex } = repository;
+  it("returns examiner lines, structured links and similar groups", async () => {
+    const { getExaminerLines, getTopicLinks, listSimilarQuestionGroups } = repository;
     expect(await getExaminerLines()).toEqual(fixture.examinerLines);
     expect(await getTopicLinks("2024-maj-a")).toEqual(fixture.topics[0]?.links);
     expect(await getTopicLinks("missing")).toEqual([]);
     expect(await listSimilarQuestionGroups()).toEqual(fixture.similarGroups);
-    expect(await getSearchIndex()).toEqual(fixture.searchIndex);
   });
 
   it("keeps the mock deck compact and draws only from complete terms", async () => {

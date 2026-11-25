@@ -8,7 +8,7 @@
  * Canary sources (owner decision, 2026-11-20):
  * - internal-visibility margin notes (every file under content/internal/, recursively);
  * - the review ledger, and any review notes inside topic files (the same internal review data);
- * - production channel only: the IDs and the text of topics that aren't approved.
+ * - production channel only: unapproved topic IDs and text, and withheld answer translations.
  * A canary that also occurs in allow-listed prose or interface messages is dropped, so quoting
  * a published title in a review note doesn't fail the build.
  */
@@ -16,10 +16,16 @@ import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, extname, join, relative, sep } from "node:path";
 import { z } from "zod";
 import { ReviewNoteSchema, ReviewStatusSchema } from "../../src/lib/content/schema/authoring.ts";
+import { normalizeSearchText } from "../../src/lib/content/search.ts";
 import { bareExamYear, confidentialityHits, examReferenceYears } from "../content/lib/confidentiality.ts";
-import { MarginNotesFileSchema, ReviewLedgerSchema } from "../content/lib/pipeline-schema.ts";
+import {
+  AnswerTranslationsFileSchema,
+  MarginNotesFileSchema,
+  ReviewLedgerSchema,
+} from "../content/lib/pipeline-schema.ts";
 import { READ_MODEL_PATH, requireArtifact, type Channel } from "./build-artifacts.ts";
 import {
+  publicAnswerTranslationText,
   publicItemIds,
   publishedTopicText,
   publicTextFiles,
@@ -198,10 +204,12 @@ export function collectCanaries(options: {
   const { contentDir, messagesDir, channel } = options;
   const internalDir = join(contentDir, "internal");
   const ledgerPath = join(contentDir, "review-ledger.json");
+  const translationsPath = join(contentDir, "answer-translations.json");
   const topicsDir = join(contentDir, "topics");
   for (const [path, what] of new Map([
     [internalDir, "content/internal/"],
     [ledgerPath, "content/review-ledger.json"],
+    [translationsPath, "content/answer-translations.json"],
     [topicsDir, "content/topics/"],
   ])) {
     if (!existsSync(path))
@@ -209,6 +217,11 @@ export function collectCanaries(options: {
   }
   const internalFiles = jsonFilesUnder(internalDir);
   if (internalFiles.length === 0) throw new Error("Leak scan: content/internal/ has no JSON files.");
+  const ledger = ReviewLedgerSchema.parse(readJson(ledgerPath));
+  const translations = new Map(
+    Object.entries(AnswerTranslationsFileSchema.parse(readJson(translationsPath)).items),
+  );
+  const translationDecisions = new Map(Object.entries(ledger.answerTranslations ?? {}));
 
   // Topics: every file must have a readable review status (fail closed on schema drift).
   const topics: Array<{ id: string; approved: boolean; raw: unknown }> = [];
@@ -239,12 +252,22 @@ export function collectCanaries(options: {
     if (existsSync(path)) collectStrings(schema.parse(readJson(path)), publicStrings);
   }
   const published = topics.filter((t) => channel === "preview" || t.approved);
+  const publishedTranslations = new Set<string>();
   const officialUrls = new Map<string, string>();
   for (const topic of published) {
     const text = publicTopicText(topic.raw, officialUrls, dirname(contentDir));
     collectStrings(text, publicStrings);
     publicStrings.push(...searchIndexText(text));
     publicStrings.push(...publicItemIds(topic.raw));
+    for (const { id, strings } of publicAnswerTranslationText(
+      text,
+      translations,
+      translationDecisions,
+      channel,
+    )) {
+      publishedTranslations.add(id);
+      publicStrings.push(...strings);
+    }
   }
   const corpus = new PublicCorpus(publicStrings);
 
@@ -325,12 +348,12 @@ export function collectCanaries(options: {
     }
   }
 
-  const ledger = ReviewLedgerSchema.parse(readJson(ledgerPath));
   addMetadata(ledger, "review-ledger");
   const decisions = [
     ...Object.values(ledger.topics),
     ...Object.values(ledger.topics).flatMap(({ intros }) => Object.values(intros ?? {})),
     ...Object.values(ledger.examinerLines ?? {}),
+    ...translationDecisions.values(),
   ];
   const corrections = [
     ...Object.values(ledger.topics).flatMap((topic) => topic.corrections ?? []),
@@ -350,6 +373,12 @@ export function collectCanaries(options: {
   }
 
   if (channel === "production") {
+    for (const [id, { fa }] of translations) {
+      if (publishedTranslations.has(id)) continue;
+      const source = `unpublished-translation:${id}`;
+      addText(fa, source);
+      addText(normalizeSearchText(fa), source);
+    }
     for (const topic of topics.filter((t) => !t.approved)) {
       const source = `unapproved:${topic.id}`;
       addToken(topic.id, source);

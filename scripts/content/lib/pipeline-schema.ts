@@ -1,6 +1,6 @@
 /**
  * Schemas for pipeline-only files: they never reach the app (ADR-0002 §4).
- *   content/internal/margin-notes.json, content/review-ledger.json,
+ *   margin notes, review decisions, answer translations,
  *   scripts/content/data/siri-*.json, scripts/content/data/app-authored.json
  * Public content files use src/lib/content/schema/authoring.ts.
  */
@@ -56,6 +56,17 @@ export const ItemDecisionSchema = z.strictObject({
   notes: z.array(ReviewNoteSchema).optional(),
 });
 
+const AnswerTranslationSchema = z.strictObject({
+  fa: z.string().min(1),
+  sourceHash: z.string().regex(/^[0-9a-f]{16}$/),
+  origin: z.literal("app"),
+});
+
+export const AnswerTranslationsFileSchema = z.strictObject({
+  schemaVersion,
+  items: z.record(z.string().min(1), AnswerTranslationSchema),
+});
+
 export const LedgerTopicSchema = z.strictObject({
   status: ReviewStatusSchema,
   /** "delegated-agent-review" marks approvals made under the owner's delegation (2026-11-19). */
@@ -72,6 +83,7 @@ export const ReviewLedgerSchema = z.strictObject({
   schemaVersion,
   topics: z.record(z.string(), LedgerTopicSchema),
   examinerLines: z.record(z.string(), ItemDecisionSchema).optional(),
+  answerTranslations: z.record(z.string(), ItemDecisionSchema).optional(),
   /** Correction notes on internal margin notes (by note id). */
   marginNoteCorrections: z.array(CorrectionNoteSchema).optional(),
 });
@@ -137,6 +149,7 @@ export type MarginNote = z.infer<typeof MarginNoteSchema>;
 export type MarginNotesFile = z.infer<typeof MarginNotesFileSchema>;
 export type CorrectionNote = z.infer<typeof CorrectionNoteSchema>;
 export type ItemDecision = z.infer<typeof ItemDecisionSchema>;
+export type AnswerTranslation = z.infer<typeof AnswerTranslationSchema>;
 export type LedgerTopic = z.infer<typeof LedgerTopicSchema>;
 export type ReviewLedger = z.infer<typeof ReviewLedgerSchema>;
 export type SiriItem = z.infer<typeof SiriItemSchema>;

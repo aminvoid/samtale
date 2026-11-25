@@ -3,7 +3,7 @@ import type {
   ContentItemId,
   ExaminerLines,
   MockDeck,
-  SearchDocument,
+  TopicSearchDocument,
   SimilarGroup,
   TermId,
   TermSummary,
@@ -31,7 +31,7 @@ export interface ContentSource {
   getExaminerLines: () => Promise<ExaminerLines>;
   getTopicLinks: (id: TopicId) => Promise<TopicLink[]>;
   getMockDeck: () => Promise<MockDeck>;
-  getSearchIndex: () => Promise<SearchDocument[]>;
+  getSearchIndex: () => Promise<TopicSearchDocument[]>;
   listSimilarQuestionGroups: () => Promise<SimilarGroup[]>;
   getContentItem: (id: ContentItemId) => Promise<ContentItem | null>;
 }

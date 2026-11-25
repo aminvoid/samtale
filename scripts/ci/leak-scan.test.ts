@@ -3,6 +3,7 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { translationSourceHash } from "../content/lib/answer-translations";
 import { collectCanaries, decodeHtml, decodeJsonEscapes, normalise, scanBuild, textViews } from "./leak-scan";
 import { READ_MODEL_PATH, type Channel } from "./build-artifacts";
 
@@ -37,7 +38,11 @@ function topic(id: string, status: string, question: string) {
     question: {
       text: { da: question, fa: "پرسش" },
       keywords: [],
-      modelAnswer: { text: { da: "Et svar" }, spoken: { basis: SPOKEN_BASIS } },
+      modelAnswer: {
+        id: `${id}.general.q2.answer`,
+        text: { da: "Et svar" },
+        spoken: { basis: SPOKEN_BASIS },
+      },
     },
     followups: [],
     personalExamples: [],
@@ -46,7 +51,16 @@ function topic(id: string, status: string, question: string) {
     schemaVersion: 0,
     id,
     title: { da: status === "approved" ? `Emne ${id}` : UNAPPROVED_TITLE, fa: "موضوع" },
-    situations: [{ title: { da: PUBLISHED_TITLE, fa: "عنوان" }, ...section }],
+    situations: [
+      {
+        title: { da: PUBLISHED_TITLE, fa: "عنوان" },
+        ...section,
+        question: {
+          ...section.question,
+          modelAnswer: { ...section.question.modelAnswer, id: `${id}.sitA.q1.answer` },
+        },
+      },
+    ],
     general: section,
     review: { status },
   };
@@ -72,6 +86,7 @@ function marginNote(
 }
 
 function writeContent(): void {
+  write("content/answer-translations.json", { schemaVersion: 0, items: {} });
   write("content/internal/margin-notes.json", {
     schemaVersion: 0,
     notes: [
@@ -233,6 +248,67 @@ describe("collectCanaries", () => {
     expect(windows).toContain(UNAPPROVED_QUESTION.slice(0, 24));
     // Text shared with an approved topic stays publishable.
     expect(windows.some((w) => PUBLISHED_TITLE.includes(w))).toBe(false);
+  });
+
+  it("allows published translations and canaries withheld originals and search text in production", () => {
+    const approved = "2024-maj-a.general.q2.answer";
+    const draft = "2024-maj-a.sitA.q1.answer";
+    const stale = "2024-maj-a.general.followup1.answer";
+    const heldTopic = "2024-maj-b.general.q2.answer";
+    const approvedFa = "واژه‌های ویژه برای بررسی";
+    const approvedSearch = "واژه های ویژه برای بررسی";
+    const draftFa = "یادداشت‌های آزمایشی برای جست‌وجو";
+    const draftSearch = "یادداشت های آزمایشی برای جست وجو";
+    const staleFa = "متن قدیمی";
+    const heldTopicFa = "نوشتهٔ دیده نشده";
+    const translation = (fa: string, da = "Et svar") => ({
+      fa,
+      sourceHash: translationSourceHash(da),
+      origin: "app",
+    });
+    const fixture = topic("2024-maj-a", "approved", APPROVED_QUESTION);
+    write("content/topics/2024-maj-a.json", {
+      ...fixture,
+      general: {
+        ...fixture.general,
+        followups: [{ text: fixture.general.question.text, answer: { id: stale, text: { da: "Et svar" } } }],
+      },
+    });
+    write("content/answer-translations.json", {
+      schemaVersion: 0,
+      items: {
+        [approved]: translation(approvedFa),
+        [draft]: translation(draftFa),
+        [stale]: translation(staleFa, "Tidligere tekst"),
+        [heldTopic]: translation(heldTopicFa),
+      },
+    });
+    write("content/review-ledger.json", {
+      schemaVersion: 0,
+      topics: {},
+      answerTranslations: {
+        [approved]: { status: "approved", notes: [approvedFa, approvedSearch].map((text) => ({ text })) },
+        [stale]: { status: "approved" },
+        [heldTopic]: { status: "approved" },
+      },
+    });
+
+    write(".next/server/app/fa.rsc", JSON.stringify([approvedFa, approvedSearch]));
+    expect(scan("production")).toEqual([]);
+    write(".next/server/app/fa.rsc", JSON.stringify([draftFa, draftSearch, heldTopicFa]));
+    expect(scan("preview")).toEqual([]);
+    // Use only the normalized form to exercise a translation leaked through the search index.
+    write(".next/server/app/fa.rsc", JSON.stringify([draftSearch, staleFa, heldTopicFa]));
+    expect(canaries("production").windows.get(normalise(draftFa).slice(0, 24))).toBe(
+      `unpublished-translation:${draft}`,
+    );
+    expect(scan("production").map(({ source }) => source)).toEqual(
+      expect.arrayContaining([
+        `unpublished-translation:${draft}`,
+        `unpublished-translation:${stale}`,
+        `unpublished-translation:${heldTopic}`,
+      ]),
+    );
   });
 
   it("fails closed when a source is missing or unreadable", () => {

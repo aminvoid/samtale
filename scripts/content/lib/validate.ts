@@ -18,16 +18,19 @@ import {
   type SiriCheck,
   type TopicFile,
 } from "@/lib/content/schema/authoring";
-import { FORMAT_ERAS, eraOf } from "./build.ts";
+import { answerItemsOf, translationSourceHash } from "./answer-translations.ts";
+import { FORMAT_ERAS, decided, eraOf } from "./build.ts";
 import { scanForConfidentiality } from "./confidentiality.ts";
-import { MarginNotesFileSchema, type CorrectionNote, type ReviewLedger } from "./pipeline-schema.ts";
+import { AnswerTranslationsFileSchema, MarginNotesFileSchema, type CorrectionNote, type ReviewLedger } from "./pipeline-schema.ts";
 
 const ARABIC_SCRIPT = /\p{Script=Arabic}/u;
+const PERSIAN_LETTER = /(?=\p{L})\p{Script=Arabic}/u;
 const LATEST_PUBLIC_TERM = "2024-maj";
 const TOPIC_ID = /^(20\d\d)-(maj|nov)-([abc])$/;
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 /** «امتحان» is never used for the exam (glossary); only app-authored Persian is checked, booklet text is the author's. */
 const FORBIDDEN_FA = ["امتحان"];
+const TRANSLATION_GLOSSARY = { امتحان: "آزمون", جواب: "پاسخ" };
 
 function isPresentationForm(cp: number): boolean {
   return (cp >= 0xfb50 && cp <= 0xfdff) || (cp >= 0xfe70 && cp <= 0xfefe);
@@ -67,6 +70,7 @@ export function valueAt(root: unknown, path: string): unknown {
 
 export interface ValidationResult {
   errors: string[];
+  warnings: string[];
   report: string[];
   topics: TopicFile[];
 }
@@ -84,6 +88,7 @@ export interface ValidateOptions {
 
 export function validateContent(contentDir: string, opts: ValidateOptions = {}): ValidationResult {
   const errors: string[] = [];
+  const warnings: string[] = [];
   const err = (where: string, msg: string) => errors.push(`${where}: ${msg}`);
   const read = <S extends z.ZodType>(rel: string, schema: S): z.infer<S> | null => {
     const p = resolve(contentDir, rel);
@@ -111,6 +116,7 @@ export function validateContent(contentDir: string, opts: ValidateOptions = {}):
   const themes = read("themes.json", ThemesFileSchema);
   const terms = read("terms.json", TermsFileSchema);
   const examiner = read("examiner-lines.json", ExaminerLinesFileSchema);
+  const translations = read("answer-translations.json", AnswerTranslationsFileSchema);
   const links = read("topic-links.json", TopicLinksFileSchema);
   const published = read("published-ids.json", PublishedIdsFileSchema);
   const margin = read("internal/margin-notes.json", MarginNotesFileSchema);
@@ -146,7 +152,7 @@ export function validateContent(contentDir: string, opts: ValidateOptions = {}):
       if (/<[^>]+>/.test(s)) err(w, "contains markup");
       if (loc === "da" && ARABIC_SCRIPT.test(s)) err(w, "Danish text contains Arabic-script letters");
       if (loc === "fa") {
-        if (!ARABIC_SCRIPT.test(s)) err(w, "Persian text has no Persian letters");
+        if (!PERSIAN_LETTER.test(s)) err(w, "Persian text has no Persian letters");
         for (const ch of s) {
           const cp = ch.codePointAt(0) ?? 0;
           if (cp === 0x064a || cp === 0x0643) err(w, `Arabic ${cp === 0x064a ? "yeh" : "kaf"} U+${cp.toString(16).toUpperCase()}`);
@@ -340,6 +346,38 @@ export function validateContent(contentDir: string, opts: ValidateOptions = {}):
   const topicIds = new Set(topics.map((t) => t.id));
   for (const term of terms?.terms ?? []) for (const id of term.topicIds) if (!topicIds.has(id)) err(`terms.json ${term.id}`, `topic ${id} has no file`);
 
+  const answerTexts = new Map(topics.flatMap(answerItemsOf).map(({ id, text }) => [id, text.da]));
+  const translationItems = new Map(Object.entries(translations?.items ?? {}));
+  const translationDecisions = new Map(Object.entries(opts.ledger?.answerTranslations ?? {}));
+  let translated = 0;
+  let approved = 0;
+  let stale = 0;
+  for (const [id, item] of translationItems) {
+    const where = `answer-translations.json items.${id}`;
+    text(where, { fa: item.fa }, ["fa"]);
+    for (const [word, preferred] of Object.entries(TRANSLATION_GLOSSARY)) {
+      if (item.fa.includes(word)) err(`${where}.fa`, `uses «${word}» (glossary: «${preferred}»)`);
+    }
+    const da = answerTexts.get(id);
+    if (da === undefined) {
+      err(where, "unknown answer ID or missing Danish text");
+      continue;
+    }
+    translated++;
+    const decision = decided({ status: "extracted" }, translationDecisions.get(id));
+    if (item.sourceHash !== translationSourceHash(da)) {
+      stale++;
+      const message = "stale translation (sourceHash does not match the current Danish text)";
+      if (decision.status === "approved") err(where, `approved but ${message}`);
+      else warnings.push(`${where}: ${message}`);
+    } else if (decision.status === "approved") approved++;
+  }
+  for (const [id, decision] of translationDecisions) {
+    const where = `review-ledger.json answerTranslations.${id}`;
+    if (!translationItems.has(id) || !answerTexts.has(id)) err(where, "unknown answer translation ID");
+    review(where, decision);
+  }
+
   // Topic links: IDs and sections only, between main topics that exist.
   const checkRef = (where: string, r: { topicId: string }) => {
     if (opts.mainTopicIds && !opts.mainTopicIds.has(r.topicId)) err(where, `${r.topicId} is not a main topic`);
@@ -414,6 +452,7 @@ export function validateContent(contentDir: string, opts: ValidateOptions = {}):
     ["themes.json", themes],
     ["terms.json", terms],
     ["examiner-lines.json", examiner],
+    ["answer-translations.json", translations],
     ["topic-links.json", links],
     ["published-ids.json", published],
     ...topics.map((t): [string, unknown] => [`topics/${t.id}.json`, t]),
@@ -438,11 +477,12 @@ export function validateContent(contentDir: string, opts: ValidateOptions = {}):
     `SIRI wording checks (questions + follow-ups): ${tally(checks.map((c) => c.status))}`,
     `situation intros (origin status): ${tally(introOrigins)}`,
     `spoken overrides ("Hvorfor eller hvorfor ikke?"): ${spokenCount}`,
+    `answer translations: ${answerTexts.size} total, ${translated} translated, ${approved} approved, ${stale} stale, ${answerTexts.size - translated} missing`,
     `examiner lines: ${examiner?.lines.map((l) => `${l.id} (${l.origin}, ${l.review.status})`).join("; ") ?? "–"}`,
     `topic links: ${links?.links.length ?? 0} links, ${links?.similarGroups.length ?? 0} similar-question groups`,
     `published ids: ${published?.ids.length ?? 0} (retired ${published?.retired.length ?? 0})`,
     `correction notes (alongside, never applied): ${correctionCount.total} (${tally([...correctionCount.byKind].flatMap(([k, v]) => Array<string>(v).fill(k)))})`,
     `margin notes (internal): ${margin?.notes.length ?? 0}; public: ${margin?.notes.filter((n) => n.visibility === "public").length ?? 0}; with confidentiality hits: ${margin?.notes.filter((n) => n.confidentialityHits.length).map((n) => n.id).join(", ") || "none"}`,
   ];
-  return { errors, report, topics };
+  return { errors, warnings, report, topics };
 }

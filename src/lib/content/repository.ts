@@ -7,7 +7,7 @@ export type {
   ContentItemId,
   ExaminerLines,
   MockDeck,
-  SearchDocument,
+  TopicSearchDocument as SearchDocument,
   SimilarGroup,
   TermId,
   TermSummary,

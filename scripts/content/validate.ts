@@ -30,6 +30,7 @@ const result = validateContent(resolve(REPO_ROOT, "content"), {
   ledger,
 });
 for (const line of result.report) process.stdout.write(`${line}\n`);
+for (const warning of result.warnings) process.stderr.write(`WARNING: ${warning}\n`);
 if (result.errors.length > 0) {
   process.stderr.write(`VALIDATION FAILED (${result.errors.length}):\n${result.errors.map((e) => `  ${e}`).join("\n")}\n`);
   process.exit(1);

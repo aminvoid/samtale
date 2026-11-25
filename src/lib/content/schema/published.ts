@@ -67,8 +67,11 @@ const BilingualItemSchema = z.strictObject({
 });
 export const SituationIntroSchema = DanishItemSchema.extend({ origin, sourceLabel: IntroSourceLabelSchema });
 export const KeywordSchema = BilingualItemSchema.extend({ emoji: text });
-export const AnswerSchema = DanishItemSchema.extend({ emphasis: z.array(TextRangeSchema) });
-export const PersonalExampleSchema = DanishItemSchema.extend({
+const TranslatableItemSchema = DanishItemSchema.extend({
+  translation: PersianTextSchema.extend({ origin: z.literal("app") }).optional(),
+});
+export const AnswerSchema = TranslatableItemSchema.extend({ emphasis: z.array(TextRangeSchema) });
+export const PersonalExampleSchema = TranslatableItemSchema.extend({
   label: PersianTextSchema,
   perspective: z.literal("nurse"),
 });
@@ -169,13 +172,24 @@ export const MockDeckSchema = z.strictObject({
   examinerLines: ExaminerLinesSchema,
 });
 
-export const SearchDocumentSchema = z.strictObject({
+const topicSearchField = z.strictObject({
+  section: SectionKindSchema.nullable(),
+  kind: z.enum(["topic-title", "situation-title", "question", "followup", "keyword"]),
+  text: BilingualTextSchema,
+});
+const TopicSearchDocumentSchema = z.strictObject({
   topicId,
+  fields: z.array(topicSearchField),
+});
+export const SearchDocumentSchema = TopicSearchDocumentSchema.extend({
   fields: z.array(
-    z.strictObject({
-      section: SectionKindSchema.nullable(),
-      kind: z.enum(["topic-title", "situation-title", "question", "followup", "keyword"]),
-      text: BilingualTextSchema,
+    topicSearchField.extend({
+      kind: z.enum([
+        ...topicSearchField.shape.kind.options,
+        "model-answer",
+        "followup-answer",
+        "personal-example",
+      ]),
     }),
   ),
 });
@@ -218,6 +232,7 @@ export type ExaminerLines = z.infer<typeof ExaminerLinesSchema>;
 export type TopicLink = z.infer<typeof TopicLinkSchema>;
 export type SimilarGroup = z.infer<typeof SimilarGroupSchema>;
 export type SearchDocument = z.infer<typeof SearchDocumentSchema>;
+export type TopicSearchDocument = z.infer<typeof TopicSearchDocumentSchema>;
 export type MockDeck = z.infer<typeof MockDeckSchema>;
 export type ContentItem = z.infer<typeof ContentItemSchema>;
 export type TopicId = Topic["id"];

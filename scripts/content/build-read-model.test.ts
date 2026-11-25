@@ -1,7 +1,7 @@
 // @vitest-environment node
 /**
- * ADR-0002 §4.2 / ADR-0012 §1: content:build must never read internal data. Neither the script nor any
- * module it imports may mention content/internal or the review ledger.
+ * ADR-0002 §4.2 / ADR-0012 §1: content:build may read translation statuses from the ledger.
+ * Its import graph must keep all other internal files out of the build.
  */
 import {
   cpSync,
@@ -19,13 +19,18 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import type { Manifest } from "../../src/lib/audio/manifest-schema";
 import { TopicFileSchema } from "../../src/lib/content/schema/authoring";
 import { ReadModelSchema, VerificationSchema } from "../../src/lib/content/schema/published";
+import { normalizeSearchText } from "../../src/lib/content/search";
 import { sha256 } from "../audio/lib/hash";
 import { collectItems, examinerLinesSchema, topicSchema } from "../audio/lib/items";
 import { buildReadModel } from "./build-read-model";
+import { translationSourceHash } from "./lib/answer-translations";
 
 const ROOT = resolve(import.meta.dirname, "../..");
 const ENTRY = resolve(import.meta.dirname, "build-read-model.ts");
+const PIPELINE_SCHEMA = resolve(import.meta.dirname, "lib/pipeline-schema.ts");
 const FORBIDDEN = /content[\\/]+internal|["'`/]internal["'`/]|review-ledger|reviewLedger/;
+const TRANSLATION_DECISIONS_READ =
+  'translationDecisionsInput.parse(readJson(join(contentDir, "review-ledger.json")))';
 
 function resolveImport(from: string, specifier: string): string | undefined {
   const base = specifier.startsWith("@/")
@@ -67,10 +72,21 @@ describe("content:build (build-read-model.ts)", () => {
     expect(files).toContain("scripts/content/lib/confidentiality.ts");
   });
 
-  it("never references content/internal or the review ledger, directly or through an import", () => {
+  it("limits internal inputs to the translation status projection", () => {
+    let ledgerReads = 0;
     for (const [file, text] of importGraph(ENTRY)) {
-      expect(FORBIDDEN.test(text), relative(ROOT, file)).toBe(false);
+      const checked =
+        file === ENTRY
+          ? text.replace(TRANSLATION_DECISIONS_READ, () => {
+              ledgerReads++;
+              return "";
+            })
+          : file === PIPELINE_SCHEMA
+            ? text.replace('z.enum(["internal", "public"])', "") // A visibility value in the schema.
+            : text;
+      expect(FORBIDDEN.test(checked), relative(ROOT, file)).toBe(false);
     }
+    expect(ledgerReads).toBe(1);
   });
 
   it("the check would catch a reference", () => {
@@ -136,6 +152,7 @@ describe("published read model", () => {
     for (const file of ["topics", "themes.json", "terms.json", "examiner-lines.json", "topic-links.json"]) {
       cpSync(join(ROOT, "content", file), join(root, "content", file), { recursive: true });
     }
+    writeJson(join(root, "content/answer-translations.json"), { schemaVersion: 0, items: {} });
     mkdirSync(join(root, "scripts/content/data"), { recursive: true });
     for (const file of ["siri-2019-nov.json", "siri-2024-maj.json"]) {
       cpSync(join(ROOT, "scripts/content/data", file), join(root, "scripts/content/data", file));
@@ -228,7 +245,8 @@ describe("published read model", () => {
     const situation = reference.situations[0];
     const { topics } = buildReadModel(root, preview);
     const published = topics.find(({ id }) => id === reference.id)?.situations[0];
-    if (situation === undefined || published === undefined) throw new Error("Missing the 2019 preview topic.");
+    if (situation === undefined || published === undefined)
+      throw new Error("Missing the 2019 preview topic.");
     const { question, followups } = situation;
     for (const item of [published.question, ...published.followups]) {
       const original = [question, ...followups].find(({ id }) => id === item.id);
@@ -364,6 +382,68 @@ describe("published read model", () => {
       Object.keys(manifest.entries).length -
         Object.keys(manifest.entries).filter((id) => id.includes("2023-nov-a")).length,
     );
+  });
+
+  it("publishes fresh app translations and their search text according to the channel", () => {
+    const topic = TopicFileSchema.parse(readJson(topicPath(root, "2024-maj-b")));
+    const model = topic.general.question.modelAnswer;
+    const followup = topic.general.followups[0]!.answer;
+    const situation = topic.situations[0]!;
+    const example = situation.personalExamples[0]!;
+    const stale = situation.question.modelAnswer;
+    const records = [
+      { item: model, fa: "نمونه‌ای برای بررسی", kind: "model-answer", section: "general", approved: true },
+      { item: followup, fa: "نوشتهٔ آزمایشی", kind: "followup-answer", section: "general", approved: false },
+      { item: example, fa: "عبارت ویژه", kind: "personal-example", section: "sitA", approved: true },
+    ] as const;
+    const translation = (fa: string, da: string) => ({
+      fa,
+      origin: "app",
+      sourceHash: translationSourceHash(da),
+    });
+    writeJson(join(root, "content/answer-translations.json"), {
+      schemaVersion: 0,
+      items: {
+        ...Object.fromEntries(records.map(({ item, fa }) => [item.id, translation(fa, item.text.da!)])),
+        [stale.id]: translation("متن قدیمی", "Tidligere tekst"),
+      },
+    });
+    writeJson(join(root, "content/review-ledger.json"), {
+      schemaVersion: 0,
+      topics: { [topic.id]: { status: "approved", notes: [{ text: hidden }] } },
+      answerTranslations: Object.fromEntries(
+        [model, example, stale].map(({ id }) => [id, { status: "approved", notes: [{ text: hidden }] }]),
+      ),
+    });
+    addFixtureAudio(root, APPROVED);
+
+    for (const options of [preview, production]) {
+      const built = buildReadModel(root, options);
+      const published = built.topics.find(({ id }) => id === topic.id)!;
+      const fields = built.searchIndex.find(({ topicId }) => topicId === topic.id)!.fields;
+      const answers = [
+        published.general.question.modelAnswer,
+        published.general.followups[0]!.answer,
+        published.situations[0].personalExamples[0]!,
+      ];
+      for (const [index, { item, fa, kind, section, approved }] of records.entries()) {
+        const answer = answers[index]!;
+        expect(answer.text).toEqual({ da: item.text.da });
+        if (approved || options.CONTENT_RELEASE === "preview") {
+          expect(answer.translation).toEqual({ fa, origin: "app" });
+          expect(fields).toContainEqual({
+            section,
+            kind,
+            text: { da: normalizeSearchText(item.text.da!), fa: normalizeSearchText(fa) },
+          });
+        } else {
+          expect(answer).not.toHaveProperty("translation");
+          expect(fields.some((field) => field.kind === kind)).toBe(false);
+        }
+      }
+      expect(published.situations[0].question.modelAnswer).not.toHaveProperty("translation");
+      expect(readFileSync(output, "utf8")).not.toMatch(/متن قدیمی|sourceHash|Hidden authoring data/);
+    }
   });
 
   it("writes byte-identical, versioned JSON on repeated builds", () => {

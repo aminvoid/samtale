@@ -6,6 +6,7 @@ import {
   type MockDeck,
   type QuestionSection,
   type Topic,
+  type TopicSearchDocument,
   type TopicSummary,
 } from "../schema/published";
 import type { ContentSource } from "./content-source";
@@ -123,6 +124,18 @@ function result<T>(value: T): Promise<T> {
   return Promise.resolve(structuredClone(value));
 }
 
+function getSearchIndex(): TopicSearchDocument[] {
+  return model.searchIndex.map(({ topicId, fields }) => ({
+    topicId,
+    // The topic library links to sections and has labels for their questions and follow-ups.
+    fields: fields.map(({ kind, ...field }) => {
+      if (kind === "followup-answer") return { ...field, kind: "followup" };
+      if (kind === "model-answer" || kind === "personal-example") return { ...field, kind: "question" };
+      return { ...field, kind };
+    }),
+  }));
+}
+
 export const fileSource: ContentSource = {
   listThemes: () =>
     result(
@@ -151,7 +164,7 @@ export const fileSource: ContentSource = {
   getExaminerLines: () => result(model.examinerLines),
   getTopicLinks: (id) => result(topicsById.get(id)?.links ?? []),
   getMockDeck: () => result(getMockDeck()),
-  getSearchIndex: () => result(model.searchIndex),
+  getSearchIndex: () => result(getSearchIndex()),
   listSimilarQuestionGroups: () => result(model.similarGroups),
   getContentItem: (id) => {
     const topic = topicsById.get(id.split(".", 1)[0] ?? "");

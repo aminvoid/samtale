@@ -37,7 +37,14 @@ import {
 import { normalizeSearchText } from "../../src/lib/content/search.ts";
 import { parseBuildEnv, type BuildEnv } from "../../src/lib/env/schema.ts";
 import { sha256 } from "../audio/lib/hash.ts";
+import { publishedAnswerTranslation } from "./lib/answer-translations.ts";
 import { scanForConfidentiality } from "./lib/confidentiality.ts";
+import {
+  AnswerTranslationsFileSchema,
+  ItemDecisionSchema,
+  ReviewLedgerSchema,
+  type AnswerTranslation,
+} from "./lib/pipeline-schema.ts";
 
 // Read only the input fields used by the projection. z.object strips extra keys at every level.
 const id = z.string().min(1);
@@ -133,10 +140,19 @@ const linksInput = z.object({
   links: z.array(z.object({ from: topicRef, to: topicRef, kind: z.enum(["similar", "related"]) })),
   similarGroups: z.array(z.object({ id, members: z.array(topicRef) })),
 });
+// Only the translation statuses are needed by the production projection.
+const translationDecisionsInput = z.object({
+  schemaVersion: ReviewLedgerSchema.shape.schemaVersion,
+  answerTranslations: z.record(id, ItemDecisionSchema.pick({ status: true }).strip()).optional(),
+});
 
 type BuildOptions = Pick<BuildEnv, "CONTENT_RELEASE" | "AUDIO_BASE_URL">;
 type AudioFor = (itemId: string, textDa: string, includeWords?: boolean) => AudioRef | undefined;
 type Verify = (check: z.infer<typeof verificationInput>, itemId: string) => Verification;
+type TranslationFor = (
+  itemId: string,
+  da: string,
+) => { translation: Pick<AnswerTranslation, "fa" | "origin"> } | undefined;
 const LATEST_PUBLIC_TERM = "2024-maj";
 
 function readJson(path: string): unknown {
@@ -150,6 +166,28 @@ function requireDirectory(path: string): void {
   if (lstatSync(path, { throwIfNoEntry: false })?.isDirectory() !== true) {
     throw new Error(`Expected a content input directory at ${path}.`);
   }
+}
+
+function createTranslationLookup(
+  contentDir: string,
+  channel: BuildOptions["CONTENT_RELEASE"],
+): TranslationFor {
+  const { items } = AnswerTranslationsFileSchema.parse(
+    readJson(join(contentDir, "answer-translations.json")),
+  );
+  const translations = new Map(Object.entries(items));
+  const decisions = new Map(
+    channel === "production" && translations.size > 0
+      ? Object.entries(
+          translationDecisionsInput.parse(readJson(join(contentDir, "review-ledger.json")))
+            .answerTranslations ?? {},
+        )
+      : [],
+  );
+  return (id, da) => {
+    const translation = publishedAnswerTranslation(translations.get(id), da, decisions.get(id), channel);
+    return translation === undefined ? undefined : { translation };
+  };
 }
 
 function createAudioLookup(root: string, options: BuildOptions) {
@@ -239,7 +277,12 @@ function createVerificationProjector(root: string): Verify {
   };
 }
 
-function projectSection(input: z.infer<typeof section>, audioFor: AudioFor, verify: Verify): QuestionSection {
+function projectSection(
+  input: z.infer<typeof section>,
+  audioFor: AudioFor,
+  verify: Verify,
+  translationFor: TranslationFor,
+): QuestionSection {
   const { question } = input;
   const projectBilingual = ({ id, text }: z.infer<typeof bilingualItem>) => ({
     id,
@@ -250,6 +293,7 @@ function projectSection(input: z.infer<typeof section>, audioFor: AudioFor, veri
     id,
     text: { da: text.da },
     audio: audioFor(id, text.da, true),
+    ...translationFor(id, text.da),
   });
   const projectAnswer = ({ id, text, emphasis }: z.infer<typeof answer>) => ({
     ...projectDanish({ id, text }),
@@ -281,6 +325,7 @@ function projectSituation(
   input: z.infer<typeof situation>,
   audioFor: AudioFor,
   verify: Verify,
+  translationFor: TranslationFor,
   production: boolean,
 ): Topic["situations"][number] {
   const { intro } = input;
@@ -289,7 +334,7 @@ function projectSituation(
   }
 
   return {
-    ...projectSection(input, audioFor, verify),
+    ...projectSection(input, audioFor, verify, translationFor),
     key: input.key,
     title: { da: input.title.da, fa: input.title.fa },
     intro:
@@ -322,9 +367,18 @@ function indexTopic(topic: Topic): SearchDocument {
     });
   }
   function addSection(section: "sitA" | "sitB" | "general", content: QuestionSection) {
+    function addTranslation(
+      kind: "model-answer" | "followup-answer" | "personal-example",
+      { text, translation }: Pick<QuestionSection["question"]["modelAnswer"], "text" | "translation">,
+    ) {
+      if (translation !== undefined) add(section, kind, { da: text.da, fa: translation.fa });
+    }
     add(section, "question", content.question.text);
     for (const followup of content.followups) add(section, "followup", followup.text);
     for (const keyword of content.question.keywords) add(section, "keyword", keyword.text);
+    addTranslation("model-answer", content.question.modelAnswer);
+    for (const { answer } of content.followups) addTranslation("followup-answer", answer);
+    for (const example of content.personalExamples) addTranslation("personal-example", example);
   }
 
   add(null, "topic-title", topic.title);
@@ -385,6 +439,7 @@ export function buildReadModel(root: string, options: BuildOptions): ReadModel {
   if (publishedIds.size !== inputs.length) throw new Error("Duplicate published topic IDs.");
   const { audioFor, clips, clipsDir, missing } = createAudioLookup(root, options);
   const verify = createVerificationProjector(root);
+  const translationFor = createTranslationLookup(contentDir, options.CONTENT_RELEASE);
   const themes: ReadModel["themes"] = themesInput
     .parse(readJson(join(contentDir, "themes.json")))
     .themes.map(({ id, chapter, emoji, title, subthemes }) => ({
@@ -462,10 +517,10 @@ export function buildReadModel(root: string, options: BuildOptions): ReadModel {
       draft: production ? undefined : true,
       sourcePages: [...input.source.pages],
       situations: [
-        projectSituation(a, audioFor, verify, production),
-        projectSituation(b, audioFor, verify, production),
+        projectSituation(a, audioFor, verify, translationFor, production),
+        projectSituation(b, audioFor, verify, translationFor, production),
       ],
-      general: projectSection(input.general, audioFor, verify),
+      general: projectSection(input.general, audioFor, verify, translationFor),
       links: linksForTopic(input.id, topicLinks, publishedGroups),
       examinerAudio: examinerLines.flatMap((line) => {
         if (line.placeholders.length === 0) return [];

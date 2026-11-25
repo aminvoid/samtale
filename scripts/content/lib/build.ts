@@ -113,7 +113,7 @@ export function spokenOverrideFor(da: string, app: AppAuthored): SpokenOverride 
   };
 }
 
-function decided(review: SituationIntro["review"], d: ItemDecision | undefined): SituationIntro["review"] {
+export function decided(review: SituationIntro["review"], d: ItemDecision | undefined): SituationIntro["review"] {
   if (!d) return review;
   return {
     status: d.status,

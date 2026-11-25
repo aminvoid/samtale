@@ -20,7 +20,7 @@
 | `npm run content:validate` | Zod schemas + cross-file rules + coverage report | stdout |
 | `npm run content:check` | Booklet fidelity: verbatim, line-anchored and round trip | stdout |
 | `npm run content:check:pdf` | Local only: Danish vs the booklet PDF text, and SIRI transcriptions vs SIRI's PDFs | stdout |
-| `npm run content:build` | Read model for the app (ADR-0002). **Still the scaffold stub** (writes an empty read model). | `src/generated/content/` |
+| `npm run content:build` | Publishes the read model and matching audio for the selected channel (ADR-0002) | `src/generated/content/`, `public/audio/` |
 | `npx tsx scripts/content/survey.ts [--json]` | Structural survey of the whole booklet. Read-only. | stdout, `.cache/content/survey.*` |
 | `swift scripts/content/pdf-text.swift <pdf> <outDir>` | Page text with PDFKit, **Danish only** | `<outDir>/page-NNN.txt` |
 
@@ -83,7 +83,8 @@ swift scripts/content/pdf-text.swift .cache/content/sources/siri-2024-maj/docume
 | `scripts/content/data/siri-2024-maj.json` | SIRI 2024 transcription (official host): intros, questions, suggested follow-ups, intro and closing lines, page and SHA-256 | input |
 | `scripts/content/data/siri-2019-nov.json` | SIRI Nov–Dec 2019 transcription from a **third-party copy, authenticity unconfirmed**: questions and suggested follow-ups (2019 had no situation intros) | input |
 | `scripts/content/data/app-authored.json` | Text written for the app (origin `app`): sound-check, transition and "Tak." lines; the 96 situation intros for 2016–2023; the spoken-override rule | input |
-| `content/review-ledger.json` | Human and delegated decisions: topic status bound to `contentHash`, intro and examiner-line decisions, **correction notes** | no (never read by `content:build`) |
+| `content/review-ledger.json` | Human and delegated decisions: topic status bound to `contentHash`, intro, examiner-line and answer translation decisions, **correction notes** | no |
+| `content/answer-translations.json` | App-authored Persian translations keyed by answer item ID | yes, via the read model and translation gates |
 | `content/topics/<id>.json`, `themes.json`, `terms.json`, `examiner-lines.json` | Authoring files; their allow-listed parts become public once approved (ADR-0002) | yes, via the read model |
 | `content/topic-links.json` | 🔁/🔗 relations and the similar-questions table as **topic and section IDs only**, main topics only (D-21) | yes |
 | `content/published-ids.json` | Append-only register of every item ID of an approved topic; `retired` entries for any ID ever withdrawn | yes |
@@ -92,6 +93,16 @@ swift scripts/content/pdf-text.swift .cache/content/sources/siri-2024-maj/docume
 | `.cache/content/**` | PDF text, downloaded SIRI PDFs, provenance, survey output | no (gitignored) |
 
 **Copyright:** `content/`, `docs/content/review/` and `docs/resources/` all contain booklet text. The repository must stay private until the author's written permission exists (DL-009).
+
+## Persian answer translations
+
+`content/answer-translations.json` uses the current `schemaVersion` and an `items` map. Key each `{ fa, sourceHash, origin: "app" }` record by the exact ID in the topic file, for example `2024-maj-b.general.q2.answer`, `2024-maj-b.general.followup1.answer` or `2024-maj-b.sitA.example1`. Generate `sourceHash` with `translationSourceHash(da)` from `scripts/content/lib/answer-translations.ts`. It takes the first 16 lowercase hex characters of SHA-256 over the Danish field encoded as UTF-8 in NFC. Whitespace, punctuation and case are significant. Topic content hashes continue to cover the booklet files independently.
+
+Record decisions in `review-ledger.json` under `answerTranslations`, keyed by the same item IDs. A translation without a decision is a draft. Preview publishes current translations at any status. Production requires an approved topic and an `approved` translation decision. The production build projects only translation statuses from the ledger. Both channels withhold stale translations.
+
+`content:validate` checks the IDs, Persian script and glossary. Use «آزمون» and «پاسخ» in place of «امتحان» and «جواب». The command warns when the Danish hash has changed, and fails if the stale translation is approved. The coverage line counts answer IDs, including repeated Danish answers. `translated` counts IDs with a translation record, `approved` counts current approved translations, `stale` counts hash mismatches and `missing` counts IDs without a record.
+
+Published answers and personal examples carry `translation: { fa, origin: "app" }` alongside their Danish `text`. Their search fields include normalized Danish and Persian. The leak scan allows the translations published in the selected channel and uses withheld Persian text and its normalized search form as production canaries.
 
 ## Normalisation rules
 

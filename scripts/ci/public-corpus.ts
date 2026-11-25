@@ -6,11 +6,15 @@ import {
 } from "../../src/lib/content/schema/published.ts";
 import { normalizeSearchText } from "../../src/lib/content/search.ts";
 import { readOfficialSiriUrl } from "../content/build-read-model.ts";
+import { answerItemsOf, publishedAnswerTranslation } from "../content/lib/answer-translations.ts";
+import type { AnswerTranslation, ItemDecision } from "../content/lib/pipeline-schema.ts";
+import type { Channel } from "./build-artifacts.ts";
 
 // The authoring fields that contribute prose to the read model. Each object strips extra
 // keys, including unpublished locales, review data and spoken overrides.
 const bilingual = BilingualTextSchema.strip();
 const danishItem = z.object({ text: DanishTextSchema.strip() });
+const answerItem = danishItem.extend({ id: z.string().min(1) });
 const bilingualItem = z.object({ text: bilingual });
 const verificationSource = {
   sourceRef: z
@@ -39,10 +43,10 @@ const prompt = bilingualItem.extend({
 const section = z.object({
   question: prompt.extend({
     keywords: z.array(bilingualItem.extend({ emoji: z.string() })),
-    modelAnswer: danishItem,
+    modelAnswer: answerItem,
   }),
-  followups: z.array(prompt.extend({ answer: danishItem })),
-  personalExamples: z.array(danishItem.extend({ label: PersianTextSchema.strip() })),
+  followups: z.array(prompt.extend({ answer: answerItem })),
+  personalExamples: z.array(answerItem.extend({ label: PersianTextSchema.strip() })),
 });
 export const publishedTopicText = z.object({
   title: bilingual,
@@ -104,6 +108,29 @@ export function searchIndexText(topic: z.infer<typeof publishedTopicText>): stri
     ]),
   ];
   return fields.flatMap(({ da, fa }) => [normalizeSearchText(da), normalizeSearchText(fa)]);
+}
+
+export function publicAnswerTranslationText(
+  topic: z.infer<typeof publishedTopicText>,
+  translations: ReadonlyMap<string, AnswerTranslation>,
+  decisions: ReadonlyMap<string, ItemDecision>,
+  channel: Channel,
+): Array<{ id: string; strings: string[] }> {
+  const published: Array<{ id: string; strings: string[] }> = [];
+  for (const {
+    id,
+    text: { da },
+  } of answerItemsOf(topic)) {
+    if (da === undefined) continue;
+    const translation = publishedAnswerTranslation(translations.get(id), da, decisions.get(id), channel);
+    if (translation !== undefined) {
+      published.push({
+        id,
+        strings: [translation.fa, normalizeSearchText(translation.fa), normalizeSearchText(da)],
+      });
+    }
+  }
+  return published;
 }
 
 /**

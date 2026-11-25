@@ -30,7 +30,7 @@
 
 | Layer | Tool | Covers |
 |---|---|---|
-| Content | Vitest + scripts | Zod authoring schema; `content:validate` rules (shape, IDs, references, scripts, origins, publishing gates, confidentiality, ID registry); the read-model projection allow-list; **a test that `build-read-model.ts` never references `content/internal` or the ledger**; determinism of `content:build` |
+| Content | Vitest + scripts | Zod authoring schema; `content:validate` rules (shape, IDs, references, scripts, origins, publishing gates, confidentiality, ID registry); the read-model projection allow-list; a test that limits internal input access to translation decision statuses; determinism of `content:build` |
 | Pure logic | Vitest | content repository (against a small fixture read model); mock exam `transition`/`nextDeadline`/script/draw, with **property tests for invariants I1–I13** and the UX spec's §17 scenarios; spaced-review and progress derivations; formatters (`formatClock`, digits, years, calendar); `getDirection`; audio manifest lookup and staleness; security header builder; env schema |
 | Storage | Vitest + fake-indexeddb | `IndexedDBProgressStore` and `RecordingStore`: every migration from every earlier version, corrupted records skipped, quota errors, unavailable storage → memory store |
 | Messages | Vitest | every `messages/*.json` has exactly `fa.json`'s keys and ICU arguments; no bare `#` in plurals (ADR-0004); Latin runs in `fa` messages are inside `<da>`/`<ltr>` tags (allow-list for `metadata.*`); no Arabic ي/ك or presentation forms; no failure words from US-067 #3 (`persian-localization-reviewer` maintains the list) |

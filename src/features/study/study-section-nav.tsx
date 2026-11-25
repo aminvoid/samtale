@@ -109,7 +109,8 @@ export function StudySectionNav({ entries, mockHref }: { entries: NavEntry[]; mo
             <span className="sr-only">{entry.label}</span>
           </>
         ) : (
-          entry.label
+          // One flex item, so the space between «موقعیت» and the letter isn't collapsed.
+          <span>{entry.label}</span>
         )}
       </a>
     );

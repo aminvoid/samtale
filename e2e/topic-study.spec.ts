@@ -555,22 +555,51 @@ test("opens a similar question in another topic and shows structured related top
 });
 
 for (const colorScheme of ["light", "dark"] satisfies ("light" | "dark")[]) {
-  test(`passes axe with study disclosures open in ${colorScheme} mode`, async ({ page }) => {
+  test(`passes axe with study answers and translations open in ${colorScheme} mode`, async ({ page }) => {
     await page.emulateMedia({ colorScheme });
-    await page.goto(topicUrl);
+    await page.goto("/fa/topics/2016-nov-c");
     const a = page.locator('section[data-study-section="sitA"]:visible');
+    const b = page.locator('section[data-study-section="sitB"]:visible');
     await expect(a.locator('p[lang="da"][dir="ltr"].text-da-intro')).toBeVisible();
-    await a.getByRole("button", { name: study.translation, exact: true }).nth(1).click();
-    await a.getByRole("button", { name: study.sample, exact: true }).click();
-    await expect(a.getByRole("button", { name: study.playSample })).toBeVisible();
-    await a.getByRole("button", { name: study.example, exact: true }).click();
-    await a.getByRole("button", { name: study.shortAnswer, exact: true }).first().click();
+    const questionTranslation = a.getByRole("button", { name: study.translation, exact: true }).nth(1);
+    await waitForHydration(questionTranslation);
+    await questionTranslation.click();
+
+    for (const { section, heading, name } of [
+      { section: a, heading: study.sample, name: study.sampleTranslation },
+      { section: a, heading: study.shortAnswer, name: study.shortAnswerTranslation },
+      { section: b, heading: study.example, name: study.exampleTranslation },
+    ]) {
+      const answer = section.getByRole("heading", { name: heading, exact: true });
+      await answer.getByRole("button").click();
+      const disclosure = answer.locator("..");
+      const toggle = disclosure.getByRole("button", { name, exact: true });
+      const persian = disclosure.locator('p[lang="fa"][dir="rtl"]');
+      const danish = disclosure.locator('p[lang="da"]');
+      await expect(toggle).toHaveAttribute("aria-expanded", "false");
+      await expect(persian).toBeHidden();
+      await toggle.press("Enter");
+      await expect(toggle).toHaveAttribute("aria-expanded", "true");
+      await expect(persian).toBeVisible();
+      await expect(disclosure.getByText(study.answerTranslationSource, { exact: true })).toBeVisible();
+      await expect(danish).toBeVisible();
+      await expect(danish).toHaveAttribute("dir", "ltr");
+    }
+
     // Let disclosure fade-ins finish: axe measures blended colours mid-transition.
     await page.waitForFunction(() =>
       document.getAnimations().every((animation) => animation.playState !== "running"),
     );
 
-    const results = await new AxeBuilder({ page }).withTags(AXE_TAGS).analyze();
+    const results = await new AxeBuilder({ page })
+      .withTags(AXE_TAGS)
+      .exclude("[data-base-ui-focus-guard]")
+      .analyze();
     expect(results.violations).toEqual([]);
+
+    const sampleTranslation = a.getByRole("button", { name: study.sampleTranslation, exact: true });
+    await sampleTranslation.press("Space");
+    await expect(sampleTranslation).toHaveAttribute("aria-expanded", "false");
+    await expect(a.getByText(study.answerTranslationSource, { exact: true }).first()).toBeHidden();
   });
 }

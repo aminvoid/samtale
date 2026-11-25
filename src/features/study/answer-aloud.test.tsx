@@ -285,7 +285,11 @@ describe("answer aloud", () => {
   });
 
   it("compares before a separate Next action, uses one player, and saves practice once", async () => {
-    const { user, entry } = renderExercise();
+    const fa = "چند دلیل وجود دارد.";
+    const { user, entry } = renderExercise([
+      { ...question, model: { ...question.model, translation: { fa, origin: "app" } } },
+      followup,
+    ]);
     await user.click(entry);
     await record();
     const sharedMedia = media;
@@ -296,7 +300,10 @@ describe("answer aloud", () => {
     expect(take).toHaveFocus();
     expect(button(speaking.next)).toBeVisible();
     expect(dialog().queryByRole("button", { name: study.answerDone })).not.toBeInTheDocument();
-    expect(dialog().getByText(question.model.text.da)).toBeVisible();
+    const danish = dialog().getByText(question.model.text.da);
+    expect(danish).toBeVisible();
+    expect(danish).toHaveAttribute("lang", "da");
+    expect(danish).toHaveAttribute("dir", "ltr");
     expect(tracks[0]?.stop).toHaveBeenCalledOnce();
     expect(release).toHaveBeenCalledOnce();
     expect(createUrl).toHaveBeenCalledWith(expect.any(Blob));
@@ -316,6 +323,19 @@ describe("answer aloud", () => {
       value: [{ topicId, itemId: question.id, kind: "answer-aloud" }],
     });
 
+    const translationToggle = dialog().getByRole("button", { name: study.sampleTranslation });
+    const translation = dialog().getByText(fa);
+    expect(translationToggle).toHaveAttribute("aria-expanded", "false");
+    expect(translation).not.toBeVisible();
+    await user.click(translationToggle);
+    expect(translationToggle).toHaveAttribute("aria-expanded", "true");
+    expect(translation).toBeVisible();
+    expect(translation).toHaveAttribute("lang", "fa");
+    expect(translation).toHaveAttribute("dir", "rtl");
+    expect(dialog().getByText(study.answerTranslationSource)).toBeVisible();
+    await user.click(translationToggle);
+    expect(translation).not.toBeVisible();
+
     await user.click(button(speaking.next));
     expect(currentSrc()).toBe(followup.audio?.url);
     expect(dialog().getByText(followup.text.da)).toBeVisible();
@@ -326,6 +346,8 @@ describe("answer aloud", () => {
     await user.click(button(study.answerDone));
     expect(await screen.findByRole("button", { name: speaking.back })).toBeVisible();
     expect(button(study.playShortAnswer)).toBeVisible();
+    expect(dialog().queryByRole("button", { name: study.shortAnswerTranslation })).not.toBeInTheDocument();
+    expect(dialog().queryByText(study.answerTranslationSource)).not.toBeInTheDocument();
   });
 
   it("requests the mic within Allow, Record again, and Next taps and waits for the examiner before recording", async () => {

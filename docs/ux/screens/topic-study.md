@@ -4,7 +4,7 @@
 |---|---|
 | **Route** | `/fa/topics/{topicId}` (fragments `#sitA`, `#sitB`, `#general`) |
 | **Stories** | Must: US-011 to US-015, US-017, US-019 (entry), US-068, US-009, US-058, US-062. Should: US-007 #5, US-010, US-016, US-018, US-024 (entry), US-040, US-047, US-065, US-066. Could: US-020. |
-| **Decisions** | D-16 (intros), D-17 (verification), D-18 (situation titles), D-19 (no answer translations), D-20 (personal examples), D-21 (no margin notes) |
+| **Decisions** | D-16 (intros), D-17 (verification), D-18 (situation titles), D-20 (personal examples), D-21 (no margin notes), 2026-11-25 (answer translations) |
 | **Flows** | [study-topic](../flows/study-topic.md), [spaced-review](../flows/spaced-review.md) |
 | **Content example** | [`content/topics/2024-maj-b.json`](../../../content/topics/2024-maj-b.json) |
 | **Milestone** | M1 (core), M2 (answer aloud), M3 (Should items) |
@@ -30,13 +30,15 @@ Study one topic laid out the way the exam asks it (US-011), with everything the 
    3. **QuestionBlock (first required question):** role label · PlayButton · Danish text · VerificationNote (US-068; rev. 2, R-16): either "✓ Wording checked against SIRI's examiner booklet" with a Disclosure "checked on ۱۸ نوامبر ۲۰۲۶ · SIRI examiner booklet Maj–Juni 2024, p. 8 · open (external site)" from `siriCheck.checkedOn` and `sourceRef.pages`, or "As given in the booklet (from SIRI's examiner booklets), **not yet checked word for word**" (same wording as the About legend) · "show translation" (US-013) · SimilarQuestionLinks ("A similar question: Maj–Juni 2019 · C · situation A"; US-007 #5)
    4. **KeywordList:** three stacked Danish–Persian pairs (UXD-24); emoji decorative (UX-OQ-16); tip "Use these three words to rebuild your answer with template 1" → template (US-014 #3)
    5. **Answer aloud** (primary button of the section; US-019) with the subtitle "you speak, then compare" (rev. 2, UX-OQ-04) → [answer-aloud](answer-aloud.md)
-   6. **ModelAnswerBlock**, collapsed by default (UXD-04): heading "A simple, clear sample answer" (OQ-14 wording) · "built on template 1" link (US-020) · AudioPlayer (model voice, speed 0.75/1/1.25, seek; US-015) · Danish text with the booklet's bold connectives and word highlight while playing (US-016) · "Shadow sentence by sentence" (US-024). **No translation control** (D-19).
+   6. **ModelAnswerBlock**, collapsed by default (UXD-04): heading "A simple, clear sample answer" (OQ-14 wording) · "built on template 1" link (US-020) · AudioPlayer (model voice, speed 0.75/1/1.25, seek; US-015) · Danish text with the booklet's bold connectives and word highlight while playing (US-016) · "Shadow sentence by sentence" (US-024).
    7. **PersonalExampleBlock** (if present; US-018, D-20): label "An example from a nurse's perspective" · PlayButton · Danish text · prompt "Make your own example from your work or life" → toolbox personal sentences
-   8. **FollowupBlock:** label "Suggested follow-up question" · SourceLabel "SIRI's suggested wording ({term})" where the check matches, otherwise the booklet label (rev. 2.1, S3) · one-line note "Real examiners ask follow-ups as they judge necessary and may ask others, depending on what you say" (US-017 #3) · PlayButton · Danish text · VerificationNote · "show translation" · **Answer aloud** (secondary) · short answer, collapsed (audio, Danish; no translation, D-19)
+   8. **FollowupBlock:** label "Suggested follow-up question" · SourceLabel "SIRI's suggested wording ({term})" where the check matches, otherwise the booklet label (rev. 2.1, S3) · one-line note "Real examiners ask follow-ups as they judge necessary and may ask others, depending on what you say" (US-017 #3) · PlayButton · Danish text · VerificationNote · "show translation" · **Answer aloud** (secondary) · short answer, collapsed (audio and Danish text)
 5. **Section B** (`#sitB`): same structure
 6. **General question** (`#general`, `h2` "The general question (second required question)"): a note "The examiner first announces a more general question; listen for *overordnet* or *generelt*" → examiner phrases. Then QuestionBlock, KeywordList (tip → template 2), Answer aloud, ModelAnswerBlock (template 2), PersonalExampleBlock, FollowupBlock (template 3).
 7. **Related topics** (D-21; UXD-20): up to a few links in our wording, "Related topics: …". Similar-question and related-topic links come from the public `content/topic-links.json` (ADR-0002; UX-OQ-14 closed); the app never reads `content/internal/`.
 8. **Page footer:** "Practise this topic as a mock exam" (repeat of the header action, for people who reach the end) · CreditLine ("From the booklet by Shery Rahimi, pages 36–37", US-058) · "Report a problem with this topic" (US-065)
+
+Sample answers, follow-up answers and personal examples with a Persian translation have a collapsed toggle beneath the Danish text. The toggle reveals text labelled «ترجمهٔ برنامه».
 
 ## Components
 

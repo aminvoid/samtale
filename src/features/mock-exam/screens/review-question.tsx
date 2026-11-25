@@ -8,6 +8,7 @@ import { Disclosure } from "@/components/ui/disclosure";
 import { InfoNote } from "@/components/ui/info-note";
 import { RoleHeader } from "@/components/ui/role-header";
 import { WordHighlighter } from "@/components/ui/word-highlighter";
+import { TranslationToggle } from "@/features/study";
 import { Link } from "@/i18n/navigation";
 import { richTags } from "@/i18n/rich-tags";
 import { useClip } from "@/lib/audio/player";
@@ -79,6 +80,12 @@ export function ReviewQuestion({
         currentTimeMs={clip.currentTimeMs}
         status={clip.status}
       />
+      {sample.translation && (
+        <TranslationToggle
+          text={sample.translation.fa}
+          answerLabel={t("review.answerTranslation", { question: label })}
+        />
+      )}
       <Link
         href={`/templates#template-${String(template)}`}
         className={cn(mockTextLink, "justify-self-start")}

@@ -12,7 +12,7 @@ import { AXE_TAGS, expect, test } from "./fixtures";
  * Native integration tests below exercise the real media element and MediaRecorder.
  */
 
-const { mock } = messages;
+const { mock, study } = messages;
 const t = createTranslator({ locale: "fa", messages, formats: buildFormats("fa") });
 const cardNames = [1, 2, 3].map((number) => t("mock.draw.card", { number, total: 3 }));
 const anyCardName = new RegExp(`^(?:${cardNames.map((name) => RegExp.escape(name)).join("|")})$`);
@@ -335,6 +335,33 @@ async function finishEarly(page: Page) {
     .click();
   await expect(page).toHaveURL(/\/fa\/mock\/review\/[^/?]+\?attempt=/);
 }
+
+test("reveals a Persian sample answer translation on the mock review page", async ({ page }) => {
+  await page.goto("/fa/mock/review/2016-nov-c");
+  await expect(page.getByRole("link", { name: mock.review.study, exact: true })).toBeVisible();
+  const sample = page.getByRole("heading", { name: mock.review.sample, exact: true }).first();
+  const disclosure = sample.locator("..");
+  const toggle = disclosure.getByRole("button", {
+    name: t("mock.review.answerTranslation", { question: mock.examiner.first }),
+    exact: true,
+  });
+  const persian = disclosure.locator('p[lang="fa"][dir="rtl"]');
+  const danish = disclosure.locator('p[lang="da"]');
+
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(persian).toBeHidden();
+  await toggle.press("Enter");
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(persian).toBeVisible();
+  await expect(disclosure.getByText(study.answerTranslationSource, { exact: true })).toBeVisible();
+  await expect(danish).toBeVisible();
+  await expect(danish).toHaveAttribute("dir", "ltr");
+  await expectAccessible(page);
+
+  await toggle.press("Space");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(persian).toBeHidden();
+});
 
 test.describe("mock exam", () => {
   test.beforeEach(async ({ page }) => {

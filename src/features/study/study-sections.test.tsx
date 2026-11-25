@@ -40,6 +40,11 @@ const answer: Topic["general"]["question"]["modelAnswer"] = {
   audio: { url: "/audio/test.mp3", durationMs: 2500, words: [[0, 3, 50, 210]] },
   emphasis: [{ start: 0, end: 14 }],
 };
+const translatedAnswer = {
+  ...answer,
+  emphasis: [],
+  translation: { fa: "اول از همه، این موضوع اهمیت دارد.", origin: "app" },
+} satisfies typeof answer;
 
 afterEach(() => {
   cleanup();
@@ -87,6 +92,64 @@ describe("study sections", () => {
     }
   });
 
+  it.each([
+    {
+      heading: study.sample,
+      name: study.sampleTranslation,
+      disclosure: <AnswerDisclosure kind="model" item={translatedAnswer} template={1} />,
+    },
+    {
+      heading: study.shortAnswer,
+      name: study.shortAnswerTranslation,
+      disclosure: <AnswerDisclosure kind="short" item={translatedAnswer} />,
+    },
+    {
+      heading: study.example,
+      name: study.exampleTranslation,
+      disclosure: (
+        <AnswerDisclosure
+          kind="example"
+          item={{
+            id: "2024-maj-a.sitA.example1",
+            text: translatedAnswer.text,
+            translation: translatedAnswer.translation,
+            label: { fa: study.example },
+            perspective: "nurse",
+          }}
+        />
+      ),
+    },
+  ])("shows the app's translation on request for $heading", async ({ heading, name, disclosure }) => {
+    const user = userEvent.setup();
+    renderWithIntl(<AudioPlayerProvider>{disclosure}</AudioPlayerProvider>);
+    await user.click(screen.getByRole("button", { name: heading }));
+
+    const toggle = screen.getByRole("button", { name });
+    const translation = screen.getByText(translatedAnswer.translation.fa);
+    const source = screen.getByText(study.answerTranslationSource);
+    const danish = screen.getByText(translatedAnswer.text.da);
+
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(translation).not.toBeVisible();
+    expect(source).not.toBeVisible();
+
+    toggle.focus();
+    await user.keyboard("{Enter}");
+    expect(toggle).toHaveAttribute("aria-expanded", "true");
+    expect(translation).toBeVisible();
+    expect(translation).toHaveAttribute("lang", "fa");
+    expect(translation).toHaveAttribute("dir", "rtl");
+    expect(source).toBeVisible();
+    expect(danish).toBeVisible();
+    expect(danish).toHaveAttribute("lang", "da");
+    expect(danish).toHaveAttribute("dir", "ltr");
+
+    await user.keyboard(" ");
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(translation).not.toBeVisible();
+    expect(source).not.toBeVisible();
+  });
+
   it("keeps the sample answer collapsed and highlights the current word inside booklet emphasis", async () => {
     const user = userEvent.setup();
     const play = vi.spyOn(HTMLMediaElement.prototype, "play").mockResolvedValue(undefined);
@@ -107,7 +170,8 @@ describe("study sections", () => {
     await user.click(toggle);
     expect(toggle).toHaveAttribute("aria-expanded", "true");
     expect(screen.getByRole("radiogroup", { name: messages.audio.speed })).toBeVisible();
-    expect(screen.queryByRole("button", { name: study.translation })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: study.sampleTranslation })).not.toBeInTheDocument();
+    expect(screen.queryByText(study.answerTranslationSource)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: study.playSample }));
     const media = play.mock.contexts[0];

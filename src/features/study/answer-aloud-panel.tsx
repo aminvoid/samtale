@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils/cn";
 import { AnswerAudio } from "./answer-audio";
 import type { createAnswerAloudSession } from "./answer-aloud-session";
 import { answerElapsed, MAX_ANSWER_RECORDING_MS, type AnswerAloudState } from "./answer-aloud-state";
+import { TranslationToggle } from "./translation-toggle";
 
 type RequiredQuestion = Topic["general"]["question"];
 export type SpeakingQuestion = Pick<RequiredQuestion, "id" | "text" | "audio"> & {
@@ -409,6 +410,14 @@ export function AnswerAloudPanel({
                       emphasis={question.model.emphasis}
                       label={t(question.role === "followup" ? "playShortAnswer" : "playSample")}
                     />
+                    {question.model.translation && (
+                      <TranslationToggle
+                        text={question.model.translation.fa}
+                        answerLabel={t(
+                          question.role === "followup" ? "shortAnswerTranslation" : "sampleTranslation",
+                        )}
+                      />
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-wrap justify-between gap-2 pbe-14">

@@ -4,6 +4,7 @@ import { RoleHeader } from "@/components/ui/role-header";
 import { Link } from "@/i18n/navigation";
 import type { Topic } from "@/lib/content/repository";
 import { AnswerAudio } from "./answer-audio";
+import { TranslationToggle } from "./translation-toggle";
 
 type Section = Topic["general"];
 type AnswerDisclosureProps =
@@ -41,6 +42,14 @@ export function AnswerDisclosure(props: AnswerDisclosureProps) {
           label={playLabel}
           example={example}
         />
+        {item.translation && (
+          <TranslationToggle
+            text={item.translation.fa}
+            answerLabel={t(
+              example ? "exampleTranslation" : short ? "shortAnswerTranslation" : "sampleTranslation",
+            )}
+          />
+        )}
         {example && <p className="text-caption text-text-muted">{t("exampleTip")}</p>}
       </div>
     </Disclosure>

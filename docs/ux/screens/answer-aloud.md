@@ -32,6 +32,8 @@ The smallest real speaking loop: hear the question, answer out loud with a timer
 3. Actions: **Record again** (replaces the take; US-019 #5) · **Next question** · Close. "Next question" is a **separate button** placed away from where Done was; the Done slot itself disappears in Phase 3.
 4. The last question of the topic shows "Back to the topic" instead of "Next question"
 
+When available, a collapsed toggle beneath the Danish sample answer reveals the Persian text labelled «ترجمهٔ برنامه».
+
 ## Components
 
 FocusedModeShell, ExaminerPanel, ShowTextToggle, RecordingIndicator, ElapsedTimer, HintDisclosure (KeywordList), RepeatControl, PrimaryActionSlot, TakePlayer, AudioPlayer, ConfirmDialog (discard), MicPermissionExplainer, MicDeniedHelp, LiveRegion.

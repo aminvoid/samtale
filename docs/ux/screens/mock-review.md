@@ -4,7 +4,7 @@
 |---|---|
 | **Route** | `/fa/mock/review/{topicId}?attempt={attemptId}` (rev. 2, ADR-0005 §4: static per topic; the attempt is overlaid in the browser) |
 | **Stories** | US-041, US-042, US-044 (Must); US-043, US-045, US-048 #2 (Should); US-035 #7; US-020; US-050; GA-10 |
-| **Decisions** | D-6 (recordings session-only by default), D-19 (no answer translations) |
+| **Decisions** | D-6 (recordings session-only by default), 2026-11-25 (answer translations) |
 | **Flows** | [mock-review](../flows/mock-review.md) |
 | **Milestone** | M2 (M3 for lengths and keeping) |
 
@@ -22,7 +22,7 @@ Hear your answers next to the sample answers, check yourself against the assesse
    - **ReviewQuestionItem** for the first required question:
      - role label · Danish question · play (examiner) · VerificationNote · Translation (Disclosure) · Key words (Disclosure) (US-041 #3)
      - **Your answer:** TakePlayer(s), length "0:52" and "about 45–60 s suggested" as a neutral reference (US-043); "recorded in 2 parts"; "not recorded"
-     - **Sample answer:** Disclosure (collapsed on phones), AudioPlayer, Danish text; "built on template 1" link (US-020); no translation (D-19)
+     - **Sample answer:** Disclosure (collapsed on phones), AudioPlayer, Danish text and "built on template 1" link (US-020). When available, a collapsed toggle beneath the Danish text reveals the Persian text labelled «ترجمهٔ برنامه».
      - "Open this question in the topic" link
    - ReviewQuestionItem for the suggested follow-up (sample = short answer; template 3)
    - **SelfCheckList for the first required question** (US-042): six items

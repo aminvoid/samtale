@@ -490,6 +490,81 @@ describe("mock screens", () => {
     });
   });
 
+  it("reveals the app's answer translations only for samples that have one", () => {
+    const [first, second] = reviewTopic.situations;
+    const modelAnswer = {
+      ...first.question.modelAnswer,
+      text: { da: "Det er en god grund." },
+      translation: { fa: "این دلیل خوبی است.", origin: "app" },
+    } satisfies typeof first.question.modelAnswer;
+    const shortAnswer = {
+      ...modelAnswer,
+      id: `${first.id}.followup1.answer`,
+      text: { da: "Det er rigtigt." },
+      translation: { fa: "درست است.", origin: "app" },
+    } satisfies typeof modelAnswer;
+    renderScreen(
+      <ReviewMaterial
+        topic={{
+          ...reviewTopic,
+          situations: [
+            {
+              ...first,
+              question: { ...first.question, modelAnswer },
+              followups: [
+                {
+                  id: `${first.id}.followup1`,
+                  text: { da: "Hvad mener du?", fa: "نظر شما چیست؟" },
+                  verification: { status: "unchecked" },
+                  answer: shortAnswer,
+                },
+              ],
+            },
+            second,
+          ],
+        }}
+        lines={examinerLines}
+      />,
+    );
+
+    const sources = screen.getAllByText(messages.study.answerTranslationSource);
+    expect(sources).toHaveLength(2);
+    for (const [index, { role, answer }] of [
+      { role: copy.examiner.first, answer: modelAnswer },
+      { role: copy.examiner.followup, answer: shortAnswer },
+    ].entries()) {
+      const toggle = screen.getByRole("button", {
+        name: t("review.answerTranslation", { question: role }),
+      });
+      const translation = screen.getByText(answer.translation.fa);
+      const danish = screen.getByText(answer.text.da);
+      const source = sources[index];
+      expect(toggle).toHaveAttribute("aria-expanded", "false");
+      expect(translation).not.toBeVisible();
+      expect(source).not.toBeVisible();
+
+      fireEvent.click(toggle);
+      expect(toggle).toHaveAttribute("aria-expanded", "true");
+      expect(translation).toBeVisible();
+      expect(translation).toHaveAttribute("lang", "fa");
+      expect(translation).toHaveAttribute("dir", "rtl");
+      expect(source).toBeVisible();
+      expect(danish).toBeVisible();
+      expect(danish).toHaveAttribute("lang", "da");
+      expect(danish).toHaveAttribute("dir", "ltr");
+
+      fireEvent.click(toggle);
+      expect(toggle).toHaveAttribute("aria-expanded", "false");
+      expect(translation).not.toBeVisible();
+    }
+
+    expect(
+      screen.queryByRole("button", {
+        name: t("review.answerTranslation", { question: copy.examiner.second }),
+      }),
+    ).not.toBeInTheDocument();
+  });
+
   it.each([
     { outcome: "leaves directly when there is no take", unkept: false },
     { outcome: "opens the keep dialog when there is an unkept take", unkept: true },

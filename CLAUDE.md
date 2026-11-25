@@ -148,4 +148,4 @@ The app was scaffolded on 2026-11-19 following [docs/scaffold-plan.md](docs/scaf
 
 - Use Conventional Commits.
 - Never commit `.env*` files (except `.env.example`), raw extraction output or user data.
-- The source booklet files in `docs/resources/` are tracked in this **local, private** repository. **Never push to a public remote** while they're tracked or in the history, unless the author's permission covers it.
+- The source booklet files in `docs/resources/` are tracked. The `origin` remote (`github.com/aminvoid/samtale`) is **public**. The owner confirmed on 2026-11-25 that this is fine, because the booklet is itself published free of charge. Push only when the owner asks.

@@ -79,7 +79,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | ren straffeattest | سابقهٔ کیفری پاک (ren straffeattest) | گواهی پلیس که نشان می‌دهد شخص محکومیت کیفری ندارد | Not «سوءپیشینهٔ پاک», which contradicts itself |
 | ungdomsuddannelse | آموزش متوسطه (ungdomsuddannelse) | تحصیل بعد از folkeskole: دبیرستان (gymnasium) یا آموزش فنی‌وحرفه‌ای | Not just «دبیرستان». Dari: «لیسه» |
 | SU (Statens Uddannelsesstøtte) | SU (کمک‌هزینهٔ تحصیلی دولت) | پولی که دولت ماهانه به دانش‌آموزان و دانشجویان بالای ۱۸ سال می‌دهد؛ SU-lån وام تحصیلی دولت است | Keep "SU" in Latin, isolated. A Persian field that starts with "SU" needs an explicit `dir="rtl"` |
-| dagpenge / kontanthjælp | dagpenge (بیمهٔ بیکاری) / kontanthjælp (کمک‌هزینهٔ اجتماعی) | dagpenge را صندوق بیمهٔ بیکاری (a-kasse) به عضوهایش می‌دهد؛ kontanthjælp کمک مالی کمون به کسی است که درآمد و حق dagpenge ندارد | Two different benefits: keep both Danish words, never merge them into «حمایت مالی» |
+| dagpenge / kontanthjælp | dagpenge (کمک‌هزینهٔ بیکاری) / kontanthjælp (کمک‌هزینهٔ اجتماعی) | dagpenge را صندوق بیمهٔ بیکاری (a-kasse) به عضوهایش می‌دهد؛ kontanthjælp کمک مالی کمون به کسی است که درآمد و حق dagpenge ندارد | Two different benefits: keep both Danish words, never merge them into «حمایت مالی» |
 | folkepension | folkepension (مستمری بازنشستگی دولتی) | مستمری پایه‌ای که دولت از سن بازنشستگی به ساکنان دانمارک می‌دهد | |
 | daginstitution | مهدکودک (daginstitution) | شامل vuggestue (برای بچه‌های زیر سه سال) و børnehave (از سه سالگی تا مدرسه) | Dari reader: «مهدکودک» still open |
 | pædagog | مربی (pædagog) | کارشناس آموزش‌دیده برای کار با کودکان و جوانان، مثلاً در مهدکودک | Not «معلم» (that is *lærer*) |

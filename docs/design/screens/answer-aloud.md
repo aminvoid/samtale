@@ -15,7 +15,7 @@
 
 - ExaminerPanel *speaking* (examiner tint, animated bars) with the role RoleHeader.
 - The Danish question **shown by default** (DanishText `question` in a raised well) with «پنهان کردن متن».
-- Answer area (pinned): PrimaryActionSlot *waiting* «گوش دهید…».
+- Listening status «گوش دهید…» and the microphone explanation before the permission choice.
 
 ## Phase 2: Your turn (375)
 
@@ -26,7 +26,7 @@
 | Question | The Danish question well (still shown) + toggle. |
 | Hint | HintDisclosure «نمایش کلمه‌های کلیدی» (required questions only) → the KeywordList (saffron) in place. |
 | Answer area | RepeatControl card (full width) · 12 px · PrimaryActionSlot *active* «جوابم تمام شد» (56 px). |
-| Cap | InfoNote compact `circle-stop` «ضبط در ۳ دقیقه متوقف شد…» above the answer area. |
+| Cap | Comparison opens with a status message that recording stopped at three minutes. |
 | Interrupted | ExaminerPanel area shows `circle-pause` «متوقف شد» + secondary «ادامه (بخش دوم ضبط می‌شود)»; the primary stays «جوابم تمام شد». |
 
 ## Phase 3: Compare (375)
@@ -44,11 +44,11 @@ Same order inside the 560 px dialog. **Phase 3:** at ≥ 1024 the dialog widens 
 | Variant | When | Design |
 |---|---|---|
 | **A. Wake Lock supported** (expected) | Default | Nothing visible. The lock is silent. |
-| **B. Not supported** | First answer aloud on a device without the API | WakeLockTip (InfoNote compact, `lock`) at the top of Phase 1, above the ExaminerPanel, once per device, with a dismiss `x`. It takes one or two lines and pushes nothing below the fold at 375. |
+| **B. Not supported** | First answer aloud on a device without the API | A dismissible WakeLockTip (InfoNote, `lock`) appears when acquiring the lock fails during recording. |
 
 ## Microphone states
 
-First time: MicPermissionExplainer **sheet** over the panel before Phase 1. Denied: Phase 2 without recording plus a tertiary «میکروفون خاموش است ›» link to MicDeniedHelp.
+First time: MicPermissionExplainer inside the panel, before the microphone request. Denied: Phase 2 without recording plus a tertiary «میکروفون خاموش است ›» link to MicDeniedHelp.
 
 ## Close with a take
 

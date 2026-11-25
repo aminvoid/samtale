@@ -5,7 +5,6 @@ import messages from "../../../messages/fa.json";
 import { AudioPlayerProvider } from "@/lib/audio/player";
 import type { TermSummary, Topic } from "@/lib/content/repository";
 import { renderWithIntl } from "@/test/render-with-intl";
-import { AnswerAloud } from "./answer-aloud";
 import { AnswerDisclosure } from "./answer-disclosure";
 import { ExaminerIntro } from "./examiner-intro";
 import { getStudyProgressStore } from "./study-progress-store";
@@ -193,41 +192,19 @@ describe("study sections", () => {
     expect(screen.queryByRole("link", { name: study.sources.openOfficialSource })).not.toBeInTheDocument();
   });
 
-  it("records opening separately from explicit, device-local practice confirmation", async () => {
-    const user = userEvent.setup();
+  it("records opening without counting it as practice", async () => {
     const store = getStudyProgressStore();
     const topicId = "2024-maj-a";
-    const itemId = "2024-maj-a.sitA.q1";
     renderWithIntl(
-      <>
-        <StudyVisit topicId={topicId}>
-          <p>{study.layoutBody}</p>
-        </StudyVisit>
-        <AnswerAloud topicId={topicId} itemId={itemId} primary />
-      </>,
+      <StudyVisit topicId={topicId}>
+        <p>{study.layoutBody}</p>
+      </StudyVisit>,
     );
 
     await waitFor(async () => {
       expect(await store.getLastOpened()).toMatchObject({ ok: true, value: { topicId } });
     });
-    const entry = screen.getByRole("link", { name: study.answerAloud });
-    expect(entry).toHaveAttribute("href", `#answer-${itemId}`);
     expect(await store.listPracticeEvents({ topicId })).toEqual({ ok: true, value: [] });
-
-    const done = screen.getByRole("button", { name: study.answerDone });
-    await user.click(done);
-    await waitFor(() => {
-      expect(screen.getByRole("status")).toHaveTextContent(study.practiceSaved);
-    });
-    expect(done).toHaveAttribute("aria-disabled", "true");
-    expect(done).toHaveFocus();
-    expect(await store.listPracticeEvents({ topicId })).toMatchObject({
-      ok: true,
-      value: [{ topicId, itemId, kind: "answer-aloud" }],
-    });
-    await user.click(done);
-    const practiceEvents = await store.listPracticeEvents({ topicId });
-    expect(practiceEvents.ok && practiceEvents.value).toHaveLength(1);
   });
 
   it("keeps Danish question and intro wording out of aria-labels", () => {

@@ -50,7 +50,7 @@ export function StudySection({
           <KeywordList keywords={question.keywords} template={template} />
         </div>
         <div className="min-inline-0 xl:col-span-2">
-          <AnswerAloud topicId={topicId} itemId={question.id} primary />
+          <AnswerAloud itemId={question.id} primary />
         </div>
       </div>
       <AnswerDisclosure kind="model" item={question.modelAnswer} template={template} />
@@ -59,7 +59,7 @@ export function StudySection({
       ))}
       {section.followups.map((followup) => (
         <StudyQuestion key={followup.id} question={followup} kind="followup" terms={terms}>
-          <AnswerAloud topicId={topicId} itemId={followup.id} />
+          <AnswerAloud itemId={followup.id} />
           <AnswerDisclosure kind="short" item={followup.answer} />
         </StudyQuestion>
       ))}

@@ -54,12 +54,12 @@ The path is **suggested, not enforced** (US-004 #3). Every block is usable on it
 
 ```mermaid
 stateDiagram-v2
-  [*] --> consent: first recording ever
-  [*] --> playing: consent already seen
-  consent --> playing: allow, granted
-  consent --> playingNoMic: continue without recording, or denied
-  playing --> answering: question ends, recording starts
-  playingNoMic --> answeringNoMic: question ends
+  [*] --> playing: tap Answer aloud
+  playing --> consent: first recording choice after the question
+  playing --> answering: question ends, microphone already allowed
+  consent --> answering: allow microphone
+  consent --> answeringNoMic: skip, denied or unavailable
+  playing --> answeringNoMic: question ends, recording off
   answering --> repeating: Repeat
   repeating --> answering: question ends
   answering --> compare: Done or 3-minute cap
@@ -73,14 +73,14 @@ stateDiagram-v2
 
 | Step | What happens | Story |
 |---|---|---|
-| Tap "answer aloud" | If the learner has never seen the recording explanation, it appears first ([recording-consent-and-microphone.md](recording-consent-and-microphone.md)). Then the focused answer panel opens. | US-019 #1, US-044 #1, US-063 #1 |
-| Question plays | Examiner voice. **The question text is shown by default** (rev. 2, UX-OQ-29: the learner has just read it on the page), with "hide text" for learners who want listening practice; the choice is remembered (UXD-14). The Screen Wake Lock is held while the panel is open (R-01). | US-019 #1 |
-| Answering | Recording starts when the question ends: icon + text "recording", announced once. Elapsed timer with "the booklet suggests about 45–60 seconds" as a neutral reference. Model answer, translation and key words are hidden. **Hint** reveals the three key words (required questions only; follow-ups have none). **Repeat** replays the question, pausing the recording. | US-019 #1–#3, US-032 (same control as the mock) |
+| Tap "answer aloud" | The focused panel opens and starts the question. The microphone explanation is visible before the learner is asked to allow the microphone. The recorder loads while the question plays, and **Allow** becomes available when it is ready. [Recording consent](recording-consent-and-microphone.md) | US-019 #1, US-044 #1, US-063 #1 |
+| Question plays | Examiner voice. **The question text is shown by default** (rev. 2, UX-OQ-29: the learner has just read it on the page), with "hide text" for learners who want listening practice; the choice is remembered during the topic visit (UXD-14). | US-019 #1 |
+| Answering | Recording starts once the question ends and microphone access is available. The app shows and announces "recording" and holds a Screen Wake Lock while recording (R-01). Elapsed timer with "the booklet suggests about 45–60 seconds" as a neutral reference. Model answer, translation and key words are hidden. **Hint** reveals the three key words (required questions only; follow-ups have none). **Repeat** replays the question, pausing the recording. | US-019 #1–#3, US-032 (same control as the mock) |
 | Done | Recording stops ("recording stopped" is announced; there's no examiner reply here). | US-019 #4 |
-| 3-minute cap (C5) | Recording stops with a calm message; the learner taps Done when ready. | US-031 #6 (same rule) |
-| Compare | "Your answer" player with its length, then the sample answer (text and audio, expanded). One clip at a time. **Focus moves to "Play your answer"** when this step opens; **Next question** is a separate button in a different position from Done, so a second tap or Space on Done can't skip the comparison (rev. 2, R-04). Actions: **Record again** (replaces the take, US-019 #5), **Next question** (topic order: sit A q1 → sit A follow-up → sit B q1 → … → general follow-up), **Close**. | US-019 #4–#5 |
-| Counted as practised | At the first Done, with or without a recording. Starts or advances the spaced-review cycle (D-22). | US-019 #7, US-046 #1, US-047 #1 |
-| Interrupted | Tab hidden, screen lock, or the microphone muted or ended while answering (a call): audio and recording stop, the take is kept; on return "Paused" with Continue (records a second part) or Done (R-03). | US-038 (same rule) |
+| 3-minute cap (C5) | Recording stops, a message explains the cap, and comparison opens. | US-031 #6 (same rule) |
+| Compare | "Your answer" player with its length, then the sample answer (text and audio, expanded). One clip at a time. **Focus moves to "Play your answer"** when this step opens. **Next question** has a separate button so a second press on Done can't skip the comparison (rev. 2, R-04). After the learner has allowed the microphone, **Record again** and **Next question** open it on the tap and start recording after the examiner finishes. **Next question** follows topic order (sit A q1 → sit A follow-up → sit B q1 → … → general follow-up). **Close** leaves the exercise. | US-019 #4–#5 |
+| Counted as practised | At the first Done or recording cap for the question, with or without a take. Starts or advances the spaced-review cycle (D-22). | US-019 #7, US-046 #1, US-047 #1 |
+| Interrupted | Hiding the tab during an answer or while the microphone is starting freezes the timer and keeps any take. While answering, a sustained microphone mute (C18) or a track ending also pauses the exercise. The learner chooses **Continue** to resume or **Done** to finish. Practice is saved on Done or at the recording cap. | US-038 (same rule), R-03 |
 | Leaving | **Close** with a take in memory asks "Your recording will be deleted. Leave anyway?" (Leave / Stay). The browser's back closes the panel and discards without asking, because the learner was told up front (US-044 #1). Recordings are never uploaded or stored. | US-019 #8, US-044 #2–#5 |
 | No microphone | The exercise runs the same way without recording: "Your turn — answer aloud", Done, then the sample answer only. | US-019 #6, K6 |
 

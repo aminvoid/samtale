@@ -1,14 +1,18 @@
 import AxeBuilder from "@axe-core/playwright";
 import type { Page } from "@playwright/test";
 import messages from "../messages/fa.json" with { type: "json" };
-import { AXE_TAGS, expect, test } from "./fixtures";
+import { AXE_TAGS, expect, test, waitForHydration } from "./fixtures";
 
 const topicUrl = "/fa/topics/2024-maj-b";
-const { audio, study } = messages;
+const { audio, mock, study } = messages;
+const { speaking } = study;
 
 declare global {
   interface Window {
     studyPlayback?: { media: HTMLMediaElement; fail: () => void; end: () => void };
+    studyTracks?: MediaStreamTrack[];
+    studyRevokedUrls?: string[];
+    studyRecordedChunks?: number;
   }
 }
 
@@ -98,6 +102,17 @@ async function stubPlayback(page: Page, firstPlay: "ok" | "blocked" | "loading" 
   }, firstPlay);
 }
 
+async function openSpeakingExercise(page: Page) {
+  const section = page.locator('section[data-study-section="sitA"]:visible');
+  const start = section.getByRole("button", { name: study.answerAloud, exact: true }).first();
+  await waitForHydration(start);
+  await start.click();
+  const dialog = page.getByRole("dialog", { name: study.answerAloud });
+  await expect(dialog.getByText(speaking.listening)).toBeVisible();
+  await page.evaluate(() => window.studyPlayback?.end());
+  return dialog;
+}
+
 test("opens a topic from the library, plays clips, and reveals the translation and sample answer", async ({
   page,
 }) => {
@@ -105,6 +120,7 @@ test("opens a topic from the library, plays clips, and reveals the translation a
   await page.goto("/fa/topics/themes/arbejde");
   const topic = page.getByRole("main").locator(`a[href="${topicUrl}"]`);
   const title = await topic.locator('[lang="da"]').first().innerText();
+  await waitForHydration(topic);
   await topic.click();
   await expect(page).toHaveURL(topicUrl);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(title);
@@ -160,11 +176,10 @@ test("opens a topic from the library, plays clips, and reveals the translation a
   await expect(playSample).toHaveAttribute("aria-pressed", "false");
   await expect(highlight).toHaveCount(0);
 
-  const aloud = a.getByRole("link", { name: study.answerAloud }).first();
-  await aloud.click();
-  await expect(a.getByText(study.answerComingSoon).first()).toBeVisible();
-  await a.getByRole("button", { name: study.answerDone }).click();
-  await expect(a.getByText(study.practiceSaved, { exact: true }).first()).toBeVisible();
+  const exercise = await openSpeakingExercise(page);
+  await exercise.getByRole("button", { name: mock.ready.micSkip }).click();
+  await exercise.getByRole("button", { name: study.answerDone }).click();
+  await expect(exercise.getByText(study.practiceSaved, { exact: true })).toBeVisible();
   await page.reload();
   await expect(page.getByText(/بار تمرین کرده‌اید/)).toBeVisible();
   await sample.click();
@@ -183,6 +198,203 @@ test("opens a topic from the library, plays clips, and reveals the translation a
     )
     .toEqual({ paused: true, source: null });
 });
+
+test("records with Chromium fake media, compares, replaces the take, and releases local media", async ({
+  page,
+  browserName,
+}) => {
+  test.skip(browserName !== "chromium", "Chromium fake microphone integration");
+  await stubPlayback(page);
+  await page.addInitScript(() => {
+    const tracks: MediaStreamTrack[] = [];
+    const revoked: string[] = [];
+    window.studyTracks = tracks;
+    window.studyRevokedUrls = revoked;
+    let recordedChunks = 0;
+    window.studyRecordedChunks = recordedChunks;
+    window.MediaRecorder = class extends MediaRecorder {
+      override start(timeslice?: number) {
+        this.addEventListener("dataavailable", ({ data }) => {
+          if (data.size > 0) window.studyRecordedChunks = ++recordedChunks;
+        });
+        super.start(timeslice);
+      }
+    };
+    const request = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+    navigator.mediaDevices.getUserMedia = async (options) => {
+      const stream = await request(options);
+      tracks.push(...stream.getTracks());
+      return stream;
+    };
+    const revoke = URL.revokeObjectURL.bind(URL);
+    URL.revokeObjectURL = (url) => {
+      revoked.push(url);
+      revoke(url);
+    };
+  });
+  const requestsWithBodies: string[] = [];
+  page.on("request", (request) => {
+    if (request.postDataBuffer() !== null) requestsWithBodies.push(request.url());
+  });
+  await page.clock.install();
+  await page.goto(topicUrl);
+  const exercise = await openSpeakingExercise(page);
+  await expect(exercise.getByText(speaking.privacy)).toBeVisible();
+  await expect(exercise.locator('p[lang="da"][dir="ltr"]')).toBeVisible();
+  await expect(exercise.getByRole("button", { name: speaking.next })).toHaveCount(0);
+  await expect(exercise.getByRole("button", { name: study.playSample })).toHaveCount(0);
+  await expect.poll(() => page.evaluate(() => window.studyTracks?.length)).toBe(0);
+
+  await page.clock.pauseAt((await page.evaluate(() => Date.now())) + 30_000);
+  await exercise.getByRole("button", { name: mock.ready.micAllow }).click();
+  const recording = exercise.getByRole("status").filter({ hasText: speaking.recording });
+  const done = exercise.getByRole("button", { name: study.answerDone });
+  const take = exercise.getByRole("button", { name: speaking.playTake });
+  const elapsed = exercise.getByRole("timer", { name: speaking.elapsed });
+  await expect(recording).toBeVisible();
+  // Native MediaRecorder still needs to produce audio independently of the page clock.
+  await expect.poll(() => page.evaluate(() => window.studyRecordedChunks ?? 0)).toBeGreaterThan(0);
+  await page.clock.runFor(1000);
+  await expect(elapsed).toHaveText("۰:۰۱");
+  await done.press("Enter");
+  await expect(take).toBeFocused();
+  await expect(done).toHaveCount(0);
+  await expect(exercise.getByRole("button", { name: speaking.next })).toBeVisible();
+  await take.press("Space");
+  await expect(take).toHaveAttribute("aria-pressed", "true");
+  const blob = await page.evaluate(() => window.studyPlayback?.media.getAttribute("src"));
+  expect(blob).toMatch(/^blob:/);
+  await exercise.getByRole("button", { name: study.playSample }).click();
+  await expect(take).toHaveAttribute("aria-pressed", "false");
+  await expect(exercise.getByText(study.practiceSaved, { exact: true })).toBeVisible();
+
+  const chunksBeforeRetake = await page.evaluate(() => window.studyRecordedChunks ?? 0);
+  await exercise.getByRole("button", { name: speaking.again }).click();
+  await expect(exercise.getByText(speaking.listening)).toBeVisible();
+  await expect.poll(() => page.evaluate(() => window.studyRevokedUrls)).toContain(blob);
+  await page.evaluate(() => window.studyPlayback?.end());
+  await expect(recording).toBeVisible();
+  await expect
+    .poll(() => page.evaluate(() => window.studyRecordedChunks ?? 0))
+    .toBeGreaterThan(chunksBeforeRetake);
+  await page.clock.runFor(1000);
+  await expect(elapsed).toHaveText("۰:۰۱");
+  await done.click();
+  await page.clock.resume();
+  await expect(take).toBeFocused();
+  await take.click();
+  const replacement = await page.evaluate(() => window.studyPlayback?.media.getAttribute("src"));
+  expect(replacement).toMatch(/^blob:/);
+  expect(replacement).not.toBe(blob);
+
+  await exercise.getByRole("button", { name: speaking.close }).click();
+  const discard = page.getByRole("dialog", { name: speaking.discardTitle });
+  await expect(discard.getByRole("button", { name: speaking.stay })).toBeFocused();
+  await discard.getByRole("button", { name: speaking.leave }).click();
+  await expect(exercise).toBeHidden();
+  await expect.poll(() => page.evaluate(() => window.studyRevokedUrls)).toContain(replacement);
+  await expect
+    .poll(() => page.evaluate(() => window.studyTracks?.map((track) => track.readyState)))
+    .toEqual(["ended", "ended"]);
+  expect(requestsWithBodies).toEqual([]);
+  await page.reload();
+  await expect(page.getByText(/۱ بار تمرین کرده‌اید/)).toBeVisible();
+});
+
+test("closes answer aloud with Back and keeps the same topic document on Forward", async ({ page }) => {
+  await stubPlayback(page);
+  await page.goto(topicUrl);
+  const exercise = await openSpeakingExercise(page);
+  await expect(exercise.getByRole("button", { name: mock.ready.micSkip })).toBeVisible();
+  await page.evaluate(() => {
+    document.documentElement.dataset.studyDocument = "original";
+  });
+  const navigations: string[] = [];
+  page.on("request", (request) => {
+    if (request.isNavigationRequest()) navigations.push(request.url());
+  });
+
+  await page.goBack();
+  await expect(exercise).toBeHidden();
+  await expect(page).toHaveURL(topicUrl);
+  await page.goForward();
+  await expect(exercise).toBeHidden();
+  await expect(page).toHaveURL(topicUrl);
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const state: unknown = window.history.state;
+        return typeof state === "object" && state !== null && "__NA" in state && state.__NA === true;
+      }),
+    )
+    .toBe(true);
+  await openSpeakingExercise(page);
+  await expect(page.locator("html")).toHaveAttribute("data-study-document", "original");
+  expect(navigations).toEqual([]);
+});
+
+test("continues after microphone denial and offers a retry without prompting again", async ({ page }) => {
+  await stubPlayback(page);
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator.mediaDevices, "getUserMedia", {
+      value: () => Promise.reject(new DOMException("Permission denied", "NotAllowedError")),
+    });
+  });
+  await page.goto(topicUrl);
+  const exercise = await openSpeakingExercise(page);
+  await exercise.getByRole("button", { name: mock.ready.micAllow }).click();
+  await expect(exercise.getByText(speaking.micDenied)).toBeVisible();
+  await expect(exercise.getByRole("button", { name: speaking.micRetry })).toBeVisible();
+  await exercise.getByRole("button", { name: study.answerDone }).click();
+  await expect(exercise.getByRole("button", { name: study.playSample })).toBeFocused();
+  await expect(exercise.getByText(speaking.noTake)).toBeVisible();
+  await exercise.getByRole("button", { name: speaking.again }).click();
+  await page.evaluate(() => window.studyPlayback?.end());
+  await expect(exercise.getByText(speaking.micDenied)).toBeVisible();
+  await expect(exercise.getByRole("button", { name: mock.ready.micAllow })).toHaveCount(0);
+});
+
+test("WebKit can compare a response when MediaRecorder is unavailable", async ({ page, browserName }) => {
+  test.skip(browserName !== "webkit", "WebKit fallback");
+  await stubPlayback(page);
+  await page.addInitScript(() => Object.defineProperty(window, "MediaRecorder", { value: undefined }));
+  await page.goto(topicUrl);
+  const exercise = await openSpeakingExercise(page);
+  await exercise.getByRole("button", { name: mock.ready.micAllow }).click();
+  await expect(exercise.getByText(mock.ready.micUnavailable)).toBeVisible();
+  await exercise.getByRole("button", { name: study.answerDone }).click();
+  await expect(exercise.getByRole("button", { name: study.playSample })).toBeFocused();
+  await expect(exercise.getByText(study.practiceSaved, { exact: true })).toBeVisible();
+  await page.goBack();
+  await expect(exercise).toBeHidden();
+  await expect(page).toHaveURL(topicUrl);
+});
+
+for (const width of [375, 1280]) {
+  test(`keeps the comparison keyboard-accessible in RTL at ${String(width)}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 812 });
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await stubPlayback(page);
+    await page.goto(topicUrl);
+    const exercise = await openSpeakingExercise(page);
+    await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+    await exercise.getByRole("button", { name: mock.ready.micSkip }).click();
+    await exercise.getByRole("button", { name: study.answerDone }).press("Enter");
+    const play = exercise.getByRole("button", { name: study.playSample });
+    await expect(play).toBeFocused();
+    const target = await play.boundingBox();
+    expect(target?.height).toBeGreaterThanOrEqual(44);
+    expect(target?.width).toBeGreaterThanOrEqual(44);
+    await expect(exercise.locator('p[lang="da"][dir="ltr"]')).toBeVisible();
+    expect(await exercise.evaluate((element) => element.scrollWidth)).toBeLessThanOrEqual(width);
+    // Base UI's dialog focus guards are hidden role="button" spans without a name (also excluded in the library and mock tests).
+    const { violations } = await new AxeBuilder({ page })
+      .withTags(AXE_TAGS)
+      .exclude("[data-base-ui-focus-guard]")
+      .analyze();
+    expect(violations).toEqual([]);
+  });
+}
 
 for (const failure of ["blocked", "loading"] satisfies ("blocked" | "loading")[]) {
   test(`keeps the intro transcript and control name through ${failure} playback and retry`, async ({
@@ -245,9 +457,10 @@ test("keeps study controls usable when IndexedDB is blocked", async ({ page }) =
   await situation.getByRole("button", { name: study.playQuestion, exact: true }).click();
   await expect.poll(() => page.evaluate(() => window.studyPlayback?.media.playbackRate)).toBe(0.75);
 
-  await situation.getByRole("link", { name: study.answerAloud }).first().click();
-  await situation.getByRole("button", { name: study.answerDone }).click();
-  await expect(situation.getByText(study.practiceSaveFailed)).toBeVisible();
+  const exercise = await openSpeakingExercise(page);
+  await exercise.getByRole("button", { name: mock.ready.micSkip }).click();
+  await exercise.getByRole("button", { name: study.answerDone }).click();
+  await expect(exercise.getByText(study.practiceSaveFailed)).toBeVisible();
   await expect(page.getByText(study.practiceSaved, { exact: true })).toHaveCount(0);
   await expect(page.getByText(study.reviewSaved, { exact: true })).toHaveCount(0);
   await expect(page.getByText(/بار تمرین کرده‌اید/)).toHaveCount(0);

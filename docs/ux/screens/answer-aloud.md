@@ -17,7 +17,7 @@ The smallest real speaking loop: hear the question, answer out loud with a timer
 
 **Phase 1: Listen** (the question plays)
 1. ExaminerPanel: "The examiner is asking…" with an audio activity indicator
-2. The Danish question text, **shown by default** with "hide text" (rev. 2, UX-OQ-29: the learner has just read it on the page; choice remembered on the device; UXD-14). The Screen Wake Lock is held while the panel is open (R-01).
+2. The Danish question text, **shown by default** with "hide text" (rev. 2, UX-OQ-29: the learner has just read it on the page; choice remembered during the topic visit; UXD-14). Screen Wake Lock is held while recording (R-01).
 
 **Phase 2: Your turn** (recording)
 1. RecordingIndicator (icon + "Recording") or "Answer aloud (not recording)" without a microphone
@@ -40,14 +40,14 @@ FocusedModeShell, ExaminerPanel, ShowTextToggle, RecordingIndicator, ElapsedTime
 
 | State | Behaviour |
 |---|---|
-| First-time | MicPermissionExplainer first (once per device), then Phase 1. |
+| First-time | The microphone explanation appears during Phase 1, before the first microphone request. |
 | Loading | The question clip loads on open; the ExaminerPanel shows "Loading the question…" with Retry after the slow threshold. Recording doesn't start until the question has played. |
 | Empty | Not applicable. |
 | Error (clip failed) | "The question audio didn't load." Retry · "Read the question instead" (shows the text and goes to Phase 2). |
 | Slow network | As loading; the sample answer in Phase 3 loads on play. |
 | Microphone denied / none | Phase 2 without recording: "Answer aloud now; this answer isn't being recorded." Small "microphone off" link to help. Phase 3 shows the sample answer only (US-019 #6). |
-| Storage unavailable | Works; practice isn't remembered; no notice here. |
-| Cap reached (180 s) | Recording stops; inline note "Recording stopped at 3 minutes. Tap Done when you're ready." |
+| Storage unavailable | The exercise works and comparison shows that practice could not be saved. |
+| Cap reached (180 s) | Recording stops and comparison opens with a message explaining the cap. |
 | Interrupted (tab hidden) | Audio and recording stop; the take so far is kept; on return Phase 2 shows "Paused" with Continue (records a second part) or Done. |
 | Close with a take | ConfirmDialog: "Your recording will be deleted." Leave · Stay (US-044 #2). |
 
@@ -69,8 +69,8 @@ FocusedModeShell, ExaminerPanel, ShowTextToggle, RecordingIndicator, ElapsedTime
 
 - The panel is a modal dialog: focus moves into it (to the title), is trapped, and returns to the "Answer aloud" button on close. Escape = Close (with the discard guard if needed).
 - Live region (polite): "Recording" when Phase 2 starts; "Recording stopped" on Done; cap message; errors. Nothing per second.
-- Done keeps the same position through Phases 1–2 (UXD-08): during Phase 1 it's aria-disabled with the label "Listen…". **It never becomes "Next question"** (R-04): Phase 3 removes it and moves focus to "Play your answer".
-- Back closes the panel (with the discard guard if a take exists). Interruptions (page hidden, microphone muted while answering) pause and keep the take (R-03).
+- Done appears during Phase 2. Phase 3 replaces the answer area with playback, moves focus to "Play your answer", and provides "Next question" in the separate comparison actions (R-04).
+- Browser Back closes the panel and discards the take. The panel’s close control shows the discard guard when a take exists. Interruptions (page hidden, microphone muted while answering) pause and keep the take (R-03).
 - No time limit: WCAG 2.2.1 doesn't apply beyond the 3-minute recording cap, which never ends the exercise.
 
 ## Copy needs
@@ -92,7 +92,7 @@ FocusedModeShell, ExaminerPanel, ShowTextToggle, RecordingIndicator, ElapsedTime
 | `answerAloud.recordAgain` | Record again | «دوباره ضبط کنید» |
 | `answerAloud.next` | Next question | – |
 | `answerAloud.backToTopic` | Back to the topic | – |
-| `answerAloud.capped` | Recording stopped at 3 minutes. Tap "I've finished" when you're ready. | – |
+| `answerAloud.capped` | Recording stopped at 3 minutes. | – |
 | `answerAloud.discard.title` / `.body` / `.leave` / `.stay` | Leave this answer? · Your recording will be deleted. · Leave · Stay | – |
 | `mock.repeat.label` | Ask to repeat (shared with the mock) | – |
 | `mock.repeat.meaning` | Sorry, could you repeat the question? | «ببخشید، می‌شود سؤال را تکرار کنید؟» (booklet's meaning) |

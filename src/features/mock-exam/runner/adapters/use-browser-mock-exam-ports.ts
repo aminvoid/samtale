@@ -3,10 +3,11 @@
 import { useLayoutEffect, useMemo, useRef } from "react";
 import { useAudioPlayer } from "@/lib/audio/player";
 import type { MockDeck } from "@/lib/content/repository";
+import { createScreenWakeLock } from "@/lib/screen-wake-lock";
 import type { AnnouncePort, MockExamDestination, MockExamPorts } from "../ports";
 import { createAudioPort } from "./audio";
 import { useMockSession } from "./mock-session-provider";
-import { browserClock, browserVisibility, createWakeLockPort } from "./platform";
+import { browserClock, browserVisibility } from "./platform";
 import { createRecorderPort, type MicrophoneStrategy } from "./recorder";
 
 interface BrowserPortOptions {
@@ -36,7 +37,7 @@ export function useBrowserMockExamPorts(deck: MockDeck, options: BrowserPortOpti
         },
       },
       clock: browserClock,
-      wakeLock: createWakeLockPort(),
+      wakeLock: createScreenWakeLock(),
       visibility: browserVisibility,
       navigate: (destination) => {
         callbacks.current.navigate(destination);

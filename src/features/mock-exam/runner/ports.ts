@@ -1,6 +1,7 @@
 import type { PreloadProgress } from "@/lib/audio/preload";
 import type { RecordedAudio, RecorderSignal } from "@/lib/audio/recorder";
 import type { ReadResult, SaveResult } from "@/lib/progress/progress-store";
+import type { ScreenWakeLock } from "@/lib/screen-wake-lock";
 import type { Settings, SettingsPatch } from "@/lib/progress/schema";
 import type { AttemptRecord, Command } from "../machine";
 import type { AnnouncementMessage, InProgressMarker } from "../machine/types";
@@ -53,10 +54,7 @@ export interface Clock {
   setTimeout(callback: () => void, delayMs: number): () => void;
 }
 
-export interface WakeLockPort {
-  acquire(onLost: () => void): Promise<"held" | "unavailable" | "cancelled">;
-  release(): void;
-}
+export type WakeLockPort = ScreenWakeLock;
 
 export interface VisibilityPort {
   isVisible(): boolean;

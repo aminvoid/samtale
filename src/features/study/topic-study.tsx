@@ -10,6 +10,8 @@ import { TermName } from "@/components/ui/term-name";
 import { Link } from "@/i18n/navigation";
 import { AudioPlayerProvider } from "@/lib/audio/player";
 import type { TermSummary, Theme, Topic } from "@/lib/content/repository";
+import { AnswerAloudProvider } from "./answer-aloud";
+import type { SpeakingQuestion } from "./answer-aloud-panel";
 import { ExaminerIntro } from "./examiner-intro";
 import { RememberAudioRate } from "./remember-audio-rate";
 import { ShareTopic } from "./share-topic";
@@ -53,6 +55,30 @@ export function TopicStudy({
   ];
   if (related.length > 0) navigation.push({ id: "related", label: t("related") });
   const pages = format.list(topic.sourcePages.map((page) => format.number(page, "integer")));
+
+  const speakingQuestions = [a, b, topic.general].flatMap<SpeakingQuestion>((section) => {
+    const situation = section === a ? a.key : section === b ? b.key : undefined;
+    const { question, followups } = section;
+    return [
+      {
+        id: question.id,
+        audio: question.audio,
+        text: question.text,
+        role: situation === undefined ? "second-question" : "first-question",
+        situation,
+        keywords: question.keywords,
+        model: question.modelAnswer,
+      },
+      ...followups.map(({ id, audio, text, answer }) => ({
+        id,
+        audio,
+        text,
+        model: answer,
+        role: "followup" as const,
+        situation,
+      })),
+    ];
+  });
 
   return (
     <AudioPlayerProvider>
@@ -115,42 +141,44 @@ export function TopicStudy({
         <div className="xl:grid xl:grid-cols-[var(--container-study-nav)_minmax(0,var(--container-reading))] xl:gap-12">
           <StudySectionNav entries={navigation} mockHref={mockHref} />
           <div className="mx-auto mbs-4 grid gap-10 inline-full max-inline-reading min-inline-0 xl:mbs-0">
-            <StudySection
-              id="sitA"
-              heading={sitA}
-              topicId={topic.id}
-              section={a}
-              terms={termsById}
-              similar={similar.filter(({ link }) => link.fromSection === "sitA")}
-            >
-              <SituationCard situation={a} themeId={topic.themeId} />
-              {a.intro && <ExaminerIntro intro={a.intro} terms={termsById} />}
-            </StudySection>
-            <StudySection
-              id="sitB"
-              heading={sitB}
-              topicId={topic.id}
-              section={b}
-              terms={termsById}
-              similar={similar.filter(({ link }) => link.fromSection === "sitB")}
-            >
-              <SituationCard situation={b} themeId={topic.themeId} />
-              {b.intro && <ExaminerIntro intro={b.intro} terms={termsById} />}
-            </StudySection>
-            <StudySection
-              id="general"
-              heading={t("generalHeading")}
-              topicId={topic.id}
-              section={topic.general}
-              terms={termsById}
-              similar={similar.filter(({ link }) => link.fromSection === "general")}
-            >
-              <InfoNote variant="compact">
-                {t.rich("generalNote", {
-                  da: (word) => <DanishText as="bdi">{word}</DanishText>,
-                })}
-              </InfoNote>
-            </StudySection>
+            <AnswerAloudProvider topicId={topic.id} questions={speakingQuestions}>
+              <StudySection
+                id="sitA"
+                heading={sitA}
+                topicId={topic.id}
+                section={a}
+                terms={termsById}
+                similar={similar.filter(({ link }) => link.fromSection === "sitA")}
+              >
+                <SituationCard situation={a} themeId={topic.themeId} />
+                {a.intro && <ExaminerIntro intro={a.intro} terms={termsById} />}
+              </StudySection>
+              <StudySection
+                id="sitB"
+                heading={sitB}
+                topicId={topic.id}
+                section={b}
+                terms={termsById}
+                similar={similar.filter(({ link }) => link.fromSection === "sitB")}
+              >
+                <SituationCard situation={b} themeId={topic.themeId} />
+                {b.intro && <ExaminerIntro intro={b.intro} terms={termsById} />}
+              </StudySection>
+              <StudySection
+                id="general"
+                heading={t("generalHeading")}
+                topicId={topic.id}
+                section={topic.general}
+                terms={termsById}
+                similar={similar.filter(({ link }) => link.fromSection === "general")}
+              >
+                <InfoNote variant="compact">
+                  {t.rich("generalNote", {
+                    da: (word) => <DanishText as="bdi">{word}</DanishText>,
+                  })}
+                </InfoNote>
+              </StudySection>
+            </AnswerAloudProvider>
             {topicSimilar.length > 0 && (
               <section aria-labelledby={`${topic.id}-similar`} className="grid gap-2">
                 <h2 id={`${topic.id}-similar`} className="text-h2">

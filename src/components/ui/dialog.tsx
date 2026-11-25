@@ -18,7 +18,7 @@ export type DialogProps = Pick<
     /** A native button or a primitive that renders one, such as Button or IconButton. */
     trigger?: ReactElement;
     className?: string;
-    presentation?: "dialog" | "sheet" | "drawer";
+    presentation?: "dialog" | "sheet" | "drawer" | "fullscreen-mobile";
   };
 
 export function Dialog({
@@ -36,6 +36,7 @@ export function Dialog({
   const direction = useDirection();
   const sheet = presentation === "sheet";
   const drawer = presentation === "drawer";
+  const fullscreen = presentation === "fullscreen-mobile";
 
   return (
     <BaseDialog.Root {...props} modal>
@@ -53,7 +54,8 @@ export function Dialog({
           dir={direction}
           className={cn(
             "fixed inset-0 z-50 grid overscroll-contain",
-            drawer ? "justify-items-end" : sheet ? "items-end" : "place-items-center p-4",
+            drawer ? "justify-items-end" : sheet ? "items-end" : "place-items-center",
+            fullscreen ? "md:p-4" : !drawer && !sheet && "p-4",
           )}
         >
           <BaseDialog.Popup
@@ -68,6 +70,8 @@ export function Dialog({
                 : sheet
                   ? "rounded-ss-sheet rounded-se-sheet pbe-[max(--spacing(6),env(safe-area-inset-bottom))] duration-(--duration-slow) max-block-[85dvh] motion-safe:data-ending-style:translate-y-full motion-safe:data-starting-style:translate-y-full"
                   : "rounded-sheet duration-(--duration-base) max-block-full max-inline-dialog data-ending-style:duration-(--duration-fast) motion-safe:data-ending-style:scale-98 motion-safe:data-starting-style:scale-98 md:max-inline-120",
+              fullscreen &&
+                "rounded-none block-dvh max-inline-none md:rounded-sheet md:block-auto md:max-block-full md:max-inline-dialog",
               className,
             )}
           >

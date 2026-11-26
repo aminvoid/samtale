@@ -24,10 +24,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run format:check
-      - run: npm run lint
-      - run: npm run typecheck
       - run: npm run content:validate
       - run: npm run content:check
+      # Type-aware lint needs generated files that aren't committed: the read model
+      # (content:build) and the route and message types (typecheck runs `next typegen`).
+      - run: npm run content:build
+      - run: npm run typecheck
+      - run: npm run lint
       - name: Content extraction is deterministic (ADR-0003)
         run: |
           npm run content:extract

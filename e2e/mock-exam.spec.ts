@@ -5,7 +5,7 @@ import messages from "../messages/fa.json" with { type: "json" };
 import { buildFormats } from "../src/i18n/formats";
 import { examConfig } from "../src/lib/exam/config";
 import { InProgressMarkerSchema } from "../src/lib/progress/schema";
-import { AXE_TAGS, expect, test, denyMicrophone } from "./fixtures";
+import { AXE_TAGS, canRecord, denyMicrophone, expect, test } from "./fixtures";
 
 /**
  * Mock exam journeys (US-026 to US-045). Deterministic journeys stub examiner playback.
@@ -482,6 +482,7 @@ test.describe("mock exam", () => {
     test.slow();
     await denyMicrophone(page);
     await page.goto("/fa/mock/practice");
+    test.skip(!(await canRecord(page)), "This browser can't record, so it never asks for the microphone");
     await page.getByRole("button", { name: mock.ready.micAllow }).click();
     await expect(page.getByText(mock.ready.micDenied).filter({ visible: true })).toBeVisible();
     await checkScreen(page, info, "02c-get-ready-mic-denied");

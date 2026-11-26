@@ -44,9 +44,8 @@ export async function waitForHydration(locator: Locator) {
 }
 
 /**
- * Simulates a denied microphone: getUserMedia rejects with NotAllowedError. Headless WebKit on
- * Linux has no navigator.mediaDevices at all, so the stub creates it; otherwise the app would
- * (correctly) report the microphone as unavailable rather than denied.
+ * Simulates a denied microphone: getUserMedia rejects with NotAllowedError (and navigator.mediaDevices
+ * is created if a browser lacks it). Pair it with `canRecord`: a browser that can't record never asks.
  */
 export async function denyMicrophone(page: Page) {
   await page.addInitScript(() => {
@@ -60,4 +59,19 @@ export async function denyMicrophone(page: Page) {
       value: getUserMedia,
     });
   });
+}
+
+/**
+ * The recorder's own support check (src/lib/audio/recorder): MediaRecorder with a supported audio
+ * format. Without it the app says the microphone is unavailable and never asks for permission, so a
+ * "permission denied" case can't occur (headless WebKit on Linux, for example).
+ */
+export async function canRecord(page: Page) {
+  return page.evaluate(
+    () =>
+      typeof MediaRecorder !== "undefined" &&
+      ["audio/mp4;codecs=mp4a.40.2", "audio/mp4", "audio/webm;codecs=opus", "audio/webm"].some((mime) =>
+        MediaRecorder.isTypeSupported(mime),
+      ),
+  );
 }

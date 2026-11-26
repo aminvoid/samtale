@@ -1,7 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import type { Page } from "@playwright/test";
 import messages from "../messages/fa.json" with { type: "json" };
-import { AXE_TAGS, expect, test, waitForHydration, denyMicrophone } from "./fixtures";
+import { AXE_TAGS, canRecord, denyMicrophone, expect, test, waitForHydration } from "./fixtures";
 
 const topicUrl = "/fa/topics/2024-maj-b";
 const { audio, mock, study } = messages;
@@ -337,6 +337,7 @@ test("continues after microphone denial and offers a retry without prompting aga
   await stubPlayback(page);
   await denyMicrophone(page);
   await page.goto(topicUrl);
+  test.skip(!(await canRecord(page)), "This browser can't record, so it never asks for the microphone");
   const exercise = await openSpeakingExercise(page);
   await exercise.getByRole("button", { name: mock.ready.micAllow }).click();
   await expect(exercise.getByText(speaking.micDenied)).toBeVisible();

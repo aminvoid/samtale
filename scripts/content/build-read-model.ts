@@ -367,18 +367,10 @@ function indexTopic(topic: Topic): SearchDocument {
     });
   }
   function addSection(section: "sitA" | "sitB" | "general", content: QuestionSection) {
-    function addTranslation(
-      kind: "model-answer" | "followup-answer" | "personal-example",
-      { text, translation }: Pick<QuestionSection["question"]["modelAnswer"], "text" | "translation">,
-    ) {
-      if (translation !== undefined) add(section, kind, { da: text.da, fa: translation.fa });
-    }
+    // Search covers topic names, questions and key words (US-008), not answers or their translations.
     add(section, "question", content.question.text);
     for (const followup of content.followups) add(section, "followup", followup.text);
     for (const keyword of content.question.keywords) add(section, "keyword", keyword.text);
-    addTranslation("model-answer", content.question.modelAnswer);
-    for (const { answer } of content.followups) addTranslation("followup-answer", answer);
-    for (const example of content.personalExamples) addTranslation("personal-example", example);
   }
 
   add(null, "topic-title", topic.title);

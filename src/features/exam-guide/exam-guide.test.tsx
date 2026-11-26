@@ -81,7 +81,8 @@ describe("exam guide", () => {
     ).toHaveAttribute("lang", "da");
     expect(within(steps).getAllByText(/عین عبارت/)).toHaveLength(2);
     expect(within(steps).getByText(/جملهٔ ثابتی برای این مرحله تعیین نشده است/)).toBeVisible();
-    expect(within(steps).getAllByText(/ترجمهٔ برنامه/)).toHaveLength(3);
+    const translationPrefix = guide.lines.translation.replace("{meaning}", "");
+    expect(within(steps).getAllByText((text) => text.startsWith(translationPrefix))).toHaveLength(3);
     expect(within(steps).getByRole("link", { name: /مقررات بخش دوم/ })).toHaveAttribute(
       "href",
       "https://danskogproever.dk/media/yqxa0zdu/vejledning-om-den-praktiske-proeveafholdelse-okt-2026.pdf#page=46",

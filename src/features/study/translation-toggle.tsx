@@ -2,11 +2,10 @@ import { useTranslations } from "next-intl";
 import { DanishText } from "@/components/ui/danish-text";
 import { Disclosure } from "@/components/ui/disclosure";
 import { PersianText } from "@/components/ui/persian-text";
+import { splitLatinRuns } from "@/lib/format/split-latin-runs";
 import { cn } from "@/lib/utils/cn";
 
 const whyEnding = /\bhvorfor\s*\??\s*\/\s*hvorfor\s+ikke\?\s*$/iu;
-const latinRun = /([\p{Script=Latin}\d]+(?:[-+’'][\p{Script=Latin}\d]+)*)/gu;
-const hasLatin = /\p{Script=Latin}/u;
 
 export function TranslationToggle({
   text,
@@ -37,8 +36,8 @@ export function TranslationToggle({
           variant="translation"
           className={cn("wrap-anywhere", isAnswer && "whitespace-pre-line")}
         >
-          {text.split(latinRun).map((run, index) =>
-            hasLatin.test(run) ? (
+          {splitLatinRuns(text).map(({ text: run, isLatin }, index) =>
+            isLatin ? (
               <DanishText key={index} as="bdi">
                 {run}
               </DanishText>

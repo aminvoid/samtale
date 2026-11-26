@@ -384,7 +384,7 @@ describe("published read model", () => {
     );
   });
 
-  it("publishes fresh app translations and their search text according to the channel", () => {
+  it("publishes fresh app translations according to the channel and keeps answers out of search", () => {
     const topic = TopicFileSchema.parse(readJson(topicPath(root, "2024-maj-b")));
     const model = topic.general.question.modelAnswer;
     const followup = topic.general.followups[0]!.answer;
@@ -431,15 +431,12 @@ describe("published read model", () => {
         expect(answer.text).toEqual({ da: item.text.da });
         if (approved || options.CONTENT_RELEASE === "preview") {
           expect(answer.translation).toEqual({ fa, origin: "app" });
-          expect(fields).toContainEqual({
-            section,
-            kind,
-            text: { da: normalizeSearchText(item.text.da!), fa: normalizeSearchText(fa) },
-          });
         } else {
           expect(answer).not.toHaveProperty("translation");
-          expect(fields.some((field) => field.kind === kind)).toBe(false);
         }
+        // US-008: search covers names, questions and key words, never answers.
+        expect(fields.some((field) => field.kind === kind && field.section === section)).toBe(false);
+        expect(JSON.stringify(fields)).not.toContain(normalizeSearchText(fa));
       }
       expect(published.situations[0].question.modelAnswer).not.toHaveProperty("translation");
       expect(readFileSync(output, "utf8")).not.toMatch(/متن قدیمی|sourceHash|Hidden authoring data/);

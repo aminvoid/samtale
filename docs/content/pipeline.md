@@ -102,7 +102,7 @@ Record decisions in `review-ledger.json` under `answerTranslations`, keyed by th
 
 `content:validate` checks the IDs, Persian script and glossary. Use «آزمون» and «پاسخ» in place of «امتحان» and «جواب». The command warns when the Danish hash has changed, and fails if the stale translation is approved. The coverage line counts answer IDs, including repeated Danish answers. `translated` counts IDs with a translation record, `approved` counts current approved translations, `stale` counts hash mismatches and `missing` counts IDs without a record.
 
-Published answers and personal examples carry `translation: { fa, origin: "app" }` alongside their Danish `text`. Their search fields include normalized Danish and Persian. The leak scan allows the translations published in the selected channel and uses withheld Persian text and its normalized search form as production canaries.
+Published answers and personal examples carry `translation: { fa, origin: "app" }` alongside their Danish `text`. They aren't added to the search index: search covers topic names, questions and key words (US-008). The leak scan allows the translations published in the selected channel and uses withheld Persian text and its normalized search form as production canaries.
 
 ## Normalisation rules
 

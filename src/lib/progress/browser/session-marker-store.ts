@@ -2,9 +2,7 @@ import type { MarkerStore } from "../event-progress-store";
 import type { ReadResult } from "../progress-store";
 import { InProgressMarkerSchema, type InProgressMarker } from "../schema";
 import { reportSkipped, storageFailure } from "../storage-result";
-import { DEFAULT_DATABASE_NAME } from "./database";
-
-const MARKER_KEY = "pd3:mock:in-progress:v1";
+import { inProgressMarkerKey } from "./storage-keys";
 
 function withSession<T>(run: (storage: Storage) => ReadResult<T>): Promise<ReadResult<T>> {
   try {
@@ -29,7 +27,7 @@ export class SessionMarkerStore implements MarkerStore {
   private readonly key: string;
 
   constructor(databaseName: string) {
-    this.key = databaseName === DEFAULT_DATABASE_NAME ? MARKER_KEY : `${databaseName}:${MARKER_KEY}`;
+    this.key = inProgressMarkerKey(databaseName);
   }
 
   read(): ReturnType<MarkerStore["read"]> {

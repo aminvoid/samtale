@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { useId, type ComponentPropsWithoutRef } from "react";
-import { Icon } from "@/components/ui/icon";
+import { IconSearch, IconX } from "@/components/ui/icon";
 import { IconButton } from "@/components/ui/icon-button";
 
 type SearchFieldProps = Pick<ComponentPropsWithoutRef<"form">, "action" | "onSubmit"> & {
@@ -18,7 +18,7 @@ export function SearchField({ action, onSubmit, value, onChange, onClear }: Sear
         {t("label")}
       </label>
       <div className="relative">
-        <Icon name="search" className="pointer-events-none absolute start-3 inset-bs-3.5 text-text-muted" />
+        <IconSearch className="pointer-events-none absolute start-3 inset-bs-3.5 text-text-muted" />
         <input
           id={id}
           type="text"
@@ -39,7 +39,7 @@ export function SearchField({ action, onSubmit, value, onChange, onClear }: Sear
         />
         {value && onClear && (
           <IconButton
-            icon="x"
+            icon={<IconX />}
             label={t("clear")}
             className="absolute end-0.5 inset-bs-0.5"
             onClick={() => {

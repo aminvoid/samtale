@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Card } from "@/components/ui/card";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconChevronRight } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PersianText } from "@/components/ui/persian-text";
 import { Link } from "@/i18n/navigation";
@@ -89,7 +89,7 @@ export async function SimilarQuestions({ groups, topics }: SimilarQuestionsProps
                             })}
                           </span>
                         )}
-                        <Icon name="chevron-right" size={16} />
+                        <IconChevronRight size={16} />
                       </Link>
                     </li>
                   ))}

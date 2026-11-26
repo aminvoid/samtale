@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { DanishText } from "@/components/ui/danish-text";
 import { Disclosure } from "@/components/ui/disclosure";
+import { IconLanguages } from "@/components/ui/icon";
 import { PersianText } from "@/components/ui/persian-text";
 import { splitLatinRuns } from "@/lib/format/split-latin-runs";
 import { cn } from "@/lib/utils/cn";
@@ -19,7 +20,7 @@ export function TranslationToggle({
   const t = useTranslations("study");
   const isAnswer = answerLabel !== undefined;
   return (
-    <Disclosure label={answerLabel ?? t("translation")} icon="languages">
+    <Disclosure label={answerLabel ?? t("translation")} icon={<IconLanguages />}>
       <div
         className={cn(
           "rounded-control bg-surface-sunken px-4 py-3",

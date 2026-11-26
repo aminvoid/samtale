@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconClock3 } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PageHeader } from "@/components/ui/page-header";
 import { Link } from "@/i18n/navigation";
@@ -78,7 +78,7 @@ export function MockStart({
           <h2 className="text-h2">{t("start.needs")}</h2>
           <ul className="flex flex-wrap gap-x-5 gap-y-2 text-text-muted">
             <li className="flex items-center gap-2">
-              <Icon name="clock-3" />
+              <IconClock3 />
               {t("start.duration", { min: 5, max: 6 })}
             </li>
             <li>{t("start.quiet")}</li>

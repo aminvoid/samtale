@@ -2,10 +2,12 @@ import { openDB, type DBSchema, type IDBPDatabase } from "idb";
 import { MetaRecordSchema, PROGRESS_SCHEMA_VERSION } from "../schema";
 import { openFailure } from "../storage-result";
 import type { StorageAvailability } from "../progress-store";
+import { DEFAULT_DATABASE_NAME } from "./storage-keys";
 import { upgradeToV1 } from "./migrations/v1";
 
+export { DEFAULT_DATABASE_NAME };
+
 const DATABASE_VERSION = 1;
-export const DEFAULT_DATABASE_NAME = "pd3-mundtlig";
 const OPEN_TIMEOUT_MS = 3_000;
 
 export interface ProgressDatabaseSchema extends DBSchema {

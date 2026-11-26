@@ -1,12 +1,15 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Icon } from "@/components/ui/icon";
+import type { ReactNode } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
-import { isCurrentSection, primaryLinks, progressLink } from "./section-links";
+import { isCurrentSection, primaryLinks, progressLink, type SectionLabel } from "./section-links";
 
-export function PrimaryNavigation({ variant }: { variant: "top" | "bottom" }) {
+type PrimaryNavigationProps =
+  { variant: "top"; icons?: never } | { variant: "bottom"; icons: Partial<Record<SectionLabel, ReactNode>> };
+
+export function PrimaryNavigation({ variant, icons }: PrimaryNavigationProps) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const bottom = variant === "bottom";
@@ -50,7 +53,7 @@ export function PrimaryNavigation({ variant }: { variant: "top" | "bottom" }) {
                       current && "bg-accent-subtle",
                     )}
                   >
-                    <Icon name={item.icon} size={24} />
+                    {icons[item.label]}
                   </span>
                 )}
                 {t(bottom ? item.label : (item.fullLabel ?? item.label))}

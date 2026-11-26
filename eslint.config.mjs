@@ -63,7 +63,10 @@ const RESTRICTED = {
     group: ["@base-ui/react", "@base-ui/react/*"],
     message: "Use primitives from @/components/ui (ADR-0009).",
   },
-  lucide: { group: ["lucide-react"], message: "Use <Icon> from @/components/ui/icon (ADR-0009)." },
+  lucide: {
+    group: ["lucide-react", "lucide-react/**"],
+    message: "Use named icon components from @/components/ui/icon (ADR-0009).",
+  },
   idb: { group: ["idb"], message: "Use ProgressStore or RecordingStore (ADR-0008)." },
   speech: {
     group: ["microsoft-cognitiveservices-speech-sdk"],
@@ -182,7 +185,7 @@ export default defineConfig([
     rules: { "no-restricted-imports": restrictedImports("baseUi") },
   },
   {
-    // ADR-0009: lucide-react only in the Icon primitive and the theme-icon map.
+    // ADR-0009: Lucide imports stay in the individual icon wrappers and the theme-icon map.
     files: ["src/components/ui/icon.tsx", "src/components/ui/theme-icon.tsx"],
     rules: { "no-restricted-imports": restrictedImports("baseUi", "lucide") },
   },

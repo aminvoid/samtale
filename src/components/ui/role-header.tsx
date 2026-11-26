@@ -1,20 +1,29 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon, type IconName } from "./icon";
+import {
+  IconBookOpenText,
+  IconKeyRound,
+  IconLanguages,
+  IconMessageCircle,
+  IconMessageCircleMore,
+  IconMessageCircleQuestionMark,
+  IconMic,
+  IconStethoscope,
+} from "./icon";
 
 const roleIcons = {
-  "situation-intro": "message-circle",
-  "first-question": "message-circle-question-mark",
-  "second-question": "message-circle-question-mark",
-  followup: "message-circle-more",
-  "examiner-line": "message-circle",
-  "sample-answer": "book-open-text",
-  "short-sample-answer": "book-open-text",
-  keywords: "key-round",
-  "personal-example": "stethoscope",
-  translation: "languages",
-  "learner-recording": "mic",
-} satisfies Record<string, IconName>;
+  "situation-intro": IconMessageCircle,
+  "first-question": IconMessageCircleQuestionMark,
+  "second-question": IconMessageCircleQuestionMark,
+  followup: IconMessageCircleMore,
+  "examiner-line": IconMessageCircle,
+  "sample-answer": IconBookOpenText,
+  "short-sample-answer": IconBookOpenText,
+  keywords: IconKeyRound,
+  "personal-example": IconStethoscope,
+  translation: IconLanguages,
+  "learner-recording": IconMic,
+};
 
 export type ContentRole = keyof typeof roleIcons;
 
@@ -45,6 +54,7 @@ type RoleHeaderProps = {
 };
 
 export function RoleHeader({ role, label, as: Label = "span", source, action, className }: RoleHeaderProps) {
+  const RoleIcon = roleIcons[role];
   const { ink, tint } = roleColors[role];
   const Group = Label === "h3" ? "div" : "span";
 
@@ -52,7 +62,7 @@ export function RoleHeader({ role, label, as: Label = "span", source, action, cl
     <Group className={cn("flex flex-wrap items-center gap-2", className)}>
       <Group className={cn("flex items-center gap-2 min-inline-0", ink)}>
         <span className={cn("inline-grid shrink-0 place-items-center rounded-chip block-7 inline-7", tint)}>
-          <Icon name={roleIcons[role]} size={16} />
+          <RoleIcon size={16} />
         </span>
         <Label className="text-label">{label}</Label>
       </Group>

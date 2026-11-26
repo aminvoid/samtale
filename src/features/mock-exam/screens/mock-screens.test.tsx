@@ -51,6 +51,7 @@ vi.mock("next/navigation", () => ({
 }));
 vi.mock("@/i18n/navigation", () => ({
   usePathname: () => navigation.pathname,
+  getPathname: ({ locale, href }: { locale: string; href: string }) => `/${locale}${href}`,
   useRouter: () => ({ push: navigation.push }),
   Link: ({ href, children, className }: { href: string; children: ReactNode; className?: string }) => (
     <a href={`/fa${href}`} className={className}>
@@ -200,6 +201,36 @@ describe("mock screens", () => {
     expect(screen.queryByRole("link", { name: copy.start.history })).not.toBeInTheDocument();
   });
 
+  it("shows enabled history after retrying one unavailable read", async () => {
+    const store = createProgressStore();
+    expect(await store.saveAttempt({ ...reviewAttempt, attemptId: "mock-history-retry" })).toEqual({
+      ok: true,
+    });
+    const listAttempts = vi
+      .spyOn(IndexedDbProgressStore.prototype, "listAttempts")
+      .mockResolvedValueOnce({ ok: false, reason: "unavailable" });
+
+    renderScreen(<MockStart topicCount={3} showProgressHistory />);
+    expect(await screen.findByRole("link", { name: copy.start.history })).toHaveAttribute(
+      "href",
+      "/fa/progress#history",
+    );
+    expect(listAttempts).toHaveBeenCalledTimes(2);
+  });
+
+  it("keeps history hidden and stops after two unavailable reads", async () => {
+    const listAttempts = vi
+      .spyOn(IndexedDbProgressStore.prototype, "listAttempts")
+      .mockResolvedValue({ ok: false, reason: "unavailable" });
+
+    renderScreen(<MockStart topicCount={3} showProgressHistory />);
+    await waitFor(() => {
+      expect(listAttempts).toHaveBeenCalledTimes(2);
+    });
+    expect(screen.queryByRole("link", { name: copy.start.history })).not.toBeInTheDocument();
+    expect(listAttempts).toHaveBeenCalledTimes(2);
+  });
+
   it.each(["/mock/practice", "/mock/exam"])("preserves a reload marker on %s", async (pathname) => {
     const store = createProgressStore();
     const { attemptId, topicId, mode, startedAt } = reviewAttempt;
@@ -209,6 +240,48 @@ describe("mock screens", () => {
     renderScreen(<ClearMockReloadMarker />);
     expect(await store.getInProgressMarker()).toEqual({ ok: true, value: marker });
   });
+
+  it.each(["router", "browser", "unmount"] as const)(
+    "preserves the marker when %s changes before the store finishes loading",
+    async (change) => {
+      const originalUrl = window.location.href;
+      const store = createProgressStore();
+      const { attemptId, topicId, mode, startedAt } = reviewAttempt;
+      const marker = { attemptId, topicId, mode, startedAt };
+      await store.setInProgressMarker(marker);
+      const loading = Promise.withResolvers<undefined>();
+      const started = Promise.withResolvers<undefined>();
+      vi.doMock("@/lib/progress/create-progress-store", async () => {
+        started.resolve(undefined);
+        await loading.promise;
+        return { createProgressStore: () => store };
+      });
+
+      try {
+        navigation.pathname = "/topics";
+        window.history.replaceState(null, "", "/fa/topics");
+        const { rerender, unmount } = renderScreen(<ClearMockReloadMarker />);
+        await started.promise;
+        if (change === "router") {
+          navigation.pathname = "/mock/practice";
+          rerender(<ClearMockReloadMarker />);
+        } else if (change === "browser") {
+          window.history.replaceState(null, "", "/fa/mock/exam/");
+        } else {
+          unmount();
+        }
+
+        await act(async () => {
+          loading.resolve(undefined);
+          await import("@/lib/progress/create-progress-store");
+        });
+        expect(await store.getInProgressMarker()).toEqual({ ok: true, value: marker });
+      } finally {
+        vi.doUnmock("@/lib/progress/create-progress-store");
+        window.history.replaceState(null, "", originalUrl);
+      }
+    },
+  );
 
   it.each(["/mock", "/mock/review/2024-maj-a", "/topics"])(
     "clears a leftover marker on %s",
@@ -221,7 +294,10 @@ describe("mock screens", () => {
 
       navigation.pathname = pathname;
       rerender(<ClearMockReloadMarker />);
-      expect(await store.getInProgressMarker()).toEqual({ ok: true, value: null });
+      // The store loads lazily, after the page is interactive.
+      await waitFor(async () => {
+        expect(await store.getInProgressMarker()).toEqual({ ok: true, value: null });
+      });
     },
   );
 

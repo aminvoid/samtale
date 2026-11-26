@@ -1,27 +1,27 @@
-import type { IconName } from "@/components/ui/icon";
+export type SectionLabel =
+  "home" | "topics" | "mock" | "templates" | "guide" | "progress" | "settings" | "about" | "privacy";
 
 type SectionLink = {
   href: string;
-  label: "home" | "topics" | "mock" | "templates" | "guide" | "progress" | "settings" | "about" | "privacy";
+  label: SectionLabel;
   fullLabel?: "mockFull" | "templatesFull";
-  icon: IconName;
   section?: string;
 };
 
 export const primaryLinks: readonly SectionLink[] = [
-  { href: "/", label: "home", icon: "house" },
-  { href: "/topics", label: "topics", icon: "library-big" },
-  { href: "/mock", label: "mock", fullLabel: "mockFull", icon: "messages-square" },
-  { href: "/templates", label: "templates", fullLabel: "templatesFull", icon: "quote" },
-  { href: "/guide/delproeve-2", label: "guide", icon: "signpost", section: "/guide" },
+  { href: "/", label: "home" },
+  { href: "/topics", label: "topics" },
+  { href: "/mock", label: "mock", fullLabel: "mockFull" },
+  { href: "/templates", label: "templates", fullLabel: "templatesFull" },
+  { href: "/guide/delproeve-2", label: "guide", section: "/guide" },
 ];
 
-export const progressLink: SectionLink = { href: "/progress", label: "progress", icon: "notebook-text" };
+export const progressLink: SectionLink = { href: "/progress", label: "progress" };
 
 export const utilityLinks: readonly SectionLink[] = [
-  { href: "/settings", label: "settings", icon: "settings" },
-  { href: "/about", label: "about", icon: "info" },
-  { href: "/privacy", label: "privacy", icon: "shield-check" },
+  { href: "/settings", label: "settings" },
+  { href: "/about", label: "about" },
+  { href: "/privacy", label: "privacy" },
 ];
 
 export function isCurrentSection(pathname: string, { href, section = href }: SectionLink) {

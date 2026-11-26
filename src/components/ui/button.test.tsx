@@ -1,4 +1,4 @@
-import { cleanup, screen } from "@testing-library/react";
+import { cleanup, fireEvent, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { useState } from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
@@ -37,6 +37,31 @@ describe("Button", () => {
     await user.click(button);
     expect(onClick).not.toHaveBeenCalled();
     expect(button.querySelector("svg")).toHaveClass("motion-safe:animate-spin");
+  });
+
+  it("doesn't run the caller's pointer or key handlers while loading, and runs them once ready", async () => {
+    const handlers = { onPointerDown: vi.fn(), onMouseDown: vi.fn(), onKeyDown: vi.fn(), onKeyUp: vi.fn() };
+    const user = userEvent.setup();
+    const { rerender } = renderWithIntl(
+      <Button loading {...handlers}>
+        ادامه
+      </Button>,
+    );
+
+    const button = screen.getByRole("button", { name: "ادامه" });
+    fireEvent.pointerDown(button);
+    await user.click(button);
+    await user.tab();
+    await user.keyboard("{Enter}");
+    for (const handler of Object.values(handlers)) expect(handler).not.toHaveBeenCalled();
+
+    rerender(<Button {...handlers}>ادامه</Button>);
+    const ready = screen.getByRole("button", { name: "ادامه" });
+    fireEvent.pointerDown(ready);
+    await user.click(ready);
+    ready.focus();
+    await user.keyboard("{Enter}");
+    for (const [name, handler] of Object.entries(handlers)) expect(handler, name).toHaveBeenCalled();
   });
 
   it("associates the visible reason and blocks activation on a focusable disabled button", async () => {

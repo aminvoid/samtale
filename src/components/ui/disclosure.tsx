@@ -3,13 +3,13 @@
 import { Collapsible } from "@base-ui/react/collapsible";
 import { useId, type ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon, type IconName } from "./icon";
+import { IconChevronDown } from "./icon";
 
 type DisclosureProps = Pick<Collapsible.Root.Props, "open" | "defaultOpen" | "onOpenChange" | "disabled"> & {
   label: ReactNode;
   children: ReactNode;
   heading?: "h2" | "h3" | "h4" | "h5" | "h6";
-  icon?: IconName;
+  icon?: ReactNode;
   className?: string;
 };
 
@@ -30,12 +30,9 @@ export function Disclosure({
         "text-accent transition-colors duration-(--duration-fast) ease-standard enabled:hover:bg-accent-subtle enabled:active:bg-accent-subtle disabled:cursor-not-allowed disabled:text-text-muted",
       )}
     >
-      {icon && <Icon name={icon} />}
+      {icon}
       {label}
-      <Icon
-        name="chevron-down"
-        className="ms-auto group-data-panel-open:rotate-180 motion-safe:transition-transform motion-safe:duration-(--duration-fast) motion-safe:ease-standard"
-      />
+      <IconChevronDown className="ms-auto group-data-panel-open:rotate-180 motion-safe:transition-transform motion-safe:duration-(--duration-fast) motion-safe:ease-standard" />
     </Collapsible.Trigger>
   );
 

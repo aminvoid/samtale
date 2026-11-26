@@ -2,7 +2,7 @@ import { useFormatter, useTranslations } from "next-intl";
 import type { ComponentProps } from "react";
 import { BackLink } from "@/components/ui/back-link";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconMessagesSquare } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PersianText } from "@/components/ui/persian-text";
 import { Pre2023Badge } from "@/components/ui/pre2023-badge";
@@ -107,7 +107,7 @@ export function TopicStudy({
             </div>
             <div className="flex flex-wrap items-start gap-2">
               <Link href={mockHref} className={mockLinkStyle}>
-                <Icon name="messages-square" />
+                <IconMessagesSquare />
                 {t("practiseMock")}
               </Link>
               <ShareTopic />
@@ -209,7 +209,7 @@ export function TopicStudy({
             )}
             <footer className="grid justify-items-start gap-3 border-bs border-border pbs-4">
               <Link href={mockHref} className={mockLinkStyle}>
-                <Icon name="messages-square" />
+                <IconMessagesSquare />
                 {t("practiseMock")}
               </Link>
               {topic.sourcePages.length > 0 && (

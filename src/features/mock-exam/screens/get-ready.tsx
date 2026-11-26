@@ -4,6 +4,14 @@ import { BackLink } from "@/components/ui/back-link";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
 import { FocusHeading } from "@/components/ui/focus-heading";
+import {
+  IconBellOff,
+  IconHeadphones,
+  IconListChecks,
+  IconMic,
+  IconSmartphone,
+  IconVolume2,
+} from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { Link } from "@/i18n/navigation";
 import type { MockDeck } from "@/lib/content/repository";
@@ -117,18 +125,20 @@ export function GetReady({
               </Link>
             </div>
           )}
-          <InfoNote icon="headphones" variant="compact">
+          <InfoNote icon={IconHeadphones} variant="compact">
             {t("ready.headphones")}
           </InfoNote>
           {context.mode === "exam" && (
-            <InfoNote icon="bell-off" variant="compact">
+            <InfoNote icon={IconBellOff} variant="compact">
               {t("ready.dnd")}
             </InfoNote>
           )}
-          {state.wakeLockTip && <InfoNote icon="smartphone">{t("ready.wakeLock", { minutes: 2 })}</InfoNote>}
+          {state.wakeLockTip && (
+            <InfoNote icon={IconSmartphone}>{t("ready.wakeLock", { minutes: 2 })}</InfoNote>
+          )}
           {invalid && <InfoNote>{t("ready.invalid")}</InfoNote>}
           {focus && (
-            <InfoNote icon="list-checks">
+            <InfoNote icon={IconListChecks}>
               {t("ready.focus", { item: t(`review.check.${focus}.label`) })}
             </InfoNote>
           )}
@@ -154,7 +164,7 @@ export function GetReady({
               </div>
             )}
             <Button
-              icon="volume-2"
+              icon={<IconVolume2 />}
               variant="secondary"
               onClick={() => {
                 send({ type: "SOUND_CHECK_PLAY" });
@@ -210,7 +220,7 @@ export function GetReady({
               {context.micState === "undecided" && (
                 <Button
                   variant="secondary"
-                  icon="mic"
+                  icon={<IconMic />}
                   loading={context.micRequest !== null}
                   onClick={() => {
                     send({ type: "MIC_ALLOW" });

@@ -1,11 +1,12 @@
 export { AudioPlayer } from "./audio-player";
 export { Button, type ButtonProps } from "./button";
 export { Card } from "./card";
+export { CollapsibleInfoNote } from "./collapsible-info-note";
 export { DanishText } from "./danish-text";
 export { Dialog, type DialogProps } from "./dialog";
 export { DirectionProvider } from "./direction-provider";
+export { DismissibleInfoNote } from "./dismissible-info-note";
 export { Disclosure } from "./disclosure";
-export { Icon, type IconName, type IconSize } from "./icon";
 export { IconButton } from "./icon-button";
 export { InfoNote } from "./info-note";
 export { LiveRegion } from "./live-region";

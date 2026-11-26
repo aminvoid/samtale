@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { createProgressStore } from "@/lib/progress/create-progress-store";
+import { createLazyProgressStore } from "@/lib/progress/lazy-stores";
 import { cn } from "@/lib/utils/cn";
 import { useMockHandoff } from "./mock-handoff";
 import { mockTextLink } from "./presentation";
@@ -16,11 +16,15 @@ export function MockHistoryLink() {
 
   useEffect(() => {
     let active = true;
-    const store = createProgressStore();
+    const store = createLazyProgressStore();
+    const listAttempts = () => (active ? store.listAttempts() : undefined);
     async function read() {
       await save;
-      const attempts = await store.listAttempts();
-      if (active) setHasHistory(attempts.ok && attempts.value.length > 0);
+      let attempts = await listAttempts();
+      if (attempts?.ok === false && attempts.reason === "unavailable") {
+        attempts = await listAttempts();
+      }
+      if (active) setHasHistory(attempts?.ok === true && attempts.value.length > 0);
     }
     void read();
     return () => {

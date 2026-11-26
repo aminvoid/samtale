@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconLayers } from "@/components/ui/icon";
 import { cn } from "@/lib/utils/cn";
 import type { State } from "../index";
 import type { DeckTopic } from "./presentation";
@@ -35,11 +35,7 @@ export function MockSituations({
               <DanishText as="bdi" className="rounded-chip bg-surface-sunken px-2">
                 {situation.key}
               </DanishText>
-              {chosen ? (
-                <span>{t("chosen")}</span>
-              ) : (
-                <Icon name="layers" size={16} className="text-text-muted" />
-              )}
+              {chosen ? <span>{t("chosen")}</span> : <IconLayers size={16} className="text-text-muted" />}
             </div>
             <DanishText as="p" className={cn("wrap-anywhere", compact ? "text-da-label" : "text-da-line")}>
               {situation.title.da}

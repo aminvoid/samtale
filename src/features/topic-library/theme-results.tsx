@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Icon } from "@/components/ui/icon";
+import { IconCheck } from "@/components/ui/icon";
 import { PersianText } from "@/components/ui/persian-text";
 import { Link } from "@/i18n/navigation";
 import type { Theme, TopicSummary } from "@/lib/content/repository";
@@ -49,7 +49,7 @@ export function ThemeResults({ theme, topics, selectedSubtheme }: ThemeResultsPr
                         : "border-border-strong hover:bg-surface-sunken",
                     )}
                   >
-                    {current && <Icon name="check" size={16} />}
+                    {current && <IconCheck size={16} />}
                     <PersianText className="text-label">{label}</PersianText>
                   </Link>
                 </li>

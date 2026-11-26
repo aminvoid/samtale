@@ -1,9 +1,15 @@
 "use client";
 
-import { Button as BaseButton } from "@base-ui/react/button";
-import { useId, type ComponentPropsWithRef, type ReactNode } from "react";
+import {
+  useId,
+  type ComponentPropsWithRef,
+  type MouseEvent,
+  type SyntheticEvent,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon, type IconName } from "./icon";
+import { IconLoaderCircle } from "./icon";
 
 const variants = {
   primary: "border-transparent bg-accent text-accent-contrast hover:bg-accent-hover active:bg-accent-active",
@@ -28,11 +34,11 @@ export type ButtonProps = Omit<
 > & {
   size?: keyof typeof sizes;
   block?: boolean;
-  icon?: IconName;
+  icon?: ReactElement;
   loading?: boolean;
   disabledReason?: string;
 } & (
-    | { variant: "icon-only"; "aria-label": string; icon: IconName; children?: never }
+    | { variant: "icon-only"; "aria-label": string; icon: ReactElement; children?: never }
     | { variant?: Exclude<keyof typeof variants, "icon-only">; children: ReactNode }
   );
 
@@ -48,6 +54,11 @@ export function Button({
   className,
   children,
   "aria-describedby": describedBy,
+  onClick,
+  onPointerDown,
+  onMouseDown,
+  onKeyDown,
+  onKeyUp,
   ...props
 }: ButtonProps) {
   const reasonId = useId();
@@ -55,12 +66,33 @@ export function Button({
   const textVariant = variant === "tertiary" || variant === "destructive-tertiary";
   const unavailable = disabledReason !== undefined;
   const muted = disabled || unavailable;
+  // Unavailable and loading buttons stay focusable so their reason or busy state can be heard; they
+  // only refuse activation. A native button (not Base UI's) keeps this primitive out of every page's
+  // first load (home JS budget, ADR-0014).
+  const inert = !disabled && (unavailable || loading);
+  // Like Base UI's focusable-when-disabled state: the caller's activation handlers don't run.
+  const guard =
+    <E extends SyntheticEvent<HTMLButtonElement>>(handler: ((event: E) => void) | undefined) =>
+    (event: E) => {
+      if (!inert) handler?.(event);
+    };
   const button = (
-    <BaseButton
+    <button
       {...props}
       type={type}
-      disabled={muted || loading}
-      focusableWhenDisabled={!disabled && (unavailable || loading)}
+      disabled={disabled}
+      aria-disabled={inert || undefined}
+      onClick={(event: MouseEvent<HTMLButtonElement>) => {
+        if (inert) {
+          event.preventDefault();
+          return;
+        }
+        onClick?.(event);
+      }}
+      onPointerDown={guard(onPointerDown)}
+      onMouseDown={guard(onMouseDown)}
+      onKeyDown={guard(onKeyDown)}
+      onKeyUp={guard(onKeyUp)}
       aria-busy={loading || undefined}
       aria-describedby={unavailable ? [describedBy, reasonId].filter(Boolean).join(" ") : describedBy}
       className={cn(
@@ -77,13 +109,9 @@ export function Button({
         className,
       )}
     >
-      {loading ? (
-        <Icon name="loader-circle" className="motion-safe:animate-spin" />
-      ) : (
-        icon && <Icon name={icon} />
-      )}
+      {loading ? <IconLoaderCircle className="motion-safe:animate-spin" /> : icon}
       {children != null && <span className="min-inline-0">{children}</span>}
-    </BaseButton>
+    </button>
   );
 
   return (

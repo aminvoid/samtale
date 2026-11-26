@@ -11,6 +11,7 @@ import {
   type ReactNode,
 } from "react";
 import { Button } from "@/components/ui/button";
+import { IconMic } from "@/components/ui/icon";
 import { useAudioPlayer } from "@/lib/audio/player";
 import { onHistoryBack } from "@/lib/navigation/history-back";
 import { AnswerAloudPanel, type SpeakingQuestion } from "./answer-aloud-panel";
@@ -127,7 +128,7 @@ export function AnswerAloud({ itemId, primary = false }: { itemId: string; prima
         variant={primary ? "primary" : "secondary"}
         size={primary ? "lg" : "md"}
         className={primary ? "xl:min-block-touch" : "justify-self-start"}
-        icon="mic"
+        icon={<IconMic />}
         onClick={(event) => {
           open(itemId, event.currentTarget);
         }}

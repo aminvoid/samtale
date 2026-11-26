@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { IconShare2 } from "@/components/ui/icon";
 
 export function ShareTopic() {
   const t = useTranslations("study");
@@ -21,7 +22,7 @@ export function ShareTopic() {
 
   return (
     <div>
-      <Button variant="secondary" icon="share-2" onClick={() => void share()}>
+      <Button variant="secondary" icon={<IconShare2 />} onClick={() => void share()}>
         {t("share")}
       </Button>
       <p className="text-caption text-text-muted" role="status">

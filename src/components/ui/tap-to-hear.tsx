@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Button } from "./button";
+import { IconVolume2 } from "./icon";
 
 type TapToHearProps = {
   onClick: () => void;
@@ -13,7 +14,7 @@ type TapToHearProps = {
 export function TapToHear({ onClick, label, className }: TapToHearProps) {
   const t = useTranslations("audio");
   return (
-    <Button size="lg" icon="volume-2" block onClick={onClick} className={className}>
+    <Button size="lg" icon={<IconVolume2 />} block onClick={onClick} className={className}>
       {label ?? t("tapToHear")}
     </Button>
   );

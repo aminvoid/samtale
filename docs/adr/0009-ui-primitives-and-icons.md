@@ -28,12 +28,13 @@
 
 ### Rules
 
-- **Features never import `@base-ui/react` or `lucide-react` directly** (lint, ADR-0001). They use our primitives: `Button`, `IconButton`, `Dialog`, `AlertDialog`, `Disclosure`, `RadioGroup`, `ToggleGroup`, `Switch`, `Slider`, `Tabs`, `Progress`, `StatusRegion`, `Icon`, `DanishText`, `PersianText`, `VisuallyHidden`, `SkipLink`.
+- **Features never import `@base-ui/react` or `lucide-react` directly** (lint, ADR-0001). They use our primitives: `Button`, `IconButton`, `Dialog`, `AlertDialog`, `Disclosure`, `RadioGroup`, `ToggleGroup`, `Switch`, `Slider`, `Tabs`, `Progress`, `StatusRegion`, the individual icon components, `DanishText`, `PersianText`, `VisuallyHidden`, `SkipLink`.
 - **Every accessible name comes from messages,** passed in by the caller or read from a `ui.*` namespace inside the primitive. Primitives contain no business logic.
 - **Variants** use one API across components (`variant`, `size`) implemented with plain lookup objects and `cn()` (`clsx` + `tailwind-merge`). No variant library (class-variance-authority hasn't been released since 2024; `tailwind-variants` isn't needed for a dozen components).
 - **Direction:** `DirectionProvider` in the root layout gets `getDirection(locale)`. The **audio scrubber** wraps its `Slider` in a local LTR direction context and `dir="ltr"`, because media progress never mirrors (`.claude/rules/i18n-rtl.md`); its `aria-valuetext` is the formatted time from messages.
 - **Touch targets** ≥ 44 × 44 px and visible `:focus-visible` styles are part of each primitive, so features can't forget them.
-- **Native first** where the rule allows: `<button>`, `<a>`, headings, lists. Base UI's `render` prop keeps the right element.
+- **Native first** where the rule allows: `<button>`, `<a>`, headings, lists. Base UI's `render` prop keeps the right element. `Button` is a plain `<button>`: Base UI added nothing it needs beyond staying focusable while unavailable or loading, which it does with `aria-disabled` and a refused click (ADR-0014, 2026-11-26).
+- **Server-safe primitives stay free of client imports.** A variant that needs state lives in its own component (`DismissibleInfoNote`, `CollapsibleInfoNote`), so static uses don't ship it (ADR-0014).
 
 ### Icons: lucide-react 1.75.0
 
@@ -43,8 +44,9 @@
 | Tabler Icons 3.52.0 | MIT, active, large set | Heavier style; overlaps lucide |
 | Phosphor 2.1.10 | MIT | No release since May 2025 |
 
-- `Icon` (`src/components/ui/icon.tsx`) is the only importer: `aria-hidden` by default (icons are decorative unless a label is passed), and a `mirrored` prop that applies `rtl:-scale-x-100` for **directional** icons only (back/next, chevrons, step arrows). Play, pause, the scrubber, clocks, checkmarks and logos never mirror.
-- Theme icons (D-4) are a map from `themeId` to an icon in `src/components/ui/theme-icon.tsx`; decorative only (US-029 #7). `ui-designer` may replace them with custom SVGs.
+- Import individual components by name from `src/components/ui/icon.tsx` (for example, `IconChevronRight` or `IconPlay`). This lets the bundler drop unused glyphs from each client island (ADR-0014). Pass rendered elements to controls such as `Button`, `IconButton` and `Disclosure`, including across the Server Component boundary. Keep data-driven icon maps in the feature or primitive that uses them, with entries limited to the glyphs it renders.
+- The shared icon rendering is decorative by default. A supplied label gives the SVG an accessible name. Only directional glyphs (such as left and right arrows, horizontal chevrons and exit icons) mirror in RTL, with a `mirrored={false}` opt-out. Play, pause, the scrubber, clocks, checkmarks and logos keep their direction.
+- Theme icons (D-4) are a decorative map from `themeId` to a glyph in `src/components/ui/theme-icon.tsx` (US-029 #7). The icon and theme-icon modules are the Lucide import boundaries. `ui-designer` may replace theme glyphs with custom SVGs.
 
 ## Consequences
 

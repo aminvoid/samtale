@@ -26,6 +26,13 @@ const markerKey = "pd3:mock:in-progress:v1";
 // Text queries use `filter({ visible: true })`: with Cache Components the previous route stays
 // mounted but hidden (React Activity), and getByText, unlike getByRole, also matches hidden nodes.
 
+test("renders the mock start title's ICU select branch in the production build", async ({ page }) => {
+  await page.goto("/fa/mock");
+  const title = page.getByRole("heading", { level: 1 });
+  await expect(title).toHaveText("آزمون تمرینی بخش دوم (delprøve 2)");
+  await expect(title.locator('bdi[lang="da"][dir="ltr"]')).toHaveText("delprøve 2");
+});
+
 async function stubExaminer(page: Page) {
   // Preload fetches every clip; a few bytes are enough because playback itself is stubbed.
   await page.route("**/audio/**", (route) =>

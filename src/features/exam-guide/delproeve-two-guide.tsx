@@ -3,7 +3,14 @@ import { BackLink } from "@/components/ui/back-link";
 import { DanishText } from "@/components/ui/danish-text";
 import { Disclosure } from "@/components/ui/disclosure";
 import { ExternalLink } from "@/components/ui/external-link";
-import { Icon } from "@/components/ui/icon";
+import {
+  IconArrowRight,
+  IconLibraryBig,
+  IconListChecks,
+  IconMic,
+  IconNotebookText,
+  IconRepeat2,
+} from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PageHeader } from "@/components/ui/page-header";
 import { numberingSystemFor } from "@/i18n/config";
@@ -95,7 +102,7 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
           })}
         </p>
         <section aria-labelledby="repeat">
-          <InfoNote icon="repeat-2">
+          <InfoNote icon={IconRepeat2}>
             <h2 id="repeat" tabIndex={-1} className="text-h2">
               {t("repeat.title")}
             </h2>
@@ -114,7 +121,7 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
         </section>
         <Disclosure
           label={t("onThisPage")}
-          icon="list-checks"
+          icon={<IconListChecks />}
           className="rounded-card border border-border bg-surface-raised p-2 xl:hidden"
         >
           <div className="px-2">{contentsLinks}</div>
@@ -236,7 +243,7 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
           <Link href="/guide" className={textLink}>
             {t("overview.title")}
           </Link>
-          <InfoNote icon="notebook-text">
+          <InfoNote icon={IconNotebookText}>
             <p>{t("fits.noNotes")}</p>
             {sourceLink(practicalNotesUrl, t("sources.practicalRules"))}
           </InfoNote>
@@ -279,17 +286,17 @@ export function DelproeveTwoGuide({ lines }: { lines: GuideExaminerLines }) {
               href="/topics"
               className="flex items-center gap-2 rounded-card border border-border bg-surface-raised p-4 text-label text-accent min-block-touch hover:bg-surface-sunken"
             >
-              <Icon name="library-big" />
+              <IconLibraryBig />
               {t("next.topics")}
-              <Icon name="arrow-right" size={16} className="ms-auto" />
+              <IconArrowRight size={16} className="ms-auto" />
             </Link>
             <Link
               href="/mock"
               className="flex items-center gap-2 rounded-card border border-border bg-surface-raised p-4 text-label text-accent min-block-touch hover:bg-surface-sunken"
             >
-              <Icon name="mic" />
+              <IconMic />
               {t("next.mock")}
-              <Icon name="arrow-right" size={16} className="ms-auto" />
+              <IconArrowRight size={16} className="ms-auto" />
             </Link>
           </div>
         </section>

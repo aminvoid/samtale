@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Icon } from "./icon";
+import { IconExternalLink } from "./icon";
 
 export function ExternalLink({
   href,
@@ -17,7 +17,7 @@ export function ExternalLink({
       className="inline-flex items-center gap-1 rounded-control text-ui text-accent underline min-block-touch min-inline-touch"
     >
       {children}
-      <Icon name="external-link" size={16} />
+      <IconExternalLink size={16} />
     </a>
   );
 }

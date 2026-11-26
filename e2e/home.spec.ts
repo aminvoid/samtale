@@ -32,6 +32,14 @@ test.describe("home (fa)", () => {
     expect(results.violations).toEqual([]);
   });
 
+  test("formats the source years without grouping in the production build", async ({ page }) => {
+    await page.goto("/fa");
+    const source = messages.home.source
+      .replace("{start, number, year}", "۲۰۱۶")
+      .replace("{end, number, year}", "۲۰۲۴");
+    await expect(page.getByRole("main").getByText(source)).toBeVisible();
+  });
+
   test.describe("dark colour scheme", () => {
     test.use({ colorScheme: "dark" });
 

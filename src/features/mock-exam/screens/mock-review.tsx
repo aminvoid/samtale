@@ -7,6 +7,7 @@ import { BackLink } from "@/components/ui/back-link";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
 import { Dialog } from "@/components/ui/dialog";
+import { IconTrash2 } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PageHeader } from "@/components/ui/page-header";
 import { Switch } from "@/components/ui/switch";
@@ -205,7 +206,7 @@ function ReviewAttempt({ topic, lines, id }: Props & { id?: string }) {
                         <Button
                           variant="destructive-tertiary"
                           className="justify-self-start"
-                          icon="trash-2"
+                          icon={<IconTrash2 />}
                           loading={busy}
                           onClick={() => {
                             void remove();

@@ -1,10 +1,9 @@
 import { cn } from "@/lib/utils/cn";
 import { IconButton, type IconButtonProps } from "./icon-button";
-import type { IconName } from "./icon";
 
 type ToggleIconButtonProps = Omit<IconButtonProps, "aria-pressed" | "aria-labelledby"> & {
   pressed: boolean;
-  pressedIcon?: IconName;
+  pressedIcon?: IconButtonProps["icon"];
 };
 
 /** Pass the same label in both states. The icon can change independently of the name. */

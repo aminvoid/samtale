@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { IconRotateCcw } from "@/components/ui/icon";
 import { Link } from "@/i18n/navigation";
 import { reportError } from "@/lib/observability/report-error";
 
@@ -33,7 +34,7 @@ export default function ErrorPage({ error, retry }: { error: unknown; retry: () 
       </h1>
       <div className="mbs-6 flex flex-col items-start gap-2">
         <Button
-          icon="rotate-ccw"
+          icon={<IconRotateCcw />}
           onClick={retry}
           className="inline-full min-block-touch-primary md:inline-auto md:min-block-touch"
         >

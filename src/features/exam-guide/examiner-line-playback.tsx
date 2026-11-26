@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useId, type ReactNode } from "react";
 import { DanishText } from "@/components/ui/danish-text";
+import { IconPause, IconPlay, IconRotateCcw } from "@/components/ui/icon";
 import { PlaybackError } from "@/components/ui/playback-error";
 import { RoleHeader } from "@/components/ui/role-header";
 import { ToggleIconButton } from "@/components/ui/toggle-icon-button";
@@ -39,8 +40,8 @@ export function ExaminerLinePlayback({ line, heading, meaning, source }: Examine
           clip.unavailable ? undefined : (
             <ToggleIconButton
               label={t("play", { meaning })}
-              icon={failed ? "rotate-ccw" : "play"}
-              pressedIcon="pause"
+              icon={failed ? <IconRotateCcw /> : <IconPlay />}
+              pressedIcon={<IconPause />}
               pressed={playing}
               loading={clip.status === "loading"}
               aria-describedby={failed ? `${transcriptId} ${errorId}` : transcriptId}

@@ -1,4 +1,4 @@
-import { Icon } from "@/components/ui/icon";
+import { IconChevronRight } from "@/components/ui/icon";
 import { Link } from "@/i18n/navigation";
 import type { TermSummary, TopicSummary } from "@/lib/content/repository";
 import { termsPath } from "./library-paths";
@@ -22,7 +22,7 @@ export function TermGroup({ term, topics, detail }: TermGroupProps) {
             className="inline-flex items-center gap-2 rounded-control min-block-touch"
           >
             <TermName term={term} className="text-da-card text-text" />
-            <Icon name="chevron-right" className="text-text-muted" />
+            <IconChevronRight className="text-text-muted" />
           </Link>
         </h2>
       )}

@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useId } from "react";
 import type { ClipStatus } from "@/lib/audio/player";
 import { cn } from "@/lib/utils/cn";
+import { IconPause, IconPlay, IconRotateCcw } from "./icon";
 import { PlaybackError } from "./playback-error";
 import { ToggleIconButton } from "./toggle-icon-button";
 
@@ -47,9 +48,9 @@ export function PlayButton({
     <div className={cn("inline-flex flex-wrap items-center gap-2", className)}>
       <ToggleIconButton
         label={label ?? defaultLabel}
-        icon={status === "error" ? "rotate-ccw" : "play"}
+        icon={status === "error" ? <IconRotateCcw /> : <IconPlay />}
         pressed={status === "playing"}
-        pressedIcon="pause"
+        pressedIcon={<IconPause />}
         loading={status === "loading"}
         disabled={disabled}
         onClick={onClick}

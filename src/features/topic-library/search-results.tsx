@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import { Icon } from "@/components/ui/icon";
+import { IconSearch } from "@/components/ui/icon";
 import { LiveRegion } from "@/components/ui/live-region";
 import { Link } from "@/i18n/navigation";
 import { richTags } from "@/i18n/rich-tags";
@@ -83,7 +83,7 @@ export function SearchResults({ topics, index, query }: SearchResultsProps) {
                     <li key={topic.id}>
                       <TopicListItem topic={topic} />
                       <div className="flex items-center gap-2 ps-4 text-caption text-text-muted min-block-touch">
-                        <Icon name="search" size={16} />
+                        <IconSearch size={16} />
                         {match.section === null ? (
                           label
                         ) : (

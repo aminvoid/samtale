@@ -1,16 +1,17 @@
 "use client";
 
 import { createContext, useContext, useLayoutEffect, useState, type ReactNode } from "react";
-import { createProgressStore } from "@/lib/progress/create-progress-store";
-import { createRecordingStore } from "@/lib/progress/recording-store";
+// Lazy: the mock start page (and its prefetch from every page's tab bar) doesn't need IndexedDB and
+// the schemas until the learner starts or reviews an attempt (ADR-0014 JS budget).
+import { createLazyProgressStore, createLazyRecordingStore } from "@/lib/progress/lazy-stores";
 import { createProgressPorts } from "./progress";
 import { createSessionRecordings } from "./session-recordings";
 
 function createMockSession() {
-  const progressStore = createProgressStore();
+  const progressStore = createLazyProgressStore();
   return {
     ...createProgressPorts(progressStore),
-    recordings: createSessionRecordings(createRecordingStore(), progressStore),
+    recordings: createSessionRecordings(createLazyRecordingStore(), progressStore),
   };
 }
 

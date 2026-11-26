@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconAudioLines, IconCaptions, IconMic } from "@/components/ui/icon";
 import { SourceLabel } from "@/components/ui/source-label";
 import { richTags } from "@/i18n/rich-tags";
 import type { MockDeck } from "@/lib/content/repository";
@@ -66,6 +66,7 @@ export function ExaminerPanel({
   const audioClip = "audio" in point ? point.audio.clips[point.audio.index] : undefined;
   const clip = closing ? { id: examConfig.examinerLineIds.closing } : (audioClip ?? unit?.question);
   const display = promptDisplay(clip, deck, topic);
+  const SpeakerIcon = answering ? IconMic : IconAudioLines;
   const active = "audio" in state && state.audio.playback.phase === "playing";
   const toggle = display?.text && !closing && (!ctx.showTextOpen || !ctx.policy.keepShowTextOpen);
   return (
@@ -79,10 +80,7 @@ export function ExaminerPanel({
         {t(`examiner.${role}`)}
       </h2>
       <p className="flex items-center gap-2 font-semibold">
-        <Icon
-          name={answering ? "mic" : "audio-lines"}
-          className={active ? "motion-safe:animate-speaking" : undefined}
-        />
+        <SpeakerIcon className={active ? "motion-safe:animate-speaking" : undefined} />
         {answering
           ? t("examiner.yourTurn")
           : state.type === "hold.paused"
@@ -94,7 +92,7 @@ export function ExaminerPanel({
       {toggle && (
         <Button
           variant="tertiary"
-          icon="captions"
+          icon={<IconCaptions />}
           className="justify-self-start"
           aria-pressed={ctx.showTextOpen}
           onClick={() => {

@@ -1,5 +1,5 @@
 import { useFormatter, useLocale, useTranslations } from "next-intl";
-import { Icon } from "@/components/ui/icon";
+import { IconArrowRight } from "@/components/ui/icon";
 import { PageHeader } from "@/components/ui/page-header";
 import { StepList } from "@/components/ui/step-list";
 import { numberingSystemFor } from "@/i18n/config";
@@ -51,7 +51,7 @@ export function GuideOverview() {
             className="inline-flex items-center gap-2 rounded-control bg-accent px-4 py-2 text-label text-accent-contrast min-block-touch hover:bg-accent-hover"
           >
             {t("overview.partTwoLink")}
-            <Icon name="arrow-right" size={16} />
+            <IconArrowRight size={16} />
           </Link>
         </div>
       ),

@@ -1,10 +1,28 @@
 import AxeBuilder from "@axe-core/playwright";
 import messages from "../messages/fa.json" with { type: "json" };
+import { checkedOn } from "../src/features/exam-guide/exam-facts";
 import { AXE_TAGS, expect, test } from "./fixtures";
 
 const { guide } = messages;
 const overviewPath = "/fa/guide";
 const partTwoPath = "/fa/guide/delproeve-2";
+
+test("formats the guide's review date with the named Gregorian format in the production build", async ({
+  page,
+}) => {
+  await page.goto(overviewPath);
+  const date = new Intl.DateTimeFormat("fa", {
+    calendar: "gregory",
+    numberingSystem: "arabext",
+    timeZone: "Europe/Copenhagen",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(checkedOn);
+  await expect(
+    page.getByText(guide.lastChecked.replace("{date, date, date}", date), { exact: true }),
+  ).toBeVisible();
+});
 
 for (const width of [375, 1280]) {
   test(`renders both guide pages in RTL at ${String(width)} px`, async ({ page }) => {

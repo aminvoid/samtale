@@ -11,7 +11,7 @@ import {
   Smartphone,
 } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
-import { Icon, type IconSize } from "./icon";
+import { IconLibraryBig, type IconSize } from "./icon";
 
 const themeIcons = {
   arbejde: BriefcaseBusiness,
@@ -35,7 +35,7 @@ function isThemeIconId(id: string): id is ThemeIconId {
 type ThemeIconProps = { themeId: string; size?: IconSize; className?: string };
 
 export function ThemeIcon({ themeId, size = 20, className }: ThemeIconProps) {
-  if (!isThemeIconId(themeId)) return <Icon name="library-big" size={size} className={className} />;
+  if (!isThemeIconId(themeId)) return <IconLibraryBig size={size} className={className} />;
   const Glyph = themeIcons[themeId];
   return (
     <Glyph size={size} strokeWidth={2} aria-hidden focusable="false" className={cn("shrink-0", className)} />

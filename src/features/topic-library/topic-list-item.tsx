@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/card";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconChevronRight } from "@/components/ui/icon";
 import { PersianText } from "@/components/ui/persian-text";
 import { Pre2023Badge } from "@/components/ui/pre2023-badge";
 import type { TopicSummary } from "@/lib/content/repository";
@@ -41,7 +41,7 @@ export function TopicListItem({ topic, groupedByTerm }: TopicListItemProps) {
           {topic.letter}
         </DanishText>
       )}
-      <Icon name="chevron-right" className="text-text-muted" />
+      <IconChevronRight className="text-text-muted" />
     </Card>
   );
 }

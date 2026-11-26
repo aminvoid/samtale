@@ -1,11 +1,13 @@
 import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconMessagesSquare } from "@/components/ui/icon";
 import { Link } from "@/i18n/navigation";
 import { richTags } from "@/i18n/rich-tags";
 import { MenuDrawer } from "./menu-drawer";
 import { PrimaryNavigation } from "./primary-navigation";
+import { sectionIcons } from "./section-icons";
+import { primaryLinks } from "./section-links";
 import { ShellEffects } from "./shell-effects";
 
 export async function AppShell({ children }: { children: ReactNode }) {
@@ -20,7 +22,7 @@ export async function AppShell({ children }: { children: ReactNode }) {
             className="inline-flex shrink-0 items-center gap-2 rounded-control text-h3 min-block-touch"
           >
             <span className="grid place-items-center rounded-control bg-accent text-accent-contrast block-7 inline-7">
-              <Icon name="messages-square" size={16} />
+              <IconMessagesSquare size={16} />
             </span>
             <DanishText as="bdi">{metadata("appName")}</DanishText>
           </Link>
@@ -54,7 +56,16 @@ export async function AppShell({ children }: { children: ReactNode }) {
         data-app-chrome
         className="block-[var(--bottom-offset,calc(var(--spacing-tabbar)+env(safe-area-inset-bottom)))] md:hidden short:hidden"
       />
-      <PrimaryNavigation variant="bottom" />
+      {/* The tab artwork is rendered here, outside the client navigation module. */}
+      <PrimaryNavigation
+        variant="bottom"
+        icons={Object.fromEntries(
+          primaryLinks.map(({ label }) => {
+            const TabIcon = sectionIcons[label];
+            return [label, <TabIcon key={label} size={24} />];
+          }),
+        )}
+      />
       <ShellEffects />
     </div>
   );

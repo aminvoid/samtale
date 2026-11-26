@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
 import { Disclosure } from "./disclosure";
+import { IconCircleHelp } from "./icon";
 import { InfoNote } from "./info-note";
 
 type Pre2023BadgeProps = {
@@ -25,7 +26,7 @@ export function Pre2023Badge({ children, className, ...props }: Pre2023BadgeProp
   return (
     <div className="flex flex-col items-start gap-2">
       {badge}
-      <Disclosure label={props.explanationLabel} icon="circle-help">
+      <Disclosure label={props.explanationLabel} icon={<IconCircleHelp />}>
         <InfoNote>{props.explanation}</InfoNote>
       </Disclosure>
     </div>

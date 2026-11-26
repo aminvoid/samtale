@@ -2,6 +2,8 @@ import { cleanup, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { renderWithIntl } from "@/test/render-with-intl";
+import { CollapsibleInfoNote } from "./collapsible-info-note";
+import { DismissibleInfoNote } from "./dismissible-info-note";
 import { InfoNote } from "./info-note";
 
 afterEach(cleanup);
@@ -16,11 +18,7 @@ describe("InfoNote", () => {
   it("only shows a collapsible note body when expanded", async () => {
     const user = userEvent.setup();
     const label = "راهنمایی";
-    renderWithIntl(
-      <InfoNote variant="collapsible" label={label}>
-        یادداشت
-      </InfoNote>,
-    );
+    renderWithIntl(<CollapsibleInfoNote label={label}>یادداشت</CollapsibleInfoNote>);
 
     expect(screen.getByText("یادداشت")).not.toBeVisible();
     await user.click(screen.getByRole("button", { name: label, expanded: false }));
@@ -34,9 +32,9 @@ describe("InfoNote", () => {
     const dismissLabel = "بستن این یادداشت";
     const onDismiss = vi.fn();
     renderWithIntl(
-      <InfoNote variant="dismissible" dismissLabel={dismissLabel} onDismiss={onDismiss}>
+      <DismissibleInfoNote dismissLabel={dismissLabel} onDismiss={onDismiss}>
         یادداشت
-      </InfoNote>,
+      </DismissibleInfoNote>,
     );
 
     await user.click(screen.getByRole("button", { name: dismissLabel }));

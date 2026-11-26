@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon, type IconName } from "./icon";
+import { IconBadgeCheck, IconBookOpen, IconPenLine } from "./icon";
 
 const sourceIcons = {
-  siri: "badge-check",
-  booklet: "book-open",
-  app: "pen-line",
-  "app-from-siri": "pen-line",
-  "booklet-picture": "book-open",
-} satisfies Record<string, IconName>;
+  siri: IconBadgeCheck,
+  booklet: IconBookOpen,
+  app: IconPenLine,
+  "app-from-siri": IconPenLine,
+  "booklet-picture": IconBookOpen,
+};
 
 type SourceLabelProps = {
   variant: keyof typeof sourceIcons;
@@ -17,6 +17,7 @@ type SourceLabelProps = {
 };
 
 export function SourceLabel({ variant, className, children }: SourceLabelProps) {
+  const SourceIcon = sourceIcons[variant];
   return (
     <span
       className={cn(
@@ -24,7 +25,7 @@ export function SourceLabel({ variant, className, children }: SourceLabelProps) 
         className,
       )}
     >
-      <Icon name={sourceIcons[variant]} size={16} className="self-center" />
+      <SourceIcon size={16} className="self-center" />
       <span>{children}</span>
     </span>
   );

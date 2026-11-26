@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Card } from "@/components/ui/card";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import { IconChevronRight } from "@/components/ui/icon";
 import { PersianText } from "@/components/ui/persian-text";
 import { ThemeIcon } from "@/components/ui/theme-icon";
 import type { ThemeSummary } from "@/lib/content/repository";
@@ -35,7 +35,7 @@ export async function ThemeGrid({ themes }: { themes: readonly ThemeSummary[] })
             <span className="order-first grid shrink-0 place-items-center rounded-control bg-accent-subtle text-accent block-10 inline-10">
               <ThemeIcon themeId={theme.id} size={24} />
             </span>
-            <Icon name="chevron-right" className="text-text-muted" />
+            <IconChevronRight className="text-text-muted" />
           </Card>
         </li>
       ))}

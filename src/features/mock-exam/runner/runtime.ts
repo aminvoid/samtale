@@ -318,14 +318,19 @@ export function createMockExamRuntime(ports: MockExamPorts, publish: (action: Ru
   }
 
   function persistAttempt(attempt: AttemptRecord) {
-    if (persisted.has(attempt.attemptId)) return;
+    const pending = persisted.get(attempt.attemptId);
+    if (pending !== undefined) return pending;
     const saving = ports.progress
       .persistAttempt(attempt)
       .catch((): SaveResult => ({ ok: false, reason: "error" }));
     persisted.set(attempt.attemptId, saving);
     void saving.then((result) => {
-      if (!result.ok) send({ type: "PERSIST_FAILED", attemptId: attempt.attemptId });
+      if (!result.ok && persisted.get(attempt.attemptId) === saving) {
+        persisted.delete(attempt.attemptId);
+        send({ type: "PERSIST_FAILED", attemptId: attempt.attemptId });
+      }
     });
+    return saving;
   }
 
   function savePreference(patch: Parameters<MockExamPorts["progress"]["savePreference"]>[0]) {
@@ -390,7 +395,7 @@ export function createMockExamRuntime(ports: MockExamPorts, publish: (action: Ru
         ports.announce.emit(command);
         return;
       case "persistAttempt":
-        persistAttempt(command.attempt);
+        void persistAttempt(command.attempt);
         return;
       case "savePreference":
         savePreference({ [command.key]: command.value });
@@ -412,7 +417,7 @@ export function createMockExamRuntime(ports: MockExamPorts, publish: (action: Ru
         handedOffAttemptId = command.attempt?.attemptId;
         ports.navigate({
           ...command,
-          saveResult: handedOffAttemptId === undefined ? undefined : persisted.get(handedOffAttemptId),
+          saveResult: command.attempt === undefined ? undefined : persistAttempt(command.attempt),
         });
         return;
     }

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { MockSessionProvider } from "@/features/mock-exam";
+// Imported from its own file: the feature index pulls the runner (and Zod) into the start page and its prefetch.
+import { MockSessionProvider } from "@/features/mock-exam/runner/adapters/mock-session-provider";
 import { MockHandoff } from "@/features/mock-exam/screens/mock-handoff";
 import { AudioPlayerProvider } from "@/lib/audio/player";
 

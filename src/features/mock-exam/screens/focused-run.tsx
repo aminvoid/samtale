@@ -3,7 +3,16 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
 import { Dialog } from "@/components/ui/dialog";
-import { Icon } from "@/components/ui/icon";
+import {
+  IconCircleDot,
+  IconClock3,
+  IconLanguages,
+  IconLightbulb,
+  IconMic,
+  IconMicOff,
+  IconPause,
+  IconRotateCcw,
+} from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { SourceLabel } from "@/components/ui/source-label";
 import { ToggleIconButton } from "@/components/ui/toggle-icon-button";
@@ -138,6 +147,8 @@ export function FocusedRun({
         : ctx.minuteNoticePassed && !ctx.limitReached && interview && !closing
           ? t("live.oneMinuteLeft")
           : null;
+  const RecordingIcon = recording ? IconCircleDot : recordingStatus === "notRecording" ? IconMicOff : IconMic;
+
   return (
     <FocusedModeShell
       mode={ctx.mode}
@@ -155,8 +166,7 @@ export function FocusedRun({
         interview &&
         !closing && (
           <span className="flex items-center gap-2 justify-self-start rounded-chip border border-border px-3 text-caption font-semibold text-text-muted">
-            <Icon
-              name={recording ? "circle-dot" : recordingStatus === "notRecording" ? "mic-off" : "mic"}
+            <RecordingIcon
               size={16}
               className={recording ? "text-danger motion-safe:animate-rec-pulse" : undefined}
             />
@@ -174,7 +184,7 @@ export function FocusedRun({
               <span className="text-caption text-text-muted">{t("interview.hidden")}</span>
             )}
             <ToggleIconButton
-              icon="clock-3"
+              icon={<IconClock3 />}
               label={t("interview.timers")}
               pressed={!ctx.timersVisible}
               onClick={() => {
@@ -209,7 +219,7 @@ export function FocusedRun({
                   {answering && ctx.policy.hints && (
                     <Button
                       variant="secondary"
-                      icon="lightbulb"
+                      icon={<IconLightbulb />}
                       onClick={() => {
                         send({ type: "HINTS_OPENED" });
                       }}
@@ -219,7 +229,7 @@ export function FocusedRun({
                   )}
                   <Button
                     variant="tertiary"
-                    icon="pause"
+                    icon={<IconPause />}
                     onClick={() => {
                       send({ type: "PAUSE" });
                     }}
@@ -233,7 +243,7 @@ export function FocusedRun({
                     ctx.recording !== "starting" && (
                       <Button
                         variant="tertiary"
-                        icon="rotate-ccw"
+                        icon={<IconRotateCcw />}
                         onClick={() => {
                           send({ type: "RERECORD" });
                         }}
@@ -247,7 +257,7 @@ export function FocusedRun({
               <div className="flex flex-wrap gap-2">
                 <Button
                   variant="tertiary"
-                  icon="pause"
+                  icon={<IconPause />}
                   onClick={() => {
                     send({ type: pausedLook ? "LOOK_RESUME" : "LOOK_PAUSE" });
                   }}
@@ -268,7 +278,7 @@ export function FocusedRun({
               <Button
                 variant="tertiary"
                 className="justify-self-start"
-                icon="pause"
+                icon={<IconPause />}
                 onClick={() => {
                   send({ type: "PAUSE" });
                 }}
@@ -374,7 +384,7 @@ export function FocusedRun({
               {ctx.policy.lookAdjustable && (
                 <Button
                   variant="tertiary"
-                  icon="languages"
+                  icon={<IconLanguages />}
                   className="justify-self-start"
                   aria-pressed={translated}
                   onClick={() => {

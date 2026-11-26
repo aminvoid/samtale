@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon } from "./icon";
+import { IconArrowRight } from "./icon";
 
 type Segment = { key: string; label: ReactNode; detail?: ReactNode; emphasized?: boolean };
 
@@ -24,7 +24,7 @@ export function Timeline({ segments }: { segments: readonly Segment[] }) {
             <span className="relative mbs-2 shrink-0 rounded-full bg-accent block-3 inline-3 md:mbs-0" />
             <span className="hidden items-center gap-1 text-text-muted md:flex md:grow md:ps-1 group-last:md:hidden">
               <span className="grow bg-border-strong block-0.5" />
-              <Icon name="arrow-right" size={16} />
+              <IconArrowRight size={16} />
             </span>
           </div>
           <div className="min-inline-0">

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { IconCirclePause } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { examConfig } from "@/lib/exam/config";
 import { formatDuration } from "./presentation";
@@ -13,7 +14,7 @@ export function ExamRules() {
         <li>{t("available")}</li>
         <li>{t("notices")}</li>
       </ul>
-      <InfoNote icon="circle-pause" variant="compact">
+      <InfoNote icon={IconCirclePause} variant="compact">
         {t("interruptions")}
       </InfoNote>
       <p className="text-text-muted">{t("alternative")}</p>

@@ -4,6 +4,7 @@ import { Dialog as BaseDialog } from "@base-ui/react/dialog";
 import { useDirection } from "@base-ui/react/direction-provider";
 import type { ReactElement, ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
+import { IconX } from "./icon";
 import { IconButton } from "./icon-button";
 
 export type DialogProps = Pick<
@@ -80,7 +81,9 @@ export function Dialog({
             )}
             <div className="flex items-start justify-between gap-2">
               <BaseDialog.Title className="self-center text-h2">{title}</BaseDialog.Title>
-              <BaseDialog.Close render={<IconButton icon="x" label={closeLabel} className="shrink-0" />} />
+              <BaseDialog.Close
+                render={<IconButton icon={<IconX />} label={closeLabel} className="shrink-0" />}
+              />
             </div>
             {description != null && (
               <BaseDialog.Description className="mbs-2 text-body">{description}</BaseDialog.Description>

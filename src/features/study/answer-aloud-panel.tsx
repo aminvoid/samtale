@@ -4,8 +4,17 @@ import { AudioPlayer } from "@/components/ui/audio-player";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
 import { Dialog } from "@/components/ui/dialog";
-import { Icon } from "@/components/ui/icon";
-import { InfoNote } from "@/components/ui/info-note";
+import {
+  IconArrowRight,
+  IconCircleDot,
+  IconKeyRound,
+  IconLock,
+  IconMic,
+  IconMicOff,
+  IconRepeat2,
+  IconRotateCcw,
+} from "@/components/ui/icon";
+import { DismissibleInfoNote } from "@/components/ui/dismissible-info-note";
 import { PersianText } from "@/components/ui/persian-text";
 import { RoleHeader } from "@/components/ui/role-header";
 import { Link } from "@/i18n/navigation";
@@ -184,8 +193,8 @@ export function AnswerAloudPanel({
             <div role="status" className="grid gap-2 empty:sr-only">
               {status && (
                 <p className="flex items-center gap-2 text-ui font-semibold">
-                  {recording && <Icon name="circle-dot" className="text-danger" />}
-                  {answering && !recording && <Icon name="mic-off" />}
+                  {recording && <IconCircleDot className="text-danger" />}
+                  {answering && !recording && <IconMicOff />}
                   {status}
                 </p>
               )}
@@ -264,7 +273,7 @@ export function AnswerAloudPanel({
               <div ref={step} className="flex flex-wrap gap-2">
                 {state.phase === "permission" && (
                   <Button
-                    icon="mic"
+                    icon={<IconMic />}
                     aria-describedby={privacyId}
                     disabled={state.recorderStatus === "loading"}
                     onClick={recorderFailed ? session.preloadRecorder : session.requestMic}
@@ -281,14 +290,13 @@ export function AnswerAloudPanel({
               <>
                 <SpeakingTimer state={state} />
                 {state.wakeLockTip && (
-                  <InfoNote
-                    icon="lock"
-                    variant="dismissible"
+                  <DismissibleInfoNote
+                    icon={IconLock}
                     dismissLabel={t("speaking.dismissWakeLockTip")}
                     onDismiss={session.dismissWakeLockTip}
                   >
                     {ready("wakeLock", { minutes: MAX_ANSWER_RECORDING_MS / 60_000 })}
-                  </InfoNote>
+                  </DismissibleInfoNote>
                 )}
                 {micError !== null && (
                   <div className="grid gap-2 rounded-control bg-surface-sunken p-3 text-caption">
@@ -310,7 +318,7 @@ export function AnswerAloudPanel({
                     <Button
                       variant="tertiary"
                       className="justify-self-start"
-                      icon="key-round"
+                      icon={<IconKeyRound />}
                       aria-controls={hintId}
                       aria-expanded={hint}
                       onClick={() => {
@@ -333,7 +341,7 @@ export function AnswerAloudPanel({
                   <div className="grid gap-1 rounded-control border border-border p-2">
                     <Button
                       variant="secondary"
-                      icon="repeat-2"
+                      icon={<IconRepeat2 />}
                       onClick={() => {
                         playQuestion(true);
                       }}
@@ -423,7 +431,7 @@ export function AnswerAloudPanel({
                 <div className="flex flex-wrap justify-between gap-2 pbe-14">
                   <Button
                     variant="secondary"
-                    icon="rotate-ccw"
+                    icon={<IconRotateCcw />}
                     onClick={() => {
                       setHint(false);
                       session.start(question.id, question.audio && { id: question.id, ...question.audio });
@@ -432,7 +440,7 @@ export function AnswerAloudPanel({
                     {t("speaking.again")}
                   </Button>
                   <Button
-                    icon="arrow-right"
+                    icon={<IconArrowRight />}
                     onClick={() => {
                       setHint(false);
                       if (next === undefined) dismiss();

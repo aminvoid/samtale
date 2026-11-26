@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { useLayoutEffect, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
+import { IconLogOut } from "@/components/ui/icon";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 import type { MockExamAction, Mode } from "../index";
@@ -56,7 +57,7 @@ export function FocusedModeShell({
             ) : (
               <Button
                 variant="tertiary"
-                icon="log-out"
+                icon={<IconLogOut />}
                 disabled={closing}
                 onClick={() => {
                   send({ type: "LEAVE_REQUESTED" });

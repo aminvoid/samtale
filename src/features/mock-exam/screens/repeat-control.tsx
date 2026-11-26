@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { useId } from "react";
 import { Button } from "@/components/ui/button";
 import { DanishText } from "@/components/ui/danish-text";
+import { IconRepeat2, IconSnail } from "@/components/ui/icon";
 import { examConfig } from "@/lib/exam/config";
 import type { MockExamAction, State } from "../index";
 
@@ -22,7 +23,7 @@ export function RepeatControl({
       <div className="grid gap-1 rounded-control border border-border bg-surface-raised p-2">
         <Button
           variant="secondary"
-          icon="repeat-2"
+          icon={<IconRepeat2 />}
           aria-labelledby={`${id}-label`}
           aria-describedby={`${id}-phrase`}
           disabled={!canRepeat}
@@ -54,7 +55,7 @@ export function RepeatControl({
         {context.policy.slowRepeat && (answer?.repeats ?? 0) >= 1 && (
           <Button
             variant="tertiary"
-            icon="snail"
+            icon={<IconSnail />}
             disabled={!canRepeat}
             aria-describedby={`${id}-slow`}
             onClick={() => {

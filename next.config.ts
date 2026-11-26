@@ -42,7 +42,12 @@ const nextConfig: NextConfig = {
 
 const withNextIntl = createNextIntlPlugin({
   requestConfig: "./src/i18n/request.ts",
-  experimental: { createMessagesDeclaration: "./messages/fa.json" },
+  experimental: {
+    createMessagesDeclaration: "./messages/fa.json",
+    // Compile ICU messages at build time, so the browser gets next-intl's small formatter instead of
+    // the ICU parser (ADR-0014 JS budget). Experimental in next-intl 4.15.
+    messages: { path: "./messages", format: "json", locales: "infer", precompile: true },
+  },
 });
 
 export default function config(phase: string): NextConfig {

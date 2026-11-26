@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
+  envDir: false,
   plugins: [react()],
   resolve: {
     tsconfigPaths: true, // Vite 8 built-in; replaces vite-tsconfig-paths (ADR-0012)

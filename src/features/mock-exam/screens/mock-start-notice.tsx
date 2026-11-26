@@ -2,10 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import { InfoNote } from "@/components/ui/info-note";
+import { IconCirclePause } from "@/components/ui/icon";
+import { DismissibleInfoNote } from "@/components/ui/dismissible-info-note";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
-import { useMockSession } from "../index";
+import { useMockSession } from "../runner/adapters/mock-session-provider";
 import { reviewHref, useMockHandoff } from "./mock-handoff";
 import { mockLink, mockSecondaryLink } from "./presentation";
 
@@ -33,9 +34,8 @@ export function MockStartNotice() {
     failedId !== undefined && failedId === attemptId ? "mock.back.unsavedAttempt" : destination.noticeKey;
 
   return (
-    <InfoNote
-      variant="dismissible"
-      icon="circle-pause"
+    <DismissibleInfoNote
+      icon={IconCirclePause}
       dismissLabel={t("mock.close")}
       onDismiss={() => {
         if (attempt) recordings.discardAttempt(attempt.attemptId);
@@ -52,6 +52,6 @@ export function MockStartNotice() {
           {t("mock.review.see")}
         </Link>
       )}
-    </InfoNote>
+    </DismissibleInfoNote>
   );
 }

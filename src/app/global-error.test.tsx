@@ -2,8 +2,10 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 import messages from "../../messages/fa.json";
+import { scripts } from "../../package.json";
 import { routing } from "@/i18n/routing";
 import GlobalError from "./global-error";
+import { globalErrorMessages } from "./global-error-messages";
 
 // next/font only works inside the Next.js compiler.
 vi.mock("./fonts", () => ({ fontVariables: "font-vars" }));
@@ -18,7 +20,18 @@ describe("GlobalError", () => {
   });
 
   it("uses the messages file of the default locale", () => {
-    // global-error imports messages/fa.json statically; update it if the default locale changes.
+    // The strings are generated from messages/fa.json; update the script if the default locale changes.
     expect(routing.defaultLocale).toBe("fa");
+  });
+
+  it("ships strings that match messages/fa.json (run npm run i18n:global-error if this fails)", () => {
+    expect(globalErrorMessages).toEqual({ title: messages.error.title, retry: messages.error.retry });
+  });
+
+  it("runs message generation before a direct npm run build", () => {
+    expect(scripts.prebuild.split("&&").map((command) => command.trim())).toContain(
+      "npm run i18n:global-error",
+    );
+    expect(scripts["i18n:global-error"]).toBe("node scripts/i18n/global-error-messages.ts");
   });
 });

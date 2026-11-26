@@ -6,7 +6,8 @@ import { Suspense } from "react";
 import { DirectionProvider } from "@/components/ui/direction-provider";
 import { SkipLink } from "@/components/ui/skip-link";
 import { AppShell } from "@/features/app-shell/app-shell";
-import { ClearMockReloadMarker } from "@/features/mock-exam";
+// Imported from its own file: the feature's index would pull the whole mock exam runtime into every page.
+import { ClearMockReloadMarker } from "@/features/mock-exam/screens/clear-mock-reload-marker";
 import { getDirection } from "@/i18n/config";
 import { routing } from "@/i18n/routing";
 import { publicEnv } from "@/lib/env/public";

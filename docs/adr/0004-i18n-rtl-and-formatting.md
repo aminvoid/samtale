@@ -88,6 +88,8 @@
 
 `NextIntlClientProvider` in the root layout inherits the server's messages and formats (next-intl 4 default). With one compact `fa.json` this is fine. If `fa.json` grows past ~30 KB gzipped, pass only the namespaces used by client components.
 
+**2026-11-26 amendment (ADR-0014):** Enable `experimental.messages.precompile` in `next.config.ts`. It compiles ICU messages at build time so the browser can use the smaller formatter and omit the ICU parser from the initial JavaScript. The option is experimental in next-intl 4.15.1. A next-intl upgrade can change the compiled format or how it handles ICU messages, so run the production-build Playwright tests after upgrading. Focused assertions check the mock start title's `select` branch and Danish rich-text tag, the home source years without grouping, and the guide's named Gregorian date. Both formats use Persian digits. The existing journeys also exercise rich text and plurals. Vitest's raw-message provider still checks the source strings. To roll back, remove the `precompile` flag from `experimental.messages` to restore runtime ICU parsing.
+
 ## Consequences
 
 - **Gain:** adding `en` = add `"en"` to `routing.locales` + `messages/en.json` (the parity test guards completeness); direction, digits (CLDR `latn` for `en`) and routes follow automatically.

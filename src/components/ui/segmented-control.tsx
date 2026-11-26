@@ -5,7 +5,7 @@ import { Radio } from "@base-ui/react/radio";
 import { RadioGroup } from "@base-ui/react/radio-group";
 import { useId, type ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { Icon } from "./icon";
+import { IconCheck } from "./icon";
 
 type SegmentedControlProps<Value extends string> = Pick<
   RadioGroup.Props<Value>,
@@ -57,7 +57,7 @@ export function SegmentedControl<Value extends string>({
           >
             <span aria-hidden className="shrink-0 block-4 inline-4">
               <Radio.Indicator className="block">
-                <Icon name="check" size={16} />
+                <IconCheck size={16} />
               </Radio.Indicator>
             </span>
             <span>{option.label}</span>

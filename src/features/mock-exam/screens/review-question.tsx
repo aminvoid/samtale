@@ -5,6 +5,7 @@ import { useState, useSyncExternalStore } from "react";
 import { AudioPlayer } from "@/components/ui/audio-player";
 import { DanishText } from "@/components/ui/danish-text";
 import { Disclosure } from "@/components/ui/disclosure";
+import { IconKeyRound, IconLanguages, IconMicOff } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { RoleHeader } from "@/components/ui/role-header";
 import { WordHighlighter } from "@/components/ui/word-highlighter";
@@ -108,13 +109,13 @@ export function ReviewQuestion({
         </DanishText>
         {item.audio && <AudioPlayer itemId={item.id} audio={item.audio} label={t("review.playPrompt")} />}
         <div className="flex flex-wrap items-start gap-2">
-          <Disclosure label={t("interview.translation")} icon="languages">
+          <Disclosure label={t("interview.translation")} icon={<IconLanguages />}>
             <p lang="fa" className="p-2">
               {item.text.fa}
             </p>
           </Disclosure>
           {"keywords" in item && item.keywords.length > 0 && (
-            <Disclosure label={t("interview.keywords")} icon="key-round">
+            <Disclosure label={t("interview.keywords")} icon={<IconKeyRound />}>
               <ul className="grid gap-1 p-2">
                 {item.keywords.map(({ id, text }) => (
                   <li key={id} className="flex flex-wrap gap-2">
@@ -132,7 +133,7 @@ export function ReviewQuestion({
           <div className="grid gap-2 rounded-card bg-role-you-subtle p-3 min-inline-0">
             <h4 className="text-h3 text-role-you">{t("review.yourAnswer")}</h4>
             {recordings.length === 0 ? (
-              <InfoNote variant="compact" icon="mic-off">
+              <InfoNote variant="compact" icon={IconMicOff}>
                 {t("review.notRecorded")}
               </InfoNote>
             ) : (

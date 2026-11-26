@@ -1,7 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import { Card } from "@/components/ui/card";
 import { DanishText } from "@/components/ui/danish-text";
-import { Icon } from "@/components/ui/icon";
+import {
+  IconChevronRight,
+  IconLibraryBig,
+  IconLightbulb,
+  IconMessagesSquare,
+  IconSignpost,
+} from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import { PageHeader } from "@/components/ui/page-header";
 import { Link } from "@/i18n/navigation";
@@ -20,13 +26,13 @@ export async function HomeScreen({ topicCount }: { topicCount: number }) {
       href: "/topics",
       title: t("topics"),
       hint: t("topicCount", { count: topicCount }),
-      icon: <Icon name="library-big" size={24} />,
+      icon: <IconLibraryBig size={24} />,
     },
     {
       href: "/mock",
       title: t("mock"),
       hint: t("mockHint"),
-      icon: <Icon name="messages-square" size={24} />,
+      icon: <IconMessagesSquare size={24} />,
     },
   ];
 
@@ -49,7 +55,7 @@ export async function HomeScreen({ topicCount }: { topicCount: number }) {
               className="inline-flex items-center gap-1 rounded-control text-accent underline min-block-touch"
             >
               {nav("about")}
-              <Icon name="chevron-right" size={16} />
+              <IconChevronRight size={16} />
             </Link>
           </div>
           <Card
@@ -57,13 +63,13 @@ export async function HomeScreen({ topicCount }: { topicCount: number }) {
             className="mbs-3 flex items-center gap-3 border-accent bg-accent text-accent-contrast hover:border-accent-hover hover:bg-accent-hover active:bg-accent-active"
           >
             <span className="grid shrink-0 place-items-center rounded-control bg-surface-raised text-accent block-10 inline-10">
-              <Icon name="signpost" size={24} />
+              <IconSignpost size={24} />
             </span>
             <span className="grow wrap-anywhere min-inline-0">
               <span className="block text-h3">{t.rich("guide", { ...richTags, part: "2" })}</span>
               <span className="block text-caption">{t("guideHint", { minutes: 3 })}</span>
             </span>
-            <Icon name="chevron-right" />
+            <IconChevronRight />
           </Card>
         </div>
         <ul className="grid grid-cols-1 content-start gap-3 md:grid-cols-2 xl:col-span-5 xl:grid-cols-1">
@@ -77,13 +83,13 @@ export async function HomeScreen({ topicCount }: { topicCount: number }) {
                   <span className="block text-h3">{title}</span>
                   <span className="block text-caption text-text-muted">{hint}</span>
                 </span>
-                <Icon name="chevron-right" className="text-text-muted" />
+                <IconChevronRight className="text-text-muted" />
               </Card>
             </li>
           ))}
         </ul>
       </div>
-      <InfoNote icon="lightbulb" className="mx-auto mbs-6 max-inline-reading xl:mx-0">
+      <InfoNote icon={IconLightbulb} className="mx-auto mbs-6 max-inline-reading xl:mx-0">
         <h2 className="text-h3">{t("tipTitle")}</h2>
         <p>{t.rich("firstQuestionTip", richTags)}</p>
         <p className="mbs-2">{t("repeatLabel")}</p>

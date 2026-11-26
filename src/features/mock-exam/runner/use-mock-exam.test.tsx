@@ -3,9 +3,11 @@ import { StrictMode } from "react";
 import { describe, expect, it, vi } from "vitest";
 import { RecorderError, type RecorderSignal } from "@/lib/audio/recorder";
 import { examConfig } from "@/lib/exam/config";
+import { createLazyProgressStore } from "@/lib/progress/lazy-stores";
 import type { RecordingStore } from "@/lib/progress/recording-store";
 import { SettingsSchema } from "@/lib/progress/schema";
 import type { MockTopic } from "../machine";
+import { createProgressPorts } from "./adapters/progress";
 import { createSessionRecordings } from "./adapters/session-recordings";
 import type { AudioPort, MockExamPorts, VisibilityPort } from "./ports";
 import type { MockExamSetup } from "./runtime";
@@ -462,5 +464,43 @@ describe("mock exam host", () => {
     exam.unmount();
     save.resolve({ ok: false, reason: "quota" });
     expect(await destination?.saveResult).toEqual({ ok: false, reason: "quota" });
+  });
+
+  it("retries a failed progress store import when handing a completed attempt to review", async () => {
+    const store = createLazyProgressStore({ databaseName: "runtime-save-retry" });
+    const { progress } = createProgressPorts(store);
+    const fakes = fakePorts();
+    fakes.ports.progress.persistAttempt.mockImplementation((attempt) => progress.persistAttempt(attempt));
+    const exam = await mount({}, fakes);
+    await exam.draw(false);
+    exam.beginAnswer();
+    exam.secondAnswer();
+    vi.doMock("@/lib/progress/create-progress-store", () => {
+      throw new Error("progress store chunk failed");
+    });
+
+    try {
+      exam.send({ type: "DONE" });
+      exam.audio();
+      await act(async () => {
+        expect(await exam.ports.progress.persistAttempt.mock.results[0]?.value).toEqual({
+          ok: false,
+          reason: "unavailable",
+        });
+      });
+      expect(exam.result.current.state).toMatchObject({ type: "finished", saveFailed: true });
+    } finally {
+      vi.doUnmock("@/lib/progress/create-progress-store");
+    }
+
+    exam.send({ type: "GO_TO_REVIEW" });
+    const destination = exam.ports.navigate.mock.calls[0]?.[0];
+    expect(destination?.to).toBe("review");
+    expect(await destination?.saveResult).toEqual({ ok: true });
+    expect(exam.ports.progress.persistAttempt).toHaveBeenCalledTimes(2);
+    expect(await store.getAttempt("attempt-test")).toMatchObject({
+      ok: true,
+      value: { status: "completed" },
+    });
   });
 });

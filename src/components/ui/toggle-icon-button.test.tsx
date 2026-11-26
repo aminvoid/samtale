@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { useState } from "react";
 import { expect, it } from "vitest";
 import { renderWithIntl } from "@/test/render-with-intl";
+import { IconCaptions, IconCaptionsOff } from "./icon";
 import { ToggleIconButton } from "./toggle-icon-button";
 
 const label = "نمایش زیرنویس";
@@ -12,8 +13,8 @@ function CaptionToggle() {
   return (
     <ToggleIconButton
       label={label}
-      icon="captions-off"
-      pressedIcon="captions"
+      icon={<IconCaptionsOff />}
+      pressedIcon={<IconCaptions />}
       pressed={state === "on"}
       onClick={() => {
         setState((previous) => (previous === "off" ? "on" : "off"));

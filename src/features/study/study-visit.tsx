@@ -3,6 +3,7 @@
 import { useFormatter, useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Disclosure } from "@/components/ui/disclosure";
+import { IconClock3, IconInfo } from "@/components/ui/icon";
 import { InfoNote } from "@/components/ui/info-note";
 import type { TopicStudyState } from "@/lib/progress/derive";
 import { localDateOf, type ReviewSchedule } from "@/lib/progress/review-schedule";
@@ -89,17 +90,17 @@ export function StudyVisit({ topicId, children }: { topicId: string; children: R
         </p>
       )}
       {progress !== undefined && nextReview && (
-        <InfoNote icon="clock-3">
+        <InfoNote icon={IconClock3}>
           {nextReview.dueDate <= progress.today
             ? t("reviewDue", { day: nextReview.day })
             : t("reviewNext", { when: relativeDate(nextReview.dueDate) })}
         </InfoNote>
       )}
-      {nextReview === null && <InfoNote icon="clock-3">{t("reviewComplete")}</InfoNote>}
+      {nextReview === null && <InfoNote icon={IconClock3}>{t("reviewComplete")}</InfoNote>}
       <Disclosure
         className="rounded-card bg-accent-subtle p-3"
         label={t("layoutTitle")}
-        icon="info"
+        icon={<IconInfo />}
         open={layoutOpen}
         onOpenChange={(open) => {
           layoutChosen.current = true;

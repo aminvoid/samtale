@@ -1,4 +1,4 @@
-import { test as base, expect, type Locator } from "@playwright/test";
+import { test as base, expect, type Locator, type Page } from "@playwright/test";
 
 /**
  * Shared fixtures. Every test that uses `page` fails on any Content Security Policy violation
@@ -41,4 +41,23 @@ export async function waitForHydration(locator: Locator) {
   await expect
     .poll(() => locator.evaluate((el) => Object.keys(el).some((key) => key.startsWith("__reactProps$"))))
     .toBe(true);
+}
+
+/**
+ * Simulates a denied microphone: getUserMedia rejects with NotAllowedError. Headless WebKit on
+ * Linux has no navigator.mediaDevices at all, so the stub creates it; otherwise the app would
+ * (correctly) report the microphone as unavailable rather than denied.
+ */
+export async function denyMicrophone(page: Page) {
+  await page.addInitScript(() => {
+    const getUserMedia = () => Promise.reject(new DOMException("Permission denied", "NotAllowedError"));
+    if (!("mediaDevices" in navigator)) {
+      Object.defineProperty(navigator, "mediaDevices", { configurable: true, value: { getUserMedia } });
+      return;
+    }
+    Object.defineProperty(navigator.mediaDevices, "getUserMedia", {
+      configurable: true,
+      value: getUserMedia,
+    });
+  });
 }

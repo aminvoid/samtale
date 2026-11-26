@@ -5,7 +5,7 @@ import messages from "../messages/fa.json" with { type: "json" };
 import { buildFormats } from "../src/i18n/formats";
 import { examConfig } from "../src/lib/exam/config";
 import { InProgressMarkerSchema } from "../src/lib/progress/schema";
-import { AXE_TAGS, expect, test } from "./fixtures";
+import { AXE_TAGS, expect, test, denyMicrophone } from "./fixtures";
 
 /**
  * Mock exam journeys (US-026 to US-045). Deterministic journeys stub examiner playback.
@@ -97,16 +97,6 @@ async function stubExaminer(page: Page) {
           /* Media is driven by the stub. */
         },
       },
-    });
-  });
-}
-
-async function denyMicrophone(page: Page) {
-  await page.addInitScript(() => {
-    if (!("mediaDevices" in navigator)) return;
-    Object.defineProperty(navigator.mediaDevices, "getUserMedia", {
-      configurable: true,
-      value: () => Promise.reject(new DOMException("Permission denied", "NotAllowedError")),
     });
   });
 }

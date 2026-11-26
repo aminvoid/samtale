@@ -1,7 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import type { Page } from "@playwright/test";
 import messages from "../messages/fa.json" with { type: "json" };
-import { AXE_TAGS, expect, test, waitForHydration } from "./fixtures";
+import { AXE_TAGS, expect, test, waitForHydration, denyMicrophone } from "./fixtures";
 
 const topicUrl = "/fa/topics/2024-maj-b";
 const { audio, mock, study } = messages;
@@ -335,11 +335,7 @@ test("closes answer aloud with Back and keeps the same topic document on Forward
 
 test("continues after microphone denial and offers a retry without prompting again", async ({ page }) => {
   await stubPlayback(page);
-  await page.addInitScript(() => {
-    Object.defineProperty(navigator.mediaDevices, "getUserMedia", {
-      value: () => Promise.reject(new DOMException("Permission denied", "NotAllowedError")),
-    });
-  });
+  await denyMicrophone(page);
   await page.goto(topicUrl);
   const exercise = await openSpeakingExercise(page);
   await exercise.getByRole("button", { name: mock.ready.micAllow }).click();

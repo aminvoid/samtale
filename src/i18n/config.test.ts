@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import {
   DATE_LOCALE,
   dateLocaleFor,
@@ -21,6 +21,16 @@ describe("i18n config", () => {
     const { integer, year } = buildFormats("fa").number;
     expect(new Intl.NumberFormat("fa", integer).format(51)).toBe("۵۱");
     expect(new Intl.NumberFormat("fa", year).format(2016)).toBe("۲۰۱۶");
+  });
+
+  it("uses Latin digits when Intl reports a numbering system unsupported by the named formats", () => {
+    const resolved = new Intl.NumberFormat("fa").resolvedOptions();
+    vi.spyOn(Intl.NumberFormat.prototype, "resolvedOptions").mockReturnValue({
+      ...resolved,
+      numberingSystem: "mathsans",
+    });
+    expect(numberingSystemFor("fa")).toBe("latn");
+    expect(new Intl.NumberFormat("fa", buildFormats("fa").number.integer).format(51)).toBe("51");
   });
 
   it("switches every named format to Latin digits with the one-line override (D-2)", () => {

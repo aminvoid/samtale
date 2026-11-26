@@ -13,6 +13,8 @@ function eventTime(index: number): string {
   return new Date(Date.UTC(2026, 9, 24, 0, 0, index)).toISOString();
 }
 
+const envelope = (index: number) => ({ v: 1 as const, id: eventId(index), recordedAt: eventTime(index) });
+
 describe("progress projections", () => {
   it("ignores event arrival order and replays of the same UUID across all derived views", () => {
     const rows = fc.array(
@@ -128,5 +130,111 @@ describe("progress projections", () => {
     }
     expect(await replay.exportProgress()).toEqual(saved);
     expect(await replay.listTopicStudyStates()).toEqual(await store.listTopicStudyStates());
+  });
+
+  it("counts standalone mocks once and prefers a saved attempt over linked practice or duplicate saves", () => {
+    const legacyPractice = {
+      ...envelope(1),
+      type: "practice",
+      kind: "mock",
+      mode: "exam",
+      topicId: "topic",
+      localDate: "2026-10-24",
+    } as const;
+    const savedAttempt = {
+      ...envelope(5),
+      type: "attempt-saved",
+      attemptId: "saved",
+      part: 2,
+      topicId: "topic",
+      localDate: "2026-10-26",
+      mode: "exam",
+      startedAt: 1_700_000_000_000,
+      totalMs: 12_000,
+      situationKey: "A",
+      status: "completed",
+      askedItemIds: [],
+      skippedFollowups: [],
+      answers: [],
+    } satisfies ProgressEvent;
+    const projection = deriveProgress([
+      legacyPractice,
+      { ...legacyPractice, ...envelope(2), attemptId: "missing-save" },
+      { ...legacyPractice, ...envelope(3), attemptId: "missing-save" },
+      { ...legacyPractice, ...envelope(4), attemptId: "saved" },
+      savedAttempt,
+      { ...savedAttempt, ...envelope(6), totalMs: 99_000 },
+      { ...envelope(7), type: "attempt-reviewed", attemptId: "unknown", kept: true },
+      { ...envelope(8), type: "attempt-reviewed", attemptId: "saved", kept: true },
+      { ...savedAttempt, ...envelope(9), attemptId: "also-saved", topicId: "other" },
+    ]);
+
+    expect(projection.practices.map(({ id }) => id)).toEqual([
+      eventId(1),
+      eventId(2),
+      eventId(5),
+      eventId(9),
+    ]);
+    expect(projection.topics).toContainEqual({
+      topicId: "topic",
+      practiceCount: 3,
+      lastPractisedOn: "2026-10-26",
+    });
+    expect(projection.attempts.get("saved")).toMatchObject({ totalMs: 12_000, kept: true });
+    expect(projection.attempts.has("unknown")).toBe(false);
+    expect(history(projection.attempts.values()).map(({ attemptId }) => attemptId)).toEqual([
+      "also-saved",
+      "saved",
+    ]);
+  });
+
+  it("orders simultaneous settings events by ID and preserves preferences omitted from a patch", () => {
+    const at = eventTime(0);
+    const { settings } = deriveProgress([
+      { ...envelope(2), recordedAt: at, type: "settings-updated", patch: { timersVisible: false } },
+      {
+        ...envelope(1),
+        recordedAt: at,
+        type: "settings-updated",
+        patch: { timersVisible: true, playbackRate: 0.75 },
+      },
+      { ...envelope(3), type: "settings-updated", patch: { playbackRate: undefined } },
+    ]);
+    expect(settings).toMatchObject({ timersVisible: false, playbackRate: 0.75 });
+  });
+
+  it("rejects a premature or backdated review restart and accepts one after the completed cycle", () => {
+    const practice = {
+      ...envelope(1),
+      type: "practice",
+      kind: "shadowing",
+      topicId: "topic",
+      localDate: "2026-10-24",
+    } as const;
+    const restart = {
+      ...envelope(2),
+      type: "review-cycle-started",
+      topicId: practice.topicId,
+      localDate: "2026-10-25",
+    } as const;
+    const events = [
+      practice,
+      restart,
+      { ...practice, ...envelope(3), localDate: "2026-11-06" },
+      { ...restart, ...envelope(4), localDate: "2026-11-05" },
+    ] satisfies ProgressEvent[];
+    expect(deriveProgress(events).schedules).toEqual([
+      { topicId: "topic", firstStudyDate: "2026-10-24", completedDays: [3, 7, 14], nextReview: null },
+    ]);
+    const restarted = deriveProgress([...events, { ...restart, ...envelope(5), localDate: "2026-11-07" }]);
+    expect(restarted.schedules).toEqual([
+      {
+        topicId: "topic",
+        firstStudyDate: "2026-11-07",
+        completedDays: [],
+        nextReview: { day: 3, dueDate: "2026-11-09" },
+      },
+    ]);
+    expect(restarted.topics).toEqual([{ topicId: "topic", practiceCount: 2, lastPractisedOn: "2026-11-06" }]);
   });
 });

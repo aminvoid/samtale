@@ -921,6 +921,157 @@ describe("mock exam scenarios", () => {
 });
 
 describe("pure core boundary cases", () => {
+  it("blocks setup actions until the learner dismisses the reload notice and chooses a microphone setting", () => {
+    const h = new Harness("practice", {
+      reloadMarker: { attemptId: "previous", topicId: topic.id, mode: "practice", startedAt: 0 },
+    });
+    const blocked: Input[] = [
+      { type: "SOUND_CHECK_PLAY" },
+      { type: "SOUND_CHECK_HEARD" },
+      { type: "SOUND_CHECK_PROBLEM" },
+      { type: "MIC_ALLOW" },
+      { type: "MIC_SKIP" },
+      { type: "CONTINUE" },
+    ];
+    for (const event of blocked) {
+      const before = h.state;
+      expect(h.send(event), event.type).toEqual([]);
+      expect(h.state, event.type).toEqual(before);
+    }
+
+    h.send({ type: "DISMISS_RELOAD_NOTICE" });
+    expect(h.state).toMatchObject({ reloadNotice: false });
+    expect(h.send({ type: "CONTINUE" })).toEqual([]);
+    expect(played(h.send({ type: "SOUND_CHECK_PLAY" }))).toEqual([config.soundCheckClipId]);
+    h.send({ type: "SOUND_CHECK_PROBLEM" });
+    expect(h.state).toMatchObject({ soundHelp: true, soundOk: false });
+    h.send({ type: "SOUND_CHECK_HEARD" });
+    expect(h.state).toMatchObject({ soundHelp: false, soundOk: true });
+  });
+
+  it.each(["skip", "finish"])(
+    "can %s the optional instruction and reveal the chosen practice topic",
+    (action) => {
+      const instruction = "examiner.instruction";
+      const h = new Harness("practice", { instructionLineId: instruction });
+      h.send({ type: "OPTIONS_SET", options: { topicSource: { type: "chosen", topicId: topic.id } } });
+      h.send({ type: "MIC_ALLOW" });
+      const micRequest = required(h.context.micRequest);
+      expect(h.send({ type: "MIC_ALLOW" })).toEqual([]);
+      h.send({ type: "MIC_UNAVAILABLE", requestId: micRequest, reason: "in-use" });
+      expect(h.context).toMatchObject({ micState: "unavailable", micReason: "in-use" });
+      expect(played(h.send({ type: "CONTINUE" }))).toEqual([instruction]);
+      expect(h.state.type).toBe("prepare.instruction");
+
+      expect(h.send({ type: "CLIP_ENDED", clipId: config.soundCheckClipId })).toEqual([]);
+      expect(h.send({ type: "CLIP_ENDED", clipId: instruction, requestId: h.play.requestId + 1 })).toEqual(
+        [],
+      );
+      expect(h.startClip()).toEqual([]);
+      expect(h.state.type).toBe("prepare.instruction");
+      const commands = action === "skip" ? h.send({ type: "INSTRUCTION_SKIP" }) : h.endClip();
+      expect(commandsOf(commands, "stopAudio")).toHaveLength(1);
+      expect(commandsOf(commands, "preload")).toHaveLength(1);
+      expect(h.state).toMatchObject({ type: "prepare.reveal", context: { topic } });
+    },
+  );
+
+  it("ignores an out-of-range card and only starts after the current preload succeeds", () => {
+    const h = new Harness("practice").ready("skipped");
+    const draw = h.state;
+    expect(h.send({ type: "CARD_TAPPED", index: 3 })).toEqual([]);
+    expect(h.state).toEqual(draw);
+    const [first] = commandsOf(h.send({ type: "CARD_TAPPED", index: 0 }), "preload");
+    h.send({ type: "ASSETS_FAILED", requestId: required(first).requestId });
+    expect(h.state).toMatchObject({ type: "prepare.reveal", status: "failed" });
+    expect(h.send({ type: "START" })).toEqual([]);
+    const [retry] = commandsOf(h.send({ type: "RETRY_LOAD" }), "preload");
+    const requestId = required(retry).requestId;
+    expect(requestId).not.toBe(required(first).requestId);
+    h.send({ type: "ASSETS_LOADED", requestId: required(first).requestId });
+    expect(h.state).toMatchObject({ type: "prepare.reveal", status: "loading" });
+    expect(h.send({ type: "RETRY_LOAD" })).toEqual([]);
+    h.send({ type: "ASSETS_LOADED", requestId });
+    expect(played(h.send({ type: "START" }))).toEqual([intro]);
+  });
+
+  it("lets practice pause, extend, resume, and skip the look timer", () => {
+    const h = new Harness("practice").look();
+    const original = sec(config.lookSeconds);
+    const extension = sec(config.lookExtendSeconds);
+    h.send({ type: "LOOK_PAUSE" }, 1000);
+    expect(h.context.look).toEqual({ deadline: null, remainingMs: original - 1000 });
+    h.send({ type: "LOOK_PAUSE" }, original);
+    h.send({ type: "LOOK_EXTEND" });
+    expect(h.context.look).toEqual({ deadline: null, remainingMs: original - 1000 + extension });
+    h.send({ type: "LOOK_RESUME" });
+    const deadline = nextDeadline(h.state);
+    expect(deadline).toBe(h.at + original - 1000 + extension);
+    h.send({ type: "LOOK_RESUME" });
+    expect(nextDeadline(h.state)).toBe(deadline);
+    h.send({ type: "LOOK_EXTEND" });
+    expect(nextDeadline(h.state)).toBe(h.at + original - 1000 + 2 * extension);
+    expect(played(h.send({ type: "LOOK_SKIP" }))).toHaveLength(1);
+    expect(h.state.type).toBe("run.unit.speaking");
+    expect(h.context.look).toBeNull();
+  });
+
+  it("releases a pending microphone request when skipped and ignores its late feedback", () => {
+    const h = new Harness("practice");
+    h.send({ type: "MIC_ALLOW" });
+    const requestId = required(h.context.micRequest);
+    expect(commandsOf(h.send({ type: "MIC_SKIP" }), "releaseMic")).toHaveLength(1);
+    const skipped = h.state;
+    expect(h.send({ type: "MIC_GRANTED", requestId })).toEqual([]);
+    expect(h.send({ type: "MIC_SKIP" })).toEqual([]);
+    expect(h.state).toEqual(skipped);
+    expect(h.context.micState).toBe("skipped");
+  });
+
+  it("cancels an in-flight audio retry when the page hides and waits for a new gesture", () => {
+    const h = new Harness("exam").speaking();
+    const { clipId, requestId } = h.play;
+    h.send({ type: "CLIP_FAILED", clipId, requestId });
+    expect(played(h.send({ type: "RETRY_AUDIO" }))).toEqual([clipId]);
+    const stale = h.play;
+    const commands = h.send({ type: "APP_HIDDEN" });
+    expect(commandsOf(commands, "stopAudio")).toHaveLength(1);
+    expect(commandsOf(commands, "releaseWakeLock")).toHaveLength(1);
+    expect(played(h.send({ type: "RETRY_AUDIO" }))).toEqual([]);
+    expect(h.send({ ...stale, type: "CLIP_STARTED" })).toEqual([]);
+    h.send({ type: "APP_VISIBLE" });
+    expect(h.state.type).toBe("hold.audioError");
+    expect(played(h.send({ type: "RETRY_AUDIO" }))).toEqual([clipId]);
+    h.startClip();
+    expect(h.state.type).toBe("run.unit.speaking");
+  });
+
+  it("ignores a malformed clock reading and mid-exam commands before the run starts", () => {
+    const h = new Harness("exam");
+    const before = h.state;
+    const ignored: Input[] = [
+      { type: "START" },
+      { type: "DONE" },
+      { type: "REPEAT", rate: 1 },
+      { type: "RERECORD" },
+      { type: "SHOW_TEXT" },
+      { type: "PAUSE" },
+      { type: "RESUME" },
+      { type: "TAP_TO_HEAR" },
+      { type: "RETRY_AUDIO" },
+      { type: "CONTINUE_AFTER_INTERRUPTION" },
+      { type: "RESTART" },
+      { type: "END_AND_REVIEW" },
+      { type: "GO_TO_REVIEW" },
+      { type: "LEAVE_CONFIRMED" },
+    ];
+    for (const event of ignored) {
+      expect(h.send(event), event.type).toEqual([]);
+      expect(h.state, event.type).toEqual(before);
+    }
+    expect(transition(before, { type: "MIC_SKIP", at: Number.NaN })).toEqual({ state: before, commands: [] });
+  });
+
   it("delivers the one-minute notice in an examiner gap with hidden timers", () => {
     const h = new Harness("exam", { timersVisible: false }).first();
     h.clockTo(cutoff);
@@ -974,6 +1125,21 @@ describe("pure core boundary cases", () => {
     expect(preloadClipIds(topic)).toHaveLength(12);
     expect(preloadClipIds(topic)).toContain(topic.situations[1].intro.id);
     expect(preloadClipIds(topic)).toContain(lines.thanks);
+  });
+
+  it("falls back to published follow-up text when a spoken annotation is incomplete", () => {
+    const annotated = { ...secondFollowup, spoken: { parts: ["Unfinished annotation"], pauseMs: 0 } };
+    const withAnnotation = { ...topic, general: { ...topic.general, followups: [annotated] } };
+    expect(buildDelproeve2Script(withAnnotation, "A")).toEqual(buildDelproeve2Script(topic, "A"));
+  });
+
+  it("returns no script for a missing situation, while still preloading the available one", () => {
+    const [situationA] = topic.situations;
+    const incomplete = { ...topic, situations: [situationA, situationA] as const };
+    expect(buildDelproeve2Script(incomplete, "B")).toEqual([]);
+    const ids = preloadClipIds(incomplete);
+    expect(ids).toContain(situationA.question.id);
+    expect(ids.filter((id) => id === situationA.question.id)).toHaveLength(1);
   });
 
   it("draws unique published topics in small fallback pools and limits theme draws", () => {

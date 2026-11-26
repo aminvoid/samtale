@@ -4,6 +4,8 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 
 **Additions on 2026-11-22** (by delegation) from the Persian review of the remaining 48 topics (`docs/reviews/2026-11-21-persian-review-48-topics.md`): the rows from *ren straffeattest* to *ufaglært arbejde* at the end of the table, and the notes on *kommune* and *løn*. The Dari words that review lists still need the same human check (`docs/content/dari-check.md`).
 
+**Answer-translation additions.** Source — Persian review of the answer translations, 2026-11-26.
+
 **Rules:**
 - **Interface copy uses the Persian form.**
 - **Show the Danish term** wherever learners must recognise it at the exam: isolated, `lang="da"`, with the Persian explanation.
@@ -37,7 +39,8 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | forberedt / uforberedt emne | موضوع آماده‌شده / آماده‌نشده | | |
 | lodtrækning, trække et emne | قرعه‌کشی، قرعه کشیدن | یکی از سه موضوع A، B یا C | |
 | situation (A/B) | موقعیت A / B | | Avoid «موقعیت ممتحن» |
-| billede | تصویر | | Not «عکس» |
+| billede (exam picture card) | تصویر | تصویری که در کارت آزمون می‌بینید | |
+| billede (social-media photo) | عکس | | Use «عکس‌ها» for photos in the plural |
 | indledning (forslag til indledning) | معرفی موقعیت | ممتحن موقعیت را در یکی دو جمله معرفی می‌کند | SIRI's suggested wording |
 | obligatorisk spørgsmål | سؤال اجباری | سؤالی که حتماً پرسیده می‌شود | |
 | første obligatoriske spørgsmål | سؤال اجباری اول | اغلب یک سؤال *Hvorfor tror du, …?* است | |
@@ -78,7 +81,7 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | Forstyr ikke / Do Not Disturb | مزاحم نشوید | | Device setting name |
 | ren straffeattest | سابقهٔ کیفری پاک (ren straffeattest) | گواهی پلیس که نشان می‌دهد شخص محکومیت کیفری ندارد | Not «سوءپیشینهٔ پاک», which contradicts itself |
 | ungdomsuddannelse | آموزش متوسطه (ungdomsuddannelse) | تحصیل بعد از folkeskole: دبیرستان (gymnasium) یا آموزش فنی‌وحرفه‌ای | Not just «دبیرستان». Dari: «لیسه» |
-| SU (Statens Uddannelsesstøtte) | SU (کمک‌هزینهٔ تحصیلی دولت) | پولی که دولت ماهانه به دانش‌آموزان و دانشجویان بالای ۱۸ سال می‌دهد؛ SU-lån وام تحصیلی دولت است | Keep "SU" in Latin, isolated. A Persian field that starts with "SU" needs an explicit `dir="rtl"` |
+| SU (Statens Uddannelsesstøtte) / SU-lån | SU (کمک‌هزینهٔ تحصیلی دولت) / SU-lån (وام تحصیلی دولت) | پولی که دولت ماهانه به دانش‌آموزان و دانشجویان بالای ۱۸ سال می‌دهد؛ SU-lån وام تحصیلی دولت است | Keep the Latin base forms isolated. A Persian field that starts with "SU" needs an explicit `dir="rtl"` |
 | dagpenge / kontanthjælp | dagpenge (کمک‌هزینهٔ بیکاری) / kontanthjælp (کمک‌هزینهٔ اجتماعی) | dagpenge را صندوق بیمهٔ بیکاری (a-kasse) به عضوهایش می‌دهد؛ kontanthjælp کمک مالی کمون به کسی است که درآمد و حق dagpenge ندارد | Two different benefits: keep both Danish words, never merge them into «حمایت مالی» |
 | folkepension | folkepension (مستمری بازنشستگی دولتی) | مستمری پایه‌ای که دولت از سن بازنشستگی به ساکنان دانمارک می‌دهد | |
 | daginstitution | مهدکودک (daginstitution) | شامل vuggestue (برای بچه‌های زیر سه سال) و børnehave (از سه سالگی تا مدرسه) | Dari reader: «مهدکودک» still open |
@@ -97,3 +100,13 @@ Proposed by `persian-localization-reviewer` on 2026-11-20, and adopted by owner 
 | lytteforståelse | درک شنیداری | توانایی فهم آنچه می‌شنوید | |
 | prøvetermin | دورهٔ `<da>maj–juni</da>` `{year, number, year}` | دورهٔ برگزاری آزمون | Keep the Danish term label isolated and format the year with ICU |
 | fint | خوب بود | ممتحن معمولاً بعد از پاسخ شما می‌گوید *tak* | |
+| RKI | RKI (فهرست بدهکاران) | فهرست کسانی که بدهی پرداخت‌نشده دارند | Gloss at first use |
+| gøre en forskel | تأثیر مثبت گذاشتن | | |
+| I teorien | از لحاظ نظری | | |
+| have (garden at a house) | باغچه | باغچهٔ خانه | |
+| kede sig | بی‌حوصله شدن | | |
+| integration / passe ind | سازگار شدن / پذیرفته شدن در جمع | سازگار شدن با جامعه یا محیط کار | Use «پذیرفته شدن در جمع» when the point is acceptance by a group |
+| kø (traffic) | ترافیک | | |
+| god idé | فکر خوبی | | |
+| fysisk (body or health) | جسمی | | Use «کار بدنی» for manual work |
+| så (result) | در نتیجه | | Use «در نتیجه،» at the start of a sentence and «در نتیجه» without a following comma mid-sentence |

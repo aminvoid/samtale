@@ -2867,5 +2867,3061 @@
       "source": "docs/reviews/2026-11-20-persian-review-pilot.md",
       "status": "proposed"
     }
-  ]
+  ],
+  "answerTranslations": {
+    "2016-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-a.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: Confirm «سابقهٔ کیفری پیدا کردن» as the recurring rendering of *plettet straffeattest*. This answer uses the Persian review's wording."
+        }
+      ]
+    },
+    "2016-maj-a.sitA.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The subject of *mangler nogle voksne, der sætter grænser* is unclear. The translation reads it as some young people lacking an adult who sets boundaries."
+        }
+      ]
+    },
+    "2016-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.sitA.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-maj-c.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *endnu mere hovedpine* can describe more frequent or more intense headaches."
+        }
+      ]
+    },
+    "2016-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.sitB.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2016-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-a.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *stoppe igen* leaves the activity implicit. The translation reads it as stopping work."
+        }
+      ]
+    },
+    "2017-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-a.sitA.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The unusual *fra hele verden* is read as working from anywhere in the world."
+        }
+      ]
+    },
+    "2017-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-c.general.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *for høje krav på arbejdet* leaves open who sets the excessive demands."
+        }
+      ]
+    },
+    "2017-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2017-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.sitA.example1": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *På et hospital skal man blive hjemme* leaves the actor and illness implicit. The translation reads it as someone working at a hospital."
+        }
+      ]
+    },
+    "2018-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-b.sitA.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *at kende* may attach to both objects. The translation says learning a language and getting to know a culture."
+        }
+      ]
+    },
+    "2018-nov-b.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *når de starter* leaves the activity implicit. The context suggests starting a course of study."
+        }
+      ]
+    },
+    "2018-nov-b.sitB.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *afklaring* leaves open how far the young people have decided what to study."
+        }
+      ]
+    },
+    "2018-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-c.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *fejle* may mean making mistakes or failing more broadly."
+        }
+      ]
+    },
+    "2018-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2018-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-a.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *i fagene* may refer to fields of study or occupations. *kommer ind* leaves the destination of admission implicit."
+        }
+      ]
+    },
+    "2019-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2019-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-b.general.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-b.general.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *en blodprop* leaves the site of the clot open. In *køre lidt længere*, the Danish leaves open who drives. The revised translation has the speaker driving."
+        }
+      ]
+    },
+    "2020-maj-b.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *drive* leaves its object implicit. The translation reads it as running the hospital."
+        }
+      ]
+    },
+    "2020-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.sitA.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-maj-c.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The form of weakening in *det danske sprog kan blive svækket* and the return in *får ikke noget igen* are unspecified."
+        }
+      ]
+    },
+    "2020-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.general.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *får mere tid* leaves open whose time is being allocated."
+        }
+      ]
+    },
+    "2020-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-c.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *skabe afstand* can mean physical or social distance."
+        }
+      ]
+    },
+    "2020-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2020-nov-c.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *det* in *hvis det bliver for meget* can refer to training, diet, or both."
+        }
+      ]
+    },
+    "2020-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-b.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *skabe nye job og eksport* leaves the nature of the effect on exports open."
+        }
+      ]
+    },
+    "2021-maj-b.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *rejser kortere* can describe distance or duration. The translation uses distance."
+        }
+      ]
+    },
+    "2021-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-c.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The action referred to by *det* is implicit. The context points to childhood shoplifting."
+        }
+      ]
+    },
+    "2021-maj-c.sitA.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *en udfordring fra vennerne* can mean a dare or a challenge."
+        }
+      ]
+    },
+    "2021-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-c.sitA.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *et godt niveau* leaves the type of proficiency unspecified."
+        }
+      ]
+    },
+    "2021-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2021-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-a.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *forholdet* could mean the couple's relationship or broader family relationships."
+        }
+      ]
+    },
+    "2022-maj-a.sitB.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *karrierejob* does not specify the type of work or room for advancement."
+        }
+      ]
+    },
+    "2022-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-c.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *kommer for tidligt ud hjemmefra* could mean spending time away from home too young or leaving home too early in a broader sense."
+        }
+      ]
+    },
+    "2022-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-a.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *at fejle* could mean learning to accept mistakes or coping with failure."
+        }
+      ]
+    },
+    "2022-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-a.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *er sundt* can mean healthy or beneficial more generally."
+        }
+      ]
+    },
+    "2022-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-b.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *hele Danmark kan leve* leaves the form of support or viability open."
+        }
+      ]
+    },
+    "2022-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2022-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-b.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *Ja, det synes jeg godt* relies on the preceding question about reasonable spending."
+        }
+      ]
+    },
+    "2023-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-c.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *deres uddannelse* may refer to qualifications or expertise."
+        }
+      ]
+    },
+    "2023-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-a.general.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *Sundhed bør være lige for alle* may refer to equal health or equal access to care."
+        }
+      ]
+    },
+    "2023-nov-a.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-a.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-c.general.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *bliver det dyrere* leaves the future cost unspecified."
+        }
+      ]
+    },
+    "2023-nov-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-c.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2023-nov-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-a.general.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *give penge tilbage* leaves the recipient and scope of the financial return open."
+        }
+      ]
+    },
+    "2024-maj-a.general.q2.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *velfærden* may mean publicly funded welfare services or residents' welfare more broadly."
+        }
+      ]
+    },
+    "2024-maj-a.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-a.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-a.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-a.sitB.q1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: *alene* leaves the missing source of revenue implicit."
+        }
+      ]
+    },
+    "2024-maj-b.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-b.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-b.sitA.example1": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-b.sitA.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The Danish leaves open who spends less time with patients."
+        }
+      ]
+    },
+    "2024-maj-b.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-b.sitB.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-b.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-c.general.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-c.general.q2.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-c.sitA.followup1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-c.sitA.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    },
+    "2024-maj-c.sitB.followup1.answer": {
+      "status": "needs-review",
+      "notes": [
+        {
+          "text": "Owner check: The Danish leaves open who finds the transition to grades difficult."
+        }
+      ]
+    },
+    "2024-maj-c.sitB.q1.answer": {
+      "status": "approved",
+      "reviewedBy": "delegated-agent-review",
+      "reviewedOn": "2026-11-26",
+      "notes": [
+        {
+          "text": "Approved by delegation after Kimi fidelity reviews per batch, the two Persian reviews of the answer translations and a Kimi regression check (docs/reviews)."
+        }
+      ]
+    }
+  }
 }

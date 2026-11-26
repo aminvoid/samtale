@@ -20,6 +20,8 @@ A learner reads the Danish answer first. Then they open the translation to check
    - **One Danish sentence → one Persian sentence, in the same order.** A learner must be able to put a finger on the Danish sentence and find its Persian partner. Don't merge sentences or split one into two.
    - **Inside a sentence, use natural Persian word order:** the verb at the end, and Persian connectors. Never copy Danish word order.
    - **Keep every idea and drop none.** That includes small words that carry meaning: *også*, *desuden*, *selvom*, *stadig*, *ofte*, *mange*, *nogle*, *for meget* («بیش از حد», not just «زیاد»).
+   - Render additive *også* with «هم». Use «همچنین» for the *Derudover* marker. When *også* introduces an example or an included group, «از جمله» fits.
+   - Translate *for sent* as «دیرتر از موقع» and *for tidligt* as «زودتر از موقع». Use «بیش از اندازه زیاد / کم» for *for mange / for få*. Use «بیش از حد» with verbs and quantities such as *arbejde for meget* and *vare for længe*.
 3. **Keep the text markers. They're what the learner is learning.** Render the answer templates' structure words consistently:
 
 | Danish | Persian |
@@ -63,7 +65,8 @@ A learner reads the Danish answer first. Then they open the translation to check
    - The glossary's Dari check is still pending, so every new recurring word choice goes into the batch report for the Dari check. In particular: «مرخصی»/«رخصتی», «دبیرستان»/«لیسه», «بیمارستان»/«شفاخانه», and month names.
 7. **Danish institutions and fixed names:** the glossary decides which names stay in Danish, and in what order the Danish and the Persian appear.
    - Don't keep a Danish word just because it's Danish.
-   - Where the glossary keeps the Danish (*folkeskole*, *gymnasium*, *SU*, *dagpenge*, *kontanthjælp*, *a-kasse*, *bofællesskab*, *pædagog* …), write it in Latin script exactly as in the Danish text, with the glossary's Persian gloss in parentheses **in the same sentence** the first time it appears in that text.
+   - Where the glossary keeps the Danish (*folkeskole*, *gymnasium*, *SU*, *dagpenge*, *kontanthjælp*, *a-kasse*, *bofællesskab*, *pædagog* …), use the glossary form and word order in Latin script with its Persian gloss **in the same sentence** at first use.
+   - Use «SU (کمک‌هزینهٔ تحصیلی دولت)» and «SU-lån (وام تحصیلی دولت)» with no Danish inflection or apostrophe. Write Danish words in parentheses in lowercase dictionary form, as in «کارهای غیرتخصصی (ufaglærte)».
    - *kommune* → «کمون (شهرداری؛ دولت محلی)» at first use in a text, then «کمون».
    - *dagpenge* → «dagpenge (کمک‌هزینهٔ بیکاری)». It's the payment, not the insurance fund (*a-kasse* = «صندوق بیمهٔ بیکاری»).
    - Brand names and apps stay as they are (*Too Good To Go*).
@@ -76,15 +79,19 @@ A learner reads the Danish answer first. Then they open the translation to check
    - *madspild* = «اتلاف غذا»
    - *arbejdsmarked* = «بازار کار»
    - *børnefamilier* = «خانواده‌های دارای فرزند»
-10. **Terminology:** follow `docs/content/glossary.md`. «آزمون», never «امتحان»; «پاسخ», never «جواب». The validator rejects both.
+10. **Terminology:** follow `docs/content/glossary.md`. «آزمون», never «امتحان»; «پاسخ», never «جواب». The validator rejects both. Render *børn* as «بچه‌ها».
 11. **Orthography:**
     - ZWNJ where it belongs: «می‌شود», «بچه‌ها», «نمی‌توانند». No ZWNJ after a letter that never joins the next one: «کارها», not «کار‌ها».
     - Persian «ی» and «ک», never Arabic ي/ك.
     - Persian punctuation «،» «؛» «؟» and «…» guillemets.
+    - Put a comma after «در نتیجه» at the start of a sentence. Mid-sentence, write «…، در نتیجه …» or «… و در نتیجه …». Use «تا» when *så* expresses purpose, and «در این صورت» or «آن وقت» when it means “then” after a condition.
     - Ezafe after silent h: «هٔ» («برنامهٔ غذایی»).
+    - Use optional kasra only where it prevents misreading, as in «از درِ مبدأ».
+    - Separate the parts of a compound infinitive with a space, as in «صحبت کردن» and «پیدا کردن».
     - No presentation-form characters.
 12. **Numbers, money, dates and times:**
     - Persian digits («۱۰ تا ۱۵ ساعت», «سال ۲۰۳۰»), and a Persian decimal separator («۲٫۵»).
+    - Keep the vitamin name «B12» in Latin script.
     - Percent: «۵۰ درصد».
     - *kroner / kr.*: «کرون».
     - *kl. 8*: «ساعت ۸».
@@ -111,7 +118,7 @@ A learner reads the Danish answer first. Then they open the translation to check
 
 > Jeg har selv lært dansk, og det har gjort det meget nemmere at tale med patienter og kolleger.
 
-✅ «من خودم دانمارکی یاد گرفته‌ام و این کار صحبت‌کردن با بیماران و همکاران را خیلی آسان‌تر کرده است.»
+✅ «من خودم دانمارکی یاد گرفته‌ام و این کار صحبت کردن با بیماران و همکاران را خیلی آسان‌تر کرده است.»
 
 ## What reviewers check
 
